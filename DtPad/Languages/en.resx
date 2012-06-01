@@ -1,0 +1,4303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="About_createdByLabel" xml:space="preserve">
+    <value>Marco "Cav" Macciò</value>
+  </data>
+  <data name="About_createdByLabel1" xml:space="preserve">
+    <value>Created by:</value>
+  </data>
+  <data name="About_descriptionTextBox" xml:space="preserve">
+    <value>DtPad (2009-2012) is licensed under the following Creative Commons Attribution 3.0 License.
+- creativecommons.org/licenses/by-nc-nd/3.0
+
+This application requires Microsoft .NET Framework 4 and use Windows registry only to store "Open With" Explorer context menu menu association.
+
+Main iconset by: Delacro.
+- delacro.deviantart.com
+
+Other icons by: Mark James, VistaIcons.
+- famfamfam.com
+- vistaicons.com
+
+External components referenced: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET.
+- sharpdevelop.net/OpenSource/SharpZipLib
+- itextpdf.com
+- logging.apache.org/log4net
+- hexbox.sourceforge.net
+- xmlgrid.codeplex.com
+- www.codeproject.com/KB/selection/MonthCalendar.aspx
+- sharpbox.codeplex.com
+- json.codeplex.com
+
+Translation and search service by: Google Inc.
+- google.com/language_tools
+- google.com
+
+Dropbox service by: Dropbox Inc.
+- dropbox.com
+
+Language dictionaries by: OpenOffice.org.
+- wiki.services.openoffice.org/wiki/Dictionaries
+
+DtPad does not collect any info about usage and users. Informations that could be logged into "Logs" folder regards only program errors and warnings showed even on the interface, and in no case they will contain user's text or any other private data.</value>
+  </data>
+  <data name="About_emailPictureBoxToolTip" xml:space="preserve">
+    <value>Write an e-mail to DtPad's author</value>
+  </data>
+  <data name="About_rssPictureBoxToolTip" xml:space="preserve">
+    <value>Read RSS feed of diariotraduttore.com</value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="About_titleLabel" xml:space="preserve">
+    <value>DtPad</value>
+  </data>
+  <data name="About_versionLabel1" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="About_websiteLabel" xml:space="preserve">
+    <value>diariotraduttore.com</value>
+  </data>
+  <data name="About_websiteLabel1" xml:space="preserve">
+    <value>Website:</value>
+  </data>
+  <data name="About_websitePictureBoxToolTip" xml:space="preserve">
+    <value>Visit DtPad's author homepage</value>
+  </data>
+  <data name="DatetimeSelect_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DatetimeSelect_descriptionLabel" xml:space="preserve">
+    <value>Select datetime format to insert:</value>
+  </data>
+  <data name="DatetimeSelect_helpLabel" xml:space="preserve">
+    <value>Select a datetime format to insert.</value>
+  </data>
+  <data name="DatetimeSelect_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="DatetimeSelect_Title" xml:space="preserve">
+    <value>Datetime</value>
+  </data>
+  <data name="Extensions_addButtonToolTip" xml:space="preserve">
+    <value>Add new extension</value>
+  </data>
+  <data name="Extensions_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Extensions_defaultCheckBox" xml:space="preserve">
+    <value>Default extension</value>
+  </data>
+  <data name="Extensions_descriptionLabel" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="Extensions_extensionGroupBox1" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Extensions_extensionLabel" xml:space="preserve">
+    <value>Extension:</value>
+  </data>
+  <data name="Extensions_extensionPictureBoxToolTip" xml:space="preserve">
+    <value>Insert only file extension (ie. txt)</value>
+  </data>
+  <data name="Extensions_helpLabel" xml:space="preserve">
+    <value>Set-up file extensions supported by DtPad.</value>
+  </data>
+  <data name="Extensions_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Extensions_removeButtonToolTip" xml:space="preserve">
+    <value>Remove selected extension</value>
+  </data>
+  <data name="Extensions_Title" xml:space="preserve">
+    <value>Extensions</value>
+  </data>
+  <data name="Favourites_addFavouriteButtonToolTip" xml:space="preserve">
+    <value>Add new favourite</value>
+  </data>
+  <data name="Favourites_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Favourites_deleteFavouriteButtonToolTip" xml:space="preserve">
+    <value>Remove selected favourite</value>
+  </data>
+  <data name="Favourites_helpLabel" xml:space="preserve">
+    <value>Manage favourite files for fast opening throught DtPad.</value>
+  </data>
+  <data name="Favourites_Title" xml:space="preserve">
+    <value>Favourites</value>
+  </data>
+  <data name="FileProperties_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="FileProperties_creationDateLabel1" xml:space="preserve">
+    <value>Creation date:</value>
+  </data>
+  <data name="FileProperties_directoryLabel1" xml:space="preserve">
+    <value>Directory:</value>
+  </data>
+  <data name="FileProperties_lastAccessLabel1" xml:space="preserve">
+    <value>Last access:</value>
+  </data>
+  <data name="FileProperties_lastUpdateLabel1" xml:space="preserve">
+    <value>Last update:</value>
+  </data>
+  <data name="FileProperties_nameLabel1" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="FileProperties_readonlyLabel1" xml:space="preserve">
+    <value>Read-only:</value>
+  </data>
+  <data name="FileProperties_readonlyLabel1No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="FileProperties_readonlyLabel1Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="FileProperties_sizeLabel1" xml:space="preserve">
+    <value>Size (bytes):</value>
+  </data>
+  <data name="FileProperties_Title" xml:space="preserve">
+    <value>File Properties</value>
+  </data>
+  <data name="GoToLine_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="GoToLine_helpLabel" xml:space="preserve">
+    <value>Select the row where to go.</value>
+  </data>
+  <data name="GoToLine_lineNumberLabel1" xml:space="preserve">
+    <value>Total rows number:</value>
+  </data>
+  <data name="GoToLine_okButton" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="GoToLine_Title" xml:space="preserve">
+    <value>Go To Row</value>
+  </data>
+  <data name="HelpManager_helpToolTip" xml:space="preserve">
+    <value>Need more help?</value>
+  </data>
+  <data name="MergeTabs_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="MergeTabs_helpLabel" xml:space="preserve">
+    <value>Merge the content of two or more tabs in another.</value>
+  </data>
+  <data name="MergeTabs_markSeparationCheckBox" xml:space="preserve">
+    <value>Mark separation between tabs</value>
+  </data>
+  <data name="MergeTabs_moveDownButtonToolTip" xml:space="preserve">
+    <value>Move selected tab down</value>
+  </data>
+  <data name="MergeTabs_moveUpButtonToolTip" xml:space="preserve">
+    <value>Move selected tab up</value>
+  </data>
+  <data name="MergeTabs_okButton" xml:space="preserve">
+    <value>Merge</value>
+  </data>
+  <data name="MergeTabs_selectTabsLabel" xml:space="preserve">
+    <value>Select tabs to merge (minimum 2):</value>
+  </data>
+  <data name="MergeTabs_Title" xml:space="preserve">
+    <value>Merge Tabs</value>
+  </data>
+  <data name="MoveLines_cancelButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="MoveLines_downRadioButton" xml:space="preserve">
+    <value>Move down</value>
+  </data>
+  <data name="MoveLines_helpLabel" xml:space="preserve">
+    <value>Move selected rows up/down.</value>
+  </data>
+  <data name="MoveLines_lineNumberLabel1" xml:space="preserve">
+    <value>Total rows number:</value>
+  </data>
+  <data name="MoveLines_okButton" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="MoveLines_Title" xml:space="preserve">
+    <value>Move Rows</value>
+  </data>
+  <data name="MoveLines_upRadioButton" xml:space="preserve">
+    <value>Move up</value>
+  </data>
+  <data name="Options_applyButton" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="Options_backgroundButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Options_backgroundColorLabel" xml:space="preserve">
+    <value>Background:</value>
+  </data>
+  <data name="Options_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Options_caseSensitiveCheckBox" xml:space="preserve">
+    <value>Case sensitive</value>
+  </data>
+  <data name="Options_clearRecentFilesButton" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Options_domainLabel" xml:space="preserve">
+    <value>Domain:</value>
+  </data>
+  <data name="Options_customBrowserRadioButton" xml:space="preserve">
+    <value>Use following command</value>
+  </data>
+  <data name="Options_defaultBrowserRadioButton" xml:space="preserve">
+    <value>Use default browser</value>
+  </data>
+  <data name="Options_enableProxySettingsCheckBox" xml:space="preserve">
+    <value>Enable proxy settings</value>
+  </data>
+  <data name="Options_extensionLabel" xml:space="preserve">
+    <value>Extensions:</value>
+  </data>
+  <data name="Options_extensionsButtonToolTip" xml:space="preserve">
+    <value>Manage file extensions</value>
+  </data>
+  <data name="Options_fileGroupBox1" xml:space="preserve">
+    <value>Initial folder</value>
+  </data>
+  <data name="Options_fileGroupBox2" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Options_fontColorLabel" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="Options_fontLabel" xml:space="preserve">
+    <value>Font:</value>
+  </data>
+  <data name="Options_formatGroupBox1" xml:space="preserve">
+    <value>Aspect</value>
+  </data>
+  <data name="Options_languageGroupBox1" xml:space="preserve">
+    <value>DtPad</value>
+  </data>
+  <data name="Options_helpLabel" xml:space="preserve">
+    <value>Set up DtPad configuration.</value>
+  </data>
+  <data name="Options_infoProxyPictureBoxToolTip" xml:space="preserve">
+    <value>DtPad uses Internet Explorer's settings to connect. Insert following
+fields just in case it requires a manual authentication.</value>
+  </data>
+  <data name="Options_internetGroupBox1" xml:space="preserve">
+    <value>Proxy</value>
+  </data>
+  <data name="Options_internetGroupBox2" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="Options_languageComboBoxItems" xml:space="preserve">
+    <value>English
+Italiano</value>
+  </data>
+  <data name="Options_languageLabel" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="Options_lastUsedFolderRadioButton" xml:space="preserve">
+    <value>Last used folder</value>
+  </data>
+  <data name="Options_lookAndFeelGroupBox1" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="Options_loopAtEOFCheckBox" xml:space="preserve">
+    <value>Loop at end of file (EOF)</value>
+  </data>
+  <data name="Options_minimizeOnTrayIconCheckBox" xml:space="preserve">
+    <value>Minimize on tray icon</value>
+  </data>
+  <data name="Options_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Options_passwordLabel" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="Options_proxyWarning" xml:space="preserve">
+    <value>Proxy settings are incorrect.
+Disable proxy or control that username and password are valorized.</value>
+  </data>
+  <data name="Options_recentFilesNumberLabel" xml:space="preserve">
+    <value>Recent files number:</value>
+  </data>
+  <data name="Options_renderModeComboBoxItems" xml:space="preserve">
+    <value>Standard
+Classic Windows</value>
+  </data>
+  <data name="Options_renderModeLabel" xml:space="preserve">
+    <value>Render mode:</value>
+  </data>
+  <data name="Options_searchGroupBox1" xml:space="preserve">
+    <value>Search Panel</value>
+  </data>
+  <data name="Options_searchHistoryLabel" xml:space="preserve">
+    <value>Search history:</value>
+  </data>
+  <data name="Options_showSearchPanelCheckBox" xml:space="preserve">
+    <value>Show search panel</value>
+  </data>
+  <data name="Options_specificFolderButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Options_specificFolderRadioButton" xml:space="preserve">
+    <value>Specific folder</value>
+  </data>
+  <data name="Options_statusBarCheckBox" xml:space="preserve">
+    <value>Status bar</value>
+  </data>
+  <data name="Options_statusLabel" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="Options_stayOnTopCheckBox" xml:space="preserve">
+    <value>Stay on top</value>
+  </data>
+  <data name="Options_Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Options_toolbarCheckBox" xml:space="preserve">
+    <value>Toolbar</value>
+  </data>
+  <data name="Options_urlsCheckBox" xml:space="preserve">
+    <value>Highlight URLs</value>
+  </data>
+  <data name="Options_usernameLabel" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="Options_viewGroupBox1" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="Options_viewGroupBox2" xml:space="preserve">
+    <value>Bars</value>
+  </data>
+  <data name="Options_wordWrapCheckBox" xml:space="preserve">
+    <value>Word wrap</value>
+  </data>
+  <data name="ReportBug_areaComboBoxItems" xml:space="preserve">
+    <value>
+File
+Edit
+View
+Session
+Search
+Action
+Options
+Tools
+Window
+Help
+Other</value>
+  </data>
+  <data name="ReportBug_areaLabel" xml:space="preserve">
+    <value>Area: *</value>
+  </data>
+  <data name="ReportBug_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ReportBug_descriptionLabel" xml:space="preserve">
+    <value>Description: *</value>
+  </data>
+  <data name="ReportBug_emailLabel" xml:space="preserve">
+    <value>E-mail: *</value>
+  </data>
+  <data name="ReportBug_errorMessageLabel" xml:space="preserve">
+    <value>Error message (if present):</value>
+  </data>
+  <data name="ReportBug_helpLabel" xml:space="preserve">
+    <value>Send via e-mail a bug report to the DtPad author.</value>
+  </data>
+  <data name="ReportBug_nameLabel" xml:space="preserve">
+    <value>Name: *</value>
+  </data>
+  <data name="ReportBug_requiredFieldsLabel" xml:space="preserve">
+    <value>* Required fields</value>
+  </data>
+  <data name="ReportBug_sendButton" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ReportBug_sendMeACopyCheckBox" xml:space="preserve">
+    <value>Send me a copy</value>
+  </data>
+  <data name="ReportBug_Title" xml:space="preserve">
+    <value>Bug Report</value>
+  </data>
+  <data name="Tools_addButtonToolTip" xml:space="preserve">
+    <value>Add new tool</value>
+  </data>
+  <data name="Tools_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Tools_commandLineLabel" xml:space="preserve">
+    <value>Command line:</value>
+  </data>
+  <data name="Tools_commandLinePictureBoxToolTip" xml:space="preserve">
+    <value>Insert the path and name of the executable
+(ie. C:\Program Files\DtPad\DtPad.exe)</value>
+  </data>
+  <data name="Tools_descriptionLabel" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="Tools_helpLabel" xml:space="preserve">
+    <value>Manage external applications linked inside DtPad "Tools" menu.</value>
+  </data>
+  <data name="Tools_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Tools_removeButtonToolTip" xml:space="preserve">
+    <value>Remove selected tool</value>
+  </data>
+  <data name="Tools_runComboBoxItems" xml:space="preserve">
+    <value>Normal window
+Minimized
+Maximized</value>
+  </data>
+  <data name="Tools_runLabel" xml:space="preserve">
+    <value>Run:</value>
+  </data>
+  <data name="Tools_Title" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="Tools_toolGroupBox1" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Tools_workingFolderLabel" xml:space="preserve">
+    <value>Working folder:</value>
+  </data>
+  <data name="Tools_workingFolderPictureBoxToolTip" xml:space="preserve">
+    <value>Insert the working path of the executable
+(ie. C:\Program Files\DtPad)</value>
+  </data>
+  <data name="VersionCheck_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="VersionCheck_statusLabel1" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="VersionCheck_statusLabelClosing" xml:space="preserve">
+    <value>closing open tabs...</value>
+  </data>
+  <data name="VersionCheck_statusLabelConnection" xml:space="preserve">
+    <value>establishing connection...</value>
+  </data>
+  <data name="VersionCheck_statusLabelDownload" xml:space="preserve">
+    <value>downloading last version informations...</value>
+  </data>
+  <data name="VersionCheck_statusLabelError" xml:space="preserve">
+    <value>connection error.</value>
+  </data>
+  <data name="VersionCheck_statusLabelOk" xml:space="preserve">
+    <value>your DtPad version is up to date!</value>
+  </data>
+  <data name="VersionCheck_statusLabelOld" xml:space="preserve">
+    <value>your DtPad version is to update!</value>
+  </data>
+  <data name="VersionCheck_statusLabelProxy" xml:space="preserve">
+    <value>setting proxy parameters...</value>
+  </data>
+  <data name="VersionCheck_statusLabelUpdater" xml:space="preserve">
+    <value>checking new DtPad Updater version...</value>
+  </data>
+  <data name="VersionCheck_Title" xml:space="preserve">
+    <value>Version Check</value>
+  </data>
+  <data name="VersionCheck_updateButton" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Welcome_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Welcome_signLabel" xml:space="preserve">
+    <value>Marco "Cav" Macciò</value>
+  </data>
+  <data name="Welcome_Title" xml:space="preserve">
+    <value>Welcome in DtPad</value>
+  </data>
+  <data name="Welcome_titleLabel" xml:space="preserve">
+    <value>DtPad</value>
+  </data>
+  <data name="Welcome_welcomeLabel" xml:space="preserve">
+    <value>Dear user,
+
+welcome to DtPad, the easy-to-use
+text editor with a tabs interface
+and lot of interesting functions. Due to its continue development state, every comment or report about the DtPad utilization will be welcome! Use the "Report a Bug" function inside "Help" menu, or write a message using the e-mail icon into "About" window.
+Best regards,</value>
+  </data>
+  <data name="AlertO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AlertO_Title" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="ErrorOR_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Copy error message to clipboard</value>
+  </data>
+  <data name="ErrorOR_reportBugButton" xml:space="preserve">
+    <value>Bug Report</value>
+  </data>
+  <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Copy error message to clipboard</value>
+  </data>
+  <data name="ErrorO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorO_Title" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Form1_closeAllButThisToolStripMenuItem" xml:space="preserve">
+    <value>Close All But This</value>
+  </data>
+  <data name="InfoO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="InfoO_Title" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="QuestionYNC_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="QuestionYNC_noButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QuestionYNC_Title" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="QuestionYNC_yesButton" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="QuestionYN_noButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QuestionYN_Title" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="QuestionYN_yesButton" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="WarningYNC_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="WarningYNC_noButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="WarningYNC_Title" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="WarningYNC_yesButton" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ErrorOR_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorOR_Title" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="searchPanel_caseCheckBox" xml:space="preserve">
+    <value>Case Sensitive</value>
+  </data>
+  <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
+    <value>Close All</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Form1_copyFullPathToolStripMenuItem" xml:space="preserve">
+    <value>File Path And Name</value>
+  </data>
+  <data name="searchPanel_loopCheckBox" xml:space="preserve">
+    <value>Loop At EOF</value>
+  </data>
+  <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Form1_openFileFolderPromptToolStripMenuItem" xml:space="preserve">
+    <value>Open File Folder Prompt</value>
+  </data>
+  <data name="Form1_openFileFolderToolStripMenuItem" xml:space="preserve">
+    <value>Open File Folder</value>
+  </data>
+  <data name="searchPanel_replaceLabel" xml:space="preserve">
+    <value>Replace:</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem1" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem1" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
+    <value>Search All Tabs</value>
+  </data>
+  <data name="searchPanel_searchLabel" xml:space="preserve">
+    <value>Search:</value>
+  </data>
+  <data name="Form1_Title" xml:space="preserve">
+    <value>DtPad - Untitled</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem1" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem2" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem1" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem2" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem1" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem2" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Form1_goToToolStripMenuItem1" xml:space="preserve">
+    <value>Go To Row...</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem1" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem2" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Form1_redoToolStripMenuItem1" xml:space="preserve">
+    <value>Redo &lt;Empty&gt;</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem1" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem1" xml:space="preserve">
+    <value>Undo &lt;Empty&gt;</value>
+  </data>
+  <data name="Form1_addCurrentFileToolStripMenuItem" xml:space="preserve">
+    <value>Add Current File</value>
+  </data>
+  <data name="Form1_clearFilesToolStripMenuItem" xml:space="preserve">
+    <value>Clear Files</value>
+  </data>
+  <data name="Form1_closeAllToolStripMenuItem" xml:space="preserve">
+    <value>Close All</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem1" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Form1_exitToolStripMenuItem" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Form1_favouriteFilesToolStripMenuItem" xml:space="preserve">
+    <value>Favourite Files</value>
+  </data>
+  <data name="Form1_filePropertiesToolStripMenuItem" xml:space="preserve">
+    <value>File Properties</value>
+  </data>
+  <data name="Form1_manageFavouritesToolStripMenuItem" xml:space="preserve">
+    <value>Manage...</value>
+  </data>
+  <data name="Form1_newToolStripMenuItem" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem" xml:space="preserve">
+    <value>File...</value>
+  </data>
+  <data name="Form1_printPreviewToolStripMenuItem" xml:space="preserve">
+    <value>Print Preview</value>
+  </data>
+  <data name="Form1_printSetupToolStripMenuItem" xml:space="preserve">
+    <value>Page Setup...</value>
+  </data>
+  <data name="Form1_printToolStripMenuItem" xml:space="preserve">
+    <value>Print...</value>
+  </data>
+  <data name="Form1_recentFilesToolStripMenuItem" xml:space="preserve">
+    <value>Recent Files</value>
+  </data>
+  <data name="Form1_saveAllToolStripMenuItem" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem" xml:space="preserve">
+    <value>File As...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Options_fileNode" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Options_formatNode" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="Options_internetNode" xml:space="preserve">
+    <value>Internet</value>
+  </data>
+  <data name="Options_lookAndFeelNode" xml:space="preserve">
+    <value>Look &amp; Feel</value>
+  </data>
+  <data name="Options_searchNode" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Options_viewNode" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="EmailManager_Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="EmailManager_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EmailManager_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EmailManager_ErrorMessage" xml:space="preserve">
+    <value>Error message</value>
+  </data>
+  <data name="EmailManager_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="EmailManager_BugReport" xml:space="preserve">
+    <value>Bug Report</value>
+  </data>
+  <data name="ExplorerManager_DeleteNote" xml:space="preserve">
+    <value>Are you sure to delete note</value>
+  </data>
+  <data name="ExplorerManager_Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="ExplorerManager_NoteNameNotEmpty" xml:space="preserve">
+    <value>Note title could not be emtpy.</value>
+  </data>
+  <data name="ExtensionManager_AlreadyExists" xml:space="preserve">
+    <value>Extension already existing! Choose another description.</value>
+  </data>
+  <data name="ExtensionManager_ExtensionNameNotEmpty" xml:space="preserve">
+    <value>Extension name could not be empty.</value>
+  </data>
+  <data name="ExtensionManager_New" xml:space="preserve">
+    <value>New Extension</value>
+  </data>
+  <data name="ExtensionManager_Reading" xml:space="preserve">
+    <value>Error during extensions file reading.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="ExtensionManager_Removing" xml:space="preserve">
+    <value>Error during extension removing.
+Current window will be closed.</value>
+  </data>
+  <data name="ExtensionManager_Saving" xml:space="preserve">
+    <value>Error during extension saving.
+Current window will be closed.</value>
+  </data>
+  <data name="ExtensionManager_Unvalorized" xml:space="preserve">
+    <value>Almost one extension is unvalorized.
+Complete extensions information to proceed.</value>
+  </data>
+  <data name="FileListManager_ClearHistoryRecentFiles" xml:space="preserve">
+    <value>Are you sure to clear recent files history?</value>
+  </data>
+  <data name="FileListManager_EmptyTool" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Form1_aboutToolStripButton" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Form1_aboutToolStripMenuItem" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Form1_addNewToolToolStripMenuItem" xml:space="preserve">
+    <value>Manage Tools...</value>
+  </data>
+  <data name="notePanel_addNoteToolStripButton" xml:space="preserve">
+    <value>Add New Note</value>
+  </data>
+  <data name="Form1_addPrefixToolStripMenuItem" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="Form1_appendFileToolStripButton" xml:space="preserve">
+    <value>Append File...</value>
+  </data>
+  <data name="Form1_appendFileToolStripMenuItem" xml:space="preserve">
+    <value>Append File...</value>
+  </data>
+  <data name="Form1_characterCasingToolStripMenuItem" xml:space="preserve">
+    <value>Character Casing</value>
+  </data>
+  <data name="Form1_checkForNewVersionToolStripMenuItem" xml:space="preserve">
+    <value>Check For New Version...</value>
+  </data>
+  <data name="searchPanel_clearHistoryToolStripMenuItem" xml:space="preserve">
+    <value>Clear History</value>
+  </data>
+  <data name="Form1_closeToolStripButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="searchPanel_closeToolStripButton2" xml:space="preserve">
+    <value>Close Search Panel</value>
+  </data>
+  <data name="Form1_closeToolStripButtonToolTip" xml:space="preserve">
+    <value>Close Current Tab</value>
+  </data>
+  <data name="Form1_Closing" xml:space="preserve">
+    <value>Closing the application all unsaved data will get lost.
+Do you want to save the changes?</value>
+  </data>
+  <data name="Form1_convertToolStripMenuItem" xml:space="preserve">
+    <value>Convert</value>
+  </data>
+  <data name="Form1_copyAppendToolStripMenuItem" xml:space="preserve">
+    <value>Copy Append</value>
+  </data>
+  <data name="Form1_copyToolStripButton" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Form1_countOccurencesToolStripMenuItem" xml:space="preserve">
+    <value>Count Occurences</value>
+  </data>
+  <data name="Form1_cutAppendToolStripMenuItem" xml:space="preserve">
+    <value>Cut Append</value>
+  </data>
+  <data name="Form1_cutToolStripButton" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
+    <value>Diario di un traduttore</value>
+  </data>
+  <data name="Form1_doubleReturnToReturnToolStripMenuItem" xml:space="preserve">
+    <value>Double Return To Return</value>
+  </data>
+  <data name="Form1_doubleSpacesSpacesToolStripMenuItem" xml:space="preserve">
+    <value>Double Space To Space</value>
+  </data>
+  <data name="Form1_editToolStripMenuItem" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Form1_emptyToolStripMenuItem" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Form1_exitToolStripMenuItem1" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Form1_favouriteFilesToolStripDropDownButton" xml:space="preserve">
+    <value>Favourite Files</value>
+  </data>
+  <data name="Form1_fileExtensionsToolStripMenuItem" xml:space="preserve">
+    <value>File Extensions...</value>
+  </data>
+  <data name="Form1_fileToolStripMenuItem" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="searchPanel_findFirstToolStripButton" xml:space="preserve">
+    <value>Find First</value>
+  </data>
+  <data name="Form1_findFirstToolStripMenuItem" xml:space="preserve">
+    <value>Find First</value>
+  </data>
+  <data name="searchPanel_findLastToolStripButton" xml:space="preserve">
+    <value>Find Last</value>
+  </data>
+  <data name="Form1_findLastToolStripMenuItem" xml:space="preserve">
+    <value>Find Last</value>
+  </data>
+  <data name="searchPanel_findNextToolStripButton" xml:space="preserve">
+    <value>Find Next</value>
+  </data>
+  <data name="Form1_findNextToolStripMenuItem" xml:space="preserve">
+    <value>Find Next</value>
+  </data>
+  <data name="searchPanel_findPreviousToolStripButton" xml:space="preserve">
+    <value>Find Previous</value>
+  </data>
+  <data name="Form1_findPreviousToolStripMenuItem" xml:space="preserve">
+    <value>Find Previous</value>
+  </data>
+  <data name="Form1_fontToolStripMenuItem" xml:space="preserve">
+    <value>Font...</value>
+  </data>
+  <data name="Form1_formatToolStripMenuItem" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Form1_goToToolStripMenuItem" xml:space="preserve">
+    <value>Go To Row...</value>
+  </data>
+  <data name="Form1_helpToolStripMenuItem" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Form1_helpToolStripMenuItem1" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="searchPanel_historyToolStripDropDownButton" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="Form1_indentationToolStripMenuItem" xml:space="preserve">
+    <value>Indentation</value>
+  </data>
+  <data name="Form1_indentToolStripButton" xml:space="preserve">
+    <value>Indent</value>
+  </data>
+  <data name="Form1_indentToolStripMenuItem" xml:space="preserve">
+    <value>Indent</value>
+  </data>
+  <data name="Form1_internalExplorerToolStripMenuItem" xml:space="preserve">
+    <value>Internal Explorer</value>
+  </data>
+  <data name="Form1_mergeTabsToolStripButton" xml:space="preserve">
+    <value>Merge Tabs...</value>
+  </data>
+  <data name="Form1_mergeToolStripMenuItem" xml:space="preserve">
+    <value>Merge Tabs...</value>
+  </data>
+  <data name="Form1_minimizeOnTrayIconToolStripMenuItem" xml:space="preserve">
+    <value>Minimize On Tray Icon</value>
+  </data>
+  <data name="Form1_moveToolStripMenuItem" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="Form1_newToolStripButton" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Form1_newToolStripButtonToolTip" xml:space="preserve">
+    <value>Open New Tab</value>
+  </data>
+  <data name="Form1_newToolStripMenuItem1" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="notePanel_newToolStripMenuItem3" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Form1_nextTabToolStripMenuItem" xml:space="preserve">
+    <value>Next Tab</value>
+  </data>
+  <data name="Form1_notesTabPageToolTip" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="Form1_notifyIconBalloonTipText" xml:space="preserve">
+    <value>Click on this icon to restore DtPad</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem1" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="Form1_openToolStripSplitButton" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="Form1_optionsToolStripButton" xml:space="preserve">
+    <value>Settings...</value>
+  </data>
+  <data name="Form1_optionsToolStripMenuItem" xml:space="preserve">
+    <value>Settings...</value>
+  </data>
+  <data name="Form1_outdentToolStripButton" xml:space="preserve">
+    <value>Outdent</value>
+  </data>
+  <data name="Form1_outdentToolStripMenuItem" xml:space="preserve">
+    <value>Outdent</value>
+  </data>
+  <data name="Form1_pasteToolStripButton" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Form1_prefixToolStripButton" xml:space="preserve">
+    <value>Insert Prefix</value>
+  </data>
+  <data name="Form1_prefixToolStripComboBox" xml:space="preserve">
+    <value>Insert text</value>
+  </data>
+  <data name="Form1_prefixToolStripMenuItem" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="Form1_prefixToolStripTextBox" xml:space="preserve">
+    <value>Write here prefix</value>
+  </data>
+  <data name="Form1_previousTabToolStripMenuItem" xml:space="preserve">
+    <value>Previous Tab</value>
+  </data>
+  <data name="Form1_printToolStripButton" xml:space="preserve">
+    <value>Print...</value>
+  </data>
+  <data name="Form1_readmeToolStripMenuItem" xml:space="preserve">
+    <value>Readme</value>
+  </data>
+  <data name="Form1_recentFilesToolStripMenuItem1" xml:space="preserve">
+    <value>Recent Files</value>
+  </data>
+  <data name="Form1_redoToolStripButton" xml:space="preserve">
+    <value>Redo &lt;Empty&gt;</value>
+  </data>
+  <data name="Form1_redoToolStripMenuItem" xml:space="preserve">
+    <value>Redo &lt;Empty&gt;</value>
+  </data>
+  <data name="notePanel_removeNoteToolStripButton" xml:space="preserve">
+    <value>Remove Selected Note</value>
+  </data>
+  <data name="Form1_removePrefixToolStripMenuItem" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="notePanel_removeToolStripMenuItem" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="searchPanel_replaceAllToolStripButton" xml:space="preserve">
+    <value>Replace All</value>
+  </data>
+  <data name="Form1_replaceAllToolStripMenuItem" xml:space="preserve">
+    <value>Replace All</value>
+  </data>
+  <data name="searchPanel_replacePreviousToolStripButton" xml:space="preserve">
+    <value>Replace Previous</value>
+  </data>
+  <data name="Form1_replacePreviousToolStripMenuItem" xml:space="preserve">
+    <value>Replace Previous</value>
+  </data>
+  <data name="searchPanel_replaceToolStripButton2" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="Form1_replaceToolStripMenuItem" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+  <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
+    <value>Report Bug...</value>
+  </data>
+  <data name="Form1_restoreDtPadToolStripMenuItem" xml:space="preserve">
+    <value>Restore DtPad</value>
+  </data>
+  <data name="Form1_saveAllToolStripButton" xml:space="preserve">
+    <value>Save All</value>
+  </data>
+  <data name="Form1_saveToolStripButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="searchPanel_searchCountToolStripButton" xml:space="preserve">
+    <value>Count Occurences</value>
+  </data>
+  <data name="Form1_searchToolStripMenuItem" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Form1_selectedLinesToolStripMenuItem" xml:space="preserve">
+    <value>Rows Up/Down...</value>
+  </data>
+  <data name="Form1_showSearchPanelToolStripButton" xml:space="preserve">
+    <value>Show Search Panel</value>
+  </data>
+  <data name="Form1_showSearchPanelToolStripMenuItem" xml:space="preserve">
+    <value>Show Search Panel</value>
+  </data>
+  <data name="Form1_spacesTabToolStripMenuItem" xml:space="preserve">
+    <value>Spaces To Tab</value>
+  </data>
+  <data name="Form1_SpecifyPrefix" xml:space="preserve">
+    <value>Specify, inside the upper text box, a prefix string.</value>
+  </data>
+  <data name="Form1_statusBarToolStripMenuItem" xml:space="preserve">
+    <value>Status Bar</value>
+  </data>
+  <data name="Form1_stayOnTopToolStripButton" xml:space="preserve">
+    <value>Stay On Top</value>
+  </data>
+  <data name="Form1_stayOnTopToolStripMenuItem" xml:space="preserve">
+    <value>Stay On Top</value>
+  </data>
+  <data name="Form1_swapWithClipboardToolStripMenuItem" xml:space="preserve">
+    <value>Swap with Clipboard</value>
+  </data>
+  <data name="Form1_tabExplorerTabPageToolTip" xml:space="preserve">
+    <value>Tab Explorer</value>
+  </data>
+  <data name="Form1_tabSpaceToolStripMenuItem" xml:space="preserve">
+    <value>Tab To Spaces</value>
+  </data>
+  <data name="Form1_tabToolStripMenuItem" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Form1_tabToReturnToolStripMenuItem" xml:space="preserve">
+    <value>Tab To Return</value>
+  </data>
+  <data name="Form1_timeDateToolStripMenuItem" xml:space="preserve">
+    <value>Datetime...</value>
+  </data>
+  <data name="Form1_toLowercaseToolStripMenuItem" xml:space="preserve">
+    <value>To Lowercase</value>
+  </data>
+  <data name="Form1_toolbarToolStripMenuItem" xml:space="preserve">
+    <value>Toolbar</value>
+  </data>
+  <data name="Form1_toolsToolStripMenuItem" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="Form1_toolStripStatusLabel" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="Form1_toUppercaseToolStripMenuItem" xml:space="preserve">
+    <value>To Uppercase</value>
+  </data>
+  <data name="Form1_undoToolStripButton" xml:space="preserve">
+    <value>Undo &lt;Empty&gt;</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo &lt;Empty&gt;</value>
+  </data>
+  <data name="Form1_verticalContainerToolStripButton" xml:space="preserve">
+    <value>Show Internal Explorer</value>
+  </data>
+  <data name="Form1_viewToolStripMenuItem" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="notePanel_warningRemoveNoteToolStripButton" xml:space="preserve">
+    <value>Prompt Removal Of Notes</value>
+  </data>
+  <data name="Form1_windowToolStripMenuItem" xml:space="preserve">
+    <value>Window</value>
+  </data>
+  <data name="Form1_wordWrapToolStripMenuItem" xml:space="preserve">
+    <value>Word Wrap</value>
+  </data>
+  <data name="FileManager_Appended" xml:space="preserve">
+    <value>appended</value>
+  </data>
+  <data name="FileManager_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="FileManager_Opened" xml:space="preserve">
+    <value>opened</value>
+  </data>
+  <data name="FileManager_Saved" xml:space="preserve">
+    <value>saved</value>
+  </data>
+  <data name="FileManager_SavingReadonly" xml:space="preserve">
+    <value>Selected file is read-only and could not be overwrited.
+Press OK to choose another destination.</value>
+  </data>
+  <data name="NoteManager_AlreadyExists" xml:space="preserve">
+    <value>A note with this title already exists. Choose a different one.</value>
+  </data>
+  <data name="NoteManager_ErrorCreation" xml:space="preserve">
+    <value>Error during note file creation.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="NoteManager_ErrorReading" xml:space="preserve">
+    <value>Error during note file reading.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="NoteManager_ErrorRemoving" xml:space="preserve">
+    <value>Error during note file removing.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="SearchManager_EOF" xml:space="preserve">
+    <value>End of document reached.
+Start from beginning?</value>
+  </data>
+  <data name="SearchManager_NotFound" xml:space="preserve">
+    <value>The search text could not be found.</value>
+  </data>
+  <data name="SearchManager_OccurencesMore" xml:space="preserve">
+    <value>occurrences found</value>
+  </data>
+  <data name="SearchManager_ReplacedMore" xml:space="preserve">
+    <value>occurrences replaced</value>
+  </data>
+  <data name="SearchManager_SOF" xml:space="preserve">
+    <value>Top of document reached.
+Start from bottom?</value>
+  </data>
+  <data name="Form1_rowToolStripStatusLabel" xml:space="preserve">
+    <value>Row:</value>
+  </data>
+  <data name="TabManager_SaveUntitled" xml:space="preserve">
+    <value>The current untitled file has been modified.
+Do you want to save the file before closing it?</value>
+  </data>
+  <data name="TabManager_TabMerged" xml:space="preserve">
+    <value>tabs merged</value>
+  </data>
+  <data name="TextManager_LastAction" xml:space="preserve">
+    <value>Last Action</value>
+  </data>
+  <data name="TextManager_Redo" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="TextManager_Undo" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="ToolManager_AlreadyExists" xml:space="preserve">
+    <value>Tool name already existing! Choose another description.</value>
+  </data>
+  <data name="ToolManager_ErrorReading" xml:space="preserve">
+    <value>Error during tool file reading.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="ToolManager_ErrorRemoving" xml:space="preserve">
+    <value>Error during tool removing.
+Current window will be closed.</value>
+  </data>
+  <data name="ToolManager_ErrorSaving" xml:space="preserve">
+    <value>Error during tool saving.
+Current window will be closed.</value>
+  </data>
+  <data name="ToolManager_NameNotEmtpy" xml:space="preserve">
+    <value>Tool name could not be empty!</value>
+  </data>
+  <data name="ToolManager_New" xml:space="preserve">
+    <value>New Tool</value>
+  </data>
+  <data name="ToolManager_Unvalorized" xml:space="preserve">
+    <value>Almost one tool is unvalorized.
+Complete tools information to proceed.</value>
+  </data>
+  <data name="VersionCheckManager_ErrorConnection" xml:space="preserve">
+    <value>Connection error.</value>
+  </data>
+  <data name="VersionCheckManager_ErrorDownloadingUpdater" xml:space="preserve">
+    <value>Error during new DtPad Updater version download.</value>
+  </data>
+  <data name="VersionCheckManager_InUse" xml:space="preserve">
+    <value>is in use</value>
+  </data>
+  <data name="WindowManager_CommandExecution" xml:space="preserve">
+    <value>Command execution interrupted!</value>
+  </data>
+  <data name="WindowManager_Exception" xml:space="preserve">
+    <value>Exception occured:</value>
+  </data>
+  <data name="WindowManager_FatalException" xml:space="preserve">
+    <value>Fatal exception occured:</value>
+  </data>
+  <data name="WindowManager_ProgramExecution" xml:space="preserve">
+    <value>Program execution interrupted!</value>
+  </data>
+  <data name="Form1_tabPage1" xml:space="preserve">
+    <value>Untitled</value>
+  </data>
+  <data name="Options_closeTabButtonOnLabel" xml:space="preserve">
+    <value>Close button on:</value>
+  </data>
+  <data name="Options_internalExplorerCheckBox" xml:space="preserve">
+    <value>Internal Explorer</value>
+  </data>
+  <data name="Options_tabCloseButtonOnComboBoxItems" xml:space="preserve">
+    <value>Right tab panel margin
+Each tab
+Active tab
+Do not show</value>
+  </data>
+  <data name="Options_viewGroupBox3" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="DatetimeSelect_dateLabel" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="DatetimeSelect_resetDatetimeButtonToolTip" xml:space="preserve">
+    <value>Set today datetime</value>
+  </data>
+  <data name="DatetimeSelect_timeLabel" xml:space="preserve">
+    <value>Time:</value>
+  </data>
+  <data name="Form1_licenseAgreementToolStripMenuItem" xml:space="preserve">
+    <value>License Agreement</value>
+  </data>
+  <data name="clipboardPanel_clearClipboardToolStripButton" xml:space="preserve">
+    <value>Clear Clipboard</value>
+  </data>
+  <data name="Form1_clipboardTabPageToolTip" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="ClipboardManager_ErrorCreation" xml:space="preserve">
+    <value>Error during clipboard file creation.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="ClipboardManager_ErrorReading" xml:space="preserve">
+    <value>Error during clipboard file reading.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="clipboardPanel_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="clipboardPanel_showAllContentToolStripMenuItem" xml:space="preserve">
+    <value>Show All Content</value>
+  </data>
+  <data name="ShowContent_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ShowContent_Title" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="Form1_deleteLineToolStripMenuItem" xml:space="preserve">
+    <value>Delete Selected Rows</value>
+  </data>
+  <data name="Form1_addSuffixToolStripMenuItem" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="Form1_removeSuffixToolStripMenuItem" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Form1_suffixToolStripMenuItem" xml:space="preserve">
+    <value>Suffix</value>
+  </data>
+  <data name="Form1_suffixToolStripTextBox" xml:space="preserve">
+    <value>Write here suffix</value>
+  </data>
+  <data name="Form1_SpecifySuffix" xml:space="preserve">
+    <value>Specify, inside the upper text box, a suffix string.</value>
+  </data>
+  <data name="Form1_oneLineDownToolStripMenuItem" xml:space="preserve">
+    <value>One Row Down</value>
+  </data>
+  <data name="Form1_oneLineUpToolStripMenuItem" xml:space="preserve">
+    <value>One Row Up</value>
+  </data>
+  <data name="Form1_moveLinesUpDownToolStripButton" xml:space="preserve">
+    <value>Move Rows Up/Down</value>
+  </data>
+  <data name="Form1_oneLineDownToolStripMenuItem1" xml:space="preserve">
+    <value>Move One Row Down</value>
+  </data>
+  <data name="Form1_oneLineUpToolStripMenuItem1" xml:space="preserve">
+    <value>Move One Row Up</value>
+  </data>
+  <data name="Form1_removePrefixToolStripMenuItem1" xml:space="preserve">
+    <value>Remove Prefix</value>
+  </data>
+  <data name="Form1_insertSuffixToolStripMenuItem" xml:space="preserve">
+    <value>Insert Suffix</value>
+  </data>
+  <data name="Form1_removeSuffixToolStripMenuItem1" xml:space="preserve">
+    <value>Remove Suffix</value>
+  </data>
+  <data name="Form1_tabPage1ToolTip" xml:space="preserve">
+    <value>Untitled</value>
+  </data>
+  <data name="Form1_calculatorTabPageToolTip" xml:space="preserve">
+    <value>Calculator</value>
+  </data>
+  <data name="CalculationManager_ErrorNoOperation" xml:space="preserve">
+    <value>Error: operator not valid.</value>
+  </data>
+  <data name="CalculationManager_ErrorParsing" xml:space="preserve">
+    <value>Error during calculator value parsing.</value>
+  </data>
+  <data name="calculatorPanel_copyToolStripMenuItem2" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="calculatorPanel_selectAllToolStripMenuItem2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Form1_doubleTabToTabToolStripMenuItem" xml:space="preserve">
+    <value>Double Tab To Tab</value>
+  </data>
+  <data name="Form1_returnToTabToolStripMenuItem" xml:space="preserve">
+    <value>Return To Tab</value>
+  </data>
+  <data name="Form1_fileExplorerTabPageToolTip" xml:space="preserve">
+    <value>File Explorer</value>
+  </data>
+  <data name="FileExplorerManager_ErrorLoadingDirFiles" xml:space="preserve">
+    <value>Error during directories and files load.</value>
+  </data>
+  <data name="FileExplorerManager_ErrorLoadingTree" xml:space="preserve">
+    <value>Error during tree drives load.</value>
+  </data>
+  <data name="FileExplorerManager_DeviceNotReady" xml:space="preserve">
+    <value>Selected device is not ready. Insert a disk and retry.</value>
+  </data>
+  <data name="FileExplorerManager_NoDisk" xml:space="preserve">
+    <value>No disk</value>
+  </data>
+  <data name="filePanel_openIntoWindowsExplorerToolStripMenuItem" xml:space="preserve">
+    <value>Open Into Windows Explorer</value>
+  </data>
+  <data name="filePanel_openToolStripMenuItem" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="filePanel_refreshToolStripMenuItem" xml:space="preserve">
+    <value>Refresh Folder</value>
+  </data>
+  <data name="filePanel_hiddenToolStripButton" xml:space="preserve">
+    <value>Show Hidden Files/Folders</value>
+  </data>
+  <data name="filePanel_hiddenToolStripButtonToolTip" xml:space="preserve">
+    <value>Show Hidden Files/Folders</value>
+  </data>
+  <data name="Form1_exportPreferencesToolStripMenuItem" xml:space="preserve">
+    <value>Export Settings And Data...</value>
+  </data>
+  <data name="Form1_importPreferencesToolStripMenuItem" xml:space="preserve">
+    <value>Import Settings And Data...</value>
+  </data>
+  <data name="ImportExportManager_ExportFileDescription" xml:space="preserve">
+    <value>DtPad export files</value>
+  </data>
+  <data name="ImportExportManager_ExportStatusLabel1" xml:space="preserve">
+    <value>Settings and data file</value>
+  </data>
+  <data name="ImportExportManager_ExportStatusLabel2" xml:space="preserve">
+    <value>exported</value>
+  </data>
+  <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
+    <value>Select the folder where to place settings and data (ie. notes, favourites files) export:</value>
+  </data>
+  <data name="ImportExportManager_ImportStatusLabel1" xml:space="preserve">
+    <value>Settings and data file</value>
+  </data>
+  <data name="ImportExportManager_ImportStatusLabel2" xml:space="preserve">
+    <value>imported</value>
+  </data>
+  <data name="ImportExportManager_WarningImport" xml:space="preserve">
+    <value>Selected export file has been made with a different DtPad version.
+To avoid compatibility issues it is advise not to import it.
+Do you still want to continue?</value>
+  </data>
+  <data name="Form1_toInitialUppercaseToolStripMenuItem" xml:space="preserve">
+    <value>To Initial Uppercase</value>
+  </data>
+  <data name="TextManager_ChangeCharsCase" xml:space="preserve">
+    <value>Select the text portion which you like to convert.</value>
+  </data>
+  <data name="ZipExtract_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="ZipExtract_extractSelectedFilesButton" xml:space="preserve">
+    <value>Extract Selected Files</value>
+  </data>
+  <data name="ZipExtract_helpLabel" xml:space="preserve">
+    <value>Extract the content of opened archive.</value>
+  </data>
+  <data name="ZipExtract_Title" xml:space="preserve">
+    <value>Archive Extraction</value>
+  </data>
+  <data name="ZipExtract_zipContentLabel" xml:space="preserve">
+    <value>Archive file content:</value>
+  </data>
+  <data name="ZipManager_CompressedSizeColumn" xml:space="preserve">
+    <value>Compressed</value>
+  </data>
+  <data name="ZipManager_ExtractSuccess" xml:space="preserve">
+    <value>Selected files extraction completed!</value>
+  </data>
+  <data name="ZipManager_folderBrowserDialogDescription" xml:space="preserve">
+    <value>Select the folder where extract archive file content:</value>
+  </data>
+  <data name="ZipManager_NameColumn" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ZipManager_OriginalSizeColumn" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="ZipManager_OverwriteQuestion" xml:space="preserve">
+    <value>File "{0}" already exists.
+Do you want to overwrite it?</value>
+  </data>
+  <data name="ZipExtract_filenameLabel1" xml:space="preserve">
+    <value>File name:</value>
+  </data>
+  <data name="Form1_promptWindowToolStripMenuItem" xml:space="preserve">
+    <value>Prompt Window</value>
+  </data>
+  <data name="PromptManager_Error" xml:space="preserve">
+    <value>An error occured during prompt command execution!</value>
+  </data>
+  <data name="PromptManager_Date" xml:space="preserve">
+    <value>The current date is:</value>
+  </data>
+  <data name="PromptManager_NotFindPath" xml:space="preserve">
+    <value>Could not find the specified path</value>
+  </data>
+  <data name="PromptManager_Time" xml:space="preserve">
+    <value>The current time is:</value>
+  </data>
+  <data name="PromptManager_UnrecognizedCommand" xml:space="preserve">
+    <value>is an unrecognized command</value>
+  </data>
+  <data name="Form1_reloadToolStripMenuItem" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="Form1_aSCIIToolStripMenuItem" xml:space="preserve">
+    <value>ANSI</value>
+  </data>
+  <data name="Form1_defaultToolStripMenuItem" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Form1_fileEncodingToolStripMenuItem" xml:space="preserve">
+    <value>File Encoding</value>
+  </data>
+  <data name="Form1_useOriginalToolStripMenuItem" xml:space="preserve">
+    <value>Use Existing for Opened Files</value>
+  </data>
+  <data name="Form1_uTF8ToolStripMenuItem" xml:space="preserve">
+    <value>UTF-8</value>
+  </data>
+  <data name="Options_encodingNode" xml:space="preserve">
+    <value>Encoding</value>
+  </data>
+  <data name="Options_useExistingCheckBox" xml:space="preserve">
+    <value>Use existing for opened files</value>
+  </data>
+  <data name="Options_defaultComboBoxItems" xml:space="preserve">
+    <value>ANSI
+UTF-8
+UTF-16 Big Endian
+UTF-32 Little Endian</value>
+  </data>
+  <data name="Options_defaultLabel" xml:space="preserve">
+    <value>Default:</value>
+  </data>
+  <data name="Options_encodingGroupBox1" xml:space="preserve">
+    <value>Encoding</value>
+  </data>
+  <data name="Form1_uTF16BigEndianToolStripMenuItem" xml:space="preserve">
+    <value>UTF-16 Big Endian</value>
+  </data>
+  <data name="Form1_uTF32LittleEndianToolStripMenuItem" xml:space="preserve">
+    <value>UTF-32 Little Endian</value>
+  </data>
+  <data name="Form1_resetSettingsToolStripMenuItem" xml:space="preserve">
+    <value>Reset Settings</value>
+  </data>
+  <data name="VersionCheck_warningPictureBoxToolTip" xml:space="preserve">
+    <value>If you are using a proxy, try to set it on options window</value>
+  </data>
+  <data name="Form1_lineNumbersToolStripMenuItem" xml:space="preserve">
+    <value>Row Numbers</value>
+  </data>
+  <data name="Form1_lineNumbersToolStripButton" xml:space="preserve">
+    <value>Row Numbers</value>
+  </data>
+  <data name="Options_lineNumbersCheckBox" xml:space="preserve">
+    <value>Row numbers</value>
+  </data>
+  <data name="Form1_wordWrapToolStripButton" xml:space="preserve">
+    <value>Word Wrap</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem2" xml:space="preserve">
+    <value>Close Internal Explorer</value>
+  </data>
+  <data name="Form1_resetWindowLayoutToolStripMenuItem" xml:space="preserve">
+    <value>Reset Window Layout</value>
+  </data>
+  <data name="Form1_rOT13ToolStripMenuItem" xml:space="preserve">
+    <value>ROT-13</value>
+  </data>
+  <data name="FileManager_NoFileToReadonly" xml:space="preserve">
+    <value>Temporary editing area could not be made readonly. Only open files could.</value>
+  </data>
+  <data name="FileManager_NoTextForPDF" xml:space="preserve">
+    <value>Text area is empty.</value>
+  </data>
+  <data name="FileManager_PDFFile" xml:space="preserve">
+    <value>PDF document (*.pdf)|*.pdf</value>
+  </data>
+  <data name="Form1_toggleReadonlyToolStripMenuItem" xml:space="preserve">
+    <value>Toggle Readonly</value>
+  </data>
+  <data name="Form1_saveAsPDFToolStripMenuItem" xml:space="preserve">
+    <value>File As PDF...</value>
+  </data>
+  <data name="Form1_showFileInBrowserToolStripMenuItem" xml:space="preserve">
+    <value>Show File in Browser</value>
+  </data>
+  <data name="Form1_focusOnEditorToolStripMenuItem" xml:space="preserve">
+    <value>Focus On Main Text Area</value>
+  </data>
+  <data name="tabPanel_moveTabDownToolStripButton" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="tabPanel_moveTabUpToolStripButton" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="InternetManager_NoContent" xml:space="preserve">
+    <value>Text area is empty.</value>
+  </data>
+  <data name="filePanel_openSelectedFileToolStripButton" xml:space="preserve">
+    <value>Open Selected File</value>
+  </data>
+  <data name="FontSelect_boldCheckBox" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="FontSelect_colorLabel" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="FontSelect_effectsGroupBox" xml:space="preserve">
+    <value>Effects</value>
+  </data>
+  <data name="FontSelect_fontLabel" xml:space="preserve">
+    <value>Font:</value>
+  </data>
+  <data name="FontSelect_helpLabel" xml:space="preserve">
+    <value>Select text editor font appearance.</value>
+  </data>
+  <data name="FontSelect_italicCheckBox" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="FontSelect_previewGroupBox" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="FontSelect_previewTextBox" xml:space="preserve">
+    <value>This text is a font example</value>
+  </data>
+  <data name="FontSelect_sizeLabel" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="FontSelect_Title" xml:space="preserve">
+    <value>Font</value>
+  </data>
+  <data name="FontSelect_underlinedCheckBox" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="FontManager_ResetQuestion" xml:space="preserve">
+    <value>Are you sure you want to reset font to default?</value>
+  </data>
+  <data name="FontSelect_resetButton" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ColorSelect_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ColorSelect_colorLabel" xml:space="preserve">
+    <value>Color:</value>
+  </data>
+  <data name="ColorSelect_helpLabel" xml:space="preserve">
+    <value>Select a color.</value>
+  </data>
+  <data name="ColorSelect_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Options_BrowserFileDialog" xml:space="preserve">
+    <value>All files (*.*)|*.*|Executable files (*.exe)|*.exe</value>
+  </data>
+  <data name="ColorSelect_Title" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="FontSelect_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ReplaceManager_NotFound" xml:space="preserve">
+    <value>Can't find searched text.</value>
+  </data>
+  <data name="ReplaceManager_ReplacedMore" xml:space="preserve">
+    <value>occurrences replaced</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem3" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem2" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem2" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem2" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Form1_sessionToolStripMenuItem" xml:space="preserve">
+    <value>Session</value>
+  </data>
+  <data name="Form1_sessionImageToolStripButton" xml:space="preserve">
+    <value>Session</value>
+  </data>
+  <data name="SessionManager_Closed" xml:space="preserve">
+    <value>Session "{0}" closed</value>
+  </data>
+  <data name="SessionManager_Opened" xml:space="preserve">
+    <value>Session "{0}" opened</value>
+  </data>
+  <data name="SessionManager_Saved" xml:space="preserve">
+    <value>Session "{0}" saved</value>
+  </data>
+  <data name="SessionManager_FileDialog" xml:space="preserve">
+    <value>DtPad session files (*.dps)|*.dps</value>
+  </data>
+  <data name="SessionManager_AlreadyOpen" xml:space="preserve">
+    <value>A session is already open. Do you want to discard it to open a new one?
+Any unsaved change will get lost.</value>
+  </data>
+  <data name="SessionManager_openingErrors" xml:space="preserve">
+    <value>One or more session files could not be opened since they not exists anymore in their locations:
+</value>
+  </data>
+  <data name="Form1_closeSessionToolStripButton" xml:space="preserve">
+    <value>Close Session</value>
+  </data>
+  <data name="Form1_saveSessionToolStripButton" xml:space="preserve">
+    <value>Save Session</value>
+  </data>
+  <data name="SessionManager_SaveAllFiles" xml:space="preserve">
+    <value>All modified tabs will be saved, so they could be referenced inside the session.
+Are you sure you want to proceed?</value>
+  </data>
+  <data name="SessionManager_SaveSession" xml:space="preserve">
+    <value>All tabs saved succesfully!
+Click OK to proceed into session file name selection.</value>
+  </data>
+  <data name="About_createdByLabel_FE" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="About_titleLabel_FE" xml:space="preserve">
+    <value>DtPad - Family Edition</value>
+  </data>
+  <data name="About_websiteLabel1_FE" xml:space="preserve">
+    <value>Copyright:</value>
+  </data>
+  <data name="About_websiteLabel_FE" xml:space="preserve">
+    <value>2011</value>
+  </data>
+  <data name="Welcome_signLabel_FE" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="SessionManager_NoContent" xml:space="preserve">
+    <value>There is no content to save into session.</value>
+  </data>
+  <data name="FileListManager_ClearHistoryRecentSessions" xml:space="preserve">
+    <value>Are you sure to clear recent sessions history?</value>
+  </data>
+  <data name="Form1_clearSessionsToolStripMenuItem" xml:space="preserve">
+    <value>Clear Sessions</value>
+  </data>
+  <data name="Form1_recentSessionsToolStripMenuItem" xml:space="preserve">
+    <value>Recent Sessions</value>
+  </data>
+  <data name="CharSelect_clipboardedLabel" xml:space="preserve">
+    <value>No special char</value>
+  </data>
+  <data name="CharSelect_clipboardedLabel1" xml:space="preserve">
+    <value>Clipboarded in memory:</value>
+  </data>
+  <data name="CharSelect_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CharSelect_helpLabel" xml:space="preserve">
+    <value>Select a char to copy into clipboard memory.</value>
+  </data>
+  <data name="CharSelect_Title" xml:space="preserve">
+    <value>Symbol Selection</value>
+  </data>
+  <data name="CharSelect_titleLabel" xml:space="preserve">
+    <value>Double click a char to copy into clipboard:</value>
+  </data>
+  <data name="Form1_insertSpecialCharToolStripMenuItem" xml:space="preserve">
+    <value>Special Char...</value>
+  </data>
+  <data name="Form1_sortTabsAlphabeticallyToolStripMenuItem" xml:space="preserve">
+    <value>Sort Tabs Alphabetically</value>
+  </data>
+  <data name="tabPanel_sortTabsAlphabeticallyToolStripButton" xml:space="preserve">
+    <value>Sort Tabs Alphabetically</value>
+  </data>
+  <data name="TabPageObject_WrongObject" xml:space="preserve">
+    <value>Input object is not a TabPageObject : {0}.
+Operation could not be completed.</value>
+  </data>
+  <data name="FileManager_ReadonlyNo" xml:space="preserve">
+    <value>File "{0}" set to normal access mode</value>
+  </data>
+  <data name="FileManager_ReadonlyYes" xml:space="preserve">
+    <value>File "{0}" set to readonly access mode</value>
+  </data>
+  <data name="Options_tabGroupBox1" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Options_tabNode" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="Options_tabPositionComboBoxItems" xml:space="preserve">
+    <value>Top (default)
+Right
+Bottom
+Left</value>
+  </data>
+  <data name="Options_tabPositionLabel" xml:space="preserve">
+    <value>Tab position:</value>
+  </data>
+  <data name="Options_tabMultilineCheckBox" xml:space="preserve">
+    <value>Multiline alignment</value>
+  </data>
+  <data name="Options_tabOrientationComboBoxItems" xml:space="preserve">
+    <value>Horizontal
+Vertical</value>
+  </data>
+  <data name="Options_tabOrientationLabel" xml:space="preserve">
+    <value>Tab orientation:</value>
+  </data>
+  <data name="Options_noteLabel" xml:space="preserve">
+    <value>Note: UTF-8 is a standard encoding method used by a great number of applications, as much as for ANSI. In case of lack of specific needs, it's recommended to use one of this two algorithms.</value>
+  </data>
+  <data name="Options_backupAddExtensionRadioButton" xml:space="preserve">
+    <value>Add extension to filename</value>
+  </data>
+  <data name="Options_backupCustomFolderButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Options_backupCustomFolderRadioButton" xml:space="preserve">
+    <value>Custom folder</value>
+  </data>
+  <data name="Options_backupEditedFileRadioButton" xml:space="preserve">
+    <value>Edited file folder</value>
+  </data>
+  <data name="Options_backupExtensionLabel" xml:space="preserve">
+    <value>Extension:</value>
+  </data>
+  <data name="Options_backupGroupBox2" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Options_backupReplaceExtensionRadioButton" xml:space="preserve">
+    <value>Replace file extension with backup one</value>
+  </data>
+  <data name="Options_createBackupCheckBox" xml:space="preserve">
+    <value>Create backup file when saving</value>
+  </data>
+  <data name="Options_savingGroupBox1" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="Options_savingNode" xml:space="preserve">
+    <value>Saving</value>
+  </data>
+  <data name="Form1_saveWithBackupToolStripMenuItem" xml:space="preserve">
+    <value>Save With Backup</value>
+  </data>
+  <data name="Form1_saveWithBackupToolStripMenuItem1" xml:space="preserve">
+    <value>File With Backup</value>
+  </data>
+  <data name="FileUtil_folderDialogBackup" xml:space="preserve">
+    <value>Select the folder where to place the backup file:</value>
+  </data>
+  <data name="FileUtil_folderDialogDefault" xml:space="preserve">
+    <value>Select the default folder for saving and opening files:</value>
+  </data>
+  <data name="Options_backupExtensionWarning" xml:space="preserve">
+    <value>Backup extension could not be empty.</value>
+  </data>
+  <data name="Options_backupIncrementalCheckBox" xml:space="preserve">
+    <value>Incremental numbering (ie. bak0, bak1, ...)</value>
+  </data>
+  <data name="Options_backupLocationWarning" xml:space="preserve">
+    <value>Backup custom folder does not exists on file system.
+Choose another destination.</value>
+  </data>
+  <data name="Form1_calendarTabPageToolTip" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="calendarPanel_insertDatetimeToolStripButton" xml:space="preserve">
+    <value>Insert Datetime...</value>
+  </data>
+  <data name="FileManager_FileInUse" xml:space="preserve">
+    <value>Could not open "{0}".
+File is in use by another process.</value>
+  </data>
+  <data name="FileManager_FileNotExisting" xml:space="preserve">
+    <value>File "{0}" does not exists.</value>
+  </data>
+  <data name="FileManager_NoMessageFileInUse" xml:space="preserve">
+    <value>"{0}" in use by another process</value>
+  </data>
+  <data name="FileManager_NoMessageFileNotExists" xml:space="preserve">
+    <value>"{0}" does not exists</value>
+  </data>
+  <data name="PadText_helpLabel" xml:space="preserve">
+    <value>Align text using filling character as spaces.</value>
+  </data>
+  <data name="PadText_Title" xml:space="preserve">
+    <value>Align Text</value>
+  </data>
+  <data name="Form1_padTextToolStripMenuItem" xml:space="preserve">
+    <value>Align Text...</value>
+  </data>
+  <data name="PadText_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="PadText_leftCheckBox" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="PadText_okButton" xml:space="preserve">
+    <value>Align</value>
+  </data>
+  <data name="PadText_padToLabel" xml:space="preserve">
+    <value>Align text to:</value>
+  </data>
+  <data name="PadText_rightCheckBox" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="PadText_whiteCharacterLabel" xml:space="preserve">
+    <value>Filling character:</value>
+  </data>
+  <data name="PadText_widthLabel" xml:space="preserve">
+    <value>Width:</value>
+  </data>
+  <data name="PadText_applyToLabel" xml:space="preserve">
+    <value>Apply to:</value>
+  </data>
+  <data name="PadText_allTextRadioButton" xml:space="preserve">
+    <value>All text</value>
+  </data>
+  <data name="PadText_selectedTextRadioButton" xml:space="preserve">
+    <value>Selected text</value>
+  </data>
+  <data name="Form1_charactersStatToolStripMenuItem" xml:space="preserve">
+    <value>Characters:</value>
+  </data>
+  <data name="Form1_rowsStatToolStripMenuItem" xml:space="preserve">
+    <value>Rows:</value>
+  </data>
+  <data name="Form1_wordsStatToolStripMenuItem" xml:space="preserve">
+    <value>Words:</value>
+  </data>
+  <data name="Form1_showTabAsNoteOnTopToolStripMenuItem" xml:space="preserve">
+    <value>Show As Note On Top</value>
+  </data>
+  <data name="Form1_showTabAsNoteOnTopToolStripMenuItem1" xml:space="preserve">
+    <value>Show Tab As Note On Top</value>
+  </data>
+  <data name="FileCompare_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="FileCompare_compareButton" xml:space="preserve">
+    <value>Compare</value>
+  </data>
+  <data name="FileCompare_helpLabel" xml:space="preserve">
+    <value>Check tabs content to define if they are equals.</value>
+  </data>
+  <data name="FileCompare_selectTabsLabel" xml:space="preserve">
+    <value>Select two tabs to compare:</value>
+  </data>
+  <data name="FileCompare_Title" xml:space="preserve">
+    <value>Compare Tabs</value>
+  </data>
+  <data name="Form1_compareTabsToolStripMenuItem" xml:space="preserve">
+    <value>Compare Tabs...</value>
+  </data>
+  <data name="TabManager_ErrorCompare" xml:space="preserve">
+    <value>Error in tabs text comparison, which requires the selection of two tabs
+(no different combinations are allowed).</value>
+  </data>
+  <data name="TabManager_TabAlmostEquals_Returns" xml:space="preserve">
+    <value>NEARLY SAME TEXTS!
+
+Text contained into tabs is different because of returns.</value>
+  </data>
+  <data name="TabManager_TabAlmostEquals_ReturnsAndSpaces" xml:space="preserve">
+    <value>NEARLY SAME TEXTS!
+
+Text contained into tabs is different because of returns and spaces.</value>
+  </data>
+  <data name="TabManager_TabAlmostEquals_Spaces" xml:space="preserve">
+    <value>NEARLY SAME TEXTS!
+
+Text contained into tabs is different because of spaces.</value>
+  </data>
+  <data name="TabManager_TabDifferents" xml:space="preserve">
+    <value>DIFFERENT TEXTS!
+
+Text contained into tabs is different.</value>
+  </data>
+  <data name="TabManager_TabEquals" xml:space="preserve">
+    <value>SAME TEXTS!
+
+Text contained into tabs is equal.</value>
+  </data>
+  <data name="FileCompare_caseSensitiveCheckBox" xml:space="preserve">
+    <value>Case sensitive</value>
+  </data>
+  <data name="Form1_validationToolStripMenuItem" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="Form1_xMLToolStripMenuItem" xml:space="preserve">
+    <value>XML/HTML With DTD</value>
+  </data>
+  <data name="XmlValidator_Error" xml:space="preserve">
+    <value>Content is uncorrect.
+{0}</value>
+  </data>
+  <data name="XmlValidator_Success" xml:space="preserve">
+    <value>Content is correct!</value>
+  </data>
+  <data name="Options_useSpacesInsteadTabsCheckBox" xml:space="preserve">
+    <value>Use spaces instead of tabs</value>
+  </data>
+  <data name="ColorSelect_previewGroupBox" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="ColorSelect_previewTextBox" xml:space="preserve">
+    <value>This text is a font example</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem2" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="TextManager_ClipboardNotText" xml:space="preserve">
+    <value>Clipboard does not contain text.</value>
+  </data>
+  <data name="TextManager_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="TemplateManager_Unknown" xml:space="preserve">
+    <value>Unknown template requested.</value>
+  </data>
+  <data name="Form1_templatesToolStripMenuItem" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="SessionManager_ClosingWindow" xml:space="preserve">
+    <value>The open session may be varied.
+Do you want to save it before exit?</value>
+  </data>
+  <data name="FileManager_FileRenamed" xml:space="preserve">
+    <value>File "{0}" renamed in "{1}"</value>
+  </data>
+  <data name="FileManager_Reload" xml:space="preserve">
+    <value>Reloading the file current changes will get lost.
+Are you sure to proceed?</value>
+  </data>
+  <data name="FileManager_RemoveReadonlyToRename" xml:space="preserve">
+    <value>Current file is read-only and could not be renamed.
+Do you want to remove read-only and proceed?</value>
+  </data>
+  <data name="FileRename_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FileRename_fileNameLabel" xml:space="preserve">
+    <value>File name:</value>
+  </data>
+  <data name="FileRename_helpLabel" xml:space="preserve">
+    <value>Rename an open file without exit from DtPad.</value>
+  </data>
+  <data name="FileRename_renameButton" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="FileRename_renameToLabel" xml:space="preserve">
+    <value>Rename to:</value>
+  </data>
+  <data name="FileRename_Title" xml:space="preserve">
+    <value>File Rename</value>
+  </data>
+  <data name="Form1_renameToolStripMenuItem" xml:space="preserve">
+    <value>Rename...</value>
+  </data>
+  <data name="Form1_renameToolStripMenuItem1" xml:space="preserve">
+    <value>Rename...</value>
+  </data>
+  <data name="FileRename_folderLabel" xml:space="preserve">
+    <value>Folder:</value>
+  </data>
+  <data name="Options_keepInitialSpacesOnReturnCheckBox" xml:space="preserve">
+    <value>Keep previous line initial spaces on return</value>
+  </data>
+  <data name="PadText_absoluteWidthCheckBox" xml:space="preserve">
+    <value>Absolute width</value>
+  </data>
+  <data name="PadText_absoluteWidthPictureBoxToolTip" xml:space="preserve">
+    <value>If this option is activated, width value is
+considered as absolute value, otherwise
+is added to maximum selected rows lenght</value>
+  </data>
+  <data name="Form1_addNewTemplateToolStripMenuItem" xml:space="preserve">
+    <value>Manage Templates...</value>
+  </data>
+  <data name="Form1_emptyTemplateToolStripMenuItem" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Templates_addButtonToolTip" xml:space="preserve">
+    <value>Add new template</value>
+  </data>
+  <data name="Templates_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Templates_descriptionLabel" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="Templates_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Templates_removeButtonToolTip" xml:space="preserve">
+    <value>Remove selected template</value>
+  </data>
+  <data name="Templates_textLabel" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="Templates_Title" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="Templates_toolGroupBox1" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="TemplateManager_AlreadyExists" xml:space="preserve">
+    <value>Template name already existing! Choose another description.</value>
+  </data>
+  <data name="TemplateManager_ErrorReading" xml:space="preserve">
+    <value>Error during trmplate file reading.
+File will be automatically recreated with default values!</value>
+  </data>
+  <data name="TemplateManager_ErrorRemoving" xml:space="preserve">
+    <value>Error during template removing.
+Current window will be closed.</value>
+  </data>
+  <data name="TemplateManager_ErrorSaving" xml:space="preserve">
+    <value>Error during template saving.
+Current window will be closed.</value>
+  </data>
+  <data name="TemplateManager_NameNotEmtpy" xml:space="preserve">
+    <value>Template name could not be empty!</value>
+  </data>
+  <data name="TemplateManager_New" xml:space="preserve">
+    <value>New Template</value>
+  </data>
+  <data name="TemplateManager_Unvalorized" xml:space="preserve">
+    <value>Almost one template is unvalorized.
+Complete templates information to proceed.</value>
+  </data>
+  <data name="Templates_helpLabel" xml:space="preserve">
+    <value>Manage text templates to use inside DtPad.</value>
+  </data>
+  <data name="Form1_welcomeScreenToolStripMenuItem" xml:space="preserve">
+    <value>Welcome Screen</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem3" xml:space="preserve">
+    <value>Save As...</value>
+  </data>
+  <data name="Form1_exadecimalToolStripMenuItem" xml:space="preserve">
+    <value>Hexadecimal</value>
+  </data>
+  <data name="HexEditor_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="HexEditor_Title" xml:space="preserve">
+    <value>Hexadecimal</value>
+  </data>
+  <data name="WindowManager_TextEmpty" xml:space="preserve">
+    <value>Text area is empty.</value>
+  </data>
+  <data name="FileProperties_encodingLabel1" xml:space="preserve">
+    <value>Encoding:</value>
+  </data>
+  <data name="Form1_duplicateLinesToolStripMenuItem" xml:space="preserve">
+    <value>Duplicate Rows</value>
+  </data>
+  <data name="SearchManager_DuplicateLines" xml:space="preserve">
+    <value>Duplicate rows founded:</value>
+  </data>
+  <data name="SearchManager_Lines" xml:space="preserve">
+    <value>Rows -</value>
+  </data>
+  <data name="SearchManager_NoDuplicateLines" xml:space="preserve">
+    <value>No duplicate rows where found.</value>
+  </data>
+  <data name="Form1_gUIDToolStripMenuItem" xml:space="preserve">
+    <value>GUID</value>
+  </data>
+  <data name="Form1_insertToolStripMenuItem" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="Form1_insertSpecialCharToolStripButton" xml:space="preserve">
+    <value>Insert Special Char...</value>
+  </data>
+  <data name="Form1_selectCurrentLineToolStripMenuItem" xml:space="preserve">
+    <value>Select Current Rows</value>
+  </data>
+  <data name="Form1_renameSessionToolStripMenuItem" xml:space="preserve">
+    <value>Rename...</value>
+  </data>
+  <data name="SessionManager_MoreSession" xml:space="preserve">
+    <value>More than one session contained into file {0}.
+Maybe it is corrupted.</value>
+  </data>
+  <data name="SessionManager_Renamed" xml:space="preserve">
+    <value>Session "{0}" renamed</value>
+  </data>
+  <data name="Form1_renameSessionToolStripButton" xml:space="preserve">
+    <value>Rename Session...</value>
+  </data>
+  <data name="SessionManager_FileInUse" xml:space="preserve">
+    <value>Could not open "{0}".
+File is in use by another process.</value>
+  </data>
+  <data name="SessionManager_FileNotExisting" xml:space="preserve">
+    <value>File "{0}" does not exists.</value>
+  </data>
+  <data name="Form1_listFilesToolStripMenuItem" xml:space="preserve">
+    <value>Files List</value>
+  </data>
+  <data name="ShowContent_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ShowContent_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Options_splashScreenCheckBox" xml:space="preserve">
+    <value>Splash screen on DtPad startup</value>
+  </data>
+  <data name="Splash_doNotShowCheckBox" xml:space="preserve">
+    <value>Do not show anymore</value>
+  </data>
+  <data name="Splash_titleLabel" xml:space="preserve">
+    <value>loading...</value>
+  </data>
+  <data name="Form1_activeTabToolStripMenuItem" xml:space="preserve">
+    <value>Active Tab</value>
+  </data>
+  <data name="Form1_aspectToolStripMenuItem" xml:space="preserve">
+    <value>Aspect</value>
+  </data>
+  <data name="Form1_bottomToolStripMenuItem" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="Form1_closeButtonToolStripMenuItem" xml:space="preserve">
+    <value>Close Button</value>
+  </data>
+  <data name="Form1_doNotShowToolStripMenuItem" xml:space="preserve">
+    <value>Do Not Show</value>
+  </data>
+  <data name="Form1_eachTabToolStripMenuItem" xml:space="preserve">
+    <value>Each Tab</value>
+  </data>
+  <data name="Form1_horizontalToolStripMenuItem" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="Form1_leftToolStripMenuItem" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="Form1_rightTabToolStripMenuItem" xml:space="preserve">
+    <value>Right Tab Panel Margin</value>
+  </data>
+  <data name="Form1_rightToolStripMenuItem" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="Form1_tabOrientationToolStripMenuItem" xml:space="preserve">
+    <value>Tab Orientation</value>
+  </data>
+  <data name="Form1_tabPositionToolStripMenuItem" xml:space="preserve">
+    <value>Tab Position</value>
+  </data>
+  <data name="Form1_topToolStripMenuItem" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="Form1_useDefaultToolStripMenuItem" xml:space="preserve">
+    <value>Use Default</value>
+  </data>
+  <data name="Form1_verticalToolStripMenuItem" xml:space="preserve">
+    <value>Vertical</value>
+  </data>
+  <data name="Tools_moveDownButtonToolTip" xml:space="preserve">
+    <value>Move selected tool down</value>
+  </data>
+  <data name="Tools_moveUpButtonToolTip" xml:space="preserve">
+    <value>Move selected tool up</value>
+  </data>
+  <data name="Extensions_moveDownButtonToolTip" xml:space="preserve">
+    <value>Move selected extension down</value>
+  </data>
+  <data name="Extensions_moveUpButtonToolTip" xml:space="preserve">
+    <value>Move selected extension up</value>
+  </data>
+  <data name="Favourites_moveDownButtonToolTip" xml:space="preserve">
+    <value>Move selected favourite down</value>
+  </data>
+  <data name="Favourites_moveUpButtonToolTip" xml:space="preserve">
+    <value>Move selected favourite up</value>
+  </data>
+  <data name="Templates_moveDownButtonToolTip" xml:space="preserve">
+    <value>Move selected template down</value>
+  </data>
+  <data name="Templates_moveUpButtonToolTip" xml:space="preserve">
+    <value>Move selected template up</value>
+  </data>
+  <data name="Form1_emailAddressesToolStripMenuItem" xml:space="preserve">
+    <value>E-mail Addresses</value>
+  </data>
+  <data name="Form1_patternsToolStripMenuItem" xml:space="preserve">
+    <value>Patterns</value>
+  </data>
+  <data name="RegularExpressionValidator_ResultFounded" xml:space="preserve">
+    <value>Results founded:</value>
+  </data>
+  <data name="RegularExpressionValidator_NoResultFounded" xml:space="preserve">
+    <value>No results were found.</value>
+  </data>
+  <data name="Form1_hTMLTagToolStripMenuItem" xml:space="preserve">
+    <value>XML/HTML Tag</value>
+  </data>
+  <data name="Form1_iPAddressesToolStripMenuItem" xml:space="preserve">
+    <value>IP Addresses</value>
+  </data>
+  <data name="Form1_formatToolStripMenuItem1" xml:space="preserve">
+    <value>Format And Normalize</value>
+  </data>
+  <data name="Form1_xMLToolStripMenuItem1" xml:space="preserve">
+    <value>Format XML/HTML</value>
+  </data>
+  <data name="FileListManager_ClearHistoryRecentPatterns" xml:space="preserve">
+    <value>Are you sure to clear recent patterns history?</value>
+  </data>
+  <data name="Form1_customPatternsToolStripMenuItem" xml:space="preserve">
+    <value>Custom...</value>
+  </data>
+  <data name="Options_automaticSessionSaveCheckBox" xml:space="preserve">
+    <value>Automatically save opened session on closing</value>
+  </data>
+  <data name="Options_sessionGroupBox1" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Options_sessionNode" xml:space="preserve">
+    <value>Session</value>
+  </data>
+  <data name="SearchPattern_clearHistoryButtonToolTip" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="SearchPattern_closeButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SearchPattern_helpLabel" xml:space="preserve">
+    <value>Search text using regular expressions.</value>
+  </data>
+  <data name="SearchPattern_historyLabel" xml:space="preserve">
+    <value>History:</value>
+  </data>
+  <data name="SearchPattern_regularExpressionLabel" xml:space="preserve">
+    <value>Regular expression:</value>
+  </data>
+  <data name="SearchPattern_regularExpressionPictureBoxToolTip" xml:space="preserve">
+    <value>To know more about regular expressions, visit
+this website: www.regular-expressions.info</value>
+  </data>
+  <data name="SearchPattern_searchButton" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchPattern_Title" xml:space="preserve">
+    <value>Search With Pattern</value>
+  </data>
+  <data name="searchPanel_patternToolStripButton" xml:space="preserve">
+    <value>Patterns...</value>
+  </data>
+  <data name="SearchPattern_historyComboBoxItems" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Form1_xmlTreeToolStripMenuItem" xml:space="preserve">
+    <value>XML Tree</value>
+  </data>
+  <data name="Form1_formatToolStripMenuItem2" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="Form1_treeViewToolStripMenuItem" xml:space="preserve">
+    <value>XML Tree View</value>
+  </data>
+  <data name="Form1_validationToolStripMenuItem1" xml:space="preserve">
+    <value>Validation With DTD</value>
+  </data>
+  <data name="Form1_xmlToolsToolStripDropDownButton" xml:space="preserve">
+    <value>XML/HTML Tools</value>
+  </data>
+  <data name="XmlEditor_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="XmlEditor_Title" xml:space="preserve">
+    <value>XML Tree</value>
+  </data>
+  <data name="InternetServicesManager_Error" xml:space="preserve">
+    <value>An error occured sending the request to Google.
+Verify that internet connection is active or try to send a smaller amount of text.</value>
+  </data>
+  <data name="Form1_translateSelectedTextToolStripMenuItem" xml:space="preserve">
+    <value>[GG] Translate Selected Text...</value>
+  </data>
+  <data name="Form1_translateSelectedTextToolStripMenuItem1" xml:space="preserve">
+    <value>[GG] Translate Selected Text...</value>
+  </data>
+  <data name="Options_destinationLanguageLabel" xml:space="preserve">
+    <value>Destination:</value>
+  </data>
+  <data name="Options_noteLanguageLabel" xml:space="preserve">
+    <value>Note: translation uses Google online service. Internet connection is required.</value>
+  </data>
+  <data name="Options_sourceLanguageLabel" xml:space="preserve">
+    <value>Source:</value>
+  </data>
+  <data name="Options_languageGroupBox2" xml:space="preserve">
+    <value>Google translation</value>
+  </data>
+  <data name="Options_languageNode" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Options_useSelectedSettingsLanguageCheckBox" xml:space="preserve">
+    <value>Use selected settings without ask</value>
+  </data>
+  <data name="TranslateText_closeButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="TranslateText_destinationLanguageLabel" xml:space="preserve">
+    <value>Destination:</value>
+  </data>
+  <data name="TranslateText_helpLabel" xml:space="preserve">
+    <value>Choose source and destination language.</value>
+  </data>
+  <data name="TranslateText_sourceLanguageLabel" xml:space="preserve">
+    <value>Source:</value>
+  </data>
+  <data name="TranslateText_Title" xml:space="preserve">
+    <value>Translate Text</value>
+  </data>
+  <data name="TranslateText_translateButton" xml:space="preserve">
+    <value>Translate</value>
+  </data>
+  <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Row number panel has been temporarily disabled because of a large
+number of pasted text lines. It is possibile to reopen at anytime.</value>
+  </data>
+  <data name="XmlEditor_Error" xml:space="preserve">
+    <value>Content is uncorrect.
+{0}</value>
+  </data>
+  <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Row number panel has been temporarily disabled because of a large
+number of text lines. It is possibile to reopen at anytime.</value>
+  </data>
+  <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
+    <value>New And Paste</value>
+  </data>
+  <data name="FileExplorerManager_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="FileExplorerManager_Saved" xml:space="preserve">
+    <value>saved</value>
+  </data>
+  <data name="filePanel_listFolderContentIntoFileToolStripMenuItem" xml:space="preserve">
+    <value>List Folder Content</value>
+  </data>
+  <data name="filePanel_refreshToolStripButton" xml:space="preserve">
+    <value>Refresh Selected Folder</value>
+  </data>
+  <data name="XmlEditor_collapseButtonToolTip" xml:space="preserve">
+    <value>Collapse all nodes</value>
+  </data>
+  <data name="XmlEditor_expandButtonToolTip" xml:space="preserve">
+    <value>Expands all nodes</value>
+  </data>
+  <data name="Options_hideLinesCheckBox" xml:space="preserve">
+    <value>Hide row numers if text exceed lines</value>
+  </data>
+  <data name="FileExplorerManager_ListDirectoryHeader" xml:space="preserve">
+    <value>Directory listed:</value>
+  </data>
+  <data name="Form1_selectLinesToolStripMenuItem" xml:space="preserve">
+    <value>Select Rows...</value>
+  </data>
+  <data name="SelectLines_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SelectLines_fromLabel" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="SelectLines_helpLabel" xml:space="preserve">
+    <value>Select desired rows.</value>
+  </data>
+  <data name="SelectLines_lineNumberLabel1" xml:space="preserve">
+    <value>Rows number:</value>
+  </data>
+  <data name="SelectLines_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="SelectLines_Title" xml:space="preserve">
+    <value>Select rows</value>
+  </data>
+  <data name="SelectLines_toLabel" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="Options_helpHideLinesPictureBoxToolTip" xml:space="preserve">
+    <value>It is strongly recommended to let following property
+enabled, so to avoid long opening of large files.</value>
+  </data>
+  <data name="ConstantUtil_NoDefault" xml:space="preserve">
+    <value>Default value for "{0}" parameter not found.</value>
+  </data>
+  <data name="DateTimeUtil_DateTimeFormatWrong" xml:space="preserve">
+    <value>DateTime format not supported.</value>
+  </data>
+  <data name="About_versionCheckLinkLabel" xml:space="preserve">
+    <value>DtPad version is outdated!
+Click here to execute update process.</value>
+  </data>
+  <data name="Options_checkConnectionButton" xml:space="preserve">
+    <value>Verify</value>
+  </data>
+  <data name="OptionManager_ConnectionTimeout" xml:space="preserve">
+    <value>Connection timeout!
+Test required more then {0} second to be completed.</value>
+  </data>
+  <data name="OptionManager_SureReset" xml:space="preserve">
+    <value>Are you sure to reset options to default?
+All saved settings will get loose!</value>
+  </data>
+  <data name="notePanel_exportNotesToolStripSplitButton" xml:space="preserve">
+    <value>Export As...</value>
+  </data>
+  <data name="notePanel_xMLFileToolStripMenuItem" xml:space="preserve">
+    <value>Single XML File</value>
+  </data>
+  <data name="notePanel_tXTFilesToolStripMenuItem" xml:space="preserve">
+    <value>Multiple TXT Files</value>
+  </data>
+  <data name="notePanel_moveDownToolStripButton" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="notePanel_moveUpToolStripButton" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="Form1_fullscreenToolStripMenuItem" xml:space="preserve">
+    <value>Exit Full Screen (F11)</value>
+  </data>
+  <data name="Form1_fullScreenToolStripMenuItem1" xml:space="preserve">
+    <value>Full Screen</value>
+  </data>
+  <data name="SearchInFiles_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="SearchInFiles_filenamePatternLabel" xml:space="preserve">
+    <value>Filename pattern:</value>
+  </data>
+  <data name="SearchFilesManager_folderDialogDefault" xml:space="preserve">
+    <value>Select the default folder where to search in files:</value>
+  </data>
+  <data name="SearchInFiles_helpLabel" xml:space="preserve">
+    <value>Search text into all files contained into a selected folder.</value>
+  </data>
+  <data name="SearchInFiles_okButton" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchInFiles_searchFolderButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="SearchInFiles_searchFolderLabel" xml:space="preserve">
+    <value>Search folder:</value>
+  </data>
+  <data name="SearchInFiles_searchSubdirsCheckBox" xml:space="preserve">
+    <value>Search in subdirectories</value>
+  </data>
+  <data name="SearchInFiles_textToSearchLabel" xml:space="preserve">
+    <value>Text to search:</value>
+  </data>
+  <data name="SearchInFiles_Title" xml:space="preserve">
+    <value>Search In Files</value>
+  </data>
+  <data name="Form1_searchInFilesToolStripMenuItem" xml:space="preserve">
+    <value>Search In Files...</value>
+  </data>
+  <data name="SearchInFiles_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SearchInFiles_searchInProgressLabel" xml:space="preserve">
+    <value>Search in progress...</value>
+  </data>
+  <data name="SearchInFiles_FolderNotExists" xml:space="preserve">
+    <value>Selected folder does not exists!</value>
+  </data>
+  <data name="SearchInFiles_TextToSearchEmpty" xml:space="preserve">
+    <value>Specify a text to search!</value>
+  </data>
+  <data name="SearchInFiles_searchFolderComboBoxItems" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Form1_openFileListToolStripMenuItem" xml:space="preserve">
+    <value>File List...</value>
+  </data>
+  <data name="FileListOpen_closeButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="FileListOpen_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="FileListOpen_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="FileListOpen_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="FileListOpen_fileListLabel" xml:space="preserve">
+    <value>Copy here the file list to open (each file in a row):</value>
+  </data>
+  <data name="FileListOpen_openButton" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="FileListOpen_pasteFromClipboardButtonToolTip" xml:space="preserve">
+    <value>Paste from clipboard</value>
+  </data>
+  <data name="FileListOpen_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="FileListOpen_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="FileListOpen_Title" xml:space="preserve">
+    <value>Open File List</value>
+  </data>
+  <data name="FileListOpen_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="searchInFilesPanel_clearToolStripButton" xml:space="preserve">
+    <value>Clear List</value>
+  </data>
+  <data name="searchInFilesPanel_exportListToolStripButton" xml:space="preserve">
+    <value>Export Files List</value>
+  </data>
+  <data name="searchInFilesPanel_openFileToolStripButton" xml:space="preserve">
+    <value>Open Selected Files</value>
+  </data>
+  <data name="SearchFilesManager_SureToClean" xml:space="preserve">
+    <value>Are you sure to clean search in files results?</value>
+  </data>
+  <data name="SearchInFiles_NoResults" xml:space="preserve">
+    <value>No results founded!</value>
+  </data>
+  <data name="searchInFilesPanel_openSelectedFilesToolStripMenuItem" xml:space="preserve">
+    <value>Open File</value>
+  </data>
+  <data name="Form1_searchInFilesTabPageToolTip" xml:space="preserve">
+    <value>Search In Files</value>
+  </data>
+  <data name="SearchInFiles_hiddenFilesCheckBox" xml:space="preserve">
+    <value>Include hidden files</value>
+  </data>
+  <data name="Form1_propertiesToolStripMenuItem" xml:space="preserve">
+    <value>File Properties</value>
+  </data>
+  <data name="TranslateText_switchButtonToolTip" xml:space="preserve">
+    <value>Switch languages</value>
+  </data>
+  <data name="Form1_randomNumberToolStripMenuItem" xml:space="preserve">
+    <value>Random Number</value>
+  </data>
+  <data name="calendarPanel_weekNumbersToolStripButton" xml:space="preserve">
+    <value>Show Week Numbers</value>
+  </data>
+  <data name="SessionManager_XmlDocError" xml:space="preserve">
+    <value>File "{0}" does not contain a valida XML structure.</value>
+  </data>
+  <data name="TabManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Row number panel has been temporarily disabled because of a large
+number of text lines. It is possibile to reopen at anytime.</value>
+  </data>
+  <data name="searchInFilesPanel_newSearchToolStripButton" xml:space="preserve">
+    <value>New Search...</value>
+  </data>
+  <data name="SearchInFiles_InfoText" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="ZipManager_Bytes" xml:space="preserve">
+    <value>bytes</value>
+  </data>
+  <data name="ZipManager_CanDecompressColumn" xml:space="preserve">
+    <value>Extractable</value>
+  </data>
+  <data name="ZipManager_DateTimeColumn" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Form1_ZipError" xml:space="preserve">
+    <value>An error detected into ZIP file:</value>
+  </data>
+  <data name="ZipManager_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="ZipManager_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="FileManager_InvalidPdf" xml:space="preserve">
+    <value>Selected PDF type is not supported by DtPad.</value>
+  </data>
+  <data name="Form1_rowNumbersToolStripMenuItem" xml:space="preserve">
+    <value>Row Numbers</value>
+  </data>
+  <data name="Form1_w3CCSSToolStripMenuItem" xml:space="preserve">
+    <value>W3C CSS</value>
+  </data>
+  <data name="Form1_w3CHTMLToolStripMenuItem" xml:space="preserve">
+    <value>W3C HTML</value>
+  </data>
+  <data name="W3CValidator_NoContent" xml:space="preserve">
+    <value>Text area is empty.</value>
+  </data>
+  <data name="W3CValidator_Validate" xml:space="preserve">
+    <value>Send to W3C for validation</value>
+  </data>
+  <data name="W3CValidator_TitleCss" xml:space="preserve">
+    <value>DtPad - W3C CSS validation</value>
+  </data>
+  <data name="W3CValidator_TitleHtml" xml:space="preserve">
+    <value>DtPad - W3C HTML validation</value>
+  </data>
+  <data name="ConstantUtil_SpaceChar" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="Form1_hTMLTableTagsToolStripMenuItem" xml:space="preserve">
+    <value>HTML Tags Table...</value>
+  </data>
+  <data name="Form1_tagsTableToolStripMenuItem" xml:space="preserve">
+    <value>HTML Tags Table...</value>
+  </data>
+  <data name="Form1_textToHTMLPageToolStripMenuItem" xml:space="preserve">
+    <value>Text To HTML Page</value>
+  </data>
+  <data name="Form1_searchInGoogleToolStripMenuItem" xml:space="preserve">
+    <value>[GG] Search Selected Text</value>
+  </data>
+  <data name="Form1_searchInGoogleToolStripMenuItem1" xml:space="preserve">
+    <value>[GG] Search Selected Text</value>
+  </data>
+  <data name="InternetServicesManager_NoTextSelected" xml:space="preserve">
+    <value>No text selected.</value>
+  </data>
+  <data name="Options_openWithCheckBox" xml:space="preserve">
+    <value>Open With link</value>
+  </data>
+  <data name="Options_sendToCheckBox" xml:space="preserve">
+    <value>Send To link</value>
+  </data>
+  <data name="Options_shellGroupBox1" xml:space="preserve">
+    <value>Explorer Context Menu</value>
+  </data>
+  <data name="Options_shellNode" xml:space="preserve">
+    <value>Integration</value>
+  </data>
+  <data name="ShellManager_LinkLaunchDtPad" xml:space="preserve">
+    <value>Launch DtPad</value>
+  </data>
+  <data name="ShellManager_ShellString" xml:space="preserve">
+    <value>Open with DtPad</value>
+  </data>
+  <data name="Options_autoFormatLabel" xml:space="preserve">
+    <value>Auto-format following code files on opening:</value>
+  </data>
+  <data name="Options_htmlCheckBox" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="Options_openingGroupBox1" xml:space="preserve">
+    <value>Code files</value>
+  </data>
+  <data name="Options_openingNode" xml:space="preserve">
+    <value>Opening</value>
+  </data>
+  <data name="Options_xmlCheckBox" xml:space="preserve">
+    <value>XML</value>
+  </data>
+  <data name="Form1_capitalizedWordsToolStripMenuItem" xml:space="preserve">
+    <value>Capitalized Words</value>
+  </data>
+  <data name="SearchPattern_denyRegexCheckBox" xml:space="preserve">
+    <value>Deny regular expression</value>
+  </data>
+  <data name="SearchPattern_predefinedComboBoxItems" xml:space="preserve">
+    <value>
+E-mail addresses
+IP addresses
+XML/HTML tags
+Capitalized words</value>
+  </data>
+  <data name="SearchPattern_predefinedLabel" xml:space="preserve">
+    <value>Predefined:</value>
+  </data>
+  <data name="Form1_saveWithEncodingToolStripMenuItem" xml:space="preserve">
+    <value>File With Encoding...</value>
+  </data>
+  <data name="Form1_saveWithEncodingToolStripMenuItem1" xml:space="preserve">
+    <value>Save With Encoding...</value>
+  </data>
+  <data name="TabEncoding_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="TabEncoding_changeIntoComboBoxItems" xml:space="preserve">
+    <value>ANSI
+UTF-8
+UTF-8 Without BOM
+UTF-16 Little Endian
+UTF-16 Big Endian
+UTF-32 Little Endian</value>
+  </data>
+  <data name="TabEncoding_encodingLabel" xml:space="preserve">
+    <value>Encoding:</value>
+  </data>
+  <data name="TabEncoding_helpLabel" xml:space="preserve">
+    <value>Save a file with desidered encoding.</value>
+  </data>
+  <data name="TabEncoding_saveButton" xml:space="preserve">
+    <value>Proceed</value>
+  </data>
+  <data name="TabEncoding_Title" xml:space="preserve">
+    <value>Save With Encoding</value>
+  </data>
+  <data name="FileManager_FileAlreadyOpen" xml:space="preserve">
+    <value>This file is already open.
+Close the relative tab and try again.</value>
+  </data>
+  <data name="EmailManager_EmailInvalid" xml:space="preserve">
+    <value>E-mail field is not correct.
+Required format: example@email.com</value>
+  </data>
+  <data name="ReportBug_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ReportBug_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="ReportBug_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ReportBug_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="ReportBug_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="ReportBug_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="About_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="About_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Extensions_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Extensions_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Extensions_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Extensions_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Extensions_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Extensions_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="FileProperties_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="FileProperties_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="FileRename_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="FileRename_copyToolStripMenuItem1" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="FileRename_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="FileRename_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="FileRename_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="FileRename_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="FileRename_selectAllToolStripMenuItem1" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="FileRename_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="MergeTabs_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="MergeTabs_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="MergeTabs_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MergeTabs_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="MergeTabs_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="MergeTabs_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="PadText_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="PadText_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="PadText_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="PadText_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="PadText_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="PadText_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Options_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Options_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Options_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Options_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Options_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Options_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="SearchInFiles_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="SearchInFiles_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="SearchInFiles_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SearchInFiles_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="SearchInFiles_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="SearchInFiles_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="SearchPattern_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="SearchPattern_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="SearchPattern_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="SearchPattern_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="SearchPattern_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="SearchPattern_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Templates_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Templates_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Templates_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Templates_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Templates_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Templates_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Tools_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Tools_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Tools_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Tools_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Tools_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Tools_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Form1_hostsFileConfiguratorToolStripMenuItem" xml:space="preserve">
+    <value>Hosts File Configurator</value>
+  </data>
+  <data name="Options_hostsConfiguratorCheckBox" xml:space="preserve">
+    <value>Start Hosts File Configurator on hosts file opening</value>
+  </data>
+  <data name="Options_openingGroupBox2" xml:space="preserve">
+    <value>System files</value>
+  </data>
+  <data name="CustomFilesManager_ClosePanel" xml:space="preserve">
+    <value>Close Panel</value>
+  </data>
+  <data name="CustomFilesManager_HostsHelp" xml:space="preserve">
+    <value>Insert section labels to separate logical IP configurations.
+
+#SECTION NAME1
+123.45.67.89 www.domain.com
+123.45.67.89 www.domain.it
+
+#SECTION NAME2
+123.45.67.80 www.domain.org
+123.45.67.80 www.domain.net</value>
+  </data>
+  <data name="CustomFilesManager_HelpPanel" xml:space="preserve">
+    <value>How It Works</value>
+  </data>
+  <data name="UrlEntry_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UrlEntry_helpLabel" xml:space="preserve">
+    <value>Open source code of a web page.</value>
+  </data>
+  <data name="UrlEntry_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="UrlEntry_Title" xml:space="preserve">
+    <value>Open Web Page Source</value>
+  </data>
+  <data name="UrlEntry_urlAddressLabel" xml:space="preserve">
+    <value>URL address:</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem3" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Form1_openWebPageSourceToolStripMenuItem" xml:space="preserve">
+    <value>Web Page Source...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem3" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Row number panel has been temporarily disabled because of a large
+number of text lines. It is possibile to reopen at anytime.</value>
+  </data>
+  <data name="FileManager_FileDeleted" xml:space="preserve">
+    <value>File "{0}" deleted</value>
+  </data>
+  <data name="FileManager_SureDeleteFile" xml:space="preserve">
+    <value>Are you sure to delete
+"{0}" file?</value>
+  </data>
+  <data name="Form1_deleteFileToolStripMenuItem" xml:space="preserve">
+    <value>Delete File</value>
+  </data>
+  <data name="InternetManager_ErrorDownloading" xml:space="preserve">
+    <value>Error during web page source downloading.
+Verify that URL is correct, or that its website is available.</value>
+  </data>
+  <data name="SearchInFiles_filenamePatternPictureBoxToolTip" xml:space="preserve">
+    <value>Insert patterns separated by commas or semicolons
+(ie. "*.txt,*.dts")</value>
+  </data>
+  <data name="SearchInFiles_caseSensitiveCheckBox" xml:space="preserve">
+    <value>Case sensitive</value>
+  </data>
+  <data name="FileListManager_ClearObsoleteRecentFiles" xml:space="preserve">
+    <value>Are you sure to clear files that no longer exist from recent files list?</value>
+  </data>
+  <data name="Form1_clearObsoleteFilesToolStripMenuItem" xml:space="preserve">
+    <value>Clear Non-Existing Files</value>
+  </data>
+  <data name="FileListManager_ObsoleteFilesRemovedMore" xml:space="preserve">
+    <value>{0} non-existing recent files removed</value>
+  </data>
+  <data name="FileListManager_ObsoleteFilesRemovedOne" xml:space="preserve">
+    <value>{0} non-existing recent file removed</value>
+  </data>
+  <data name="ReplaceManager_ReplacedOne" xml:space="preserve">
+    <value>occurrence replaced</value>
+  </data>
+  <data name="SearchManager_OccurencesOne" xml:space="preserve">
+    <value>occurrence found</value>
+  </data>
+  <data name="SearchManager_ReplacedOne" xml:space="preserve">
+    <value>occurrence replaced</value>
+  </data>
+  <data name="Form1_showHiddenCharsToolStripMenuItem" xml:space="preserve">
+    <value>Hidden Characters</value>
+  </data>
+  <data name="calendarPanel_goToTodayToolStripMenuItem" xml:space="preserve">
+    <value>Go To Today</value>
+  </data>
+  <data name="SearchInFiles_resizeButtonToolTip" xml:space="preserve">
+    <value>Enlarge the window to the size of the screen</value>
+  </data>
+  <data name="Options_folderOpenedFileCheckBox" xml:space="preserve">
+    <value>Override setting with active file's folder</value>
+  </data>
+  <data name="UrlEntry_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="UrlEntry_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="UrlEntry_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="UrlEntry_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="UrlEntry_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="UrlEntry_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Form1_OutdatedVersion" xml:space="preserve">
+    <value>DtPad version is outdated!
+Do you want to start now update process?</value>
+  </data>
+  <data name="Options_enableAutomaticUpdateCheckBox" xml:space="preserve">
+    <value>Enable automatic DtPad version check</value>
+  </data>
+  <data name="Options_frequencyAutomaticUpdateComboBoxItems" xml:space="preserve">
+    <value>Montly
+Weekly</value>
+  </data>
+  <data name="Options_frequencyAutomaticUpdateLabel" xml:space="preserve">
+    <value>Frequency:</value>
+  </data>
+  <data name="Options_lastCheckLabel" xml:space="preserve">
+    <value>Last check:</value>
+  </data>
+  <data name="Options_updateGroupBox1" xml:space="preserve">
+    <value>Automatic Check</value>
+  </data>
+  <data name="Options_updateNode" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="searchInFilesPanel_copyFileFullPathToolStripMenuItem" xml:space="preserve">
+    <value>Copy File Full Path</value>
+  </data>
+  <data name="searchInFilesPanel_copyToolStripMenuItem2" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="searchInFilesPanel_selectAllToolStripMenuItem2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Form1_CheckVersionException" xml:space="preserve">
+    <value>Error during automatic DtPad version check!</value>
+  </data>
+  <data name="Options_DPDefaultDirCharNotAllowed" xml:space="preserve">
+    <value>The following characters are not allowed: \ / : ? * &lt; &gt; " |</value>
+  </data>
+  <data name="FileManager_SavedOnDropbox" xml:space="preserve">
+    <value>saved on Dropbox</value>
+  </data>
+  <data name="DropboxFileDialog_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DropboxFileDialog_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="DropboxFileDialog_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="DropboxFileDialog_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DropboxFileDialog_DPDefaultFileCharNotAllowed" xml:space="preserve">
+    <value>The following characters are not allowed: \ / : ? * &lt; &gt; " |</value>
+  </data>
+  <data name="DropboxFileDialog_fileNameLabel" xml:space="preserve">
+    <value>File name:</value>
+  </data>
+  <data name="DropboxFileDialog_helpLabel" xml:space="preserve">
+    <value>Save or open files on your Dropbox account.</value>
+  </data>
+  <data name="DropboxFileDialog_okButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="DropboxFileDialog_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="DropboxFileDialog_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="DropboxFileDialog_Title" xml:space="preserve">
+    <value>Save File As</value>
+  </data>
+  <data name="DropboxFileDialog_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="FileManager_OverwriteFileOnDropbox" xml:space="preserve">
+    <value>A file with this name already exists on Dropbox.
+Do you want to overwrite it?</value>
+  </data>
+  <data name="Form1_fileOnDropboxToolStripMenuItem" xml:space="preserve">
+    <value>File On Dropbox As...</value>
+  </data>
+  <data name="DropboxFileDialog_saveAsComboBoxItems" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DropboxFileDialog_saveAsLabel" xml:space="preserve">
+    <value>Save as:</value>
+  </data>
+  <data name="DropboxFileDialog_saveInLabel" xml:space="preserve">
+    <value>Save in:</value>
+  </data>
+  <data name="DropboxManager_ExistsFolderOnDropbox" xml:space="preserve">
+    <value>A folder with this name already exists in selected position on Dropbox!</value>
+  </data>
+  <data name="DropboxFileDialog_newFolderButtonToolTip" xml:space="preserve">
+    <value>Create new folder</value>
+  </data>
+  <data name="DropboxFileDialog_superiorLevelButtonToolTip" xml:space="preserve">
+    <value>Superior level</value>
+  </data>
+  <data name="NameEntry_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="NameEntry_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="NameEntry_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="NameEntry_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="NameEntry_fileNameLabel_DropboxFileDialog" xml:space="preserve">
+    <value>Directory name:</value>
+  </data>
+  <data name="NameEntry_okButton_DropboxFileDialog" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="NameEntry_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="NameEntry_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="NameEntry_Title_DropboxFileDialog" xml:space="preserve">
+    <value>New Folder Name</value>
+  </data>
+  <data name="NameEntry_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="DropboxFileDialog_okButton_Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="FileManager_openingFileEmpty" xml:space="preserve">
+    <value>File "{0}" is empty.</value>
+  </data>
+  <data name="FileManager_openingFileNotExists" xml:space="preserve">
+    <value>File "{0}" cloud not be found inside folder
+"{1}".</value>
+  </data>
+  <data name="DropboxFileDialog_saveAsLabel_Open" xml:space="preserve">
+    <value>File type:</value>
+  </data>
+  <data name="DropboxFileDialog_saveInLabel_Open" xml:space="preserve">
+    <value>Search in:</value>
+  </data>
+  <data name="DropboxFileDialog_Title_Open" xml:space="preserve">
+    <value>Open File</value>
+  </data>
+  <data name="Form1_openFileOnDropboxToolStripMenuItem" xml:space="preserve">
+    <value>File From Dropbox...</value>
+  </data>
+  <data name="Form1_columnNumbersToolStripMenuItem" xml:space="preserve">
+    <value>Column Numbers</value>
+  </data>
+  <data name="Form1_columnsStatToolStripMenuItem" xml:space="preserve">
+    <value>Columns:</value>
+  </data>
+  <data name="SearchInFiles_exclusionPatternLabel" xml:space="preserve">
+    <value>Exclusion pattern:</value>
+  </data>
+  <data name="SearchInFiles_exclusionPatternPictureBoxToolTip" xml:space="preserve">
+    <value>Insert patterns separated by commas or semicolons
+(ie. "*.txt,*.dts").
+"*.*" filter is not allowed.</value>
+  </data>
+  <data name="Form1_dropboxToolStripDropDownButton" xml:space="preserve">
+    <value>Dropbox</value>
+  </data>
+  <data name="Form1_openFromDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Open File From Dropbox...</value>
+  </data>
+  <data name="Form1_saveOnDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Save File On Dropbox As...</value>
+  </data>
+  <data name="DropboxManager_UnauthorizedAccess" xml:space="preserve">
+    <value>Unauthorized access to Dropbox!
+Verify to be authenticated on it by opening "www.dropbox.com" with your default browser.</value>
+  </data>
+  <data name="DropboxFileDialog_copyToolStripMenuItem2" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="DropboxFileDialog_selectAllToolStripMenuItem2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="FileManager_OpenedFromDropbox" xml:space="preserve">
+    <value>opened from Dropbox</value>
+  </data>
+  <data name="Form1_columnNumbersToolStripMenuItem2" xml:space="preserve">
+    <value>Column Numbers</value>
+  </data>
+  <data name="NameEntry_fileNameLabel_ZipExtract" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="NameEntry_okButton_ZipExtract" xml:space="preserve">
+    <value>Extract</value>
+  </data>
+  <data name="NameEntry_Title_ZipExtract" xml:space="preserve">
+    <value>Archive Password Entry</value>
+  </data>
+  <data name="notePanel_openOnEditorToolStripMenuItem" xml:space="preserve">
+    <value>Open On Editor</value>
+  </data>
+  <data name="Options_keepBulletListOnReturnCheckBox" xml:space="preserve">
+    <value>Keep bullet lists on return</value>
+  </data>
+  <data name="Options_keepBulletListOnReturnLabel" xml:space="preserve">
+    <value>Allowed list templates:</value>
+  </data>
+  <data name="Options_formatGroupBox2" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Options_switchButtonToolTip" xml:space="preserve">
+    <value>Switch languages</value>
+  </data>
+  <data name="HexEditor_copyHexadecimalToolStripMenuItem" xml:space="preserve">
+    <value>Copy Hexadecimal</value>
+  </data>
+  <data name="HexEditor_copyToolStripMenuItem2" xml:space="preserve">
+    <value>Copy Text</value>
+  </data>
+  <data name="HexEditor_selectAllToolStripMenuItem2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="ZipExtract_copyArchiveContentPictureBoxToolTip" xml:space="preserve">
+    <value>Copy Archive Content To Clipboard</value>
+  </data>
+  <data name="ZipManager_DirectoryColumn" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="ConfigUtil_NoValue" xml:space="preserve">
+    <value>Value for "{0}" parameter not found.</value>
+  </data>
+  <data name="FileProperties_EncodingWithoutBOM" xml:space="preserve">
+    <value>Without BOM</value>
+  </data>
+  <data name="Form1_uTF16LittleEndianToolStripMenuItem" xml:space="preserve">
+    <value>UTF-16 Little Endian</value>
+  </data>
+  <data name="Form1_uTF8WithoutBOMToolStripMenuItem" xml:space="preserve">
+    <value>UTF-8 Without BOM</value>
+  </data>
+  <data name="UrlEntry_clearHistoryButtonToolTip" xml:space="preserve">
+    <value>Clear recent URLs history</value>
+  </data>
+  <data name="Form1_urlEncoderToolStripMenuItem" xml:space="preserve">
+    <value>Format URL</value>
+  </data>
+  <data name="UrlEncode_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="UrlEncode_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="UrlEncode_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="UrlEncode_encodeButtonToolTip" xml:space="preserve">
+    <value>Encode</value>
+  </data>
+  <data name="UrlEncode_encodedURLLabel" xml:space="preserve">
+    <value>Encoded URL:</value>
+  </data>
+  <data name="UrlEncode_helpLabel" xml:space="preserve">
+    <value>Encode a string into URL format.</value>
+  </data>
+  <data name="UrlEncode_okButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="UrlEncode_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="UrlEncode_stringToEncodeLabel" xml:space="preserve">
+    <value>Decoded URL:</value>
+  </data>
+  <data name="UrlEncode_Title" xml:space="preserve">
+    <value>Encode URL</value>
+  </data>
+  <data name="UrlEncode_toolStripMenuItem1" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="UrlEncode_toolStripMenuItem2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="UrlEncode_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="UrlEncode_decodeButtonToolTip" xml:space="preserve">
+    <value>Decode</value>
+  </data>
+  <data name="InternetManager_EmptySource" xml:space="preserve">
+    <value>Requested URL source is empty.</value>
+  </data>
+  <data name="filePanel_filePropertiesToolStripMenuItem" xml:space="preserve">
+    <value>File Properties</value>
+  </data>
+  <data name="filePanel_listFolderContentWithLenghtToolStripMenuItem" xml:space="preserve">
+    <value>List Folder Content (With Sizes)</value>
+  </data>
+  <data name="FileExplorerManager_Files" xml:space="preserve">
+    <value>file(s)</value>
+  </data>
+  <data name="FileExplorerManager_Directories" xml:space="preserve">
+    <value>folder(s)</value>
+  </data>
+  <data name="Form1_returnToSpaceToolStripMenuItem" xml:space="preserve">
+    <value>Return To Space</value>
+  </data>
+  <data name="PasswordUtil_NoValue" xml:space="preserve">
+    <value>Value for "{0}" parameter not found.</value>
+  </data>
+  <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
+    <value>Close All</value>
+  </data>
+  <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Row number panel has been temporarily disabled because of a large
+number of text lines. It is possibile to reopen at anytime.</value>
+  </data>
+  <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="Form1_setTabColorGreenToolStripMenuItem" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="Form1_setTabColorOrangeToolStripMenuItem" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="Form1_setTabColorRedToolStripMenuItem" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Form1_setTabColorToolStripMenuItem" xml:space="preserve">
+    <value>Set Tab Color</value>
+  </data>
+  <data name="Form1_setTabColorBlackToolStripMenuItem" xml:space="preserve">
+    <value>Black (Standard)</value>
+  </data>
+  <data name="Options_hostsConfiguratorTabColorComboBoxItems" xml:space="preserve">
+    <value>Orange
+Red
+Green
+Blue
+Black</value>
+  </data>
+  <data name="Options_hostsConfiguratorTabColorLabel" xml:space="preserve">
+    <value>Tab color:</value>
+  </data>
+  <data name="TranslateText_SourceEqualToDestionation" xml:space="preserve">
+    <value>Source and destination languages are equals.
+Select two different languages to proceed.</value>
+  </data>
+  <data name="Statistics_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Statistics_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Statistics_domainLabel1" xml:space="preserve">
+    <value>Domain:</value>
+  </data>
+  <data name="Statistics_frameworkVersionLabel1" xml:space="preserve">
+    <value>.NET CLR version:</value>
+  </data>
+  <data name="Statistics_helpLabel" xml:space="preserve">
+    <value>Some infos about system environment.</value>
+  </data>
+  <data name="Statistics_machineNameLabel1" xml:space="preserve">
+    <value>Computer name:</value>
+  </data>
+  <data name="Statistics_memoryLabel1" xml:space="preserve">
+    <value>Memory (working set):</value>
+  </data>
+  <data name="Statistics_osLabel1" xml:space="preserve">
+    <value>Operative system:</value>
+  </data>
+  <data name="Statistics_processorsLabel1" xml:space="preserve">
+    <value>Processors:</value>
+  </data>
+  <data name="Statistics_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Statistics_Title" xml:space="preserve">
+    <value>Environment Statistics</value>
+  </data>
+  <data name="Statistics_usernameLabel1" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="Statistics_workingDirectoryLabel1" xml:space="preserve">
+    <value>Working directory:</value>
+  </data>
+  <data name="SystemUtil_OSOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Form1_statisticsToolStripMenuItem" xml:space="preserve">
+    <value>Environment Statistics</value>
+  </data>
+  <data name="GoToLine_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="GoToLine_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="GoToLine_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="MoveLines_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="MoveLines_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="MoveLines_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Options_copyToolStripMenuItem1" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Options_pasteToolStripMenuItem1" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Options_selectAllToolStripMenuItem1" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="PadText_toolStripMenuItem1" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="PadText_toolStripMenuItem2" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="PadText_toolStripMenuItem3" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="FontSelect_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="FontSelect_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="FontSelect_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="RegularExpressionValidator_InvalidRegex" xml:space="preserve">
+    <value>Requested regex is invalid.</value>
+  </data>
+  <data name="FileManager_UnauthorizedAccess" xml:space="preserve">
+    <value>Unauthorized file access!
+Connected user does not have enough rights to save this file.</value>
+  </data>
+  <data name="FileManager_UserNotAdmin" xml:space="preserve">
+    <value>Connected user does not have administrator rights.
+It will not be possible to save edits on this file.</value>
+  </data>
+  <data name="SystemUtil_New" xml:space="preserve">
+    <value>Open new tab</value>
+  </data>
+  <data name="SystemUtil_NewAndPaste" xml:space="preserve">
+    <value>Open new tab and paste text</value>
+  </data>
+  <data name="SystemUtil_OpenFile" xml:space="preserve">
+    <value>Open file...</value>
+  </data>
+  <data name="SystemUtil_OpenSession" xml:space="preserve">
+    <value>Open session...</value>
+  </data>
+  <data name="SystemUtil_WebSite" xml:space="preserve">
+    <value>Navigate into DtPad web page</value>
+  </data>
+  <data name="SystemUtil_CheckNewVersion" xml:space="preserve">
+    <value>Check for new version...</value>
+  </data>
+  <data name="SystemUtil_SearchInFiles" xml:space="preserve">
+    <value>Search in files...</value>
+  </data>
+  <data name="Statistics_refreshButtonToolTip" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Form1_pasteSpecialHtmlToolStripMenuItem" xml:space="preserve">
+    <value>HTML Content</value>
+  </data>
+  <data name="Form1_pasteSpecialRtfToolStripMenuItem" xml:space="preserve">
+    <value>RTF Content</value>
+  </data>
+  <data name="Form1_pasteSpecialToolStripMenuItem" xml:space="preserve">
+    <value>Paste Special</value>
+  </data>
+  <data name="TextManager_NoSpecialData" xml:space="preserve">
+    <value>Clipboard does not contains data with selected format.</value>
+  </data>
+  <data name="Form1_newAndPasteToolStripMenuItem2" xml:space="preserve">
+    <value>New And Paste</value>
+  </data>
+  <data name="Form1_internetServicesToolStripMenuItem" xml:space="preserve">
+    <value>Internet Services</value>
+  </data>
+  <data name="Form1_searchInWikipediaToolStripMenuItem1" xml:space="preserve">
+    <value>[WP] Search Selected Text</value>
+  </data>
+  <data name="Form1_internetServicesToolStripMenuItem1" xml:space="preserve">
+    <value>Internet Services</value>
+  </data>
+  <data name="Options_highlightsResultsCheckBox" xml:space="preserve">
+    <value>Highlights results</value>
+  </data>
+  <data name="searchPanel_clearHighlightsToolStripButton" xml:space="preserve">
+    <value>Clear Highlights</value>
+  </data>
+  <data name="searchPanel_highlightsResultsToolStripButton" xml:space="preserve">
+    <value>Highlights Results</value>
+  </data>
+  <data name="filePanel_listFolderContentWithPatternToolStripMenuItem" xml:space="preserve">
+    <value>List Folder Content (With Filters)</value>
+  </data>
+  <data name="filePanel_listToolStripMenuItem" xml:space="preserve">
+    <value>Write List</value>
+  </data>
+  <data name="filePanel_includeSubdirectoriesToolStripMenuItem" xml:space="preserve">
+    <value>Include Subdirectories</value>
+  </data>
+  <data name="filePanel_showSizeToolStripMenuItem" xml:space="preserve">
+    <value>Show Sizes</value>
+  </data>
+  <data name="FileExplorerManager_TotalSize" xml:space="preserve">
+    <value>Total size:</value>
+  </data>
+  <data name="Form1_searchInWikipediaToolStripMenuItem" xml:space="preserve">
+    <value>[WP] Search Selected Text</value>
+  </data>
+  <data name="Options_jumpListCheckBox" xml:space="preserve">
+    <value>Activate Jump List (only on Windows 7)</value>
+  </data>
+  <data name="Options_proxyHostLabel" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="Options_proxyPortLabel" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="DropboxManager_UriFormat" xml:space="preserve">
+    <value>Access error to Dropbox!
+Verify your account on "www.dropbox.com" and proxy (if you use one) in settings dialog.</value>
+  </data>
+  <data name="GoToLine_lineCurrentLabel1" xml:space="preserve">
+    <value>Current row:</value>
+  </data>
+  <data name="Form1_searchInFilesToolStripButton" xml:space="preserve">
+    <value>Search In Files...</value>
+  </data>
+  <data name="Form1_htmlToTextPageToolStripMenuItem" xml:space="preserve">
+    <value>HTML Page To Text</value>
+  </data>
+  <data name="SessionManager_SaveAllFilesFailed" xml:space="preserve">
+    <value>Not all files were saved. Close files or saved them
+before to proceed with session saving.</value>
+  </data>
+  <data name="SessionManager_Empty" xml:space="preserve">
+    <value>Selected session is empty.
+The file may be corrupted.</value>
+  </data>
+  <data name="DropboxManager_ProxyHostRequired" xml:space="preserve">
+    <value>To authenticate through proxy server, Dropbox requires explicitly its address.
+Please, write it in the appropriate field in the settings dialog ("Internet" tab) and try again.</value>
+  </data>
+  <data name="DropboxManager_SuccessfullyAuth" xml:space="preserve">
+    <value>DtPad has been successfully authorized to access to Dropbox?
+
+Press Yes to continue, No to cancel.</value>
+  </data>
+  <data name="Form1_logoutFromDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Log Out From Dropbox</value>
+  </data>
+  <data name="DropboxManager_DropboxLogOut" xml:space="preserve">
+    <value>Logged out from Dropbox</value>
+  </data>
+  <data name="FileListManager_AlreadyFavourite" xml:space="preserve">
+    <value>Selected file has already been registered as favorite.</value>
+  </data>
+  <data name="Form1_favouriteSessionToolStripButton" xml:space="preserve">
+    <value>Add Session To Favourite Files</value>
+  </data>
+  <data name="Form1_favouriteSessionToolStripMenuItem" xml:space="preserve">
+    <value>Add To Favourite Files</value>
+  </data>
+  <data name="DropboxManager_SureRenameFile" xml:space="preserve">
+    <value>Are you sure to rename file "{0}"
+as "{1}"?</value>
+  </data>
+  <data name="DropboxManager_SureRenameFolder" xml:space="preserve">
+    <value>Are you sure to rename folder "{0}"
+as "{1}"?</value>
+  </data>
+  <data name="DropboxManager_WarningRenaming" xml:space="preserve">
+    <value>It was not possibile to rename the object. Check if it is in readonly state.</value>
+  </data>
+  <data name="DropboxFileDialog_deleteToolStripMenuItem1" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DropboxManager_SureDeleteFile" xml:space="preserve">
+    <value>Are you really sure to delete file
+"{0}"?</value>
+  </data>
+  <data name="DropboxManager_SureDeleteFolder" xml:space="preserve">
+    <value>Are you really sure to delete folder
+"{0}"?</value>
+  </data>
+  <data name="DropboxManager_WarningDeleting" xml:space="preserve">
+    <value>It was not possibile to delete the object.</value>
+  </data>
+  <data name="Options_dropboxDeleteCheckBox" xml:space="preserve">
+    <value>Allow delete file and folder operation</value>
+  </data>
+  <data name="Options_dropboxGroupBox1" xml:space="preserve">
+    <value>Usage</value>
+  </data>
+  <data name="Options_dropboxNode" xml:space="preserve">
+    <value>Dropbox</value>
+  </data>
+  <data name="Options_dropboxRememberCheckBox" xml:space="preserve">
+    <value>Remember user login when exit</value>
+  </data>
+  <data name="Statistics_copyButtonToolTip" xml:space="preserve">
+    <value>Copy Statistics To Clipboard</value>
+  </data>
+  <data name="InternalBrowser_proceedButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="InternalBrowser_Title" xml:space="preserve">
+    <value>Internal Browser</value>
+  </data>
+  <data name="DropboxFileDialog_viewComboBoxItems" xml:space="preserve">
+    <value>Large Icons
+Small Icons
+List
+Tile</value>
+  </data>
+  <data name="Form1_sortTextToolStripMenuItem" xml:space="preserve">
+    <value>Sort Text...</value>
+  </data>
+  <data name="SortText_allTextRadioButton" xml:space="preserve">
+    <value>All text</value>
+  </data>
+  <data name="SortText_applyToLabel" xml:space="preserve">
+    <value>Apply to:</value>
+  </data>
+  <data name="SortText_ascCheckBox" xml:space="preserve">
+    <value>Asc</value>
+  </data>
+  <data name="SortText_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="SortText_descCheckBox" xml:space="preserve">
+    <value>Desc</value>
+  </data>
+  <data name="SortText_helpLabel" xml:space="preserve">
+    <value>Sort text with desidered order.</value>
+  </data>
+  <data name="SortText_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="SortText_selectedTextRadioButton" xml:space="preserve">
+    <value>Selected text</value>
+  </data>
+  <data name="SortText_sortTypeLabel" xml:space="preserve">
+    <value>Sort type:</value>
+  </data>
+  <data name="SortText_Title" xml:space="preserve">
+    <value>Sort Text</value>
+  </data>
+  <data name="TextManager_TextEmpty" xml:space="preserve">
+    <value>Text area is empty.</value>
+  </data>
+  <data name="Form1_validationSchemaToolStripMenuItem1" xml:space="preserve">
+    <value>Validation With Schema</value>
+  </data>
+  <data name="Form1_xMLSchemaToolStripMenuItem" xml:space="preserve">
+    <value>XML/HTML With Schema</value>
+  </data>
+  <data name="Form1_linesWithoutDuplidatesToolStripMenuItem" xml:space="preserve">
+    <value>Lines Without Duplicates</value>
+  </data>
+  <data name="FileProperties_TitleSession" xml:space="preserve">
+    <value>Session Properties</value>
+  </data>
+  <data name="Form1_sessionPropertiesToolStripMenuItem" xml:space="preserve">
+    <value>Session Properties</value>
+  </data>
+  <data name="FileProperties_copyButtonToolTip" xml:space="preserve">
+    <value>Copy File Full Path To Clipboard</value>
+  </data>
+  <data name="CustomFilesManager_HelpAnnotation" xml:space="preserve">
+    <value>This panel can be used for several purposes, including to write down some considerations on its tab, or make a quick comparison between texts.</value>
+  </data>
+  <data name="CustomFilesManager_WordWrapPanel" xml:space="preserve">
+    <value>Word Wrap</value>
+  </data>
+  <data name="Form1_annotationPanelToolStripMenuItem" xml:space="preserve">
+    <value>Annotation Panel</value>
+  </data>
+  <data name="CustomFilesManager_CopyPanel" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CustomFilesManager_CutPanel" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="CustomFilesManager_DeletePanel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CustomFilesManager_PastePanel" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="CustomFilesManager_SelectAllPanel" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="CustomFilesManager_WarningAnnotationPanelClose" xml:space="preserve">
+    <value>Are you sure to close annotation panel?
+The text it contains will be lost.</value>
+  </data>
+  <data name="FileManager_EncodingXmlToSave" xml:space="preserve">
+    <value>The encoding declared in the XML is different from the one selected inside DtPad.
+The file will be saved with the first of the two to maintain it consistent.</value>
+  </data>
+  <data name="FileManager_InvalidXmlToSave" xml:space="preserve">
+    <value>XML file content is not valid. Do you still want to proceed?</value>
+  </data>
+  <data name="FileListManager_AddedFavourite" xml:space="preserve">
+    <value>File "{0}" was added to favorites.</value>
+  </data>
+  <data name="Form1_normalizeToolStripMenuItem" xml:space="preserve">
+    <value>Normalize HTML</value>
+  </data>
+  <data name="Form1_normalizeXMLToolStripMenuItem" xml:space="preserve">
+    <value>Normalize HTML</value>
+  </data>
+  <data name="notePanel_moveFirstToolStripButton" xml:space="preserve">
+    <value>Move As First</value>
+  </data>
+  <data name="notePanel_moveLastToolStripButton" xml:space="preserve">
+    <value>Move As Last</value>
+  </data>
+  <data name="Options_nullCharCheckBox" xml:space="preserve">
+    <value>Do not consider null character of end of string (\0)</value>
+  </data>
+  <data name="Options_openingGroupBox3" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="FileListManager_ClearObsoleteRecentSessions" xml:space="preserve">
+    <value>Are you sure to clear sessions that no longer exist from recent sessions list?</value>
+  </data>
+  <data name="FileListManager_ObsoleteSessionsRemovedMore" xml:space="preserve">
+    <value>{0} non-existing recent sessions removed</value>
+  </data>
+  <data name="FileListManager_ObsoleteSessionsRemovedOne" xml:space="preserve">
+    <value>{0} non-existing recent session removed</value>
+  </data>
+  <data name="Form1_clearObsoleteSessionsToolStripMenuItem" xml:space="preserve">
+    <value>Clear Non-Existing Sessions</value>
+  </data>
+  <data name="Form1_insertTagToolStripMenuItem" xml:space="preserve">
+    <value>Insert Tag...</value>
+  </data>
+  <data name="Form1_tagToolStripMenuItem" xml:space="preserve">
+    <value>Tag...</value>
+  </data>
+  <data name="FormatManager_TagTypeEmpty" xml:space="preserve">
+    <value>Tag type value is emtpy.</value>
+  </data>
+  <data name="TagEntry_cancelButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="TagEntry_completeRadioButton" xml:space="preserve">
+    <value>Complete (ie. &lt;b&gt;&lt;/b&gt;)</value>
+  </data>
+  <data name="TagEntry_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="TagEntry_customRadioButton" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="TagEntry_CustomTagTypeEmpty" xml:space="preserve">
+    <value>Custom tag type has been selected, but begin or end tag is missing.
+Insert them, or change tag type selection.</value>
+  </data>
+  <data name="TagEntry_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="TagEntry_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="TagEntry_extensionGroupBox" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="TagEntry_forumRadioButton" xml:space="preserve">
+    <value>Forum ([, ])</value>
+  </data>
+  <data name="TagEntry_helpLabel" xml:space="preserve">
+    <value>Insert a tag into text.</value>
+  </data>
+  <data name="TagEntry_okButton" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="TagEntry_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="TagEntry_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="TagEntry_shortRadioButton" xml:space="preserve">
+    <value>Short (ie. &lt;br /&gt;)</value>
+  </data>
+  <data name="TagEntry_tagLabel" xml:space="preserve">
+    <value>Tag:</value>
+  </data>
+  <data name="TagEntry_Title" xml:space="preserve">
+    <value>Tag Entry</value>
+  </data>
+  <data name="TagEntry_typeGroupBox" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TagEntry_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="TagEntry_xhtmlRadioButton" xml:space="preserve">
+    <value>XML/HTML (&lt;, &gt;)</value>
+  </data>
+  <data name="Form1_saveAllAsZipToolStripMenuItem" xml:space="preserve">
+    <value>All As ZIP...</value>
+  </data>
+  <data name="ZipManager_FileDialog" xml:space="preserve">
+    <value>ZIP archive (*.zip)|*.zip</value>
+  </data>
+  <data name="ZipManager_Saved" xml:space="preserve">
+    <value>Archive "{0}" saved</value>
+  </data>
+  <data name="ZipManager_NoContent" xml:space="preserve">
+    <value>There is no content or opened files to store into archive.</value>
+  </data>
+  <data name="Dictionary_Title" xml:space="preserve">
+    <value>Dictionary and Thesaurus</value>
+  </data>
+  <data name="DictionaryManager_Correct" xml:space="preserve">
+    <value>correct</value>
+  </data>
+  <data name="DictionaryManager_Meaning" xml:space="preserve">
+    <value>Meaning: {0}</value>
+  </data>
+  <data name="DictionaryManager_Synonym" xml:space="preserve">
+    <value>&gt; synonym: "{0}"</value>
+  </data>
+  <data name="DictionaryManager_Tip" xml:space="preserve">
+    <value>&gt; suggestion: "{0}"</value>
+  </data>
+  <data name="DictionaryManager_TipsMore" xml:space="preserve">
+    <value>There are {0} word suggestions</value>
+  </data>
+  <data name="DictionaryManager_TipsOne" xml:space="preserve">
+    <value>There is {0} word suggestion</value>
+  </data>
+  <data name="DictionaryManager_Uncorrect" xml:space="preserve">
+    <value>uncorrect</value>
+  </data>
+  <data name="DictionaryManager_Word" xml:space="preserve">
+    <value>The word "{0}" is {1}</value>
+  </data>
+  <data name="Dictionary_clearButton" xml:space="preserve">
+    <value>Clear results</value>
+  </data>
+  <data name="Dictionary_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Dictionary_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Dictionary_dictionariesLabel" xml:space="preserve">
+    <value>Click here to download new dictionaries</value>
+  </data>
+  <data name="Dictionary_helpLabel" xml:space="preserve">
+    <value>Check the correctness of a word and search for its synonyms.</value>
+  </data>
+  <data name="Dictionary_languageLabel" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="Dictionary_NoDictionaries" xml:space="preserve">
+    <value>No dictionary found inside "Languages" program folder.
+Check this URL to download them or click the link on the following window:
+</value>
+  </data>
+  <data name="Dictionary_searchButton" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Dictionary_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Dictionary_wordLabel" xml:space="preserve">
+    <value>Word:</value>
+  </data>
+  <data name="Form1_dictionaryToolStripMenuItem" xml:space="preserve">
+    <value>Dictionary and Thesaurus</value>
+  </data>
+  <data name="Form1_dictionaryToolStripMenuItem1" xml:space="preserve">
+    <value>Dictionary and Thesaurus...</value>
+  </data>
+  <data name="ZipManager_FilesNotSaved" xml:space="preserve">
+    <value>Not all files were saved. Close files or saved them
+before to proceed with archive generation.</value>
+  </data>
+  <data name="ZipManager_SaveAllFiles" xml:space="preserve">
+    <value>All modified tabs will be saved, so they could be stored inside the archive.
+Are you sure you want to proceed?</value>
+  </data>
+  <data name="Dictionary_cutToolStripMenuItem" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Dictionary_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Dictionary_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Dictionary_toolStripMenuItem1" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Dictionary_toolStripMenuItem2" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Dictionary_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="DictionaryManager_NoDictionary" xml:space="preserve">
+    <value>The dictionary of language in use was not found in the program folder "Languages".
+Check this URL to download:
+</value>
+  </data>
+  <data name="Dictionary_verifyAllButton" xml:space="preserve">
+    <value>Verify all text</value>
+  </data>
+  <data name="Form1_dictionaryTextToolStripMenuItem" xml:space="preserve">
+    <value>Verify All Text</value>
+  </data>
+  <data name="Form1_dictionaryToolStripButton" xml:space="preserve">
+    <value>Dictionary and Thesaurus...</value>
+  </data>
+  <data name="Form1_dictionaryWordToolStripMenuItem" xml:space="preserve">
+    <value>Verify Word...</value>
+  </data>
+  <data name="DictionaryManager_TextCorrect" xml:space="preserve">
+    <value>The text contains no errors!</value>
+  </data>
+  <data name="Form1_dictionaryClearToolStripMenuItem" xml:space="preserve">
+    <value>Clear Text Highlight</value>
+  </data>
+  <data name="MoveLines_lineLabel" xml:space="preserve">
+    <value>Positions to move the current row:</value>
+  </data>
+  <data name="tabPanel_moveTabFirstToolStripButton" xml:space="preserve">
+    <value>Move First</value>
+  </data>
+  <data name="tabPanel_moveTabLastToolStripButton" xml:space="preserve">
+    <value>Move Last</value>
+  </data>
+  <data name="notePanel_blackstandardToolStripMenuItem" xml:space="preserve">
+    <value>Black (Standard)</value>
+  </data>
+  <data name="notePanel_blueToolStripMenuItem" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="notePanel_greenToolStripMenuItem" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="notePanel_orangeToolStripMenuItem" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="notePanel_redToolStripMenuItem" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="notePanel_tagToolStripMenuItem" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="CustomFilesManager_HostsClose" xml:space="preserve">
+    <value>To reopen the panel, click "View -&gt; Hosts File Configurator".</value>
+  </data>
+  <data name="WindowManager_SureResetWindow" xml:space="preserve">
+    <value>Are you sure you want to restore the default appearance settings of DtPad?</value>
+  </data>
+  <data name="calculatorPanel_clearCalculatorToolStripButton" xml:space="preserve">
+    <value>Clear Calculator</value>
+  </data>
+  <data name="calculatorPanel_thousandSepToolStripButton" xml:space="preserve">
+    <value>Use Thousands Separator</value>
+  </data>
+  <data name="FileExplorerManager_UnexistingPath" xml:space="preserve">
+    <value>The provided path does not exist.</value>
+  </data>
+  <data name="Form1_redoAllToolStripMenuItem" xml:space="preserve">
+    <value>Redo All</value>
+  </data>
+  <data name="Form1_undoAllToolStripMenuItem" xml:space="preserve">
+    <value>Undo All</value>
+  </data>
+  <data name="QuestionYNNAC_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="QuestionYNNAC_noButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QuestionYNNAC_noToAllButton" xml:space="preserve">
+    <value>No To All</value>
+  </data>
+  <data name="QuestionYNNAC_Title" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="QuestionYNNAC_yesButton" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Form1_copyFileNameToolStripMenuItem" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="Form1_copyFileNamesToolStripMenuItem" xml:space="preserve">
+    <value>Copy...</value>
+  </data>
+  <data name="filePanel_refreshDriveToolStripButton" xml:space="preserve">
+    <value>Refresh Drives</value>
+  </data>
+</root>

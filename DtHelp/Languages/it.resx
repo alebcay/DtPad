@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_closeButton" xml:space="preserve">
+    <value>Chiudi</value>
+  </data>
+  <data name="About_createdByLabel" xml:space="preserve">
+    <value>Marco "Cav" Macciò</value>
+  </data>
+  <data name="About_createdByLabel1" xml:space="preserve">
+    <value>Scritto da:</value>
+  </data>
+  <data name="About_descriptionTextBox" xml:space="preserve">
+    <value>DtHelp (2009-2011) è distribuito sotto licenza Creative Commons Attribution 3.0.
+creativecommons.org/licenses/by-nc-nd/3.0
+
+Questa applicazione richiede Microsoft .NET Framework 4 e non fa uso del registro di Windows.
+
+Set principale di icone creato da Delacro.
+delacro.deviantart.com
+
+Icone secondarie create da Mark James e VistaIcons.
+- famfamfam.com
+- vistaicons.com
+
+Componente esterno referenziato: Log4Net.
+- logging.apache.org/log4net
+
+DtHelp non raccoglie alcuna informazione riguardante uso e utenti. I dati che possono essere storicizzati nella cartella "Logs" riguardano solamente errori e avvisi di programma che sono mostrati anche nell'interfaccia, e in nessun caso essi contengono testo visualizzato o altri dati privati.</value>
+  </data>
+  <data name="About_emailPictureBoxToolTip" xml:space="preserve">
+    <value>Scrivi una e-mail all'autore di DtHelp</value>
+  </data>
+  <data name="About_rssPictureBoxToolTip" xml:space="preserve">
+    <value>Leggi il feed RSS di diariotraduttore.com</value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>Informazioni</value>
+  </data>
+  <data name="About_titleLabel" xml:space="preserve">
+    <value>DtHelp</value>
+  </data>
+  <data name="About_versionLabel1" xml:space="preserve">
+    <value>Versione:</value>
+  </data>
+  <data name="About_websiteLabel" xml:space="preserve">
+    <value>diariotraduttore.com</value>
+  </data>
+  <data name="About_websiteLabel1" xml:space="preserve">
+    <value>Sito web:</value>
+  </data>
+  <data name="About_websitePictureBoxToolTip" xml:space="preserve">
+    <value>Visita la home page dell'autore di DtHelp</value>
+  </data>
+  <data name="ErrorOR_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Copia il messaggio di errore negli appunti</value>
+  </data>
+  <data name="ErrorOR_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorOR_reportBugButton" xml:space="preserve">
+    <value>Segnala</value>
+  </data>
+  <data name="ErrorOR_Title" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Copia il messaggio di errore negli appunti</value>
+  </data>
+  <data name="ErrorO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorO_Title" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="ReportBug_areaComboBoxItems" xml:space="preserve">
+    <value>
+File
+Modifica
+Cronologia
+Opzioni
+Aspetto
+Indice guida
+Altro</value>
+  </data>
+  <data name="ReportBug_areaLabel" xml:space="preserve">
+    <value>Area: *</value>
+  </data>
+  <data name="ReportBug_cancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="ReportBug_descriptionLabel" xml:space="preserve">
+    <value>Descrizione: *</value>
+  </data>
+  <data name="ReportBug_emailLabel" xml:space="preserve">
+    <value>E-mail: *</value>
+  </data>
+  <data name="ReportBug_errorMessageLabel" xml:space="preserve">
+    <value>Messaggio d'errore (se presente):</value>
+  </data>
+  <data name="ReportBug_helpLabel" xml:space="preserve">
+    <value>Invia via e-mail un report di errore all'autore di DtHelp.</value>
+  </data>
+  <data name="ReportBug_nameLabel" xml:space="preserve">
+    <value>Nome: *</value>
+  </data>
+  <data name="ReportBug_requiredFieldsLabel" xml:space="preserve">
+    <value>* Campi obbligatori</value>
+  </data>
+  <data name="ReportBug_sendButton" xml:space="preserve">
+    <value>Invia</value>
+  </data>
+  <data name="ReportBug_sendMeACopyCheckBox" xml:space="preserve">
+    <value>Inviami una copia</value>
+  </data>
+  <data name="ReportBug_Title" xml:space="preserve">
+    <value>Segnala errore</value>
+  </data>
+  <data name="Form1_aboutToolStripButton" xml:space="preserve">
+    <value>Informazioni</value>
+  </data>
+  <data name="Form1_aboutToolStripMenuItem" xml:space="preserve">
+    <value>Informazioni</value>
+  </data>
+  <data name="Form1_browserStatusToolStripStatusLabel" xml:space="preserve">
+    <value>Pronto</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem1" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="Form1_editToolStripMenuItem" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="Form1_englishToolStripMenuItem" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Form1_exitToolStripMenuItem" xml:space="preserve">
+    <value>Esci</value>
+  </data>
+  <data name="Form1_fileToolStripMenuItem" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Form1_goBackToolStripButton" xml:space="preserve">
+    <value>Indietro</value>
+  </data>
+  <data name="Form1_goBackToolStripMenuItem" xml:space="preserve">
+    <value>Indietro</value>
+  </data>
+  <data name="Form1_goBackToolStripMenuItem1" xml:space="preserve">
+    <value>Indietro</value>
+  </data>
+  <data name="Form1_goForwardToolStripButton" xml:space="preserve">
+    <value>Avanti</value>
+  </data>
+  <data name="Form1_goForwardToolStripMenuItem" xml:space="preserve">
+    <value>Avanti</value>
+  </data>
+  <data name="Form1_goForwardToolStripMenuItem1" xml:space="preserve">
+    <value>Avanti</value>
+  </data>
+  <data name="Form1_helpToolStripMenuItem" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="Form1_historyToolStripMenuItem" xml:space="preserve">
+    <value>Cronologia</value>
+  </data>
+  <data name="Form1_homeToolStripButton" xml:space="preserve">
+    <value>Pagina iniziale</value>
+  </data>
+  <data name="Form1_homeToolStripMenuItem" xml:space="preserve">
+    <value>Pagina iniziale</value>
+  </data>
+  <data name="Form1_italianoToolStripMenuItem" xml:space="preserve">
+    <value>Italiano</value>
+  </data>
+  <data name="Form1_languageToolStripMenuItem" xml:space="preserve">
+    <value>Lingua</value>
+  </data>
+  <data name="Form1_office2003ToolStripMenuItem" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Form1_openGuideToolStripButton" xml:space="preserve">
+    <value>Apri...</value>
+  </data>
+  <data name="Form1_openGuideToolStripMenuItem" xml:space="preserve">
+    <value>Apri...</value>
+  </data>
+  <data name="Form1_pageSetupToolStripMenuItem" xml:space="preserve">
+    <value>Impostazioni pagina...</value>
+  </data>
+  <data name="Form1_printPreviewToolStripMenuItem" xml:space="preserve">
+    <value>Anteprima stampa</value>
+  </data>
+  <data name="Form1_printToolStripButton" xml:space="preserve">
+    <value>Stampa...</value>
+  </data>
+  <data name="Form1_printToolStripMenuItem" xml:space="preserve">
+    <value>Stampa...</value>
+  </data>
+  <data name="Form1_propertiesToolStripMenuItem" xml:space="preserve">
+    <value>Proprietà</value>
+  </data>
+  <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
+    <value>Segnala errore...</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem" xml:space="preserve">
+    <value>Salva come...</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem1" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="Form1_styleToolStripMenuItem" xml:space="preserve">
+    <value>Aspetto</value>
+  </data>
+  <data name="Form1_urlToolStripLabel" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="Form1_windowsXPToolStripMenuItem" xml:space="preserve">
+    <value>Windows classico</value>
+  </data>
+  <data name="Form1_Title" xml:space="preserve">
+    <value>DtHelp</value>
+  </data>
+  <data name="EmailManager_Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="EmailManager_Description" xml:space="preserve">
+    <value>Descrizione</value>
+  </data>
+  <data name="EmailManager_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="EmailManager_ErrorMessage" xml:space="preserve">
+    <value>Messaggio di errore</value>
+  </data>
+  <data name="EmailManager_Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="EmailManager_BugReport" xml:space="preserve">
+    <value>Segnalazione errore</value>
+  </data>
+  <data name="GuideManager_ErrorReading" xml:space="preserve">
+    <value>Si è verificato un errore in apertura della guida.</value>
+  </data>
+  <data name="WindowManager_CommandExecution" xml:space="preserve">
+    <value>L'esecuzione dell'operazione in corso è stata interrotta!</value>
+  </data>
+  <data name="WindowManager_Exception" xml:space="preserve">
+    <value>Si è verificata un'eccezione:</value>
+  </data>
+  <data name="WindowManager_FatalException" xml:space="preserve">
+    <value>Si è verificata un'eccezione grave:</value>
+  </data>
+  <data name="WindowManager_ProgramExecution" xml:space="preserve">
+    <value>L'esecuzione del programma è stata interrotta!</value>
+  </data>
+  <data name="Program_InputError" xml:space="preserve">
+    <value>Numero di parametri in ingresso errato. Massimo un parametro consentito.</value>
+  </data>
+  <data name="GuideManager_ErrorGetting" xml:space="preserve">
+    <value>Nodo della guida non trovato!</value>
+  </data>
+  <data name="About_createdByLabel_FE" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="About_titleLabel_FE" xml:space="preserve">
+    <value>DtHelp - Family Edition</value>
+  </data>
+  <data name="About_websiteLabel1_FE" xml:space="preserve">
+    <value>Copyright:</value>
+  </data>
+  <data name="About_websiteLabel_FE" xml:space="preserve">
+    <value>2009</value>
+  </data>
+  <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
+    <value>Diario di un traduttore</value>
+  </data>
+  <data name="Form1_refreshToolStripButton" xml:space="preserve">
+    <value>Ricarica</value>
+  </data>
+  <data name="Form1_refreshToolStripMenuItem" xml:space="preserve">
+    <value>Ricarica</value>
+  </data>
+  <data name="Form1_connectionStatus_Connected" xml:space="preserve">
+    <value>Connesso</value>
+  </data>
+  <data name="Form1_connectionStatus_Disconnected" xml:space="preserve">
+    <value>Disconnesso</value>
+  </data>
+  <data name="Form1_collapseAllToolStripMenuItem" xml:space="preserve">
+    <value>Chiudi tutto</value>
+  </data>
+  <data name="Form1_collapseSelectedNodeToolStripMenuItem" xml:space="preserve">
+    <value>Chiudi nodo selezionato</value>
+  </data>
+  <data name="Form1_expandAllToolStripMenuItem" xml:space="preserve">
+    <value>Espandi tutto</value>
+  </data>
+  <data name="Form1_expandSelectedNodeToolStripMenuItem" xml:space="preserve">
+    <value>Espandi nodo selezionato</value>
+  </data>
+  <data name="Form1_viewToolStripMenuItem" xml:space="preserve">
+    <value>Visualizza</value>
+  </data>
+  <data name="Form1_windowToolStripMenuItem" xml:space="preserve">
+    <value>Finestra</value>
+  </data>
+  <data name="Form1_searchToolStripButton" xml:space="preserve">
+    <value>Mostra pannello di ricerca</value>
+  </data>
+  <data name="Form1_searchToolStripMenuItem" xml:space="preserve">
+    <value>Pannello di ricerca</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem2" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem3" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem1" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Cancella</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem1" xml:space="preserve">
+    <value>Cancella</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Incolla</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem1" xml:space="preserve">
+    <value>Incolla</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem2" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem3" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem1" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem" xml:space="preserve">
+    <value>Chiudi</value>
+  </data>
+  <data name="Form1_clearToolStripMenuItem" xml:space="preserve">
+    <value>Svuota</value>
+  </data>
+  <data name="Form1_licenseAgreementToolStripMenuItem" xml:space="preserve">
+    <value>Licenza d'uso</value>
+  </data>
+  <data name="EmailManager_EmailInvalid" xml:space="preserve">
+    <value>Il campo e-mail non è corretto.
+Formato richiesto: esempio@email.it</value>
+  </data>
+  <data name="AlertO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AlertO_Title" xml:space="preserve">
+    <value>Avviso</value>
+  </data>
+  <data name="ReportBug_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="ReportBug_cutToolStripMenuItem" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="ReportBug_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Cancella</value>
+  </data>
+  <data name="ReportBug_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Incolla</value>
+  </data>
+  <data name="ReportBug_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="ReportBug_undoToolStripMenuItem" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="About_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="About_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+</root>

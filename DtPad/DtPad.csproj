@@ -1,0 +1,1141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70413856-390D-47C2-8C69-CA8A26F9F643}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DtPad</RootNamespace>
+    <AssemblyName>DtPad</AssemblyName>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DtPad.snk</AssemblyOriginatorKeyFile>
+    <StartupObject>DtPad.Program</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Debug</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>DtPad.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;Release</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>DtPad.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseFE|AnyCPU' ">
+    <OutputPath>bin\ReleaseFE\</OutputPath>
+    <DefineConstants>TRACE;ReleaseFE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>DtPad.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Be.Windows.Forms.HexBox, Version=1.4.7.13476, Culture=neutral, PublicKeyToken=e0e5adf0ebc99863, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.10.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.1.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="MonthCalendar, Version=1.8.2.0, Culture=neutral, PublicKeyToken=9d22151b1b463438, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.4.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="NHunspell, Version=0.9.6.0, Culture=neutral, PublicKeyToken=1ac793ea843b4366, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.XML" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CharSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharSelect.Designer.cs">
+      <DependentUpon>CharSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorSelect.Designer.cs">
+      <DependentUpon>ColorSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customs\CustomComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomEvents.cs" />
+    <Compile Include="Customs\CustomMonthCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomRichTextBoxBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomTableLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\CustomTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Customs\StringForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dictionary.Designer.cs">
+      <DependentUpon>Dictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exceptions\ConfigException.cs" />
+    <Compile Include="Exceptions\DateTimeException.cs" />
+    <Compile Include="Exceptions\ExtensionException.cs" />
+    <Compile Include="Exceptions\FakeException.cs" />
+    <Compile Include="Exceptions\LanguageException.cs" />
+    <Compile Include="Exceptions\ObjectException.cs" />
+    <Compile Include="Exceptions\ParameterException.cs" />
+    <Compile Include="Exceptions\ParentFormNullException.cs" />
+    <Compile Include="Exceptions\ParseException.cs" />
+    <Compile Include="Exceptions\ProgramException.cs" />
+    <Compile Include="Exceptions\SessionException.cs" />
+    <Compile Include="Exceptions\TabException.cs" />
+    <Compile Include="Exceptions\TemplateException.cs" />
+    <Compile Include="Exceptions\ToolException.cs" />
+    <Compile Include="FileCompare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileCompare.Designer.cs">
+      <DependentUpon>FileCompare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileListOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileListOpen.Designer.cs">
+      <DependentUpon>FileListOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DropboxFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DropboxFileDialog.Designer.cs">
+      <DependentUpon>DropboxFileDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileRename.Designer.cs">
+      <DependentUpon>FileRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FontSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FontSelect.Designer.cs">
+      <DependentUpon>FontSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HexEditor.Designer.cs">
+      <DependentUpon>HexEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InternalBrowser.Designer.cs">
+      <DependentUpon>InternalBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\CalculationManager.cs" />
+    <Compile Include="Managers\ClipboardToggleManager.cs" />
+    <Compile Include="Managers\ColumnRulerManager.cs" />
+    <Compile Include="Managers\CustomFilesManager.cs" />
+    <Compile Include="Managers\DictionaryManager.cs" />
+    <Compile Include="Managers\DropboxManager.cs" />
+    <Compile Include="Managers\FavouriteManager.cs" />
+    <Compile Include="Managers\FileExplorerManager.cs" />
+    <Compile Include="Managers\FontManager.cs" />
+    <Compile Include="Managers\FormatManager.cs" />
+    <Compile Include="Managers\ImportExportManager.cs" />
+    <Compile Include="Managers\InternetManager.cs" />
+    <Compile Include="Managers\NoteModeManager.cs" />
+    <Compile Include="Managers\ReplaceManager.cs" />
+    <Compile Include="Managers\SearchFilesManager.cs" />
+    <Compile Include="Managers\SessionManager.cs" />
+    <Compile Include="Managers\ShellManager.cs" />
+    <Compile Include="Managers\TemplateManager.cs" />
+    <Compile Include="Managers\InternetServicesManager.cs" />
+    <Compile Include="Managers\ZipManager.cs" />
+    <Compile Include="MessageBoxes\QuestionYNNAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\QuestionYNNAC.Designer.cs">
+      <DependentUpon>QuestionYNNAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NameEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameEntry.Designer.cs">
+      <DependentUpon>NameEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\ControlObject.cs" />
+    <Compile Include="Objects\DropboxFSEObject.cs" />
+    <Compile Include="Objects\PasswordObject.cs" />
+    <Compile Include="Objects\TabPageObject.cs" />
+    <Compile Include="Objects\TemplateObject.cs" />
+    <Compile Include="Objects\TemplateObjectList.cs" />
+    <Compile Include="PadText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PadText.Designer.cs">
+      <DependentUpon>PadText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchInFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchInFiles.Designer.cs">
+      <DependentUpon>SearchInFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPattern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchPattern.Designer.cs">
+      <DependentUpon>SearchPattern.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLines.Designer.cs">
+      <DependentUpon>SelectLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowContent.Designer.cs">
+      <DependentUpon>ShowContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SortText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SortText.Designer.cs">
+      <DependentUpon>SortText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabEncoding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabEncoding.Designer.cs">
+      <DependentUpon>TabEncoding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagEntry.Designer.cs">
+      <DependentUpon>TagEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Templates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates.Designer.cs">
+      <DependentUpon>Templates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TranslateText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranslateText.Designer.cs">
+      <DependentUpon>TranslateText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrlEncode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrlEncode.Designer.cs">
+      <DependentUpon>UrlEncode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrlEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrlEntry.Designer.cs">
+      <DependentUpon>UrlEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CalculatorPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CalculatorPanel.Designer.cs">
+      <DependentUpon>CalculatorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CalendarPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CalendarPanel.Designer.cs">
+      <DependentUpon>CalendarPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ClipboardPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ClipboardPanel.Designer.cs">
+      <DependentUpon>ClipboardPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customs\CustomXtraTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatetimeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatetimeSelect.Designer.cs">
+      <DependentUpon>DatetimeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extensions.Designer.cs">
+      <DependentUpon>Extensions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Favourites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Favourites.Designer.cs">
+      <DependentUpon>Favourites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileProperties.Designer.cs">
+      <DependentUpon>FileProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoToLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoToLine.Designer.cs">
+      <DependentUpon>GoToLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\it.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>it.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\ClipboardManager.cs" />
+    <Compile Include="Managers\EmailManager.cs" />
+    <Compile Include="Managers\ExplorerManager.cs" />
+    <Compile Include="Managers\ExtensionManager.cs" />
+    <Compile Include="Managers\FileManager.cs" />
+    <Compile Include="Managers\HelpManager.cs" />
+    <Compile Include="Managers\MergeManager.cs" />
+    <Compile Include="Managers\NoteManager.cs" />
+    <Compile Include="Managers\OptionManager.cs" />
+    <Compile Include="Managers\OtherManager.cs" />
+    <Compile Include="Managers\PrintManager.cs" />
+    <Compile Include="Managers\FileListManager.cs" />
+    <Compile Include="Managers\SearchManager.cs" />
+    <Compile Include="Managers\TabManager.cs" />
+    <Compile Include="Managers\TextManager.cs" />
+    <Compile Include="Managers\ToolManager.cs" />
+    <Compile Include="Managers\TrayManager.cs" />
+    <Compile Include="Managers\VersionCheckManager.cs" />
+    <Compile Include="Managers\WindowManager.cs" />
+    <Compile Include="MergeTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MergeTabs.Designer.cs">
+      <DependentUpon>MergeTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\AlertO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\AlertO.Designer.cs">
+      <DependentUpon>AlertO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\ErrorO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\ErrorO.Designer.cs">
+      <DependentUpon>ErrorO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\ErrorOR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\ErrorOR.Designer.cs">
+      <DependentUpon>ErrorOR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\InfoO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\InfoO.Designer.cs">
+      <DependentUpon>InfoO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\QuestionYN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\QuestionYN.Designer.cs">
+      <DependentUpon>QuestionYN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\QuestionYNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\QuestionYNC.Designer.cs">
+      <DependentUpon>QuestionYNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\WarningYNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\WarningYNC.Designer.cs">
+      <DependentUpon>WarningYNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MessageBoxResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MoveLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveLines.Designer.cs">
+      <DependentUpon>MoveLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\ExtensionObject.cs" />
+    <Compile Include="Objects\ExtensionObjectList.cs" />
+    <Compile Include="Objects\ToolObject.cs" />
+    <Compile Include="Objects\ToolObjectList.cs" />
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharSelect.resx">
+      <DependentUpon>CharSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorSelect.resx">
+      <DependentUpon>ColorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dictionary.resx">
+      <DependentUpon>Dictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileCompare.resx">
+      <DependentUpon>FileCompare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileListOpen.resx">
+      <DependentUpon>FileListOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DropboxFileDialog.resx">
+      <DependentUpon>DropboxFileDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileRename.resx">
+      <DependentUpon>FileRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FontSelect.resx">
+      <DependentUpon>FontSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexEditor.resx">
+      <DependentUpon>HexEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InternalBrowser.resx">
+      <DependentUpon>InternalBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\QuestionYNNAC.resx">
+      <DependentUpon>QuestionYNNAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameEntry.resx">
+      <DependentUpon>NameEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PadText.resx">
+      <DependentUpon>PadText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SearchInFiles.resx">
+      <DependentUpon>SearchInFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchPattern.resx">
+      <DependentUpon>SearchPattern.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLines.resx">
+      <DependentUpon>SelectLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowContent.resx">
+      <DependentUpon>ShowContent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortText.resx">
+      <DependentUpon>SortText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabEncoding.resx">
+      <DependentUpon>TabEncoding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagEntry.resx">
+      <DependentUpon>TagEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates.resx">
+      <DependentUpon>Templates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranslateText.resx">
+      <DependentUpon>TranslateText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrlEncode.resx">
+      <DependentUpon>UrlEncode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrlEntry.resx">
+      <DependentUpon>UrlEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CalculatorPanel.resx">
+      <DependentUpon>CalculatorPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CalendarPanel.resx">
+      <DependentUpon>CalendarPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ClipboardPanel.resx">
+      <DependentUpon>ClipboardPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatetimeSelect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DatetimeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extensions.resx">
+      <DependentUpon>Extensions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Favourites.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Favourites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FileProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoToLine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GoToLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\it.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>it.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MergeTabs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MergeTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\AlertO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlertO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\ErrorO.resx">
+      <DependentUpon>ErrorO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\ErrorOR.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ErrorOR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\InfoO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InfoO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\QuestionYN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuestionYN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\QuestionYNC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>QuestionYNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\WarningYNC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WarningYNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MessageBoxResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveLines.resx">
+      <DependentUpon>MoveLines.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportBug.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportBug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolbarResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ToolbarResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools.resx">
+      <DependentUpon>Tools.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FilePanel.resx">
+      <DependentUpon>FilePanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NotePanel.resx">
+      <DependentUpon>NotePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchInFilesPanel.resx">
+      <DependentUpon>SearchInFilesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchPanel.resx">
+      <DependentUpon>SearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TabPanel.resx">
+      <DependentUpon>TabPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionCheck.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VersionCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WindowResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XmlEditor.resx">
+      <DependentUpon>XmlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZipExtract.resx">
+      <DependentUpon>ZipExtract.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DtPad.ruleset" />
+    <None Include="Languages\de.aff" />
+    <None Include="Languages\de.dic" />
+    <None Include="Languages\de_th.dat" />
+    <None Include="Languages\en.aff" />
+    <None Include="Languages\en.dic" />
+    <None Include="Languages\en_th.dat" />
+    <None Include="Languages\es.aff" />
+    <None Include="Languages\es.dic" />
+    <None Include="Languages\es_th.dat" />
+    <None Include="Languages\fr.aff" />
+    <None Include="Languages\fr.dic" />
+    <None Include="Languages\fr_th.dat" />
+    <None Include="Languages\it.aff" />
+    <None Include="Languages\it.dic" />
+    <None Include="Languages\it_th.dat" />
+    <None Include="Logs\dtpad-lastversion.log" />
+    <None Include="Logs\dtpadupdater-lastversion.log" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBug.Designer.cs">
+      <DependentUpon>ReportBug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolbarResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ToolbarResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools.Designer.cs">
+      <DependentUpon>Tools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FilePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FilePanel.Designer.cs">
+      <DependentUpon>FilePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NotePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NotePanel.Designer.cs">
+      <DependentUpon>NotePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchInFilesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchInFilesPanel.Designer.cs">
+      <DependentUpon>SearchInFilesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchPanel.Designer.cs">
+      <DependentUpon>SearchPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TabPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TabPanel.Designer.cs">
+      <DependentUpon>TabPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\AssemblyUtil.cs" />
+    <Compile Include="Utils\CodingUtil.cs" />
+    <Compile Include="Utils\ColorUtil.cs" />
+    <Compile Include="Utils\ConfigUtil.cs" />
+    <Compile Include="Utils\ConstantUtil.cs" />
+    <Compile Include="Customs\CustomPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\ControlUtil.cs" />
+    <Compile Include="Utils\DateTimeUtil.cs" />
+    <Compile Include="Utils\DirectoryUtil.cs" />
+    <Compile Include="Utils\EncodingUtil.cs" />
+    <Compile Include="Utils\FileUtil.cs" />
+    <Compile Include="Utils\Language\ListViewControl.cs" />
+    <Compile Include="Utils\LookFeelUtil.cs" />
+    <Compile Include="Utils\ObjectListUtil.cs" />
+    <Compile Include="Utils\LanguageUtil.cs" />
+    <Compile Include="Utils\Language\ComboBoxControl.cs" />
+    <Compile Include="Utils\Language\GeneralControl.cs" />
+    <Compile Include="Utils\Language\GroupBoxControl.cs" />
+    <Compile Include="Utils\Language\MenuStripControl.cs" />
+    <Compile Include="Utils\Language\PanelMenuControl.cs" />
+    <Compile Include="Utils\Language\StatusStripControl.cs" />
+    <Compile Include="Utils\Language\TabPageControl.cs" />
+    <Compile Include="Utils\Language\ToolStripButtonComboControl.cs" />
+    <Compile Include="Utils\Language\ToolStripControl.cs" />
+    <Compile Include="Utils\Language\ToolStripDropDownButtonControl.cs" />
+    <Compile Include="Utils\Language\ToolStripMenuItemControl.cs" />
+    <Compile Include="Utils\Language\ToolStripSplitButtonControl.cs" />
+    <Compile Include="Utils\Language\ToolStripTextBoxStatusControl.cs" />
+    <Compile Include="Utils\Language\TreeNodeControl.cs" />
+    <Compile Include="Utils\Language\TreeViewControl.cs" />
+    <Compile Include="Utils\Language\XtraTabPageControl.cs" />
+    <Compile Include="Utils\LogUtil.cs" />
+    <Compile Include="Utils\PasswordUtil.cs" />
+    <Compile Include="Utils\PdfUtil.cs" />
+    <Compile Include="Utils\ProgramUtil.cs" />
+    <Compile Include="Utils\ProxyUtil.cs" />
+    <Compile Include="Utils\RichTextBoxUtil.cs" />
+    <Compile Include="Utils\ShellLinkNative.cs" />
+    <Compile Include="Utils\ShellShortcut.cs" />
+    <Compile Include="Utils\StringUtil.cs" />
+    <Compile Include="Utils\SystemUtil.cs" />
+    <Compile Include="Utils\TabUtil.cs" />
+    <Compile Include="Validators\RegularExpressionValidator.cs" />
+    <Compile Include="Validators\W3CValidator.cs" />
+    <Compile Include="Validators\XmlValidator.cs" />
+    <Compile Include="VersionCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionCheck.Designer.cs">
+      <DependentUpon>VersionCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WindowResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XmlEditor.Designer.cs">
+      <DependentUpon>XmlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZipExtract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZipExtract.Designer.cs">
+      <DependentUpon>ZipExtract.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Images\Toolbars\wikipedia.png" />
+    <None Include="Images\Toolbars\highlighter.png" />
+    <None Include="Images\Toolbars\star-session.png" />
+    <None Include="Images\Toolbars\convert-all.png" />
+    <Content Include="Images\Toolbars\flag-esp.png" />
+    <Content Include="Images\Toolbars\flag-fra.png" />
+    <Content Include="Images\Toolbars\folder-32.gif" />
+    <None Include="Images\Toolbars\move-first.png" />
+    <None Include="Images\Toolbars\move-last.png" />
+    <Content Include="Images\Toolbars\no-highlighter.png" />
+    <None Include="Images\Toolbars\note-blue.png" />
+    <None Include="Images\Toolbars\note-green.png" />
+    <None Include="Images\Toolbars\note-orange.png" />
+    <None Include="Images\Toolbars\note-red.png" />
+    <Content Include="Images\Toolbars\paper-32.gif" />
+    <None Include="Images\Toolbars\sort-text.png" />
+    <None Include="Images\Toolbars\prefix.png" />
+    <None Include="Images\Toolbars\suffix.png" />
+    <None Include="Images\Toolbars\zip.png" />
+    <None Include="Images\Toolbars\thesaurus.png" />
+    <None Include="Images\Toolbars\thousands.png" />
+    <None Include="Images\Toolbars\session-small.png" />
+    <Content Include="Libraries\Hunspellx64.dll" />
+    <Content Include="Libraries\Hunspellx86.dll" />
+    <Content Include="Libraries\Newtonsoft.Json.dll" />
+    <Content Include="Libraries\NHunspell.dll" />
+    <Content Include="OtherFiles\License.txt" />
+    <None Include="app.manifest" />
+    <None Include="DtPad.snk" />
+    <None Include="Images\Toolbars\date-red.png" />
+    <None Include="Images\Toolbars\script.png" />
+    <None Include="Images\Toolbars\arrow-switch.png" />
+    <None Include="Images\Toolbars\color.png" />
+    <None Include="Images\Toolbars\convert.png" />
+    <None Include="Images\Toolbars\clipboard.png" />
+    <None Include="Images\Toolbars\calculator.png" />
+    <None Include="Images\Toolbars\folder.png" />
+    <None Include="Images\Toolbars\monitor.png" />
+    <None Include="Images\Toolbars\bin.png" />
+    <Content Include="Icons\JL\CheckNewVersion.ico" />
+    <Content Include="Icons\JL\NewTab.ico" />
+    <Content Include="Icons\JL\OpenFile.ico" />
+    <Content Include="Icons\JL\OpenSession.ico" />
+    <Content Include="Icons\JL\SearchInFiles.ico" />
+    <Content Include="Icons\JL\WebSite.ico" />
+    <Content Include="Images\Toolbars\cd.gif" />
+    <None Include="Images\Toolbars\code.png" />
+    <None Include="Images\Toolbars\column-numbers.png" />
+    <Content Include="Images\Toolbars\delete.png" />
+    <Content Include="Images\Toolbars\desktop.gif" />
+    <Content Include="Images\Toolbars\drive.gif" />
+    <None Include="Images\Toolbars\dropbox.png" />
+    <None Include="Images\Toolbars\flag-ger.png" />
+    <None Include="Images\Toolbars\environment.png" />
+    <Content Include="Images\Toolbars\folder-hidden.gif" />
+    <None Include="Images\Toolbars\folder-up.png" />
+    <None Include="Images\Toolbars\folder-plus.png" />
+    <Content Include="Images\Toolbars\folder.gif" />
+    <None Include="Images\Toolbars\layers.png" />
+    <None Include="Images\Toolbars\line-numbers.png" />
+    <None Include="Images\Toolbars\go-to-line.png" />
+    <None Include="Images\Toolbars\minus-session.png" />
+    <None Include="Images\Toolbars\minus-2-session.png" />
+    <None Include="Images\Toolbars\move-right.png" />
+    <None Include="Images\Toolbars\move-left.png" />
+    <None Include="Images\Toolbars\google.png" />
+    <None Include="Images\Toolbars\loading.gif" />
+    <Content Include="Images\Toolbars\hexadecimal.png" />
+    <None Include="Images\Toolbars\minus-more.png" />
+    <Content Include="Images\Toolbars\network.gif" />
+    <None Include="Images\Toolbars\open-session.png" />
+    <None Include="Images\Toolbars\note.png" />
+    <None Include="Images\Toolbars\note-export.png" />
+    <None Include="Images\Toolbars\numbers.png" />
+    <Content Include="Images\Toolbars\paper-hidden.gif" />
+    <Content Include="Images\Toolbars\paper.gif" />
+    <None Include="Images\Toolbars\prohibited.gif" />
+    <None Include="Images\Toolbars\pdf.png" />
+    <None Include="Images\Toolbars\pattern.png" />
+    <None Include="Images\Toolbars\pilcrow.png" />
+    <Content Include="Images\Toolbars\removable.gif" />
+    <None Include="Images\Toolbars\time.png" />
+    <None Include="Images\Toolbars\word-wrap.png" />
+    <None Include="Images\Toolbars\world.png" />
+    <None Include="Images\Toolbars\save-session.png" />
+    <None Include="Images\Toolbars\session.png" />
+    <None Include="Images\Toolbars\sort.png" />
+    <None Include="Images\Toolbars\statistics.png" />
+    <None Include="Images\Toolbars\rename.png" />
+    <None Include="Images\Toolbars\symbol.png" />
+    <None Include="Images\Toolbars\rename-session.png" />
+    <None Include="Images\Windows\splash-screen.jpg" />
+    <None Include="Images\Windows\dtpad-logo.png" />
+    <None Include="Images\Windows\banner-vertical.jpg" />
+    <None Include="Images\Toolbars\tab.png" />
+    <None Include="Images\Toolbars\xhtml.png" />
+    <None Include="Images\Toolbars\search-in-files.png" />
+    <None Include="Images\Toolbars\switch.png" />
+    <None Include="Images\Toolbars\switch-b.png" />
+    <Content Include="Images\Toolbars\table.png" />
+    <Content Include="Libraries\Be.Windows.Forms.HexBox.dll" />
+    <Content Include="Libraries\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Libraries\itextsharp.dll" />
+    <Content Include="Libraries\log4net.dll" />
+    <Content Include="Libraries\Microsoft.WindowsAPICodePack.dll" />
+    <Content Include="Libraries\Microsoft.WindowsAPICodePack.Shell.dll" />
+    <Content Include="Libraries\MonthCalendar.dll" />
+    <Content Include="Libraries\XmlGridControl.dll" />
+    <None Include="Images\Windows\background-welcome.jpg" />
+    <None Include="Images\Toolbars\postit.png" />
+    <None Include="Images\Toolbars\plus-yellow.png" />
+    <None Include="Images\Toolbars\minus-yellow.png" />
+    <None Include="Images\Toolbars\tabcontrol.png" />
+    <None Include="Images\Toolbars\tabs.png" />
+    <None Include="Images\Toolbars\tag.png" />
+    <None Include="Images\Toolbars\chart.png" />
+    <None Include="Images\Toolbars\lock-blue.png" />
+    <None Include="Images\Toolbars\lock-yellow.png" />
+    <None Include="Images\Toolbars\paper-edit.png" />
+    <None Include="Images\Toolbars\paper.png" />
+    <None Include="Images\Toolbars\home-green.png" />
+    <None Include="Images\Toolbars\question-blue.png" />
+    <None Include="Images\Toolbars\info-blue.png" />
+    <None Include="Images\Toolbars\gear.png" />
+    <None Include="Images\Toolbars\top.png" />
+    <None Include="Images\Toolbars\arrow-down.png" />
+    <None Include="Images\Toolbars\arrow-up.png" />
+    <None Include="Images\Toolbars\cloud-clear.png" />
+    <None Include="Images\Toolbars\cloud.png" />
+    <None Include="Images\Toolbars\date.png" />
+    <None Include="Images\Toolbars\tools.png" />
+    <None Include="Images\Toolbars\diagram.png" />
+    <None Include="Images\Toolbars\window.png" />
+    <None Include="Images\Toolbars\window-lines.png" />
+    <None Include="Images\Toolbars\window-edit.png" />
+    <None Include="Images\Toolbars\printer.png" />
+    <None Include="Images\Toolbars\indent.png" />
+    <None Include="Images\Toolbars\outdent.png" />
+    <None Include="Images\Toolbars\cut.png" />
+    <None Include="Images\Toolbars\copy.png" />
+    <None Include="Images\Toolbars\paste.png" />
+    <None Include="Images\Toolbars\star.png" />
+    <None Include="Images\Toolbars\arrow-right.png" />
+    <None Include="Images\Toolbars\arrow-left.png" />
+    <None Include="Images\Toolbars\open.png" />
+    <None Include="Images\Toolbars\save-arrow.png" />
+    <None Include="Images\Toolbars\save.png" />
+    <None Include="Images\Toolbars\minus-2.png" />
+    <None Include="Images\Toolbars\plus-2.png" />
+    <None Include="Images\Toolbars\font.png" />
+    <None Include="Images\Toolbars\flag-ita.png" />
+    <None Include="Images\Toolbars\flag-eng.png" />
+    <None Include="Images\Toolbars\zoom.png" />
+    <None Include="Images\Windows\style-windows-xp.png" />
+    <None Include="Images\Windows\style-office-2003.png" />
+    <None Include="Images\Toolbars\confirm.png" />
+    <None Include="Images\Toolbars\info-red.png" />
+    <None Include="Images\Toolbars\question-red.png" />
+    <None Include="Images\Toolbars\move-down.png" />
+    <None Include="Images\Toolbars\move-up.png" />
+    <None Include="Images\Toolbars\plus.png" />
+    <None Include="Images\Toolbars\minus.png" />
+    <None Include="Images\Toolbars\home.png" />
+    <None Include="Images\Toolbars\email.png" />
+    <None Include="Images\Toolbars\rss.png" />
+    <None Include="Images\Toolbars\prompt.png" />
+    <None Include="Images\MessageBoxes\ok.gif" />
+    <None Include="Images\Toolbars\replace.png" />
+    <None Include="Images\Toolbars\search.png" />
+    <None Include="Images\Toolbars\search-count.png" />
+    <None Include="Images\MessageBoxes\warning.png" />
+    <None Include="Images\MessageBoxes\question.png" />
+    <None Include="Images\MessageBoxes\info.png" />
+    <None Include="Images\MessageBoxes\error.png" />
+    <None Include="SupportFiles\DtPad.exe.cl" />
+    <None Include="SupportFiles\DtPad.exe.ex" />
+    <None Include="SupportFiles\DtPad.exe.fv" />
+    <None Include="SupportFiles\DtPad.exe.no" />
+    <None Include="SupportFiles\DtPad.exe.pw" />
+    <None Include="SupportFiles\DtPad.exe.rf" />
+    <None Include="SupportFiles\DtPad.exe.rp" />
+    <None Include="SupportFiles\DtPad.exe.rs" />
+    <None Include="SupportFiles\DtPad.exe.ru" />
+    <None Include="SupportFiles\DtPad.exe.sf" />
+    <None Include="SupportFiles\DtPad.exe.sh" />
+    <None Include="SupportFiles\DtPad.exe.tm" />
+    <None Include="SupportFiles\DtPad.exe.to" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppLimit.CloudComputing.SharpBox\AppLimit.CloudComputing.SharpBox.Net40.csproj">
+      <Project>{5B779AE9-72B6-4B7E-88B7-47227B92112A}</Project>
+      <Name>AppLimit.CloudComputing.SharpBox.Net40</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DtControls\DtControls.vbproj">
+      <Project>{0920B39A-C62F-43D6-9589-2DBFDA6E1C6C}</Project>
+      <Name>DtControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XmlGridControl\XmlGridControl.csproj">
+      <Project>{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}</Project>
+      <Name>XmlGridControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>"$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\it.resx" "$(ProjectDir)Languages\it.resources"
+"$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\en.resx" "$(ProjectDir)Languages\en.resources"
+copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\Debug\Languages"
+copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\Release\Languages"
+copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\ReleaseFE\Languages"
+copy /Y "$(ProjectDir)bin\Release\DtPad.exe" "$(SolutionDir)DtPadSetup\Files\DtPad.exe"
+copy /Y "$(ProjectDir)bin\Release\DtPad.exe.config" "$(SolutionDir)DtPadSetup\Files\DtPad.exe.config"
+copy /Y "$(ProjectDir)Languages\*.resources" "$(SolutionDir)DtPadSetup\Files\Languages"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

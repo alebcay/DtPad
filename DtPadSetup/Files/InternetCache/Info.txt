@@ -1,0 +1,13 @@
+==============================
+1 - ENGLISH
+==============================
+WARNING - This folder contains only temporary internet cache data used for browser previews.
+Whenever DtPad starts, it empties. DO NOT DELETE IT!
+
+
+
+==============================
+2 - ITALIANO
+==============================
+AVVISO - Questa cartella contiene solamente file temporanei di internet per l'anteprima in browser.
+Ogni volta che DtPad viene avviato, essa si svuota. NON CANCELLARE!

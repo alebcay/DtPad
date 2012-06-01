@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Copia il messaggio di errore negli appunti</value>
+  </data>
+  <data name="ErrorO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorO_Title" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="Form1_cancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="Form1_Close" xml:space="preserve">
+    <value>Chiudi</value>
+  </data>
+  <data name="Form1_titleLabel" xml:space="preserve">
+    <value>DtPad Updater</value>
+  </data>
+  <data name="Form1_descriptionLabel" xml:space="preserve">
+    <value>Benvenuto in DtPad Updater!
+
+Clicca su "Aggiorna" per avviare l'aggiornamento. Le impostazioni attualmente salvate saranno mantenute.
+
+In caso di errori, DtPad Updater ripristinerà i file della versione precedente di modo da poter rilanciare il processo.
+
+Se un problema persiste, o DtPad dovesse sembrare malfunzionante, si consiglia di scaricare l'ultima versione dal link sottostante.</value>
+  </data>
+  <data name="Form1_Start" xml:space="preserve">
+    <value>Avvia DtPad</value>
+  </data>
+  <data name="Form1_startButton" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="Form1_Title" xml:space="preserve">
+    <value>DtPad Updater</value>
+  </data>
+  <data name="Form1_Updating" xml:space="preserve">
+    <value>In corso...</value>
+  </data>
+  <data name="UpdateManager_Backup" xml:space="preserve">
+    <value>Backup dei file precedenti...</value>
+  </data>
+  <data name="UpdateManager_DeleteTemp" xml:space="preserve">
+    <value>Cancellazione file temporanei...</value>
+  </data>
+  <data name="UpdateManager_DeleteUpd" xml:space="preserve">
+    <value>Cancellazione file aggiornamento...</value>
+  </data>
+  <data name="UpdateManager_DEL_FILE" xml:space="preserve">
+    <value>Cancellazione file "{0}"...</value>
+  </data>
+  <data name="UpdateManager_DEL_KEY" xml:space="preserve">
+    <value>Cancellazione parametro di configurazione "{0}"...</value>
+  </data>
+  <data name="UpdateManager_Error" xml:space="preserve">
+    <value>Si è verificato un errore durante l'aggiornamento!</value>
+  </data>
+  <data name="UpdateManager_Exception" xml:space="preserve">
+    <value>Eccezione:</value>
+  </data>
+  <data name="UpdateManager_FileInUse" xml:space="preserve">
+    <value>File in uso</value>
+  </data>
+  <data name="UpdateManager_INS_FILE" xml:space="preserve">
+    <value>Aggiunto file "{0}"...</value>
+  </data>
+  <data name="UpdateManager_INS_KEY" xml:space="preserve">
+    <value>Aggiunto parametro di configurazione "{0}"...</value>
+  </data>
+  <data name="UpdateManager_Launch" xml:space="preserve">
+    <value>Clicca sul bottone "Avvia DtPad" per aprire la nuova versione.</value>
+  </data>
+  <data name="UpdateManager_NoInfo" xml:space="preserve">
+    <value>Nessun aggiornamento disponibile per la versione presente di DtPad!</value>
+  </data>
+  <data name="UpdateManager_Proxy" xml:space="preserve">
+    <value>Se usi un proxy, impostalo nella finestra delle opzioni di DtPad. Se il problema persiste scarica manualmente l'ultima versione di DtPad da www.diariotraduttore.com!</value>
+  </data>
+  <data name="UpdateManager_Read" xml:space="preserve">
+    <value>Lettura informazioni nuova versione...</value>
+  </data>
+  <data name="UpdateManager_REN_FILE" xml:space="preserve">
+    <value>Rinomina file "{0}" in "{1}"...</value>
+  </data>
+  <data name="UpdateManager_REN_KEY" xml:space="preserve">
+    <value>Rinomina parametro di configurazione "{0}" in "{1}"...</value>
+  </data>
+  <data name="UpdateManager_Success" xml:space="preserve">
+    <value>DtPad è stato aggiornato con successo!</value>
+  </data>
+  <data name="UpdateManager_Update" xml:space="preserve">
+    <value>Aggiornamento in corso...</value>
+  </data>
+  <data name="UpdateManager_UPD_FILE" xml:space="preserve">
+    <value>Aggiornamento file "{0}"...</value>
+  </data>
+  <data name="UpdateManager_UPD_KEY" xml:space="preserve">
+    <value>Aggiornamento parametro di configurazione "{0}"...</value>
+  </data>
+  <data name="WindowManager_CommandExecution" xml:space="preserve">
+    <value>L'esecuzione dell'operazione in corso è stata interrotta!</value>
+  </data>
+  <data name="WindowManager_Exception" xml:space="preserve">
+    <value>Si è verificata un'eccezione:</value>
+  </data>
+  <data name="WindowManager_FatalException" xml:space="preserve">
+    <value>Si è verificata un'eccezione grave:</value>
+  </data>
+  <data name="WindowManager_ProgramExecution" xml:space="preserve">
+    <value>L'esecuzione del programma è stata interrotta!</value>
+  </data>
+  <data name="Program_InstanceDtPad" xml:space="preserve">
+    <value>Chiudi ogni finestra di DtPad prima di avviare il processo di aggiornamento.</value>
+  </data>
+  <data name="Program_InstanceDtHelp" xml:space="preserve">
+    <value>Chiudi ogni finestra di DtHelp prima di avviare il processo di aggiornamento.</value>
+  </data>
+  <data name="Program_InstanceDtPadUninstaller" xml:space="preserve">
+    <value>Chiudi ogni finestra di DtPad Uninstaller prima di avviare il processo di aggiornamento.</value>
+  </data>
+  <data name="Program_InstanceDtPadUpdater" xml:space="preserve">
+    <value>Esiste già una finestra aperta di DtPad Updater.</value>
+  </data>
+  <data name="AlertO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AlertO_Title" xml:space="preserve">
+    <value>Avviso</value>
+  </data>
+  <data name="Form1_descriptionLabel_FE" xml:space="preserve">
+    <value>Benvenuto in DtPad Updater!
+
+Clicca su "Aggiorna" per avviare l'aggiornamento. Le impostazioni attualmente salvate saranno mantenute.
+
+In caso di errori, DtPad Updater ripristinerà i file della versione precedente di modo da poter rilanciare il processo.
+
+Se un problema persiste, o DtPad dovesse sembrare malfunzionante, si consiglia di contattare l'autore.</value>
+  </data>
+  <data name="UpdateManager_ErrorCheckVersion" xml:space="preserve">
+    <value>Si è verificato un errore durante il controllo di versione di DtPadUpdater!</value>
+  </data>
+  <data name="UpdateManager_OldVersion" xml:space="preserve">
+    <value>La versione attuale di DtPadUpdater non è aggiornata.
+
+Avvia il processo di aggiornamento dal menu "? -&gt; Controlla aggiornamenti..." in DtPad.</value>
+  </data>
+  <data name="UpdateManager_INS_DIR" xml:space="preserve">
+    <value>Aggiunta cartella "{0}"...</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="UpdateManager_SHW_MSG_NoLongerUpdate" xml:space="preserve">
+    <value>La tua versione di DtPad non è più supportata! Scarica l'ultima dal sito di DtPad.</value>
+  </data>
+  <data name="PasswordUtil_NoValue" xml:space="preserve">
+    <value>Valore per il parametro "{0}" non trovato.</value>
+  </data>
+</root>

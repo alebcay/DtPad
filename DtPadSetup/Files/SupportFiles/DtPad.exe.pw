@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- WARNING: MANUALLY EDITING OF THIS FILE COULD CAUSE DTPAD DYSFUNCTIONS!!! -->
+
+<configuration>
+  
+  <appSettings>
+    <add key="ProxyUsername" value="" />
+    <add key="ProxyPassword" value="" />
+    <add key="ProxyDomain" value="" />
+    <add key="DropboxUsername" value="" />
+    <add key="DropboxPassword" value="" />
+  </appSettings>
+  
+</configuration>

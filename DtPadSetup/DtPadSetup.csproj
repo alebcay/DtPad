@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E05BC079-4993-4753-88CC-1AF2944AB0F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DtPadSetup</RootNamespace>
+    <AssemblyName>DtPadSetup</AssemblyName>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>DtPadSetup.snk</AssemblyOriginatorKeyFile>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>DtPadSetup.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>DtPadSetup.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'ReleaseFE|AnyCPU' ">
+    <OutputPath>bin\ReleaseFE\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>DtPadSetup.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exceptions\LanguageException.cs" />
+    <Compile Include="FileResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FileResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GuideResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\it.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>it.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Managers\InstallManager.cs" />
+    <Compile Include="Managers\OptionManager.cs" />
+    <Compile Include="Managers\OtherManager.cs" />
+    <Compile Include="Managers\TextManager.cs" />
+    <Compile Include="Managers\WindowManager.cs" />
+    <Compile Include="MessageBoxes\AlertO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\AlertO.Designer.cs">
+      <DependentUpon>AlertO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\ErrorO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\ErrorO.Designer.cs">
+      <DependentUpon>ErrorO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxes\WarningYNC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\WarningYNC.Designer.cs">
+      <DependentUpon>WarningYNC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\PasswordObject.cs" />
+    <Compile Include="Objects\PasswordObjectList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FileResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FileResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DtPadSetup.ruleset" />
+    <None Include="Files\Languages\en.resources" />
+    <None Include="Files\Languages\it.resources" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GuideResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ImageResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>en.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\it.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>it.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\AlertO.resx">
+      <DependentUpon>AlertO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\ErrorO.resx">
+      <DependentUpon>ErrorO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\WarningYNC.resx">
+      <DependentUpon>WarningYNC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Files\DtPad.exe" />
+    <None Include="Files\DtPad.exe.Config" />
+    <None Include="Files\DtPadUpdater.exe" />
+    <None Include="Files\Readme.txt" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils\CodingUtil.cs" />
+    <Compile Include="Utils\ConfigUtil.cs" />
+    <Compile Include="Utils\ConstantUtil.cs" />
+    <Compile Include="Utils\ControlUtil.cs" />
+    <Compile Include="Utils\FileUtil.cs" />
+    <Compile Include="Utils\LanguageUtil.cs" />
+    <Compile Include="Utils\Language\GeneralControl.cs" />
+    <Compile Include="Utils\Language\GroupBoxControl.cs" />
+    <Compile Include="Utils\Language\MenuStripControl.cs" />
+    <Compile Include="Utils\Language\PanelMenuControl.cs" />
+    <Compile Include="Utils\Language\StatusStripControl.cs" />
+    <Compile Include="Utils\Language\TabPageControl.cs" />
+    <Compile Include="Utils\Language\ToolStripButtonComboControl.cs" />
+    <Compile Include="Utils\Language\ToolStripControl.cs" />
+    <Compile Include="Utils\Language\ToolStripDropDownButtonControl.cs" />
+    <Compile Include="Utils\Language\ToolStripMenuItemControl.cs" />
+    <Compile Include="Utils\Language\ToolStripTextBoxStatusControl.cs" />
+    <Compile Include="Utils\Language\TreeNodeControl.cs" />
+    <Compile Include="Utils\Language\TreeViewControl.cs" />
+    <Compile Include="Utils\LookFeelUtil.cs" />
+    <Compile Include="Utils\PasswordUtil.cs" />
+    <Compile Include="Utils\ProxyUtil.cs" />
+    <Compile Include="Utils\ShellLinkNative.cs" />
+    <Compile Include="Utils\ShellShortcut.cs" />
+    <Compile Include="Utils\StringUtil.cs" />
+    <Compile Include="Utils\SystemUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="DtPadSetup.snk" />
+    <None Include="Files\Guides\DtPadGuide-en.dhg" />
+    <None Include="Files\Guides\DtPadGuide-it.dhg" />
+    <None Include="Files\Icons\DtPad.ico" />
+    <None Include="Files\Icons\DtPadUpdater.ico" />
+    <None Include="Files\DtHelp.exe" />
+    <None Include="Files\Icons\DtHelp.ico" />
+    <None Include="Files\License.txt" />
+    <None Include="Files\Guides\it\index.html" />
+    <None Include="Files\log4net.dll" />
+    <None Include="Files\DtControls.dll" />
+    <None Include="Files\DtPadUninstaller.exe" />
+    <None Include="Files\Icons\DtPadUninstaller.ico" />
+    <None Include="Files\Icons\Dt.ico" />
+    <None Include="Files\Be.Windows.Forms.HexBox.dll" />
+    <None Include="Files\AppLimit.CloudComputing.SharpBox.Net40.dll" />
+    <Content Include="Files\DevExpress.Data.v11.2.dll" />
+    <Content Include="Files\DevExpress.Utils.v11.2.dll" />
+    <Content Include="Files\DevExpress.XtraEditors.v11.2.dll" />
+    <Content Include="Files\Guides\Common\banner-vertical.jpg" />
+    <Content Include="Files\Guides\Common\dtpad-logo.png" />
+    <Content Include="Files\Guides\Common\it-dtpad-window.png" />
+    <Content Include="Files\Guides\Common\it-file-menu.png" />
+    <Content Include="Files\Guides\Common\style.css" />
+    <Content Include="Files\Guides\it\actions.html" />
+    <Content Include="Files\Guides\it\dtpad.html" />
+    <Content Include="Files\Guides\it\edit.html" />
+    <Content Include="Files\Guides\it\file.html" />
+    <Content Include="Files\Guides\it\help.html" />
+    <Content Include="Files\Guides\it\options.html" />
+    <Content Include="Files\Guides\it\search.html" />
+    <Content Include="Files\Guides\it\session.html" />
+    <Content Include="Files\Guides\it\tools.html" />
+    <Content Include="Files\Guides\it\view.html" />
+    <Content Include="Files\Guides\it\window.html" />
+    <None Include="Files\Hunspellx64.dll" />
+    <None Include="Files\Hunspellx86.dll" />
+    <Content Include="Files\Icons\JL\CheckNewVersion.ico" />
+    <Content Include="Files\Icons\JL\NewTab.ico" />
+    <Content Include="Files\Icons\JL\OpenFile.ico" />
+    <Content Include="Files\Icons\JL\OpenSession.ico" />
+    <Content Include="Files\Icons\JL\SearchInFiles.ico" />
+    <Content Include="Files\Icons\JL\WebSite.ico" />
+    <Content Include="Files\ICSharpCode.SharpZipLib.dll" />
+    <None Include="Files\itextsharp.dll" />
+    <Content Include="Files\InternetCache\Info.txt" />
+    <Content Include="Files\Microsoft.WindowsAPICodePack.dll" />
+    <Content Include="Files\Microsoft.WindowsAPICodePack.Shell.dll" />
+    <Content Include="Files\MonthCalendar.dll" />
+    <None Include="Files\Newtonsoft.Json.dll" />
+    <None Include="Files\NHunspell.dll" />
+    <Content Include="Files\XmlGridControl.dll" />
+    <Content Include="icon.ico" />
+    <Content Include="Images\cut.png" />
+    <Content Include="Images\email.png" />
+    <Content Include="Images\ok.gif" />
+    <Content Include="Images\paste.png" />
+    <None Include="Files\SupportFiles\DtPad.exe.pw" />
+    <None Include="Files\SupportFiles\DtPad.exe.ru" />
+    <None Include="Images\install-step-6.png" />
+    <None Include="Images\install-step-5.png" />
+    <None Include="Images\install-step-4.png" />
+    <None Include="Images\install-step-3.png" />
+    <None Include="Images\install-step-2.png" />
+    <None Include="Images\install-step-7.png" />
+    <None Include="Images\install-step-1.png" />
+    <None Include="Files\Logs\DtHelp.log" />
+    <None Include="Files\Logs\DtPad.log" />
+    <None Include="Files\Logs\DtPadUninstaller.log" />
+    <None Include="Files\Logs\DtPadUpdater.log" />
+    <None Include="Images\warning.png" />
+    <None Include="Files\SupportFiles\DtPad.exe.rp" />
+    <None Include="Files\SupportFiles\DtPad.exe.sf" />
+    <None Include="Images\banner-vertical.jpg" />
+    <None Include="Files\SupportFiles\DtPad.exe.cl" />
+    <None Include="Files\SupportFiles\DtPad.exe.rs" />
+    <None Include="Files\SupportFiles\DtPad.exe.tm" />
+    <None Include="Images\flag-eng.png" />
+    <None Include="Images\flag-ita.png" />
+    <None Include="Images\copy.png" />
+    <None Include="Files\SupportFiles\DtPad.exe.ex" />
+    <None Include="Files\SupportFiles\DtPad.exe.fv" />
+    <None Include="Files\SupportFiles\DtPad.exe.no" />
+    <None Include="Files\SupportFiles\DtPad.exe.rf" />
+    <None Include="Files\SupportFiles\DtPad.exe.sh" />
+    <None Include="Files\SupportFiles\DtPad.exe.to" />
+    <None Include="Images\error.png" />
+    <None Include="Images\style-windows-xp.png" />
+    <None Include="Images\style-office-2003.png" />
+    <None Include="Images\stayontop-enable.png" />
+    <None Include="Images\stayontop-disable.png" />
+    <None Include="Images\minimizetray-enable.png" />
+    <None Include="Images\minimizetray-disable.png" />
+    <None Include="Images\info.png" />
+    <None Include="Images\home.png" />
+    <None Include="Images\exit.png" />
+    <None Include="Images\confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

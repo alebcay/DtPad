@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DtPad_exe_ex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.ex;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_fv" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.fv;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_no" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.no;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_rf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.rf;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_sh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.sh;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_to" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.to;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\DtPad.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DtPadUpdater_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\DtPadUpdater.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DtHelp_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\DtHelp.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DtPadUpdater_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DtPadUpdater.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_config" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DtPad.exe.config;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="License_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\License.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DtPad_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DtPad.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="en_resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Languages\en.resources;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="it_resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Languages\it.resources;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtHelp_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DtHelp.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Readme_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Readme.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DtPad_exe_cl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.cl;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="log4net_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\log4net.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ICSharpCode_SharpZipLib_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\ICSharpCode.SharpZipLib.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtControls_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DtControls.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="itextsharp_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\itextsharp.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Info_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\InternetCache\Info.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DtPadUninstaller_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DtPadUninstaller.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPadUninstaller_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\DtPadUninstaller.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dt_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\Dt.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DtPad_exe_rs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.rs;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_tm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.tm;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Be_Windows_Forms_HexBox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Be.Windows.Forms.HexBox.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_rp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.rp;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="XmlGridControl_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\XmlGridControl.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_sf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.sf;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MonthCalendar_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\MonthCalendar.dll;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_ru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.ru;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DtPad_exe_pw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\SupportFiles\DtPad.exe.pw;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NewTab_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\JL\NewTab.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenFile_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\JL\OpenFile.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenSession_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\JL\OpenSession.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WebSite_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\JL\WebSite.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Microsoft_WindowsAPICodePack_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Microsoft.WindowsAPICodePack.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Microsoft_WindowsAPICodePack_Shell_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Microsoft.WindowsAPICodePack.Shell.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CheckNewVersion_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\JL\CheckNewVersion.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchInFiles_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Icons\JL\SearchInFiles.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppLimit_CloudComputing_SharpBox_Net40_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\AppLimit.CloudComputing.SharpBox.Net40.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Newtonsoft_Json_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Newtonsoft.Json.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DevExpress_Data_v11_2_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DevExpress.Data.v11.2.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DevExpress_Utils_v11_2_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DevExpress.Utils.v11.2.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DevExpress_XtraEditors_v11_2_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DevExpress.XtraEditors.v11.2.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hunspellx64_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Hunspellx64.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Hunspellx86_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Hunspellx86.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NHunspell_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\NHunspell.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

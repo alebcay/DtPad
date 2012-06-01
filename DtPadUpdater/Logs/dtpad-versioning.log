@@ -1,0 +1,70 @@
+//DTPAD UPDATER
+//LOG FORMAT EXAMPLES
+//===================
+//X.Y.Z.K-J.H.L.M§
+//
+//- Insert file-key (actually INS_KEY is deprecated, since DtPad solves them alone)
+//INS_FILE%TestFile.exe|INS_KEY%TestKey!TestValue
+//
+//- Insert support file
+//INS_FILE%SupportFiles\TestFile.ext
+//
+//- Insert directory
+//INS_DIR%TestFolder
+//
+//- Update file-key
+//UPD_FILE%TestFile.exe|UPD_KEY%TestKey!TestValue
+//
+//- Update support file
+//UPD_FILE%SupportFiles\TestFile.ext
+//
+//- Delete file-key
+//DEL_FILE%TestFile.exe|DEL_KEY%TestKey
+//
+//- Delete support file
+//DEL_FILE%SupportFiles\TestFile.ext
+//
+//- Rename file-key
+//REN_FILE%TestFile_OldName.exe!TestFile_NewName.exe|REN_KEY%TestKey_OldName!TestKey_NewName
+//
+//- Rename support file
+//REN_FILE%SupportFiles\TestFile_OldName.ext!SupportFiles\TestFile_NewName.ext
+//
+//- Show message
+//SHW_MSG%NoLongerUpdate
+//===================
+//
+//Version 0
+0.11.0.2-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.11.0.3-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.11.0.4-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.12.0.0-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.12.0.1-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.12.0.2-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.13.0.0-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.13.1.0-2.7.2.40§SHW_MSG%NoLongerUpdate
+0.13.2.0-2.7.2.40§SHW_MSG%NoLongerUpdate
+//
+//Version 1
+1.0.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.1.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.2.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.3.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.4.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.5.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.6.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.6.1.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.7.0.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+1.7.1.35-2.7.2.40§SHW_MSG%NoLongerUpdate
+//
+//Version 2
+2.0.0.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources|UPD_FILE%XmlGridControl.dll|INS_FILE%NHunspell.dll|INS_FILE%Hunspellx86.dll|INS_FILE%Hunspellx64.dll|INS_FILE%DevExpress.Data.v11.2.dll|INS_FILE%DevExpress.Utils.v11.2.dll|INS_FILE%DevExpress.XtraEditors.v11.2.dll|DEL_FILE%DevExpress.Data.v9.3.dll|DEL_FILE%DevExpress.Utils.v9.3.dll|DEL_FILE%DevExpress.XtraEditors.v9.3.dll|UPD_FILE%itextsharp.dll|UPD_FILE%Newtonsoft.Json.dll|UPD_FILE%AppLimit.CloudComputing.SharpBox.Net40.dll|UPD_FILE%Be.Windows.Forms.HexBox.dll
+2.1.0.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources|UPD_FILE%XmlGridControl.dll|INS_FILE%NHunspell.dll|INS_FILE%Hunspellx86.dll|INS_FILE%Hunspellx64.dll|INS_FILE%DevExpress.Data.v11.2.dll|INS_FILE%DevExpress.Utils.v11.2.dll|INS_FILE%DevExpress.XtraEditors.v11.2.dll|DEL_FILE%DevExpress.Data.v9.3.dll|DEL_FILE%DevExpress.Utils.v9.3.dll|DEL_FILE%DevExpress.XtraEditors.v9.3.dll|UPD_FILE%itextsharp.dll|UPD_FILE%Newtonsoft.Json.dll|UPD_FILE%AppLimit.CloudComputing.SharpBox.Net40.dll|UPD_FILE%Be.Windows.Forms.HexBox.dll
+2.1.1.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources|UPD_FILE%XmlGridControl.dll|INS_FILE%NHunspell.dll|INS_FILE%Hunspellx86.dll|INS_FILE%Hunspellx64.dll|INS_FILE%DevExpress.Data.v11.2.dll|INS_FILE%DevExpress.Utils.v11.2.dll|INS_FILE%DevExpress.XtraEditors.v11.2.dll|DEL_FILE%DevExpress.Data.v9.3.dll|DEL_FILE%DevExpress.Utils.v9.3.dll|DEL_FILE%DevExpress.XtraEditors.v9.3.dll|UPD_FILE%itextsharp.dll|UPD_FILE%Newtonsoft.Json.dll|UPD_FILE%AppLimit.CloudComputing.SharpBox.Net40.dll|UPD_FILE%Be.Windows.Forms.HexBox.dll
+2.2.0.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources|UPD_FILE%XmlGridControl.dll|INS_FILE%NHunspell.dll|INS_FILE%Hunspellx86.dll|INS_FILE%Hunspellx64.dll|INS_FILE%DevExpress.Data.v11.2.dll|INS_FILE%DevExpress.Utils.v11.2.dll|INS_FILE%DevExpress.XtraEditors.v11.2.dll|DEL_FILE%DevExpress.Data.v11.1.dll|DEL_FILE%DevExpress.Utils.v11.1.dll|DEL_FILE%DevExpress.XtraEditors.v11.1.dll|UPD_FILE%itextsharp.dll|UPD_FILE%Newtonsoft.Json.dll|UPD_FILE%AppLimit.CloudComputing.SharpBox.Net40.dll
+2.3.0.40-2.7.2.40§SHW_MSG%NoLongerUpdate
+2.4.0.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources|UPD_FILE%XmlGridControl.dll|INS_FILE%NHunspell.dll|INS_FILE%Hunspellx86.dll|INS_FILE%Hunspellx64.dll|INS_FILE%DevExpress.Data.v11.2.dll|INS_FILE%DevExpress.Utils.v11.2.dll|INS_FILE%DevExpress.XtraEditors.v11.2.dll|DEL_FILE%DevExpress.Data.v11.1.dll|DEL_FILE%DevExpress.Utils.v11.1.dll|DEL_FILE%DevExpress.XtraEditors.v11.1.dll
+2.5.0.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources|UPD_FILE%XmlGridControl.dll|INS_FILE%NHunspell.dll|INS_FILE%Hunspellx86.dll|INS_FILE%Hunspellx64.dll|UPD_FILE%DevExpress.Data.v11.2.dll|UPD_FILE%DevExpress.Utils.v11.2.dll|UPD_FILE%DevExpress.XtraEditors.v11.2.dll
+2.6.0.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources|UPD_FILE%XmlGridControl.dll
+2.7.0.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt|UPD_FILE%Languages\en.resources|UPD_FILE%Languages\it.resources
+2.7.1.40-2.7.2.40§UPD_FILE%DtPad.exe|UPD_FILE%Readme.txt
