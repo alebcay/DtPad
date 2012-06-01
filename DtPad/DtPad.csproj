@@ -1135,11 +1135,15 @@
   <PropertyGroup>
     <PostBuildEvent>"$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\it.resx" "$(ProjectDir)Languages\it.resources"
 "$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\en.resx" "$(ProjectDir)Languages\en.resources"
+mkdir "$(ProjectDir)bin\Debug\Languages"
+mkdir "$(ProjectDir)bin\Release\Languages"
+mkdir "$(ProjectDir)bin\ReleaseFE\Languages"
 copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\Debug\Languages"
 copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\Release\Languages"
 copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\ReleaseFE\Languages"
 copy /Y "$(ProjectDir)bin\Release\DtPad.exe" "$(SolutionDir)DtPadSetup\Files\DtPad.exe"
 copy /Y "$(ProjectDir)bin\Release\DtPad.exe.config" "$(SolutionDir)DtPadSetup\Files\DtPad.exe.config"
+mkdir "$(SolutionDir)DtPadSetup\Files\Languages"
 copy /Y "$(ProjectDir)Languages\*.resources" "$(SolutionDir)DtPadSetup\Files\Languages"</PostBuildEvent>
   </PropertyGroup>
 </Project>
