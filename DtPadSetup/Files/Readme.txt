@@ -150,8 +150,8 @@ Servizio di Dropbox di: Dropbox Inc.
 Dizionari linguistici di: OpenOffice.org.
 [link: wiki.services.openoffice.org/wiki/Dictionaries]
 
-Distribuito sotto licenza: Creative Commons Attribution 3.0 License
-[link: www.creativecommons.org/licenses/by-nc-nd/3.0]
+Distribuito sotto licenza: Apache License, Version 2.0
+[link: www.apache.org/licenses/LICENSE-2.0]
 
 
 ==============================
@@ -200,3 +200,4 @@ Il confronto è un momento molto importante per comprendere l'utilità del proprio
 2.7.0.40 (13/04/2012)
 	2.7.1.40 (22/05/2012)
 	2.7.2.40 (01/06/2012)
+	2.7.3.40 (05/06/2012)

@@ -185,7 +185,7 @@ sotto indicata.</value>
   <data name="Form1_introLabel" xml:space="preserve">
     <value>Benvenuto nel setup di DtPad!
 
-DtPad è un editor testuale che non fa uso del registro di Windows, basato sul Framework .NET 4 (RICHIESTO, disponibile sul sito Microsoft) e distribuito sotto licenza Creative Commons Attribution 3.0 (http://creativecommons.org/licenses/by-nc-nd/3.0/).
+DtPad è un editor testuale che non fa uso del registro di Windows, basato sul Framework .NET 4 (RICHIESTO, disponibile sul sito Microsoft) e distribuito sotto licenza Apache License, Version 2.0 (apache.org/licenses/LICENSE-2.0).
 
 Clicca sul bottone "Avanti" per procedere.</value>
   </data>

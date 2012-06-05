@@ -28,6 +28,7 @@ namespace DtPadSetup
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cancelButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@ namespace DtPadSetup
             this.infoLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.languageLabel = new System.Windows.Forms.Label();
-            this.languageImageList = new System.Windows.Forms.ImageList();
+            this.languageImageList = new System.Windows.Forms.ImageList(this.components);
             this.stepLabel = new System.Windows.Forms.Label();
             this.lookAndFeelPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.lookAndFeelGroupBox1 = new System.Windows.Forms.GroupBox();
@@ -64,7 +65,7 @@ namespace DtPadSetup
             this.label1 = new System.Windows.Forms.Label();
             this.statusPictureBox = new System.Windows.Forms.PictureBox();
             this.domainTextBox = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
+            this.contentContextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.undoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,7 +96,7 @@ namespace DtPadSetup
             this.endPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.installProgressBar = new System.Windows.Forms.ProgressBar();
             this.installTextBox = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
+            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -189,7 +190,7 @@ namespace DtPadSetup
             this.introLabel.Location = new System.Drawing.Point(3, 28);
             this.introLabel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 0);
             this.introLabel.Name = "introLabel";
-            this.introLabel.Size = new System.Drawing.Size(272, 117);
+            this.introLabel.Size = new System.Drawing.Size(268, 117);
             this.introLabel.TabIndex = 6;
             this.introLabel.Text = resources.GetString("introLabel.Text");
             // 
@@ -911,13 +912,13 @@ namespace DtPadSetup
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.logoPictureBox);
-            this.Controls.Add(this.windowPanel);
-            this.Controls.Add(this.lookAndFeelPanel);
-            this.Controls.Add(this.languagePanel);
             this.Controls.Add(this.introPanel);
             this.Controls.Add(this.endPanel);
             this.Controls.Add(this.installPanel);
             this.Controls.Add(this.internetPanel);
+            this.Controls.Add(this.windowPanel);
+            this.Controls.Add(this.lookAndFeelPanel);
+            this.Controls.Add(this.languagePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

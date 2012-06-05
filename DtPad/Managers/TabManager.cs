@@ -325,6 +325,7 @@ namespace DtPad.Managers
             pageTextBox.Text = String.Empty;
             pagesTabControl.SelectedTabPage.ImageIndex = 0;
             pagesTabControl.SelectedTabPage.Text = newTabTitle;
+            pagesTabControl.SelectedTabPage.Tooltip = newTabTitle;
             form.Text = String.Format("DtPad - {0}", newTabTitle);
             ProgramUtil.SetFilenameTabPage(pagesTabControl.SelectedTabPage, String.Empty);
             pageTextBox.CustomZoom = 100;

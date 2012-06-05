@@ -123,24 +123,6 @@
   <metadata name="contentContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>312, 17</value>
   </metadata>
-  <data name="descriptionTextBox.Text" xml:space="preserve">
-    <value>DtHelp (2009-2011) is licensed under the following Creative Commons Attribution 3.0 License.
-creativecommons.org/licenses/by-nc-nd/3.0
-
-This application requires Microsoft .NET Framework 4 and it is entirely Windows registry-free.
-
-Main iconset made by Delacro.
-delacro.deviantart.com
-
-Other icons made by Mark James and VistaIcons.
-- famfamfam.com
-- vistaicons.com
-
-External component referenced: Log4Net.
-- logging.apache.org/log4net
-
-DtHelp does not collect any info about usage and users. Informations that could be logged into "Logs" folder regards only program errors and warnings showed even on the interface, and in no case they will contain text displayed or any other private data.</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

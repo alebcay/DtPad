@@ -151,9 +151,6 @@
   <data name="DtPad_exe_config" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\DtPad.exe.config;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="License_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Files\License.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="DtPad_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\DtPad.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -270,5 +267,8 @@
   </data>
   <data name="NHunspell_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\NHunspell.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="License_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

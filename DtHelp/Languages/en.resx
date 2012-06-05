@@ -127,8 +127,8 @@
     <value>Created by:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
-    <value>DtHelp (2009-2011) is licensed under the following Creative Commons Attribution 3.0 License.
-creativecommons.org/licenses/by-nc-nd/3.0
+    <value>DtHelp (2009-2012) is licensed under the following Apache License, Version 2.0.
+- apache.org/licenses/LICENSE-2.0
 
 This application requires Microsoft .NET Framework 4 and it is entirely Windows registry-free.
 

@@ -184,7 +184,7 @@ the form contained on the following page.</value>
   <data name="Form1_introLabel" xml:space="preserve">
     <value>Welcome to DtPad setup!
 
-DtPad is a text editor completely free-registry, based on .NET Framework 4 (REQUIRED, if you do not own it, download it from Microsoft website) and licensed under Creative Commons Attribution 3.0 License (http://creativecommons.org/licenses/by-nc-nd/3.0/).
+DtPad is a text editor completely free-registry, based on .NET Framework 4 (REQUIRED, if you do not own it, download it from Microsoft website) and licensed under Apache License, Version 2.0 (apache.org/licenses/LICENSE-2.0).
 
 Click on "Next" button to proceed.</value>
   </data>

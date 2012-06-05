@@ -61,7 +61,7 @@ namespace DtHelp
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(143, 10);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(58, 16);
+            this.titleLabel.Size = new System.Drawing.Size(56, 16);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "DtHelp";
             // 
@@ -170,7 +170,6 @@ namespace DtHelp
             this.descriptionTextBox.Size = new System.Drawing.Size(275, 95);
             this.descriptionTextBox.TabIndex = 7;
             this.descriptionTextBox.TabStop = false;
-            this.descriptionTextBox.Text = resources.GetString("descriptionTextBox.Text");
             // 
             // contentContextMenuStrip
             // 
@@ -179,25 +178,25 @@ namespace DtHelp
             this.toolStripSeparator29,
             this.selectAllToolStripMenuItem});
             this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(129, 54);
+            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 54);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Image = global::DtHelp.ToolbarResource.copy;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // toolStripSeparator29
             // 
             this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
