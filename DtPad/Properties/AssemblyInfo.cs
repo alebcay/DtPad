@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyTitle("DtPad")]
-[assembly: AssemblyConfiguration("120605")]
+[assembly: AssemblyConfiguration("120821")]
 [assembly: AssemblyProduct("DtPad")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
@@ -43,7 +43,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.7.3.40")]
-[assembly: AssemblyFileVersion("2.7.3.40")]
+[assembly: AssemblyVersion("2.7.4.40")]
+[assembly: AssemblyFileVersion("2.7.4.40")]
 [assembly: NeutralResourcesLanguageAttribute("en-GB")]
 [assembly: CLSCompliant(true)]

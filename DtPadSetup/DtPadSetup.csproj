@@ -198,9 +198,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Files\DtPad.exe" />
-    <None Include="Files\DtPad.exe.Config" />
-    <None Include="Files\DtPadUpdater.exe" />
     <None Include="Files\Readme.txt" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -241,40 +238,17 @@
   <ItemGroup>
     <None Include="app.manifest" />
     <None Include="DtPadSetup.snk" />
-    <None Include="Files\Guides\DtPadGuide-en.dhg" />
-    <None Include="Files\Guides\DtPadGuide-it.dhg" />
     <None Include="Files\Icons\DtPad.ico" />
     <None Include="Files\Icons\DtPadUpdater.ico" />
-    <None Include="Files\DtHelp.exe" />
     <None Include="Files\Icons\DtHelp.ico" />
     <None Include="Files\License.txt" />
-    <None Include="Files\Guides\it\index.html" />
     <None Include="Files\log4net.dll" />
-    <None Include="Files\DtControls.dll" />
-    <None Include="Files\DtPadUninstaller.exe" />
     <None Include="Files\Icons\DtPadUninstaller.ico" />
     <None Include="Files\Icons\Dt.ico" />
     <None Include="Files\Be.Windows.Forms.HexBox.dll" />
-    <None Include="Files\AppLimit.CloudComputing.SharpBox.Net40.dll" />
-    <Content Include="Files\DevExpress.Data.v11.2.dll" />
-    <Content Include="Files\DevExpress.Utils.v11.2.dll" />
-    <Content Include="Files\DevExpress.XtraEditors.v11.2.dll" />
-    <Content Include="Files\Guides\Common\banner-vertical.jpg" />
-    <Content Include="Files\Guides\Common\dtpad-logo.png" />
-    <Content Include="Files\Guides\Common\it-dtpad-window.png" />
-    <Content Include="Files\Guides\Common\it-file-menu.png" />
-    <Content Include="Files\Guides\Common\style.css" />
-    <Content Include="Files\Guides\it\actions.html" />
-    <Content Include="Files\Guides\it\dtpad.html" />
-    <Content Include="Files\Guides\it\edit.html" />
-    <Content Include="Files\Guides\it\file.html" />
-    <Content Include="Files\Guides\it\help.html" />
-    <Content Include="Files\Guides\it\options.html" />
-    <Content Include="Files\Guides\it\search.html" />
-    <Content Include="Files\Guides\it\session.html" />
-    <Content Include="Files\Guides\it\tools.html" />
-    <Content Include="Files\Guides\it\view.html" />
-    <Content Include="Files\Guides\it\window.html" />
+    <Content Include="Files\DevExpress.Data.v12.1.dll" />
+    <Content Include="Files\DevExpress.Utils.v12.1.dll" />
+    <Content Include="Files\DevExpress.XtraEditors.v12.1.dll" />
     <None Include="Files\Hunspellx64.dll" />
     <None Include="Files\Hunspellx86.dll" />
     <Content Include="Files\Icons\JL\CheckNewVersion.ico" />
@@ -291,7 +265,6 @@
     <Content Include="Files\MonthCalendar.dll" />
     <None Include="Files\Newtonsoft.Json.dll" />
     <None Include="Files\NHunspell.dll" />
-    <Content Include="Files\XmlGridControl.dll" />
     <Content Include="icon.ico" />
     <Content Include="Images\cut.png" />
     <Content Include="Images\email.png" />
@@ -369,6 +342,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\Guides\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

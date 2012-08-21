@@ -66,9 +66,9 @@ namespace DtPadSetup.Managers
                                  FileResource.DtPadUpdater_exe.Length + FileResource.DtHelp_exe.Length +
                                  FileResource.Readme_txt.Length + FileResource.en_resources.Length +
                                  FileResource.it_resources.Length + FileResource.License_txt.Length +
-                                 FileResource.DevExpress_Data_v11_2_dll.Length +
-                                 FileResource.DevExpress_Utils_v11_2_dll.Length +
-                                 FileResource.DevExpress_XtraEditors_v11_2_dll.Length + FileResource.log4net_dll.Length +
+                                 FileResource.DevExpress_Data_v12_1_dll.Length +
+                                 FileResource.DevExpress_Utils_v12_1_dll.Length +
+                                 FileResource.DevExpress_XtraEditors_v12_1_dll.Length + FileResource.log4net_dll.Length +
                                  FileResource.ICSharpCode_SharpZipLib_dll.Length + FileResource.DtControls_dll.Length +
                                  FileResource.itextsharp_dll.Length + FileResource.Info_txt.Length +
                                  FileResource.DtPadUninstaller_exe.Length + FileResource.DtPad_exe_rs.Length +
@@ -151,9 +151,9 @@ namespace DtPadSetup.Managers
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "DtPadUpdater.exe"), FileResource.DtPadUpdater_exe);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "DtHelp.exe"), FileResource.DtHelp_exe);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "DtPadUninstaller.exe"), FileResource.DtPadUninstaller_exe);
-                WriteFileAndSetPermissions(Path.Combine(destinationPath, "DevExpress.Data.v11.2.dll"), FileResource.DevExpress_Data_v11_2_dll);
-                WriteFileAndSetPermissions(Path.Combine(destinationPath, "DevExpress.Utils.v11.2.dll"), FileResource.DevExpress_Utils_v11_2_dll);
-                WriteFileAndSetPermissions(Path.Combine(destinationPath, "DevExpress.XtraEditors.v11.2.dll"), FileResource.DevExpress_XtraEditors_v11_2_dll);
+                WriteFileAndSetPermissions(Path.Combine(destinationPath, "DevExpress.Data.v12.1.dll"), FileResource.DevExpress_Data_v12_1_dll);
+                WriteFileAndSetPermissions(Path.Combine(destinationPath, "DevExpress.Utils.v12.1.dll"), FileResource.DevExpress_Utils_v12_1_dll);
+                WriteFileAndSetPermissions(Path.Combine(destinationPath, "DevExpress.XtraEditors.v12.1.dll"), FileResource.DevExpress_XtraEditors_v12_1_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "log4net.dll"), FileResource.log4net_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "ICSharpCode.SharpZipLib.dll"), FileResource.ICSharpCode_SharpZipLib_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "DtControls.dll"), FileResource.DtControls_dll);
@@ -502,10 +502,15 @@ namespace DtPadSetup.Managers
 
             if (!onlySetPermission)
             {
+                FileInfo info = new FileInfo(fileNameAndPath);
+
                 if (fileNameAndPath == "Readme.txt" || fileNameAndPath == "License.txt")
                 {
-                    FileInfo info = new FileInfo(fileNameAndPath);
                     info.IsReadOnly = true;
+                }
+                else
+                {
+                    info.IsReadOnly = false;
                 }
             }
         }

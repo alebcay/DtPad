@@ -3925,7 +3925,7 @@ namespace DtPad
             this.verticalSplitContainer.Panel2.Controls.Add(this.verticalTabControl);
 			this.verticalSplitContainer.Panel2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.verticalSplitContainer.Size = new System.Drawing.Size(898, 445);
-            this.verticalSplitContainer.SplitterDistance = 645;
+            this.verticalSplitContainer.SplitterDistance = 610;
             this.verticalSplitContainer.TabIndex = 2;
             // 
             // pagesTabControl
@@ -4166,7 +4166,7 @@ namespace DtPad
             this.verticalTabControl.SelectedTabPage = this.notesTabPage;
             this.verticalTabControl.ShowToolTips = DevExpress.Utils.DefaultBoolean.True;
             this.verticalTabControl.Size = new System.Drawing.Size(224, 445);
-            this.verticalTabControl.TabPageWidth = 10;
+            this.verticalTabControl.TabPageWidth = 16;
             this.verticalTabControl.TabIndex = 0;
             this.verticalTabControl.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.notesTabPage,
@@ -4312,7 +4312,7 @@ namespace DtPad
             // 
             this.zoomTrackBarControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.zoomTrackBarControl.EditValue = 2;
-            this.zoomTrackBarControl.Location = new System.Drawing.Point(778, 497);
+            this.zoomTrackBarControl.Location = new System.Drawing.Point(1058, 651);
             this.zoomTrackBarControl.Name = "zoomTrackBarControl";
             this.zoomTrackBarControl.Properties.LargeChange = 1;
             this.zoomTrackBarControl.Properties.LookAndFeel.SkinName = "Metropolis";
@@ -4332,7 +4332,7 @@ namespace DtPad
             // 
             this.zoomPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.zoomPictureBox.Image = global::DtPad.ToolbarResource.zoom;
-            this.zoomPictureBox.Location = new System.Drawing.Point(756, 497);
+            this.zoomPictureBox.Location = new System.Drawing.Point(1036, 651);
             this.zoomPictureBox.Name = "zoomPictureBox";
             this.zoomPictureBox.Size = new System.Drawing.Size(16, 16);
             this.zoomPictureBox.TabIndex = 7;
@@ -4369,7 +4369,7 @@ namespace DtPad
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 516);
+            this.ClientSize = new System.Drawing.Size(1180, 670);
             this.Controls.Add(this.zoomPictureBox);
             this.Controls.Add(this.zoomTrackBarControl);
             this.Controls.Add(this.verticalSplitContainer);

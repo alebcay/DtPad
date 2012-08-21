@@ -250,15 +250,6 @@
   <data name="Newtonsoft_Json_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\Newtonsoft.Json.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DevExpress_Data_v11_2_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Files\DevExpress.Data.v11.2.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DevExpress_Utils_v11_2_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Files\DevExpress.Utils.v11.2.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DevExpress_XtraEditors_v11_2_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Files\DevExpress.XtraEditors.v11.2.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Hunspellx64_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\Hunspellx64.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -270,5 +261,14 @@
   </data>
   <data name="License_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\License.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DevExpress_Data_v12_1_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DevExpress.Data.v12.1.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DevExpress_Utils_v12_1_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DevExpress.Utils.v12.1.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DevExpress_XtraEditors_v12_1_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\DevExpress.XtraEditors.v12.1.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

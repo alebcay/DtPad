@@ -1,4 +1,5 @@
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Windows.Forms;
 using DtPad.Customs;
 using DtPad.Utils;
@@ -18,11 +19,13 @@ namespace DtPad.Managers
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(form.pagesTabControl.SelectedTabPage);
             PrintDialog printDialog = form.printDialog;
 
-            customPrintDocument = SetCustomPrintDocument(pageTextBox, customPrintDocument, printDialog.AllowSelection);
+            customPrintDocument = SetCustomPrintDocument(pageTextBox, customPrintDocument);
             printDialog.Document = customPrintDocument;
-            
+
             if (printDialog.ShowDialog() == DialogResult.OK)
             {
+                customPrintDocument = SetCustomPrintDocument(pageTextBox, customPrintDocument, printDialog.PrinterSettings.PrintRange == PrintRange.Selection);
+                printDialog.Document = customPrintDocument;
                 printDialog.Document.Print();
             }
 

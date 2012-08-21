@@ -93,6 +93,10 @@ namespace DtPad.Managers
             {
                 ManageError(form, exception);
             }
+            catch (DirectoryNotFoundException exception)
+            {
+                ManageError(form, exception);
+            }
         }
 
         internal static void ClearNotes(Form1 form)
