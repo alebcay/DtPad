@@ -273,14 +273,6 @@
     <None Include="Images\Toolbars\open.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Guides\DtPad Guide\en\Editing\test.html" />
-    <Content Include="Guides\DtPad Guide\en\Editing\test2.html" />
-    <Content Include="Guides\DtPad Guide\en\Introduction\features.html" />
-    <Content Include="Guides\DtPad Guide\en\Introduction\index.html" />
-    <Content Include="Guides\DtPad Guide\it\Editing\test.html" />
-    <Content Include="Guides\DtPad Guide\it\Editing\test2.html" />
-    <Content Include="Guides\DtPad Guide\it\Introduction\features.html" />
-    <Content Include="Guides\DtPad Guide\it\Introduction\index.html" />
     <Content Include="icon.ico" />
     <None Include="app.manifest" />
     <None Include="Images\Toolbars\home-green.png" />
@@ -296,10 +288,8 @@
     <Content Include="Images\MessageBoxes\warning.png" />
     <Content Include="Libraries\log4net.dll" />
     <None Include="DtHelp.snk" />
-    <None Include="Guides\DtPad Guide\DtPadGuide-it.dhg" />
     <None Include="Images\Toolbars\it.png" />
     <None Include="Images\Toolbars\en.png" />
-    <None Include="Guides\DtPad Guide\DtPadGuide-en.dhg" />
     <None Include="Images\Toolbars\disconnect.png" />
     <None Include="Images\Toolbars\connect.png" />
     <None Include="Images\Toolbars\chapter.png" />
@@ -344,6 +334,10 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Guides\DtPad Guide\en\" />
+    <Folder Include="Guides\DtPad Guide\it\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
