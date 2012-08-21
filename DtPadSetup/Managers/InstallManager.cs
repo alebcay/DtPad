@@ -504,7 +504,7 @@ namespace DtPadSetup.Managers
             {
                 FileInfo info = new FileInfo(fileNameAndPath);
 
-                if (fileNameAndPath == "Readme.txt" || fileNameAndPath == "License.txt")
+                if (fileNameAndPath.EndsWith("Readme.txt") || fileNameAndPath.EndsWith("License.txt"))
                 {
                     info.IsReadOnly = true;
                 }

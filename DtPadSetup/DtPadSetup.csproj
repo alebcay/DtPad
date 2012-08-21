@@ -152,8 +152,6 @@
       <LastGenOutput>FileResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="DtPadSetup.ruleset" />
-    <None Include="Files\Languages\en.resources" />
-    <None Include="Files\Languages\it.resources" />
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Form1.cs</DependentUpon>
@@ -279,10 +277,6 @@
     <None Include="Images\install-step-2.png" />
     <None Include="Images\install-step-7.png" />
     <None Include="Images\install-step-1.png" />
-    <None Include="Files\Logs\DtHelp.log" />
-    <None Include="Files\Logs\DtPad.log" />
-    <None Include="Files\Logs\DtPadUninstaller.log" />
-    <None Include="Files\Logs\DtPadUpdater.log" />
     <None Include="Images\warning.png" />
     <None Include="Files\SupportFiles\DtPad.exe.rp" />
     <None Include="Files\SupportFiles\DtPad.exe.sf" />
@@ -345,6 +339,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Files\Guides\" />
+    <Folder Include="Files\Languages\" />
+    <Folder Include="Files\Logs\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

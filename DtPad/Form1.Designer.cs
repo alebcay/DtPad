@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace DtPad
 {
     partial class Form1
@@ -3884,13 +3886,16 @@ namespace DtPad
             // 
             this.printPreviewDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
             this.printPreviewDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog.ClientSize = new System.Drawing.Size(800, 600);
             this.printPreviewDialog.Enabled = true;
             this.printPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.printPreviewDialog.Name = "printPreviewDialog";
             this.printPreviewDialog.ShowIcon = true;
             this.printPreviewDialog.UseAntiAlias = true;
             this.printPreviewDialog.Visible = false;
+            this.printPreviewDialog.WindowState = FormWindowState.Maximized;
+            this.printPreviewDialog.PrintPreviewControl.AutoZoom = true;
+            this.printPreviewDialog.PrintPreviewControl.Columns = 3;
             // 
             // openFileDialog
             // 
