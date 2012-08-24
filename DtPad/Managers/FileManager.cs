@@ -22,6 +22,12 @@ namespace DtPad.Managers
     {
         private const String className = "FileManager";
 
+        private enum UpdatePhase
+        {
+            Begin = 0,
+            End = 1
+        }
+
         #region Internal Methods
 
         internal static int OpenFile(Form1 form, int tabIdentity)
@@ -259,6 +265,7 @@ namespace DtPad.Managers
 
                     if (ConfigUtil.GetBoolParameter("AutoOpenHostsConfigurator") && isWindowsHostsFile)
                     {
+                        pagesTabControl.SelectedTabPage.Appearance.Header.ForeColor = ConfigUtil.GetColorParameter("ColorHostsConfigurator");
                         CustomFilesManager.OpenHostsSectionPanel(form);
                         isWindowsHostsFile = false;
                     }
@@ -340,7 +347,7 @@ namespace DtPad.Managers
         {
             return SaveFile(true, form, forceSaveAs, forceBackup);
         }
-        private static bool SaveFile(bool saveNewRecentFile, Form1 form, bool forceSaveAs, bool forceBackup)
+        private static bool SaveFile(bool saveNewRecentFile, Form1 form, bool forceSaveAs, bool forceBackup, bool savingAll = false)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
@@ -355,8 +362,12 @@ namespace DtPad.Managers
                 {
                     saveFileDialog.InitialDirectory = FileUtil.GetInitialFolder(form);
                     SetFileDialogFilter(saveFileDialog);
-                    
-                    if (saveFileDialog.ShowDialog() != DialogResult.OK)
+
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.End); //Useful to save all execution
+                    DialogResult saveNewResult = saveFileDialog.ShowDialog();
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.Begin); //Useful to save all execution
+
+                    if (saveNewResult != DialogResult.OK) 
                     {
                         toolStripProgressBar.Visible = false;
                         return false;
@@ -378,7 +389,11 @@ namespace DtPad.Managers
                     }
 
                     pagesTabControl.SelectedTabPage = tabPage;
+
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.End); //Useful to save all execution
                     WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("FileAlreadyOpen", className));
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.Begin); //Useful to save all execution
+
                     return false;
                 }
 
@@ -399,14 +414,22 @@ namespace DtPad.Managers
                 if (fileInfo.IsReadOnly && fileInfo.Exists)
                 {
                     toolStripProgressBar.Visible = false;
+
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.End); //Useful to save all execution
                     WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("SavingReadonly", className));
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.Begin); //Useful to save all execution
+
                     return SaveFile(form, true);
                 }
 
                 bool backupConfigActive = ConfigUtil.GetBoolParameter("BackupEnabled");
                 if ((!String.IsNullOrEmpty(ProgramUtil.GetFilenameTabPage(pagesTabControl.SelectedTabPage)) && !forceSaveAs) && (forceBackup || backupConfigActive))
                 {
-                    if (BackupFileOnSaving(form, fileName) == false)
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.End); //Useful to save all execution
+                    bool saved = BackupFileOnSaving(form, fileName);
+                    TabsUpdate(pagesTabControl, savingAll, UpdatePhase.Begin); //Useful to save all execution
+
+                    if (saved == false)  
                     {
                         toolStripProgressBar.Visible = false;
                         return false;
@@ -414,7 +437,7 @@ namespace DtPad.Managers
                 }
 
                 toolStripProgressBar.PerformStep();
-                if (SaveFileCoreWithEncoding(form, fileName) == false)
+                if (SaveFileCoreWithEncoding(form, fileName, savingAll) == false)
                 {
                     toolStripProgressBar.Visible = false;
                     return false;
@@ -448,9 +471,12 @@ namespace DtPad.Managers
             catch (Exception exception)
             {
                 TabManager.ToggleTabFileTools(form, false);
-
                 toolStripProgressBar.Visible = false;
+
+                TabsUpdate(pagesTabControl, savingAll, UpdatePhase.End); //Useful to save all execution
                 WindowManager.ShowErrorBox(form, exception.Message, exception);
+                TabsUpdate(pagesTabControl, savingAll, UpdatePhase.Begin); //Useful to save all execution
+
                 return false;
             }
 
@@ -511,8 +537,7 @@ namespace DtPad.Managers
 
             try
             {
-                //pagesTabControl.BeginUpdate();
-
+                pagesTabControl.BeginUpdate();
                 foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
                 {
                     if (!TabUtil.IsTabPageModified(tabPage))
@@ -522,7 +547,7 @@ namespace DtPad.Managers
 
                     pagesTabControl.SelectedTabPage = tabPage;
 
-                    if (!SaveFile(saveNewRecentFile, form, false, false))
+                    if (!SaveFile(saveNewRecentFile, form, false, false, true))
                     {
                         fullSuccess = false;
                     }
@@ -531,7 +556,7 @@ namespace DtPad.Managers
             finally
             {
                 pagesTabControl.SelectedTabPage = startTabPage;
-                //pagesTabControl.EndUpdate();
+                pagesTabControl.EndUpdate();
             }
 
             return fullSuccess;
@@ -768,13 +793,13 @@ namespace DtPad.Managers
             }
         }
 
-        internal static bool SaveFileCoreWithEncoding(Form1 form, String fileName)
+        internal static bool SaveFileCoreWithEncoding(Form1 form, String fileName, bool savingAll = false)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
 
-            return SaveFileCoreWithEncoding(form, fileName, ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage).Text);
+            return SaveFileCoreWithEncoding(form, fileName, ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage).Text, savingAll);
         }
-        internal static bool SaveFileCoreWithEncoding(Form1 form, String fileName, String text)
+        internal static bool SaveFileCoreWithEncoding(Form1 form, String fileName, String text, bool savingAll = false)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
 
@@ -809,7 +834,10 @@ namespace DtPad.Managers
 
                         if (fileEncoding.GetType() != xmlEncoding.GetType())
                         {
+                            TabsUpdate(pagesTabControl, savingAll, UpdatePhase.End); //Useful to save all execution
                             WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("EncodingXmlToSave", className));
+                            TabsUpdate(pagesTabControl, savingAll, UpdatePhase.Begin); //Useful to save all execution
+
                             fileEncoding = xmlEncoding;
                         }
 
@@ -820,7 +848,11 @@ namespace DtPad.Managers
                     }
                     catch (Exception)
                     {
-                        if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("InvalidXmlToSave", className)) == DialogResult.No)
+                        TabsUpdate(pagesTabControl, savingAll, UpdatePhase.End); //Useful to save all execution
+                        DialogResult questionResult = WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("InvalidXmlToSave", className));
+                        TabsUpdate(pagesTabControl, savingAll, UpdatePhase.Begin); //Useful to save all execution
+
+                        if (questionResult == DialogResult.No)
                         {
                             throw;
                         }
@@ -1040,6 +1072,24 @@ namespace DtPad.Managers
             File.Copy(pathAndFileName, Path.Combine(backupPath, backupFileName), true);
 
             return true;
+        }
+
+        private static void TabsUpdate(XtraTabControl pagesTabControl, bool savingAll, UpdatePhase phase)
+        {
+            if (!savingAll)
+            {
+                return;
+            }
+
+            switch (phase)
+            {
+                case UpdatePhase.Begin:
+                    pagesTabControl.BeginUpdate();
+                    break;
+                case UpdatePhase.End:
+                    pagesTabControl.EndUpdate();
+                    break;
+            }
         }
 
         #endregion Private Methods

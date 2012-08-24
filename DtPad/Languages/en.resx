@@ -393,7 +393,7 @@ DtPad does not collect any info about usage and users. Informations that could b
     <value>Font:</value>
   </data>
   <data name="Options_formatGroupBox1" xml:space="preserve">
-    <value>Aspect</value>
+    <value>Appearance</value>
   </data>
   <data name="Options_languageGroupBox1" xml:space="preserve">
     <value>DtPad</value>
@@ -2362,7 +2362,7 @@ File is in use by another process.</value>
     <value>Active Tab</value>
   </data>
   <data name="Form1_aspectToolStripMenuItem" xml:space="preserve">
-    <value>Aspect</value>
+    <value>Appearance</value>
   </data>
   <data name="Form1_bottomToolStripMenuItem" xml:space="preserve">
     <value>Bottom</value>
@@ -4299,5 +4299,11 @@ Check this URL to download:
   </data>
   <data name="filePanel_refreshDriveToolStripButton" xml:space="preserve">
     <value>Refresh Drives</value>
+  </data>
+  <data name="Form1_takeTabScreenshotToolStripMenuItem" xml:space="preserve">
+    <value>Take Current Tab Screenshot</value>
+  </data>
+  <data name="WindowManager_ScreenshotInClipboard" xml:space="preserve">
+    <value>The screenshot has been saved into clipboard.</value>
   </data>
 </root>

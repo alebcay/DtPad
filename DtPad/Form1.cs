@@ -1184,6 +1184,11 @@ namespace DtPad
             WindowManager.ShowSpecialChars(this);
         }
 
+        private void takeTabScreenshotToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WindowManager.TakeTabControlScreenshot(this);
+        }
+
         private void sortTabsAlphabeticallyToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TabManager.SortTabsAlphabetically(this);
@@ -1455,7 +1460,7 @@ namespace DtPad
 
         private void newToolStripButton_Click(object sender, EventArgs e)
         {
-            TabIdentity = TabManager.AddNewPage(this, TabIdentity);
+            //TabIdentity = TabManager.AddNewPage(this, TabIdentity);
         }
 
         private void closeToolStripButton_Click(object sender, EventArgs e)

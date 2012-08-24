@@ -46,7 +46,6 @@ namespace DtPad.Managers
             {
                 selectedTabPage.Controls.Remove(ProgramUtil.GetSectionsPanel(pagesTabControl.SelectedTabPage));
             }
-            selectedTabPage.Appearance.Header.ForeColor = ConfigUtil.GetColorParameter("ColorHostsConfigurator");
 
             //ContextMenuStrip
             ToolStripMenuItem closeToolStripMenuItem = new ToolStripMenuItem

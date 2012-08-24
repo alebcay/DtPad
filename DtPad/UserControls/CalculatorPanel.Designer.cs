@@ -30,9 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.textMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel = new Customs.CustomTableLayoutPanel();
+            this.calculatorToolStrip = new System.Windows.Forms.ToolStrip();
+            this.clearCalculatorToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.thousandSepToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.calculationTextBox = new DtPad.Customs.CustomTextBox();
+            this.tableLayoutPanel = new DtPad.Customs.CustomTableLayoutPanel();
             this.plusButton = new System.Windows.Forms.Button();
             this.commaButton = new System.Windows.Forms.Button();
             this.signButton = new System.Windows.Forms.Button();
@@ -53,15 +59,9 @@
             this.sevenButton = new System.Windows.Forms.Button();
             this.backspaceButton = new System.Windows.Forms.Button();
             this.calcTextBox = new DtPad.Customs.CustomTextBox();
-            this.calculationTextBox = new DtPad.Customs.CustomTextBox();
-            this.calculatorToolStrip = new System.Windows.Forms.ToolStrip();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearCalculatorToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.thousandSepToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.textMenuStrip.SuspendLayout();
-            this.tableLayoutPanel.SuspendLayout();
             this.calculatorToolStrip.SuspendLayout();
+            this.tableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // textMenuStrip
@@ -72,6 +72,14 @@
             this.selectAllToolStripMenuItem2});
             this.textMenuStrip.Name = "searchContextMenuStrip";
             this.textMenuStrip.Size = new System.Drawing.Size(123, 54);
+            // 
+            // copyToolStripMenuItem2
+            // 
+            this.copyToolStripMenuItem2.Image = global::DtPad.ToolbarResource.copy;
+            this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
+            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.copyToolStripMenuItem2.Text = "Copy";
+            this.copyToolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
             // 
             // toolStripSeparator29
             // 
@@ -84,6 +92,60 @@
             this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
             this.selectAllToolStripMenuItem2.Text = "Select All";
             this.selectAllToolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
+            // 
+            // calculatorToolStrip
+            // 
+            this.calculatorToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearCalculatorToolStripButton,
+            this.toolStripSeparator1,
+            this.thousandSepToolStripButton});
+            this.calculatorToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.calculatorToolStrip.Name = "calculatorToolStrip";
+            this.calculatorToolStrip.Size = new System.Drawing.Size(206, 25);
+            this.calculatorToolStrip.TabIndex = 2;
+            this.calculatorToolStrip.Text = "toolStrip1";
+            // 
+            // clearCalculatorToolStripButton
+            // 
+            this.clearCalculatorToolStripButton.Image = global::DtPad.ToolbarResource.bin;
+            this.clearCalculatorToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.clearCalculatorToolStripButton.Name = "clearCalculatorToolStripButton";
+            this.clearCalculatorToolStripButton.Size = new System.Drawing.Size(111, 22);
+            this.clearCalculatorToolStripButton.Text = "Clear Calculator";
+            this.clearCalculatorToolStripButton.Click += new System.EventHandler(this.clearCalculatorToolStripButton_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // thousandSepToolStripButton
+            // 
+            this.thousandSepToolStripButton.Checked = true;
+            this.thousandSepToolStripButton.CheckOnClick = true;
+            this.thousandSepToolStripButton.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.thousandSepToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.thousandSepToolStripButton.Image = global::DtPad.ToolbarResource.thousands;
+            this.thousandSepToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.thousandSepToolStripButton.Name = "thousandSepToolStripButton";
+            this.thousandSepToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.thousandSepToolStripButton.Text = "Use Thousands Separator";
+            this.thousandSepToolStripButton.CheckedChanged += new System.EventHandler(this.thousandSepToolStripButton_CheckedChanged);
+            // 
+            // calculationTextBox
+            // 
+            this.calculationTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.calculationTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.calculationTextBox.ContextMenuStrip = this.textMenuStrip;
+            this.calculationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.calculationTextBox.Location = new System.Drawing.Point(0, 25);
+            this.calculationTextBox.Multiline = true;
+            this.calculationTextBox.Name = "calculationTextBox";
+            this.calculationTextBox.ReadOnly = true;
+            this.calculationTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.calculationTextBox.Size = new System.Drawing.Size(206, 184);
+            this.calculationTextBox.TabIndex = 0;
+            this.calculationTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calculationTextBox_KeyDown);
             // 
             // tableLayoutPanel
             // 
@@ -116,7 +178,7 @@
             this.tableLayoutPanel.Controls.Add(this.calcTextBox, 0, 0);
             this.tableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel.HorizontalLine = true;
-            this.tableLayoutPanel.Location = new System.Drawing.Point(0, 235);
+            this.tableLayoutPanel.Location = new System.Drawing.Point(0, 209);
             this.tableLayoutPanel.MarginLeftHorizontalLine = 0;
             this.tableLayoutPanel.MarginTopHorizontalLine = 0;
             this.tableLayoutPanel.Name = "tableLayoutPanel";
@@ -126,16 +188,16 @@
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(206, 150);
+            this.tableLayoutPanel.Size = new System.Drawing.Size(206, 176);
             this.tableLayoutPanel.TabIndex = 1;
             // 
             // plusButton
             // 
             this.plusButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.plusButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.plusButton.Location = new System.Drawing.Point(167, 123);
+            this.plusButton.Location = new System.Drawing.Point(167, 143);
             this.plusButton.Name = "plusButton";
-            this.plusButton.Size = new System.Drawing.Size(36, 24);
+            this.plusButton.Size = new System.Drawing.Size(36, 30);
             this.plusButton.TabIndex = 19;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = true;
@@ -146,9 +208,9 @@
             // 
             this.commaButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.commaButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.commaButton.Location = new System.Drawing.Point(126, 123);
+            this.commaButton.Location = new System.Drawing.Point(126, 143);
             this.commaButton.Name = "commaButton";
-            this.commaButton.Size = new System.Drawing.Size(35, 24);
+            this.commaButton.Size = new System.Drawing.Size(35, 30);
             this.commaButton.TabIndex = 18;
             this.commaButton.Text = ",";
             this.commaButton.UseVisualStyleBackColor = true;
@@ -159,9 +221,9 @@
             // 
             this.signButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.signButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.signButton.Location = new System.Drawing.Point(85, 123);
+            this.signButton.Location = new System.Drawing.Point(85, 143);
             this.signButton.Name = "signButton";
-            this.signButton.Size = new System.Drawing.Size(35, 24);
+            this.signButton.Size = new System.Drawing.Size(35, 30);
             this.signButton.TabIndex = 17;
             this.signButton.Text = "+/-";
             this.signButton.UseVisualStyleBackColor = true;
@@ -172,9 +234,9 @@
             // 
             this.zeroButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.zeroButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.zeroButton.Location = new System.Drawing.Point(44, 123);
+            this.zeroButton.Location = new System.Drawing.Point(44, 143);
             this.zeroButton.Name = "zeroButton";
-            this.zeroButton.Size = new System.Drawing.Size(35, 24);
+            this.zeroButton.Size = new System.Drawing.Size(35, 30);
             this.zeroButton.TabIndex = 16;
             this.zeroButton.Text = "0";
             this.zeroButton.UseVisualStyleBackColor = true;
@@ -185,10 +247,10 @@
             // 
             this.equalButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.equalButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.equalButton.Location = new System.Drawing.Point(3, 93);
+            this.equalButton.Location = new System.Drawing.Point(3, 108);
             this.equalButton.Name = "equalButton";
             this.tableLayoutPanel.SetRowSpan(this.equalButton, 2);
-            this.equalButton.Size = new System.Drawing.Size(35, 54);
+            this.equalButton.Size = new System.Drawing.Size(35, 65);
             this.equalButton.TabIndex = 11;
             this.equalButton.Text = "=";
             this.equalButton.UseVisualStyleBackColor = true;
@@ -199,9 +261,9 @@
             // 
             this.minusButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.minusButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.minusButton.Location = new System.Drawing.Point(167, 93);
+            this.minusButton.Location = new System.Drawing.Point(167, 108);
             this.minusButton.Name = "minusButton";
-            this.minusButton.Size = new System.Drawing.Size(36, 24);
+            this.minusButton.Size = new System.Drawing.Size(36, 29);
             this.minusButton.TabIndex = 15;
             this.minusButton.Text = "-";
             this.minusButton.UseVisualStyleBackColor = true;
@@ -212,9 +274,9 @@
             // 
             this.threeButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.threeButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.threeButton.Location = new System.Drawing.Point(126, 93);
+            this.threeButton.Location = new System.Drawing.Point(126, 108);
             this.threeButton.Name = "threeButton";
-            this.threeButton.Size = new System.Drawing.Size(35, 24);
+            this.threeButton.Size = new System.Drawing.Size(35, 29);
             this.threeButton.TabIndex = 14;
             this.threeButton.Text = "3";
             this.threeButton.UseVisualStyleBackColor = true;
@@ -225,9 +287,9 @@
             // 
             this.twoButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.twoButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.twoButton.Location = new System.Drawing.Point(85, 93);
+            this.twoButton.Location = new System.Drawing.Point(85, 108);
             this.twoButton.Name = "twoButton";
-            this.twoButton.Size = new System.Drawing.Size(35, 24);
+            this.twoButton.Size = new System.Drawing.Size(35, 29);
             this.twoButton.TabIndex = 13;
             this.twoButton.Text = "2";
             this.twoButton.UseVisualStyleBackColor = true;
@@ -238,9 +300,9 @@
             // 
             this.oneButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.oneButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.oneButton.Location = new System.Drawing.Point(44, 93);
+            this.oneButton.Location = new System.Drawing.Point(44, 108);
             this.oneButton.Name = "oneButton";
-            this.oneButton.Size = new System.Drawing.Size(35, 24);
+            this.oneButton.Size = new System.Drawing.Size(35, 29);
             this.oneButton.TabIndex = 12;
             this.oneButton.Text = "1";
             this.oneButton.UseVisualStyleBackColor = true;
@@ -251,9 +313,9 @@
             // 
             this.starButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.starButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.starButton.Location = new System.Drawing.Point(167, 63);
+            this.starButton.Location = new System.Drawing.Point(167, 73);
             this.starButton.Name = "starButton";
-            this.starButton.Size = new System.Drawing.Size(36, 24);
+            this.starButton.Size = new System.Drawing.Size(36, 29);
             this.starButton.TabIndex = 10;
             this.starButton.Text = "*";
             this.starButton.UseVisualStyleBackColor = true;
@@ -264,9 +326,9 @@
             // 
             this.sixButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sixButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.sixButton.Location = new System.Drawing.Point(126, 63);
+            this.sixButton.Location = new System.Drawing.Point(126, 73);
             this.sixButton.Name = "sixButton";
-            this.sixButton.Size = new System.Drawing.Size(35, 24);
+            this.sixButton.Size = new System.Drawing.Size(35, 29);
             this.sixButton.TabIndex = 9;
             this.sixButton.Text = "6";
             this.sixButton.UseVisualStyleBackColor = true;
@@ -277,9 +339,9 @@
             // 
             this.fiveButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fiveButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.fiveButton.Location = new System.Drawing.Point(85, 63);
+            this.fiveButton.Location = new System.Drawing.Point(85, 73);
             this.fiveButton.Name = "fiveButton";
-            this.fiveButton.Size = new System.Drawing.Size(35, 24);
+            this.fiveButton.Size = new System.Drawing.Size(35, 29);
             this.fiveButton.TabIndex = 8;
             this.fiveButton.Text = "5";
             this.fiveButton.UseVisualStyleBackColor = true;
@@ -290,9 +352,9 @@
             // 
             this.fourButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fourButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.fourButton.Location = new System.Drawing.Point(44, 63);
+            this.fourButton.Location = new System.Drawing.Point(44, 73);
             this.fourButton.Name = "fourButton";
-            this.fourButton.Size = new System.Drawing.Size(35, 24);
+            this.fourButton.Size = new System.Drawing.Size(35, 29);
             this.fourButton.TabIndex = 7;
             this.fourButton.Text = "4";
             this.fourButton.UseVisualStyleBackColor = true;
@@ -303,9 +365,9 @@
             // 
             this.cancelButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cancelButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cancelButton.Location = new System.Drawing.Point(3, 63);
+            this.cancelButton.Location = new System.Drawing.Point(3, 73);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(35, 24);
+            this.cancelButton.Size = new System.Drawing.Size(35, 29);
             this.cancelButton.TabIndex = 6;
             this.cancelButton.Text = "C";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -316,9 +378,9 @@
             // 
             this.barButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.barButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.barButton.Location = new System.Drawing.Point(167, 33);
+            this.barButton.Location = new System.Drawing.Point(167, 38);
             this.barButton.Name = "barButton";
-            this.barButton.Size = new System.Drawing.Size(36, 24);
+            this.barButton.Size = new System.Drawing.Size(36, 29);
             this.barButton.TabIndex = 5;
             this.barButton.Text = "/";
             this.barButton.UseVisualStyleBackColor = true;
@@ -329,9 +391,9 @@
             // 
             this.nineButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nineButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.nineButton.Location = new System.Drawing.Point(126, 33);
+            this.nineButton.Location = new System.Drawing.Point(126, 38);
             this.nineButton.Name = "nineButton";
-            this.nineButton.Size = new System.Drawing.Size(35, 24);
+            this.nineButton.Size = new System.Drawing.Size(35, 29);
             this.nineButton.TabIndex = 4;
             this.nineButton.Text = "9";
             this.nineButton.UseVisualStyleBackColor = true;
@@ -342,9 +404,9 @@
             // 
             this.eightButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.eightButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.eightButton.Location = new System.Drawing.Point(85, 33);
+            this.eightButton.Location = new System.Drawing.Point(85, 38);
             this.eightButton.Name = "eightButton";
-            this.eightButton.Size = new System.Drawing.Size(35, 24);
+            this.eightButton.Size = new System.Drawing.Size(35, 29);
             this.eightButton.TabIndex = 3;
             this.eightButton.Text = "8";
             this.eightButton.UseVisualStyleBackColor = true;
@@ -355,9 +417,9 @@
             // 
             this.sevenButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sevenButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.sevenButton.Location = new System.Drawing.Point(44, 33);
+            this.sevenButton.Location = new System.Drawing.Point(44, 38);
             this.sevenButton.Name = "sevenButton";
-            this.sevenButton.Size = new System.Drawing.Size(35, 24);
+            this.sevenButton.Size = new System.Drawing.Size(35, 29);
             this.sevenButton.TabIndex = 2;
             this.sevenButton.Text = "7";
             this.sevenButton.UseVisualStyleBackColor = true;
@@ -368,9 +430,9 @@
             // 
             this.backspaceButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.backspaceButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.backspaceButton.Location = new System.Drawing.Point(3, 33);
+            this.backspaceButton.Location = new System.Drawing.Point(3, 38);
             this.backspaceButton.Name = "backspaceButton";
-            this.backspaceButton.Size = new System.Drawing.Size(35, 24);
+            this.backspaceButton.Size = new System.Drawing.Size(35, 29);
             this.backspaceButton.TabIndex = 1;
             this.backspaceButton.Text = "<";
             this.backspaceButton.UseVisualStyleBackColor = true;
@@ -384,76 +446,14 @@
             this.tableLayoutPanel.SetColumnSpan(this.calcTextBox, 5);
             this.calcTextBox.ContextMenuStrip = this.textMenuStrip;
             this.calcTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.calcTextBox.Location = new System.Drawing.Point(3, 3);
+            this.calcTextBox.Location = new System.Drawing.Point(3, 19);
             this.calcTextBox.Name = "calcTextBox";
             this.calcTextBox.ReadOnly = true;
-            this.calcTextBox.Size = new System.Drawing.Size(200, 20);
+            this.calcTextBox.Size = new System.Drawing.Size(200, 13);
             this.calcTextBox.TabIndex = 0;
             this.calcTextBox.Text = "0,";
             this.calcTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.calcTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calcTextBox_KeyDown);
-            // 
-            // calculationTextBox
-            // 
-            this.calculationTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.calculationTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.calculationTextBox.ContextMenuStrip = this.textMenuStrip;
-            this.calculationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.calculationTextBox.Location = new System.Drawing.Point(0, 25);
-            this.calculationTextBox.Multiline = true;
-            this.calculationTextBox.Name = "calculationTextBox";
-            this.calculationTextBox.ReadOnly = true;
-            this.calculationTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.calculationTextBox.Size = new System.Drawing.Size(206, 210);
-            this.calculationTextBox.TabIndex = 0;
-            this.calculationTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calculationTextBox_KeyDown);
-            // 
-            // calculatorToolStrip
-            // 
-            this.calculatorToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clearCalculatorToolStripButton,
-            this.toolStripSeparator1,
-            this.thousandSepToolStripButton});
-            this.calculatorToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.calculatorToolStrip.Name = "calculatorToolStrip";
-            this.calculatorToolStrip.Size = new System.Drawing.Size(206, 25);
-            this.calculatorToolStrip.TabIndex = 2;
-            this.calculatorToolStrip.Text = "toolStrip1";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // copyToolStripMenuItem2
-            // 
-            this.copyToolStripMenuItem2.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
-            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem2.Text = "Copy";
-            this.copyToolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // clearCalculatorToolStripButton
-            // 
-            this.clearCalculatorToolStripButton.Image = global::DtPad.ToolbarResource.bin;
-            this.clearCalculatorToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.clearCalculatorToolStripButton.Name = "clearCalculatorToolStripButton";
-            this.clearCalculatorToolStripButton.Size = new System.Drawing.Size(111, 22);
-            this.clearCalculatorToolStripButton.Text = "Clear Calculator";
-            this.clearCalculatorToolStripButton.Click += new System.EventHandler(this.clearCalculatorToolStripButton_Click);
-            // 
-            // thousandSepToolStripButton
-            // 
-            this.thousandSepToolStripButton.Checked = true;
-            this.thousandSepToolStripButton.CheckOnClick = true;
-            this.thousandSepToolStripButton.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.thousandSepToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.thousandSepToolStripButton.Image = global::DtPad.ToolbarResource.thousands;
-            this.thousandSepToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.thousandSepToolStripButton.Name = "thousandSepToolStripButton";
-            this.thousandSepToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.thousandSepToolStripButton.Text = "Use Thousands Separator";
-            this.thousandSepToolStripButton.CheckedChanged += new System.EventHandler(this.thousandSepToolStripButton_CheckedChanged);
             // 
             // CalculatorPanel
             // 
@@ -466,10 +466,10 @@
             this.Size = new System.Drawing.Size(206, 385);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CalculatorPanel_KeyDown);
             this.textMenuStrip.ResumeLayout(false);
-            this.tableLayoutPanel.ResumeLayout(false);
-            this.tableLayoutPanel.PerformLayout();
             this.calculatorToolStrip.ResumeLayout(false);
             this.calculatorToolStrip.PerformLayout();
+            this.tableLayoutPanel.ResumeLayout(false);
+            this.tableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -321,6 +321,7 @@ namespace DtPad
             this.resetWindowLayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator47 = new System.Windows.Forms.ToolStripSeparator();
             this.showTabAsNoteOnTopToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.takeTabScreenshotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sortTabsAlphabeticallyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -2859,6 +2860,7 @@ namespace DtPad
             this.resetWindowLayoutToolStripMenuItem,
             this.toolStripSeparator47,
             this.showTabAsNoteOnTopToolStripMenuItem1,
+            this.takeTabScreenshotToolStripMenuItem,
             this.sortTabsAlphabeticallyToolStripMenuItem});
             this.windowToolStripMenuItem.Name = "windowToolStripMenuItem";
             this.windowToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
@@ -2920,6 +2922,13 @@ namespace DtPad
             this.showTabAsNoteOnTopToolStripMenuItem1.Size = new System.Drawing.Size(234, 22);
             this.showTabAsNoteOnTopToolStripMenuItem1.Text = "Show Tab As Note on Top";
             this.showTabAsNoteOnTopToolStripMenuItem1.Click += new System.EventHandler(this.showTabAsNoteOnTopToolStripMenuItem1_Click);
+            // 
+            // takeTabScreenshotToolStripMenuItem
+            // 
+            this.takeTabScreenshotToolStripMenuItem.Name = "takeTabScreenshotToolStripMenuItem";
+            this.takeTabScreenshotToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.takeTabScreenshotToolStripMenuItem.Text = "Take Tab Screenshot";
+            this.takeTabScreenshotToolStripMenuItem.Click += new System.EventHandler(this.takeTabScreenshotToolStripMenuItem_Click);
             // 
             // sortTabsAlphabeticallyToolStripMenuItem
             // 
@@ -4698,6 +4707,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator24;
         private System.Windows.Forms.ToolStripMenuItem insertSpecialCharToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator47;
+        private System.Windows.Forms.ToolStripMenuItem takeTabScreenshotToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sortTabsAlphabeticallyToolStripMenuItem;
         private System.Windows.Forms.ToolStripSplitButton saveToolStripButton;
         internal System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;

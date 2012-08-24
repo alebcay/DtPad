@@ -4309,4 +4309,10 @@ Controlla questo URL per scaricarlo:
   <data name="filePanel_refreshDriveToolStripButton" xml:space="preserve">
     <value>Ricarica unità</value>
   </data>
+  <data name="Form1_takeTabScreenshotToolStripMenuItem" xml:space="preserve">
+    <value>Acquisisci schermata del tab corrente</value>
+  </data>
+  <data name="WindowManager_ScreenshotInClipboard" xml:space="preserve">
+    <value>La schermata è stata salvata negli appunti.</value>
+  </data>
 </root>

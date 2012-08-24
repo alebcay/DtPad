@@ -471,8 +471,8 @@ namespace DtPad.Managers
             QuestionYNC questionCancelBox = new QuestionYNC(form, message);
             return questionCancelBox.ShowDialog(form);
         }
-		
-		internal static DialogResult ShowQuestionCancelAllBox(Form form, String message)
+
+        internal static DialogResult ShowQuestionCancelAllBox(Form form, String message)
         {
             QuestionYNNAC questionCancelAllBox = new QuestionYNNAC(form, message);
             return questionCancelAllBox.ShowDialog(form);
@@ -941,6 +941,29 @@ namespace DtPad.Managers
         }
 
         #endregion Full Screen Methods
+
+        #region Screenshots Methods
+
+        internal static void TakeTabControlScreenshot(Form1 form)
+        {
+            XtraTabControl pagesTabControl = form.pagesTabControl;
+
+            Rectangle screenshotArea = pagesTabControl.RectangleToScreen(pagesTabControl.ClientRectangle);
+            Rectangle bounds = pagesTabControl.Bounds;
+
+            using (Bitmap screenshot = new Bitmap(bounds.Width, bounds.Height))
+            {
+                using (Graphics g = Graphics.FromImage(screenshot))
+                {
+                    g.CopyFromScreen(new Point(screenshotArea.Left, screenshotArea.Top), Point.Empty, bounds.Size);
+                }
+                Clipboard.SetImage(screenshot);
+            }
+
+            ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("ScreenshotInClipboard", className));
+        }
+
+        #endregion Screenshots Methods
 
         #region Private Methods
 
