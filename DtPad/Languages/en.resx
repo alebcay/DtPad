@@ -276,7 +276,7 @@ DtPad does not collect any info about usage and users. Informations that could b
     <value>Yes</value>
   </data>
   <data name="FileProperties_sizeLabel1" xml:space="preserve">
-    <value>Size (bytes):</value>
+    <value>Size:</value>
   </data>
   <data name="FileProperties_Title" xml:space="preserve">
     <value>File Properties</value>
@@ -4305,5 +4305,15 @@ Check this URL to download:
   </data>
   <data name="WindowManager_ScreenshotInClipboard" xml:space="preserve">
     <value>The screenshot has been saved into clipboard.</value>
+  </data>
+  <data name="FileManager_FileTooHeavy" xml:space="preserve">
+    <value>Could not open "{0}".
+File size is larger than allowed (100 MB).</value>
+  </data>
+  <data name="FileManager_NoMessageFileTooHeavy" xml:space="preserve">
+    <value>"{0}" larger than allowed (100 MB)</value>
+  </data>
+  <data name="FileProperties_Bytes" xml:space="preserve">
+    <value>bytes</value>
   </data>
 </root>

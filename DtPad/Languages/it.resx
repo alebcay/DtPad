@@ -276,7 +276,7 @@ DtPad non raccoglie alcuna informazione riguardante uso e utenti. I dati che pos
     <value>Sì</value>
   </data>
   <data name="FileProperties_sizeLabel1" xml:space="preserve">
-    <value>Dimensione (byte):</value>
+    <value>Dimensione:</value>
   </data>
   <data name="FileProperties_Title" xml:space="preserve">
     <value>Proprietà file</value>
@@ -4314,5 +4314,15 @@ Controlla questo URL per scaricarlo:
   </data>
   <data name="WindowManager_ScreenshotInClipboard" xml:space="preserve">
     <value>La schermata è stata salvata negli appunti.</value>
+  </data>
+  <data name="FileManager_FileTooHeavy" xml:space="preserve">
+    <value>Impossibile aprire "{0}".
+Il file è più grande di quanto consentito (100 MB).</value>
+  </data>
+  <data name="FileManager_NoMessageFileTooHeavy" xml:space="preserve">
+    <value>"{0}" più grande di quanto consentito (100 MB)</value>
+  </data>
+  <data name="FileProperties_Bytes" xml:space="preserve">
+    <value>byte</value>
   </data>
 </root>

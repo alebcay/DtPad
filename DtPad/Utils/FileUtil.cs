@@ -263,6 +263,11 @@ namespace DtPad.Utils
             fInfo.SetAccessControl(fSecurity);
         }
 
+        internal static bool IsFileTooLargeForDtPad(String fileNameAndPath)
+        {
+            return new FileInfo(fileNameAndPath).Length > ConstantUtil.maxFileByteLength;
+        }
+
         #endregion Internal Methods
     }
 }

@@ -45,6 +45,18 @@ namespace DtPad
 
                 String name = StringUtil.CheckStringLength(fileInfo.Name, maxCharsNumber);
                 //String directoryName = StringUtil.CheckStringLength(fileInfo.DirectoryName, maxCharsNumber);
+                decimal size = fileInfo.Length;
+                decimal highSize = size / 1049129;
+                String highSizeStr;
+                if (Math.Round(highSize, 1) <= 0)
+                {
+                    highSize = size / new decimal(1024.27);
+                    highSizeStr = String.Format(LanguageUtil.GetInfoCulture(), "{0:0.00}", highSize) + " KB";
+                }
+                else
+                {
+                    highSizeStr = String.Format(LanguageUtil.GetInfoCulture(), "{0:0.0}", highSize) + " MB";
+                }
 
                 nameLabel.Text = name;
                 nameToolTip.SetToolTip(nameLabel, fileInfo.Name);
@@ -55,7 +67,7 @@ namespace DtPad
                 lastUpdateLabel.Text = fileInfo.LastWriteTime.ToString(dateTimeFormat);
                 lastAccessLabel.Text = fileInfo.LastAccessTime.ToString(dateTimeFormat);
                 readonlyLabel.Text = fileInfo.IsReadOnly ? LanguageUtil.GetCurrentLanguageString("readonlyLabel1Yes", Name) : LanguageUtil.GetCurrentLanguageString("readonlyLabel1No", Name);
-                sizeLabel.Text = fileInfo.Length.ToString();
+                sizeLabel.Text = highSizeStr + " (" + String.Format(LanguageUtil.GetInfoCulture(), "{0:0,0}", size) + " " + LanguageUtil.GetCurrentLanguageString("Bytes", Name) + ")";
 
                 bool withBOM;
                 Encoding fileEncoding = EncodingUtil.GetFileEncoding(fileInfo.FullName, out withBOM);

@@ -105,6 +105,7 @@ namespace DtPad.Utils
         internal const String sessionPrefix = "[S] ";
         internal const int clipboardRetryTimes = 15;
         internal const int clipboardRetryDelay = 100;
+        internal const int maxFileByteLength = 104912900;
 
         #endregion Internal Instance Constants
 

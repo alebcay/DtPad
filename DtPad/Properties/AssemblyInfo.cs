@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyTitle("DtPad")]
-[assembly: AssemblyConfiguration("120824")]
+[assembly: AssemblyConfiguration("120829")]
 [assembly: AssemblyProduct("DtPad")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]

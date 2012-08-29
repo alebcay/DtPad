@@ -1460,7 +1460,7 @@ namespace DtPad
 
         private void newToolStripButton_Click(object sender, EventArgs e)
         {
-            //TabIdentity = TabManager.AddNewPage(this, TabIdentity);
+            TabIdentity = TabManager.AddNewPage(this, TabIdentity);
         }
 
         private void closeToolStripButton_Click(object sender, EventArgs e)

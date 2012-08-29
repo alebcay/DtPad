@@ -118,6 +118,11 @@ namespace DtPad.Managers
                             errors.Add(String.Format(LanguageUtil.GetCurrentLanguageString("NoMessageFileInUse", className), fileName));
                             continue;
                         }
+                        if (FileUtil.IsFileTooLargeForDtPad(fileName))
+                        {
+                            errors.Add(String.Format(LanguageUtil.GetCurrentLanguageString("NoMessageFileTooHeavy", className), fileName));
+                            continue;
+                        }
                     }
                     else if (!File.Exists(fileName))
                     {
@@ -127,6 +132,11 @@ namespace DtPad.Managers
                     else if (FileUtil.IsFileInUse(fileName))
                     {
                         WindowManager.ShowAlertBox(form, String.Format(LanguageUtil.GetCurrentLanguageString("FileInUse", className), fileName));
+                        continue;
+                    }
+                    if (FileUtil.IsFileTooLargeForDtPad(fileName))
+                    {
+                        WindowManager.ShowAlertBox(form, String.Format(LanguageUtil.GetCurrentLanguageString("FileTooHeavy", className), fileName));
                         continue;
                     }
 
