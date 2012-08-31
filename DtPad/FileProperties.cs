@@ -46,11 +46,11 @@ namespace DtPad
                 String name = StringUtil.CheckStringLength(fileInfo.Name, maxCharsNumber);
                 //String directoryName = StringUtil.CheckStringLength(fileInfo.DirectoryName, maxCharsNumber);
                 decimal size = fileInfo.Length;
-                decimal highSize = size / 1049129;
+                decimal highSize = size / 1048576;
                 String highSizeStr;
                 if (Math.Round(highSize, 1) <= 0)
                 {
-                    highSize = size / new decimal(1024.27);
+                    highSize = size / 1024;
                     highSizeStr = String.Format(LanguageUtil.GetInfoCulture(), "{0:0.00}", highSize) + " KB";
                 }
                 else

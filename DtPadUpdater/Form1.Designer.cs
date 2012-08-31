@@ -154,6 +154,7 @@ namespace DtPadUpdater
             this.updateTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.updateTextBox.Size = new System.Drawing.Size(275, 181);
             this.updateTextBox.TabIndex = 1;
+            this.updateTextBox.TextChanged += new System.EventHandler(this.updateTextBox_TextChanged);
             // 
             // contentContextMenuStrip
             // 

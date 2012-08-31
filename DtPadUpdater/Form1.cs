@@ -24,6 +24,16 @@ namespace DtPadUpdater
             SetFamilyEdition();
         }
 
+        #region Window Methods
+
+        private void updateTextBox_TextChanged(object sender, EventArgs e)
+        {
+            updateTextBox.Select(updateTextBox.Text.Length - 1, 0);
+            updateTextBox.ScrollToCaret();
+        }
+
+        #endregion Window Methods
+
         #region Button Methods
 
         private void linkLabel_MouseClick(object sender, MouseEventArgs e)
@@ -59,9 +69,6 @@ namespace DtPadUpdater
                         {
                             startButton.Visible = false;
                         }
-
-                        updateTextBox.Select(updateTextBox.Text.Length - 1, 0);
-                        updateTextBox.ScrollToCaret();
                     }
 
                     cancelButton.Text = LanguageUtil.GetCurrentLanguageString("Close", Name, internalCulture);
