@@ -164,6 +164,7 @@ namespace DtPad
             this.openToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportAsZipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator52 = new System.Windows.Forms.ToolStripSeparator();
             this.renameSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.favouriteSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -444,6 +445,7 @@ namespace DtPad
             this.toolStripSeparator51 = new System.Windows.Forms.ToolStripSeparator();
             this.closeSessionToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.saveSessionToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.exportAsZipToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.renameSessionToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator65 = new System.Windows.Forms.ToolStripSeparator();
             this.favouriteSessionToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -1556,6 +1558,7 @@ namespace DtPad
             this.openToolStripMenuItem2,
             this.saveToolStripMenuItem2,
             this.saveAsToolStripMenuItem2,
+            this.exportAsZipToolStripMenuItem,
             this.toolStripSeparator52,
             this.renameSessionToolStripMenuItem,
             this.listFilesToolStripMenuItem,
@@ -1609,6 +1612,15 @@ namespace DtPad
             this.saveAsToolStripMenuItem2.Size = new System.Drawing.Size(184, 22);
             this.saveAsToolStripMenuItem2.Text = "Save As...";
             this.saveAsToolStripMenuItem2.Click += new System.EventHandler(this.saveAsToolStripMenuItem2_Click);
+            // 
+            // exportAsZipToolStripMenuItem
+            // 
+            this.exportAsZipToolStripMenuItem.Enabled = false;
+            this.exportAsZipToolStripMenuItem.Image = global::DtPad.ToolbarResource.zip_session;
+            this.exportAsZipToolStripMenuItem.Name = "exportAsZipToolStripMenuItem";
+            this.exportAsZipToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.exportAsZipToolStripMenuItem.Text = "Export As Zip...";
+            this.exportAsZipToolStripMenuItem.Click += new System.EventHandler(this.exportAsZipToolStripMenuItem_Click);
             // 
             // toolStripSeparator52
             // 
@@ -4066,8 +4078,9 @@ namespace DtPad
             this.toolStripSeparator51,
             this.closeSessionToolStripButton,
             this.saveSessionToolStripButton,
-            this.renameSessionToolStripButton,
+            this.exportAsZipToolStripButton,
             this.toolStripSeparator65,
+            this.renameSessionToolStripButton,
             this.favouriteSessionToolStripButton});
             this.sessionToolStrip.Location = new System.Drawing.Point(3, 0);
             this.sessionToolStrip.Name = "sessionToolStrip";
@@ -4123,6 +4136,16 @@ namespace DtPad
             this.saveSessionToolStripButton.Size = new System.Drawing.Size(28, 20);
             this.saveSessionToolStripButton.Text = "Save Session";
             this.saveSessionToolStripButton.Click += new System.EventHandler(this.saveSessionToolStripButton_Click);
+            // 
+            // exportAsZipToolStripButton
+            // 
+            this.exportAsZipToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.exportAsZipToolStripButton.Image = global::DtPad.ToolbarResource.zip_session;
+            this.exportAsZipToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.exportAsZipToolStripButton.Name = "exportAsZipToolStripButton";
+            this.exportAsZipToolStripButton.Size = new System.Drawing.Size(28, 20);
+            this.exportAsZipToolStripButton.Text = "Export Session As ZIP...";
+            this.exportAsZipToolStripButton.Click += new System.EventHandler(this.exportAsZipToolStripButton_Click);
             // 
             // renameSessionToolStripButton
             // 
@@ -4690,6 +4713,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator50;
         internal System.Windows.Forms.ToolStrip sessionToolStrip;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem2;
+        internal System.Windows.Forms.ToolStripMenuItem exportAsZipToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem3;
         internal System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem2;
         internal System.Windows.Forms.ToolStripButton sessionToolStripButton;
@@ -4774,6 +4798,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
         internal System.Windows.Forms.ToolStripMenuItem renameSessionToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem favouriteSessionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton exportAsZipToolStripButton;
         private System.Windows.Forms.ToolStripButton renameSessionToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator65;
         private System.Windows.Forms.ToolStripButton favouriteSessionToolStripButton;

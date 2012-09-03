@@ -2166,8 +2166,8 @@ Il testo contenuto nei tab è identico.</value>
     <value>Template</value>
   </data>
   <data name="SessionManager_ClosingWindow" xml:space="preserve">
-    <value>La sessione aperta potrebbe essere variata.
-Desideri salvarla prima di uscire?</value>
+    <value>La sessione aperta potrebbe essere stata modificata.
+Desideri salvarla prima di chiuderla?</value>
   </data>
   <data name="FileManager_FileRenamed" xml:space="preserve">
     <value>File "{0}" rinominato in "{1}"</value>
@@ -4324,5 +4324,24 @@ Il file è più grande di quanto consentito (100 MB).</value>
   </data>
   <data name="FileProperties_Bytes" xml:space="preserve">
     <value>byte</value>
+  </data>
+  <data name="Form1_exportAsZipToolStripMenuItem" xml:space="preserve">
+    <value>Esporta come ZIP...</value>
+  </data>
+  <data name="SessionManager_ExportFileDialog" xml:space="preserve">
+    <value>Archivio ZIP (*.zip)|*.zip</value>
+  </data>
+  <data name="SessionManager_ExportSaved" xml:space="preserve">
+    <value>Archivio "{0}" salvato</value>
+  </data>
+  <data name="SessionManager_NoExport" xml:space="preserve">
+    <value>L'esportazione è permessa solo alle sessioni i cui file sono posizionati nella stessa cartella della
+sessione o in sottocartelle.
+Questa sessione contiene file che si trovano in alberature differenti, pertanto non è possibile procedere.</value>
+  </data>
+  <data name="SessionManager_SaveSessionForExport" xml:space="preserve">
+    <value>La sessione aperta potrebbe essere stata modificata.
+Prima dell'esportazione è necessario salvarla. Desideri procedere?
+In caso contrario, l'esportazione verrà interrotta.</value>
   </data>
 </root>

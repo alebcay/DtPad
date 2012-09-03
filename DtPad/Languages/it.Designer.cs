@@ -3832,6 +3832,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Esporta come ZIP....
+        /// </summary>
+        internal static string Form1_exportAsZipToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_exportAsZipToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Esporta impostazioni e dati....
         /// </summary>
         internal static string Form1_exportPreferencesToolStripMenuItem {
@@ -9859,8 +9868,8 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to La sessione aperta potrebbe essere variata.
-        ///Desideri salvarla prima di uscire?.
+        ///   Looks up a localized string similar to La sessione aperta potrebbe essere stata modificata.
+        ///Desideri salvarla prima di chiuderla?.
         /// </summary>
         internal static string SessionManager_ClosingWindow {
             get {
@@ -9875,6 +9884,24 @@ namespace DtPad.Languages {
         internal static string SessionManager_Empty {
             get {
                 return ResourceManager.GetString("SessionManager_Empty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Archivio ZIP (*.zip)|*.zip.
+        /// </summary>
+        internal static string SessionManager_ExportFileDialog {
+            get {
+                return ResourceManager.GetString("SessionManager_ExportFileDialog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Archivio &quot;{0}&quot; salvato.
+        /// </summary>
+        internal static string SessionManager_ExportSaved {
+            get {
+                return ResourceManager.GetString("SessionManager_ExportSaved", resourceCulture);
             }
         }
         
@@ -9922,6 +9949,17 @@ namespace DtPad.Languages {
         internal static string SessionManager_NoContent {
             get {
                 return ResourceManager.GetString("SessionManager_NoContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to L&apos;esportazione è permessa solo alle sessioni i cui file sono posizionati nella stessa cartella della
+        ///sessione o in sottocartelle.
+        ///Questa sessione contiene file che si trovano in alberature differenti, pertanto non è possibile procedere..
+        /// </summary>
+        internal static string SessionManager_NoExport {
+            get {
+                return ResourceManager.GetString("SessionManager_NoExport", resourceCulture);
             }
         }
         
@@ -9989,6 +10027,17 @@ namespace DtPad.Languages {
         internal static string SessionManager_SaveSession {
             get {
                 return ResourceManager.GetString("SessionManager_SaveSession", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to La sessione aperta potrebbe essere stata modificata.
+        ///Prima dell&apos;esportazione è necessario salvarla. Desideri procedere?
+        ///In caso contrario, l&apos;esportazione verrà interrotta..
+        /// </summary>
+        internal static string SessionManager_SaveSessionForExport {
+            get {
+                return ResourceManager.GetString("SessionManager_SaveSessionForExport", resourceCulture);
             }
         }
         

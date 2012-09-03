@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.IO;
@@ -227,6 +228,36 @@ namespace DtPad.Managers
             return true;
         }
 
+        internal static void WriteZipFile(String filename, IEnumerable<XtraTabPage> tabPages, String keepFoldersStartDir = "", IEnumerable<String> otherFiles = null)
+        {
+            ZipFile zipFile = ZipFile.Create(filename);
+            zipFile.BeginUpdate();
+
+            if (otherFiles != null)
+            {
+                foreach (String file in otherFiles)
+                {
+                    zipFile.Add(file, Path.GetFileName(file));
+                }
+            }
+
+            foreach (XtraTabPage tabPage in tabPages)
+            {
+                String fileName = ProgramUtil.GetFilenameTabPage(tabPage);
+                String entryName = Path.GetFileName(ProgramUtil.GetFilenameTabPage(tabPage));
+
+                if (keepFoldersStartDir != String.Empty)
+                {
+                    entryName = fileName.Substring(keepFoldersStartDir.Length + 1);
+                }
+
+                zipFile.Add(fileName, entryName);
+            }
+
+            zipFile.CommitUpdate();
+            zipFile.Close();
+        }
+
         #endregion Internal Methods
 
         #region Private Methods
@@ -308,20 +339,6 @@ namespace DtPad.Managers
             String questionMessage = String.Format(LanguageUtil.GetCurrentLanguageString("OverwriteQuestion", className), shortFilename);
 
             return WindowManager.ShowQuestionBox(null, questionMessage) == DialogResult.Yes;
-        }
-
-        private static void WriteZipFile(String filename, XtraTabPageCollection tabPages)
-        {
-            ZipFile zipFile = ZipFile.Create(filename);
-            zipFile.BeginUpdate();
-
-            foreach (XtraTabPage tabPage in tabPages)
-            {
-                zipFile.Add(ProgramUtil.GetFilenameTabPage(tabPage), Path.GetFileName(ProgramUtil.GetFilenameTabPage(tabPage)));
-            }
-
-            zipFile.CommitUpdate();
-            zipFile.Close();
         }
 
         #endregion Private Methods

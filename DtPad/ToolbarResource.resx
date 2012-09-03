@@ -502,4 +502,7 @@
   <data name="convert_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Images\Toolbars\convert-all.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="zip_session" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Images\Toolbars\zip-session.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

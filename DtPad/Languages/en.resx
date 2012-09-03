@@ -2165,8 +2165,8 @@ Text contained into tabs is equal.</value>
     <value>Templates</value>
   </data>
   <data name="SessionManager_ClosingWindow" xml:space="preserve">
-    <value>The open session may be varied.
-Do you want to save it before exit?</value>
+    <value>The open session may have been changed.
+Do you want to save it before close?</value>
   </data>
   <data name="FileManager_FileRenamed" xml:space="preserve">
     <value>File "{0}" renamed in "{1}"</value>
@@ -4315,5 +4315,24 @@ File size is larger than allowed (100 MB).</value>
   </data>
   <data name="FileProperties_Bytes" xml:space="preserve">
     <value>bytes</value>
+  </data>
+  <data name="Form1_exportAsZipToolStripMenuItem" xml:space="preserve">
+    <value>Export As ZIP...</value>
+  </data>
+  <data name="SessionManager_ExportFileDialog" xml:space="preserve">
+    <value>ZIP archive (*.zip)|*.zip</value>
+  </data>
+  <data name="SessionManager_ExportSaved" xml:space="preserve">
+    <value>Archive "{0}" saved</value>
+  </data>
+  <data name="SessionManager_NoExport" xml:space="preserve">
+    <value>The export is allowed only for sessions whose files are located in the same
+session folder or in subfolders.
+This session contains files that are in different trees, so you can not proceed.</value>
+  </data>
+  <data name="SessionManager_SaveSessionForExport" xml:space="preserve">
+    <value>The open session may have been changed.
+Before export you have to save it. Do you want to proceed?
+If you don't, export will be interrupted.</value>
   </data>
 </root>

@@ -29,6 +29,7 @@ namespace DtPad.Managers
             ToolStripButton sessionToolStripButton = form.sessionToolStripButton;
             ToolStripMenuItem closeToolStripMenuItem3 = form.closeToolStripMenuItem3;
             ToolStripMenuItem saveToolStripMenuItem2 = form.saveToolStripMenuItem2;
+            ToolStripMenuItem exportAsZipToolStripMenuItem = form.exportAsZipToolStripMenuItem;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             OpenFileDialog openFileDialog = form.openFileDialog;
             ToolStripProgressBar toolStripProgressBar = form.toolStripProgressBar;
@@ -102,6 +103,7 @@ namespace DtPad.Managers
                 sessionToolStripButton.Text = sessionName;
                 closeToolStripMenuItem3.Enabled = true;
                 saveToolStripMenuItem2.Enabled = true;
+                exportAsZipToolStripMenuItem.Enabled = true;
                 renameSessionToolStripMenuItem.Enabled = true;
                 favouriteSessionToolStripMenuItem.Enabled = true;
                 listFilesToolStripMenuItem.Enabled = true;
@@ -149,6 +151,7 @@ namespace DtPad.Managers
             ToolStripButton sessionToolStripButton = form.sessionToolStripButton;
             ToolStripMenuItem closeToolStripMenuItem3 = form.closeToolStripMenuItem3;
             ToolStripMenuItem saveToolStripMenuItem2 = form.saveToolStripMenuItem2;
+            ToolStripMenuItem exportAsZipToolStripMenuItem = form.exportAsZipToolStripMenuItem;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             //SplitContainer verticalSplitContainer = form.verticalSplitContainer;
             XtraTabControl pagesTabControl = form.pagesTabControl;
@@ -186,6 +189,7 @@ namespace DtPad.Managers
             sessionToolStrip.Visible = false;
             closeToolStripMenuItem3.Enabled = false;
             saveToolStripMenuItem2.Enabled = false;
+            exportAsZipToolStripMenuItem.Enabled = false;
             renameSessionToolStripMenuItem.Enabled = false;
             favouriteSessionToolStripMenuItem.Enabled = false;
             listFilesToolStripMenuItem.Enabled = false;
@@ -215,6 +219,7 @@ namespace DtPad.Managers
             ToolStripDropDownButton sessionImageToolStripButton = form.sessionImageToolStripButton;
             ToolStripMenuItem closeToolStripMenuItem3 = form.closeToolStripMenuItem3;
             ToolStripMenuItem saveToolStripMenuItem2 = form.saveToolStripMenuItem2;
+            ToolStripMenuItem exportAsZipToolStripMenuItem = form.exportAsZipToolStripMenuItem;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             SaveFileDialog saveFileDialog = form.saveFileDialog;
             ToolStripProgressBar toolStripProgressBar = form.toolStripProgressBar;
@@ -300,6 +305,7 @@ namespace DtPad.Managers
                 sessionToolStripButton.Text = sessionName;
                 closeToolStripMenuItem3.Enabled = true;
                 saveToolStripMenuItem2.Enabled = true;
+                exportAsZipToolStripMenuItem.Enabled = true;
                 renameSessionToolStripMenuItem.Enabled = true;
                 favouriteSessionToolStripMenuItem.Enabled = true;
                 listFilesToolStripMenuItem.Enabled = true;
@@ -351,19 +357,15 @@ namespace DtPad.Managers
                     return saved ? DialogResult.OK : DialogResult.Cancel;
                 }
 
-                DialogResult question = ShowQuestion(form, cancel);
-                if (question == DialogResult.Yes)
+                switch (ShowQuestion(form, cancel))
                 {
-                    bool saved = SaveSession(form, false);
-                    return saved ? DialogResult.OK : DialogResult.Cancel;
-                }
-                if (question == DialogResult.No)
-                {
-                    return DialogResult.OK;
-                }
-                if (question == DialogResult.Cancel)
-                {
-                    return DialogResult.Cancel;
+                    case DialogResult.Yes:
+                            bool saved = SaveSession(form, false);
+                            return saved ? DialogResult.OK : DialogResult.Cancel;
+                    case DialogResult.No:
+                        return DialogResult.OK;
+                    case DialogResult.Cancel:
+                        return DialogResult.Cancel;
                 }
             }
             else
@@ -430,6 +432,74 @@ namespace DtPad.Managers
             }
 
             WindowManager.ShowContent(form, filesList);
+        }
+
+        internal static void ExportSessionAsZip(Form1 form)
+        {
+            SaveFileDialog saveFileDialog = form.saveFileDialog;
+            CustomXtraTabControl pagesTabControl = form.pagesTabControl;
+            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
+            ToolStripProgressBar toolStripProgressBar = form.toolStripProgressBar;
+            ToolStripDropDownButton sessionImageToolStripButton = form.sessionImageToolStripButton;
+
+            if (IsOpenedSessionModified(form))
+            {
+                if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SaveSessionForExport", className)) != DialogResult.Yes)
+                {
+                    return;
+                }
+
+                if (!SaveSession(form, false))
+                {
+                    return;
+                }
+            }
+
+            if (!SessionContainsOnlySubFiles(form))
+            {
+                WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("NoExport", className));
+                return;
+            }
+
+            toolStripProgressBar.Value = 0;
+            toolStripProgressBar.Visible = true;
+            toolStripProgressBar.PerformStep();
+
+            //Save file dialog
+            saveFileDialog.InitialDirectory = FileUtil.GetInitialFolder(form);
+            saveFileDialog.Filter = LanguageUtil.GetCurrentLanguageString("ExportFileDialog", className);
+            saveFileDialog.FilterIndex = 0;
+            saveFileDialog.FileName = "*.zip";
+
+            try
+            {
+                if (saveFileDialog.ShowDialog() != DialogResult.OK)
+                {
+                    toolStripProgressBar.Visible = false;
+                    return;
+                }
+
+                toolStripProgressBar.PerformStep();
+                String fileName = saveFileDialog.FileName;
+                if (!fileName.EndsWith(".zip"))
+                {
+                    fileName += ".zip";
+                }
+
+                toolStripProgressBar.PerformStep();
+                ZipManager.WriteZipFile(fileName, pagesTabControl.TabPages, new FileInfo(sessionImageToolStripButton.DropDownItems[0].Text).DirectoryName, new List<String> { sessionImageToolStripButton.DropDownItems[0].Text });
+
+                toolStripProgressBar.PerformStep();
+                toolStripStatusLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("ExportSaved", className), fileName);
+            }
+            catch (Exception exception)
+            {
+                WindowManager.ShowErrorBox(form, exception.Message, exception);
+            }
+            finally
+            {
+                toolStripProgressBar.Visible = false;
+            }
         }
         
         internal static void UseDefaultAspectChanged(Form1 form)
@@ -798,6 +868,24 @@ namespace DtPad.Managers
                 ToolStripMenuItem child = (ToolStripMenuItem)toolStripMenuItem.DropDownItems[i];
                 child.Checked = i == index;
             }
+        }
+
+        private static bool SessionContainsOnlySubFiles(Form1 form)
+        {
+            ToolStripDropDownButton sessionImageToolStripButton = form.sessionImageToolStripButton;
+
+            for (int i = startPositionToReadSessionFiles; i < sessionImageToolStripButton.DropDownItems.Count; i++)
+            {
+                String filePath = new FileInfo(sessionImageToolStripButton.DropDownItems[i].Text).DirectoryName;
+                String sessionPath = new FileInfo(sessionImageToolStripButton.DropDownItems[0].Text).DirectoryName;
+
+                if (!filePath.StartsWith(sessionPath))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         #endregion Private Methods
