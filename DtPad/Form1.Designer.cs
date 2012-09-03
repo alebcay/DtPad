@@ -2937,6 +2937,7 @@ namespace DtPad
             // 
             // takeTabScreenshotToolStripMenuItem
             // 
+            this.takeTabScreenshotToolStripMenuItem.Image = global::DtPad.ToolbarResource.screenshot;
             this.takeTabScreenshotToolStripMenuItem.Name = "takeTabScreenshotToolStripMenuItem";
             this.takeTabScreenshotToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
             this.takeTabScreenshotToolStripMenuItem.Text = "Take Tab Screenshot";
