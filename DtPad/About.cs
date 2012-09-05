@@ -14,6 +14,7 @@ namespace DtPad
     internal partial class About : Form
     {
         private Thread newThread;
+        private bool aboutClosed;
         private delegate void ThreadCallBack();
         
         #region Window Methods
@@ -39,7 +40,8 @@ namespace DtPad
         {
             if (newThread != null && newThread.IsAlive)
             {
-                newThread.Abort();
+                aboutClosed = true;
+                //newThread.Abort();
             }
         }
 
@@ -104,7 +106,10 @@ namespace DtPad
                 return;
             }
 
-            Invoke(new ThreadCallBack(ShowMessage));
+            if (!aboutClosed)
+            {
+                Invoke(new ThreadCallBack(ShowMessage));
+            }
         }
 
         private void ShowMessage()

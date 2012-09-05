@@ -23,6 +23,7 @@ namespace DtPad
         private int previousLocationX;
         private int previousLocationY;
         private bool enlarged;
+        private bool searchClosed;
         private delegate void ThreadCallBack();
         private delegate void ThreadCallBackResult(List<String> result);
 
@@ -114,17 +115,13 @@ namespace DtPad
 
             StartExecution();
 
+            searchClosed = false;
             newThread = new Thread(SearchTextInFiles);
             newThread.Start();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            //if (newThread != null && newThread.IsAlive)
-            //{
-            //    newThread.Abort();
-            //}
-
             if (okButton.Enabled)
             {
                 WindowManager.HiddenForm(this);
@@ -143,7 +140,11 @@ namespace DtPad
         private void SearchTextInFiles()
         {
             SearchFilesManager.SearchTextInFiles(this, new ThreadCallBackResult(ShowResult));
-            Invoke(new ThreadCallBack(StopExecution));
+
+            if (!searchClosed)
+            {
+                Invoke(new ThreadCallBack(StopExecution));
+            }
         }
 
         private void StartExecution()
@@ -217,6 +218,7 @@ namespace DtPad
         {
             if (newThread != null && newThread.IsAlive)
             {
+                searchClosed = true;
                 newThread.Abort();
                 GC.Collect(); //I perform a GC collection just because search in files deals lot of memory that is useless after its closure.
             }
