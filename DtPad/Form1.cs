@@ -1169,6 +1169,11 @@ namespace DtPad
             SessionManager.ExportSessionAsZip(this);
         }
 
+        private void importFromZipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SessionManager.ImportSessionFromZip(this);
+        }
+
         internal void sessionPropertiesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WindowManager.ShowFileProperties(this, sessionImageToolStripButton.DropDownItems[0].Text, true);

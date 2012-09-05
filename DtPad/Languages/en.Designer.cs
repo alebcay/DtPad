@@ -4126,6 +4126,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Import From ZIP....
+        /// </summary>
+        internal static string Form1_importFromZipToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_importFromZipToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Import Settings And Data....
         /// </summary>
         internal static string Form1_importPreferencesToolStripMenuItem {
@@ -6368,20 +6377,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings and data file.
+        ///   Looks up a localized string similar to Settings and data file &quot;{0}&quot; imported.
         /// </summary>
-        internal static string ImportExportManager_ImportStatusLabel1 {
+        internal static string ImportExportManager_ImportStatusLabel {
             get {
-                return ResourceManager.GetString("ImportExportManager_ImportStatusLabel1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to imported.
-        /// </summary>
-        internal static string ImportExportManager_ImportStatusLabel2 {
-            get {
-                return ResourceManager.GetString("ImportExportManager_ImportStatusLabel2", resourceCulture);
+                return ResourceManager.GetString("ImportExportManager_ImportStatusLabel", resourceCulture);
             }
         }
         
@@ -9853,6 +9853,16 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The selected archive does not seem to contain a valid session.
+        ///DPS file not found!.
+        /// </summary>
+        internal static string SessionManager_ArchiveNotExport {
+            get {
+                return ResourceManager.GetString("SessionManager_ArchiveNotExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Session &quot;{0}&quot; closed.
         /// </summary>
         internal static string SessionManager_Closed {
@@ -9900,6 +9910,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DtPad session archive.
+        /// </summary>
+        internal static string SessionManager_ExportSessionDescription {
+            get {
+                return ResourceManager.GetString("SessionManager_ExportSessionDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DtPad session files (*.dps)|*.dps.
         /// </summary>
         internal static string SessionManager_FileDialog {
@@ -9924,6 +9943,34 @@ namespace DtPad.Languages {
         internal static string SessionManager_FileNotExisting {
             get {
                 return ResourceManager.GetString("SessionManager_FileNotExisting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select the folder where to place session files:.
+        /// </summary>
+        internal static string SessionManager_folderBrowserDialogDescription {
+            get {
+                return ResourceManager.GetString("SessionManager_folderBrowserDialogDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File &quot;{0}&quot; already exists on folder destination.
+        ///Do you want to overwrite it?.
+        /// </summary>
+        internal static string SessionManager_ImportOverwrite {
+            get {
+                return ResourceManager.GetString("SessionManager_ImportOverwrite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Session &quot;{0}&quot; unpacked.
+        /// </summary>
+        internal static string SessionManager_ImportStatusLabel {
+            get {
+                return ResourceManager.GetString("SessionManager_ImportStatusLabel", resourceCulture);
             }
         }
         

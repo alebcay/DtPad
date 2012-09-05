@@ -1568,11 +1568,8 @@ Il file verrà automaticamente ripristinato con i valori iniziali.</value>
   <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Seleziona la cartella dove esportare le impostazioni e i dati di utilizzo (es. note, file preferiti):</value>
   </data>
-  <data name="ImportExportManager_ImportStatusLabel1" xml:space="preserve">
-    <value>File impostazioni e dati</value>
-  </data>
-  <data name="ImportExportManager_ImportStatusLabel2" xml:space="preserve">
-    <value>importato</value>
+  <data name="ImportExportManager_ImportStatusLabel" xml:space="preserve">
+    <value>File impostazioni e dati "{0}" importato</value>
   </data>
   <data name="ImportExportManager_WarningImport" xml:space="preserve">
     <value>Il file di esportazione selezionato appartiene a una versione differente di DtPad.
@@ -4343,5 +4340,25 @@ Questa sessione contiene file che si trovano in alberature differenti, pertanto 
     <value>La sessione aperta potrebbe essere stata modificata.
 Prima dell'esportazione è necessario salvarla. Desideri procedere?
 In caso contrario, l'esportazione verrà interrotta.</value>
+  </data>
+  <data name="SessionManager_ArchiveNotExport" xml:space="preserve">
+    <value>L'archivio selezionato sembra non contiene una sessione valida.
+File DPS non trovato!</value>
+  </data>
+  <data name="SessionManager_ExportSessionDescription" xml:space="preserve">
+    <value>Archivio sessione DtPad</value>
+  </data>
+  <data name="SessionManager_folderBrowserDialogDescription" xml:space="preserve">
+    <value>Seleziona la cartella dove posizionare i file della sessione:</value>
+  </data>
+  <data name="SessionManager_ImportOverwrite" xml:space="preserve">
+    <value>Il file "{0}" esiste già nella cartella di destinazione.
+Vuoi sovrascriverlo?</value>
+  </data>
+  <data name="SessionManager_ImportStatusLabel" xml:space="preserve">
+    <value>Sessione "{0}" scompattata</value>
+  </data>
+  <data name="Form1_importFromZipToolStripMenuItem" xml:space="preserve">
+    <value>Importa da ZIP...</value>
   </data>
 </root>

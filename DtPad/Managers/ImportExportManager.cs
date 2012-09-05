@@ -24,7 +24,7 @@ namespace DtPad.Managers
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog
                                                           {
                                                               Description = LanguageUtil.GetCurrentLanguageString("folderBrowserDialogDescription", className),
-                                                              RootFolder = Environment.SpecialFolder.Desktop,
+                                                              RootFolder = Environment.SpecialFolder.ProgramFiles,
                                                               SelectedPath = FileUtil.GetInitialFolder(form)
                                                           };
 
@@ -82,7 +82,8 @@ namespace DtPad.Managers
 
             openFileDialog.InitialDirectory = ConstantUtil.ApplicationExecutionPath();
             openFileDialog.Multiselect = false;
-            openFileDialog.Filter = String.Format("{0} (*.{1})|*.{1}", LanguageUtil.GetCurrentLanguageString("ExportFileDescription", className), ConstantUtil.exportFileExtension); //DtPad Export files (*.dpe)|*.dpe
+            openFileDialog.Filter = String.Format("{0} (*.{1})|*.{1}", LanguageUtil.GetCurrentLanguageString("ExportFileDescription", className), ConstantUtil.exportFileExtension); //DtPad export files (*.dpe)|*.dpe
+            openFileDialog.FileName = String.Format("*.{0}", ConstantUtil.exportFileExtension);
 
             if (openFileDialog.ShowDialog() != DialogResult.OK)
             {
@@ -94,19 +95,19 @@ namespace DtPad.Managers
             {
                 toImportFile = new ZipFile(openFileDialog.FileName);
 
-            if (toImportFile.ZipFileComment != AssemblyUtil.AssemblyVersion)
-            {
-                if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("WarningImport", className)) == DialogResult.No)
+                if (toImportFile.ZipFileComment != AssemblyUtil.AssemblyVersion)
                 {
-                    return;
+                    if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("WarningImport", className)) == DialogResult.No)
+                    {
+                        return;
+                    }
                 }
-            }
             }
             finally
             {
                 if (toImportFile != null)
                 {
-            toImportFile.Close();
+                    toImportFile.Close();
                 }
             }
 
@@ -120,7 +121,8 @@ namespace DtPad.Managers
 
             toolStripProgressBar.PerformStep();
 
-            String importStatus = String.Format("{0} \"{1}\" {2}", LanguageUtil.GetCurrentLanguageString("ImportStatusLabel1", className), openFileDialog.FileName, LanguageUtil.GetCurrentLanguageString("ImportStatusLabel2", className));
+            //String importStatus = String.Format("{0} \"{1}\" {2}", LanguageUtil.GetCurrentLanguageString("ImportStatusLabel1", className), openFileDialog.FileName, LanguageUtil.GetCurrentLanguageString("ImportStatusLabel2", className));
+            String importStatus = String.Format(LanguageUtil.GetCurrentLanguageString("ImportStatusLabel", className), openFileDialog.FileName);
 
             toolStripProgressBar.PerformStep();
             toolStripProgressBar.PerformStep();

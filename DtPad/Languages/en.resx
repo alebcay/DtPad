@@ -1568,11 +1568,8 @@ File will be automatically recreated with default values!</value>
   <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Select the folder where to place settings and data (ie. notes, favourites files) export:</value>
   </data>
-  <data name="ImportExportManager_ImportStatusLabel1" xml:space="preserve">
-    <value>Settings and data file</value>
-  </data>
-  <data name="ImportExportManager_ImportStatusLabel2" xml:space="preserve">
-    <value>imported</value>
+  <data name="ImportExportManager_ImportStatusLabel" xml:space="preserve">
+    <value>Settings and data file "{0}" imported</value>
   </data>
   <data name="ImportExportManager_WarningImport" xml:space="preserve">
     <value>Selected export file has been made with a different DtPad version.
@@ -4334,5 +4331,25 @@ This session contains files that are in different trees, so you can not proceed.
     <value>The open session may have been changed.
 Before export you have to save it. Do you want to proceed?
 If you don't, export will be interrupted.</value>
+  </data>
+  <data name="SessionManager_ArchiveNotExport" xml:space="preserve">
+    <value>The selected archive does not seem to contain a valid session.
+DPS file not found!</value>
+  </data>
+  <data name="SessionManager_ExportSessionDescription" xml:space="preserve">
+    <value>DtPad session archive</value>
+  </data>
+  <data name="SessionManager_folderBrowserDialogDescription" xml:space="preserve">
+    <value>Select the folder where to place session files:</value>
+  </data>
+  <data name="SessionManager_ImportOverwrite" xml:space="preserve">
+    <value>File "{0}" already exists on folder destination.
+Do you want to overwrite it?</value>
+  </data>
+  <data name="SessionManager_ImportStatusLabel" xml:space="preserve">
+    <value>Session "{0}" unpacked</value>
+  </data>
+  <data name="Form1_importFromZipToolStripMenuItem" xml:space="preserve">
+    <value>Import From ZIP...</value>
   </data>
 </root>

@@ -8,6 +8,8 @@ using DevExpress.XtraTab;
 using DtPad.Customs;
 using DtPad.Exceptions;
 using DtPad.Utils;
+using ICSharpCode.SharpZipLib.Core;
+using ICSharpCode.SharpZipLib.Zip;
 
 namespace DtPad.Managers
 {
@@ -19,6 +21,7 @@ namespace DtPad.Managers
     {
         private const String className = "SessionManager";
         private const int startPositionToReadSessionFiles = 2;
+        private static bool stopImportSession;
 
         #region Internal Methods
 
@@ -433,74 +436,6 @@ namespace DtPad.Managers
 
             WindowManager.ShowContent(form, filesList);
         }
-
-        internal static void ExportSessionAsZip(Form1 form)
-        {
-            SaveFileDialog saveFileDialog = form.saveFileDialog;
-            CustomXtraTabControl pagesTabControl = form.pagesTabControl;
-            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
-            ToolStripProgressBar toolStripProgressBar = form.toolStripProgressBar;
-            ToolStripDropDownButton sessionImageToolStripButton = form.sessionImageToolStripButton;
-
-            if (IsOpenedSessionModified(form))
-            {
-                if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SaveSessionForExport", className)) != DialogResult.Yes)
-                {
-                    return;
-                }
-
-                if (!SaveSession(form, false))
-                {
-                    return;
-                }
-            }
-
-            if (!SessionContainsOnlySubFiles(form))
-            {
-                WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("NoExport", className));
-                return;
-            }
-
-            toolStripProgressBar.Value = 0;
-            toolStripProgressBar.Visible = true;
-            toolStripProgressBar.PerformStep();
-
-            //Save file dialog
-            saveFileDialog.InitialDirectory = FileUtil.GetInitialFolder(form);
-            saveFileDialog.Filter = LanguageUtil.GetCurrentLanguageString("ExportFileDialog", className);
-            saveFileDialog.FilterIndex = 0;
-            saveFileDialog.FileName = "*.zip";
-
-            try
-            {
-                if (saveFileDialog.ShowDialog() != DialogResult.OK)
-                {
-                    toolStripProgressBar.Visible = false;
-                    return;
-                }
-
-                toolStripProgressBar.PerformStep();
-                String fileName = saveFileDialog.FileName;
-                if (!fileName.EndsWith(".zip"))
-                {
-                    fileName += ".zip";
-                }
-
-                toolStripProgressBar.PerformStep();
-                ZipManager.WriteZipFile(fileName, pagesTabControl.TabPages, new FileInfo(sessionImageToolStripButton.DropDownItems[0].Text).DirectoryName, new List<String> { sessionImageToolStripButton.DropDownItems[0].Text });
-
-                toolStripProgressBar.PerformStep();
-                toolStripStatusLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("ExportSaved", className), fileName);
-            }
-            catch (Exception exception)
-            {
-                WindowManager.ShowErrorBox(form, exception.Message, exception);
-            }
-            finally
-            {
-                toolStripProgressBar.Visible = false;
-            }
-        }
         
         internal static void UseDefaultAspectChanged(Form1 form)
         {
@@ -629,6 +564,201 @@ namespace DtPad.Managers
         }
 
         #endregion Check Methods
+
+        #region Import-Export Methods
+
+        internal static void ExportSessionAsZip(Form1 form)
+        {
+            SaveFileDialog saveFileDialog = form.saveFileDialog;
+            CustomXtraTabControl pagesTabControl = form.pagesTabControl;
+            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
+            ToolStripProgressBar toolStripProgressBar = form.toolStripProgressBar;
+            ToolStripButton sessionToolStripButton = form.sessionToolStripButton;
+            ToolStripDropDownButton sessionImageToolStripButton = form.sessionImageToolStripButton;
+
+            if (IsOpenedSessionModified(form))
+            {
+                if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SaveSessionForExport", className)) != DialogResult.Yes)
+                {
+                    return;
+                }
+
+                if (!SaveSession(form, false))
+                {
+                    return;
+                }
+            }
+
+            if (!SessionContainsOnlySubFiles(form))
+            {
+                WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("NoExport", className));
+                return;
+            }
+
+            toolStripProgressBar.Value = 0;
+            toolStripProgressBar.Visible = true;
+            toolStripProgressBar.PerformStep();
+
+            //Save file dialog
+            saveFileDialog.InitialDirectory = FileUtil.GetInitialFolder(form);
+            saveFileDialog.Filter = LanguageUtil.GetCurrentLanguageString("ExportFileDialog", className);
+            saveFileDialog.FilterIndex = 0;
+            saveFileDialog.FileName = sessionToolStripButton + ".zip";
+
+            try
+            {
+                if (saveFileDialog.ShowDialog() != DialogResult.OK)
+                {
+                    toolStripProgressBar.Visible = false;
+                    return;
+                }
+
+                toolStripProgressBar.PerformStep();
+                String fileName = saveFileDialog.FileName;
+                if (!fileName.EndsWith(".zip"))
+                {
+                    fileName += ".zip";
+                }
+
+                toolStripProgressBar.PerformStep();
+                ZipManager.WriteZipFile(fileName, pagesTabControl.TabPages, new FileInfo(sessionImageToolStripButton.DropDownItems[0].Text).DirectoryName, new List<String> { sessionImageToolStripButton.DropDownItems[0].Text });
+
+                toolStripProgressBar.PerformStep();
+                toolStripStatusLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("ExportSaved", className), fileName);
+            }
+            catch (Exception exception)
+            {
+                WindowManager.ShowErrorBox(form, exception.Message, exception);
+            }
+            finally
+            {
+                toolStripProgressBar.Visible = false;
+            }
+        }
+
+        internal static void ImportSessionFromZip(Form1 form)
+        {
+            OpenFileDialog openFileDialog = form.openFileDialog;
+            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
+            ToolStripProgressBar toolStripProgressBar = form.toolStripProgressBar;
+
+            openFileDialog.InitialDirectory = ConstantUtil.ApplicationExecutionPath();
+            openFileDialog.Multiselect = false;
+            openFileDialog.Filter = String.Format("{0} (*.zip)|*.zip", LanguageUtil.GetCurrentLanguageString("ExportSessionDescription", className)); //DtPad session archive (*.zip)|*.zip
+            openFileDialog.FileName = "*.zip";
+
+            if (openFileDialog.ShowDialog() != DialogResult.OK)
+            {
+                return;
+            }
+
+            String dpsFileName = String.Empty;
+            ZipFile toImportFile = null;
+
+            try
+            {
+                toImportFile = new ZipFile(openFileDialog.FileName);
+
+                foreach (ZipEntry zipEntry in toImportFile)
+                {
+                    if (!zipEntry.Name.EndsWith(".dps"))
+                    {
+                        continue;
+                    }
+
+                    dpsFileName = zipEntry.Name;
+                    break;
+                }
+
+                if (dpsFileName == String.Empty)
+                {
+                    WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("ArchiveNotExport", className));
+                    return;
+                }
+            }
+            finally
+            {
+                if (toImportFile != null)
+                {
+                    toImportFile.Close();
+                }
+            }
+
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog
+                                                          {
+                                                              Description = LanguageUtil.GetCurrentLanguageString("folderBrowserDialogDescription", className),
+                                                              RootFolder = Environment.SpecialFolder.MyDocuments,
+                                                              SelectedPath = FileUtil.GetInitialFolder(form)
+                                                          };
+
+            if (folderBrowserDialog.ShowDialog(form) != DialogResult.OK)
+            {
+                return;
+            }
+
+            toolStripProgressBar.Value = 0;
+            toolStripProgressBar.Visible = true;
+
+            FastZipEvents events = new FastZipEvents { ProcessFile = ProcessFileMethod };
+            FastZip importFile = new FastZip(events);
+
+            toolStripProgressBar.PerformStep();
+
+            importFile.ExtractZip(openFileDialog.FileName, folderBrowserDialog.SelectedPath, FastZip.Overwrite.Prompt, OverwritePrompt, String.Empty, String.Empty, true);
+
+            if (stopImportSession)
+            {
+                toolStripProgressBar.PerformStep();
+                toolStripProgressBar.PerformStep();
+
+                toolStripProgressBar.Visible = false;
+                return;
+            }
+
+            toolStripProgressBar.PerformStep();
+
+            String importStatus = String.Format(LanguageUtil.GetCurrentLanguageString("ImportStatusLabel", className), openFileDialog.FileName);
+
+            toolStripProgressBar.PerformStep();
+            toolStripProgressBar.PerformStep();
+
+            toolStripStatusLabel.Text = importStatus;
+            WindowManager.ShowInfoBox(form, importStatus + "!");
+
+            toolStripProgressBar.Visible = false;
+
+            OpenSession(form, Path.Combine(folderBrowserDialog.SelectedPath, dpsFileName));
+        }
+
+        private static bool OverwritePrompt(String fileName)
+        {
+            switch (WindowManager.ShowQuestionCancelBox(null, String.Format(LanguageUtil.GetCurrentLanguageString("ImportOverwrite", className), fileName)))
+            {
+                case DialogResult.Cancel:
+                    stopImportSession = true;
+                    return true;
+                case DialogResult.Yes:
+                    stopImportSession = false;
+                    return true;
+                case DialogResult.No:
+                    stopImportSession = false;
+                    return false;
+
+                default:
+                    stopImportSession = true;
+                    return true;
+            }
+        }
+
+        private static void ProcessFileMethod(object sender, ScanEventArgs args)
+        {
+            if (stopImportSession)
+            {
+                args.ContinueRunning = false;
+            }
+        }
+
+        #endregion Import-Export Methods
 
         #region Private Methods
 
@@ -889,16 +1019,5 @@ namespace DtPad.Managers
         }
 
         #endregion Private Methods
-
-        //internal static void SaveSessionOnDropbox(Form1 form)
-        //{
-        //    /*
-        //     * 1 - Verify if session could be saved inside Dropbox
-        //     *          Requirements: files inside the same folder, session with them [case A] or in a maximun 1 level father folder [case B]
-        //     * 2 - Make user select a start point inside Dropbox where to put the session
-        //     * 3 - [Case B] Create the subfolder where files will be put
-        //     * 4 - Put files into Dropbox
-        //     */
-        //}
     }
 }

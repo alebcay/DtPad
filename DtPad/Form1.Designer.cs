@@ -165,6 +165,7 @@ namespace DtPad
             this.saveToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.exportAsZipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importFromZipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator52 = new System.Windows.Forms.ToolStripSeparator();
             this.renameSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.favouriteSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -1559,6 +1560,7 @@ namespace DtPad
             this.saveToolStripMenuItem2,
             this.saveAsToolStripMenuItem2,
             this.exportAsZipToolStripMenuItem,
+            this.importFromZipToolStripMenuItem,
             this.toolStripSeparator52,
             this.renameSessionToolStripMenuItem,
             this.listFilesToolStripMenuItem,
@@ -1621,6 +1623,14 @@ namespace DtPad
             this.exportAsZipToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.exportAsZipToolStripMenuItem.Text = "Export As Zip...";
             this.exportAsZipToolStripMenuItem.Click += new System.EventHandler(this.exportAsZipToolStripMenuItem_Click);
+            // 
+            // importFromZipToolStripMenuItem
+            // 
+            this.importFromZipToolStripMenuItem.Enabled = false;
+            this.importFromZipToolStripMenuItem.Name = "importFromZipToolStripMenuItem";
+            this.importFromZipToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.importFromZipToolStripMenuItem.Text = "Import From Zip...";
+            this.importFromZipToolStripMenuItem.Click += new System.EventHandler(this.importFromZipToolStripMenuItem_Click);
             // 
             // toolStripSeparator52
             // 
@@ -4715,6 +4725,7 @@ namespace DtPad
         internal System.Windows.Forms.ToolStrip sessionToolStrip;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem2;
         internal System.Windows.Forms.ToolStripMenuItem exportAsZipToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem importFromZipToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem3;
         internal System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem2;
         internal System.Windows.Forms.ToolStripButton sessionToolStripButton;
