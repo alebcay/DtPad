@@ -8778,6 +8778,51 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string QuestionYYANC_cancelButton {
+            get {
+                return ResourceManager.GetString("QuestionYYANC_cancelButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        internal static string QuestionYYANC_noButton {
+            get {
+                return ResourceManager.GetString("QuestionYYANC_noButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Question.
+        /// </summary>
+        internal static string QuestionYYANC_Title {
+            get {
+                return ResourceManager.GetString("QuestionYYANC_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        internal static string QuestionYYANC_yesButton {
+            get {
+                return ResourceManager.GetString("QuestionYYANC_yesButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes To All.
+        /// </summary>
+        internal static string QuestionYYANC_yesToAllButton {
+            get {
+                return ResourceManager.GetString("QuestionYYANC_yesToAllButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Requested regex is invalid..
         /// </summary>
         internal static string RegularExpressionValidator_InvalidRegex {

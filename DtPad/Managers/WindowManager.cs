@@ -472,10 +472,16 @@ namespace DtPad.Managers
             return questionCancelBox.ShowDialog(form);
         }
 
-        internal static DialogResult ShowQuestionCancelAllBox(Form form, String message)
+        internal static DialogResult ShowQuestionCancelNoAllBox(Form form, String message)
         {
-            QuestionYNNAC questionCancelAllBox = new QuestionYNNAC(form, message);
-            return questionCancelAllBox.ShowDialog(form);
+            QuestionYNNAC questionCancelNoAllBox = new QuestionYNNAC(form, message);
+            return questionCancelNoAllBox.ShowDialog(form);
+        }
+
+        internal static DialogResult ShowQuestionCancelYesAllBox(Form form, String message)
+        {
+            QuestionYYANC questionCancelYesAllBox = new QuestionYYANC(form, message);
+            return questionCancelYesAllBox.ShowDialog(form);
         }
 
         internal static DialogResult ShowWarningBox(Form form, String message)

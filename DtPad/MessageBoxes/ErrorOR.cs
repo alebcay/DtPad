@@ -1,5 +1,4 @@
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 using DtPad.Utils;
 
@@ -27,8 +26,6 @@ namespace DtPad.MessageBoxes
             if (errorLabel.Width > ConstantUtil.standardMessageWidth)
             {
                 Width = Width + errorLabel.Width - ConstantUtil.standardMessageWidth;
-                reportBugButton.Location = new Point(Width - ConstantUtil.standardButtonPositionFromRight, reportBugButton.Location.Y);
-                okButton.Location = new Point(reportBugButton.Location.X - ConstantUtil.standardButtonDistanceFromRight, okButton.Location.Y);
             }
 
             this.exception = exception;

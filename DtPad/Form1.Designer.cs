@@ -1626,7 +1626,6 @@ namespace DtPad
             // 
             // importFromZipToolStripMenuItem
             // 
-            this.importFromZipToolStripMenuItem.Enabled = false;
             this.importFromZipToolStripMenuItem.Name = "importFromZipToolStripMenuItem";
             this.importFromZipToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.importFromZipToolStripMenuItem.Text = "Import From Zip...";
@@ -4725,7 +4724,7 @@ namespace DtPad
         internal System.Windows.Forms.ToolStrip sessionToolStrip;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem2;
         internal System.Windows.Forms.ToolStripMenuItem exportAsZipToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem importFromZipToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem importFromZipToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem3;
         internal System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem2;
         internal System.Windows.Forms.ToolStripButton sessionToolStripButton;

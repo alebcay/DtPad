@@ -22,6 +22,7 @@ namespace DtPad.Managers
         private const String className = "SessionManager";
         private const int startPositionToReadSessionFiles = 2;
         private static bool stopImportSession;
+        private static bool yesAllImportSession;
 
         #region Internal Methods
 
@@ -705,6 +706,7 @@ namespace DtPad.Managers
             toolStripProgressBar.PerformStep();
 
             importFile.ExtractZip(openFileDialog.FileName, folderBrowserDialog.SelectedPath, FastZip.Overwrite.Prompt, OverwritePrompt, String.Empty, String.Empty, true);
+            yesAllImportSession = false;
 
             if (stopImportSession)
             {
@@ -732,7 +734,13 @@ namespace DtPad.Managers
 
         private static bool OverwritePrompt(String fileName)
         {
-            switch (WindowManager.ShowQuestionCancelBox(null, String.Format(LanguageUtil.GetCurrentLanguageString("ImportOverwrite", className), fileName)))
+            if (yesAllImportSession)
+            {
+                stopImportSession = false;
+                return true;
+            }
+
+            switch (WindowManager.ShowQuestionCancelYesAllBox(null, String.Format(LanguageUtil.GetCurrentLanguageString("ImportOverwrite", className), fileName)))
             {
                 case DialogResult.Cancel:
                     stopImportSession = true;
@@ -740,10 +748,14 @@ namespace DtPad.Managers
                 case DialogResult.Yes:
                     stopImportSession = false;
                     return true;
+                case DialogResult.Retry:
+                    stopImportSession = false;
+                    yesAllImportSession = true;
+                    return true;
                 case DialogResult.No:
                     stopImportSession = false;
                     return false;
-
+                
                 default:
                     stopImportSession = true;
                     return true;

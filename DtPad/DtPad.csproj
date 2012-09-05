@@ -248,6 +248,12 @@
     <Compile Include="MessageBoxes\QuestionYNNAC.Designer.cs">
       <DependentUpon>QuestionYNNAC.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageBoxes\QuestionYYANC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\QuestionYYANC.Designer.cs">
+      <DependentUpon>QuestionYYANC.cs</DependentUpon>
+    </Compile>
     <Compile Include="NameEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -537,6 +543,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxes\QuestionYNNAC.resx">
       <DependentUpon>QuestionYNNAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\QuestionYYANC.resx">
+      <DependentUpon>QuestionYYANC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NameEntry.resx">
       <DependentUpon>NameEntry.cs</DependentUpon>

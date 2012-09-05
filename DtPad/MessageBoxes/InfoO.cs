@@ -28,7 +28,6 @@ namespace DtPad.MessageBoxes
             }
 
             Width = Width + infoLabel.Width - ConstantUtil.standardMessageWidth;
-            okButton.Location = new Point(Width - ConstantUtil.standardButtonPositionFromRight, okButton.Location.Y);
         }
 
         #region Button Methods

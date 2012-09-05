@@ -4352,4 +4352,19 @@ Do you want to overwrite it?</value>
   <data name="Form1_importFromZipToolStripMenuItem" xml:space="preserve">
     <value>Import From ZIP...</value>
   </data>
+  <data name="QuestionYYANC_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="QuestionYYANC_noButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QuestionYYANC_Title" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="QuestionYYANC_yesButton" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
+    <value>Yes To All</value>
+  </data>
 </root>

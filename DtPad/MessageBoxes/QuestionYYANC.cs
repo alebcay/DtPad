@@ -5,12 +5,12 @@ using DtPad.Utils;
 namespace DtPad.MessageBoxes
 {
     /// <summary>
-    /// Question message box form (with "yes", "no", "no to all" and "cancel" answers).
+    /// Question message box form (with "yes", "yes to all", "no" and "cancel" answers).
     /// </summary>
     /// <author>Marco Macciò</author>
-    internal partial class QuestionYNNAC : Form
+    internal partial class QuestionYYANC : Form
     {
-        internal QuestionYNNAC(Form parent, String message)
+        internal QuestionYYANC(Form parent, String message)
         {
             InitializeComponent();
             LanguageUtil.SetCurrentLanguage(this);
@@ -35,16 +35,16 @@ namespace DtPad.MessageBoxes
         {
             DialogResult = DialogResult.Yes;
         }
+		
+		private void yesToAllButton_Click(object sender, EventArgs e)
+		{
+			DialogResult = DialogResult.Retry;
+		}
 
         private void noButton_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.No;
         }
-		
-		private void noToAllButton_Click(object sender, EventArgs e)
-		{
-			DialogResult = DialogResult.Retry;
-		}
 
         private void cancelButton_Click(object sender, EventArgs e)
         {

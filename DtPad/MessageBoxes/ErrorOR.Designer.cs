@@ -60,6 +60,7 @@ namespace DtPad.MessageBoxes
             // 
             // okButton
             // 
+            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.okButton.Location = new System.Drawing.Point(179, 67);
             this.okButton.Name = "okButton";
@@ -72,6 +73,7 @@ namespace DtPad.MessageBoxes
             // 
             // reportBugButton
             // 
+            this.reportBugButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.reportBugButton.Location = new System.Drawing.Point(260, 67);
             this.reportBugButton.Name = "reportBugButton";
             this.reportBugButton.Size = new System.Drawing.Size(75, 23);

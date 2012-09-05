@@ -1,6 +1,6 @@
 namespace DtPad.MessageBoxes
 {
-    partial class WarningYNC
+    partial class QuestionYYANC
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,39 @@ namespace DtPad.MessageBoxes
         /// </summary>
         private void InitializeComponent()
         {
-            this.warningPictureBox = new System.Windows.Forms.PictureBox();
-            this.warningLabel = new System.Windows.Forms.Label();
+            this.questionPictureBox = new System.Windows.Forms.PictureBox();
+            this.questionLabel = new System.Windows.Forms.Label();
             this.yesButton = new System.Windows.Forms.Button();
+            this.yesToAllButton = new System.Windows.Forms.Button();
             this.noButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.warningPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.questionPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // warningPictureBox
+            // questionPictureBox
             // 
-            this.warningPictureBox.Image = global::DtPad.MessageBoxResource.warning;
-            this.warningPictureBox.Location = new System.Drawing.Point(13, 13);
-            this.warningPictureBox.Name = "warningPictureBox";
-            this.warningPictureBox.Size = new System.Drawing.Size(50, 50);
-            this.warningPictureBox.TabIndex = 0;
-            this.warningPictureBox.TabStop = false;
+            this.questionPictureBox.Image = global::DtPad.MessageBoxResource.question;
+            this.questionPictureBox.Location = new System.Drawing.Point(13, 13);
+            this.questionPictureBox.Name = "questionPictureBox";
+            this.questionPictureBox.Size = new System.Drawing.Size(50, 50);
+            this.questionPictureBox.TabIndex = 0;
+            this.questionPictureBox.TabStop = false;
             // 
-            // warningLabel
+            // questionLabel
             // 
-            this.warningLabel.AutoSize = true;
-            this.warningLabel.Location = new System.Drawing.Point(69, 13);
-            this.warningLabel.MaximumSize = new System.Drawing.Size(550, 75);
-            this.warningLabel.Name = "warningLabel";
-            this.warningLabel.Size = new System.Drawing.Size(70, 13);
-            this.warningLabel.TabIndex = 0;
-            this.warningLabel.Text = "warningLabel";
+            this.questionLabel.AutoSize = true;
+            this.questionLabel.Location = new System.Drawing.Point(69, 13);
+            this.questionLabel.MaximumSize = new System.Drawing.Size(550, 75);
+            this.questionLabel.Name = "questionLabel";
+            this.questionLabel.Size = new System.Drawing.Size(73, 13);
+            this.questionLabel.TabIndex = 0;
+            this.questionLabel.Text = "questionLabel";
             // 
             // yesButton
             // 
             this.yesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.yesButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.yesButton.Location = new System.Drawing.Point(98, 67);
+            this.yesButton.Location = new System.Drawing.Point(69, 67);
             this.yesButton.Name = "yesButton";
             this.yesButton.Size = new System.Drawing.Size(75, 23);
             this.yesButton.TabIndex = 1;
@@ -68,10 +69,22 @@ namespace DtPad.MessageBoxes
             this.yesButton.UseVisualStyleBackColor = true;
             this.yesButton.Click += new System.EventHandler(this.yesButton_Click);
             // 
+            // yesToAllButton
+            // 
+            this.yesToAllButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.yesToAllButton.Location = new System.Drawing.Point(150, 67);
+            this.yesToAllButton.Name = "yesToAllButton";
+            this.yesToAllButton.Size = new System.Drawing.Size(75, 23);
+            this.yesToAllButton.TabIndex = 3;
+            this.yesToAllButton.Text = "Yes To All";
+            this.yesToAllButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.yesToAllButton.UseVisualStyleBackColor = true;
+            this.yesToAllButton.Click += new System.EventHandler(this.yesToAllButton_Click);
+            // 
             // noButton
             // 
             this.noButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.noButton.Location = new System.Drawing.Point(179, 67);
+            this.noButton.Location = new System.Drawing.Point(231, 67);
             this.noButton.Name = "noButton";
             this.noButton.Size = new System.Drawing.Size(75, 23);
             this.noButton.TabIndex = 2;
@@ -84,35 +97,36 @@ namespace DtPad.MessageBoxes
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(260, 67);
+            this.cancelButton.Location = new System.Drawing.Point(312, 67);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 3;
+            this.cancelButton.TabIndex = 4;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // WarningYNC
+            // QuestionYYANC
             // 
             this.AcceptButton = this.yesButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(347, 102);
+            this.ClientSize = new System.Drawing.Size(399, 102);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.noButton);
+            this.Controls.Add(this.yesToAllButton);
             this.Controls.Add(this.yesButton);
-            this.Controls.Add(this.warningLabel);
-            this.Controls.Add(this.warningPictureBox);
+            this.Controls.Add(this.questionLabel);
+            this.Controls.Add(this.questionPictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "WarningYNC";
+            this.Name = "QuestionYYANC";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Warning";
-            ((System.ComponentModel.ISupportInitialize)(this.warningPictureBox)).EndInit();
+            this.Text = "Question";
+            ((System.ComponentModel.ISupportInitialize)(this.questionPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,9 +134,10 @@ namespace DtPad.MessageBoxes
 
         #endregion
 
-        private System.Windows.Forms.PictureBox warningPictureBox;
-        private System.Windows.Forms.Label warningLabel;
+        private System.Windows.Forms.PictureBox questionPictureBox;
+        private System.Windows.Forms.Label questionLabel;
         private System.Windows.Forms.Button yesButton;
+		private System.Windows.Forms.Button yesToAllButton;
         private System.Windows.Forms.Button noButton;
         private System.Windows.Forms.Button cancelButton;
     }

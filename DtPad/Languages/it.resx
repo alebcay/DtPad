@@ -4361,4 +4361,19 @@ Vuoi sovrascriverlo?</value>
   <data name="Form1_importFromZipToolStripMenuItem" xml:space="preserve">
     <value>Importa da ZIP...</value>
   </data>
+  <data name="QuestionYYANC_cancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="QuestionYYANC_noButton" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="QuestionYYANC_Title" xml:space="preserve">
+    <value>Domanda</value>
+  </data>
+  <data name="QuestionYYANC_yesButton" xml:space="preserve">
+    <value>Sì</value>
+  </data>
+  <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
+    <value>Sì a tutti</value>
+  </data>
 </root>

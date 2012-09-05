@@ -56,6 +56,7 @@ namespace DtPad.MessageBoxes
             // 
             // yesButton
             // 
+            this.yesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.yesButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.yesButton.Image = global::DtPad.MessageBoxResource.ok;
             this.yesButton.Location = new System.Drawing.Point(179, 67);
@@ -69,6 +70,7 @@ namespace DtPad.MessageBoxes
             // 
             // noButton
             // 
+            this.noButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.noButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.noButton.Location = new System.Drawing.Point(260, 67);
             this.noButton.Name = "noButton";

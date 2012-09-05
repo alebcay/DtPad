@@ -238,7 +238,7 @@ namespace DtPad.Managers
             {
                 if (moreTabs)
                 {
-                    DialogResult dialogResult = WindowManager.ShowQuestionCancelAllBox(form, LanguageUtil.GetCurrentLanguageString("SaveUntitled", className));
+                    DialogResult dialogResult = WindowManager.ShowQuestionCancelNoAllBox(form, LanguageUtil.GetCurrentLanguageString("SaveUntitled", className));
 
                     if ((dialogResult == DialogResult.Cancel) || (dialogResult == DialogResult.Yes && !FileManager.SaveFile(form, false)))
                     {
