@@ -394,8 +394,7 @@ namespace DtPad.Managers
         internal static bool StringContainsCharNotAllowed(String name)
         {
             //The following characters are not allowed: \ / : ? * < > " |
-            if (name.Contains("\\") || name.Contains("/") || name.Contains(":") || name.Contains("?") || name.Contains("*") || name.Contains("<")
-                || name.Contains(">") || name.Contains("\"") || name.Contains("|"))
+            if (name.Contains("\\") || name.Contains("/") || name.Contains(":") || name.Contains("?") || name.Contains("*") || name.Contains("<") || name.Contains(">") || name.Contains("\"") || name.Contains("|"))
             {
                 return true;
             }

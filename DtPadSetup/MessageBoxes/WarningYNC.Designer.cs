@@ -57,6 +57,7 @@ namespace DtPadSetup.MessageBoxes
             // 
             // yesButton
             // 
+            this.yesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.yesButton.Image = global::DtPadSetup.ImageResource.ok;
             this.yesButton.Location = new System.Drawing.Point(98, 67);
             this.yesButton.Name = "yesButton";
@@ -69,6 +70,7 @@ namespace DtPadSetup.MessageBoxes
             // 
             // noButton
             // 
+            this.noButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.noButton.Location = new System.Drawing.Point(179, 67);
             this.noButton.Name = "noButton";
             this.noButton.Size = new System.Drawing.Size(75, 23);
@@ -80,6 +82,7 @@ namespace DtPadSetup.MessageBoxes
             // 
             // cancelButton
             // 
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.Location = new System.Drawing.Point(260, 67);
             this.cancelButton.Name = "cancelButton";

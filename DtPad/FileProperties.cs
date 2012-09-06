@@ -95,7 +95,7 @@ namespace DtPad
             }
             catch (Exception exception)
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
                 WindowManager.ShowErrorBox(this, exception.Message, exception);
             }
         }
@@ -126,7 +126,7 @@ namespace DtPad
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Buttons Methods

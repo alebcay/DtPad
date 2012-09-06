@@ -19,6 +19,7 @@ namespace DtPad.Utils
             {
                 case "yyyyMMdd":
                     return String.Format("{0}{1}{2}", DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day);
+
                 default:
                     throw new DateTimeException(LanguageUtil.GetCurrentLanguageString("DateTimeFormatWrong", className));
             }

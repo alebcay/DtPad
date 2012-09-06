@@ -59,8 +59,6 @@ namespace DtPadUpdater.Utils
                         case 90:
                             operatingSystem = OS.Me;
                             break;
-                        default:
-                            break;
                     }
                     break;
                 case PlatformID.Win32NT:
@@ -77,8 +75,6 @@ namespace DtPadUpdater.Utils
                             break;
                         case 6:
                             operatingSystem = vs.Minor == 0 ? OS.Vista : OS.Seven;
-                            break;
-                        default:
                             break;
                     }
                     break;

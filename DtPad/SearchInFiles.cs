@@ -124,7 +124,7 @@ namespace DtPad
         {
             if (okButton.Enabled)
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
             }
             else
             {

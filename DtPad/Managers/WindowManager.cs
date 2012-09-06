@@ -39,7 +39,7 @@ namespace DtPad.Managers
         //    form.Close();
         //}
 
-        internal static void HiddenForm(Form form)
+        internal static void CloseForm(Form form)
         {
             form.Close();
         }
@@ -727,6 +727,7 @@ namespace DtPad.Managers
 
                     UpdateConfigParameter("Encoding", "3", refreshConfig);
                     break;
+
                 default:
                     aSCIIToolStripMenuItem.Checked = false;
                     uTF16LittleEndianToolStripMenuItem.Checked = false;
@@ -793,6 +794,7 @@ namespace DtPad.Managers
 
                     UpdateConfigParameter("Encoding", "4", refreshConfig);
                     break;
+
                 default:
                     aSCIIToolStripMenuItem.Checked = false;
                     uTF8ToolStripMenuItem.Checked = true;
@@ -959,9 +961,9 @@ namespace DtPad.Managers
 
             using (Bitmap screenshot = new Bitmap(bounds.Width, bounds.Height))
             {
-                using (Graphics g = Graphics.FromImage(screenshot))
+                using (Graphics graphic = Graphics.FromImage(screenshot))
                 {
-                    g.CopyFromScreen(new Point(screenshotArea.Left, screenshotArea.Top), Point.Empty, bounds.Size);
+                    graphic.CopyFromScreen(new Point(screenshotArea.Left, screenshotArea.Top), Point.Empty, bounds.Size);
                 }
                 Clipboard.SetImage(screenshot);
             }

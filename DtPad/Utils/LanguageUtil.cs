@@ -101,6 +101,7 @@ namespace DtPad.Utils
                     return new CultureInfo("en-GB");
                 case "Italiano":
                     return new CultureInfo("it-IT");
+
                 default:
                     return new CultureInfo("en-GB");
             }
@@ -114,6 +115,7 @@ namespace DtPad.Utils
                     return "en";
                 case "Italiano":
                     return "it";
+
                 default:
                     return "en";
             }
@@ -133,6 +135,7 @@ namespace DtPad.Utils
                     return "Español";
                 case "de":
                     return "Deutsch";
+
                 default:
                     return "English";
             }
@@ -152,6 +155,7 @@ namespace DtPad.Utils
                     return "es";
                 case "Deutsch":
                     return "de";
+
                 default:
                     return "en";
             }
@@ -165,6 +169,7 @@ namespace DtPad.Utils
                     return true;
                 case "Italiano":
                     return false;
+
                 default:
                     return true;
             }
@@ -182,6 +187,7 @@ namespace DtPad.Utils
                     return "MM/dd/yyyy hh:mm:ss tt";
                 case "Italiano":
                     return "dd/MM/yyyy HH:mm:ss";
+
                 default:
                     return "MM/dd/yyyy hh:mm:ss tt";
             }
@@ -195,6 +201,7 @@ namespace DtPad.Utils
                     return "MM/dd/yyyy";
                 case "Italiano":
                     return "dd/MM/yyyy";
+
                 default:
                     return "MM/dd/yyyy";
             }
@@ -212,6 +219,7 @@ namespace DtPad.Utils
                     return "com";
                 case "Italiano":
                     return "it";
+
                 default:
                     return "com";
             }

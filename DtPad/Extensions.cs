@@ -79,7 +79,7 @@ namespace DtPad
         {
             if (!ExtensionManager.RemoveExtension(this, extensionObjectList))
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
                 return;
             }
             ExtensionManager.LoadExtension(this, extensionObjectList);
@@ -88,14 +88,14 @@ namespace DtPad
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void okButton_Click(object sender, EventArgs e)
         {
             if (ExtensionManager.SaveExtensionsIntoFile(this, extensionObjectList))
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
             }
         }
 

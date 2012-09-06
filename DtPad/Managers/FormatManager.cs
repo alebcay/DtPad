@@ -135,7 +135,7 @@ namespace DtPad.Managers
 
         #endregion Internal Methods
 
-        //#region Private Methods
+        #region Private Methods
 
         //private static String DecodeHTMLTagsForXMLValidation(String xmlText)
         //{
@@ -146,6 +146,6 @@ namespace DtPad.Managers
         //    return ConstantUtil.HtmlTags.Aggregate(xmlText, (current, keyValuePair) => current.Replace(XmlConvert.EncodeName(keyValuePair.Value), keyValuePair.Value));
         //}
 
-        //#endregion Private Methods
+        #endregion Private Methods
     }
 }

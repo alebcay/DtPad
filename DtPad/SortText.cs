@@ -47,7 +47,7 @@ namespace DtPad
 
         private void cancelButton_Click(object sender, System.EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

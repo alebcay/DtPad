@@ -4376,4 +4376,8 @@ Vuoi sovrascriverlo?</value>
   <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
     <value>Sì a tutti</value>
   </data>
+  <data name="MergeTabs_Conflict" xml:space="preserve">
+    <value>I tab sono stati modificati al di sotto della finestra di unione.
+Seleziona nuovamente i tab per procedere.</value>
+  </data>
 </root>

@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
@@ -284,14 +285,7 @@ namespace DtPad.Managers
                 pagesTabControl.TabPages.Remove(pagesTabControl.SelectedTabPage);
                 ExplorerManager.RemoveNodeToTabExplorer(form, selectedTabName);
 
-                if (selectedTabIndex < pagesTabControl.TabPages.Count)
-                {
-                    pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[selectedTabIndex];
-                }
-                else
-                {
-                    pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[pagesTabControl.TabPages.Count - 1];
-                }
+                pagesTabControl.SelectedTabPage = selectedTabIndex < pagesTabControl.TabPages.Count ? pagesTabControl.TabPages[selectedTabIndex] : pagesTabControl.TabPages[pagesTabControl.TabPages.Count - 1];
 
                 if (String.IsNullOrEmpty(ProgramUtil.GetFilenameTabPage(pagesTabControl.SelectedTabPage)))
                 {
@@ -381,11 +375,13 @@ namespace DtPad.Managers
 
         internal static void FontPagesWithoutSave(Options form)
         {
-            DialogResult dialogResult = WindowManager.ShowFontSelect(form);
-            if (dialogResult == DialogResult.Cancel)
-            {
-                return;
-            }
+            //DialogResult dialogResult = WindowManager.ShowFontSelect(form);
+            //if (dialogResult == DialogResult.Cancel)
+            //{
+            //    return;
+            //}
+
+            WindowManager.ShowFontSelect(form);
         }
 
         internal static void BackgroundPagesWithoutSave(Options form)
@@ -504,8 +500,7 @@ namespace DtPad.Managers
         {
             ZoomTrackBarControl zoomTrackBarControl = form.zoomTrackBarControl;
 
-            if ((wheelScrolls < 0 && zoomTrackBarControl.Value > zoomTrackBarControl.Properties.Minimum) ||
-                (wheelScrolls > 0 && zoomTrackBarControl.Value < zoomTrackBarControl.Properties.Maximum))
+            if ((wheelScrolls < 0 && zoomTrackBarControl.Value > zoomTrackBarControl.Properties.Minimum) || (wheelScrolls > 0 && zoomTrackBarControl.Value < zoomTrackBarControl.Properties.Maximum))
             {
                 zoomTrackBarControl.Value += wheelScrolls;
             }
@@ -887,8 +882,6 @@ namespace DtPad.Managers
                 case MouseButtons.Middle:
                     ClosePage(form);
                     break;
-                default:
-                    break;
             }
         }
 
@@ -916,8 +909,7 @@ namespace DtPad.Managers
                 pagesTabControl.SelectedTabPage.Text = String.Format("*{0}", pagesTabControl.SelectedTabPage.Text);
                 pageTextBox.CustomModified = true;
             }
-            else if ((pageTextBox.Text.GetHashCode().ToString() == pageTextBox.CustomOriginal && TabUtil.IsTabPageModified(pagesTabControl.SelectedTabPage))
-                || String.IsNullOrEmpty(pageTextBox.Text) && String.IsNullOrEmpty(pageTextBox.CustomOriginal))
+            else if ((pageTextBox.Text.GetHashCode().ToString() == pageTextBox.CustomOriginal && TabUtil.IsTabPageModified(pagesTabControl.SelectedTabPage)) || String.IsNullOrEmpty(pageTextBox.Text) && String.IsNullOrEmpty(pageTextBox.CustomOriginal))
             {
                 switch (pagesTabControl.SelectedTabPage.ImageIndex)
                 {
@@ -960,16 +952,18 @@ namespace DtPad.Managers
             }
             rowsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("rowsStatToolStripMenuItem", form.Name) + " " + rowNumbers;
 
-            int columnNumbers = 0;
             String[] separator = { ConstantUtil.newLine };
+            //String[] lines = pageTextBox.Text.Split(separator, StringSplitOptions.None);
+            //foreach (String line in lines)
+            //{
+            //    if (line.Length > columnNumbers)
+            //    {
+            //        columnNumbers = line.Length;
+            //    }
+            //}
             String[] lines = pageTextBox.Text.Split(separator, StringSplitOptions.None);
-            foreach (String line in lines)
-            {
-                if (line.Length > columnNumbers)
-                {
-                    columnNumbers = line.Length;
-                }
-            }
+            int columnNumbers = lines.Select(line => line.Length).Concat(new[] {0}).Max();
+
             columnsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("columnsStatToolStripMenuItem", form.Name) + " " + columnNumbers;
 
             String[] separator2 = { " ", ConstantUtil.newLine };
@@ -1028,6 +1022,7 @@ namespace DtPad.Managers
                     return 150; //125
                 case 4:
                     return 200; //150
+
                 default:
                     return 100;
             }
@@ -1052,6 +1047,7 @@ namespace DtPad.Managers
                 case 200: //150
                     zoomTrackBarControl.Value = 4;
                     break;
+
                 default:
                     zoomTrackBarControl.Value = 2;
                     break;

@@ -110,12 +110,10 @@ namespace DtPad.Managers
         {
             try
             {
-                XmlNodeList noteNodeList;
-
                 XmlDocument xmldoc = new XmlDocument();
                 xmldoc.Load(Path.Combine(ConstantUtil.ApplicationExecutionPath(), ConstantUtil.noFile));
 
-                noteNodeList = xmldoc.GetElementsByTagName("note");
+                XmlNodeList noteNodeList = xmldoc.GetElementsByTagName("note");
 
                 foreach (XmlNode noteNode in noteNodeList)
                 {

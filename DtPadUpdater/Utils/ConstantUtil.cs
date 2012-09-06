@@ -13,7 +13,6 @@ namespace DtPadUpdater.Utils
         #region Internal Instance Constants
 
         internal const int standardMessageWidth = 266;
-        internal const int standardButtonPositionFromRight = 93;
         internal const String commentStart = "//";
         internal const String generalRepositoryDebug = @"..\DebugRepository\";
         internal const String generalRepository = "http://www.diariotraduttore.com/wp-content/files/dtpad/";

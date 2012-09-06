@@ -4367,4 +4367,8 @@ Do you want to overwrite it?</value>
   <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
     <value>Yes To All</value>
   </data>
+  <data name="MergeTabs_Conflict" xml:space="preserve">
+    <value>Tabs refreshed under the merge window.
+Reselect interested tabs to proceed.</value>
+  </data>
 </root>

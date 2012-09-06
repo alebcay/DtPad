@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyTitle("DtHelp")]
-[assembly: AssemblyConfiguration("120605")]
+[assembly: AssemblyConfiguration("120906")]
 [assembly: AssemblyProduct("DtHelp")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
@@ -43,7 +43,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("0.4.7.40")]
-[assembly: AssemblyFileVersion("0.4.7.40")]
+[assembly: AssemblyVersion("0.4.8.40")]
+[assembly: AssemblyFileVersion("0.4.8.40")]
 [assembly: NeutralResourcesLanguage("en-GB")]
 [assembly: CLSCompliant(true)]

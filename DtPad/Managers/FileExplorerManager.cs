@@ -390,6 +390,7 @@ namespace DtPad.Managers
                         case SearchOption.TopDirectoryOnly:
                             fileList = fileList + file.Name + size + ConstantUtil.newLine;
                             break;
+
                         default:
                             fileList = fileList + file.FullName.Substring(rootDir.FullName.Length) + size + ConstantUtil.newLine;
                             break;
@@ -399,8 +400,7 @@ namespace DtPad.Managers
                 if (withSizes)
                 {
                     double totalSizeDouble = (totalSize / 1024f) / 1024f;
-                    fileList = fileList + ConstantUtil.newLine + LanguageUtil.GetCurrentLanguageString("TotalSize", className) + " " +
-                        Math.Round(totalSizeDouble, 2).ToString(LanguageUtil.GetInfoCulture()) + " MB" + ConstantUtil.newLine;
+                    fileList = fileList + ConstantUtil.newLine + LanguageUtil.GetCurrentLanguageString("TotalSize", className) + " " + Math.Round(totalSizeDouble, 2).ToString(LanguageUtil.GetInfoCulture()) + " MB" + ConstantUtil.newLine;
                 }
 
                 if (!TabManager.IsCurrentTabInUse(form))

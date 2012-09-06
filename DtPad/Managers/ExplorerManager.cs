@@ -126,8 +126,6 @@ namespace DtPad.Managers
                 case MouseButtons.Middle:
                     TabManager.ClosePage(form);
                     break;
-                default:
-                    break;
             }
 
             TabManager.ToggleTabMoveButtons(form, e.Node, tabExplorerTreeView.Nodes.Count);
@@ -334,8 +332,6 @@ namespace DtPad.Managers
                     e.Node.TreeView.SelectedNode = e.Node;
                     break;
                 case MouseButtons.Middle:
-                    break;
-                default:
                     break;
             }
         }

@@ -1040,6 +1040,7 @@ namespace DtPad.Managers
                 case 1:
                     backupFileName = Path.GetFileNameWithoutExtension(pathAndFileName) + ".bak";
                     break;
+
                 default:
                     backupFileName = Path.GetFileName(pathAndFileName) + ".bak";
                     break;
@@ -1054,6 +1055,7 @@ namespace DtPad.Managers
                 case 1:
                     backupPath = ConfigUtil.GetStringParameter("BackupLocationCustom");
                     break;
+
                 default:
                     backupPath = Path.GetDirectoryName(pathAndFileName);
                     break;

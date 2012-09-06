@@ -72,19 +72,19 @@ namespace DtPad
 
             if (pagesTabControl.TabPages.Count != itemValues.Length)
             {
-                WindowManager.ShowInfoBox(this, "Tabs refreshed under the merge window." + Environment.NewLine + "Reselect interested tabs to proceed.");
+                WindowManager.ShowInfoBox(this, LanguageUtil.GetCurrentLanguageString("Conflict", Name));
                 tabPagesListBox.Items.Clear();
                 InitializeForm();
                 return;
             }
 
             MergeManager.MergeTabs(this, itemValues);
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void moveUpButton_Click(object sender, EventArgs e)

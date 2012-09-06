@@ -28,14 +28,14 @@ namespace DtPad.Managers
             String sendToDir = Environment.GetFolderPath(Environment.SpecialFolder.SendTo);
             String destinationPath = ConstantUtil.ApplicationExecutionPath();
 
-            ShellShortcut m_Shortcut = new ShellShortcut(Path.Combine(sendToDir, "DtPad.lnk"))
-                                           {
-                                               Path = Path.Combine(destinationPath, "DtPad.exe"),
-                                               WorkingDirectory = destinationPath,
-                                               Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className),
-                                               IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
-                                           };
-            m_Shortcut.Save();
+            ShellShortcut shortcut = new ShellShortcut(Path.Combine(sendToDir, "DtPad.lnk"))
+                                         {
+                                             Path = Path.Combine(destinationPath, "DtPad.exe"),
+                                             WorkingDirectory = destinationPath,
+                                             Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className),
+                                             IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
+                                         };
+            shortcut.Save();
         }
 
         internal static void RemoveSendToLink()

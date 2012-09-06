@@ -35,18 +35,10 @@ namespace DtPad.Managers
 
         internal static void Undo(Form1 form)
         {
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
-            TextBox pathTextBox = form.filePanel.pathTextBox;
 
-            if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                || suffixToolStripTextBox.Focused || pathTextBox.Focused)
+            if (IsTextboxInsideFactory(form))
             {
                 TextBox textBox;
 
@@ -66,15 +58,8 @@ namespace DtPad.Managers
         internal static void Copy(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
-            TextBox pathTextBox = form.filePanel.pathTextBox;
 
             try
             {
@@ -82,8 +67,7 @@ namespace DtPad.Managers
                 {
                     Clipboard.SetDataObject(pageTextBox.SelectedText.Replace(ConstantUtil.newLine, Environment.NewLine), true, ConstantUtil.clipboardRetryTimes, ConstantUtil.clipboardRetryDelay);
                 }
-                else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                    || suffixToolStripTextBox.Focused || pathTextBox.Focused)
+                else if (IsTextboxInsideFactory(form))
                 {
                     TextBox textBox;
 
@@ -108,14 +92,8 @@ namespace DtPad.Managers
         internal static void CopyAppend(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
 
             try
             {
@@ -128,8 +106,7 @@ namespace DtPad.Managers
                     }
                     Clipboard.SetDataObject(textClipboard, true, ConstantUtil.clipboardRetryTimes, ConstantUtil.clipboardRetryDelay);
                 }
-                else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                    || suffixToolStripTextBox.Focused)
+                else if (IsTextboxInsideFactory(form)) //pathTextBox missing
                 {
                     TextBox textBox;
 
@@ -164,15 +141,8 @@ namespace DtPad.Managers
         internal static void Cut(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
-            TextBox pathTextBox = form.filePanel.pathTextBox;
 
             try
             {
@@ -182,8 +152,7 @@ namespace DtPad.Managers
                     pageTextBox.SelectedText = String.Empty;
                     RefreshUndoRedoExternal(form);
                 }
-                else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                    || suffixToolStripTextBox.Focused || pathTextBox.Focused)
+                else if (IsTextboxInsideFactory(form))
                 {
                     TextBox textBox;
 
@@ -209,14 +178,8 @@ namespace DtPad.Managers
         internal static void CutAppend(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
 
             try
             {
@@ -231,8 +194,7 @@ namespace DtPad.Managers
                     Clipboard.SetDataObject(textClipboard, true, ConstantUtil.clipboardRetryTimes, ConstantUtil.clipboardRetryDelay);
                     RefreshUndoRedoExternal(form);
                 }
-                else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                    || suffixToolStripTextBox.Focused)
+                else if (IsTextboxInsideFactory(form)) //pathTextBox missing
                 {
                     TextBox textBox;
 
@@ -269,15 +231,8 @@ namespace DtPad.Managers
         internal static void Paste(Form1 form, bool forcePageTextBox = false)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
-            TextBox pathTextBox = form.filePanel.pathTextBox;
             CustomLineNumbers customLineNumbers = ProgramUtil.GetCustomLineNumbers(pagesTabControl.SelectedTabPage);
 
             if (!Clipboard.ContainsText())
@@ -306,8 +261,7 @@ namespace DtPad.Managers
                         WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
                     }
                 }
-                else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                    || suffixToolStripTextBox.Focused || pathTextBox.Focused)
+                else if (IsTextboxInsideFactory(form))
                 {
                     TextBox textBox;
 
@@ -390,14 +344,8 @@ namespace DtPad.Managers
         internal static void SwapWithClipboard(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
 
             if (!Clipboard.ContainsText())
             {
@@ -417,8 +365,7 @@ namespace DtPad.Managers
                     pageTextBox.SelectedText = textClipboard;
                     RefreshUndoRedoExternal(form);
                 }
-                else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                    || suffixToolStripTextBox.Focused)
+                else if (IsTextboxInsideFactory(form)) //pathTextBox missing
                 {
                     TextBox textBox;
 
@@ -485,15 +432,8 @@ namespace DtPad.Managers
         internal static void Delete(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
-            TextBox pathTextBox = form.filePanel.pathTextBox;
 
             if (pageTextBox.Focused)
             {
@@ -505,8 +445,7 @@ namespace DtPad.Managers
                 pageTextBox.SelectedText = String.Empty;
                 RefreshUndoRedoExternal(form);
             }
-            else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                || suffixToolStripTextBox.Focused || pathTextBox.Focused)
+            else if (IsTextboxInsideFactory(form))
             {
                 TextBox textBox;
 
@@ -531,22 +470,14 @@ namespace DtPad.Managers
         internal static void SelectAll(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
-            TextBox pathTextBox = form.filePanel.pathTextBox;
 
             if (pageTextBox.Focused)
             {
                 pageTextBox.SelectAll();
             }
-            else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                || suffixToolStripTextBox.Focused || pathTextBox.Focused)
+            else if (IsTextboxInsideFactory(form))
             {
                 TextBox textBox;
 
@@ -564,21 +495,14 @@ namespace DtPad.Managers
         internal static void SelectCurrentLine(Form1 form)
         {
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
-            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
-            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
 
             if (pageTextBox.Focused)
             {
                 StringUtil.SelectCurrentLines(pageTextBox);
             }
-            else if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused
-                || suffixToolStripTextBox.Focused)
+            else if (IsTextboxInsideFactory(form)) //pathTextBox missing
             {
                 TextBox textBox;
 
@@ -1812,6 +1736,7 @@ namespace DtPad.Managers
                     break;
                 case 1:
                     break;
+
                 default:
                     for (int i = 1; i < brCounter; i++)
                     {
@@ -2035,6 +1960,7 @@ namespace DtPad.Managers
                         newTextLines[i] = textLines[i].PadLeft(width, character);
                     }
                     break;
+
                 default:
                     for (int i = 0; i < textLines.Length; i++)
                     {
@@ -2081,6 +2007,24 @@ namespace DtPad.Managers
             }
 
             return newPosition != pageTextBox.SelectionStart ? newPosition : startPosition;
+        }
+
+        private static bool IsTextboxInsideFactory(Form1 form)
+        {
+            ToolStripTextBox prefixToolStripTextBox = form.prefixToolStripTextBox;
+            ToolStripTextBox suffixToolStripTextBox = form.suffixToolStripTextBox;
+            TextBox searchTextBox = form.searchPanel.searchTextBox;
+            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
+            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
+            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
+            TextBox pathTextBox = form.filePanel.pathTextBox;
+
+            if (searchTextBox.Focused || replaceTextBox.Focused || noteTitleTextBox.Focused || nodeTextTextBox.Focused || prefixToolStripTextBox.Focused || suffixToolStripTextBox.Focused || pathTextBox.Focused)
+            {
+                return true;
+            }
+
+            return false;
         }
 
         #endregion Private Methods

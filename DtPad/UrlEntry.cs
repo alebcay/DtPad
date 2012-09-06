@@ -63,7 +63,7 @@ namespace DtPad
             if (InternetManager.OpenUrlSource(form, urlAddressTextBox.Text))
             {
                 FileListManager.SetNewRecentURL(this, urlAddressTextBox.Text);
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
             }
             else
             {
@@ -74,7 +74,7 @@ namespace DtPad
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

@@ -13,8 +13,6 @@ namespace DtPadUninstaller.Utils
         #region Internal Instance Constants
 
         internal const int standardMessageWidth = 266;
-        internal const int standardButtonPositionFromRight = 93;
-        internal const int standardButtonDistanceFromRight = 81;
         internal const String dtPadAppConfigName = "DtPad.exe.Config";
         internal const String myEmail = "maccioma@gmail.com";
         internal const String logFile = @"Logs\DtPadUninstaller.log";

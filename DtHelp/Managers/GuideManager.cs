@@ -53,19 +53,23 @@ namespace DtHelp.Managers
                 XmlNodeList chapterList = xmldoc.GetElementsByTagName("chapter");
                 foreach (XmlNode nodeChapter in chapterList)
                 {
-                    TreeNode newChapter = new TreeNode(nodeChapter.Attributes["title"].Value);
-                    newChapter.ImageIndex = 1;
-                    newChapter.SelectedImageIndex = 1;
-                    newChapter.Name = nodeChapter.Attributes["file"].Value;
+                    TreeNode newChapter = new TreeNode(nodeChapter.Attributes["title"].Value)
+                                              {
+                                                  ImageIndex = 1,
+                                                  SelectedImageIndex = 1,
+                                                  Name = nodeChapter.Attributes["file"].Value
+                                              };
                     indexTreeView.Nodes.Add(newChapter);
                     
                     XmlNodeList pageList = nodeChapter.ChildNodes;
                     foreach (XmlNode nodePage in pageList)
                     {
-                        TreeNode newPage = new TreeNode(nodePage.Attributes["title"].Value);
-                        newPage.ImageIndex = 2;
-                        newPage.SelectedImageIndex = 2;
-                        newPage.Name = nodePage.Attributes["file"].Value;
+                        TreeNode newPage = new TreeNode(nodePage.Attributes["title"].Value)
+                                               {
+                                                   ImageIndex = 2,
+                                                   SelectedImageIndex = 2,
+                                                   Name = nodePage.Attributes["file"].Value
+                                               };
                         newChapter.Nodes.Add(newPage);
                     }
                 }

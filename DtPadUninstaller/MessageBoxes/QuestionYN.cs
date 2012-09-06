@@ -1,5 +1,4 @@
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 using DtPadUninstaller.Utils;
 
@@ -31,8 +30,6 @@ namespace DtPadUninstaller.MessageBoxes
             }
 
             Width = Width + questionLabel.Width - ConstantUtil.standardMessageWidth;
-            noButton.Location = new Point(Width - ConstantUtil.standardButtonPositionFromRight, noButton.Location.Y);
-            yesButton.Location = new Point(noButton.Location.X - ConstantUtil.standardButtonDistanceFromRight, yesButton.Location.Y);
         }
 
         #region Button Methods

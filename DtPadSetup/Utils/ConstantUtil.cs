@@ -11,10 +11,9 @@ namespace DtPadSetup.Utils
         #region Internal Instance Constants
 
         internal const int standardMessageWidth = 266;
-        internal const int standardButtonPositionFromRight = 93;
-        internal const int standardButtonDistanceFromRight = 81;
         internal const String dtPadAppConfigName = "DtPad.exe.Config";
         internal const String dtPadURL = "http://www.diariotraduttore.com/diariorama/dtpad/";
+        internal const String dtPadContactURL = "http://www.diariotraduttore.com/contatti/";
         internal const String pwFile = @"SupportFiles\DtPad.exe.pw"; //Passwords
         internal static readonly String defaultPasswordFileContent = "<?xml version=\"1.0\"?>" + Environment.NewLine +
                                                                      "<!-- WARNING: MANUALLY EDITING OF THIS FILE COULD CAUSE DTPAD DYSFUNCTIONS!!! -->" +

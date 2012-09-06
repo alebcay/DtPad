@@ -29,19 +29,5 @@ namespace DtHelp.Utils
         }
 
         #endregion Internal Instance Methods
-
-        #region Test Methods
-
-        //internal static String AssemblyVersionTest()
-        //{
-        //    return AssemblyVersion;
-        //}
-
-        //internal static String AssemblyConfigurationTest()
-        //{
-        //    return AssemblyConfiguration;
-        //}
-
-        #endregion Test Methods
     }
 }

@@ -6504,6 +6504,16 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to I tab sono stati modificati al di sotto della finestra di unione.
+        ///Seleziona nuovamente i tab per procedere..
+        /// </summary>
+        internal static string MergeTabs_Conflict {
+            get {
+                return ResourceManager.GetString("MergeTabs_Conflict", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copia.
         /// </summary>
         internal static string MergeTabs_copyToolStripMenuItem {

@@ -34,11 +34,11 @@ namespace DtPad.Managers
 
             if (searchAllTabsCheckBox.Checked)
             {
-                ReplaceAll_InAllFiles(form);
+                ReplaceAllInAllFiles(form);
             }
             else
             {
-                ReplaceAll_InOneFile(form, false);
+                ReplaceAllInOneFile(form, false);
             }
 
             textBox.ScrollToCaret();
@@ -48,13 +48,13 @@ namespace DtPad.Managers
 
         #region Replace Next Methods
 
-
+        //TODO
 
         #endregion Replace Next Methods
 
         #region Replace All Methods
 
-        private static bool ReplaceAll_InOneFile(Form1 form, bool searchInAllFiles)
+        private static bool ReplaceAllInOneFile(Form1 form, bool searchInAllFiles)
         {
             CustomRichTextBox textBox = ProgramUtil.GetPageTextBox(form.pagesTabControl.SelectedTabPage);
             TextBox searchTextBox = form.searchPanel.searchTextBox;
@@ -105,7 +105,7 @@ namespace DtPad.Managers
             return false;
         }
 
-        private static void ReplaceAll_InAllFiles(Form1 form)
+        private static void ReplaceAllInAllFiles(Form1 form)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
@@ -119,7 +119,7 @@ namespace DtPad.Managers
                 textBox.SelectionStart = 0;
                 textBox.SelectionLength = 0;
 
-                bool tempValueFounded = ReplaceAll_InOneFile(form, true);
+                bool tempValueFounded = ReplaceAllInOneFile(form, true);
 
                 if (!valueFounded)
                 {

@@ -29,6 +29,10 @@ namespace DtPad.Utils
                 case 1:
                     contextMenuStrip.RenderMode = ToolStripRenderMode.System;
                     break;
+
+                default:
+                    contextMenuStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+                    break;
             }
         }
 
@@ -43,6 +47,10 @@ namespace DtPad.Utils
                         break;
                     case 1:
                         contextMenuStrip.RenderMode = ToolStripRenderMode.System;
+                        break;
+
+                    default:
+                        contextMenuStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
                         break;
                 }
             }
@@ -127,6 +135,11 @@ namespace DtPad.Utils
                 case 1:
                     form.contentContextMenuStrip.RenderMode = ToolStripRenderMode.System;
                     form.numberContextMenuStrip.RenderMode = ToolStripRenderMode.System;
+                    break;
+
+                default:
+                    form.contentContextMenuStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+                    form.numberContextMenuStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
                     break;
             }
         }

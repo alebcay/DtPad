@@ -20,7 +20,7 @@ namespace DtPad.Managers
 
         #region Internal Methods
 
-        internal static void SearchTextInFiles(SearchInFiles form, Delegate ThreadCallBackResult)
+        internal static void SearchTextInFiles(SearchInFiles form, Delegate threadCallBackResult)
         {
             TextBox textToSearchTextBox = form.textToSearchTextBox;
             TextBox filenamePatternTextBox = form.filenamePatternTextBox;
@@ -91,7 +91,7 @@ namespace DtPad.Managers
                 }
             }
 
-            form.Invoke(ThreadCallBackResult, result);
+            form.Invoke(threadCallBackResult, result);
         }
 
         internal static void GetPath(SearchInFiles form)
@@ -100,15 +100,7 @@ namespace DtPad.Managers
             ComboBox searchFolderComboBox = form.searchFolderComboBox;
 
             folderBrowserDialog.Description = LanguageUtil.GetCurrentLanguageString("folderDialogDefault", className);
-
-            if (Directory.Exists(searchFolderComboBox.Text))
-            {
-                folderBrowserDialog.SelectedPath = searchFolderComboBox.Text;
-            }
-            else
-            {
-                folderBrowserDialog.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyComputer);
-            }
+            folderBrowserDialog.SelectedPath = Directory.Exists(searchFolderComboBox.Text) ? searchFolderComboBox.Text : Environment.GetFolderPath(Environment.SpecialFolder.MyComputer);
 
             if (form.folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {

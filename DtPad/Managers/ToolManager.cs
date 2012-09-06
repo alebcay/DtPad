@@ -362,6 +362,7 @@ namespace DtPad.Managers
                 case "2":
                     processWindowStyle = ProcessWindowStyle.Maximized;
                     break;
+
                 default:
                     processWindowStyle = ProcessWindowStyle.Normal;
                     break;

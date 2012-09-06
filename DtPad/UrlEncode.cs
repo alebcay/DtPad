@@ -54,7 +54,7 @@ namespace DtPad
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

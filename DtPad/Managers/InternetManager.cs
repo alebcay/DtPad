@@ -108,8 +108,7 @@ namespace DtPad.Managers
             pageTextBox.SelectAll();
 
             pageTextBox.SelectedText = "<html>" + ConstantUtil.newLine + tab + "<head>" + ConstantUtil.newLine + tab + tab + "<title></title>" + ConstantUtil.newLine + tab +
-                "</head>" + ConstantUtil.newLine + tab + "<body>" + ConstantUtil.newLine + pageTextBox.Text + ConstantUtil.newLine + tab + "</body>" + ConstantUtil.newLine +
-                "</html>";
+                "</head>" + ConstantUtil.newLine + tab + "<body>" + ConstantUtil.newLine + pageTextBox.Text + ConstantUtil.newLine + tab + "</body>" + ConstantUtil.newLine + "</html>";
 
             TextManager.RefreshUndoRedoExternal(form);
         }

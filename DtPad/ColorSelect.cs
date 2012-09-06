@@ -51,12 +51,12 @@ namespace DtPad
                 form.TextBackgroundColor = (Color)colorEdit.EditValue;
             }
 
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

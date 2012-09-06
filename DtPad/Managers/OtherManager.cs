@@ -85,8 +85,7 @@ namespace DtPad.Managers
                 }
                 else
                 {
-                    ProcessStartInfo browser = new ProcessStartInfo(ConfigUtil.GetStringParameter("CustomBrowserCommand"), process)
-                                                   { UseShellExecute = true };
+                    ProcessStartInfo browser = new ProcessStartInfo(ConfigUtil.GetStringParameter("CustomBrowserCommand"), process) { UseShellExecute = true };
                     Process.Start(browser);
                 }
             }

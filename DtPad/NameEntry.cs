@@ -49,7 +49,7 @@ namespace DtPad
             StringForm form = (StringForm)Owner;
 
             form.newObjectName = fileNameTextBox.Text;
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace DtPad
             StringForm form = (StringForm)Owner;
 
             form.newObjectName = String.Empty;
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

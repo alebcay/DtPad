@@ -37,7 +37,7 @@ namespace DtPad
         {
             if (!TemplateManager.SaveDescription(this, templateObjectList))
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
             }
         }
 
@@ -71,7 +71,7 @@ namespace DtPad
         {
             if (!TemplateManager.RemoveTemplate(this, templateObjectList))
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
                 return;
             }
 
@@ -89,12 +89,12 @@ namespace DtPad
             }
 
             FileListManager.LoadTemplates(form);
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void moveUpButton_Click(object sender, EventArgs e)

@@ -21,6 +21,10 @@ namespace DtPadUninstaller.Utils
                 case 1:
                     contextMenuStrip.RenderMode = ToolStripRenderMode.System;
                     break;
+
+                default:
+                    contextMenuStrip.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+                    break;
             }
         }
 

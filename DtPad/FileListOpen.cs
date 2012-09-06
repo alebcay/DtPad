@@ -50,7 +50,7 @@ namespace DtPad
             Form1 form = (Form1)Owner;
 
             FileManager.OpenFile(form, form.TabIdentity, contentTextBox.Text.Replace(Environment.NewLine, ConstantUtil.newLine).Split(new[] { Convert.ToChar(ConstantUtil.newLine) }, StringSplitOptions.RemoveEmptyEntries));
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void pasteFromClipboardButton_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace DtPad
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

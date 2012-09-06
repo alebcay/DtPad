@@ -126,6 +126,7 @@ namespace DtPad.Managers
                     return ConfigUtil.GetDateParameter("LastVersionCheck").AddMonths(1) <= DateTime.Today;
                 case 2:
                     return ConfigUtil.GetDateParameter("LastVersionCheck").AddDays(7) <= DateTime.Today;
+
                 default:
                     return false;
             }

@@ -53,12 +53,12 @@ namespace DtPad
             Form1 form = (Form1)Owner;
 
             TextManager.InsertDateTime(form, datetimeListBox.SelectedItem.ToString());
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void resetDatetimeButton_Click(object sender, EventArgs e)

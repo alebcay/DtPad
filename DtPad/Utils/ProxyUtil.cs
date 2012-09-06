@@ -94,17 +94,7 @@ namespace DtPad.Utils
             //String proxyPassword = CodingUtil.DecodeByte(PasswordUtil.GetStringParameter("ProxyPassword"));
             //String proxyDomain = PasswordUtil.GetStringParameter("ProxyDomain");
 
-            NetworkCredential networkCredentials;
-
-            if (!String.IsNullOrEmpty(proxyDomain))
-            {
-                networkCredentials = new NetworkCredential(proxyUsername, proxyPassword, proxyDomain);
-            }
-            else
-            {
-                networkCredentials = new NetworkCredential(proxyUsername, proxyPassword);
-            }
-
+            NetworkCredential networkCredentials = !String.IsNullOrEmpty(proxyDomain) ? new NetworkCredential(proxyUsername, proxyPassword, proxyDomain) : new NetworkCredential(proxyUsername, proxyPassword);
             return networkCredentials;
         }
 

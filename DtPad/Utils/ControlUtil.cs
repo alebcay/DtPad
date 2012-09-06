@@ -20,8 +20,7 @@ namespace DtPad.Utils
 
                 return focusedControl;
             }
-            if (sender.GetType() == typeof(TextBox) || sender.GetType() == typeof(CustomTextBox) || sender.GetType() == typeof(RichTextBox) ||
-                sender.GetType() == typeof(CustomRichTextBox) || sender.GetType() == typeof(CustomRichTextBoxBase))
+            if (sender.GetType() == typeof(TextBox) || sender.GetType() == typeof(CustomTextBox) || sender.GetType() == typeof(RichTextBox) || sender.GetType() == typeof(CustomRichTextBox) || sender.GetType() == typeof(CustomRichTextBoxBase))
             {
                 Control focusedControl = (TextBoxBase)sender;
                 return focusedControl;

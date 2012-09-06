@@ -22,8 +22,7 @@ namespace DtPad.Managers
                 return;
             }
 
-            String mailString = PrepareMailBugReport(form.sendMeACopyCheckBox.Checked, form.emailTextBox.Text, form.nameTextBox.Text,
-                form.areaComboBox.SelectedItem.ToString(), form.errorMessageTextBox.Text, form.descriptionTextBox.Text);
+            String mailString = PrepareMailBugReport(form.sendMeACopyCheckBox.Checked, form.emailTextBox.Text, form.nameTextBox.Text, form.areaComboBox.SelectedItem.ToString(), form.errorMessageTextBox.Text, form.descriptionTextBox.Text);
             OtherManager.StartProcess(form, mailString);
         }
 
@@ -47,8 +46,7 @@ namespace DtPad.Managers
             String errorMessageLabel = LanguageUtil.GetCurrentLanguageString("ErrorMessage", className);
             String descriptionLabel = LanguageUtil.GetCurrentLanguageString("Description", className);
 
-            mailString += "subject=[DtPad] " + bugReportLabel + "&body=[DtPad] " + bugReportLabel + "%0D%0D" + nameLabel + ": " + name
-                + "%0D" + emailLabel + ": " + email + "%0D" + areaLabel + ": " + area + "%0D";
+            mailString += "subject=[DtPad] " + bugReportLabel + "&body=[DtPad] " + bugReportLabel + "%0D%0D" + nameLabel + ": " + name + "%0D" + emailLabel + ": " + email + "%0D" + areaLabel + ": " + area + "%0D";
 
             if (!String.IsNullOrEmpty(errorMessage.Trim()))
             {

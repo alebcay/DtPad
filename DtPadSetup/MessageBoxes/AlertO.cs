@@ -1,5 +1,4 @@
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 using DtPadSetup.Utils;
 
@@ -31,7 +30,6 @@ namespace DtPadSetup.MessageBoxes
             }
 
             Width = Width + alertLabel.Width - ConstantUtil.standardMessageWidth;
-            okButton.Location = new Point(Width - ConstantUtil.standardButtonPositionFromRight, okButton.Location.Y);
         }
 
         #region Button Methods

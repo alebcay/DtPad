@@ -80,7 +80,7 @@ namespace DtPadSetup.Managers
                                  FileResource.Newtonsoft_Json_dll.Length + FileResource.Microsoft_WindowsAPICodePack_dll.Length +
                                  FileResource.Microsoft_WindowsAPICodePack_Shell_dll.Length + FileResource.NHunspell_dll.Length +
                                  FileResource.Hunspellx86_dll.Length + FileResource.Hunspellx64_dll.Length;
-                //+ GuideResource.DtPadGuide_en_dhg.Length + GuideResource.DtPadGuide_it_dhg.Length;
+                                //+ GuideResource.DtPadGuide_en_dhg.Length + GuideResource.DtPadGuide_it_dhg.Length;
 
             double requiredMbSpace = (requiredSpace / 1024f) / 1024f;
             requiredSpaceLabel1.Text = requiredMbSpace.ToString("#,#", CultureInfo.GetCultureInfo(GetCulture(languageComboBox))) + " MB";
@@ -301,6 +301,7 @@ namespace DtPadSetup.Managers
                 case 1:
                     language = "it-IT";
                     break;
+
                 default:
                     language = "en";
                     break;
@@ -321,6 +322,7 @@ namespace DtPadSetup.Managers
                 case 1:
                     language = "Italiano";
                     break;
+
                 default:
                     language = "English";
                     break;
@@ -337,14 +339,14 @@ namespace DtPadSetup.Managers
         {
             String deskDir = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
 
-            ShellShortcut m_Shortcut = new ShellShortcut(Path.Combine(deskDir, "DtPad.lnk"))
-                                           {
-                                               Path = Path.Combine(destinationPath, "DtPad.exe"),
-                                               WorkingDirectory = destinationPath,
-                                               Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className, culture),
-                                               IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
-                                           };
-            m_Shortcut.Save();
+            ShellShortcut shortcut = new ShellShortcut(Path.Combine(deskDir, "DtPad.lnk"))
+                                         {
+                                             Path = Path.Combine(destinationPath, "DtPad.exe"),
+                                             WorkingDirectory = destinationPath,
+                                             Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className, culture),
+                                             IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
+                                         };
+            shortcut.Save();
 
             String startDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Programs), "DtPad");
             if (!Directory.Exists(startDir))
@@ -359,54 +361,54 @@ namespace DtPadSetup.Managers
             textFile.WriteLine("IconFile=" + Path.Combine(destinationPath, "Icons\\Dt.ico"));
             textFile.Close();
 
-            m_Shortcut = new ShellShortcut(Path.Combine(startDir, "DtPad.lnk"))
-                             {
-                                 Path = Path.Combine(destinationPath, "DtPad.exe"),
-                                 WorkingDirectory = destinationPath,
-                                 Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className, culture),
-                                 IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
-                             };
-            m_Shortcut.Save();
+            shortcut = new ShellShortcut(Path.Combine(startDir, "DtPad.lnk"))
+                           {
+                               Path = Path.Combine(destinationPath, "DtPad.exe"),
+                               WorkingDirectory = destinationPath,
+                               Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className, culture),
+                               IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
+                           };
+            shortcut.Save();
 
-            m_Shortcut = new ShellShortcut(Path.Combine(startDir, "DtPad Updater.lnk"))
-                             {
-                                 Path = Path.Combine(destinationPath, "DtPadUpdater.exe"),
-                                 WorkingDirectory = destinationPath,
-                                 Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPadUpdater", className, culture),
-                                 IconPath = Path.Combine(destinationPath, "Icons\\DtPadUpdater.ico")
-                             };
-            m_Shortcut.Save();
+            shortcut = new ShellShortcut(Path.Combine(startDir, "DtPad Updater.lnk"))
+                           {
+                               Path = Path.Combine(destinationPath, "DtPadUpdater.exe"),
+                               WorkingDirectory = destinationPath,
+                               Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPadUpdater", className, culture),
+                               IconPath = Path.Combine(destinationPath, "Icons\\DtPadUpdater.ico")
+                           };
+            shortcut.Save();
 
-            m_Shortcut = new ShellShortcut(Path.Combine(startDir, "DtPad Uninstaller.lnk"))
-            {
-                Path = Path.Combine(destinationPath, "DtPadUninstaller.exe"),
-                WorkingDirectory = destinationPath,
-                Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPadUninstaller", className, culture),
-                IconPath = Path.Combine(destinationPath, "Icons\\DtPadUninstaller.ico")
-            };
-            m_Shortcut.Save();
+            shortcut = new ShellShortcut(Path.Combine(startDir, "DtPad Uninstaller.lnk"))
+                           {
+                               Path = Path.Combine(destinationPath, "DtPadUninstaller.exe"),
+                               WorkingDirectory = destinationPath,
+                               Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPadUninstaller", className, culture),
+                               IconPath = Path.Combine(destinationPath, "Icons\\DtPadUninstaller.ico")
+                           };
+            shortcut.Save();
 
-            m_Shortcut = new ShellShortcut(Path.Combine(startDir, LanguageUtil.GetCurrentLanguageString("LinkReadmeLabel", className, culture))) //Readme.lnk
-                             {
-                                Path = Path.Combine(destinationPath, "Readme.txt"),
-                                WorkingDirectory = destinationPath,
-                                Description = LanguageUtil.GetCurrentLanguageString("LinkReadme", className, culture),
-                             };
-            m_Shortcut.Save();
+            shortcut = new ShellShortcut(Path.Combine(startDir, LanguageUtil.GetCurrentLanguageString("LinkReadmeLabel", className, culture)))
+                           {
+                              Path = Path.Combine(destinationPath, "Readme.txt"),
+                              WorkingDirectory = destinationPath,
+                              Description = LanguageUtil.GetCurrentLanguageString("LinkReadme", className, culture),
+                           };
+            shortcut.Save();
         }
 
         private static void SetSendToAssociation(String destinationPath, String culture)
         {
             String sendToDir = Environment.GetFolderPath(Environment.SpecialFolder.SendTo);
 
-            ShellShortcut m_Shortcut = new ShellShortcut(Path.Combine(sendToDir, "DtPad.lnk"))
-                                           {
-                                               Path = Path.Combine(destinationPath, "DtPad.exe"),
-                                               WorkingDirectory = destinationPath,
-                                               Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className, culture),
-                                               IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
-                                           };
-            m_Shortcut.Save();
+            ShellShortcut shortcut = new ShellShortcut(Path.Combine(sendToDir, "DtPad.lnk"))
+                                         {
+                                             Path = Path.Combine(destinationPath, "DtPad.exe"),
+                                             WorkingDirectory = destinationPath,
+                                             Description = LanguageUtil.GetCurrentLanguageString("LinkLaunchDtPad", className, culture),
+                                             IconPath = Path.Combine(destinationPath, "Icons\\DtPad.ico")
+                                         };
+            shortcut.Save();
         }
 
         private static bool SetShellIntegration(String destinationPath, String culture)
@@ -440,11 +442,7 @@ namespace DtPadSetup.Managers
 
         #region Files And Folders Methods
 
-        private static void WriteFileAndSetPermissions(String fileNameAndPath, byte[] fileResource)
-        {
-            WriteFileAndSetPermissions(fileNameAndPath, fileResource, false);
-        }
-        private static void WriteFileAndSetPermissions(String fileNameAndPath, byte[] fileResource, bool onlySetPermission)
+        private static void WriteFileAndSetPermissions(String fileNameAndPath, byte[] fileResource, bool onlySetPermission = false)
         {
             if (!onlySetPermission)
             {
@@ -476,11 +474,7 @@ namespace DtPadSetup.Managers
             FileUtil.SetFilePermissions(fileNameAndPath);
         }
 
-        private static void WriteFileAndSetPermissions(String fileNameAndPath, String fileResource)
-        {
-            WriteFileAndSetPermissions(fileNameAndPath, fileResource, false);
-        }
-        private static void WriteFileAndSetPermissions(String fileNameAndPath, String fileResource, bool onlySetPermission)
+        private static void WriteFileAndSetPermissions(String fileNameAndPath, String fileResource, bool onlySetPermission = false)
         {
             if (!onlySetPermission)
             {

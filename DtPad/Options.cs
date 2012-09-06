@@ -363,13 +363,13 @@ namespace DtPad
         {
             if (SaveOptions(true))
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
             }
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void applyButton_Click(object sender, EventArgs e)

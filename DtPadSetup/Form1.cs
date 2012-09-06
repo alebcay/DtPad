@@ -41,6 +41,7 @@ namespace DtPadSetup
                 case "it":
                     languageComboBox.SelectedIndex = 1;
                     break;
+
                 default:
                     languageComboBox.SelectedIndex = 0;
                     break;
@@ -71,7 +72,7 @@ namespace DtPadSetup
 
         private void linkContattiLabel_Click(object sender, EventArgs e)
         {
-            OtherManager.StartProcess(this, "http://www.diariotraduttore.com/contatti/", OptionManager.GetLanguage(this));
+            OtherManager.StartProcess(this, ConstantUtil.dtPadContactURL, OptionManager.GetLanguage(this));
         }
 
         private void enableProxySettingsCheckBox_CheckedChanged(object sender, EventArgs e)

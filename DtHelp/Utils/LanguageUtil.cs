@@ -57,6 +57,7 @@ namespace DtHelp.Utils
                 case "it":
                     result = it.ResourceManager.GetString(String.Format("{0}_{1}", resource, name));
                     break;
+
                 default:
                     result = en.ResourceManager.GetString(String.Format("{0}_{1}", resource, name));
                     break;
@@ -84,6 +85,7 @@ namespace DtHelp.Utils
                 case "it-IT":
                     language = "it";
                     break;
+
                 default:
                     language = "en";
                     break;

@@ -57,7 +57,7 @@ namespace DtPad
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void sendButton_Click(object sender, EventArgs e)

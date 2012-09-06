@@ -364,8 +364,8 @@ namespace DtPad.Managers
                 switch (ShowQuestion(form, cancel))
                 {
                     case DialogResult.Yes:
-                            bool saved = SaveSession(form, false);
-                            return saved ? DialogResult.OK : DialogResult.Cancel;
+                        bool saved = SaveSession(form, false);
+                        return saved ? DialogResult.OK : DialogResult.Cancel;
                     case DialogResult.No:
                         return DialogResult.OK;
                     case DialogResult.Cancel:
@@ -671,7 +671,7 @@ namespace DtPad.Managers
                     break;
                 }
 
-                if (dpsFileName == String.Empty)
+                if (String.IsNullOrEmpty(dpsFileName))
                 {
                     WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("ArchiveNotExport", className));
                     return;

@@ -45,12 +45,12 @@ namespace DtPad
             Form1 form = (Form1)Owner;
 
             TextManager.SelectLinesFromRowAToRowB(form, Convert.ToInt32(lineFromNumericUpDown.Value - 1), Convert.ToInt32(lineToNumericUpDown.Value - 1));
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

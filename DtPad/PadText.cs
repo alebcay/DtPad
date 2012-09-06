@@ -63,13 +63,13 @@ namespace DtPad
             {
                 TextManager.PadToRight(form, this);
             }
-            
-            WindowManager.HiddenForm(this);
+
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

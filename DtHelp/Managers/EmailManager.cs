@@ -22,8 +22,7 @@ namespace DtHelp.Managers
                 return;
             }
 
-            String mailString = PrepareMailBugReport(form.sendMeACopyCheckBox.Checked, form.emailTextBox.Text, form.nameTextBox.Text,
-                form.areaComboBox.SelectedItem.ToString(), form.errorMessageTextBox.Text, form.descriptionTextBox.Text, culture);
+            String mailString = PrepareMailBugReport(form.sendMeACopyCheckBox.Checked, form.emailTextBox.Text, form.nameTextBox.Text, form.areaComboBox.SelectedItem.ToString(), form.errorMessageTextBox.Text, form.descriptionTextBox.Text, culture);
             OtherManager.StartProcess(form, mailString, culture);
         }
 
@@ -47,8 +46,7 @@ namespace DtHelp.Managers
             String errorMessageLabel = LanguageUtil.GetCurrentLanguageString("ErrorMessage", className, culture);
             String descriptionLabel = LanguageUtil.GetCurrentLanguageString("Description", className, culture);
 
-            mailString += "subject=[DtHelp] " + bugReportLabel + "&body=[DtHelp] " + bugReportLabel + "%0D%0D" + nameLabel + ": " + name
-                + "%0D" + emailLabel + ": " + email + "%0D" + areaLabel + ": " + area + "%0D";
+            mailString += "subject=[DtHelp] " + bugReportLabel + "&body=[DtHelp] " + bugReportLabel + "%0D%0D" + nameLabel + ": " + name + "%0D" + emailLabel + ": " + email + "%0D" + areaLabel + ": " + area + "%0D";
 
             if (!String.IsNullOrEmpty(errorMessage.Trim()))
             {

@@ -50,12 +50,12 @@ namespace DtPad
             Form1 form = (Form1)Owner;
 
             TabManager.GoToLine(form, Convert.ToInt32(lineNumericUpDown.Value));
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

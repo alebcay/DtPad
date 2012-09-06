@@ -49,11 +49,10 @@ namespace DtPad.Utils
             {
                 reader = new PdfReader(fileName);
                 PdfReaderContentParser parser = new PdfReaderContentParser(reader);
-                SimpleTextExtractionStrategy strategy;
 
                 for (int page = 1; page <= reader.NumberOfPages; page++)
                 {
-                    strategy = parser.ProcessContent(page, new SimpleTextExtractionStrategy());
+                    SimpleTextExtractionStrategy strategy = parser.ProcessContent(page, new SimpleTextExtractionStrategy());
                     result += strategy.GetResultantText();
                 }
 

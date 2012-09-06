@@ -45,8 +45,6 @@ namespace DtPad.Utils
         internal const String repositoryFE = "http://www.diariotraduttore.com/wp-content/files/dtpad/fe/";
         internal const String dropboxAuthUrl = "http://www.diariotraduttore.com/wp-content/files/dtpad/dropbox-authentication.html"; //"http://www.diariotraduttore.com/diariorama/dtpad/dropbox-authorization/";
         internal const int standardMessageWidth = 266;
-        internal const int standardButtonPositionFromRight = 93;
-        internal const int standardButtonDistanceFromRight = 81;
         internal const int maxLenghtTrayDescription = 63; //Formally in Windows it's 64, but it's necessary to reserve one character
         internal const int maxLenghtForBulletList = 5;
         internal const String tabIntoSpaces = "       ";

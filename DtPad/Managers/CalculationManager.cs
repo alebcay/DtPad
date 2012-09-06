@@ -377,35 +377,5 @@ namespace DtPad.Managers
         }
 
         #endregion Private Methods
-
-        #region Test Methods
-
-        //private Button GetButton(String buttonName)
-        //{
-        //    Button threeButton = panel.threeButton;
-            
-        //    switch (buttonName)
-        //    {
-        //        case "threeButton":
-        //            return threeButton;
-        //        default:
-        //            throw new Exception();
-        //    }
-        //}
-
-        //private TextBox GetTextBox(String textBoxName)
-        //{
-        //    TextBox calcTextBox = panel.calcTextBox;
-
-        //    switch (textBoxName)
-        //    {
-        //        case "calcTextBox":
-        //            return calcTextBox;
-        //        default:
-        //            throw new Exception();
-        //    }
-        //}
-
-        #endregion Test Methods
     }
 }

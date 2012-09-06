@@ -11,8 +11,6 @@ namespace DtHelp.Utils
         #region Internal Instance Constants
 
         internal const int standardMessageWidth = 266;
-        internal const int standardButtonPositionFromRight = 93;
-        internal const int standardButtonDistanceFromRight = 81;
         internal const int standardHelpPanelHeight = 30;
         internal const String myEmail = "maccioma@gmail.com";
         internal const String dtURL = "http://www.diariotraduttore.com/";

@@ -37,7 +37,7 @@ namespace DtPad
         {
             if (!ToolManager.SaveDescription(this, toolObjectList))
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
             }
         }
 
@@ -83,7 +83,7 @@ namespace DtPad
         {
             if (!ToolManager.RemoveTool(this, toolObjectList))
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
                 return;
             }
             ToolManager.LoadTool(this, toolObjectList);
@@ -100,12 +100,12 @@ namespace DtPad
             }
 
             FileListManager.LoadTools(form);
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void moveUpButton_Click(object sender, EventArgs e)

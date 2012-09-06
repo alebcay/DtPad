@@ -46,7 +46,7 @@ namespace DtPad
             form.DropboxCloudStorage = DropboxManager.InitCouldStorage(form, form.DropboxCloudStorage);
             if (form.DropboxCloudStorage == null)
             {
-                WindowManager.HiddenForm(this);
+                WindowManager.CloseForm(this);
                 return false;
             }
 
@@ -171,6 +171,7 @@ namespace DtPad
                 case 0:
                     LoadFileList(DropboxManager.GetDirectory(form, "/"));
                     break;
+
                 default:
                     LoadFileList(DropboxManager.GetDirectory(form, positionLabel.Text.Substring(0, positionLabel.Text.LastIndexOf('/'))));
                     break;
@@ -194,7 +195,7 @@ namespace DtPad
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods
@@ -288,7 +289,7 @@ namespace DtPad
 
                 if (FileManager.OpenFileFromDropbox(form, this, fileNameTextBox.Text, selectedFilePosition))
                 {
-                    WindowManager.HiddenForm(this);
+                    WindowManager.CloseForm(this);
                 }
                 else
                 {
@@ -309,7 +310,7 @@ namespace DtPad
 
                 if (FileManager.SaveFileOnDropbox(form, this, fileNameTextBox.Text, positionLabel.Text))
                 {
-                    WindowManager.HiddenForm(this);
+                    WindowManager.CloseForm(this);
                 }
                 else
                 {

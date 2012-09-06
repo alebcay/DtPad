@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using DtPadUninstaller.Utils;
 using Microsoft.Win32;
@@ -141,8 +142,7 @@ namespace DtPadUninstaller.Managers
             }
             
             File.Delete(file);
-            updateTextBox.AppendText(Environment.NewLine + LanguageUtil.GetCurrentLanguageString("File", className, culture) +
-                                     " \"" + file + "\" " + LanguageUtil.GetCurrentLanguageString("DeletedFile", className, culture));
+            updateTextBox.AppendText(Environment.NewLine + LanguageUtil.GetCurrentLanguageString("File", className, culture) + " \"" + file + "\" " + LanguageUtil.GetCurrentLanguageString("DeletedFile", className, culture));
             updateProgressBar.PerformStep();
         }
 
@@ -155,8 +155,7 @@ namespace DtPadUninstaller.Managers
             }
             
             Directory.Delete(folder, true);
-            updateTextBox.AppendText(Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Folder", className, culture) +
-                                     " \"" + folder + "\" " + LanguageUtil.GetCurrentLanguageString("DeletedFolder", className, culture));
+            updateTextBox.AppendText(Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Folder", className, culture) + " \"" + folder + "\" " + LanguageUtil.GetCurrentLanguageString("DeletedFolder", className, culture));
             updateProgressBar.PerformStep();
         }
 
@@ -170,7 +169,6 @@ namespace DtPadUninstaller.Managers
             }
 
             String[] keys = regKey.GetSubKeyNames();
-
             foreach (String key in keys)
             {
                 if (!key.Contains("DtPad"))
@@ -181,8 +179,7 @@ namespace DtPadUninstaller.Managers
                 //Registry.CurrentUser.DeleteSubKey(String.Format(@"Software\Classes\*\shell\{0}\command", key));
                 Registry.CurrentUser.DeleteSubKeyTree(String.Format(@"Software\Classes\*\shell\{0}", key));
 
-                updateTextBox.AppendText(Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Key", className, culture) +
-                                         " \"" + key + "\" " + LanguageUtil.GetCurrentLanguageString("DeletedKey", className, culture));
+                updateTextBox.AppendText(Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Key", className, culture) + " \"" + key + "\" " + LanguageUtil.GetCurrentLanguageString("DeletedKey", className, culture));
                 break;
             }
 
@@ -199,16 +196,14 @@ namespace DtPadUninstaller.Managers
             }
 
             String[] keys = regKey.GetSubKeyNames();
-
-            foreach (String key in keys)
-            {
-                if (key.Contains("DtPad"))
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            //foreach (String key in keys)
+            //{
+            //    if (key.Contains("DtPad"))
+            //    {
+            //        return true;
+            //    }
+            //}
+            return keys.Any(key => key.Contains("DtPad"));
         }
 
         #endregion Private Methods

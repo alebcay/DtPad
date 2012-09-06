@@ -1,5 +1,4 @@
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 using DtPadSetup.Utils;
 
@@ -31,12 +30,6 @@ namespace DtPadSetup.MessageBoxes
             }
 
             Width = Width + warningLabel.Width - ConstantUtil.standardMessageWidth;
-            cancelButton.Location = new Point(Width - ConstantUtil.standardButtonPositionFromRight, cancelButton.Location.Y);
-            noButton.Location = new Point(cancelButton.Location.X - ConstantUtil.standardButtonDistanceFromRight, noButton.Location.Y);
-            yesButton.Location = new Point(noButton.Location.X - ConstantUtil.standardButtonDistanceFromRight, yesButton.Location.Y);
-            //yesButton.Location = new Point(Width - ConstantUtil.standardButtonPositionFromRight, yesButton.Location.Y);
-            //noButton.Location = new Point(yesButton.Location.X - ConstantUtil.standardButtonDistanceFromRight, noButton.Location.Y);
-            //cancelButton.Location = new Point(noButton.Location.X - ConstantUtil.standardButtonDistanceFromRight, cancelButton.Location.Y);
         }
 
         #region Button Methods

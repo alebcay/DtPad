@@ -89,7 +89,7 @@ namespace DtPad
             Form1 form = (Form1)Owner;
 
             DictionaryManager.CheckTextCorrectness(form, LanguageUtil.GetReallyShortCultureForGoogleTranslator(languageComboBox.SelectedItem.ToString()));
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         private void clearButton_Click(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace DtPad
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            WindowManager.HiddenForm(this);
+            WindowManager.CloseForm(this);
         }
 
         #endregion Button Methods

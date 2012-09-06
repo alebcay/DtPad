@@ -6499,6 +6499,16 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tabs refreshed under the merge window.
+        ///Reselect interested tabs to proceed..
+        /// </summary>
+        internal static string MergeTabs_Conflict {
+            get {
+                return ResourceManager.GetString("MergeTabs_Conflict", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copy.
         /// </summary>
         internal static string MergeTabs_copyToolStripMenuItem {

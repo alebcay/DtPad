@@ -213,6 +213,7 @@ namespace DtPad.Managers
                     pagesTabControl.HeaderButtons = TabButtons.Default;
                     pagesTabControl.ClosePageButtonShowMode = ClosePageButtonShowMode.Default;
                     break;
+
                 default:
                     pagesTabControl.HeaderButtons = TabButtons.Close | TabButtons.Default;
                     pagesTabControl.ClosePageButtonShowMode = ClosePageButtonShowMode.InAllTabPageHeaders;
@@ -238,6 +239,7 @@ namespace DtPad.Managers
                 case 3:
                     pagesTabControl.HeaderLocation = TabHeaderLocation.Left;
                     break;
+
                 default:
                     pagesTabControl.HeaderLocation = TabHeaderLocation.Top;
                     break;
@@ -256,6 +258,7 @@ namespace DtPad.Managers
                 case 1:
                     pagesTabControl.HeaderOrientation = TabOrientation.Vertical;
                     break;
+
                 default:
                     pagesTabControl.HeaderOrientation = TabOrientation.Horizontal;
                     break;

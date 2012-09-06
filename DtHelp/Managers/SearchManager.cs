@@ -35,8 +35,6 @@ namespace DtHelp.Managers
             {
                 document.Body.InnerHtml = FindStringInHtml(document.Body.InnerHtml, textWhereToSearch, textToSearch, 0);
             }
-
-            return;
         }
 
         #endregion Internal Methods

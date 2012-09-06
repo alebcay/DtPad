@@ -110,15 +110,7 @@ namespace DtPad.Managers
 
             extensionTreeView.Focus();
             extensionTreeView.Nodes.Remove(extensionTreeView.SelectedNode);
-
-            if (extensionTreeView.Nodes.Count > indexNodeToRemove)
-            {
-                extensionTreeView.SelectedNode = extensionTreeView.Nodes[indexNodeToRemove];
-            }
-            else
-            {
-                extensionTreeView.SelectedNode = extensionTreeView.Nodes[indexNodeToRemove - 1];
-            }
+            extensionTreeView.SelectedNode = extensionTreeView.Nodes.Count > indexNodeToRemove ? extensionTreeView.Nodes[indexNodeToRemove] : extensionTreeView.Nodes[indexNodeToRemove - 1];
 
             return true;
         }

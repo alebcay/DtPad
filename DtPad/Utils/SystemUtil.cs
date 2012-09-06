@@ -65,8 +65,6 @@ namespace DtPad.Utils
                         case 90:
                             operatingSystem = OS.Me;
                             break;
-                        default:
-                            break;
                     }
                     break;
                 case PlatformID.Win32NT:
@@ -83,8 +81,6 @@ namespace DtPad.Utils
                             break;
                         case 6:
                             operatingSystem = vs.Minor == 0 ? OS.Vista : OS.Seven;
-                            break;
-                        default:
                             break;
                     }
                     break;
@@ -129,6 +125,7 @@ namespace DtPad.Utils
                 case OS.Seven:
                     osDescription = "Windows 7";
                     break;
+
                 default:
                     osDescription = LanguageUtil.GetCurrentLanguageString("OSOther", className);
                     break;
