@@ -35,8 +35,7 @@ namespace DtPadUpdater.Managers
                 }
                 else
                 {
-                    ProcessStartInfo browser = new ProcessStartInfo(ConfigUtil.GetStringParameter("CustomBrowserCommand", String.Empty, executablePath), process)
-                                                   {UseShellExecute = true};
+                    ProcessStartInfo browser = new ProcessStartInfo(ConfigUtil.GetStringParameter("CustomBrowserCommand", String.Empty, executablePath), process) { UseShellExecute = true };
                     Process.Start(browser);
                 }
             }

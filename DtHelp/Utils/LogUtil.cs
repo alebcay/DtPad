@@ -23,10 +23,7 @@ namespace DtHelp.Utils
         {
             log = LogManager.GetLogger(methodBase.DeclaringType);
 
-            PatternLayout patternLayout = new PatternLayout
-                                              {
-                                                  ConversionPattern = "%date [%thread] %-5level %logger - %message%newline"
-                                              };
+            PatternLayout patternLayout = new PatternLayout { ConversionPattern = "%date [%thread] %-5level %logger - %message%newline" };
             FileAppender fileAppender = new FileAppender
                                             {
                                                 File = ConstantUtil.logFile,

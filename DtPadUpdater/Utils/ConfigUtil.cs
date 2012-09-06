@@ -1,6 +1,7 @@
 using System;
 using System.Configuration;
 using System.IO;
+using System.Linq;
 
 namespace DtPadUpdater.Utils
 {
@@ -16,12 +17,9 @@ namespace DtPadUpdater.Utils
         {
             try
             {
-                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                        {
-                                                            ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                        };
-
+                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
                 Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
+
                 String parameterValue = configuration.AppSettings.Settings[parameterName].Value;
                 return String.IsNullOrEmpty(parameterValue) ? parameterDefault : parameterValue;
             }
@@ -35,12 +33,9 @@ namespace DtPadUpdater.Utils
         {
             try
             {
-                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                        {
-                                                            ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                        };
-
+                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
                 Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
+
                 String parameterValue = configuration.AppSettings.Settings[parameterName].Value;
                 return String.IsNullOrEmpty(parameterValue) ? Convert.ToBoolean(parameterDefault) : Convert.ToBoolean(parameterValue);
             }
@@ -54,12 +49,9 @@ namespace DtPadUpdater.Utils
         {
             try
             {
-                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                {
-                    ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                };
-
+                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
                 Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
+
                 String parameterValue = configuration.AppSettings.Settings[parameterName].Value;
 
                 int result;
@@ -73,12 +65,9 @@ namespace DtPadUpdater.Utils
 
         internal static void InsertParameter(String parameterName, String parameterValue, String executablePath)
         {
-            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                    {
-                                                        ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                    };
-
+            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
             Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
+
             configuration.AppSettings.Settings.Add(parameterName, parameterValue);
             configuration.Save(ConfigurationSaveMode.Modified);
             ConfigurationManager.RefreshSection("appSettings");
@@ -86,11 +75,7 @@ namespace DtPadUpdater.Utils
 
         internal static void UpdateParameter(String parameterName, String parameterValue, String executablePath)
         {
-            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                    {
-                                                        ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                    };
-
+            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
             Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
 
             if (!ExistsParameter(configuration, parameterName))
@@ -105,11 +90,7 @@ namespace DtPadUpdater.Utils
 
         internal static void DeleteParameter(String parameterName, String executablePath)
         {
-            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                    {
-                                                        ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                    };
-
+            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
             Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
 
             if (!ExistsParameter(configuration, parameterName))
@@ -124,11 +105,7 @@ namespace DtPadUpdater.Utils
 
         internal static void RenameParameter(String parameterOldName, String parameterNewName, String executablePath)
         {
-            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                    {
-                                                        ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                    };
-
+            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
             Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
 
             if (!ExistsParameter(configuration, parameterOldName))
@@ -148,20 +125,22 @@ namespace DtPadUpdater.Utils
 
         private static bool ExistsParameter(Configuration configuration, String parameterName)
         {
-            bool exists = false;
+            //bool exists = false;
 
-            foreach (String key in configuration.AppSettings.Settings.AllKeys)
-            {
-                if (key != parameterName)
-                {
-                    continue;
-                }
+            //foreach (String key in configuration.AppSettings.Settings.AllKeys)
+            //{
+            //    if (key != parameterName)
+            //    {
+            //        continue;
+            //    }
 
-                exists = true;
-                break;
-            }
+            //    exists = true;
+            //    break;
+            //}
 
-            return exists;
+            //return exists;
+
+            return configuration.AppSettings.Settings.AllKeys.Any(key => key == parameterName);
         }
 
         #endregion Private Methods

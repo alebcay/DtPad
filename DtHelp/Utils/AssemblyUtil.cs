@@ -13,10 +13,7 @@ namespace DtHelp.Utils
 
         internal static String AssemblyVersion
         {
-            get
-            {
-                return Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            }
+            get { return Assembly.GetExecutingAssembly().GetName().Version.ToString(); }
         }
 
         internal static String AssemblyConfiguration

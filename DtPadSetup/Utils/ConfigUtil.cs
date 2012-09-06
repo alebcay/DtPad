@@ -15,11 +15,7 @@ namespace DtPadSetup.Utils
 
         internal static void UpdateParameter(String parameterName, String parameterValue, String executablePath)
         {
-            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                    {
-                                                        ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                    };
-
+            ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
             Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
 
             if (CheckAppSettingExists(configuration, parameterName))

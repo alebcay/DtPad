@@ -95,8 +95,7 @@ namespace DtPadUninstaller.Utils
                     {
                         TabPageControl.ManageControl(control, formName, culture);
                     }
-                    else if (controlType == typeof(FlowLayoutPanel) || controlType == typeof(Panel) || controlType == typeof(SplitContainer)
-                        || controlType == typeof(SplitterPanel) || controlType == typeof(ContextMenuStrip))
+                    else if (controlType == typeof(FlowLayoutPanel) || controlType == typeof(Panel) || controlType == typeof(SplitContainer) || controlType == typeof(SplitterPanel) || controlType == typeof(ContextMenuStrip))
                     {
                         PanelMenuControl.ManageControl(control, formName, culture);
                     }
@@ -142,8 +141,7 @@ namespace DtPadUninstaller.Utils
                 {
                     ToolStripTextBoxStatusControl.ManageControl(item, formName, culture);
                 }
-                else if (itemType == typeof(ToolStripButton) || itemType == typeof(ToolStripSplitButton)
-                    || itemType == typeof(ToolStripComboBox))
+                else if (itemType == typeof(ToolStripButton) || itemType == typeof(ToolStripSplitButton) || itemType == typeof(ToolStripComboBox))
                 {
                     ToolStripButtonComboControl.ManageControl(item, formName, culture);
                 }

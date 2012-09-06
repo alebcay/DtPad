@@ -28,7 +28,7 @@ namespace DtPadSetup.Managers
         {
             try
             {
-                ProcessStartInfo processStart = new ProcessStartInfo(process) {WorkingDirectory = workingDirectory};
+                ProcessStartInfo processStart = new ProcessStartInfo(process) { WorkingDirectory = workingDirectory };
                 Process.Start(processStart);
             }
             catch (Exception exception)

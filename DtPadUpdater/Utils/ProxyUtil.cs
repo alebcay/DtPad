@@ -29,14 +29,7 @@ namespace DtPadUpdater.Utils
             String proxyPassword = CodingUtil.DecodeByte((passwordList[1]).value);
             String proxyDomain = (passwordList[2]).value;
 
-            if (!String.IsNullOrEmpty(proxyDomain))
-            {
-                webClient.Proxy.Credentials = new NetworkCredential(proxyUsername, proxyPassword, proxyDomain);
-            }
-            else
-            {
-                webClient.Proxy.Credentials = new NetworkCredential(proxyUsername, proxyPassword);
-            }
+            webClient.Proxy.Credentials = !String.IsNullOrEmpty(proxyDomain) ? new NetworkCredential(proxyUsername, proxyPassword, proxyDomain) : new NetworkCredential(proxyUsername, proxyPassword);
 
             return webClient;
         }

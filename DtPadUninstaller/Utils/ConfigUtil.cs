@@ -16,12 +16,9 @@ namespace DtPadUninstaller.Utils
         {
             try
             {
-                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                                                        {
-                                                            ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                                                        };
-
+                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
                 Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
+                
                 String parameterValue = configuration.AppSettings.Settings[parameterName].Value;
                 return String.IsNullOrEmpty(parameterValue) ? parameterDefault : parameterValue;
             }
@@ -35,12 +32,9 @@ namespace DtPadUninstaller.Utils
         {
             try
             {
-                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap
-                {
-                    ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName)
-                };
-
+                ExeConfigurationFileMap appConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(executablePath, ConstantUtil.dtPadAppConfigName) };
                 Configuration configuration = ConfigurationManager.OpenMappedExeConfiguration(appConfig, ConfigurationUserLevel.None);
+
                 String parameterValue = configuration.AppSettings.Settings[parameterName].Value;
 
                 int result;

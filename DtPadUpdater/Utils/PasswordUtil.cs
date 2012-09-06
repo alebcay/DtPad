@@ -50,10 +50,7 @@ namespace DtPadUpdater.Utils
         {
             DecryptPasswordConfig();
 
-            ExeConfigurationFileMap pwdConfig = new ExeConfigurationFileMap
-                                                    {
-                                                        ExeConfigFilename = Path.Combine(Application.StartupPath, ConstantUtil.pwFile)
-                                                    };
+            ExeConfigurationFileMap pwdConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(Application.StartupPath, ConstantUtil.pwFile) };
             return ConfigurationManager.OpenMappedExeConfiguration(pwdConfig, ConfigurationUserLevel.None);
         }
 

@@ -300,9 +300,6 @@ namespace DtPadUpdater.Managers
                     updateTextBox.Text = updateTextBox.Text + Environment.NewLine + message;
                     WindowManager.ShowAlertProgramBox(form, message, culture);
                     break;
-
-                default:
-                    break;
             }
         }
 
