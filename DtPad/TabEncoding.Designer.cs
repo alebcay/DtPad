@@ -55,9 +55,9 @@
             "UTF-16 Little Endian",
             "UTF-16 Big Endian",
             "UTF-32 Little Endian"});
-            this.changeIntoComboBox.Location = new System.Drawing.Point(76, 9);
+            this.changeIntoComboBox.Location = new System.Drawing.Point(88, 9);
             this.changeIntoComboBox.Name = "changeIntoComboBox";
-            this.changeIntoComboBox.Size = new System.Drawing.Size(204, 21);
+            this.changeIntoComboBox.Size = new System.Drawing.Size(192, 21);
             this.changeIntoComboBox.TabIndex = 1;
             // 
             // saveButton

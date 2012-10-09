@@ -263,7 +263,7 @@ DtPad no recoge ninguna información sobre el uso y los usuarios. Información q
     <value>Último acceso:</value>
   </data>
   <data name="FileProperties_lastUpdateLabel1" xml:space="preserve">
-    <value>Última actualización:</value>
+    <value>Última actualizac.:</value>
   </data>
   <data name="FileProperties_nameLabel1" xml:space="preserve">
     <value>Nombre:</value>
@@ -528,7 +528,7 @@ Otro</value>
     <value>Mensaje de error (si está presente):</value>
   </data>
   <data name="ReportBug_helpLabel" xml:space="preserve">
-    <value>Enviar por e-mail un informe de bug al autor de DtPad.</value>
+    <value>Enviar un informe de errores al autor de DtPad.</value>
   </data>
   <data name="ReportBug_nameLabel" xml:space="preserve">
     <value>Nombre: *</value>
@@ -543,7 +543,7 @@ Otro</value>
     <value>Enviarme una copia</value>
   </data>
   <data name="ReportBug_Title" xml:space="preserve">
-    <value>Informe de bugs</value>
+    <value>Informe de errores</value>
   </data>
   <data name="Tools_addButtonToolTip" xml:space="preserve">
     <value>Añadir nuevo instrumento</value>
@@ -644,7 +644,7 @@ Maximizada</value>
 
 bienvenidos a Dtpad, el fácil de
 usar editor de texto con una
-interfaz de pestañas y muchas funciones interesantes. Debido a su estado de desarrollo continúan, cada comentario o informe sobre la utilización de DtPad será bienvenido! Utilice la opción &quot;Informe de bugs&quot; dentro de menú &quot;Ayuda&quot;, o escribir un mensaje usando el icono de correo electrónico en la ventana de &quot;Sobre&quot;.
+interfaz de pestañas y muchas funciones interesantes. Debido a su estado de desarrollo continúan, cada comentario o informe sobre la utilización de DtPad será bienvenido! Utilice la opción &quot;Informe de errores&quot; dentro de menú &quot;Ayuda&quot;, o escribir un mensaje usando el icono de correo electrónico en la ventana de &quot;Sobre&quot;.
 Saludos cordiales,</value>
   </data>
   <data name="AlertO_okButton" xml:space="preserve">
@@ -657,7 +657,7 @@ Saludos cordiales,</value>
     <value>Copiar al portapapeles mensaje de error</value>
   </data>
   <data name="ErrorOR_reportBugButton" xml:space="preserve">
-    <value>Informe de bugs</value>
+    <value>Informe de errores</value>
   </data>
   <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
     <value>Copiar al portapapeles mensaje de error</value>
@@ -735,7 +735,7 @@ Saludos cordiales,</value>
     <value>Nuevo</value>
   </data>
   <data name="Form1_openFileFolderPromptToolStripMenuItem" xml:space="preserve">
-    <value>Abrir símbolo del sistema en carpeta del archivo</value>
+    <value>Abrir símbolo sistema en carpeta del archivo</value>
   </data>
   <data name="Form1_openFileFolderToolStripMenuItem" xml:space="preserve">
     <value>Abrir la carpeta del archivo</value>
@@ -882,7 +882,7 @@ Saludos cordiales,</value>
     <value>Nombre</value>
   </data>
   <data name="EmailManager_BugReport" xml:space="preserve">
-    <value>Informe de bugs</value>
+    <value>Informe de errores</value>
   </data>
   <data name="ExplorerManager_DeleteNote" xml:space="preserve">
     <value>Está seguro que desea borrar la nota</value>
@@ -1190,7 +1190,7 @@ Complete la información de extensiones para proceder.</value>
     <value>Reemplazar</value>
   </data>
   <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
-    <value>Informe de bugs...</value>
+    <value>Informe de errores...</value>
   </data>
   <data name="Form1_restoreDtPadToolStripMenuItem" xml:space="preserve">
     <value>Restaurar DtPad</value>
