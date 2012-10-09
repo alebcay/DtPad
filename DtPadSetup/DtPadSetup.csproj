@@ -162,7 +162,6 @@
       <LastGenOutput>FileResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="DtPadSetup.ruleset" />
-    <None Include="Files\Languages\es.resources" />
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Form1.cs</DependentUpon>
@@ -360,6 +359,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Files\Guides\" />
+    <Folder Include="Files\Languages\" />
     <Folder Include="Files\Logs\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
