@@ -67,6 +67,7 @@ namespace DtPad
             this.toolStripSeparator26 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.goToToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyIntoNoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator27 = new System.Windows.Forms.ToolStripSeparator();
             this.dictionaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dictionaryWordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -721,11 +722,13 @@ namespace DtPad
             this.toolStripSeparator26,
             this.selectAllToolStripMenuItem1,
             this.goToToolStripMenuItem1,
+            this.copyIntoNoteToolStripMenuItem,
             this.toolStripSeparator27,
             this.dictionaryToolStripMenuItem1,
             this.internetServicesToolStripMenuItem1});
             this.textBoxContextMenuStrip.Name = "textBoxContextMenuStrip";
             this.textBoxContextMenuStrip.Size = new System.Drawing.Size(212, 242);
+            this.textBoxContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(textBoxContextMenuStrip_Opening);
             // 
             // undoToolStripMenuItem1
             // 
@@ -800,6 +803,13 @@ namespace DtPad
             this.goToToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
             this.goToToolStripMenuItem1.Text = "Go To Line...";
             this.goToToolStripMenuItem1.Click += new System.EventHandler(this.goToToolStripMenuItem1_Click);
+            // 
+            // copyIntoNoteToolStripMenuItem
+            // 
+            this.copyIntoNoteToolStripMenuItem.Name = "copyIntoNoteToolStripMenuItem";
+            this.copyIntoNoteToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.copyIntoNoteToolStripMenuItem.Text = "Copy Into New Note";
+            this.copyIntoNoteToolStripMenuItem.Click += new System.EventHandler(this.copyIntoNoteToolStripMenuItem_Click);
             // 
             // toolStripSeparator27
             // 
@@ -1709,7 +1719,7 @@ namespace DtPad
             // 
             this.rightTabToolStripMenuItem.Name = "rightTabToolStripMenuItem";
             this.rightTabToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.rightTabToolStripMenuItem.Text = "Right Tab Panel Margin";
+            this.rightTabToolStripMenuItem.Text = "Right Edge Of Tab Panel";
             // 
             // eachTabToolStripMenuItem
             // 
@@ -4653,7 +4663,7 @@ namespace DtPad
         internal System.Windows.Forms.SplitContainer verticalSplitContainer;
         internal System.Windows.Forms.ToolStripButton verticalContainerToolStripButton;
         internal System.Windows.Forms.ToolStripMenuItem internalExplorerToolStripMenuItem;
-        private DevExpress.XtraTab.XtraTabPage notesTabPage;
+        internal DevExpress.XtraTab.XtraTabPage notesTabPage;
         private System.Windows.Forms.ToolStripMenuItem closeAllButThisToolStripMenuItem;
         internal System.Windows.Forms.ToolStripStatusLabel rowToolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel rowToolStripStatusLabel;
@@ -4899,6 +4909,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator70;
         private System.Windows.Forms.ToolStripMenuItem dictionaryClearToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dictionaryToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem copyIntoNoteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem internetServicesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem searchInGoogleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem searchInGoogleToolStripMenuItem1;

@@ -364,7 +364,7 @@ namespace DtPad
             // searchHistoryNumericUpDown
             // 
             this.searchHistoryNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
-            this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(89, 92);
+            this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(95, 92);
             this.searchHistoryNumericUpDown.Maximum = new decimal(new int[] {
             15,
             0,
@@ -682,7 +682,9 @@ namespace DtPad
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject3, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
             this.languageComboBox.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1)});
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3)});
             this.languageComboBox.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.languageComboBox.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.languageComboBox.Properties.SmallImages = this.languageImageList;
@@ -1179,7 +1181,7 @@ namespace DtPad
             // customBrowserRadioButton
             // 
             this.customBrowserRadioButton.AutoSize = true;
-            this.customBrowserRadioButton.Location = new System.Drawing.Point(143, 20);
+            this.customBrowserRadioButton.Location = new System.Drawing.Point(163, 20);
             this.customBrowserRadioButton.Name = "customBrowserRadioButton";
             this.customBrowserRadioButton.Size = new System.Drawing.Size(137, 17);
             this.customBrowserRadioButton.TabIndex = 1;
@@ -1237,9 +1239,9 @@ namespace DtPad
             this.renderModeComboBox.Items.AddRange(new object[] {
             "Office 2003",
             "Windows"});
-            this.renderModeComboBox.Location = new System.Drawing.Point(91, 17);
+            this.renderModeComboBox.Location = new System.Drawing.Point(100, 17);
             this.renderModeComboBox.Name = "renderModeComboBox";
-            this.renderModeComboBox.Size = new System.Drawing.Size(241, 21);
+            this.renderModeComboBox.Size = new System.Drawing.Size(232, 21);
             this.renderModeComboBox.TabIndex = 1;
             this.renderModeComboBox.SelectedIndexChanged += new System.EventHandler(this.renderModeComboBox_SelectedIndexChanged);
             // 
@@ -1308,7 +1310,7 @@ namespace DtPad
             // specificFolderRadioButton
             // 
             this.specificFolderRadioButton.AutoSize = true;
-            this.specificFolderRadioButton.Location = new System.Drawing.Point(143, 20);
+            this.specificFolderRadioButton.Location = new System.Drawing.Point(153, 20);
             this.specificFolderRadioButton.Name = "specificFolderRadioButton";
             this.specificFolderRadioButton.Size = new System.Drawing.Size(92, 17);
             this.specificFolderRadioButton.TabIndex = 1;
@@ -1697,7 +1699,7 @@ namespace DtPad
             // backupCustomFolderRadioButton
             // 
             this.backupCustomFolderRadioButton.AutoSize = true;
-            this.backupCustomFolderRadioButton.Location = new System.Drawing.Point(143, 20);
+            this.backupCustomFolderRadioButton.Location = new System.Drawing.Point(155, 20);
             this.backupCustomFolderRadioButton.Name = "backupCustomFolderRadioButton";
             this.backupCustomFolderRadioButton.Size = new System.Drawing.Size(89, 17);
             this.backupCustomFolderRadioButton.TabIndex = 1;
@@ -1821,7 +1823,7 @@ namespace DtPad
             this.destinationImageComboBoxEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Française", "Française", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
             this.destinationImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -1840,7 +1842,7 @@ namespace DtPad
             this.sourceImageComboBoxEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Française", "Française", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
             this.sourceImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;

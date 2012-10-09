@@ -55,7 +55,7 @@
             this.destinationImageComboBoxEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Française", "Française", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
             this.destinationImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
@@ -84,7 +84,7 @@
             this.sourceImageComboBoxEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Française", "Française", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
             this.sourceImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;

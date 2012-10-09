@@ -100,6 +100,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>en.resx</DependentUpon>
     </Compile>
+    <Compile Include="Languages\es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fr.resx</DependentUpon>
+    </Compile>
     <Compile Include="Languages\it.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -140,6 +150,14 @@
     <EmbeddedResource Include="Languages\en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Languages\it.resx">
       <Generator>ResXFileCodeGenerator</Generator>

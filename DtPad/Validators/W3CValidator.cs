@@ -51,7 +51,7 @@ namespace DtPad.Validators
             String text = String.Format(validation, title, pageTextBox.Text, LanguageUtil.GetCurrentLanguageString("Validate", className));
 
             String fileAndPathName = Path.Combine(pathName, fileName);
-            if (FileManager.SaveFileCoreWithEncoding(null, fileAndPathName, text) == false)
+            if (FileManager.SaveFileCoreWithEncoding(form, fileAndPathName, text) == false)
             {
                 return;
             }

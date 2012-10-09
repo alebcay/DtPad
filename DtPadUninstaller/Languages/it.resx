@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
     <value>Copia il messaggio di errore negli appunti</value>
@@ -132,11 +132,11 @@
   <data name="Form1_descriptionLabel" xml:space="preserve">
     <value>DtPad Uninstaller è un'applicazione che rende più facile la disinstallazione di DtPad e dei suoi componenti.
 
-Se preferisci farlo manualmente, semplicemente cancella la cartella di DtPad, dato che esso non fa uso del registro di Windows o di cartelle di sistema.
+Se si preferisce procedere a mano (e non si è abilitata l'integrazione "Apri con" nella finestra delle opzioni ), si può semplicemente cancellare la cartella di DtPad.
 
-Altrimenti clicca su "Disinstalla" per procedere.
+Altrimenti cliccare su "Disinstalla" per procedere.
 
-Se lo desideri, clicca sul link sottostante per inviare un messaggio circa l'utilizzo di DtPad e sul perché hai deciso di disinstallarlo.</value>
+Se lo si desidera, cliccare sul link sottostante per inviare un messaggio circa l'utilizzo di DtPad e sul perché si è deciso di disinstallarlo.</value>
   </data>
   <data name="Form1_linkLabel" xml:space="preserve">
     <value>Clicca qui per inviare una e-mail all'autore</value>

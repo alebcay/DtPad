@@ -41,9 +41,9 @@ namespace DtPad.Utils
         internal const String readme = "Readme.txt";
         internal const String license = "License.txt";
         internal const String dtPadUpdater = "DtPadUpdater.exe";
-        internal const String repository = "http://www.diariotraduttore.com/wp-content/files/dtpad/";
-        internal const String repositoryFE = "http://www.diariotraduttore.com/wp-content/files/dtpad/fe/";
-        internal const String dropboxAuthUrl = "http://www.diariotraduttore.com/wp-content/files/dtpad/dropbox-authentication.html"; //"http://www.diariotraduttore.com/diariorama/dtpad/dropbox-authorization/";
+        internal const String repository = "http://dtpad.diariotraduttore.com/files/";
+        internal const String repositoryFE = "http://dtpad.diariotraduttore.com/files/fe/";
+        internal const String dropboxAuthUrl = "http://dtpad.diariotraduttore.com/files/dropbox-authentication.html";
         internal const int standardMessageWidth = 266;
         internal const int maxLenghtTrayDescription = 63; //Formally in Windows it's 64, but it's necessary to reserve one character
         internal const int maxLenghtForBulletList = 5;
@@ -443,7 +443,7 @@ namespace DtPad.Utils
             new KeyValuePair<String, String>("RememberDropboxAccess", "True"),
             new KeyValuePair<String, String>("LastDropboxAccessToken", String.Empty),
             new KeyValuePair<String, String>("IgnoreNullChar", "False"),
-            //new KeyValuePair<String, String>("CalendarURL", "http://www.diariotraduttore.com/wp-content/files/dtpad/dtpad-calendar.xml"),
+            //new KeyValuePair<String, String>("CalendarURL", "http://dtpad.diariotraduttore.com/files/dtpad-calendar.xml"),
 
             new KeyValuePair<String, String>("ProxyUsername", String.Empty),
             new KeyValuePair<String, String>("ProxyPassword", String.Empty),

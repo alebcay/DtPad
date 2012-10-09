@@ -235,9 +235,9 @@
             this.searchReplaceCentralPanel.Controls.Add(this.searchTextBox);
             this.searchReplaceCentralPanel.Controls.Add(this.replaceTextBox);
             this.searchReplaceCentralPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.searchReplaceCentralPanel.Location = new System.Drawing.Point(62, 25);
+            this.searchReplaceCentralPanel.Location = new System.Drawing.Point(70, 25);
             this.searchReplaceCentralPanel.Name = "searchReplaceCentralPanel";
-            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(647, 75);
+            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(615, 75);
             this.searchReplaceCentralPanel.TabIndex = 6;
             // 
             // searchTextBox
@@ -247,8 +247,9 @@
             this.searchTextBox.Multiline = true;
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.searchTextBox.Size = new System.Drawing.Size(647, 38);
+            this.searchTextBox.Size = new System.Drawing.Size(615, 38);
             this.searchTextBox.TabIndex = 0;
+            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(searchTextBox_KeyDown);
             // 
             // replaceTextBox
             // 
@@ -257,8 +258,9 @@
             this.replaceTextBox.Multiline = true;
             this.replaceTextBox.Name = "replaceTextBox";
             this.replaceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.replaceTextBox.Size = new System.Drawing.Size(647, 37);
+            this.replaceTextBox.Size = new System.Drawing.Size(615, 37);
             this.replaceTextBox.TabIndex = 1;
+            this.replaceTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(replaceTextBox_KeyDown);
             // 
             // rightSearchReplacePanel
             // 
@@ -266,9 +268,9 @@
             this.rightSearchReplacePanel.Controls.Add(this.loopCheckBox);
             this.rightSearchReplacePanel.Controls.Add(this.caseCheckBox);
             this.rightSearchReplacePanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightSearchReplacePanel.Location = new System.Drawing.Point(709, 25);
+            this.rightSearchReplacePanel.Location = new System.Drawing.Point(685, 25);
             this.rightSearchReplacePanel.Name = "rightSearchReplacePanel";
-            this.rightSearchReplacePanel.Size = new System.Drawing.Size(108, 75);
+            this.rightSearchReplacePanel.Size = new System.Drawing.Size(132, 75);
             this.rightSearchReplacePanel.TabIndex = 2;
             // 
             // searchAllTabsCheckBox
@@ -310,7 +312,7 @@
             this.searchReplaceLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.searchReplaceLeftPanel.Location = new System.Drawing.Point(0, 25);
             this.searchReplaceLeftPanel.Name = "searchReplaceLeftPanel";
-            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(62, 75);
+            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(70, 75);
             this.searchReplaceLeftPanel.TabIndex = 1;
             // 
             // replaceLabel

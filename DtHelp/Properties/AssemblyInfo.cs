@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyTitle("DtHelp")]
-[assembly: AssemblyConfiguration("120906")]
+[assembly: AssemblyConfiguration("120912")]
 [assembly: AssemblyProduct("DtHelp")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]

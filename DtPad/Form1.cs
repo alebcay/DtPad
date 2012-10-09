@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -1889,6 +1890,11 @@ namespace DtPad
 
         #region TextBox Context Methods
 
+        private void textBoxContextMenuStrip_Opening(object sender, EventArgs e)
+        {
+            MenuUtil.SetPageTextBoxContextMenu(this, new List<ToolStripMenuItem> { copyIntoNoteToolStripMenuItem, translateSelectedTextToolStripMenuItem, searchInGoogleToolStripMenuItem, searchInWikipediaToolStripMenuItem });
+        }
+
         private void undoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             TextManager.Undo(this);
@@ -1927,6 +1933,11 @@ namespace DtPad
         private void goToToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             WindowManager.ShowGoToLine(this);
+        }
+
+        private void copyIntoNoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NoteManager.CopyTextIntoNewNote(this);
         }
 
         private void dictionaryToolStripMenuItem1_Click(object sender, EventArgs e)

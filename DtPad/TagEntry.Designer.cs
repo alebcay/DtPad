@@ -255,9 +255,9 @@
             // tagTextBox
             // 
             this.tagTextBox.ContextMenuStrip = this.contentContextMenuStrip;
-            this.tagTextBox.Location = new System.Drawing.Point(229, 101);
+            this.tagTextBox.Location = new System.Drawing.Point(243, 101);
             this.tagTextBox.Name = "tagTextBox";
-            this.tagTextBox.Size = new System.Drawing.Size(129, 20);
+            this.tagTextBox.Size = new System.Drawing.Size(115, 20);
             this.tagTextBox.TabIndex = 3;
             this.tagTextBox.TextChanged += new System.EventHandler(this.tagTextBox_TextChanged);
             // 

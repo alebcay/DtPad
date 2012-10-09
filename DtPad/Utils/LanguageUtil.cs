@@ -101,6 +101,10 @@ namespace DtPad.Utils
                     return new CultureInfo("en-GB");
                 case "Italiano":
                     return new CultureInfo("it-IT");
+                case "Français":
+                    return new CultureInfo("fr-FR");
+                case "Español":
+                    return new CultureInfo("es-ES");
 
                 default:
                     return new CultureInfo("en-GB");
@@ -115,6 +119,10 @@ namespace DtPad.Utils
                     return "en";
                 case "Italiano":
                     return "it";
+                case "Français":
+                    return "fr";
+                case "Español":
+                    return "es";
 
                 default:
                     return "en";
@@ -130,7 +138,7 @@ namespace DtPad.Utils
                 case "it":
                     return "Italiano";
                 case "fr":
-                    return "Française";
+                    return "Français";
                 case "es":
                     return "Español";
                 case "de":
@@ -149,7 +157,7 @@ namespace DtPad.Utils
                     return "en";
                 case "Italiano":
                     return "it";
-                case "Française":
+                case "Français":
                     return "fr";
                 case "Español":
                     return "es";
@@ -169,6 +177,10 @@ namespace DtPad.Utils
                     return true;
                 case "Italiano":
                     return false;
+                case "Français":
+                    return false;
+                case "Español":
+                    return false;
 
                 default:
                     return true;
@@ -187,6 +199,10 @@ namespace DtPad.Utils
                     return "MM/dd/yyyy hh:mm:ss tt";
                 case "Italiano":
                     return "dd/MM/yyyy HH:mm:ss";
+                case "Français":
+                    return "dd/MM/yyyy HH:mm:ss";
+                case "Español":
+                    return "dd/MM/yyyy HH:mm:ss";
 
                 default:
                     return "MM/dd/yyyy hh:mm:ss tt";
@@ -200,6 +216,10 @@ namespace DtPad.Utils
                 case "English":
                     return "MM/dd/yyyy";
                 case "Italiano":
+                    return "dd/MM/yyyy";
+                case "Français":
+                    return "dd/MM/yyyy";
+                case "Español":
                     return "dd/MM/yyyy";
 
                 default:
@@ -219,6 +239,10 @@ namespace DtPad.Utils
                     return "com";
                 case "Italiano":
                     return "it";
+                case "Français":
+                    return "fr";
+                case "Español":
+                    return "es";
 
                 default:
                     return "com";

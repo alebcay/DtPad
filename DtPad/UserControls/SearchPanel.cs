@@ -67,6 +67,16 @@ namespace DtPad.UserControls
             //}
         }
 
+        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            ManageReturns(e, searchTextBox);
+        }
+
+        private void replaceTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            ManageReturns(e, replaceTextBox);
+        }
+
         #endregion Window Methods
 
         #region Button Methods
@@ -158,5 +168,27 @@ namespace DtPad.UserControls
         }
 
         #endregion Multilanguage Methods
+
+        #region Private Methods
+
+        private void ManageReturns(KeyEventArgs e, TextBoxBase textBox)
+        {
+            Form1 form = (Form1)ParentForm;
+
+            if (e.KeyCode == Keys.Enter && !e.Shift && !e.Alt && !e.Control)
+            {
+                SearchManager.SearchNextFactory(form);
+                e.SuppressKeyPress = true;
+            }
+            else if (e.KeyCode == Keys.Enter && (e.Shift || e.Alt || e.Control))
+            {
+                textBox.Text += Environment.NewLine;
+                textBox.Select(textBox.TextLength, 0);
+                textBox.ScrollToCaret();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        #endregion Private Methods
     }
 }

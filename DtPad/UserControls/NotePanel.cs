@@ -12,7 +12,7 @@ namespace DtPad.UserControls
     /// <author>Marco Macciò</author>
     internal partial class NotePanel : UserControl
     {
-        private int noteIdentity;
+        internal int noteIdentity { get; private set; }
 
         internal NotePanel()
         {

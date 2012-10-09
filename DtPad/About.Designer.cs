@@ -265,6 +265,7 @@ namespace DtPad
             this.AcceptButton = this.closeButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.closeButton;
             this.ClientSize = new System.Drawing.Size(433, 281);
             this.Controls.Add(this.versionCheckPictureBox);
             this.Controls.Add(this.versionCheckLinkLabel);

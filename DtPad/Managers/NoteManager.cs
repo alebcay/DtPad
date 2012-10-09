@@ -488,6 +488,27 @@ namespace DtPad.Managers
             }
         }
 
+        internal static void CopyTextIntoNewNote(Form1 form)
+        {
+            XtraTabControl verticalTabControl = form.verticalTabControl;
+            ToolStripButton verticalContainerToolStripButton = form.verticalContainerToolStripButton;
+            XtraTabPage notesTabPage = form.notesTabPage;
+            XtraTabControl pagesTabControl = form.pagesTabControl;
+            CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
+
+            if (!verticalContainerToolStripButton.Checked)
+            {
+                WindowManager.CheckInternalExplorer(form, !verticalContainerToolStripButton.Checked, true);
+            }
+
+            verticalTabControl.SelectedTabPage = notesTabPage;
+
+            ExplorerManager.AddNote(form, form.notePanel.noteIdentity);
+            form.notePanel.nodeTextTextBox.Text = pageTextBox.SelectedText;
+            form.notePanel.Select();
+            form.notePanel.nodeTextTextBox.Select();
+        }
+
         #endregion Internal Methods
 
         #region Private Methods

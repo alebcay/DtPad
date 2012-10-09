@@ -111,6 +111,8 @@ namespace DtPad.Languages {
         ///
         ///Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l&apos;associazione &quot;Apri con&quot; nel menu contestuale di Esplora Risorse.
         ///
+        ///Traduzione francese di: Alain &quot;albu77&quot; Buferne.
+        ///
         ///Set principale di icone di: Delacro.
         ///- delacro.deviantart.com
         ///
@@ -118,7 +120,7 @@ namespace DtPad.Languages {
         ///- famfamfam.com
         ///- vistaicons.com
         ///
-        ///Componenti esterni referenziati: SharpZip, iTextSharp, Log4Net, Be.HexEdit [rest of string was truncated]&quot;;.
+        ///Componenti esterni refe [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string About_descriptionTextBox {
             get {
@@ -209,7 +211,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2011.
+        ///   Looks up a localized string similar to 2012.
         /// </summary>
         internal static string About_websiteLabel_FE {
             get {
@@ -418,7 +420,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Svuota appunti.
+        ///   Looks up a localized string similar to Svuota storico appunti.
         /// </summary>
         internal static string clipboardPanel_clearClipboardToolStripButton {
             get {
@@ -2235,15 +2237,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Seleziona la cartella di default di salvataggio e apertura file:.
-        /// </summary>
-        internal static string FileManager_folderDialogDefault {
-            get {
-                return ResourceManager.GetString("FileManager_folderDialogDefault", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Il tipo di PDF selezionato non è supportato da DtPad..
         /// </summary>
         internal static string FileManager_InvalidPdf {
@@ -2394,7 +2387,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ricaricando il file le modifiche apportate andranno perse.
+        ///   Looks up a localized string similar to Ricaricando il file tutte le modifiche apportate andranno perse.
         ///Sei sicuro di voler procedere?.
         /// </summary>
         internal static string FileManager_Reload {
@@ -2832,7 +2825,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rinomina un file aperto senza uscire da DtPad..
+        ///   Looks up a localized string similar to Rinomina un file aperto direttamente da DtPad..
         /// </summary>
         internal static string FileRename_helpLabel {
             get {
@@ -2909,6 +2902,15 @@ namespace DtPad.Languages {
         internal static string FileUtil_folderDialogBackup {
             get {
                 return ResourceManager.GetString("FileUtil_folderDialogBackup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleziona la cartella di default di salvataggio e apertura file:.
+        /// </summary>
+        internal static string FileUtil_folderDialogDefault {
+            get {
+                return ResourceManager.GetString("FileUtil_folderDialogDefault", resourceCulture);
             }
         }
         
@@ -3486,6 +3488,15 @@ namespace DtPad.Languages {
         internal static string Form1_copyFullPathToolStripMenuItem {
             get {
                 return ResourceManager.GetString("Form1_copyFullPathToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copia in nuova nota.
+        /// </summary>
+        internal static string Form1_copyIntoNoteToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_copyIntoNoteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -4480,7 +4491,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Una riga in basso.
+        ///   Looks up a localized string similar to Righe in basso.
         /// </summary>
         internal static string Form1_oneLineDownToolStripMenuItem {
             get {
@@ -4498,7 +4509,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Una riga in alto.
+        ///   Looks up a localized string similar to Righe in alto.
         /// </summary>
         internal static string Form1_oneLineUpToolStripMenuItem {
             get {
@@ -6353,20 +6364,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to File impostazioni e dati.
+        ///   Looks up a localized string similar to File impostazioni e dati &quot;{0}&quot; esportato.
         /// </summary>
-        internal static string ImportExportManager_ExportStatusLabel1 {
+        internal static string ImportExportManager_ExportStatusLabel {
             get {
-                return ResourceManager.GetString("ImportExportManager_ExportStatusLabel1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to esportato.
-        /// </summary>
-        internal static string ImportExportManager_ExportStatusLabel2 {
-            get {
-                return ResourceManager.GetString("ImportExportManager_ExportStatusLabel2", resourceCulture);
+                return ResourceManager.GetString("ImportExportManager_ExportStatusLabel", resourceCulture);
             }
         }
         
@@ -7050,7 +7052,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chiedi conferma per rimozione note.
+        ///   Looks up a localized string similar to Chiedi conferma per eliminazione note.
         /// </summary>
         internal static string notePanel_warningRemoveNoteToolStripButton {
             get {
@@ -7739,7 +7741,9 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to English
-        ///Italiano.
+        ///Italiano
+        ///Français
+        ///Español.
         /// </summary>
         internal static string Options_languageComboBoxItems {
             get {
@@ -11319,7 +11323,7 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Inserisci il percorso e il nome dell&apos;eseguibile
-        ///(es. C:\Programmi\DtPad\DtPad.exe).
+        ///(es. &quot;C:\Programmi\DtPad\DtPad.exe&quot;).
         /// </summary>
         internal static string Tools_commandLinePictureBoxToolTip {
             get {
@@ -11484,7 +11488,7 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Inserisci la cartella di destinazione dell&apos;eseguibile
-        ///(es. C:\Programmi\DtPad).
+        ///(es. &quot;C:\Programmi\DtPad&quot;).
         /// </summary>
         internal static string Tools_workingFolderPictureBoxToolTip {
             get {
@@ -11908,7 +11912,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Se fai utilizzo di un proxy, configuralo nella finestra delle opzioni.
+        ///   Looks up a localized string similar to Se fai utilizzo di un proxy, configuralo nella finestra delle impostazioni.
         /// </summary>
         internal static string VersionCheck_warningPictureBoxToolTip {
             get {
@@ -11953,7 +11957,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DtPad - Validazione CSS W3C.
+        ///   Looks up a localized string similar to DtPad - Validazione W3C CSS.
         /// </summary>
         internal static string W3CValidator_TitleCss {
             get {
@@ -11962,7 +11966,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DtPad - Validazione HTML W3C.
+        ///   Looks up a localized string similar to DtPad - Validazione W3C HTML.
         /// </summary>
         internal static string W3CValidator_TitleHtml {
             get {

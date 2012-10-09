@@ -132,6 +132,8 @@
 
 This application requires Microsoft .NET Framework 4 and use Windows registry only to store "Open With" Explorer context menu menu association.
 
+French translation by: Alain "albu77" Buferne.
+
 Main iconset by: Delacro.
 - delacro.deviantart.com
 
@@ -222,7 +224,7 @@ DtPad does not collect any info about usage and users. Informations that could b
     <value>Insert only file extension (ie. txt)</value>
   </data>
   <data name="Extensions_helpLabel" xml:space="preserve">
-    <value>Set-up file extensions supported by DtPad.</value>
+    <value>Set up file extensions supported by DtPad.</value>
   </data>
   <data name="Extensions_okButton" xml:space="preserve">
     <value>OK</value>
@@ -243,7 +245,7 @@ DtPad does not collect any info about usage and users. Informations that could b
     <value>Remove selected favourite</value>
   </data>
   <data name="Favourites_helpLabel" xml:space="preserve">
-    <value>Manage favourite files for fast opening throught DtPad.</value>
+    <value>Manage favourite files for fast opening through DtPad.</value>
   </data>
   <data name="Favourites_Title" xml:space="preserve">
     <value>Favourites</value>
@@ -413,7 +415,9 @@ fields just in case it requires a manual authentication.</value>
   </data>
   <data name="Options_languageComboBoxItems" xml:space="preserve">
     <value>English
-Italiano</value>
+Italiano
+Français
+Español</value>
   </data>
   <data name="Options_languageLabel" xml:space="preserve">
     <value>Language:</value>
@@ -553,7 +557,7 @@ Other</value>
   </data>
   <data name="Tools_commandLinePictureBoxToolTip" xml:space="preserve">
     <value>Insert the path and name of the executable
-(ie. C:\Program Files\DtPad\DtPad.exe)</value>
+(ie. "C:\Program Files\DtPad\DtPad.exe")</value>
   </data>
   <data name="Tools_descriptionLabel" xml:space="preserve">
     <value>Description:</value>
@@ -586,7 +590,7 @@ Maximized</value>
   </data>
   <data name="Tools_workingFolderPictureBoxToolTip" xml:space="preserve">
     <value>Insert the working path of the executable
-(ie. C:\Program Files\DtPad)</value>
+(ie. "C:\Program Files\DtPad")</value>
   </data>
   <data name="VersionCheck_closeButton" xml:space="preserve">
     <value>Close</value>
@@ -732,10 +736,10 @@ Best regards,</value>
     <value>New</value>
   </data>
   <data name="Form1_openFileFolderPromptToolStripMenuItem" xml:space="preserve">
-    <value>Open File Folder Prompt</value>
+    <value>Open Prompt In File's Folder</value>
   </data>
   <data name="Form1_openFileFolderToolStripMenuItem" xml:space="preserve">
-    <value>Open File Folder</value>
+    <value>Open File's Folder</value>
   </data>
   <data name="searchPanel_replaceLabel" xml:space="preserve">
     <value>Replace:</value>
@@ -798,7 +802,7 @@ Best regards,</value>
     <value>Add Current File</value>
   </data>
   <data name="Form1_clearFilesToolStripMenuItem" xml:space="preserve">
-    <value>Clear Files</value>
+    <value>Clear Recent Files</value>
   </data>
   <data name="Form1_closeAllToolStripMenuItem" xml:space="preserve">
     <value>Close All</value>
@@ -882,19 +886,19 @@ Best regards,</value>
     <value>Bug Report</value>
   </data>
   <data name="ExplorerManager_DeleteNote" xml:space="preserve">
-    <value>Are you sure to delete note</value>
+    <value>Are you sure to delete the note</value>
   </data>
   <data name="ExplorerManager_Note" xml:space="preserve">
     <value>Note</value>
   </data>
   <data name="ExplorerManager_NoteNameNotEmpty" xml:space="preserve">
-    <value>Note title could not be emtpy.</value>
+    <value>Note title cannot be empty.</value>
   </data>
   <data name="ExtensionManager_AlreadyExists" xml:space="preserve">
-    <value>Extension already existing! Choose another description.</value>
+    <value>Extension already existing! Select another description.</value>
   </data>
   <data name="ExtensionManager_ExtensionNameNotEmpty" xml:space="preserve">
-    <value>Extension name could not be empty.</value>
+    <value>Extension name cannot be empty.</value>
   </data>
   <data name="ExtensionManager_New" xml:space="preserve">
     <value>New Extension</value>
@@ -912,7 +916,7 @@ Current window will be closed.</value>
 Current window will be closed.</value>
   </data>
   <data name="ExtensionManager_Unvalorized" xml:space="preserve">
-    <value>Almost one extension is unvalorized.
+    <value>At least one extension is not valorized.
 Complete extensions information to proceed.</value>
   </data>
   <data name="FileListManager_ClearHistoryRecentFiles" xml:space="preserve">
@@ -961,7 +965,7 @@ Complete extensions information to proceed.</value>
     <value>Close Current Tab</value>
   </data>
   <data name="Form1_Closing" xml:space="preserve">
-    <value>Closing the application all unsaved data will get lost.
+    <value>Closing the application, all unsaved data will get lost.
 Do you want to save the changes?</value>
   </data>
   <data name="Form1_convertToolStripMenuItem" xml:space="preserve">
@@ -977,7 +981,7 @@ Do you want to save the changes?</value>
     <value>Copy</value>
   </data>
   <data name="Form1_countOccurencesToolStripMenuItem" xml:space="preserve">
-    <value>Count Occurences</value>
+    <value>Count Occurrences</value>
   </data>
   <data name="Form1_cutAppendToolStripMenuItem" xml:space="preserve">
     <value>Cut Append</value>
@@ -1199,7 +1203,7 @@ Do you want to save the changes?</value>
     <value>Save</value>
   </data>
   <data name="searchPanel_searchCountToolStripButton" xml:space="preserve">
-    <value>Count Occurences</value>
+    <value>Count Occurrences</value>
   </data>
   <data name="Form1_searchToolStripMenuItem" xml:space="preserve">
     <value>Search</value>
@@ -1277,7 +1281,7 @@ Do you want to save the changes?</value>
     <value>View</value>
   </data>
   <data name="notePanel_warningRemoveNoteToolStripButton" xml:space="preserve">
-    <value>Prompt Removal Of Notes</value>
+    <value>Prompt To Delete Notes</value>
   </data>
   <data name="Form1_windowToolStripMenuItem" xml:space="preserve">
     <value>Window</value>
@@ -1298,11 +1302,11 @@ Do you want to save the changes?</value>
     <value>saved</value>
   </data>
   <data name="FileManager_SavingReadonly" xml:space="preserve">
-    <value>Selected file is read-only and could not be overwrited.
-Press OK to choose another destination.</value>
+    <value>Selected file is read-only and cannot be overwritten.
+Press OK to select another destination.</value>
   </data>
   <data name="NoteManager_AlreadyExists" xml:space="preserve">
-    <value>A note with this title already exists. Choose a different one.</value>
+    <value>A note with this title already exists. Select a different one.</value>
   </data>
   <data name="NoteManager_ErrorCreation" xml:space="preserve">
     <value>Error during note file creation.
@@ -1321,7 +1325,7 @@ File will be automatically recreated with default values!</value>
 Start from beginning?</value>
   </data>
   <data name="SearchManager_NotFound" xml:space="preserve">
-    <value>The search text could not be found.</value>
+    <value>The searched text was not found.</value>
   </data>
   <data name="SearchManager_OccurencesMore" xml:space="preserve">
     <value>occurrences found</value>
@@ -1368,13 +1372,13 @@ Current window will be closed.</value>
 Current window will be closed.</value>
   </data>
   <data name="ToolManager_NameNotEmtpy" xml:space="preserve">
-    <value>Tool name could not be empty!</value>
+    <value>Tool name cannot be empty!</value>
   </data>
   <data name="ToolManager_New" xml:space="preserve">
     <value>New Tool</value>
   </data>
   <data name="ToolManager_Unvalorized" xml:space="preserve">
-    <value>Almost one tool is unvalorized.
+    <value>At least one tool is not valorized.
 Complete tools information to proceed.</value>
   </data>
   <data name="VersionCheckManager_ErrorConnection" xml:space="preserve">
@@ -1429,7 +1433,7 @@ Do not show</value>
     <value>License Agreement</value>
   </data>
   <data name="clipboardPanel_clearClipboardToolStripButton" xml:space="preserve">
-    <value>Clear Clipboard</value>
+    <value>Clear Clipboard History</value>
   </data>
   <data name="Form1_clipboardTabPageToolTip" xml:space="preserve">
     <value>Clipboard</value>
@@ -1473,19 +1477,19 @@ File will be automatically recreated with default values!</value>
     <value>Specify, inside the upper text box, a suffix string.</value>
   </data>
   <data name="Form1_oneLineDownToolStripMenuItem" xml:space="preserve">
-    <value>One Row Down</value>
+    <value>Rows Down</value>
   </data>
   <data name="Form1_oneLineUpToolStripMenuItem" xml:space="preserve">
-    <value>One Row Up</value>
+    <value>Rows Up</value>
   </data>
   <data name="Form1_moveLinesUpDownToolStripButton" xml:space="preserve">
     <value>Move Rows Up/Down</value>
   </data>
   <data name="Form1_oneLineDownToolStripMenuItem1" xml:space="preserve">
-    <value>Move One Row Down</value>
+    <value>Move Down</value>
   </data>
   <data name="Form1_oneLineUpToolStripMenuItem1" xml:space="preserve">
-    <value>Move One Row Up</value>
+    <value>Move Up</value>
   </data>
   <data name="Form1_removePrefixToolStripMenuItem1" xml:space="preserve">
     <value>Remove Prefix</value>
@@ -1530,7 +1534,7 @@ File will be automatically recreated with default values!</value>
     <value>Error during tree drives load.</value>
   </data>
   <data name="FileExplorerManager_DeviceNotReady" xml:space="preserve">
-    <value>Selected device is not ready. Insert a disk and retry.</value>
+    <value>Selected device is not ready. Insert a disk and try again.</value>
   </data>
   <data name="FileExplorerManager_NoDisk" xml:space="preserve">
     <value>No disk</value>
@@ -1559,11 +1563,8 @@ File will be automatically recreated with default values!</value>
   <data name="ImportExportManager_ExportFileDescription" xml:space="preserve">
     <value>DtPad export files</value>
   </data>
-  <data name="ImportExportManager_ExportStatusLabel1" xml:space="preserve">
-    <value>Settings and data file</value>
-  </data>
-  <data name="ImportExportManager_ExportStatusLabel2" xml:space="preserve">
-    <value>exported</value>
+  <data name="ImportExportManager_ExportStatusLabel" xml:space="preserve">
+    <value>Settings and data file "{0}" exported</value>
   </data>
   <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Select the folder where to place settings and data (ie. notes, favourites files) export:</value>
@@ -1601,7 +1602,7 @@ Do you still want to continue?</value>
     <value>Compressed</value>
   </data>
   <data name="ZipManager_ExtractSuccess" xml:space="preserve">
-    <value>Selected files extraction completed!</value>
+    <value>Extraction of selected files completed!</value>
   </data>
   <data name="ZipManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Select the folder where extract archive file content:</value>
@@ -1620,16 +1621,16 @@ Do you want to overwrite it?</value>
     <value>File name:</value>
   </data>
   <data name="Form1_promptWindowToolStripMenuItem" xml:space="preserve">
-    <value>Prompt Window</value>
+    <value>Command Prompt Window</value>
   </data>
   <data name="PromptManager_Error" xml:space="preserve">
-    <value>An error occured during prompt command execution!</value>
+    <value>An error occurred during prompt command execution!</value>
   </data>
   <data name="PromptManager_Date" xml:space="preserve">
     <value>The current date is:</value>
   </data>
   <data name="PromptManager_NotFindPath" xml:space="preserve">
-    <value>Could not find the specified path</value>
+    <value>Cannot find the specified path</value>
   </data>
   <data name="PromptManager_Time" xml:space="preserve">
     <value>The current time is:</value>
@@ -1650,7 +1651,7 @@ Do you want to overwrite it?</value>
     <value>File Encoding</value>
   </data>
   <data name="Form1_useOriginalToolStripMenuItem" xml:space="preserve">
-    <value>Use Existing for Opened Files</value>
+    <value>Use Encoding Of Opened Files</value>
   </data>
   <data name="Form1_uTF8ToolStripMenuItem" xml:space="preserve">
     <value>UTF-8</value>
@@ -1659,7 +1660,7 @@ Do you want to overwrite it?</value>
     <value>Encoding</value>
   </data>
   <data name="Options_useExistingCheckBox" xml:space="preserve">
-    <value>Use existing for opened files</value>
+    <value>Use encoding of opened files</value>
   </data>
   <data name="Options_defaultComboBoxItems" xml:space="preserve">
     <value>ANSI
@@ -1683,7 +1684,7 @@ UTF-32 Little Endian</value>
     <value>Reset Settings</value>
   </data>
   <data name="VersionCheck_warningPictureBoxToolTip" xml:space="preserve">
-    <value>If you are using a proxy, try to set it on options window</value>
+    <value>If you are using a proxy, try to set it on settings window</value>
   </data>
   <data name="Form1_lineNumbersToolStripMenuItem" xml:space="preserve">
     <value>Row Numbers</value>
@@ -1707,7 +1708,7 @@ UTF-32 Little Endian</value>
     <value>ROT-13</value>
   </data>
   <data name="FileManager_NoFileToReadonly" xml:space="preserve">
-    <value>Temporary editing area could not be made readonly. Only open files could.</value>
+    <value>Temporary editing area cannot be made read-only. Only existing files can.</value>
   </data>
   <data name="FileManager_NoTextForPDF" xml:space="preserve">
     <value>Text area is empty.</value>
@@ -1716,7 +1717,7 @@ UTF-32 Little Endian</value>
     <value>PDF document (*.pdf)|*.pdf</value>
   </data>
   <data name="Form1_toggleReadonlyToolStripMenuItem" xml:space="preserve">
-    <value>Toggle Readonly</value>
+    <value>Toggle Read-only</value>
   </data>
   <data name="Form1_saveAsPDFToolStripMenuItem" xml:space="preserve">
     <value>File As PDF...</value>
@@ -1752,7 +1753,7 @@ UTF-32 Little Endian</value>
     <value>Font:</value>
   </data>
   <data name="FontSelect_helpLabel" xml:space="preserve">
-    <value>Select text editor font appearance.</value>
+    <value>Select appearance of text font.</value>
   </data>
   <data name="FontSelect_italicCheckBox" xml:space="preserve">
     <value>Italic</value>
@@ -1837,10 +1838,10 @@ UTF-32 Little Endian</value>
   </data>
   <data name="SessionManager_AlreadyOpen" xml:space="preserve">
     <value>A session is already open. Do you want to discard it to open a new one?
-Any unsaved change will get lost.</value>
+Any unsaved changes will get lost.</value>
   </data>
   <data name="SessionManager_openingErrors" xml:space="preserve">
-    <value>One or more session files could not be opened since they not exists anymore in their locations:
+    <value>One or more session files cannot be opened since they not exists anymore in their locations:
 </value>
   </data>
   <data name="Form1_closeSessionToolStripButton" xml:space="preserve">
@@ -1854,7 +1855,7 @@ Any unsaved change will get lost.</value>
 Are you sure you want to proceed?</value>
   </data>
   <data name="SessionManager_SaveSession" xml:space="preserve">
-    <value>All tabs saved succesfully!
+    <value>All tabs saved successfully!
 Click OK to proceed into session file name selection.</value>
   </data>
   <data name="About_createdByLabel_FE" xml:space="preserve">
@@ -1867,7 +1868,7 @@ Click OK to proceed into session file name selection.</value>
     <value>Copyright:</value>
   </data>
   <data name="About_websiteLabel_FE" xml:space="preserve">
-    <value>2011</value>
+    <value>2012</value>
   </data>
   <data name="Welcome_signLabel_FE" xml:space="preserve">
     <value>Marco Macciò</value>
@@ -1879,7 +1880,7 @@ Click OK to proceed into session file name selection.</value>
     <value>Are you sure to clear recent sessions history?</value>
   </data>
   <data name="Form1_clearSessionsToolStripMenuItem" xml:space="preserve">
-    <value>Clear Sessions</value>
+    <value>Clear Recent Sessions</value>
   </data>
   <data name="Form1_recentSessionsToolStripMenuItem" xml:space="preserve">
     <value>Recent Sessions</value>
@@ -1894,13 +1895,13 @@ Click OK to proceed into session file name selection.</value>
     <value>Close</value>
   </data>
   <data name="CharSelect_helpLabel" xml:space="preserve">
-    <value>Select a char to copy into clipboard memory.</value>
+    <value>Select a char to copy into the clipboard.</value>
   </data>
   <data name="CharSelect_Title" xml:space="preserve">
     <value>Symbol Selection</value>
   </data>
   <data name="CharSelect_titleLabel" xml:space="preserve">
-    <value>Double click a char to copy into clipboard:</value>
+    <value>Double click a char to copy it into clipboard:</value>
   </data>
   <data name="Form1_insertSpecialCharToolStripMenuItem" xml:space="preserve">
     <value>Special Char...</value>
@@ -1913,13 +1914,13 @@ Click OK to proceed into session file name selection.</value>
   </data>
   <data name="TabPageObject_WrongObject" xml:space="preserve">
     <value>Input object is not a TabPageObject : {0}.
-Operation could not be completed.</value>
+Operation cannot be completed.</value>
   </data>
   <data name="FileManager_ReadonlyNo" xml:space="preserve">
     <value>File "{0}" set to normal access mode</value>
   </data>
   <data name="FileManager_ReadonlyYes" xml:space="preserve">
-    <value>File "{0}" set to readonly access mode</value>
+    <value>File "{0}" set to read-only access mode</value>
   </data>
   <data name="Options_tabGroupBox1" xml:space="preserve">
     <value>Settings</value>
@@ -1934,7 +1935,7 @@ Bottom
 Left</value>
   </data>
   <data name="Options_tabPositionLabel" xml:space="preserve">
-    <value>Tab position:</value>
+    <value>Tabs position:</value>
   </data>
   <data name="Options_tabMultilineCheckBox" xml:space="preserve">
     <value>Multiline alignment</value>
@@ -1944,7 +1945,7 @@ Left</value>
 Vertical</value>
   </data>
   <data name="Options_tabOrientationLabel" xml:space="preserve">
-    <value>Tab orientation:</value>
+    <value>Tabs orientation:</value>
   </data>
   <data name="Options_noteLabel" xml:space="preserve">
     <value>Note: UTF-8 is a standard encoding method used by a great number of applications, as much as for ANSI. In case of lack of specific needs, it's recommended to use one of this two algorithms.</value>
@@ -1986,20 +1987,20 @@ Vertical</value>
     <value>File With Backup</value>
   </data>
   <data name="FileUtil_folderDialogBackup" xml:space="preserve">
-    <value>Select the folder where to place the backup file:</value>
+    <value>Select the folder where to place the backup:</value>
   </data>
   <data name="FileUtil_folderDialogDefault" xml:space="preserve">
     <value>Select the default folder for saving and opening files:</value>
   </data>
   <data name="Options_backupExtensionWarning" xml:space="preserve">
-    <value>Backup extension could not be empty.</value>
+    <value>Backup extension cannot be empty.</value>
   </data>
   <data name="Options_backupIncrementalCheckBox" xml:space="preserve">
     <value>Incremental numbering (ie. bak0, bak1, ...)</value>
   </data>
   <data name="Options_backupLocationWarning" xml:space="preserve">
     <value>Backup custom folder does not exists on file system.
-Choose another destination.</value>
+Select another destination.</value>
   </data>
   <data name="Form1_calendarTabPageToolTip" xml:space="preserve">
     <value>Calendar</value>
@@ -2008,7 +2009,7 @@ Choose another destination.</value>
     <value>Insert Datetime...</value>
   </data>
   <data name="FileManager_FileInUse" xml:space="preserve">
-    <value>Could not open "{0}".
+    <value>Cannot open "{0}".
 File is in use by another process.</value>
   </data>
   <data name="FileManager_FileNotExisting" xml:space="preserve">
@@ -2021,7 +2022,7 @@ File is in use by another process.</value>
     <value>"{0}" does not exists</value>
   </data>
   <data name="PadText_helpLabel" xml:space="preserve">
-    <value>Align text using filling character as spaces.</value>
+    <value>Align text using the filling character as filler.</value>
   </data>
   <data name="PadText_Title" xml:space="preserve">
     <value>Align Text</value>
@@ -2131,7 +2132,7 @@ Text contained into tabs is equal.</value>
     <value>XML/HTML With DTD</value>
   </data>
   <data name="XmlValidator_Error" xml:space="preserve">
-    <value>Content is uncorrect.
+    <value>Content is incorrect.
 {0}</value>
   </data>
   <data name="XmlValidator_Success" xml:space="preserve">
@@ -2166,14 +2167,14 @@ Text contained into tabs is equal.</value>
 Do you want to save it before close?</value>
   </data>
   <data name="FileManager_FileRenamed" xml:space="preserve">
-    <value>File "{0}" renamed in "{1}"</value>
+    <value>File "{0}" renamed as "{1}"</value>
   </data>
   <data name="FileManager_Reload" xml:space="preserve">
-    <value>Reloading the file current changes will get lost.
+    <value>Reloading the file, all changes will get lost.
 Are you sure to proceed?</value>
   </data>
   <data name="FileManager_RemoveReadonlyToRename" xml:space="preserve">
-    <value>Current file is read-only and could not be renamed.
+    <value>Current file is read-only and cannot be renamed.
 Do you want to remove read-only and proceed?</value>
   </data>
   <data name="FileRename_cancelButton" xml:space="preserve">
@@ -2183,7 +2184,7 @@ Do you want to remove read-only and proceed?</value>
     <value>File name:</value>
   </data>
   <data name="FileRename_helpLabel" xml:space="preserve">
-    <value>Rename an open file without exit from DtPad.</value>
+    <value>Rename an opened file directly from DtPad.</value>
   </data>
   <data name="FileRename_renameButton" xml:space="preserve">
     <value>Rename</value>
@@ -2210,9 +2211,9 @@ Do you want to remove read-only and proceed?</value>
     <value>Absolute width</value>
   </data>
   <data name="PadText_absoluteWidthPictureBoxToolTip" xml:space="preserve">
-    <value>If this option is activated, width value is
-considered as absolute value, otherwise
-is added to maximum selected rows lenght</value>
+    <value>If this option is enabled, the width is intended as
+an absolute value, otherwise it is added to the
+maximum length between those of the selected rows</value>
   </data>
   <data name="Form1_addNewTemplateToolStripMenuItem" xml:space="preserve">
     <value>Manage Templates...</value>
@@ -2248,7 +2249,7 @@ is added to maximum selected rows lenght</value>
     <value>Template name already existing! Choose another description.</value>
   </data>
   <data name="TemplateManager_ErrorReading" xml:space="preserve">
-    <value>Error during trmplate file reading.
+    <value>Error during template file reading.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="TemplateManager_ErrorRemoving" xml:space="preserve">
@@ -2260,13 +2261,13 @@ Current window will be closed.</value>
 Current window will be closed.</value>
   </data>
   <data name="TemplateManager_NameNotEmtpy" xml:space="preserve">
-    <value>Template name could not be empty!</value>
+    <value>Template name cannot be empty!</value>
   </data>
   <data name="TemplateManager_New" xml:space="preserve">
     <value>New Template</value>
   </data>
   <data name="TemplateManager_Unvalorized" xml:space="preserve">
-    <value>Almost one template is unvalorized.
+    <value>At least one template is not valorized.
 Complete templates information to proceed.</value>
   </data>
   <data name="Templates_helpLabel" xml:space="preserve">
@@ -2303,7 +2304,7 @@ Complete templates information to proceed.</value>
     <value>Rows -</value>
   </data>
   <data name="SearchManager_NoDuplicateLines" xml:space="preserve">
-    <value>No duplicate rows where found.</value>
+    <value>No duplicate rows were found.</value>
   </data>
   <data name="Form1_gUIDToolStripMenuItem" xml:space="preserve">
     <value>GUID</value>
@@ -2321,8 +2322,8 @@ Complete templates information to proceed.</value>
     <value>Rename...</value>
   </data>
   <data name="SessionManager_MoreSession" xml:space="preserve">
-    <value>More than one session contained into file {0}.
-Maybe it is corrupted.</value>
+    <value>There are more sessions inside the file "{0}".
+It could be corrupt.</value>
   </data>
   <data name="SessionManager_Renamed" xml:space="preserve">
     <value>Session "{0}" renamed</value>
@@ -2331,7 +2332,7 @@ Maybe it is corrupted.</value>
     <value>Rename Session...</value>
   </data>
   <data name="SessionManager_FileInUse" xml:space="preserve">
-    <value>Could not open "{0}".
+    <value>Cannot open "{0}".
 File is in use by another process.</value>
   </data>
   <data name="SessionManager_FileNotExisting" xml:space="preserve">
@@ -2380,16 +2381,16 @@ File is in use by another process.</value>
     <value>Left</value>
   </data>
   <data name="Form1_rightTabToolStripMenuItem" xml:space="preserve">
-    <value>Right Tab Panel Margin</value>
+    <value>Right Edge Of Tab Panel</value>
   </data>
   <data name="Form1_rightToolStripMenuItem" xml:space="preserve">
     <value>Right</value>
   </data>
   <data name="Form1_tabOrientationToolStripMenuItem" xml:space="preserve">
-    <value>Tab Orientation</value>
+    <value>Tabs Orientation</value>
   </data>
   <data name="Form1_tabPositionToolStripMenuItem" xml:space="preserve">
-    <value>Tab Position</value>
+    <value>Tabs Position</value>
   </data>
   <data name="Form1_topToolStripMenuItem" xml:space="preserve">
     <value>Top</value>
@@ -2516,8 +2517,8 @@ this website: www.regular-expressions.info</value>
     <value>XML Tree</value>
   </data>
   <data name="InternetServicesManager_Error" xml:space="preserve">
-    <value>An error occured sending the request to Google.
-Verify that internet connection is active or try to send a smaller amount of text.</value>
+    <value>An error occurred sending the request to Google.
+Verify that the internet connection is active or try to send a smaller amount of text.</value>
   </data>
   <data name="Form1_translateSelectedTextToolStripMenuItem" xml:space="preserve">
     <value>[GG] Translate Selected Text...</value>
@@ -2550,7 +2551,7 @@ Verify that internet connection is active or try to send a smaller amount of tex
     <value>Destination:</value>
   </data>
   <data name="TranslateText_helpLabel" xml:space="preserve">
-    <value>Choose source and destination language.</value>
+    <value>Select source and destination language.</value>
   </data>
   <data name="TranslateText_sourceLanguageLabel" xml:space="preserve">
     <value>Source:</value>
@@ -2562,16 +2563,16 @@ Verify that internet connection is active or try to send a smaller amount of tex
     <value>Translate</value>
   </data>
   <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row number panel has been temporarily disabled because of a large
-number of pasted text lines. It is possibile to reopen at anytime.</value>
+    <value>Row numbers panel has been temporarily disabled because of a large
+number of pasted text lines. It is possible to open it again at anytime.</value>
   </data>
   <data name="XmlEditor_Error" xml:space="preserve">
-    <value>Content is uncorrect.
+    <value>Content is incorrect.
 {0}</value>
   </data>
   <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row number panel has been temporarily disabled because of a large
-number of text lines. It is possibile to reopen at anytime.</value>
+    <value>Row numbers panel has been temporarily disabled because of a large
+number of text lines. It is possible to open it again at anytime.</value>
   </data>
   <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
     <value>New And Paste</value>
@@ -2592,10 +2593,10 @@ number of text lines. It is possibile to reopen at anytime.</value>
     <value>Collapse all nodes</value>
   </data>
   <data name="XmlEditor_expandButtonToolTip" xml:space="preserve">
-    <value>Expands all nodes</value>
+    <value>Expand all nodes</value>
   </data>
   <data name="Options_hideLinesCheckBox" xml:space="preserve">
-    <value>Hide row numers if text exceed lines</value>
+    <value>Hide row numbers if text exceed lines</value>
   </data>
   <data name="FileExplorerManager_ListDirectoryHeader" xml:space="preserve">
     <value>Directory listed:</value>
@@ -2625,8 +2626,8 @@ number of text lines. It is possibile to reopen at anytime.</value>
     <value>To:</value>
   </data>
   <data name="Options_helpHideLinesPictureBoxToolTip" xml:space="preserve">
-    <value>It is strongly recommended to let following property
-enabled, so to avoid long opening of large files.</value>
+    <value>It is strongly recommended to leave following property
+enabled, so as to avoid slow opening of large files.</value>
   </data>
   <data name="ConstantUtil_NoDefault" xml:space="preserve">
     <value>Default value for "{0}" parameter not found.</value>
@@ -2647,7 +2648,7 @@ Test required more then {0} second to be completed.</value>
   </data>
   <data name="OptionManager_SureReset" xml:space="preserve">
     <value>Are you sure to reset options to default?
-All saved settings will get loose!</value>
+All saved settings will get lost!</value>
   </data>
   <data name="notePanel_exportNotesToolStripSplitButton" xml:space="preserve">
     <value>Export As...</value>
@@ -2764,10 +2765,10 @@ All saved settings will get loose!</value>
     <value>Open Selected Files</value>
   </data>
   <data name="SearchFilesManager_SureToClean" xml:space="preserve">
-    <value>Are you sure to clean search in files results?</value>
+    <value>Are you sure to clear search in files results?</value>
   </data>
   <data name="SearchInFiles_NoResults" xml:space="preserve">
-    <value>No results founded!</value>
+    <value>No results found!</value>
   </data>
   <data name="searchInFilesPanel_openSelectedFilesToolStripMenuItem" xml:space="preserve">
     <value>Open File</value>
@@ -2791,11 +2792,11 @@ All saved settings will get loose!</value>
     <value>Show Week Numbers</value>
   </data>
   <data name="SessionManager_XmlDocError" xml:space="preserve">
-    <value>File "{0}" does not contain a valida XML structure.</value>
+    <value>File "{0}" does not contain a valid XML structure.</value>
   </data>
   <data name="TabManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row number panel has been temporarily disabled because of a large
-number of text lines. It is possibile to reopen at anytime.</value>
+    <value>Row numbers panel has been temporarily disabled because of a large
+number of text lines. It is possible to open it again at anytime.</value>
   </data>
   <data name="searchInFilesPanel_newSearchToolStripButton" xml:space="preserve">
     <value>New Search...</value>
@@ -2867,10 +2868,10 @@ number of text lines. It is possibile to reopen at anytime.</value>
     <value>No text selected.</value>
   </data>
   <data name="Options_openWithCheckBox" xml:space="preserve">
-    <value>Open With link</value>
+    <value>"Open With" link</value>
   </data>
   <data name="Options_sendToCheckBox" xml:space="preserve">
-    <value>Send To link</value>
+    <value>"Send To" association</value>
   </data>
   <data name="Options_shellGroupBox1" xml:space="preserve">
     <value>Explorer Context Menu</value>
@@ -3201,14 +3202,14 @@ Required format: example@email.com</value>
     <value>Save</value>
   </data>
   <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row number panel has been temporarily disabled because of a large
-number of text lines. It is possibile to reopen at anytime.</value>
+    <value>Row numbers panel has been temporarily disabled because of a large
+number of text lines. It is possible to open it again at anytime.</value>
   </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
     <value>File "{0}" deleted</value>
   </data>
   <data name="FileManager_SureDeleteFile" xml:space="preserve">
-    <value>Are you sure to delete
+    <value>Are you sure to delete the
 "{0}" file?</value>
   </data>
   <data name="Form1_deleteFileToolStripMenuItem" xml:space="preserve">
@@ -3256,7 +3257,7 @@ Verify that URL is correct, or that its website is available.</value>
     <value>Enlarge the window to the size of the screen</value>
   </data>
   <data name="Options_folderOpenedFileCheckBox" xml:space="preserve">
-    <value>Override setting with active file's folder</value>
+    <value>Override setting with the folder of active file</value>
   </data>
   <data name="UrlEntry_copyToolStripMenuItem" xml:space="preserve">
     <value>Copy</value>
@@ -3284,7 +3285,7 @@ Do you want to start now update process?</value>
     <value>Enable automatic DtPad version check</value>
   </data>
   <data name="Options_frequencyAutomaticUpdateComboBoxItems" xml:space="preserve">
-    <value>Montly
+    <value>Monthly
 Weekly</value>
   </data>
   <data name="Options_frequencyAutomaticUpdateLabel" xml:space="preserve">
@@ -3376,7 +3377,7 @@ Do you want to overwrite it?</value>
     <value>Create new folder</value>
   </data>
   <data name="DropboxFileDialog_superiorLevelButtonToolTip" xml:space="preserve">
-    <value>Superior level</value>
+    <value>Up one level</value>
   </data>
   <data name="NameEntry_cancelButton" xml:space="preserve">
     <value>Cancel</value>
@@ -3479,7 +3480,7 @@ Verify to be authenticated on it by opening "www.dropbox.com" with your default 
     <value>Archive Password Entry</value>
   </data>
   <data name="notePanel_openOnEditorToolStripMenuItem" xml:space="preserve">
-    <value>Open On Editor</value>
+    <value>Open Into Editor</value>
   </data>
   <data name="Options_keepBulletListOnReturnCheckBox" xml:space="preserve">
     <value>Keep bullet lists on return</value>
@@ -3593,8 +3594,8 @@ Verify to be authenticated on it by opening "www.dropbox.com" with your default 
     <value>Close All</value>
   </data>
   <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row number panel has been temporarily disabled because of a large
-number of text lines. It is possibile to reopen at anytime.</value>
+    <value>Row numbers panel has been temporarily disabled because of a large
+number of text lines. It is possible to open it again at anytime.</value>
   </data>
   <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
     <value>Blue</value>
@@ -3641,7 +3642,7 @@ Select two different languages to proceed.</value>
     <value>.NET CLR version:</value>
   </data>
   <data name="Statistics_helpLabel" xml:space="preserve">
-    <value>Some infos about system environment.</value>
+    <value>Some info about system environment.</value>
   </data>
   <data name="Statistics_machineNameLabel1" xml:space="preserve">
     <value>Computer name:</value>
@@ -3723,10 +3724,10 @@ Select two different languages to proceed.</value>
   </data>
   <data name="FileManager_UnauthorizedAccess" xml:space="preserve">
     <value>Unauthorized file access!
-Connected user does not have enough rights to save this file.</value>
+Current user does not have enough rights to save this file.</value>
   </data>
   <data name="FileManager_UserNotAdmin" xml:space="preserve">
-    <value>Connected user does not have administrator rights.
+    <value>Current user does not have administrator rights.
 It will not be possible to save edits on this file.</value>
   </data>
   <data name="SystemUtil_New" xml:space="preserve">
@@ -3832,7 +3833,7 @@ before to proceed with session saving.</value>
   </data>
   <data name="SessionManager_Empty" xml:space="preserve">
     <value>Selected session is empty.
-The file may be corrupted.</value>
+It could be corrupt.</value>
   </data>
   <data name="DropboxManager_ProxyHostRequired" xml:space="preserve">
     <value>To authenticate through proxy server, Dropbox requires explicitly its address.
@@ -3844,13 +3845,13 @@ Please, write it in the appropriate field in the settings dialog ("Internet" tab
 Press Yes to continue, No to cancel.</value>
   </data>
   <data name="Form1_logoutFromDropboxToolStripMenuItem" xml:space="preserve">
-    <value>Log Out From Dropbox</value>
+    <value>Logout From Dropbox</value>
   </data>
   <data name="DropboxManager_DropboxLogOut" xml:space="preserve">
     <value>Logged out from Dropbox</value>
   </data>
   <data name="FileListManager_AlreadyFavourite" xml:space="preserve">
-    <value>Selected file has already been registered as favorite.</value>
+    <value>Selected file has already been registered as favourite.</value>
   </data>
   <data name="Form1_favouriteSessionToolStripButton" xml:space="preserve">
     <value>Add Session To Favourite Files</value>
@@ -3867,7 +3868,7 @@ as "{1}"?</value>
 as "{1}"?</value>
   </data>
   <data name="DropboxManager_WarningRenaming" xml:space="preserve">
-    <value>It was not possibile to rename the object. Check if it is in readonly state.</value>
+    <value>It was not possible to rename the object. Check if it is in read-only state.</value>
   </data>
   <data name="DropboxFileDialog_deleteToolStripMenuItem1" xml:space="preserve">
     <value>Delete</value>
@@ -3881,10 +3882,10 @@ as "{1}"?</value>
 "{0}"?</value>
   </data>
   <data name="DropboxManager_WarningDeleting" xml:space="preserve">
-    <value>It was not possibile to delete the object.</value>
+    <value>It was not possible to delete the object.</value>
   </data>
   <data name="Options_dropboxDeleteCheckBox" xml:space="preserve">
-    <value>Allow delete file and folder operation</value>
+    <value>Allow the deletion of files and folders</value>
   </data>
   <data name="Options_dropboxGroupBox1" xml:space="preserve">
     <value>Usage</value>
@@ -4000,7 +4001,7 @@ The file will be saved with the first of the two to maintain it consistent.</val
     <value>XML file content is not valid. Do you still want to proceed?</value>
   </data>
   <data name="FileListManager_AddedFavourite" xml:space="preserve">
-    <value>File "{0}" was added to favorites.</value>
+    <value>File "{0}" was added to favourites.</value>
   </data>
   <data name="Form1_normalizeToolStripMenuItem" xml:space="preserve">
     <value>Normalize HTML</value>
@@ -4039,7 +4040,7 @@ The file will be saved with the first of the two to maintain it consistent.</val
     <value>Tag...</value>
   </data>
   <data name="FormatManager_TagTypeEmpty" xml:space="preserve">
-    <value>Tag type value is emtpy.</value>
+    <value>Tag type value is empty.</value>
   </data>
   <data name="TagEntry_cancelButton" xml:space="preserve">
     <value>Close</value>
@@ -4133,7 +4134,7 @@ Insert them, or change tag type selection.</value>
     <value>There is {0} word suggestion</value>
   </data>
   <data name="DictionaryManager_Uncorrect" xml:space="preserve">
-    <value>uncorrect</value>
+    <value>incorrect</value>
   </data>
   <data name="DictionaryManager_Word" xml:space="preserve">
     <value>The word "{0}" is {1}</value>
@@ -4229,10 +4230,10 @@ Check this URL to download:
     <value>Positions to move the current row:</value>
   </data>
   <data name="tabPanel_moveTabFirstToolStripButton" xml:space="preserve">
-    <value>Move First</value>
+    <value>Move As First</value>
   </data>
   <data name="tabPanel_moveTabLastToolStripButton" xml:space="preserve">
-    <value>Move Last</value>
+    <value>Move As Last</value>
   </data>
   <data name="notePanel_blackstandardToolStripMenuItem" xml:space="preserve">
     <value>Black (Standard)</value>
@@ -4253,7 +4254,7 @@ Check this URL to download:
     <value>Tag</value>
   </data>
   <data name="CustomFilesManager_HostsClose" xml:space="preserve">
-    <value>To reopen the panel, click "View -&gt; Hosts File Configurator".</value>
+    <value>To open the panel again, click "View -&gt; Hosts File Configurator".</value>
   </data>
   <data name="WindowManager_SureResetWindow" xml:space="preserve">
     <value>Are you sure you want to restore the default appearance settings of DtPad?</value>
@@ -4304,11 +4305,11 @@ Check this URL to download:
     <value>The screenshot has been saved into clipboard.</value>
   </data>
   <data name="FileManager_FileTooHeavy" xml:space="preserve">
-    <value>Could not open "{0}".
+    <value>Cannot open "{0}".
 File size is larger than allowed (100 MB).</value>
   </data>
   <data name="FileManager_NoMessageFileTooHeavy" xml:space="preserve">
-    <value>"{0}" larger than allowed (100 MB)</value>
+    <value>"{0}" is larger than allowed (100 MB)</value>
   </data>
   <data name="FileProperties_Bytes" xml:space="preserve">
     <value>bytes</value>
@@ -4325,7 +4326,7 @@ File size is larger than allowed (100 MB).</value>
   <data name="SessionManager_NoExport" xml:space="preserve">
     <value>The export is allowed only for sessions whose files are located in the same
 session folder or in subfolders.
-This session contains files that are in different trees, so you can not proceed.</value>
+This session contains files that are in different trees, so you cannot proceed.</value>
   </data>
   <data name="SessionManager_SaveSessionForExport" xml:space="preserve">
     <value>The open session may have been changed.
@@ -4370,5 +4371,8 @@ Do you want to overwrite it?</value>
   <data name="MergeTabs_Conflict" xml:space="preserve">
     <value>Tabs refreshed under the merge window.
 Reselect interested tabs to proceed.</value>
+  </data>
+  <data name="Form1_copyIntoNoteToolStripMenuItem" xml:space="preserve">
+    <value>Copy Into New Note</value>
   </data>
 </root>

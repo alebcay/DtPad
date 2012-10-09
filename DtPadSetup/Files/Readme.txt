@@ -123,6 +123,8 @@ Programma di: Marco Macciò
 Piattaforma usata: Microsoft .NET Framework 4
 [link: www.microsoft.com/downloads/it-it/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7]
 
+Traduzione francese di: Alain "albu77" Buferne
+
 Set principale di icone di: Delacro
 [link: delacro.deviantart.com]
 
@@ -202,4 +204,4 @@ Il confronto è un momento molto importante per comprendere l'utilità del proprio
 	2.7.2.40 (01/06/2012)
 	2.7.3.40 (05/06/2012)
 	2.7.4.40 (21/08/2012)
-2.8.0.40 (06/09/2012)
+2.8.0.40 (09/10/2012)

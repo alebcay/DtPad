@@ -125,7 +125,7 @@ namespace DtPad
             }
             if (!DictionaryManager.ExistsDictionary("fr"))
             {
-                languageComboBox.Properties.Items.Remove(languageComboBox.Properties.Items.GetItem("Française"));
+                languageComboBox.Properties.Items.Remove(languageComboBox.Properties.Items.GetItem("Français"));
             }
             if (!DictionaryManager.ExistsDictionary("it"))
             {

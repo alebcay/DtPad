@@ -52,12 +52,20 @@ namespace DtPadSetup.Managers
         {
             ComboBox languageComboBox = form.languageComboBox;
 
-            if (languageComboBox.SelectedIndex == 0)
+            switch (languageComboBox.SelectedIndex)
             {
-                return "en";
-            }
+                case 0:
+                    return "en";
+                case 1:
+                    return "it";
+                case 2:
+                    return "fr";
+                case 3:
+                    return "es";
 
-            return languageComboBox.SelectedIndex == 1 ? "it" : "en";
+                default:
+                    return "en";
+            }
         }
 
         #endregion Internal Methods

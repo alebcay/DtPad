@@ -145,7 +145,7 @@
     <value>Dominio:</value>
   </data>
   <data name="Form1_destinationPathLabel" xml:space="preserve">
-    <value>Selezione la cartella di destinazione:</value>
+    <value>Seleziona la cartella di destinazione:</value>
   </data>
   <data name="Form1_dotNetRadioButton" xml:space="preserve">
     <value>Standard</value>
@@ -160,12 +160,11 @@
     <value>Seleziona la cartella dove posizionare DtPad:</value>
   </data>
   <data name="Form1_infoLabel" xml:space="preserve">
-    <value>Informazione: per il momento DtPad supporta solo la
-lingua inglese e italiana. Successive versioni di
-questo editor potranno supportare anche altre
-localizzazioni. Se sei interessato a dare supporto,
-contattami usando la form contenuta nella pagina
-sotto indicata.</value>
+    <value>Informazione: per il momento DtPad supporta la
+lingua inglese, italiana, francese e spagnola. Versioni
+future potrebbero supportare anche altre lingue.
+Se sei interessato a fornire aiuto, contattami usando
+la form contenuta nella pagina sotto indicata.</value>
   </data>
   <data name="Form1_installGroupBox1" xml:space="preserve">
     <value>Installa</value>
@@ -185,7 +184,7 @@ sotto indicata.</value>
   <data name="Form1_introLabel" xml:space="preserve">
     <value>Benvenuto nel setup di DtPad!
 
-DtPad è un editor testuale che non fa uso del registro di Windows, basato sul Framework .NET 4 (RICHIESTO, disponibile sul sito Microsoft) e distribuito sotto licenza Apache License, Version 2.0 (apache.org/licenses/LICENSE-2.0).
+DtPad è un editor testuale, basato sul Framework .NET 4 (RICHIESTO, disponibile sul sito Microsoft) e distribuito sotto licenza Apache License, Version 2.0 (apache.org/licenses/LICENSE-2.0).
 
 Clicca sul bottone "Avanti" per procedere.</value>
   </data>

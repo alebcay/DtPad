@@ -190,10 +190,10 @@ If a problem persist, or DtPad seems to be broken, download the latest version f
     <value>Click on "Start DtPad" button to open the new version.</value>
   </data>
   <data name="UpdateManager_NoInfo" xml:space="preserve">
-    <value>No update informations founded for your DtPad version!</value>
+    <value>No updates available for your version of DtPad!</value>
   </data>
   <data name="UpdateManager_Proxy" xml:space="preserve">
-    <value>If you are using a proxy, try to set it on DtPad options window. If the problem persist manually download the last version from www.diariotraduttore.com!</value>
+    <value>If you are using a proxy, try to set it on DtPad options window. If the problem persist manually download the last version from {0}!</value>
   </data>
   <data name="UpdateManager_Read" xml:space="preserve">
     <value>Reading new version information...</value>
@@ -202,10 +202,10 @@ If a problem persist, or DtPad seems to be broken, download the latest version f
     <value>Renaming file "{0}" in "{1}"...</value>
   </data>
   <data name="UpdateManager_REN_KEY" xml:space="preserve">
-    <value>Renaming configuration key "{0}" in "{1}"...</value>
+    <value>Renaming configuration key "{0}" as "{1}"...</value>
   </data>
   <data name="UpdateManager_Success" xml:space="preserve">
-    <value>DtPad succesfully updated!</value>
+    <value>DtPad successfully updated!</value>
   </data>
   <data name="UpdateManager_Update" xml:space="preserve">
     <value>Performing version update...</value>
@@ -229,16 +229,16 @@ If a problem persist, or DtPad seems to be broken, download the latest version f
     <value>Program execution interrupted!</value>
   </data>
   <data name="Program_InstanceDtPad" xml:space="preserve">
-    <value>Close any instance of DtPad before start the update process.</value>
+    <value>Close any instance of DtPad before to start the update process.</value>
   </data>
   <data name="Program_InstanceDtHelp" xml:space="preserve">
-    <value>Close any instance of DtHelp before start the update process.</value>
+    <value>Close any instance of DtHelp before to start the update process.</value>
   </data>
   <data name="Program_InstanceDtPadUninstaller" xml:space="preserve">
-    <value>Close any instance of DtPad Uninstaller before start the update process.</value>
+    <value>Close any instance of DtPad Uninstaller before to start the update process.</value>
   </data>
   <data name="Program_InstanceDtPadUpdater" xml:space="preserve">
-    <value>There is already an instance of DtPad Updater open.</value>
+    <value>There is already an opened instance of DtPad Updater.</value>
   </data>
   <data name="AlertO_okButton" xml:space="preserve">
     <value>OK</value>
@@ -249,17 +249,17 @@ If a problem persist, or DtPad seems to be broken, download the latest version f
   <data name="Form1_descriptionLabel_FE" xml:space="preserve">
     <value>Welcome to DtPad Updater!
 
-Click over "Start Update" botton to begin the update process. Any existing setting will be mantained.
+Click on "Start Update" botton to begin the update process. Any existing setting will be mantained.
 
-In case of errors, DtPad Updater will restore actual version files and it could be possible to repeat the process.
+In case of errors, DtPad Updater will restore the previous version of the file so you can re-launch the process.
 
-If a problem persist, or DtPad seems to be broken, contact the author.</value>
+If a problem persist, or DtPad seems to be faulty, contact the author.</value>
   </data>
   <data name="UpdateManager_ErrorCheckVersion" xml:space="preserve">
-    <value>Error during DtPadUpdater version check!</value>
+    <value>Error during DtPad Updater version check!</value>
   </data>
   <data name="UpdateManager_OldVersion" xml:space="preserve">
-    <value>Actual DtPadUpdater version is outdated.
+    <value>Current DtPad Updater version is outdated.
 
 Start the update process from DtPad "Help -&gt; Check for New Version..." menu.</value>
   </data>

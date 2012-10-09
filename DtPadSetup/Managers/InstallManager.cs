@@ -57,29 +57,15 @@ namespace DtPadSetup.Managers
                 break;
             }
 
-            long requiredSpace = FileResource.DtPad_exe.Length + FileResource.DtPad_exe_config.Length +
-                                 FileResource.DtPad_exe_pw.Length +
-                                 FileResource.DtPad_exe_fv.Length + FileResource.DtPad_exe_rf.Length +
-                                 FileResource.DtPad_exe_ex.Length + FileResource.DtPad_exe_sh.Length +
-                                 FileResource.DtPad_exe_to.Length + FileResource.DtPad_exe_no.Length +
-                                 FileResource.DtPad_exe_cl.Length + FileResource.DtPad_exe_sf.Length +
-                                 FileResource.DtPadUpdater_exe.Length + FileResource.DtHelp_exe.Length +
-                                 FileResource.Readme_txt.Length + FileResource.en_resources.Length +
-                                 FileResource.it_resources.Length + FileResource.License_txt.Length +
-                                 FileResource.DevExpress_Data_v12_1_dll.Length +
-                                 FileResource.DevExpress_Utils_v12_1_dll.Length +
-                                 FileResource.DevExpress_XtraEditors_v12_1_dll.Length + FileResource.log4net_dll.Length +
-                                 FileResource.ICSharpCode_SharpZipLib_dll.Length + FileResource.DtControls_dll.Length +
-                                 FileResource.itextsharp_dll.Length + FileResource.Info_txt.Length +
-                                 FileResource.DtPadUninstaller_exe.Length + FileResource.DtPad_exe_rs.Length +
-                                 FileResource.DtPad_exe_tm.Length +
-                                 FileResource.Be_Windows_Forms_HexBox_dll.Length + FileResource.DtPad_exe_rp.Length +
-                                 FileResource.DtPad_exe_ru.Length + FileResource.XmlGridControl_dll.Length +
-                                 FileResource.MonthCalendar_dll.Length +
-                                 FileResource.AppLimit_CloudComputing_SharpBox_Net40_dll.Length +
-                                 FileResource.Newtonsoft_Json_dll.Length + FileResource.Microsoft_WindowsAPICodePack_dll.Length +
-                                 FileResource.Microsoft_WindowsAPICodePack_Shell_dll.Length + FileResource.NHunspell_dll.Length +
-                                 FileResource.Hunspellx86_dll.Length + FileResource.Hunspellx64_dll.Length;
+            long requiredSpace = FileResource.DtPad_exe.Length + FileResource.DtPad_exe_config.Length + FileResource.DtPad_exe_pw.Length + FileResource.DtPad_exe_fv.Length + FileResource.DtPad_exe_rf.Length +
+                                 FileResource.DtPad_exe_ex.Length + FileResource.DtPad_exe_sh.Length + FileResource.DtPad_exe_to.Length + FileResource.DtPad_exe_no.Length + FileResource.DtPad_exe_cl.Length +
+                                 FileResource.DtPad_exe_sf.Length + FileResource.DtPadUpdater_exe.Length + FileResource.DtHelp_exe.Length + FileResource.Readme_txt.Length + FileResource.en_resources.Length +
+                                 FileResource.it_resources.Length + FileResource.fr_resources.Length + FileResource.es_resources.Length + FileResource.License_txt.Length + FileResource.DevExpress_Data_v12_1_dll.Length +
+                                 FileResource.DevExpress_Utils_v12_1_dll.Length + FileResource.DevExpress_XtraEditors_v12_1_dll.Length + FileResource.log4net_dll.Length + FileResource.ICSharpCode_SharpZipLib_dll.Length +
+                                 FileResource.DtControls_dll.Length + FileResource.itextsharp_dll.Length + FileResource.Info_txt.Length + FileResource.DtPadUninstaller_exe.Length + FileResource.DtPad_exe_rs.Length +
+                                 FileResource.DtPad_exe_tm.Length + FileResource.Be_Windows_Forms_HexBox_dll.Length + FileResource.DtPad_exe_rp.Length + FileResource.DtPad_exe_ru.Length + FileResource.XmlGridControl_dll.Length +
+                                 FileResource.MonthCalendar_dll.Length + FileResource.AppLimit_CloudComputing_SharpBox_Net40_dll.Length + FileResource.Newtonsoft_Json_dll.Length + FileResource.Microsoft_WindowsAPICodePack_dll.Length +
+                                 FileResource.Microsoft_WindowsAPICodePack_Shell_dll.Length + FileResource.NHunspell_dll.Length + FileResource.Hunspellx86_dll.Length + FileResource.Hunspellx64_dll.Length;
                                 //+ GuideResource.DtPadGuide_en_dhg.Length + GuideResource.DtPadGuide_it_dhg.Length;
 
             double requiredMbSpace = (requiredSpace / 1024f) / 1024f;
@@ -189,6 +175,8 @@ namespace DtPadSetup.Managers
                 //Language files
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Languages\\en.resources"), FileResource.en_resources);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Languages\\it.resources"), FileResource.it_resources);
+                WriteFileAndSetPermissions(Path.Combine(destinationPath, "Languages\\fr.resources"), FileResource.fr_resources);
+                WriteFileAndSetPermissions(Path.Combine(destinationPath, "Languages\\es.resources"), FileResource.es_resources);
                 installProgressBar.PerformStep();
                 
                 //Guides

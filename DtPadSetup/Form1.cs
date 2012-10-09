@@ -41,6 +41,12 @@ namespace DtPadSetup
                 case "it":
                     languageComboBox.SelectedIndex = 1;
                     break;
+                case "fr":
+                    languageComboBox.SelectedIndex = 2;
+                    break;
+                case "es":
+                    languageComboBox.SelectedIndex = 3;
+                    break;
 
                 default:
                     languageComboBox.SelectedIndex = 0;

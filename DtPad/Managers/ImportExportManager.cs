@@ -64,7 +64,7 @@ namespace DtPad.Managers
 
             toolStripProgressBar.PerformStep();
 
-            String exportStatus = String.Format("{0} \"{1}\" {2}", LanguageUtil.GetCurrentLanguageString("ExportStatusLabel1", className), zipFileName, LanguageUtil.GetCurrentLanguageString("ExportStatusLabel2", className));
+            String exportStatus = String.Format(LanguageUtil.GetCurrentLanguageString("ExportStatusLabel", className), zipFileName);
 
             toolStripProgressBar.PerformStep();
 

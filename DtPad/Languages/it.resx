@@ -132,6 +132,8 @@
 
 Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l'associazione "Apri con" nel menu contestuale di Esplora Risorse.
 
+Traduzione francese di: Alain "albu77" Buferne.
+
 Set principale di icone di: Delacro.
 - delacro.deviantart.com
 
@@ -413,7 +415,9 @@ i campi seguenti solo se è richiesta un'autenticazione manuale.</value>
   </data>
   <data name="Options_languageComboBoxItems" xml:space="preserve">
     <value>English
-Italiano</value>
+Italiano
+Français
+Español</value>
   </data>
   <data name="Options_languageLabel" xml:space="preserve">
     <value>Lingua:</value>
@@ -553,7 +557,7 @@ Altro</value>
   </data>
   <data name="Tools_commandLinePictureBoxToolTip" xml:space="preserve">
     <value>Inserisci il percorso e il nome dell'eseguibile
-(es. C:\Programmi\DtPad\DtPad.exe)</value>
+(es. "C:\Programmi\DtPad\DtPad.exe")</value>
   </data>
   <data name="Tools_descriptionLabel" xml:space="preserve">
     <value>Descrizione:</value>
@@ -586,7 +590,7 @@ Schermo pieno</value>
   </data>
   <data name="Tools_workingFolderPictureBoxToolTip" xml:space="preserve">
     <value>Inserisci la cartella di destinazione dell'eseguibile
-(es. C:\Programmi\DtPad)</value>
+(es. "C:\Programmi\DtPad")</value>
   </data>
   <data name="VersionCheck_closeButton" xml:space="preserve">
     <value>Chiudi</value>
@@ -1277,7 +1281,7 @@ Desideri salvare i cambiamenti?</value>
     <value>Visualizza</value>
   </data>
   <data name="notePanel_warningRemoveNoteToolStripButton" xml:space="preserve">
-    <value>Chiedi conferma per rimozione note</value>
+    <value>Chiedi conferma per eliminazione note</value>
   </data>
   <data name="Form1_windowToolStripMenuItem" xml:space="preserve">
     <value>Finestra</value>
@@ -1429,7 +1433,7 @@ Non mostrare</value>
     <value>Licenza d'uso</value>
   </data>
   <data name="clipboardPanel_clearClipboardToolStripButton" xml:space="preserve">
-    <value>Svuota appunti</value>
+    <value>Svuota storico appunti</value>
   </data>
   <data name="Form1_clipboardTabPageToolTip" xml:space="preserve">
     <value>Appunti</value>
@@ -1473,10 +1477,10 @@ Il file verrà automaticamente ripristinato con i valori iniziali.</value>
     <value>Specifica, nel controllo soprastante, una stringa di suffisso.</value>
   </data>
   <data name="Form1_oneLineDownToolStripMenuItem" xml:space="preserve">
-    <value>Una riga in basso</value>
+    <value>Righe in basso</value>
   </data>
   <data name="Form1_oneLineUpToolStripMenuItem" xml:space="preserve">
-    <value>Una riga in alto</value>
+    <value>Righe in alto</value>
   </data>
   <data name="Form1_moveLinesUpDownToolStripButton" xml:space="preserve">
     <value>Sposta righe in alto/basso</value>
@@ -1559,11 +1563,8 @@ Il file verrà automaticamente ripristinato con i valori iniziali.</value>
   <data name="ImportExportManager_ExportFileDescription" xml:space="preserve">
     <value>File esportazione DtPad</value>
   </data>
-  <data name="ImportExportManager_ExportStatusLabel1" xml:space="preserve">
-    <value>File impostazioni e dati</value>
-  </data>
-  <data name="ImportExportManager_ExportStatusLabel2" xml:space="preserve">
-    <value>esportato</value>
+  <data name="ImportExportManager_ExportStatusLabel" xml:space="preserve">
+    <value>File impostazioni e dati "{0}" esportato</value>
   </data>
   <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Seleziona la cartella dove esportare le impostazioni e i dati di utilizzo (es. note, file preferiti):</value>
@@ -1683,7 +1684,7 @@ UTF-32 Little Endian</value>
     <value>Resetta impostazioni</value>
   </data>
   <data name="VersionCheck_warningPictureBoxToolTip" xml:space="preserve">
-    <value>Se fai utilizzo di un proxy, configuralo nella finestra delle opzioni</value>
+    <value>Se fai utilizzo di un proxy, configuralo nella finestra delle impostazioni</value>
   </data>
   <data name="Form1_lineNumbersToolStripMenuItem" xml:space="preserve">
     <value>Numeri di riga</value>
@@ -1868,7 +1869,7 @@ Clicca su OK per procedere nella selezione del file di sessione.</value>
     <value>Copyright:</value>
   </data>
   <data name="About_websiteLabel_FE" xml:space="preserve">
-    <value>2011</value>
+    <value>2012</value>
   </data>
   <data name="Welcome_signLabel_FE" xml:space="preserve">
     <value>Marco Macciò</value>
@@ -1988,9 +1989,6 @@ Verticale</value>
   </data>
   <data name="FileUtil_folderDialogBackup" xml:space="preserve">
     <value>Seleziona la cartella dove posizionare il file di backup:</value>
-  </data>
-  <data name="FileManager_folderDialogDefault" xml:space="preserve">
-    <value>Seleziona la cartella di default di salvataggio e apertura file:</value>
   </data>
   <data name="Options_backupExtensionWarning" xml:space="preserve">
     <value>L'estensione di backup non può essere vuota.</value>
@@ -2170,7 +2168,7 @@ Desideri salvarla prima di chiuderla?</value>
     <value>File "{0}" rinominato in "{1}"</value>
   </data>
   <data name="FileManager_Reload" xml:space="preserve">
-    <value>Ricaricando il file le modifiche apportate andranno perse.
+    <value>Ricaricando il file tutte le modifiche apportate andranno perse.
 Sei sicuro di voler procedere?</value>
   </data>
   <data name="FileManager_RemoveReadonlyToRename" xml:space="preserve">
@@ -2184,7 +2182,7 @@ Vuoi rimuovere l'attributo in sola lettura e procedere?</value>
     <value>Nome file:</value>
   </data>
   <data name="FileRename_helpLabel" xml:space="preserve">
-    <value>Rinomina un file aperto senza uscire da DtPad.</value>
+    <value>Rinomina un file aperto direttamente da DtPad.</value>
   </data>
   <data name="FileRename_renameButton" xml:space="preserve">
     <value>Rinomina</value>
@@ -2845,10 +2843,10 @@ in qualsiasi momento.</value>
     <value>Invia a W3C per la validazione</value>
   </data>
   <data name="W3CValidator_TitleCss" xml:space="preserve">
-    <value>DtPad - Validazione CSS W3C</value>
+    <value>DtPad - Validazione W3C CSS</value>
   </data>
   <data name="W3CValidator_TitleHtml" xml:space="preserve">
-    <value>DtPad - Validazione HTML W3C</value>
+    <value>DtPad - Validazione W3C HTML</value>
   </data>
   <data name="ConstantUtil_SpaceChar" xml:space="preserve">
     <value>Spazio</value>
@@ -4379,5 +4377,11 @@ Vuoi sovrascriverlo?</value>
   <data name="MergeTabs_Conflict" xml:space="preserve">
     <value>I tab sono stati modificati al di sotto della finestra di unione.
 Seleziona nuovamente i tab per procedere.</value>
+  </data>
+  <data name="Form1_copyIntoNoteToolStripMenuItem" xml:space="preserve">
+    <value>Copia in nuova nota</value>
+  </data>
+  <data name="FileUtil_folderDialogDefault" xml:space="preserve">
+    <value>Seleziona la cartella di default di salvataggio e apertura file:</value>
   </data>
 </root>

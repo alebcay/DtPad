@@ -50,6 +50,7 @@ namespace DtHelp
                 case 1:
                     GuideManager.ReadHelpGuide(this, args[0]);
                     break;
+
                 default:
                     WindowManager.DisableInterface(this);
                     break;
@@ -84,6 +85,7 @@ namespace DtHelp
                 case "it":
                     italianoToolStripMenuItem.Checked = true;
                     break;
+
                 default:
                     englishToolStripMenuItem.Checked = true;
                     break;

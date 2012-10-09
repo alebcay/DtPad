@@ -193,7 +193,7 @@ Se un problema persiste, o DtPad dovesse sembrare malfunzionante, si consiglia d
     <value>Nessun aggiornamento disponibile per la versione presente di DtPad!</value>
   </data>
   <data name="UpdateManager_Proxy" xml:space="preserve">
-    <value>Se usi un proxy, impostalo nella finestra delle opzioni di DtPad. Se il problema persiste scarica manualmente l'ultima versione di DtPad da www.diariotraduttore.com!</value>
+    <value>Se usi un proxy, impostalo nella finestra delle opzioni di DtPad. Se il problema persiste scarica manualmente l'ultima versione di DtPad da {0}!</value>
   </data>
   <data name="UpdateManager_Read" xml:space="preserve">
     <value>Lettura informazioni nuova versione...</value>
@@ -256,10 +256,10 @@ In caso di errori, DtPad Updater ripristinerà i file della versione precedente 
 Se un problema persiste, o DtPad dovesse sembrare malfunzionante, si consiglia di contattare l'autore.</value>
   </data>
   <data name="UpdateManager_ErrorCheckVersion" xml:space="preserve">
-    <value>Si è verificato un errore durante il controllo di versione di DtPadUpdater!</value>
+    <value>Si è verificato un errore durante il controllo di versione di DtPad Updater!</value>
   </data>
   <data name="UpdateManager_OldVersion" xml:space="preserve">
-    <value>La versione attuale di DtPadUpdater non è aggiornata.
+    <value>La versione attuale di DtPad Updater non è aggiornata.
 
 Avvia il processo di aggiornamento dal menu "? -&gt; Controlla aggiornamenti..." in DtPad.</value>
   </data>

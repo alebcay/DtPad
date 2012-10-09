@@ -160,11 +160,11 @@
     <value>Select the folder where to place DtPad:</value>
   </data>
   <data name="Form1_infoLabel" xml:space="preserve">
-    <value>Information: by now DtPad support only english and
-italian language. Next versions of this editor should
-even support other cultures. If you are interested in
-giving support for other localization, contact me using
-the form contained on the following page.</value>
+    <value>Information: for the moment DtPad supports english,
+italian, french and spanish languages. Maybe next
+versions will support even other cultures. If you are
+interested in giving help for other localizations, contact
+me using the form contained on the following page.</value>
   </data>
   <data name="Form1_installGroupBox1" xml:space="preserve">
     <value>Install</value>
@@ -184,7 +184,7 @@ the form contained on the following page.</value>
   <data name="Form1_introLabel" xml:space="preserve">
     <value>Welcome to DtPad setup!
 
-DtPad is a text editor completely free-registry, based on .NET Framework 4 (REQUIRED, if you do not own it, download it from Microsoft website) and licensed under Apache License, Version 2.0 (apache.org/licenses/LICENSE-2.0).
+DtPad is a text editor, based on .NET Framework 4 (REQUIRED, if you do not own it, download it from Microsoft website) and licensed under Apache License, Version 2.0 (apache.org/licenses/LICENSE-2.0).
 
 Click on "Next" button to proceed.</value>
   </data>
@@ -235,7 +235,7 @@ password.</value>
     <value>Required space:</value>
   </data>
   <data name="Form1_sendToCheckBox" xml:space="preserve">
-    <value>Create association on Send To folder</value>
+    <value>Create association on "Send To" folder</value>
   </data>
   <data name="Form1_shortcutsCheckBox" xml:space="preserve">
     <value>Create shortcuts on Start menu and desktop</value>
@@ -272,7 +272,7 @@ using options window)</value>
     <value>Classic Windows</value>
   </data>
   <data name="InstallManager_CreatingAssociation" xml:space="preserve">
-    <value>Creating Send To association...</value>
+    <value>Creating "Send To" association...</value>
   </data>
   <data name="InstallManager_CreatingDir" xml:space="preserve">
     <value>Creating new directories...</value>
@@ -296,7 +296,7 @@ using options window)</value>
     <value>Extracting files...</value>
   </data>
   <data name="InstallManager_InstallComplete" xml:space="preserve">
-    <value>Installation completed succesfully!</value>
+    <value>Installation completed successfully!</value>
   </data>
   <data name="InstallManager_LinkLaunchDtPad" xml:space="preserve">
     <value>Launch DtPad</value>
@@ -392,7 +392,7 @@ Test required more then {0} second to be completed.</value>
   <data name="InstallManager_DestinationDirWithDtPad" xml:space="preserve">
     <value>Destination folder already contains DtPad. Are you sure to proceed?
 
-All configuration files will be maintained, while program will be overwrited.</value>
+All configuration files will be maintained, while program will be overwritten.</value>
   </data>
   <data name="InstallManager_DestinationDirWithFiles" xml:space="preserve">
     <value>Destination folder already contains files. Are you sure to proceed?

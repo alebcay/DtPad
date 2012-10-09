@@ -280,7 +280,9 @@ namespace DtPadSetup
             this.languageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.languageComboBox.Items.AddRange(new object[] {
             "English",
-            "Italiano"});
+            "Italiano",
+            "Français",
+            "Español"});
             this.languageComboBox.Location = new System.Drawing.Point(126, 17);
             this.languageComboBox.Name = "languageComboBox";
             this.languageComboBox.Size = new System.Drawing.Size(121, 21);
@@ -302,6 +304,8 @@ namespace DtPadSetup
             this.languageImageList.TransparentColor = System.Drawing.Color.Transparent;
             this.languageImageList.Images.SetKeyName(0, "flag-eng.png");
             this.languageImageList.Images.SetKeyName(1, "flag-ita.png");
+            this.languageImageList.Images.SetKeyName(2, "flag-fra.png");
+            this.languageImageList.Images.SetKeyName(3, "flag-esp.png");
             // 
             // stepLabel
             // 

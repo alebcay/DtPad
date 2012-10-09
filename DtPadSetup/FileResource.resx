@@ -271,4 +271,10 @@
   <data name="DevExpress_XtraEditors_v12_1_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\DevExpress.XtraEditors.v12.1.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="fr_resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Languages\fr.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="es_resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Languages\es.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

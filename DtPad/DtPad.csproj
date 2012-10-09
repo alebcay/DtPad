@@ -222,6 +222,16 @@
     <Compile Include="InternalBrowser.Designer.cs">
       <DependentUpon>InternalBrowser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Languages\es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fr.resx</DependentUpon>
+    </Compile>
     <Compile Include="Managers\CalculationManager.cs" />
     <Compile Include="Managers\ClipboardToggleManager.cs" />
     <Compile Include="Managers\ColumnRulerManager.cs" />
@@ -541,6 +551,14 @@
     <EmbeddedResource Include="InternalBrowser.resx">
       <DependentUpon>InternalBrowser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Languages\es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxes\QuestionYNNAC.resx">
       <DependentUpon>QuestionYNNAC.cs</DependentUpon>
     </EmbeddedResource>
@@ -834,6 +852,7 @@
     <Compile Include="Utils\FileUtil.cs" />
     <Compile Include="Utils\Language\ListViewControl.cs" />
     <Compile Include="Utils\LookFeelUtil.cs" />
+    <Compile Include="Utils\MenuUtil.cs" />
     <Compile Include="Utils\ObjectListUtil.cs" />
     <Compile Include="Utils\LanguageUtil.cs" />
     <Compile Include="Utils\Language\ComboBoxControl.cs" />
@@ -1153,6 +1172,8 @@
   <PropertyGroup>
     <PostBuildEvent>"$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\it.resx" "$(ProjectDir)Languages\it.resources"
 "$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\en.resx" "$(ProjectDir)Languages\en.resources"
+"$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\fr.resx" "$(ProjectDir)Languages\fr.resources"
+"$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\es.resx" "$(ProjectDir)Languages\es.resources"
 mkdir "$(ProjectDir)bin\Debug\Languages"
 mkdir "$(ProjectDir)bin\Release\Languages"
 mkdir "$(ProjectDir)bin\ReleaseFE\Languages"

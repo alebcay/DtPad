@@ -1,0 +1,247 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Copier le message d&apos;erreur dans le presse-papier.</value>
+  </data>
+  <data name="ErrorO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ErrorO_Title" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="Form1_cancelButton" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Form1_descriptionLabel" xml:space="preserve">
+    <value>DtPad Uninstaller est une application qui facilite la désinstallation de DtPad et tous ses composants.
+
+Si vous désirez effectuer cette désinstallation manuellement (si vous n&apos;avez pas autorisé l&apos;option &quot;Ouvrir avec&quot;) vous pouvez simplement supprimer le répertoire d&apos;installation.
+
+Sinon cliquer sur &quot;Désinstaller&quot; pour poursuivre.
+
+Vous pouvez nous indiquer la raison pour laquelle vous désirez désinstaller en cliquant sur le lien ci-dessous.</value>
+  </data>
+  <data name="Form1_linkLabel" xml:space="preserve">
+    <value>Cliquer ici pour envoyer un email à l&apos;auteur.</value>
+  </data>
+  <data name="Form1_titleLabel" xml:space="preserve">
+    <value>DtPad Uninstaller</value>
+  </data>
+  <data name="Form1_uninstallButton" xml:space="preserve">
+    <value>Désinstaller</value>
+  </data>
+  <data name="Program_InstanceDtHelp" xml:space="preserve">
+    <value>Fermer toute instance de DtHelp avant de démarrer la désinstallation.</value>
+  </data>
+  <data name="Program_InstanceDtPad" xml:space="preserve">
+    <value>Fermer toute instance de DtPad avant de démarrer la désinstallation.</value>
+  </data>
+  <data name="Program_InstanceDtPadUninstaller" xml:space="preserve">
+    <value>Une instance du DtPad Uninstaller est déjà ouverte.</value>
+  </data>
+  <data name="Program_InstanceDtPadUpdater" xml:space="preserve">
+    <value>Fermer toute instance de DtPad Updater avant de démarrer la désinstallation.</value>
+  </data>
+  <data name="WindowManager_Exception" xml:space="preserve">
+    <value>Une exception est intervenue:</value>
+  </data>
+  <data name="WindowManager_FatalException" xml:space="preserve">
+    <value>Une exception fatale est intervenue:</value>
+  </data>
+  <data name="Form1_Title" xml:space="preserve">
+    <value>DtPad Uninstaller</value>
+  </data>
+  <data name="UninstallManager_DeletedFile" xml:space="preserve">
+    <value>supprimé</value>
+  </data>
+  <data name="UninstallManager_Error" xml:space="preserve">
+    <value>Erreur durant la désinstallation. Dans le cas d&apos;erreur à répétition il est
+recommandé de supprimer les fichiers contenu dans le répertoire 
+d&apos;installation de DtPad manuellement.
+Détail de l&apos;erreur:</value>
+  </data>
+  <data name="UninstallManager_File" xml:space="preserve">
+    <value>Fichier</value>
+  </data>
+  <data name="UninstallManager_Start" xml:space="preserve">
+    <value>Démarrage de la procédure de désinstallation de DtPad...</value>
+  </data>
+  <data name="UninstallManager_DeleteDesktop" xml:space="preserve">
+    <value>Suppression des raccourcis...</value>
+  </data>
+  <data name="UninstallManager_DeleteFiles" xml:space="preserve">
+    <value>Suppression de fichiers...</value>
+  </data>
+  <data name="UninstallManager_DeleteLinks" xml:space="preserve">
+    <value>Suppression du rai du menu de Démarrage...</value>
+  </data>
+  <data name="UninstallManager_DeleteSendTo" xml:space="preserve">
+    <value>Suppression de l&apos;association &quot;Envoyer vers&quot;...</value>
+  </data>
+  <data name="Form1_CloseButton" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="UninstallManager_Success" xml:space="preserve">
+    <value>Désinstallation terminée avec succès!</value>
+  </data>
+  <data name="AlertO_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="AlertO_Title" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="UninstallManager_DeletedFolder" xml:space="preserve">
+    <value>supprimé</value>
+  </data>
+  <data name="UninstallManager_Folder" xml:space="preserve">
+    <value>Répertoire</value>
+  </data>
+  <data name="Form1_SureUninstall" xml:space="preserve">
+    <value>Êtes vous sur de vouloir désinstaller DtPad?
+Tous les fichiers de configuration seront supprimés.</value>
+  </data>
+  <data name="QuestionYN_noButton" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="QuestionYN_Title" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="QuestionYN_yesButton" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="UninstallManager_DeletedKey" xml:space="preserve">
+    <value>supprimé</value>
+  </data>
+  <data name="UninstallManager_DeleteOpenWith" xml:space="preserve">
+    <value>Suppression de l&apos;association &quot;Ouvrir avec&quot;...</value>
+  </data>
+  <data name="UninstallManager_Key" xml:space="preserve">
+    <value>Clé du registre</value>
+  </data>
+  <data name="UninstallManager_ShellString" xml:space="preserve">
+    <value>Ouvrir avec DtPad</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copier</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Sélectionner tout</value>
+  </data>
+</root>

@@ -67,11 +67,12 @@ namespace DtPad
             // 
             this.updateButton.Enabled = false;
             this.updateButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.updateButton.Location = new System.Drawing.Point(124, 79);
+            this.updateButton.Location = new System.Drawing.Point(113, 79);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(75, 23);
+            this.updateButton.Size = new System.Drawing.Size(89, 23);
             this.updateButton.TabIndex = 3;
             this.updateButton.Text = "Update";
+            this.updateButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.updateButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.updateButton.UseVisualStyleBackColor = true;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);

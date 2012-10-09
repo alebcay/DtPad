@@ -132,7 +132,7 @@
   <data name="Form1_descriptionLabel" xml:space="preserve">
     <value>DtPad Uninstaller is an application that make easier the uninstall of DtPad and each of its components.
 
-If you like to make it manually, simply delete the DtPad folder, since it does not use Windows registry or system folders.
+If you like to make it manually (and you didn't enabled the "Open With" integration inside DtPad's options dialog) simply delete the program folder.
 
 Otherwise click over "Uninstall" to proceed.
 
@@ -154,7 +154,7 @@ If you like, click on the link below to send a message about how was using DtPad
     <value>Close any instance of DtPad before start the uninstall process.</value>
   </data>
   <data name="Program_InstanceDtPadUninstaller" xml:space="preserve">
-    <value>There is already an instance of DtPad Unistaller open.</value>
+    <value>There is already an opened instance of DtPad Uninstaller.</value>
   </data>
   <data name="Program_InstanceDtPadUpdater" xml:space="preserve">
     <value>Close any instance of DtPad Updater before start the uninstall process.</value>
@@ -191,7 +191,7 @@ Error detail:</value>
     <value>Deleting Start menu shortcuts...</value>
   </data>
   <data name="UninstallManager_DeleteSendTo" xml:space="preserve">
-    <value>Deleting Send To association...</value>
+    <value>Deleting "Send To" association...</value>
   </data>
   <data name="Form1_CloseButton" xml:space="preserve">
     <value>Close</value>
@@ -228,7 +228,7 @@ All configuration files will be deleted.</value>
     <value>deleted</value>
   </data>
   <data name="UninstallManager_DeleteOpenWith" xml:space="preserve">
-    <value>Deleting Open With association...</value>
+    <value>Deleting "Open With" association...</value>
   </data>
   <data name="UninstallManager_Key" xml:space="preserve">
     <value>Key</value>

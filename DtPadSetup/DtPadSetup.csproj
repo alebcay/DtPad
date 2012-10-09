@@ -114,6 +114,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>en.resx</DependentUpon>
     </Compile>
+    <Compile Include="Languages\es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>es.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fr.resx</DependentUpon>
+    </Compile>
     <Compile Include="Languages\it.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -152,6 +162,7 @@
       <LastGenOutput>FileResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="DtPadSetup.ruleset" />
+    <None Include="Files\Languages\es.resources" />
     <EmbeddedResource Include="Form1.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Form1.cs</DependentUpon>
@@ -170,6 +181,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>en.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Languages\it.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -266,6 +285,8 @@
     <Content Include="icon.ico" />
     <Content Include="Images\cut.png" />
     <Content Include="Images\email.png" />
+    <Content Include="Images\flag-esp.png" />
+    <Content Include="Images\flag-fra.png" />
     <Content Include="Images\ok.gif" />
     <Content Include="Images\paste.png" />
     <None Include="Files\SupportFiles\DtPad.exe.pw" />
@@ -339,7 +360,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Files\Guides\" />
-    <Folder Include="Files\Languages\" />
     <Folder Include="Files\Logs\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

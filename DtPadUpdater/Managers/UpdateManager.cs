@@ -132,7 +132,7 @@ namespace DtPadUpdater.Managers
             catch (Exception exception)
             {
                 updateProgressBar.Value = 0;
-                updateTextBox.Text = updateTextBox.Text + Environment.NewLine + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Error", className, culture) + Environment.NewLine + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Proxy", className, culture);
+                updateTextBox.Text = updateTextBox.Text + Environment.NewLine + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Error", className, culture) + Environment.NewLine + Environment.NewLine + String.Format(LanguageUtil.GetCurrentLanguageString("Proxy", className, culture), ConstantUtil.dtShortURL);
                 updateTextBox.Text = updateTextBox.Text + Environment.NewLine + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Exception", className, culture) + " " + exception.Message;
 
                 foreach (String fileAndPathName in Directory.GetFiles(updateBackupPath))
@@ -181,7 +181,7 @@ namespace DtPadUpdater.Managers
             catch (WebException)
             {
                 updateTextBox.Text = updateTextBox.Text + LanguageUtil.GetCurrentLanguageString("ErrorCheckVersion", className, culture);
-                updateTextBox.Text = updateTextBox.Text + Environment.NewLine + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Proxy", className, culture);
+                updateTextBox.Text = updateTextBox.Text + Environment.NewLine + Environment.NewLine + String.Format(LanguageUtil.GetCurrentLanguageString("Proxy", className, culture), ConstantUtil.dtShortURL);
                 return false;
             }
             finally
