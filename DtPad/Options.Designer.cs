@@ -364,7 +364,7 @@ namespace DtPad
             // searchHistoryNumericUpDown
             // 
             this.searchHistoryNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
-            this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(95, 92);
+            this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(120, 92);
             this.searchHistoryNumericUpDown.Maximum = new decimal(new int[] {
             15,
             0,
@@ -516,7 +516,7 @@ namespace DtPad
             this.fontColorTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.fontColorTextBox.Enabled = false;
             this.fontColorTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fontColorTextBox.Location = new System.Drawing.Point(52, 64);
+            this.fontColorTextBox.Location = new System.Drawing.Point(89, 64);
             this.fontColorTextBox.Name = "fontColorTextBox";
             this.fontColorTextBox.ReadOnly = true;
             this.fontColorTextBox.Size = new System.Drawing.Size(52, 17);
@@ -883,9 +883,9 @@ namespace DtPad
             "Each tab",
             "Active tab",
             "Do not show"});
-            this.tabCloseButtonOnComboBox.Location = new System.Drawing.Point(116, 17);
+            this.tabCloseButtonOnComboBox.Location = new System.Drawing.Point(122, 17);
             this.tabCloseButtonOnComboBox.Name = "tabCloseButtonOnComboBox";
-            this.tabCloseButtonOnComboBox.Size = new System.Drawing.Size(216, 21);
+            this.tabCloseButtonOnComboBox.Size = new System.Drawing.Size(210, 21);
             this.tabCloseButtonOnComboBox.TabIndex = 1;
             // 
             // closeTabButtonOnLabel
@@ -1181,7 +1181,7 @@ namespace DtPad
             // customBrowserRadioButton
             // 
             this.customBrowserRadioButton.AutoSize = true;
-            this.customBrowserRadioButton.Location = new System.Drawing.Point(163, 20);
+            this.customBrowserRadioButton.Location = new System.Drawing.Point(170, 20);
             this.customBrowserRadioButton.Name = "customBrowserRadioButton";
             this.customBrowserRadioButton.Size = new System.Drawing.Size(137, 17);
             this.customBrowserRadioButton.TabIndex = 1;
@@ -1551,9 +1551,9 @@ namespace DtPad
             this.tabOrientationComboBox.Items.AddRange(new object[] {
             "Horizontal",
             "Vertical"});
-            this.tabOrientationComboBox.Location = new System.Drawing.Point(116, 64);
+            this.tabOrientationComboBox.Location = new System.Drawing.Point(122, 64);
             this.tabOrientationComboBox.Name = "tabOrientationComboBox";
-            this.tabOrientationComboBox.Size = new System.Drawing.Size(216, 21);
+            this.tabOrientationComboBox.Size = new System.Drawing.Size(210, 21);
             this.tabOrientationComboBox.TabIndex = 5;
             // 
             // tabOrientationLabel
@@ -1574,9 +1574,9 @@ namespace DtPad
             "Right",
             "Bottom",
             "Left"});
-            this.tabPositionComboBox.Location = new System.Drawing.Point(116, 41);
+            this.tabPositionComboBox.Location = new System.Drawing.Point(122, 41);
             this.tabPositionComboBox.Name = "tabPositionComboBox";
-            this.tabPositionComboBox.Size = new System.Drawing.Size(216, 21);
+            this.tabPositionComboBox.Size = new System.Drawing.Size(210, 21);
             this.tabPositionComboBox.TabIndex = 3;
             // 
             // tabPositionLabel

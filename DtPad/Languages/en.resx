@@ -121,7 +121,7 @@
     <value>Close</value>
   </data>
   <data name="About_createdByLabel" xml:space="preserve">
-    <value>Marco "Cav" Macciò</value>
+    <value>Marco Macciò</value>
   </data>
   <data name="About_createdByLabel1" xml:space="preserve">
     <value>Created by:</value>
@@ -132,7 +132,7 @@
 
 This application requires Microsoft .NET Framework 4 and use Windows registry only to store "Open With" Explorer context menu menu association.
 
-French translation by: Alain "albu77" Buferne.
+French translation by: Alain Buferne.
 
 Main iconset by: Delacro.
 - delacro.deviantart.com
@@ -221,7 +221,7 @@ DtPad does not collect any info about usage and users. Informations that could b
     <value>Extension:</value>
   </data>
   <data name="Extensions_extensionPictureBoxToolTip" xml:space="preserve">
-    <value>Insert only file extension (ie. txt)</value>
+    <value>Insert only file extension (ie. "txt")</value>
   </data>
   <data name="Extensions_helpLabel" xml:space="preserve">
     <value>Set up file extensions supported by DtPad.</value>
@@ -632,7 +632,7 @@ Maximized</value>
     <value>Close</value>
   </data>
   <data name="Welcome_signLabel" xml:space="preserve">
-    <value>Marco "Cav" Macciò</value>
+    <value>Marco Macciò</value>
   </data>
   <data name="Welcome_Title" xml:space="preserve">
     <value>Welcome in DtPad</value>
@@ -4374,5 +4374,14 @@ Reselect interested tabs to proceed.</value>
   </data>
   <data name="Form1_copyIntoNoteToolStripMenuItem" xml:space="preserve">
     <value>Copy Into New Note</value>
+  </data>
+  <data name="SelectLines_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="SelectLines_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="SelectLines_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Select All</value>
   </data>
 </root>

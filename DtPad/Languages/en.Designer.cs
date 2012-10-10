@@ -79,7 +79,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Marco &quot;Cav&quot; Macciò.
+        ///   Looks up a localized string similar to Marco Macciò.
         /// </summary>
         internal static string About_createdByLabel {
             get {
@@ -111,7 +111,7 @@ namespace DtPad.Languages {
         ///
         ///This application requires Microsoft .NET Framework 4 and use Windows registry only to store &quot;Open With&quot; Explorer context menu menu association.
         ///
-        ///French translation by: Alain &quot;albu77&quot; Buferne.
+        ///French translation by: Alain Buferne.
         ///
         ///Main iconset by: Delacro.
         ///- delacro.deviantart.com
@@ -120,7 +120,7 @@ namespace DtPad.Languages {
         ///- famfamfam.com
         ///- vistaicons.com
         ///
-        ///External components referenced: SharpZip, iTextSharp, Log4Net, Be.HexEditor, Xm [rest of string was truncated]&quot;;.
+        ///External components referenced: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridCont [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string About_descriptionTextBox {
             get {
@@ -1638,7 +1638,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Insert only file extension (ie. txt).
+        ///   Looks up a localized string similar to Insert only file extension (ie. &quot;txt&quot;).
         /// </summary>
         internal static string Extensions_extensionPictureBoxToolTip {
             get {
@@ -9847,6 +9847,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string SelectLines_copyToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("SelectLines_copyToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to From:.
         /// </summary>
         internal static string SelectLines_fromLabel {
@@ -9879,6 +9888,24 @@ namespace DtPad.Languages {
         internal static string SelectLines_okButton {
             get {
                 return ResourceManager.GetString("SelectLines_okButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paste.
+        /// </summary>
+        internal static string SelectLines_pasteToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("SelectLines_pasteToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select All.
+        /// </summary>
+        internal static string SelectLines_selectAllToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("SelectLines_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -12020,7 +12047,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Marco &quot;Cav&quot; Macciò.
+        ///   Looks up a localized string similar to Marco Macciò.
         /// </summary>
         internal static string Welcome_signLabel {
             get {

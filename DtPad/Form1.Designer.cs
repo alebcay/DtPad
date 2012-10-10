@@ -3516,7 +3516,7 @@ namespace DtPad
             this.prefixToolStripComboBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.prefixToolStripComboBox.MaxDropDownItems = 10;
             this.prefixToolStripComboBox.Name = "prefixToolStripComboBox";
-            this.prefixToolStripComboBox.Size = new System.Drawing.Size(90, 25);
+            this.prefixToolStripComboBox.Size = new System.Drawing.Size(100, 25);
             this.prefixToolStripComboBox.Text = "Insert text";
             this.prefixToolStripComboBox.Leave += new System.EventHandler(this.prefixToolStripComboBox_Leave);
             this.prefixToolStripComboBox.Enter += new System.EventHandler(this.prefixToolStripComboBox_Enter);

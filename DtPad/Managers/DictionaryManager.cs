@@ -112,7 +112,7 @@ namespace DtPad.Managers
         {
             if (!ExistsDictionary(languageSign))
             {
-                WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("NoDictionary", className) + ConstantUtil.dtPadURL + "#dizionari");
+                WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("NoDictionary", className) + ConstantUtil.dtPadURL + "wikipage?title=Dictionaries");
                 return;
             }
 

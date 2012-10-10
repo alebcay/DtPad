@@ -121,7 +121,7 @@
     <value>Cerrar</value>
   </data>
   <data name="About_createdByLabel" xml:space="preserve">
-    <value>Marco &quot;Cav&quot; Macciò</value>
+    <value>Marco Macciò</value>
   </data>
   <data name="About_createdByLabel1" xml:space="preserve">
     <value>Creado por:</value>
@@ -132,7 +132,7 @@
 
 Esta aplicación requiere Microsoft .NET Framework 4 y utilizar el registro de Windows sólo para salvar el asociación &quot;Abrir con&quot; en el menú contextual del Explorador de Windows.
 
-Traducción al francés por: Alain &quot;albu77&quot; Buferne.
+Traducción al francés por: Alain Buferne.
 
 Conjunto principal de iconos por: Delacro.
 - delacro.deviantart.com
@@ -164,7 +164,7 @@ Diccionarios de idiomas por: OpenOffice.org.
 DtPad no recoge ninguna información sobre el uso y los usuarios. Información que puede ser registrado en &quot;Logs&quot; carpeta sólo se refiere a los errores del programa y advertencias mostraron incluso en la interfaz, y en ningún caso contendrá el texto del usuario o los datos privados.</value>
   </data>
   <data name="About_emailPictureBoxToolTip" xml:space="preserve">
-    <value>Escribir un e-mail a DtPad autor</value>
+    <value>Escribir un e-mail al autor de DtPad </value>
   </data>
   <data name="About_rssPictureBoxToolTip" xml:space="preserve">
     <value>Leer feed RSS de diariotraduttore.com</value>
@@ -221,7 +221,7 @@ DtPad no recoge ninguna información sobre el uso y los usuarios. Información q
     <value>Extensión:</value>
   </data>
   <data name="Extensions_extensionPictureBoxToolTip" xml:space="preserve">
-    <value>Inserte solamente la extensión de archivo (es decir, txt)</value>
+    <value>Inserte solamente la extensión de archivo (es decir, &quot;txt&quot;)</value>
   </data>
   <data name="Extensions_helpLabel" xml:space="preserve">
     <value>Configuración de las extensiones de archivo compatibles con DtPad.</value>
@@ -254,7 +254,7 @@ DtPad no recoge ninguna información sobre el uso y los usuarios. Información q
     <value>Cerrar</value>
   </data>
   <data name="FileProperties_creationDateLabel1" xml:space="preserve">
-    <value>Fecha de creación:</value>
+    <value>Fecha creación:</value>
   </data>
   <data name="FileProperties_directoryLabel1" xml:space="preserve">
     <value>Directorio:</value>
@@ -457,7 +457,7 @@ Ventana clásico</value>
     <value>Panel de búsqueda</value>
   </data>
   <data name="Options_searchHistoryLabel" xml:space="preserve">
-    <value>Búsquedas rec.:</value>
+    <value>Búsquedas recientes:</value>
   </data>
   <data name="Options_showSearchPanelCheckBox" xml:space="preserve">
     <value>Mostrar panel de búsqueda</value>
@@ -631,7 +631,7 @@ Maximizada</value>
     <value>Cerrar</value>
   </data>
   <data name="Welcome_signLabel" xml:space="preserve">
-    <value>Marco &quot;Cav&quot; Macciò</value>
+    <value>Marco Macciò</value>
   </data>
   <data name="Welcome_Title" xml:space="preserve">
     <value>Bienvenido en DtPad</value>
@@ -1405,7 +1405,7 @@ Complete la información de instrumentos para proceder.</value>
     <value>Sin título</value>
   </data>
   <data name="Options_closeTabButtonOnLabel" xml:space="preserve">
-    <value>Botón cerrar:</value>
+    <value>Botón cerrar en:</value>
   </data>
   <data name="Options_internalExplorerCheckBox" xml:space="preserve">
     <value>Explorador interno</value>
@@ -4373,5 +4373,14 @@ Seleccionar las pestañas más interesados ​​para proceder.</value>
   </data>
   <data name="Form1_copyIntoNoteToolStripMenuItem" xml:space="preserve">
     <value>Copiar en nueva nota</value>
+  </data>
+  <data name="SelectLines_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="SelectLines_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Pegar</value>
+  </data>
+  <data name="SelectLines_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Seleccionar todo</value>
   </data>
 </root>

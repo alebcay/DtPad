@@ -121,7 +121,7 @@
     <value>Chiudi</value>
   </data>
   <data name="About_createdByLabel" xml:space="preserve">
-    <value>Marco "Cav" Macciò</value>
+    <value>Marco Macciò</value>
   </data>
   <data name="About_createdByLabel1" xml:space="preserve">
     <value>Scritto da:</value>
@@ -132,7 +132,7 @@
 
 Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l'associazione "Apri con" nel menu contestuale di Esplora Risorse.
 
-Traduzione francese di: Alain "albu77" Buferne.
+Traduzione francese di: Alain Buferne.
 
 Set principale di icone di: Delacro.
 - delacro.deviantart.com
@@ -221,7 +221,7 @@ DtPad non raccoglie alcuna informazione riguardante uso e utenti. I dati che pos
     <value>Estensione:</value>
   </data>
   <data name="Extensions_extensionPictureBoxToolTip" xml:space="preserve">
-    <value>Inserisci solo l'estensione del file (es. txt)</value>
+    <value>Inserisci solo l'estensione del file (es. "txt")</value>
   </data>
   <data name="Extensions_helpLabel" xml:space="preserve">
     <value>Imposta le estensioni supportate da DtPad.</value>
@@ -632,7 +632,7 @@ Schermo pieno</value>
     <value>Chiudi</value>
   </data>
   <data name="Welcome_signLabel" xml:space="preserve">
-    <value>Marco "Cav" Macciò</value>
+    <value>Marco Macciò</value>
   </data>
   <data name="Welcome_Title" xml:space="preserve">
     <value>Benvenuto in DtPad</value>
@@ -4383,5 +4383,14 @@ Seleziona nuovamente i tab per procedere.</value>
   </data>
   <data name="FileUtil_folderDialogDefault" xml:space="preserve">
     <value>Seleziona la cartella di default di salvataggio e apertura file:</value>
+  </data>
+  <data name="SelectLines_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="SelectLines_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Incolla</value>
+  </data>
+  <data name="SelectLines_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona tutto</value>
   </data>
 </root>

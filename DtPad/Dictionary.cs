@@ -43,7 +43,7 @@ namespace DtPad
 
         private void dictionariesLabel_MouseClick(object sender, MouseEventArgs e)
         {
-            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadURL + "#dizionari");
+            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadURL + "wikipage?title=Dictionaries");
         }
 
         private void contentTextBox_KeyDown(object sender, KeyEventArgs e)
@@ -139,7 +139,7 @@ namespace DtPad
             if (languageComboBox.Properties.Items.Count == 0)
             {
                 existsDictionaries = false;
-                WindowManager.ShowInfoBox(this, LanguageUtil.GetCurrentLanguageString("NoDictionaries", Name) + ConstantUtil.dtPadURL + "#dizionari");
+                WindowManager.ShowInfoBox(this, LanguageUtil.GetCurrentLanguageString("NoDictionaries", Name) + ConstantUtil.dtPadURL + "wikipage?title=Dictionaries");
                 return;
             }
 

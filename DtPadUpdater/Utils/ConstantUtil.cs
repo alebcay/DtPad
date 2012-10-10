@@ -19,7 +19,7 @@ namespace DtPadUpdater.Utils
         internal const String generalRepositoryFE = "http://dtpad.diariotraduttore.com/files/fe/";
         internal const String dtPadAppConfigName = "DtPad.exe.Config";
         internal const String tempDtPadAppConfigName = @"UpdateTemp\DtPad.exe.Config";
-        internal const String dtPadURL = "http://www.diariotraduttore.com/diariorama/dtpad/";
+        internal const String dtPadURL = "http://dtpad.codeplex.com/";
         internal const String logFile = @"Logs\DtPadUpdater.log";
         internal const String pwFile = @"SupportFiles\DtPad.exe.pw"; //Passwords
         internal const String defaultKey = "392346f9-ef82-4cf5-8edb-0f80870f3684";

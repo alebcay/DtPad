@@ -86,7 +86,7 @@ L'archivio consiste invece nei file componenti DtPad comodamente compattati. E' 
 ==============================
 Per utilizzare la funzionalità relativa a dizionari e sinonimi (disponibile dalla versione 2.6.0.40 in poi) è necessario scaricare i pacchetti che si desidera utilizzare e scompattarne il contenuto sotto la cartella "Languages" che si trova nel percorso dove si è posizionato DtPad (es. tipicamente "C:\Programmi\DtPad\Languages"). Il pacchetto di installazione di DtPad infatti non contiene alcuno dei pacchetti soprastanti per ridurre l'impatto in termini di download.
 
-[link: www.diariotraduttore.com/diariorama/dtpad/#dizionari]
+[link: dtpad.codeplex.com/wikipage?title=Dictionaries]
 
 Nota bene: tutti i suddetti dizionari linguistici provengono dal repository di OpenOffice.org, e in particolar modo da [link: wiki.services.openoffice.org/wiki/Dictionaries].
 
@@ -96,7 +96,7 @@ Nota bene: tutti i suddetti dizionari linguistici provengono dal repository di O
 ==============================
 
 Per restare aggiornati senza dover visitare il sito, è possibile effettuare una rapida richiesta direttamente dal menu di "?", cliccando alla voce "Controlla aggiornamenti...".
-Alternativamente si può scaricare la versione più recente direttamente dalla pagina di DtPad [link: www.diariotraduttore.com/diariorama/dtpad] e sovrascrivere la propria copia del programma, anche se così facendo le proprie impostazioni andranno perse.
+Alternativamente si può scaricare la versione più recente direttamente dalla pagina del progetto di DtPad [link: dtpad.codeplex.com] e sovrascrivere la propria copia del programma, anche se così facendo le proprie impostazioni andranno perse.
 
 
 ==============================
@@ -123,7 +123,7 @@ Programma di: Marco Macciò
 Piattaforma usata: Microsoft .NET Framework 4
 [link: www.microsoft.com/downloads/it-it/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7]
 
-Traduzione francese di: Alain "albu77" Buferne
+Traduzione francese di: Alain Buferne
 
 Set principale di icone di: Delacro
 [link: delacro.deviantart.com]
@@ -204,4 +204,4 @@ Il confronto è un momento molto importante per comprendere l'utilità del proprio
 	2.7.2.40 (01/06/2012)
 	2.7.3.40 (05/06/2012)
 	2.7.4.40 (21/08/2012)
-2.8.0.40 (09/10/2012)
+2.8.0.40 (10/10/2012)

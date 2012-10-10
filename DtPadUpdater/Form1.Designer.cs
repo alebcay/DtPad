@@ -104,7 +104,7 @@ namespace DtPadUpdater
             this.linkLabel.Name = "linkLabel";
             this.linkLabel.Size = new System.Drawing.Size(132, 13);
             this.linkLabel.TabIndex = 2;
-            this.linkLabel.Text = "diariotraduttore.com/dtpad";
+            this.linkLabel.Text = "dtpad.codeplex.com";
             this.linkLabel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.linkLabel_MouseClick);
             // 
             // cancelButton
