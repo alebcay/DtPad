@@ -191,10 +191,10 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Annuler</value>
   </data>
   <data name="DatetimeSelect_descriptionLabel" xml:space="preserve">
-    <value>Sélectionner le format des date et heure à insérer</value>
+    <value>Sélectionner le format des date et heure à insérer:</value>
   </data>
   <data name="DatetimeSelect_helpLabel" xml:space="preserve">
-    <value>Sélectionner un format des date et heure à insérer</value>
+    <value>Sélectionner un format des date et heure à insérer.</value>
   </data>
   <data name="DatetimeSelect_okButton" xml:space="preserve">
     <value>OK</value>
@@ -329,7 +329,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Fermer</value>
   </data>
   <data name="MoveLines_downRadioButton" xml:space="preserve">
-    <value>Descendre l&apos;onglet sélectionné</value>
+    <value>Descendre</value>
   </data>
   <data name="MoveLines_helpLabel" xml:space="preserve">
     <value>Déplacer les lignes haut/bas.</value>
@@ -553,7 +553,7 @@ Autre</value>
     <value>Annuler</value>
   </data>
   <data name="Tools_commandLineLabel" xml:space="preserve">
-    <value>Ligne de commande:</value>
+    <value>Ligne commande:</value>
   </data>
   <data name="Tools_commandLinePictureBoxToolTip" xml:space="preserve">
     <value>Insérer le chemin et le nom de l&apos;exécutable
@@ -586,7 +586,7 @@ Taille maximale</value>
     <value>Paramètres</value>
   </data>
   <data name="Tools_workingFolderLabel" xml:space="preserve">
-    <value>Répertoire de travail:</value>
+    <value>Répertoire travail:</value>
   </data>
   <data name="Tools_workingFolderPictureBoxToolTip" xml:space="preserve">
     <value>Inserer le chemin de travail de l&apos;éxecutable
@@ -643,8 +643,8 @@ Taille maximale</value>
   <data name="Welcome_welcomeLabel" xml:space="preserve">
     <value>Cher utilisateur,
 
-bienvenue dans DtPad, éditeur de texte facile à utiliser
-interface à onglets
+bienvenue dans DtPad, éditeur de
+texte facile à utiliser interface à onglets
 et un tas de fonctions intéressantes. Son développement est toujours en cours et donc tout commentaire au sujet de son utilisation sera le bienvenue! Utilisez pour cela la fontion &quot;Rapport de bug&quot; du menu d&apos;Aide ou envoyer un message en utilisant l’icône email dans la fenêtre &quot;A propos&quot;.
 
 Salutations,</value>
@@ -752,7 +752,7 @@ Salutations,</value>
     <value>Enregistrer</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Chercher dans tous les onglets</value>
+    <value>Chercher tous onglets</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Chercher:</value>
@@ -954,7 +954,7 @@ Finissez de remplir les informations pour poursuivre.</value>
     <value>Vérifier disponibilité de mise à jour...</value>
   </data>
   <data name="searchPanel_clearHistoryToolStripMenuItem" xml:space="preserve">
-    <value>Vider l&apos;historique</value>
+    <value>Vider historique</value>
   </data>
   <data name="Form1_closeToolStripButton" xml:space="preserve">
     <value>Fermer</value>
@@ -1434,7 +1434,7 @@ Ne pas afficher</value>
     <value>Accor de licence</value>
   </data>
   <data name="clipboardPanel_clearClipboardToolStripButton" xml:space="preserve">
-    <value>Vider l&apos;historique du presse-papier</value>
+    <value>Vider historique du presse-papier</value>
   </data>
   <data name="Form1_clipboardTabPageToolTip" xml:space="preserve">
     <value>Presse-papier</value>
@@ -1887,10 +1887,10 @@ Cliquer sur OK afin de poursuivre vers la sélection du nom de fichier de la ses
     <value>Sessions récentes</value>
   </data>
   <data name="CharSelect_clipboardedLabel" xml:space="preserve">
-    <value>Pas de caractères spéciaux</value>
+    <value>Pas caractère spécial</value>
   </data>
   <data name="CharSelect_clipboardedLabel1" xml:space="preserve">
-    <value>Presse-paier en mémoire</value>
+    <value>Presse-paier mémoire:</value>
   </data>
   <data name="CharSelect_closeButton" xml:space="preserve">
     <value>Fermer</value>
@@ -1902,7 +1902,7 @@ Cliquer sur OK afin de poursuivre vers la sélection du nom de fichier de la ses
     <value>Sélection d&apos;un symbole.</value>
   </data>
   <data name="CharSelect_titleLabel" xml:space="preserve">
-    <value>Double cliquer sur un caractère pour le copier dans le presse-papier:</value>
+    <value>Double cliquer sur caractères pour copier dans presse-papier:</value>
   </data>
   <data name="Form1_insertSpecialCharToolStripMenuItem" xml:space="preserve">
     <value>Caractères spéciaux...</value>
@@ -2023,7 +2023,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>&quot;{0}&quot; n&apos;existe pas</value>
   </data>
   <data name="PadText_helpLabel" xml:space="preserve">
-    <value>Aligner le texte en utilisant le caractère de remplissage comme espace.</value>
+    <value>Aligner texte avec caractère de remplissage.</value>
   </data>
   <data name="PadText_Title" xml:space="preserve">
     <value>Aligner le texte</value>
@@ -2038,7 +2038,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Gauche</value>
   </data>
   <data name="PadText_okButton" xml:space="preserve">
-    <value>Alignement</value>
+    <value>Aligner</value>
   </data>
   <data name="PadText_padToLabel" xml:space="preserve">
     <value>Aligner le texte sur:</value>
@@ -2047,7 +2047,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Droite</value>
   </data>
   <data name="PadText_whiteCharacterLabel" xml:space="preserve">
-    <value>Caractère de remplissage:</value>
+    <value>Caract. remplissage:</value>
   </data>
   <data name="PadText_widthLabel" xml:space="preserve">
     <value>Largeur:</value>
@@ -2083,7 +2083,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Comparer</value>
   </data>
   <data name="FileCompare_helpLabel" xml:space="preserve">
-    <value>Verifier le contenu des onglets pour définir si ils sont identiques.</value>
+    <value>Verifier le contenu pour définir s&apos;ils sont égaux.</value>
   </data>
   <data name="FileCompare_selectTabsLabel" xml:space="preserve">
     <value>Choisir deux onglets pour comparaison:</value>
@@ -3648,7 +3648,7 @@ Veuillez sélectionner deux langues différentes.</value>
     <value>Nom ordianteur:</value>
   </data>
   <data name="Statistics_memoryLabel1" xml:space="preserve">
-    <value>Mémoire (ensemble de travail):</value>
+    <value>Mémoire (ensemble travail):</value>
   </data>
   <data name="Statistics_osLabel1" xml:space="preserve">
     <value>Système d&apos;exploitation:</value>
@@ -3806,7 +3806,7 @@ Il n&apos;est pas possible d&apos;enregistrer les modification de ce fichier.</v
     <value>[WP] Chercher le texet sélectionné</value>
   </data>
   <data name="Options_jumpListCheckBox" xml:space="preserve">
-    <value>Activer la liste de lien (seulement sur Windows7)</value>
+    <value>Activer la liste de lien (seulement sur Windows 7)</value>
   </data>
   <data name="Options_proxyHostLabel" xml:space="preserve">
     <value>Adresse:</value>
@@ -3878,14 +3878,14 @@ en &quot;{1}&quot;?</value>
 &quot;{0}&quot;?</value>
   </data>
   <data name="DropboxManager_SureDeleteFolder" xml:space="preserve">
-    <value>Etes sur de vouloir supprimer le repertoire
+    <value>Etes sur de vouloir supprimer le répertoire
 &quot;{0}&quot;?</value>
   </data>
   <data name="DropboxManager_WarningDeleting" xml:space="preserve">
     <value>Il n&apos;a pas été possible de supprimer les objets.</value>
   </data>
   <data name="Options_dropboxDeleteCheckBox" xml:space="preserve">
-    <value>Autorise la suppression de fichiers et repertoires</value>
+    <value>Autorise la suppression de fichiers et répertoires</value>
   </data>
   <data name="Options_dropboxGroupBox1" xml:space="preserve">
     <value>Usage</value>
@@ -4141,7 +4141,7 @@ ou de fin est manquante. Veuillez les insérer ou changer le type de balise.</va
     <value>The mot &quot;{0}&quot; est {1}</value>
   </data>
   <data name="Dictionary_clearButton" xml:space="preserve">
-    <value>Nettoyer les résultats</value>
+    <value>Nettoyer résultats</value>
   </data>
   <data name="Dictionary_closeButton" xml:space="preserve">
     <value>Fermer</value>
@@ -4150,7 +4150,7 @@ ou de fin est manquante. Veuillez les insérer ou changer le type de balise.</va
     <value>Copier</value>
   </data>
   <data name="Dictionary_dictionariesLabel" xml:space="preserve">
-    <value>Cliquer ici pour télécharger de nouveaux dictionnaires</value>
+    <value>Cliquer ici pour télécharger nouveaux dictionnaires</value>
   </data>
   <data name="Dictionary_helpLabel" xml:space="preserve">
     <value>Vérifier si le mots est correct et rechercher des synonymes. </value>

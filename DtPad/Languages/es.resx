@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -130,7 +130,7 @@
     <value>DtPad (2009-2012) tiene licencia Apache License, Version 2.0,
 - apache.org/licenses/LICENSE-2.0
 
-Esta aplicación requiere Microsoft .NET Framework 4 y utilizar el registro de Windows sólo para salvar el asociación &quot;Abrir con&quot; en el menú contextual del Explorador de Windows.
+Esta aplicación requiere Microsoft .NET Framework 4 y utilizar el registro de Windows sólo para salvar el asociación "Abrir con" en el menú contextual del Explorador de Windows.
 
 Traducción al francés por: Alain Buferne.
 
@@ -161,7 +161,7 @@ Dropbox servicio: Dropbox Inc.
 Diccionarios de idiomas por: OpenOffice.org.
 - wiki.services.openoffice.org/wiki/Dictionaries
 
-DtPad no recoge ninguna información sobre el uso y los usuarios. Información que puede ser registrado en &quot;Logs&quot; carpeta sólo se refiere a los errores del programa y advertencias mostraron incluso en la interfaz, y en ningún caso contendrá el texto del usuario o los datos privados.</value>
+DtPad no recoge ninguna información sobre el uso y los usuarios. Información que puede ser registrado en "Logs" carpeta sólo se refiere a los errores del programa y advertencias mostraron incluso en la interfaz, y en ningún caso contendrá el texto del usuario o los datos privados.</value>
   </data>
   <data name="About_emailPictureBoxToolTip" xml:space="preserve">
     <value>Escribir un e-mail al autor de DtPad </value>
@@ -221,7 +221,7 @@ DtPad no recoge ninguna información sobre el uso y los usuarios. Información q
     <value>Extensión:</value>
   </data>
   <data name="Extensions_extensionPictureBoxToolTip" xml:space="preserve">
-    <value>Inserte solamente la extensión de archivo (es decir, &quot;txt&quot;)</value>
+    <value>Inserte solamente la extensión de archivo (es decir, "txt")</value>
   </data>
   <data name="Extensions_helpLabel" xml:space="preserve">
     <value>Configuración de las extensiones de archivo compatibles con DtPad.</value>
@@ -556,13 +556,13 @@ Otro</value>
   </data>
   <data name="Tools_commandLinePictureBoxToolTip" xml:space="preserve">
     <value>Introduzca la ruta y el nombre del ejecutable
-(es decir, &quot;C:\Archivos de programa\DtPad\DtPad.exe&quot;)</value>
+(es decir, "C:\Archivos de programa\DtPad\DtPad.exe")</value>
   </data>
   <data name="Tools_descriptionLabel" xml:space="preserve">
     <value>Descripción:</value>
   </data>
   <data name="Tools_helpLabel" xml:space="preserve">
-    <value>Administrar aplicaciones externas vinculadas dentro DtPad menú &quot;Instrumentos&quot;.</value>
+    <value>Administrar aplicaciones externas vinculadas dentro DtPad menú "Instrumentos".</value>
   </data>
   <data name="Tools_okButton" xml:space="preserve">
     <value>Aceptar</value>
@@ -589,7 +589,7 @@ Maximizada</value>
   </data>
   <data name="Tools_workingFolderPictureBoxToolTip" xml:space="preserve">
     <value>Introduzca la ruta de trabajo del ejecutable
-(es decir, &quot;C:\Archivos de programa\DtPad&quot;)</value>
+(es decir, "C:\Archivos de programa\DtPad")</value>
   </data>
   <data name="VersionCheck_closeButton" xml:space="preserve">
     <value>Cerrar</value>
@@ -644,7 +644,7 @@ Maximizada</value>
 
 bienvenidos a Dtpad, el fácil de
 usar editor de texto con una
-interfaz de pestañas y muchas funciones interesantes. Debido a su estado de desarrollo continúan, cada comentario o informe sobre la utilización de DtPad será bienvenido! Utilice la opción &quot;Informe de errores&quot; dentro de menú &quot;Ayuda&quot;, o escribir un mensaje usando el icono de correo electrónico en la ventana de &quot;Sobre&quot;.
+interfaz de pestañas y muchas funciones interesantes. Debido a su estado de desarrollo continúan, cada comentario o informe sobre la utilización de DtPad será bienvenido! Utilice la opción "Informe de errores" dentro de menú "Ayuda", o escribir un mensaje usando el icono de correo electrónico en la ventana de "Sobre".
 Saludos cordiales,</value>
   </data>
   <data name="AlertO_okButton" xml:space="preserve">
@@ -1563,13 +1563,13 @@ El archivo se restablece automáticamente con los valores predeterminado!</value
     <value>Archivo exportación de DtPad</value>
   </data>
   <data name="ImportExportManager_ExportStatusLabel" xml:space="preserve">
-    <value>Configuración y archivo de datos &quot;{0}&quot; exportado</value>
+    <value>Configuración y archivo de datos "{0}" exportado</value>
   </data>
   <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Seleccionar la carpeta donde colocar los ajustes y datos (es decir, notas, archivos favoritos) a la exportación:</value>
   </data>
   <data name="ImportExportManager_ImportStatusLabel" xml:space="preserve">
-    <value>Configuración y archivo de datos &quot;{0}&quot; importado</value>
+    <value>Configuración y archivo de datos "{0}" importado</value>
   </data>
   <data name="ImportExportManager_WarningImport" xml:space="preserve">
     <value>El archivo de exportación seleccionado se ha realizado con una versión diferente de DtPad.
@@ -1613,7 +1613,7 @@ Para evitar problemas de compatibilidad, se aconseja no importarlo.
     <value>Tamaño</value>
   </data>
   <data name="ZipManager_OverwriteQuestion" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; ya existe.
+    <value>El archivo "{0}" ya existe.
 ¿Desea sobreescribirlo?</value>
   </data>
   <data name="ZipExtract_filenameLabel1" xml:space="preserve">
@@ -1824,13 +1824,13 @@ UTF-32 Little Endian</value>
     <value>Sesión</value>
   </data>
   <data name="SessionManager_Closed" xml:space="preserve">
-    <value>Sesión &quot;{0}&quot; cerrada</value>
+    <value>Sesión "{0}" cerrada</value>
   </data>
   <data name="SessionManager_Opened" xml:space="preserve">
-    <value>Sesión &quot;{0}&quot; abierta</value>
+    <value>Sesión "{0}" abierta</value>
   </data>
   <data name="SessionManager_Saved" xml:space="preserve">
-    <value>Sesión &quot;{0}&quot; guardada</value>
+    <value>Sesión "{0}" guardada</value>
   </data>
   <data name="SessionManager_FileDialog" xml:space="preserve">
     <value>Sesiones de DtPad (*.dps)|*.dps</value>
@@ -1916,10 +1916,10 @@ Haga clic en Aceptar para proceder a la selección del nombre del archivo de ses
 La operación no puede ser completada.</value>
   </data>
   <data name="FileManager_ReadonlyNo" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; configurado en acceso normal</value>
+    <value>El archivo "{0}" configurado en acceso normal</value>
   </data>
   <data name="FileManager_ReadonlyYes" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; configurado en acceso sólo lectura</value>
+    <value>El archivo "{0}" configurado en acceso sólo lectura</value>
   </data>
   <data name="Options_tabGroupBox1" xml:space="preserve">
     <value>Ajustes</value>
@@ -2008,17 +2008,17 @@ Seleccione otro destino.</value>
     <value>Insertar fecha y hora...</value>
   </data>
   <data name="FileManager_FileInUse" xml:space="preserve">
-    <value>No se puede abrir &quot;{0}&quot;.
+    <value>No se puede abrir "{0}".
 El archivo está en uso por otro proceso.</value>
   </data>
   <data name="FileManager_FileNotExisting" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; no existe.</value>
+    <value>El archivo "{0}" no existe.</value>
   </data>
   <data name="FileManager_NoMessageFileInUse" xml:space="preserve">
-    <value>&quot;{0}&quot; está en uso por otro proceso</value>
+    <value>"{0}" está en uso por otro proceso</value>
   </data>
   <data name="FileManager_NoMessageFileNotExists" xml:space="preserve">
-    <value>&quot;{0}&quot; no existe.</value>
+    <value>"{0}" no existe.</value>
   </data>
   <data name="PadText_helpLabel" xml:space="preserve">
     <value>Alinear texto con carácter de relleno como llenando.</value>
@@ -2165,7 +2165,7 @@ El texto que figura en pestañas es igual.</value>
     <value>Guardar automáticamente la sesión abierta al cerrar </value>
   </data>
   <data name="FileManager_FileRenamed" xml:space="preserve">
-    <value>Archivo &quot;{0}&quot; rebautizado como &quot;{1}&quot;</value>
+    <value>Archivo "{0}" rebautizado como "{1}"</value>
   </data>
   <data name="FileManager_Reload" xml:space="preserve">
     <value>Recarga el archivo, todos los cambios se perderán.
@@ -2324,17 +2324,17 @@ Complete la información de plantillas para proceder.</value>
 Podría estar dañado.</value>
   </data>
   <data name="SessionManager_Renamed" xml:space="preserve">
-    <value>Sesión &quot;{0}&quot; se ha cambiado el nombre</value>
+    <value>Sesión "{0}" se ha cambiado el nombre</value>
   </data>
   <data name="Form1_renameSessionToolStripButton" xml:space="preserve">
     <value>Cambiar nombre de sesión...</value>
   </data>
   <data name="SessionManager_FileInUse" xml:space="preserve">
-    <value>No se puede abrir &quot;{0}&quot;.
+    <value>No se puede abrir "{0}".
 El archivo está en uso por otro proceso.</value>
   </data>
   <data name="SessionManager_FileNotExisting" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; no existe.</value>
+    <value>El archivo "{0}" no existe.</value>
   </data>
   <data name="Form1_listFilesToolStripMenuItem" xml:space="preserve">
     <value>Lista de archivos</value>
@@ -2491,7 +2491,7 @@ este sitio web: www.regular-expressions.info</value>
     <value>Patrones...</value>
   </data>
   <data name="SearchPattern_historyComboBoxItems" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="Form1_xmlTreeToolStripMenuItem" xml:space="preserve">
     <value>Árbol XML</value>
@@ -2628,7 +2628,7 @@ número de líneas de texto. Puede abrirlo de nuevo en cualquier momento.</value
 para evitar la apertura lenta de archivos de gran tamaño.</value>
   </data>
   <data name="ConstantUtil_NoDefault" xml:space="preserve">
-    <value>Valor predeterminado para el parámetro &quot;{0}&quot; no se encuentra.</value>
+    <value>Valor predeterminado para el parámetro "{0}" no se encuentra.</value>
   </data>
   <data name="DateTimeUtil_DateTimeFormatWrong" xml:space="preserve">
     <value>Formato de DateTime no se admite.</value>
@@ -2715,7 +2715,7 @@ Todos los ajustes guardados se perderán!</value>
     <value>Especifique un texto para buscar!</value>
   </data>
   <data name="SearchInFiles_searchFolderComboBoxItems" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="Form1_openFileListToolStripMenuItem" xml:space="preserve">
     <value>Lista de archivos...</value>
@@ -2790,7 +2790,7 @@ Todos los ajustes guardados se perderán!</value>
     <value>Mostrar números de semana</value>
   </data>
   <data name="SessionManager_XmlDocError" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; no contiene una estructura XML válida.</value>
+    <value>El archivo "{0}" no contiene una estructura XML válida.</value>
   </data>
   <data name="TabManager_LineNumbersDisabled" xml:space="preserve">
     <value>El panel de los números de fila se ha desactivado temporalmente debido a una gran
@@ -2866,10 +2866,10 @@ número de líneas de texto. Puede abrirlo de nuevo en cualquier momento.</value
     <value>No texto seleccionado.</value>
   </data>
   <data name="Options_openWithCheckBox" xml:space="preserve">
-    <value>Vínculo &quot;Abrir con&quot;</value>
+    <value>Vínculo "Abrir con"</value>
   </data>
   <data name="Options_sendToCheckBox" xml:space="preserve">
-    <value>Asociación &quot;Enviar a&quot;</value>
+    <value>Asociación "Enviar a"</value>
   </data>
   <data name="Options_shellGroupBox1" xml:space="preserve">
     <value>Menú del Explorador de Windows</value>
@@ -3204,11 +3204,11 @@ Formato exigido: example@email.com</value>
 número de líneas de texto. Puede abrirlo de nuevo en cualquier momento.</value>
   </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
-    <value>Archivo &quot;{0}&quot; se ha eliminado</value>
+    <value>Archivo "{0}" se ha eliminado</value>
   </data>
   <data name="FileManager_SureDeleteFile" xml:space="preserve">
     <value>¿Está seguro que desea eliminar el archivo
-&quot;{0}&quot;?</value>
+"{0}"?</value>
   </data>
   <data name="Form1_deleteFileToolStripMenuItem" xml:space="preserve">
     <value>Eliminar archivo</value>
@@ -3219,7 +3219,7 @@ Verifique que el dirección URL es correcto, o que su sitio web esté disponible
   </data>
   <data name="SearchInFiles_filenamePatternPictureBoxToolTip" xml:space="preserve">
     <value>Insertar patrones separados por comas o punto y coma
-(es decir, &quot;*.txt,*.dts&quot;)</value>
+(es decir, "*.txt,*.dts")</value>
   </data>
   <data name="SearchInFiles_caseSensitiveCheckBox" xml:space="preserve">
     <value>Coincidir mayúsculas y minúsculas</value>
@@ -3311,7 +3311,7 @@ Semanal</value>
     <value>Error durante la comprobación automática de la versión de DtPad!</value>
   </data>
   <data name="Options_DPDefaultDirCharNotAllowed" xml:space="preserve">
-    <value>Los siguientes caracteres no están permitidos: \ / : ? * &lt; &gt; &quot; |</value>
+    <value>Los siguientes caracteres no están permitidos: \ / : ? * &lt; &gt; " |</value>
   </data>
   <data name="FileManager_SavedOnDropbox" xml:space="preserve">
     <value>guardado en Dropbox</value>
@@ -3329,7 +3329,7 @@ Semanal</value>
     <value>Eliminar</value>
   </data>
   <data name="DropboxFileDialog_DPDefaultFileCharNotAllowed" xml:space="preserve">
-    <value>Los siguientes caracteres no están permitidos: \ / : ? * &lt; &gt; &quot; |</value>
+    <value>Los siguientes caracteres no están permitidos: \ / : ? * &lt; &gt; " |</value>
   </data>
   <data name="DropboxFileDialog_fileNameLabel" xml:space="preserve">
     <value>Nombre de archivo:</value>
@@ -3360,7 +3360,7 @@ Semanal</value>
     <value>Archivo en Dropbox como...</value>
   </data>
   <data name="DropboxFileDialog_saveAsComboBoxItems" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="DropboxFileDialog_saveAsLabel" xml:space="preserve">
     <value>Guardar como:</value>
@@ -3411,11 +3411,11 @@ Semanal</value>
     <value>Abrir</value>
   </data>
   <data name="FileManager_openingFileEmpty" xml:space="preserve">
-    <value>Archivo &quot;{0}&quot; está vacío.</value>
+    <value>Archivo "{0}" está vacío.</value>
   </data>
   <data name="FileManager_openingFileNotExists" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; no se encuentra dentro de la carpeta
-&quot;{1}&quot;.</value>
+    <value>El archivo "{0}" no se encuentra dentro de la carpeta
+"{1}".</value>
   </data>
   <data name="DropboxFileDialog_saveAsLabel_Open" xml:space="preserve">
     <value>Tipo de archivo:</value>
@@ -3440,8 +3440,8 @@ Semanal</value>
   </data>
   <data name="SearchInFiles_exclusionPatternPictureBoxToolTip" xml:space="preserve">
     <value>Insertar patrones separados por comas o punto y coma
-(es decir, &quot;*.txt,*.dts&quot;).
-Filtro &quot;*. *&quot; no está permitido.</value>
+(es decir, "*.txt,*.dts").
+Filtro "*. *" no está permitido.</value>
   </data>
   <data name="Form1_dropboxToolStripDropDownButton" xml:space="preserve">
     <value>Dropbox</value>
@@ -3454,7 +3454,7 @@ Filtro &quot;*. *&quot; no está permitido.</value>
   </data>
   <data name="DropboxManager_UnauthorizedAccess" xml:space="preserve">
     <value>Acceso no autorizado a Dropbox!
-Verificar para ser autenticado en él, mediante la apertura de &quot;www.dropbox.com&quot; con su explorador web predeterminado.</value>
+Verificar para ser autenticado en él, mediante la apertura de "www.dropbox.com" con su explorador web predeterminado.</value>
   </data>
   <data name="DropboxFileDialog_copyToolStripMenuItem2" xml:space="preserve">
     <value>Copiar</value>
@@ -3508,7 +3508,7 @@ Verificar para ser autenticado en él, mediante la apertura de &quot;www.dropbox
     <value>Ruta</value>
   </data>
   <data name="ConfigUtil_NoValue" xml:space="preserve">
-    <value>Valor para el parámetro &quot;{0}&quot; no se encuentra.</value>
+    <value>Valor para el parámetro "{0}" no se encuentra.</value>
   </data>
   <data name="FileProperties_EncodingWithoutBOM" xml:space="preserve">
     <value>Sin BOM</value>
@@ -3586,7 +3586,7 @@ Verificar para ser autenticado en él, mediante la apertura de &quot;www.dropbox
     <value>Retorno de carro para espacio</value>
   </data>
   <data name="PasswordUtil_NoValue" xml:space="preserve">
-    <value>Valor para el parámetro &quot;{0}&quot; no se encuentra.</value>
+    <value>Valor para el parámetro "{0}" no se encuentra.</value>
   </data>
   <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
     <value>Cerrar todo</value>
@@ -3814,7 +3814,7 @@ No será posible guardar modificaciones en este archivo.</value>
   </data>
   <data name="DropboxManager_UriFormat" xml:space="preserve">
     <value>Error al acceder a Dropbox!
-Verifique su cuenta en &quot;www.dropbox.com&quot; y proxy (si utiliza uno) en la ventana de configuración.</value>
+Verifique su cuenta en "www.dropbox.com" y proxy (si utiliza uno) en la ventana de configuración.</value>
   </data>
   <data name="GoToLine_lineCurrentLabel1" xml:space="preserve">
     <value>Fila actual:</value>
@@ -3835,7 +3835,7 @@ El archivo puede estar dañado.</value>
   </data>
   <data name="DropboxManager_ProxyHostRequired" xml:space="preserve">
     <value>Para autenticar a través de proxy, Dropbox requiere explícitamente su dirección.
-Por favor, escríbalo en el campo correspondiente en el cuadro de diálogo de ajustes (&quot;Internet&quot;) e inténtelo de nuevo.</value>
+Por favor, escríbalo en el campo correspondiente en el cuadro de diálogo de ajustes ("Internet") e inténtelo de nuevo.</value>
   </data>
   <data name="DropboxManager_SuccessfullyAuth" xml:space="preserve">
     <value>¿DtPad ha sido exitosamente autorizado a acceder a Dropbox?
@@ -3858,12 +3858,12 @@ Pulse Sí para continuar o No para cancelar.</value>
     <value>Agregar a archivos favoritos</value>
   </data>
   <data name="DropboxManager_SureRenameFile" xml:space="preserve">
-    <value>¿Está seguro que desea cambiar el nombre de archivo &quot;{0}&quot;
-como &quot;{1}&quot;?</value>
+    <value>¿Está seguro que desea cambiar el nombre de archivo "{0}"
+como "{1}"?</value>
   </data>
   <data name="DropboxManager_SureRenameFolder" xml:space="preserve">
-    <value>¿Está seguro que desea cambiar el nombre de carpeta &quot;{0}&quot;
-como &quot;{1}&quot;?</value>
+    <value>¿Está seguro que desea cambiar el nombre de carpeta "{0}"
+como "{1}"?</value>
   </data>
   <data name="DropboxManager_WarningRenaming" xml:space="preserve">
     <value>No fue posible cambiar el nombre del objeto.
@@ -3874,11 +3874,11 @@ Compruebe si se encuentra en estado de sólo lectura.</value>
   </data>
   <data name="DropboxManager_SureDeleteFile" xml:space="preserve">
     <value>¿Estás seguro de eliminar el archivo
-&quot;{0}&quot;?</value>
+"{0}"?</value>
   </data>
   <data name="DropboxManager_SureDeleteFolder" xml:space="preserve">
     <value>¿Estás seguro de eliminar la carpeta
-&quot;{0}&quot;?</value>
+"{0}"?</value>
   </data>
   <data name="DropboxManager_WarningDeleting" xml:space="preserve">
     <value>No fue posible para eliminar el objeto.</value>
@@ -4000,7 +4000,7 @@ El archivo se guarda con el primero de los dos para mantenerlo constante.</value
     <value>Contenido del archivo XML no es válido. ¿Aún desea continuar?</value>
   </data>
   <data name="FileListManager_AddedFavourite" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; ha sido añadido a favoritos.</value>
+    <value>El archivo "{0}" ha sido añadido a favoritos.</value>
   </data>
   <data name="Form1_normalizeToolStripMenuItem" xml:space="preserve">
     <value>Normalizar HTML</value>
@@ -4106,7 +4106,7 @@ Inserte ellos, o cambiar la selección del tipo de etiqueta.</value>
     <value>Archivo ZIP (*.zip)|*.zip</value>
   </data>
   <data name="ZipManager_Saved" xml:space="preserve">
-    <value>Archivo comprimido &quot;{0}&quot; guardado</value>
+    <value>Archivo comprimido "{0}" guardado</value>
   </data>
   <data name="ZipManager_NoContent" xml:space="preserve">
     <value>No hay contenido o archivos abiertos para guardar en archivo.</value>
@@ -4121,10 +4121,10 @@ Inserte ellos, o cambiar la selección del tipo de etiqueta.</value>
     <value>Significado: {0}</value>
   </data>
   <data name="DictionaryManager_Synonym" xml:space="preserve">
-    <value>&gt; sinónimo: &quot;{0}&quot;</value>
+    <value>&gt; sinónimo: "{0}"</value>
   </data>
   <data name="DictionaryManager_Tip" xml:space="preserve">
-    <value>&gt; sugerencia: &quot;{0}&quot;</value>
+    <value>&gt; sugerencia: "{0}"</value>
   </data>
   <data name="DictionaryManager_TipsMore" xml:space="preserve">
     <value>Hay {0} palabras sugeridas</value>
@@ -4136,7 +4136,7 @@ Inserte ellos, o cambiar la selección del tipo de etiqueta.</value>
     <value>incorrecta</value>
   </data>
   <data name="DictionaryManager_Word" xml:space="preserve">
-    <value>La palabra &quot;{0}&quot; es {1}</value>
+    <value>La palabra "{0}" es {1}</value>
   </data>
   <data name="Dictionary_clearButton" xml:space="preserve">
     <value>Borrar resultados</value>
@@ -4157,7 +4157,7 @@ Inserte ellos, o cambiar la selección del tipo de etiqueta.</value>
     <value>Idioma:</value>
   </data>
   <data name="Dictionary_NoDictionaries" xml:space="preserve">
-    <value>No diccionario se encuentra dentro de la carpeta del programa &quot;Languages&quot;.
+    <value>No diccionario se encuentra dentro de la carpeta del programa "Languages".
 Marque esta URL para descargar o haga clic en el enlace en la ventana siguiente:
 </value>
   </data>
@@ -4203,7 +4203,7 @@ antes de proceder a la generación del archivo comprimido.</value>
     <value>Deshacer</value>
   </data>
   <data name="DictionaryManager_NoDictionary" xml:space="preserve">
-    <value>El diccionario del idioma en uso no se encuentra en las carpetas del programa &quot;Languages&quot;.
+    <value>El diccionario del idioma en uso no se encuentra en las carpetas del programa "Languages".
 Marque esta URL para descargar:
 </value>
   </data>
@@ -4253,7 +4253,7 @@ Marque esta URL para descargar:
     <value>Etiqueta</value>
   </data>
   <data name="CustomFilesManager_HostsClose" xml:space="preserve">
-    <value>Para abrir el panel de nuevo, haga clic en &quot;Vista -&gt; Configurador de archivo hosts&quot;.</value>
+    <value>Para abrir el panel de nuevo, haga clic en "Vista -&gt; Configurador de archivo hosts".</value>
   </data>
   <data name="WindowManager_SureResetWindow" xml:space="preserve">
     <value>¿Está seguro que desea restaurar la configuración predeterminada de aspecto de DtPad?</value>
@@ -4304,11 +4304,11 @@ Marque esta URL para descargar:
     <value>La captura de pantalla se ha guardado en portapapeles.</value>
   </data>
   <data name="FileManager_FileTooHeavy" xml:space="preserve">
-    <value>No se puede abrir &quot;{0}&quot;.
+    <value>No se puede abrir "{0}".
 Tamaño del archivo es superior al permitido (100 MB).</value>
   </data>
   <data name="FileManager_NoMessageFileTooHeavy" xml:space="preserve">
-    <value>&quot;{0}&quot; es superior al permitido (100 MB)</value>
+    <value>"{0}" es superior al permitido (100 MB)</value>
   </data>
   <data name="FileProperties_Bytes" xml:space="preserve">
     <value>bytes</value>
@@ -4320,7 +4320,7 @@ Tamaño del archivo es superior al permitido (100 MB).</value>
     <value>Archivo ZIP (*.zip)|*.zip</value>
   </data>
   <data name="SessionManager_ExportSaved" xml:space="preserve">
-    <value>Archivo comprimido &quot;{0}&quot; guardado</value>
+    <value>Archivo comprimido "{0}" guardado</value>
   </data>
   <data name="SessionManager_NoExport" xml:space="preserve">
     <value>La exportación sólo se permite para las sesiones de cuyos archivos se encuentran en el mismo
@@ -4343,11 +4343,11 @@ Archivo DPS no encontrado!</value>
     <value>Seleccione la carpeta donde colocar los archivos de sesión:</value>
   </data>
   <data name="SessionManager_ImportOverwrite" xml:space="preserve">
-    <value>El archivo &quot;{0}&quot; ya existe en la carpeta de destino.
+    <value>El archivo "{0}" ya existe en la carpeta de destino.
 ¿Desea sobreescribirlo?</value>
   </data>
   <data name="SessionManager_ImportStatusLabel" xml:space="preserve">
-    <value>Sesión &quot;{0}&quot; desempaquetada</value>
+    <value>Sesión "{0}" desempaquetada</value>
   </data>
   <data name="Form1_importFromZipToolStripMenuItem" xml:space="preserve">
     <value>Importar desde ZIP...</value>

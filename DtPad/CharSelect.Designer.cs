@@ -103,7 +103,7 @@
             this.charsDataGridView.ShowCellToolTips = false;
             this.charsDataGridView.ShowEditingIcon = false;
             this.charsDataGridView.ShowRowErrors = false;
-            this.charsDataGridView.Size = new System.Drawing.Size(295, 243);
+            this.charsDataGridView.Size = new System.Drawing.Size(303, 243);
             this.charsDataGridView.TabIndex = 1;
             this.charsDataGridView.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.charsDataGridView_CellMouseDoubleClick);
             // 
@@ -150,7 +150,7 @@
             // closeButton
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.Location = new System.Drawing.Point(234, 298);
+            this.closeButton.Location = new System.Drawing.Point(242, 298);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 4;
@@ -191,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(321, 333);
+            this.ClientSize = new System.Drawing.Size(329, 333);
             this.Controls.Add(this.clipboardedLabel);
             this.Controls.Add(this.clipboardedLabel1);
             this.Controls.Add(this.titleLabel);
@@ -201,7 +201,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(337, 151);
+            this.MinimumSize = new System.Drawing.Size(345, 151);
             this.Name = "CharSelect";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;

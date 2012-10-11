@@ -121,7 +121,7 @@
             "Normal window",
             "Minimized",
             "Maximized"});
-            this.runComboBox.Location = new System.Drawing.Point(92, 86);
+            this.runComboBox.Location = new System.Drawing.Point(101, 86);
             this.runComboBox.Name = "runComboBox";
             this.runComboBox.Size = new System.Drawing.Size(135, 21);
             this.runComboBox.TabIndex = 7;
@@ -164,14 +164,14 @@
             this.commandLinePictureBox.TabIndex = 5;
             this.commandLinePictureBox.TabStop = false;
             this.toolToolTip.SetToolTip(this.commandLinePictureBox, "Insert the path and name of the executable (ie. C:\\Program Files\\DtPad\\DtPad.exe)" +
-                    "");
+        "");
             // 
             // workingFolderTextBox
             // 
             this.workingFolderTextBox.ContextMenuStrip = this.contentContextMenuStrip;
-            this.workingFolderTextBox.Location = new System.Drawing.Point(92, 63);
+            this.workingFolderTextBox.Location = new System.Drawing.Point(101, 63);
             this.workingFolderTextBox.Name = "workingFolderTextBox";
-            this.workingFolderTextBox.Size = new System.Drawing.Size(190, 20);
+            this.workingFolderTextBox.Size = new System.Drawing.Size(181, 20);
             this.workingFolderTextBox.TabIndex = 5;
             this.workingFolderTextBox.Leave += new System.EventHandler(this.workingFolderTextBox_Leave);
             // 
@@ -187,27 +187,27 @@
             this.toolStripSeparator29,
             this.selectAllToolStripMenuItem});
             this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(129, 148);
+            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 148);
             this.contentContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contentContextMenuStrip_Opening);
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Enabled = false;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(119, 6);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
             // 
@@ -215,7 +215,7 @@
             // 
             this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
             // 
@@ -223,35 +223,35 @@
             // 
             this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
             // 
             // toolStripSeparator29
             // 
             this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
             // 
             // commandLineTextBox
             // 
             this.commandLineTextBox.ContextMenuStrip = this.contentContextMenuStrip;
-            this.commandLineTextBox.Location = new System.Drawing.Point(92, 40);
+            this.commandLineTextBox.Location = new System.Drawing.Point(101, 40);
             this.commandLineTextBox.Name = "commandLineTextBox";
-            this.commandLineTextBox.Size = new System.Drawing.Size(190, 20);
+            this.commandLineTextBox.Size = new System.Drawing.Size(181, 20);
             this.commandLineTextBox.TabIndex = 3;
             this.commandLineTextBox.Leave += new System.EventHandler(this.commandLineTextBox_Leave);
             // 
@@ -267,9 +267,9 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.ContextMenuStrip = this.contentContextMenuStrip;
-            this.descriptionTextBox.Location = new System.Drawing.Point(92, 17);
+            this.descriptionTextBox.Location = new System.Drawing.Point(101, 17);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(212, 20);
+            this.descriptionTextBox.Size = new System.Drawing.Size(203, 20);
             this.descriptionTextBox.TabIndex = 1;
             this.descriptionTextBox.Leave += new System.EventHandler(this.descriptionTextBox_Leave);
             // 
