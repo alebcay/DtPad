@@ -132,7 +132,7 @@
 
 Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stockerl&apos;association  &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
 
-Traduction Française: Alain Buferne.
+Traduction française: Alain Buferne.
 
 Icones: Delacro.
 - delacro.deviantart.com
@@ -155,7 +155,7 @@ Traduction et service de recherche: Google Inc.
 - google.com/language_tools
 - google.com
 
-Service Dropbox : Dropbox Inc.
+Service Dropbox: Dropbox Inc.
 - dropbox.com
 
 Dictionnaires: OpenOffice.org.
@@ -167,7 +167,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Envoyer un email à l&apos;auteur de DtPad</value>
   </data>
   <data name="About_rssPictureBoxToolTip" xml:space="preserve">
-    <value>Lire le flux Rss de diariotraduttore.com</value>
+    <value>Lire le flux RSS de diariotraduttore.com</value>
   </data>
   <data name="About_Title" xml:space="preserve">
     <value>A propos</value>

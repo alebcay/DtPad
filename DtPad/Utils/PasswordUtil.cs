@@ -127,10 +127,19 @@ namespace DtPad.Utils
 
         private static Configuration GetPasswordConfig()
         {
+            String fileNameAndPath = Path.Combine(Application.StartupPath, ConstantUtil.pwFile);
+
+            //Check for read-only flag
+            FileInfo fileInfo = new FileInfo(fileNameAndPath);
+            if (fileInfo.Exists && fileInfo.IsReadOnly)
+            {
+                File.SetAttributes(fileNameAndPath, FileAttributes.Normal);
+            }
+
             DecryptPasswordConfig();
 
-            ExeConfigurationFileMap pwdConfig = new ExeConfigurationFileMap { ExeConfigFilename = Path.Combine(Application.StartupPath, ConstantUtil.pwFile) };
-            return ConfigurationManager.OpenMappedExeConfiguration(pwdConfig, ConfigurationUserLevel.None); 
+            ExeConfigurationFileMap pwdConfig = new ExeConfigurationFileMap { ExeConfigFilename = fileNameAndPath };
+            return ConfigurationManager.OpenMappedExeConfiguration(pwdConfig, ConfigurationUserLevel.None);
         }
 
         private static void DecryptPasswordConfig()

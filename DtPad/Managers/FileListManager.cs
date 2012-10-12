@@ -48,10 +48,18 @@ namespace DtPad.Managers
 
             FileStream fileStream = null;
             StreamWriter textFile = null;
+            String fileNameAndPath = Path.Combine(ConstantUtil.ApplicationExecutionPath(), file);
+
+            //Check for read-only flag
+            FileInfo fileInfo = new FileInfo(fileNameAndPath);
+            if (fileInfo.Exists && fileInfo.IsReadOnly)
+            {
+                File.SetAttributes(fileNameAndPath, FileAttributes.Normal);
+            }
 
             try
             {
-                fileStream = File.Create(Path.Combine(ConstantUtil.ApplicationExecutionPath(), file));
+                fileStream = File.Create(fileNameAndPath);
                 textFile = new StreamWriter(fileStream, Encoding.Default);
                 textFile.Write(content);
             }
