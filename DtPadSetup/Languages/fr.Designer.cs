@@ -70,7 +70,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alert.
+        ///   Looks up a localized string similar to Attention.
         /// </summary>
         internal static string AlertO_Title {
             get {
@@ -79,7 +79,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy error message to clipboard.
+        ///   Looks up a localized string similar to Copier le message d&apos;erreur dans le presse-papier.
         /// </summary>
         internal static string ErrorO_copyErrorDescriptionPictureBoxToolTip {
             get {
@@ -97,7 +97,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Looks up a localized string similar to Erreur.
         /// </summary>
         internal static string ErrorO_Title {
             get {
@@ -106,7 +106,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Available space:.
+        ///   Looks up a localized string similar to Volume dispon.:.
         /// </summary>
         internal static string Form1_availableSpaceLabel {
             get {
@@ -115,7 +115,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt; Back.
+        ///   Looks up a localized string similar to &lt; Retour.
         /// </summary>
         internal static string Form1_backButton {
             get {
@@ -124,7 +124,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse....
+        ///   Looks up a localized string similar to Naviguer….
         /// </summary>
         internal static string Form1_browseButton {
             get {
@@ -133,7 +133,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select the folder where to install DtPad:.
+        ///   Looks up a localized string similar to Sélectionner le répertoire d&apos;installation de DtPad:.
         /// </summary>
         internal static string Form1_BrowseDescription {
             get {
@@ -142,7 +142,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to Annuler.
         /// </summary>
         internal static string Form1_cancelButton {
             get {
@@ -151,7 +151,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit.
+        ///   Looks up a localized string similar to Sortir.
         /// </summary>
         internal static string Form1_cancelButtonExit {
             get {
@@ -160,7 +160,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy.
+        ///   Looks up a localized string similar to Copier.
         /// </summary>
         internal static string Form1_copyToolStripMenuItem {
             get {
@@ -169,7 +169,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copy.
+        ///   Looks up a localized string similar to Copier.
         /// </summary>
         internal static string Form1_copyToolStripMenuItem1 {
             get {
@@ -178,7 +178,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cut.
+        ///   Looks up a localized string similar to Couper.
         /// </summary>
         internal static string Form1_cutToolStripMenuItem1 {
             get {
@@ -187,7 +187,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
+        ///   Looks up a localized string similar to Supprimer.
         /// </summary>
         internal static string Form1_deleteToolStripMenuItem1 {
             get {
@@ -196,7 +196,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Choose your destination path:.
+        ///   Looks up a localized string similar to Choisissez chemin de destination:.
         /// </summary>
         internal static string Form1_destinationPathLabel {
             get {
@@ -223,7 +223,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enable proxy settings.
+        ///   Looks up a localized string similar to Autoriser les paramètres du proxy.
         /// </summary>
         internal static string Form1_enableProxySettingsCheckBox {
             get {
@@ -232,7 +232,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to End.
+        ///   Looks up a localized string similar to Fin.
         /// </summary>
         internal static string Form1_EndPhase {
             get {
@@ -241,7 +241,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select the folder where to place DtPad:.
+        ///   Looks up a localized string similar to Sélectionner le répertoire où placer DtPad:.
         /// </summary>
         internal static string Form1_folderBrowserDialog {
             get {
@@ -250,11 +250,10 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Information: by now DtPad support only english and
-        ///italian language. Next versions of this editor should
-        ///even support other cultures. If you are interested in
-        ///giving support for other localization, contact me using
-        ///the form contained on the following page..
+        ///   Looks up a localized string similar to Information: pour le moment DtPad existe en Anglais,
+        ///Italien, Français et Espagnol. Si vous êtes intéressé
+        ///pour aider pour d&apos;autres localisations, veuillez me
+        ///contacter en utilisant le formulaire de la page suivante..
         /// </summary>
         internal static string Form1_infoLabel {
             get {
@@ -263,7 +262,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install.
+        ///   Looks up a localized string similar to Installer.
         /// </summary>
         internal static string Form1_installGroupBox1 {
             get {
@@ -272,7 +271,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install.
+        ///   Looks up a localized string similar to Installer.
         /// </summary>
         internal static string Form1_InstallPhase {
             get {
@@ -281,7 +280,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connection.
+        ///   Looks up a localized string similar to Connexion.
         /// </summary>
         internal static string Form1_internetGroupBox1 {
             get {
@@ -308,11 +307,11 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Welcome to DtPad setup!
+        ///   Looks up a localized string similar to Bienvenue dans l&apos;installation de DtPad!
         ///
-        ///DtPad is a text editor, based on .NET Framework 4 (REQUIRED, if you do not own it, download it from Microsoft website) and licensed under Apache License, Version 2.0 (apache.org/licenses/LICENSE-2.0).
+        ///DtPad est un éditeur de texte basé sur le Framework .NET 4 (Si vous ne l&apos;avez pas sur votre ordinateur, téléchargez le depuis le site Microsoft) et sous licence Apache version 2,0 (apache.org/licences/LICENCE-2.0).
         ///
-        ///Click on &quot;Next&quot; button to proceed..
+        ///Cliquer sur le bouton &quot;Suivant&quot; pour poursuivre..
         /// </summary>
         internal static string Form1_introLabel {
             get {
@@ -321,7 +320,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Intro.
+        ///   Looks up a localized string similar to Introduction.
         /// </summary>
         internal static string Form1_IntroPhase {
             get {
@@ -330,11 +329,11 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Information: DtPad use Internet Explorer settings to
-        ///connect on Internet.
-        ///If your PC is behind a proxy server which requires an
-        ///authentication, insert here your username and
-        ///password..
+        ///   Looks up a localized string similar to Information: DtPad utilise les paramètres 
+        ///d&apos;Internet Explorer pour se connecter à Internet.
+        ///Si votre PC est localisé derrière un serveur proxy
+        ///nécessitant une authentification, veuillez insérer
+        ///ici votre nom d&apos;utilisateur et mot de passe..
         /// </summary>
         internal static string Form1_label1 {
             get {
@@ -343,7 +342,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to Langue.
         /// </summary>
         internal static string Form1_languageGroupBox1 {
             get {
@@ -352,7 +351,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select your language:.
+        ///   Looks up a localized string similar to Sélectionner la langue:.
         /// </summary>
         internal static string Form1_languageLabel {
             get {
@@ -361,7 +360,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to Langue.
         /// </summary>
         internal static string Form1_LanguagePhase {
             get {
@@ -388,7 +387,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Look And Feel.
+        ///   Looks up a localized string similar to Apparence.
         /// </summary>
         internal static string Form1_LookAndFeelPhase {
             get {
@@ -397,7 +396,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Minimize on tray icon.
+        ///   Looks up a localized string similar to Réduire avec une icône dans la barre de tâches.
         /// </summary>
         internal static string Form1_minimizeOnTrayIconCheckBox {
             get {
@@ -406,7 +405,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Next &gt;.
+        ///   Looks up a localized string similar to Suivant &gt;.
         /// </summary>
         internal static string Form1_nextButton {
             get {
@@ -415,7 +414,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install.
+        ///   Looks up a localized string similar to Installer.
         /// </summary>
         internal static string Form1_nextButtonInstall {
             get {
@@ -424,7 +423,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start DtPad.
+        ///   Looks up a localized string similar to Démarrer DtPad.
         /// </summary>
         internal static string Form1_nextButtonStart {
             get {
@@ -433,7 +432,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Password:.
+        ///   Looks up a localized string similar to Mot passe:.
         /// </summary>
         internal static string Form1_passwordLabel {
             get {
@@ -442,7 +441,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Paste.
+        ///   Looks up a localized string similar to Coller.
         /// </summary>
         internal static string Form1_pasteToolStripMenuItem1 {
             get {
@@ -451,7 +450,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Required space:.
+        ///   Looks up a localized string similar to Volume requis:.
         /// </summary>
         internal static string Form1_requiredSpaceLabel {
             get {
@@ -460,7 +459,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select All.
+        ///   Looks up a localized string similar to Sélectionner tout.
         /// </summary>
         internal static string Form1_selectAllToolStripMenuItem {
             get {
@@ -469,7 +468,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select All.
+        ///   Looks up a localized string similar to Sélectionner tout.
         /// </summary>
         internal static string Form1_selectAllToolStripMenuItem1 {
             get {
@@ -478,7 +477,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create association on Send To folder.
+        ///   Looks up a localized string similar to Créer l&apos;association &quot;Envoyer vers&quot;.
         /// </summary>
         internal static string Form1_sendToCheckBox {
             get {
@@ -487,7 +486,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create link into Windows Explorer context menu.
+        ///   Looks up a localized string similar to Création lien en menu contextuel de l&apos;Explorateur.
         /// </summary>
         internal static string Form1_shellCheckBox {
             get {
@@ -496,7 +495,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create shortcuts on Start menu and desktop.
+        ///   Looks up a localized string similar to Création des raccourcis démarrage et bureau.
         /// </summary>
         internal static string Form1_shortcutsCheckBox {
             get {
@@ -505,8 +504,8 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Skip settings (it will be possible to change them
-        ///using options window).
+        ///   Looks up a localized string similar to Ignorer les paramètres (il sera possible de 
+        ///les modifier plus tard)..
         /// </summary>
         internal static string Form1_skipSettingsCheckBox {
             get {
@@ -515,7 +514,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Status:.
+        ///   Looks up a localized string similar to Statut:.
         /// </summary>
         internal static string Form1_statusLabel {
             get {
@@ -524,7 +523,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stay on top.
+        ///   Looks up a localized string similar to Garder au dessus.
         /// </summary>
         internal static string Form1_stayOnTopCheckBox {
             get {
@@ -533,7 +532,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Intro.
+        ///   Looks up a localized string similar to Introduction.
         /// </summary>
         internal static string Form1_stepLabel {
             get {
@@ -542,7 +541,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verify.
+        ///   Looks up a localized string similar to Vérifier.
         /// </summary>
         internal static string Form1_testProxyButton {
             get {
@@ -560,7 +559,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unavailable.
+        ///   Looks up a localized string similar to Indisponible.
         /// </summary>
         internal static string Form1_Unavailable {
             get {
@@ -569,7 +568,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Undo.
+        ///   Looks up a localized string similar to Annuler.
         /// </summary>
         internal static string Form1_undoToolStripMenuItem1 {
             get {
@@ -578,7 +577,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Username:.
+        ///   Looks up a localized string similar to Utilisateur:.
         /// </summary>
         internal static string Form1_usernameLabel {
             get {
@@ -587,7 +586,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Window.
+        ///   Looks up a localized string similar to Fenêtre.
         /// </summary>
         internal static string Form1_windowGroupBox1 {
             get {
@@ -596,7 +595,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Window.
+        ///   Looks up a localized string similar to Fenêtre.
         /// </summary>
         internal static string Form1_WindowPhase {
             get {
@@ -605,7 +604,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Classic Windows.
+        ///   Looks up a localized string similar to Windows classique.
         /// </summary>
         internal static string Form1_windowsRadioButton {
             get {
@@ -614,7 +613,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Creating Send To association....
+        ///   Looks up a localized string similar to Création de l&apos;association &quot;Envoyer vers&quot;....
         /// </summary>
         internal static string InstallManager_CreatingAssociation {
             get {
@@ -623,7 +622,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Creating new directories....
+        ///   Looks up a localized string similar to Création de nouveaux répertoires....
         /// </summary>
         internal static string InstallManager_CreatingDir {
             get {
@@ -632,7 +631,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Creating Start menu shortcuts....
+        ///   Looks up a localized string similar to Création des raccourcis du menu de démarrage....
         /// </summary>
         internal static string InstallManager_CreatingShortcut {
             get {
@@ -641,9 +640,9 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Destination folder already contains DtPad. Are you sure to proceed?
+        ///   Looks up a localized string similar to Le répertoire de destination contient déjà DtPad. Voulez vous continuer?
         ///
-        ///All configuration files will be maintained, while program will be overwrited..
+        ///Tous les fichiers de configuration seront conservés, alors que le programme sera ecrasé..
         /// </summary>
         internal static string InstallManager_DestinationDirWithDtPad {
             get {
@@ -652,9 +651,9 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Destination folder already contains files. Are you sure to proceed?
+        ///   Looks up a localized string similar to Le répertoire de destinationcontients des fichiers. Voulez vous continuer?
         ///
-        ///DtPad files will be added to the folder..
+        ///Les fichiers de DtPad seront ajoutés au dossier..
         /// </summary>
         internal static string InstallManager_DestinationDirWithFiles {
             get {
@@ -663,7 +662,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Click on &quot;Start DtPad&quot; button to open the text editor..
+        ///   Looks up a localized string similar to Cliquer sur le bouton &quot;Démarrer DtPad&quot; pour ouvrir l&apos;editeur de texte..
         /// </summary>
         internal static string InstallManager_EndInfo {
             get {
@@ -672,7 +671,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during setup!.
+        ///   Looks up a localized string similar to Erreur lors de l&apos;installation!.
         /// </summary>
         internal static string InstallManager_Error1 {
             get {
@@ -681,7 +680,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Some files could be remained inside the installation folder..
+        ///   Looks up a localized string similar to Certains fichiers peuvent toujours exister dans le répertoire d&apos;installation..
         /// </summary>
         internal static string InstallManager_Error2 {
             get {
@@ -699,7 +698,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Extracting files....
+        ///   Looks up a localized string similar to Extraction des fichiers en cours….
         /// </summary>
         internal static string InstallManager_ExtractingFile {
             get {
@@ -708,7 +707,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Installation completed succesfully!.
+        ///   Looks up a localized string similar to L&apos;Installation s&apos;est effectuée correctement!.
         /// </summary>
         internal static string InstallManager_InstallComplete {
             get {
@@ -717,7 +716,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install process interrupted by user..
+        ///   Looks up a localized string similar to L&apos;installation a été interompue par l&apos;utilisateur..
         /// </summary>
         internal static string InstallManager_InstallInterrupted {
             get {
@@ -726,7 +725,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Integrating DtPad into Windows Explorer context menu....
+        ///   Looks up a localized string similar to Intégration de DtPad dans le menu contextuel de l&apos;Explorateur de Windows....
         /// </summary>
         internal static string InstallManager_IntegratingShell {
             get {
@@ -735,7 +734,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during Windows Explorer context menu integration!.
+        ///   Looks up a localized string similar to Erreur lors de l&apos;intégration dans le menu contextuel de l&apos;Explorateur de Windows!.
         /// </summary>
         internal static string InstallManager_IntegratingShellError {
             get {
@@ -744,7 +743,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Launch DtPad.
+        ///   Looks up a localized string similar to Démarrer DtPad.
         /// </summary>
         internal static string InstallManager_LinkLaunchDtPad {
             get {
@@ -753,7 +752,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Launch DtPad Uninstaller.
+        ///   Looks up a localized string similar to Démarrer DtPad Uninstaller.
         /// </summary>
         internal static string InstallManager_LinkLaunchDtPadUninstaller {
             get {
@@ -762,7 +761,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Launch DtPad Updater.
+        ///   Looks up a localized string similar to Démarrer les mises à jour de DtPad.
         /// </summary>
         internal static string InstallManager_LinkLaunchDtPadUpdater {
             get {
@@ -771,7 +770,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Read some informations about DtPad.
+        ///   Looks up a localized string similar to Quelques Informations à propos de DtPad.
         /// </summary>
         internal static string InstallManager_LinkReadme {
             get {
@@ -780,16 +779,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Readme.lnk.
-        /// </summary>
-        internal static string InstallManager_LinkReadmeLabel {
-            get {
-                return ResourceManager.GetString("InstallManager_LinkReadmeLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Website.
+        ///   Looks up a localized string similar to Site web.
         /// </summary>
         internal static string InstallManager_LinkWebsite {
             get {
@@ -798,7 +788,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preparing installation....
+        ///   Looks up a localized string similar to Préparation de l&apos;installation....
         /// </summary>
         internal static string InstallManager_PreparingInstall {
             get {
@@ -807,7 +797,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open with DtPad.
+        ///   Looks up a localized string similar to Ouvrir avec DtPad.
         /// </summary>
         internal static string InstallManager_ShellString {
             get {
@@ -816,7 +806,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unavailable.
+        ///   Looks up a localized string similar to Indisponible.
         /// </summary>
         internal static string InstallManager_Unavailable {
             get {
@@ -825,7 +815,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Updating settings....
+        ///   Looks up a localized string similar to Mise à jour des paramètres....
         /// </summary>
         internal static string InstallManager_UpdatingSetting {
             get {
@@ -834,8 +824,8 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Connection timeout!
-        ///Test required more then {0} second to be completed..
+        ///   Looks up a localized string similar to Connexion trop longue à s&apos;établir!
+        ///Le test nécessite plus de {0} secondes..
         /// </summary>
         internal static string OptionManager_ConnectionTimeout {
             get {
@@ -844,7 +834,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to Annuler.
         /// </summary>
         internal static string WarningYNC_cancelButton {
             get {
@@ -853,7 +843,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to Non.
         /// </summary>
         internal static string WarningYNC_noButton {
             get {
@@ -862,7 +852,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Warning.
+        ///   Looks up a localized string similar to Avertissement.
         /// </summary>
         internal static string WarningYNC_Title {
             get {
@@ -871,7 +861,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yes.
+        ///   Looks up a localized string similar to Oui.
         /// </summary>
         internal static string WarningYNC_yesButton {
             get {
@@ -880,7 +870,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Command execution interrupted!.
+        ///   Looks up a localized string similar to Exécution de la commande interrompue!.
         /// </summary>
         internal static string WindowManager_CommandExecution {
             get {
@@ -889,7 +879,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exception occured:.
+        ///   Looks up a localized string similar to Une exception est survenue:.
         /// </summary>
         internal static string WindowManager_Exception {
             get {
@@ -898,7 +888,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fatal exception occured:.
+        ///   Looks up a localized string similar to Une exception fatale a eu lieu:.
         /// </summary>
         internal static string WindowManager_FatalException {
             get {
@@ -907,7 +897,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Program execution interrupted!.
+        ///   Looks up a localized string similar to L&apos;exécution du programme a été interompue!.
         /// </summary>
         internal static string WindowManager_ProgramExecution {
             get {

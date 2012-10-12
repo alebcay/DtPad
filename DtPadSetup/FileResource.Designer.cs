@@ -584,30 +584,6 @@ namespace DtPadSetup {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 8888888b.  888    8888888b.               888
-        ///888  &quot;Y88b 888    888   Y88b              888
-        ///888    888 888    888    888              888
-        ///888    888 888888 888   d88P 8888b.   .d88888
-        ///888    888 888    8888888P&quot;     &quot;88b d88&quot; 888
-        ///888    888 888    888       .d888888 888  888
-        ///888  .d88P Y88b.  888       888  888 Y88b 888
-        ///8888888P&quot;   &quot;Y888 888       &quot;Y888888  &quot;Y88888     [www.diariotraduttore.com]
-        ///
-        ///
-        ///==============================
-        ///INDICE
-        ///==============================
-        ///
-        /// 1 - Introduzione
-        /// 2 - Req [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Readme_txt {
-            get {
-                return ResourceManager.GetString("Readme_txt", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon SearchInFiles_ico {

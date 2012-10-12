@@ -38,7 +38,6 @@ namespace DtPad.Utils
         internal const String sfFile = @"SupportFiles\DtPad.exe.sf"; //Search in files history
         internal const String ruFile = @"SupportFiles\DtPad.exe.ru"; //Recent urls
         internal const String pwFile = @"SupportFiles\DtPad.exe.pw"; //Passwords
-        internal const String readme = "Readme.txt";
         internal const String license = "License.txt";
         internal const String dtPadUpdater = "DtPadUpdater.exe";
         internal const String repository = "http://dtpad.diariotraduttore.com/files/";

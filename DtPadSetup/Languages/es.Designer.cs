@@ -106,7 +106,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Espacio disponible:.
+        ///   Looks up a localized string similar to Espacio dispon.:.
         /// </summary>
         internal static string Form1_availableSpaceLabel {
             get {
@@ -196,7 +196,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Elige tu ruta de destino:.
+        ///   Looks up a localized string similar to Seleccionar la carpeta de destino:.
         /// </summary>
         internal static string Form1_destinationPathLabel {
             get {
@@ -250,12 +250,12 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Información: para el momento DtPad soporta los idiomas
-        ///inglés, italiano y francés. Quizás próximas versiones
-        ///apoyará incluso otras culturas. Si usted está
-        ///interesado en dar ayuda a otras localizaciones,
-        ///ponerse en contacto conmigo a través del formulario
-        ///que figura en la página siguiente..
+        ///   Looks up a localized string similar to Información: para el momento DtPad soporta los
+        ///idiomas inglés, italiano, francés y español. Quizás
+        ///próximas versiones apoyará incluso otras culturas.
+        ///Si usted está interesado en dar ayuda a otras
+        ///idiomas, ponerse en contacto conmigo a través del
+        ///formulario que figura en la página siguiente..
         /// </summary>
         internal static string Form1_infoLabel {
             get {
@@ -332,10 +332,10 @@ namespace DtPadSetup.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Información: DtPad utiliza la configuración de
-        ///Internet Explorer para
-        ///conectarse a Internet. Si su PC está detrás de un
-        ///servidor proxy que requiere una autenticación,
-        ///introduzca aquí su nombre de usuario y contraseña..
+        ///Internet Explorer para conectarse a Internet.
+        ///Si su PC está detrás de un servidor proxy que
+        ///requiere una autenticación, introduzca aquí su
+        ///nombre de usuario y contraseña..
         /// </summary>
         internal static string Form1_label1 {
             get {
@@ -452,7 +452,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Espacio necesario:.
+        ///   Looks up a localized string similar to Espacio neces.:.
         /// </summary>
         internal static string Form1_requiredSpaceLabel {
             get {
@@ -488,7 +488,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Crear un vinculo en el menú contextual del Explorador de Windows.
+        ///   Looks up a localized string similar to Crear vinculo en menú contextual del Explorador.
         /// </summary>
         internal static string Form1_shellCheckBox {
             get {
@@ -497,7 +497,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Crear accesos directos en el menú Inicio y el escritorio.
+        ///   Looks up a localized string similar to Crear accesos directos en menú Inicio y escritorio.
         /// </summary>
         internal static string Form1_shortcutsCheckBox {
             get {
@@ -579,7 +579,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nombre de usuario:.
+        ///   Looks up a localized string similar to Usuario:.
         /// </summary>
         internal static string Form1_usernameLabel {
             get {
@@ -777,15 +777,6 @@ namespace DtPadSetup.Languages {
         internal static string InstallManager_LinkReadme {
             get {
                 return ResourceManager.GetString("InstallManager_LinkReadme", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Léame.lnk.
-        /// </summary>
-        internal static string InstallManager_LinkReadmeLabel {
-            get {
-                return ResourceManager.GetString("InstallManager_LinkReadmeLabel", resourceCulture);
             }
         }
         

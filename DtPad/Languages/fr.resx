@@ -1153,7 +1153,7 @@ Désirez vous sauvegarder les changements?</value>
     <value>Imprimer…</value>
   </data>
   <data name="Form1_readmeToolStripMenuItem" xml:space="preserve">
-    <value>Lisez moi</value>
+    <value>Pour en savoir plus</value>
   </data>
   <data name="Form1_recentFilesToolStripMenuItem1" xml:space="preserve">
     <value>Fichiers récents</value>

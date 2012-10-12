@@ -780,15 +780,6 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Readme.lnk.
-        /// </summary>
-        internal static string InstallManager_LinkReadmeLabel {
-            get {
-                return ResourceManager.GetString("InstallManager_LinkReadmeLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Website.
         /// </summary>
         internal static string InstallManager_LinkWebsite {

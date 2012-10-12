@@ -337,9 +337,6 @@ seguito tramite la finestra delle opzioni)</value>
   <data name="InstallManager_LinkLaunchDtPadUninstaller" xml:space="preserve">
     <value>Avvia DtPad Uninstaller</value>
   </data>
-  <data name="InstallManager_LinkReadmeLabel" xml:space="preserve">
-    <value>Leggimi.lnk</value>
-  </data>
   <data name="Form1_testProxyButton" xml:space="preserve">
     <value>Verifica</value>
   </data>

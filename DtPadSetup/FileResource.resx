@@ -163,9 +163,6 @@
   <data name="DtHelp_exe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\DtHelp.exe;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Readme_txt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Files\Readme.txt;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
   <data name="DtPad_exe_cl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\SupportFiles\DtPad.exe.cl;System.Byte[], mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

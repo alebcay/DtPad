@@ -4861,7 +4861,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Leggimi.
+        ///   Looks up a localized string similar to Per saperne di più.
         /// </summary>
         internal static string Form1_readmeToolStripMenuItem {
             get {

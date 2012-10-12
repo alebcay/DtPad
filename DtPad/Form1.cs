@@ -1057,7 +1057,7 @@ namespace DtPad
 
         private void readmeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TabIdentity = FileManager.OpenFile(this, TabIdentity, new[] { Path.Combine(ConstantUtil.ApplicationExecutionPath(), ConstantUtil.readme) }, false);
+            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadURL);
         }
 
         private void licenseAgreementToolStripMenuItem_Click(object sender, EventArgs e)

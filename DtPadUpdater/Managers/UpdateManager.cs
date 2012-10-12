@@ -40,8 +40,7 @@ namespace DtPadUpdater.Managers
                 {
                     String fileName = Path.GetFileName(fileAndPathName);
 
-                    if (fileName != "DtPadUpdater.exe" && fileName != "log4net.dll" && //&& fileName != "Readme.txt" && fileName != "License.txt"
-                        fileName != "DtPadUpdater.pdb" && fileName != "DtPadUpdater.vshost.exe")
+                    if (fileName != "DtPadUpdater.exe" && fileName != "log4net.dll" && fileName != "DtPadUpdater.pdb" && fileName != "DtPadUpdater.vshost.exe")
                     {
                         if (IsFileInUse(fileAndPathName))
                         {
