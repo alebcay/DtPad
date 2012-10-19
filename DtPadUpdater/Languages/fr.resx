@@ -193,7 +193,7 @@ Si un problème persiste, ou si DtPad semble dysfonctionner, télécharger la de
     <value>Aucune mises à jour n&apos;est disponible pour votre version de DtPad!</value>
   </data>
   <data name="UpdateManager_Proxy" xml:space="preserve">
-    <value>Si vous utiliser un proxy, essayer de le configureravce les options. Si le problème persite, télécharger manuellement la version à partir de {0}!</value>
+    <value>Si vous utiliser un proxy, essayer de le configurer avec les options. Si le problème persiste, télécharger manuellement la version à partir de {0}!</value>
   </data>
   <data name="UpdateManager_Read" xml:space="preserve">
     <value>Lecture des informations de la nouvelle version...</value>
@@ -273,9 +273,9 @@ Démarrer la mise à jour à partir du menu &quot;Aide -&gt; Vérifier nouvelle 
     <value>Sélectionner tout</value>
   </data>
   <data name="UpdateManager_SHW_MSG_NoLongerUpdate" xml:space="preserve">
-    <value>Cette version de DtPad  n&apos;est plus supportée, téléchargez la dernière sur le site.</value>
+    <value>Cette version de DtPad n&apos;est plus supportée, téléchargez la dernière sur le site.</value>
   </data>
   <data name="PasswordUtil_NoValue" xml:space="preserve">
-    <value>La valeur pour &quot;{0}&quot; n&apos; a pas été trouvé.</value>
+    <value>La valeur pour &quot;{0}&quot; n&apos;a pas été trouvé.</value>
   </data>
 </root>

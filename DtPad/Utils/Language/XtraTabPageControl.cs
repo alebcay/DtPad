@@ -29,7 +29,7 @@ namespace DtPad.Utils.Language
             }
 
             String toolTip = LanguageUtil.GetCurrentLanguageString(String.Format("{0}ToolTip", controlTabPage.Name), formName);
-            if (!String.IsNullOrEmpty(toolTip) && !isFormReloading)
+            if (!String.IsNullOrEmpty(toolTip)) // && !isFormReloading)
             {
                 controlTabPage.Tooltip = toolTip;
             }

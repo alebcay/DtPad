@@ -130,7 +130,7 @@
     <value>DtPad (2009-2012) est sous licence Apache Version 2.0.
 - apache.org/licenses/LICENSE-2.0
 
-Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stockerl&apos;association  &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
+Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stocker l&apos;association &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
 
 Traduction française: Alain Buferne.
 
@@ -224,13 +224,13 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Insérer seulement l&apos;extension des fichiers (par ex. &quot;txt&quot;)</value>
   </data>
   <data name="Extensions_helpLabel" xml:space="preserve">
-    <value>Extension </value>
+    <value>Configurer les extensions de fichiers pris en charge par DtPad.</value>
   </data>
   <data name="Extensions_okButton" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="Extensions_removeButtonToolTip" xml:space="preserve">
-    <value>Supprimer l&apos;extension sélectionnée.</value>
+    <value>Supprimer l&apos;extension sélectionnée</value>
   </data>
   <data name="Extensions_Title" xml:space="preserve">
     <value>Extensions</value>
@@ -293,7 +293,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Nombre total de lignes:</value>
   </data>
   <data name="GoToLine_okButton" xml:space="preserve">
-    <value>Atteindre</value>
+    <value>Aller</value>
   </data>
   <data name="GoToLine_Title" xml:space="preserve">
     <value>Aller à la ligne</value>
@@ -365,7 +365,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Vider</value>
   </data>
   <data name="Options_domainLabel" xml:space="preserve">
-    <value>Domain:</value>
+    <value>Domaine:</value>
   </data>
   <data name="Options_customBrowserRadioButton" xml:space="preserve">
     <value>Utiliser la commande suivante</value>
@@ -605,13 +605,13 @@ Taille maximale</value>
     <value>connexion en cours d&apos;établissement...</value>
   </data>
   <data name="VersionCheck_statusLabelDownload" xml:space="preserve">
-    <value>téléchargement des informations de la dernière version…</value>
+    <value>téléchargement informations de dernière version…</value>
   </data>
   <data name="VersionCheck_statusLabelError" xml:space="preserve">
     <value>erreur de connexion.</value>
   </data>
   <data name="VersionCheck_statusLabelOk" xml:space="preserve">
-    <value>votre DTPad est à jour!</value>
+    <value>votre DtPad est de mettre à jour!</value>
   </data>
   <data name="VersionCheck_statusLabelOld" xml:space="preserve">
     <value>votre DtPad est à jour!</value>
@@ -656,7 +656,7 @@ Salutations,</value>
     <value>Attention</value>
   </data>
   <data name="ErrorOR_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
-    <value>Vopier le message d&apos;erreur dan sle presse-papier</value>
+    <value>Vopier le message d&apos;erreur dans le presse-papier</value>
   </data>
   <data name="ErrorOR_reportBugButton" xml:space="preserve">
     <value>Rapport de bug</value>
@@ -1282,7 +1282,7 @@ Désirez vous sauvegarder les changements?</value>
     <value>Affichage</value>
   </data>
   <data name="notePanel_warningRemoveNoteToolStripButton" xml:space="preserve">
-    <value>Simple fichier XML</value>
+    <value>Demander avant de supprimer notes</value>
   </data>
   <data name="Form1_windowToolStripMenuItem" xml:space="preserve">
     <value>Fenêtre</value>
@@ -1562,7 +1562,7 @@ Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
     <value>Importer les paramètres et données....</value>
   </data>
   <data name="ImportExportManager_ExportFileDescription" xml:space="preserve">
-    <value>Fichiers exportés</value>
+    <value>Fichiers exportés de DtPad</value>
   </data>
   <data name="ImportExportManager_ExportStatusLabel" xml:space="preserve">
     <value>Paramètres et données &quot;{0}&quot; exportés</value>
@@ -1574,7 +1574,7 @@ Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
     <value>Paramètres et données &quot;{0}&quot; importés</value>
   </data>
   <data name="ImportExportManager_WarningImport" xml:space="preserve">
-    <value>Le fichier sélectionné a été  exporté avec une version différente de DtPad.
+    <value>Le fichier sélectionné a été exporté avec une version différente de DtPad.
 Afin d&apos;éviter des problèmes de compatibilité, il est conseillé de ne pas l&apos;importer.
 Voulez vous tout de même continuer?</value>
   </data>
@@ -1594,7 +1594,7 @@ Voulez vous tout de même continuer?</value>
     <value>Extraire le contenu de l&apos;archive ouverte.</value>
   </data>
   <data name="ZipExtract_Title" xml:space="preserve">
-    <value>Extraction de l&apos;Archive</value>
+    <value>Extraction de l&apos;archive</value>
   </data>
   <data name="ZipExtract_zipContentLabel" xml:space="preserve">
     <value>Contenu du fichier d&apos;archive:</value>
@@ -1709,7 +1709,8 @@ UTF-32 Little Endian</value>
     <value>ROT-13</value>
   </data>
   <data name="FileManager_NoFileToReadonly" xml:space="preserve">
-    <value>Les zones d&apos;édition temporaires ne peuvent pas être en lecture-seule. Seuls les fichiers déja existant le peuvent.</value>
+    <value>Les zones d&apos;édition temporaires ne peuvent pas être en lecture-seule.
+Seuls les fichiers déja existant le peuvent.</value>
   </data>
   <data name="FileManager_NoTextForPDF" xml:space="preserve">
     <value>La zone de texte est vide.</value>
@@ -1899,7 +1900,7 @@ Cliquer sur OK afin de poursuivre vers la sélection du nom de fichier de la ses
     <value>Sélectionner un caractère à copier dans le presse-papier.</value>
   </data>
   <data name="CharSelect_Title" xml:space="preserve">
-    <value>Sélection d&apos;un symbole.</value>
+    <value>Sélection d&apos;un symbole</value>
   </data>
   <data name="CharSelect_titleLabel" xml:space="preserve">
     <value>Double cliquer sur caractères pour copier dans presse-papier:</value>
@@ -1911,14 +1912,14 @@ Cliquer sur OK afin de poursuivre vers la sélection du nom de fichier de la ses
     <value>Classer les onglets alphabétiquement</value>
   </data>
   <data name="tabPanel_sortTabsAlphabeticallyToolStripButton" xml:space="preserve">
-    <value>Trier les Onglets par ordre alphabétique</value>
+    <value>Classer les onglets alphabétiquement</value>
   </data>
   <data name="TabPageObject_WrongObject" xml:space="preserve">
     <value>L&apos;objet d&apos;entrée n&apos;est pas un TabObjectPage: {0}.
 L&apos;operation ne peut pas être effectuée.</value>
   </data>
   <data name="FileManager_ReadonlyNo" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; a été mis en mode d&apos;accès normal.</value>
+    <value>Le fichier &quot;{0}&quot; a été mis en mode d&apos;accès normal</value>
   </data>
   <data name="FileManager_ReadonlyYes" xml:space="preserve">
     <value>Le fichier &quot;{0}&quot; a été mis en mode lecture-seule</value>
@@ -2188,7 +2189,7 @@ Désirez vous modifier la lecture-seule et poursuivre?</value>
     <value>Renommer un fichier ouvert sans sortir de DtPad.</value>
   </data>
   <data name="FileRename_renameButton" xml:space="preserve">
-    <value>Renommer un fichier ouvert sans sortir de DtPad.</value>
+    <value>Renommer</value>
   </data>
   <data name="FileRename_renameToLabel" xml:space="preserve">
     <value>Renommer sous:</value>
@@ -2655,7 +2656,7 @@ Tous les paramètres enregistrés seront perdus!</value>
     <value>Exporter sous…</value>
   </data>
   <data name="notePanel_xMLFileToolStripMenuItem" xml:space="preserve">
-    <value>Fichier XML simple</value>
+    <value>Fichier simple XML</value>
   </data>
   <data name="notePanel_tXTFilesToolStripMenuItem" xml:space="preserve">
     <value>Multiples fichier TXT</value>
@@ -3156,7 +3157,7 @@ Le format nécessaire est: example@email.com</value>
     <value>Configurateur de fichier hosts</value>
   </data>
   <data name="Options_hostsConfiguratorCheckBox" xml:space="preserve">
-    <value>Démarrer le configurateur de fichier hosts à l&apos;ouverture de hosts.</value>
+    <value>Démarrer le configurateur de fichier hosts à l&apos;ouverture de hosts</value>
   </data>
   <data name="Options_openingGroupBox2" xml:space="preserve">
     <value>Fichiers système</value>
@@ -3168,12 +3169,12 @@ Le format nécessaire est: example@email.com</value>
     <value>Inserer le mot clé section pour séparer les configurations IP.
 
 #SECTION NOM1
-123.45.67.89 www.domain.com
-123.45.67.89 www.domain.it
+123.45.67.89 www.domaine.com
+123.45.67.89 www.domaine.fr
 
 #SECTION NOM2
-123.45.67.80 www.domain.org
-123.45.67.80 www.domain.net</value>
+123.45.67.80 www.domaine.org
+123.45.67.80 www.domaine.net</value>
   </data>
   <data name="CustomFilesManager_HelpPanel" xml:space="preserve">
     <value>Comment ça marche</value>
@@ -3417,7 +3418,8 @@ Désirez vous l&apos;écraser?</value>
     <value>Le fichier &quot;{0}&quot; est vide.</value>
   </data>
   <data name="FileManager_openingFileNotExists" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; n&apos;a pas été trouvé dans le répertoire &quot;{1}&quot;.</value>
+    <value>Le fichier &quot;{0}&quot; n&apos;a pas été trouvé dans le répertoire
+&quot;{1}&quot;.</value>
   </data>
   <data name="DropboxFileDialog_saveAsLabel_Open" xml:space="preserve">
     <value>Type de fichier:</value>
@@ -3522,7 +3524,7 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>UTF-8 sans BOM</value>
   </data>
   <data name="UrlEntry_clearHistoryButtonToolTip" xml:space="preserve">
-    <value>Nettoyer l&apos;historique des URL récentes</value>
+    <value>Nettoyer l&apos;historique des URLs récentes</value>
   </data>
   <data name="Form1_urlEncoderToolStripMenuItem" xml:space="preserve">
     <value>Formatter l&apos;URL</value>
@@ -3613,7 +3615,7 @@ trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</
     <value>Changer couleur de l&apos;onglet</value>
   </data>
   <data name="Form1_setTabColorBlackToolStripMenuItem" xml:space="preserve">
-    <value>Noir (Standard)</value>
+    <value>Noir (standard)</value>
   </data>
   <data name="Options_hostsConfiguratorTabColorComboBoxItems" xml:space="preserve">
     <value>Orange
@@ -3837,7 +3839,7 @@ Le fichier est peut être corompue.</value>
   </data>
   <data name="DropboxManager_ProxyHostRequired" xml:space="preserve">
     <value>Pour s&apos;authentifier au travers du proxy, Dropbox doit connaitre son adresse. Veuillez remplir
-les champs appropriés de la fenêtre des  paramètres (onglet &quot;Internet&quot;) et essayer de nouveau.</value>
+les champs appropriés de la fenêtre des paramètres (onglet &quot;Internet&quot;) et essayer de nouveau.</value>
   </data>
   <data name="DropboxManager_SuccessfullyAuth" xml:space="preserve">
     <value>DtPad vioent d&apos;être autorisé à accéder à la Dropbox?
@@ -4069,7 +4071,7 @@ ou de fin est manquante. Veuillez les insérer ou changer le type de balise.</va
     <value>Extension</value>
   </data>
   <data name="TagEntry_forumRadioButton" xml:space="preserve">
-    <value>Forum ([,])</value>
+    <value>Forum ([, ])</value>
   </data>
   <data name="TagEntry_helpLabel" xml:space="preserve">
     <value>Insérer une balise dans le texte.</value>
@@ -4237,7 +4239,7 @@ Vérifier l&apos;URL pour télécharge:
     <value>Mettre en dernier</value>
   </data>
   <data name="notePanel_blackstandardToolStripMenuItem" xml:space="preserve">
-    <value>Noir (Standard)</value>
+    <value>Noir (standard)</value>
   </data>
   <data name="notePanel_blueToolStripMenuItem" xml:space="preserve">
     <value>Bleu</value>

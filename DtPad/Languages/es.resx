@@ -3165,12 +3165,12 @@ Formato exigido: example@email.com</value>
     <value>Inserte las etiquetas de sección para separar las configuraciones lógicas de IP.
 
 #SECTION NOMBRE1
-123.45.67.89 www.domain.com
-123.45.67.89 www.domain.it
+123.45.67.89 www.dominio.com
+123.45.67.89 www.dominio.es
 
 #SECTION NOMBRE1
-123.45.67.80 www.domain.org
-123.45.67.80 www.domain.net</value>
+123.45.67.80 www.dominio.org
+123.45.67.80 www.dominio.net</value>
   </data>
   <data name="CustomFilesManager_HelpPanel" xml:space="preserve">
     <value>Cómo funciona</value>

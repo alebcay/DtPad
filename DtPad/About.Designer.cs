@@ -91,7 +91,7 @@ namespace DtPad
             this.emailPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.emailPictureBox.Image = global::DtPad.ToolbarResource.email;
             this.emailPictureBox.InitialImage = null;
-            this.emailPictureBox.Location = new System.Drawing.Point(328, 70);
+            this.emailPictureBox.Location = new System.Drawing.Point(321, 70);
             this.emailPictureBox.Name = "emailPictureBox";
             this.emailPictureBox.Size = new System.Drawing.Size(16, 16);
             this.emailPictureBox.TabIndex = 3;
@@ -148,9 +148,9 @@ namespace DtPad
             this.createdByLabel.AutoSize = true;
             this.createdByLabel.Location = new System.Drawing.Point(215, 70);
             this.createdByLabel.Name = "createdByLabel";
-            this.createdByLabel.Size = new System.Drawing.Size(107, 13);
+            this.createdByLabel.Size = new System.Drawing.Size(75, 13);
             this.createdByLabel.TabIndex = 4;
-            this.createdByLabel.Text = "Marco \"Cav\" Macciò";
+            this.createdByLabel.Text = "Marco Macciò";
             // 
             // websiteLabel
             // 

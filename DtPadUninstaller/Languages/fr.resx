@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
-    <value>Copier le message d&apos;erreur dans le presse-papier.</value>
+    <value>Copier le message d&apos;erreur dans le presse-papier</value>
   </data>
   <data name="ErrorO_okButton" xml:space="preserve">
     <value>OK</value>
@@ -139,7 +139,7 @@ Sinon cliquer sur &quot;Désinstaller&quot; pour poursuivre.
 Vous pouvez nous indiquer la raison pour laquelle vous désirez désinstaller en cliquant sur le lien ci-dessous.</value>
   </data>
   <data name="Form1_linkLabel" xml:space="preserve">
-    <value>Cliquer ici pour envoyer un email à l&apos;auteur.</value>
+    <value>Cliquer ici pour envoyer un email à l&apos;auteur</value>
   </data>
   <data name="Form1_titleLabel" xml:space="preserve">
     <value>DtPad Uninstaller</value>

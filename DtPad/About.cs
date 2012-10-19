@@ -61,7 +61,7 @@ namespace DtPad
 
         private void websitePictureBox_Click(object sender, EventArgs e)
         {
-            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadURL);
+            OtherManager.StartProcessBrowser(this, ConstantUtil.dtURL);
         }
 
         private void rssPictureBox_Click(object sender, EventArgs e)
