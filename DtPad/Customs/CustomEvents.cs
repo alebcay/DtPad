@@ -82,6 +82,18 @@ namespace DtPad.Customs
                 TextManager.PasteControl(ControlUtil.GetFocusedControl(sender));
                 e.SuppressKeyPress = true;
             }
+            else if (e.Control && e.KeyCode == Keys.Z)
+            {
+                TextManager.UndoControl(ControlUtil.GetFocusedControl(sender));
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        internal static void annotationContextMenuStrip_Opening(object sender, EventArgs e)
+        {
+            ContextMenuStrip contextMenuStrip = (ContextMenuStrip)sender;
+
+            contextMenuStrip.Items["undoToolStripMenuItem"].Enabled = ((CustomRichTextBoxBase)(contextMenuStrip.SourceControl)).CanUndo;
         }
 
         #endregion Annotation Panel Methods

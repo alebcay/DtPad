@@ -4393,4 +4393,10 @@ Seleziona nuovamente i tab per procedere.</value>
   <data name="SelectLines_selectAllToolStripMenuItem" xml:space="preserve">
     <value>Seleziona tutto</value>
   </data>
+  <data name="CustomFilesManager_UndoPanel" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItemShortcutKeyDisplayString" xml:space="preserve">
+    <value>CTRL+Z</value>
+  </data>
 </root>

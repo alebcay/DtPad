@@ -300,6 +300,17 @@ namespace DtPad.Managers
             }
 
             //ContextMenuStrip
+            ToolStripMenuItem undoToolStripMenuItem = new ToolStripMenuItem
+                                                          {
+                                                              Enabled = false,
+                                                              Name = "undoToolStripMenuItem",
+                                                              ShowShortcutKeys = false,
+                                                              Text = LanguageUtil.GetCurrentLanguageString("UndoPanel", className)
+                                                          };
+            ToolStripSeparator toolStripSeparator0 = new ToolStripSeparator
+                                                         {
+                                                             Name = "toolStripSeparator0"
+                                                         };
             ToolStripMenuItem cutToolStripMenuItem = new ToolStripMenuItem
                                                          {
                                                              Image = ToolbarResource.cut,
@@ -362,6 +373,7 @@ namespace DtPad.Managers
                                                               ShowShortcutKeys = false,
                                                               Text = LanguageUtil.GetCurrentLanguageString("HelpPanel", className)
                                                           };
+            undoToolStripMenuItem.Click += CustomEvents.undoToolStripMenuItem_Click;
             cutToolStripMenuItem.Click += CustomEvents.cutToolStripMenuItem_Click;
             copyToolStripMenuItem.Click += CustomEvents.copyToolStripMenuItem_Click;
             pasteToolStripMenuItem.Click += CustomEvents.pasteToolStripMenuItem_Click;
@@ -376,8 +388,9 @@ namespace DtPad.Managers
                                                               {
                                                                   RenderMode = rendererMode
                                                               };
-            annotationContextMenuStrip.Items.AddRange(new ToolStripItem[] { cutToolStripMenuItem, copyToolStripMenuItem, pasteToolStripMenuItem, deleteToolStripMenuItem,
+            annotationContextMenuStrip.Items.AddRange(new ToolStripItem[] { undoToolStripMenuItem, toolStripSeparator0, cutToolStripMenuItem, copyToolStripMenuItem, pasteToolStripMenuItem, deleteToolStripMenuItem,
                 toolStripSeparator1, selectAllToolStripMenuItem, wordWrapToolStripMenuItem, toolStripSeparator2, closeToolStripMenuItem, helpToolStripMenuItem });
+            annotationContextMenuStrip.Opening += CustomEvents.annotationContextMenuStrip_Opening;
 
             //Panel
             CustomPanel annotationPanel = new CustomPanel

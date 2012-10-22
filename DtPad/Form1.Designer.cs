@@ -1249,7 +1249,7 @@ namespace DtPad
             this.undoToolStripMenuItem.Enabled = false;
             this.undoToolStripMenuItem.Image = global::DtPad.ToolbarResource.arrow_left;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.undoToolStripMenuItem.ShortcutKeyDisplayString = "CTRL+Z";
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.undoToolStripMenuItem.Text = "Undo <Empty>";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);

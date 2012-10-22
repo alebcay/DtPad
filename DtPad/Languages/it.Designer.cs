@@ -635,6 +635,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Annulla.
+        /// </summary>
+        internal static string CustomFilesManager_UndoPanel {
+            get {
+                return ResourceManager.GetString("CustomFilesManager_UndoPanel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sei sicuro di voler chiudere il pannello di annotazione?
         ///Il testo in esso contenuto andrà perso..
         /// </summary>
@@ -5964,6 +5973,15 @@ namespace DtPad.Languages {
         internal static string Form1_undoToolStripMenuItem2 {
             get {
                 return ResourceManager.GetString("Form1_undoToolStripMenuItem2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CTRL+Z.
+        /// </summary>
+        internal static string Form1_undoToolStripMenuItemShortcutKeyDisplayString {
+            get {
+                return ResourceManager.GetString("Form1_undoToolStripMenuItemShortcutKeyDisplayString", resourceCulture);
             }
         }
         

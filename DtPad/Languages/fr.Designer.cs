@@ -109,9 +109,9 @@ namespace DtPad.Languages {
         ///   Looks up a localized string similar to DtPad (2009-2012) est sous licence Apache Version 2.0.
         ///- apache.org/licenses/LICENSE-2.0
         ///
-        ///Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stockerl&apos;association  &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
+        ///Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stocker l&apos;association &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
         ///
-        ///Traduction Française: Alain Buferne.
+        ///Traduction française: Alain Buferne.
         ///
         ///Icones: Delacro.
         ///- delacro.deviantart.com
@@ -138,7 +138,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lire le flux Rss de diariotraduttore.com.
+        ///   Looks up a localized string similar to Lire le flux RSS de diariotraduttore.com.
         /// </summary>
         internal static string About_rssPictureBoxToolTip {
             get {
@@ -346,7 +346,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pas de caractères spéciaux.
+        ///   Looks up a localized string similar to Pas caractère spécial.
         /// </summary>
         internal static string CharSelect_clipboardedLabel {
             get {
@@ -355,7 +355,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Presse-paier en mémoire.
+        ///   Looks up a localized string similar to Presse-paier mémoire:.
         /// </summary>
         internal static string CharSelect_clipboardedLabel1 {
             get {
@@ -382,7 +382,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélection d&apos;un symbole..
+        ///   Looks up a localized string similar to Sélection d&apos;un symbole.
         /// </summary>
         internal static string CharSelect_Title {
             get {
@@ -391,7 +391,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Double cliquer sur un caractère pour le copier dans le presse-papier:.
+        ///   Looks up a localized string similar to Double cliquer sur caractères pour copier dans presse-papier:.
         /// </summary>
         internal static string CharSelect_titleLabel {
             get {
@@ -420,7 +420,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vider l&apos;historique du presse-papier.
+        ///   Looks up a localized string similar to Vider historique du presse-papier.
         /// </summary>
         internal static string clipboardPanel_clearClipboardToolStripButton {
             get {
@@ -603,12 +603,12 @@ namespace DtPad.Languages {
         ///   Looks up a localized string similar to Inserer le mot clé section pour séparer les configurations IP.
         ///
         ///#SECTION NOM1
-        ///123.45.67.89 www.domain.com
-        ///123.45.67.89 www.domain.it
+        ///123.45.67.89 www.domaine.com
+        ///123.45.67.89 www.domaine.fr
         ///
         ///#SECTION NOM2
-        ///123.45.67.80 www.domain.org
-        ///123.45.67.80 www.domain.net.
+        ///123.45.67.80 www.domaine.org
+        ///123.45.67.80 www.domaine.net.
         /// </summary>
         internal static string CustomFilesManager_HostsHelp {
             get {
@@ -631,6 +631,15 @@ namespace DtPad.Languages {
         internal static string CustomFilesManager_SelectAllPanel {
             get {
                 return ResourceManager.GetString("CustomFilesManager_SelectAllPanel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annuler.
+        /// </summary>
+        internal static string CustomFilesManager_UndoPanel {
+            get {
+                return ResourceManager.GetString("CustomFilesManager_UndoPanel", resourceCulture);
             }
         }
         
@@ -672,7 +681,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner le format des date et heure à insérer.
+        ///   Looks up a localized string similar to Sélectionner le format des date et heure à insérer:.
         /// </summary>
         internal static string DatetimeSelect_descriptionLabel {
             get {
@@ -681,7 +690,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner un format des date et heure à insérer.
+        ///   Looks up a localized string similar to Sélectionner un format des date et heure à insérer..
         /// </summary>
         internal static string DatetimeSelect_helpLabel {
             get {
@@ -735,7 +744,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nettoyer les résultats.
+        ///   Looks up a localized string similar to Nettoyer résultats.
         /// </summary>
         internal static string Dictionary_clearButton {
             get {
@@ -780,7 +789,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cliquer ici pour télécharger de nouveaux dictionnaires.
+        ///   Looks up a localized string similar to Cliquer ici pour télécharger nouveaux dictionnaires.
         /// </summary>
         internal static string Dictionary_dictionariesLabel {
             get {
@@ -1238,7 +1247,7 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Pour s&apos;authentifier au travers du proxy, Dropbox doit connaitre son adresse. Veuillez remplir
-        ///les champs appropriés de la fenêtre des  paramètres (onglet &quot;Internet&quot;) et essayer de nouveau..
+        ///les champs appropriés de la fenêtre des paramètres (onglet &quot;Internet&quot;) et essayer de nouveau..
         /// </summary>
         internal static string DropboxManager_ProxyHostRequired {
             get {
@@ -1268,7 +1277,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Etes sur de vouloir supprimer le repertoire
+        ///   Looks up a localized string similar to Etes sur de vouloir supprimer le répertoire
         ///&quot;{0}&quot;?.
         /// </summary>
         internal static string DropboxManager_SureDeleteFolder {
@@ -1427,7 +1436,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vopier le message d&apos;erreur dan sle presse-papier.
+        ///   Looks up a localized string similar to Vopier le message d&apos;erreur dans le presse-papier.
         /// </summary>
         internal static string ErrorOR_copyErrorDescriptionPictureBoxToolTip {
             get {
@@ -1647,7 +1656,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Extension .
+        ///   Looks up a localized string similar to Configurer les extensions de fichiers pris en charge par DtPad..
         /// </summary>
         internal static string Extensions_helpLabel {
             get {
@@ -1692,7 +1701,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Supprimer l&apos;extension sélectionnée..
+        ///   Looks up a localized string similar to Supprimer l&apos;extension sélectionnée.
         /// </summary>
         internal static string Extensions_removeButtonToolTip {
             get {
@@ -1818,7 +1827,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verifier le contenu des onglets pour définir si ils sont identiques..
+        ///   Looks up a localized string similar to Verifier le contenu pour définir s&apos;ils sont égaux..
         /// </summary>
         internal static string FileCompare_helpLabel {
             get {
@@ -2265,7 +2274,8 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Les zones d&apos;édition temporaires ne peuvent pas être en lecture-seule. Seuls les fichiers déja existant le peuvent..
+        ///   Looks up a localized string similar to Les zones d&apos;édition temporaires ne peuvent pas être en lecture-seule.
+        ///Seuls les fichiers déja existant le peuvent..
         /// </summary>
         internal static string FileManager_NoFileToReadonly {
             get {
@@ -2337,7 +2347,8 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Le fichier &quot;{0}&quot; n&apos;a pas été trouvé dans le répertoire &quot;{1}&quot;..
+        ///   Looks up a localized string similar to Le fichier &quot;{0}&quot; n&apos;a pas été trouvé dans le répertoire
+        ///&quot;{1}&quot;..
         /// </summary>
         internal static string FileManager_openingFileNotExists {
             get {
@@ -2365,7 +2376,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Le fichier &quot;{0}&quot; a été mis en mode d&apos;accès normal..
+        ///   Looks up a localized string similar to Le fichier &quot;{0}&quot; a été mis en mode d&apos;accès normal.
         /// </summary>
         internal static string FileManager_ReadonlyNo {
             get {
@@ -2839,7 +2850,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Renommer un fichier ouvert sans sortir de DtPad..
+        ///   Looks up a localized string similar to Renommer.
         /// </summary>
         internal static string FileRename_renameButton {
             get {
@@ -4857,7 +4868,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lisez moi.
+        ///   Looks up a localized string similar to Pour en savoir plus.
         /// </summary>
         internal static string Form1_readmeToolStripMenuItem {
             get {
@@ -5469,7 +5480,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Noir (Standard).
+        ///   Looks up a localized string similar to Noir (standard).
         /// </summary>
         internal static string Form1_setTabColorBlackToolStripMenuItem {
             get {
@@ -5964,6 +5975,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CTRL+Z.
+        /// </summary>
+        internal static string Form1_undoToolStripMenuItemShortcutKeyDisplayString {
+            get {
+                return ResourceManager.GetString("Form1_undoToolStripMenuItemShortcutKeyDisplayString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Formatter l&apos;URL.
         /// </summary>
         internal static string Form1_urlEncoderToolStripMenuItem {
@@ -6261,7 +6281,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Atteindre.
+        ///   Looks up a localized string similar to Aller.
         /// </summary>
         internal static string GoToLine_okButton {
             get {
@@ -6351,7 +6371,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fichiers exportés.
+        ///   Looks up a localized string similar to Fichiers exportés de DtPad.
         /// </summary>
         internal static string ImportExportManager_ExportFileDescription {
             get {
@@ -6387,7 +6407,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Le fichier sélectionné a été  exporté avec une version différente de DtPad.
+        ///   Looks up a localized string similar to Le fichier sélectionné a été exporté avec une version différente de DtPad.
         ///Afin d&apos;éviter des problèmes de compatibilité, il est conseillé de ne pas l&apos;importer.
         ///Voulez vous tout de même continuer?.
         /// </summary>
@@ -6645,7 +6665,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Descendre l&apos;onglet sélectionné.
+        ///   Looks up a localized string similar to Descendre.
         /// </summary>
         internal static string MoveLines_downRadioButton {
             get {
@@ -6901,7 +6921,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Noir (Standard).
+        ///   Looks up a localized string similar to Noir (standard).
         /// </summary>
         internal static string notePanel_blackstandardToolStripMenuItem {
             get {
@@ -7045,7 +7065,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Simple fichier XML.
+        ///   Looks up a localized string similar to Demander avant de supprimer notes.
         /// </summary>
         internal static string notePanel_warningRemoveNoteToolStripButton {
             get {
@@ -7054,7 +7074,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fichier XML simple.
+        ///   Looks up a localized string similar to Fichier simple XML.
         /// </summary>
         internal static string notePanel_xMLFileToolStripMenuItem {
             get {
@@ -7366,7 +7386,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Domain:.
+        ///   Looks up a localized string similar to Domaine:.
         /// </summary>
         internal static string Options_domainLabel {
             get {
@@ -7384,7 +7404,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Autorise la suppression de fichiers et repertoires.
+        ///   Looks up a localized string similar to Autorise la suppression de fichiers et répertoires.
         /// </summary>
         internal static string Options_dropboxDeleteCheckBox {
             get {
@@ -7611,7 +7631,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Démarrer le configurateur de fichier hosts à l&apos;ouverture de hosts..
+        ///   Looks up a localized string similar to Démarrer le configurateur de fichier hosts à l&apos;ouverture de hosts.
         /// </summary>
         internal static string Options_hostsConfiguratorCheckBox {
             get {
@@ -7697,7 +7717,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Activer la liste de lien (seulement sur Windows7).
+        ///   Looks up a localized string similar to Activer la liste de lien (seulement sur Windows 7).
         /// </summary>
         internal static string Options_jumpListCheckBox {
             get {
@@ -8494,7 +8514,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aligner le texte en utilisant le caractère de remplissage comme espace..
+        ///   Looks up a localized string similar to Aligner texte avec caractère de remplissage..
         /// </summary>
         internal static string PadText_helpLabel {
             get {
@@ -8512,7 +8532,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alignement.
+        ///   Looks up a localized string similar to Aligner.
         /// </summary>
         internal static string PadText_okButton {
             get {
@@ -8611,7 +8631,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Caractère de remplissage:.
+        ///   Looks up a localized string similar to Caract. remplissage:.
         /// </summary>
         internal static string PadText_whiteCharacterLabel {
             get {
@@ -9518,7 +9538,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vider l&apos;historique.
+        ///   Looks up a localized string similar to Vider historique.
         /// </summary>
         internal static string searchPanel_clearHistoryToolStripMenuItem {
             get {
@@ -9644,7 +9664,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chercher dans tous les onglets.
+        ///   Looks up a localized string similar to Chercher tous onglets.
         /// </summary>
         internal static string searchPanel_searchAllTabsCheckBox {
             get {
@@ -10401,7 +10421,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mémoire (ensemble de travail):.
+        ///   Looks up a localized string similar to Mémoire (ensemble travail):.
         /// </summary>
         internal static string Statistics_memoryLabel1 {
             get {
@@ -10753,7 +10773,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trier les Onglets par ordre alphabétique.
+        ///   Looks up a localized string similar to Classer les onglets alphabétiquement.
         /// </summary>
         internal static string tabPanel_sortTabsAlphabeticallyToolStripButton {
             get {
@@ -10835,7 +10855,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forum ([,]).
+        ///   Looks up a localized string similar to Forum ([, ]).
         /// </summary>
         internal static string TagEntry_forumRadioButton {
             get {
@@ -11330,7 +11350,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ligne de commande:.
+        ///   Looks up a localized string similar to Ligne commande:.
         /// </summary>
         internal static string Tools_commandLineLabel {
             get {
@@ -11495,7 +11515,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Répertoire de travail:.
+        ///   Looks up a localized string similar to Répertoire travail:.
         /// </summary>
         internal static string Tools_workingFolderLabel {
             get {
@@ -11722,7 +11742,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nettoyer l&apos;historique des URL récentes.
+        ///   Looks up a localized string similar to Nettoyer l&apos;historique des URLs récentes.
         /// </summary>
         internal static string UrlEntry_clearHistoryButtonToolTip {
             get {
@@ -11857,7 +11877,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to téléchargement des informations de la dernière version….
+        ///   Looks up a localized string similar to téléchargement informations de dernière version….
         /// </summary>
         internal static string VersionCheck_statusLabelDownload {
             get {
@@ -11875,7 +11895,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to votre DTPad est à jour!.
+        ///   Looks up a localized string similar to votre DtPad est de mettre à jour!.
         /// </summary>
         internal static string VersionCheck_statusLabelOk {
             get {
@@ -12084,8 +12104,8 @@ namespace DtPad.Languages {
         /// <summary>
         ///   Looks up a localized string similar to Cher utilisateur,
         ///
-        ///bienvenue dans DtPad, éditeur de texte facile à utiliser
-        ///interface à onglets
+        ///bienvenue dans DtPad, éditeur de
+        ///texte facile à utiliser interface à onglets
         ///et un tas de fonctions intéressantes. Son développement est toujours en cours et donc tout commentaire au sujet de son utilisation sera le bienvenue! Utilisez pour cela la fontion &quot;Rapport de bug&quot; du menu d&apos;Aide ou envoyer un message en utilisant l’icône email dans la fenêtre &quot;A propos&quot;.
         ///
         ///Salutations,.
@@ -12270,7 +12290,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Extraction de l&apos;Archive.
+        ///   Looks up a localized string similar to Extraction de l&apos;archive.
         /// </summary>
         internal static string ZipExtract_Title {
             get {

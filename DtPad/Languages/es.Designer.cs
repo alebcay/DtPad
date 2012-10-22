@@ -603,12 +603,12 @@ namespace DtPad.Languages {
         ///   Looks up a localized string similar to Inserte las etiquetas de sección para separar las configuraciones lógicas de IP.
         ///
         ///#SECTION NOMBRE1
-        ///123.45.67.89 www.domain.com
-        ///123.45.67.89 www.domain.it
+        ///123.45.67.89 www.dominio.com
+        ///123.45.67.89 www.dominio.es
         ///
         ///#SECTION NOMBRE1
-        ///123.45.67.80 www.domain.org
-        ///123.45.67.80 www.domain.net.
+        ///123.45.67.80 www.dominio.org
+        ///123.45.67.80 www.dominio.net.
         /// </summary>
         internal static string CustomFilesManager_HostsHelp {
             get {
@@ -631,6 +631,15 @@ namespace DtPad.Languages {
         internal static string CustomFilesManager_SelectAllPanel {
             get {
                 return ResourceManager.GetString("CustomFilesManager_SelectAllPanel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deshacer.
+        /// </summary>
+        internal static string CustomFilesManager_UndoPanel {
+            get {
+                return ResourceManager.GetString("CustomFilesManager_UndoPanel", resourceCulture);
             }
         }
         
@@ -4858,7 +4867,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Léame.
+        ///   Looks up a localized string similar to Para saber más.
         /// </summary>
         internal static string Form1_readmeToolStripMenuItem {
             get {
@@ -5961,6 +5970,15 @@ namespace DtPad.Languages {
         internal static string Form1_undoToolStripMenuItem2 {
             get {
                 return ResourceManager.GetString("Form1_undoToolStripMenuItem2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CTRL+Z.
+        /// </summary>
+        internal static string Form1_undoToolStripMenuItemShortcutKeyDisplayString {
+            get {
+                return ResourceManager.GetString("Form1_undoToolStripMenuItemShortcutKeyDisplayString", resourceCulture);
             }
         }
         

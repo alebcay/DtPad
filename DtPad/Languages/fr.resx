@@ -1,4 +1,4 @@
-﻿<?xml version='1.0' encoding='UTF-8'?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -130,7 +130,7 @@
     <value>DtPad (2009-2012) est sous licence Apache Version 2.0.
 - apache.org/licenses/LICENSE-2.0
 
-Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stocker l&apos;association &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
+Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stocker l'association "Ouvrir avec" du menu contextuel de l'explorateur.
 
 Traduction française: Alain Buferne.
 
@@ -161,10 +161,10 @@ Service Dropbox: Dropbox Inc.
 Dictionnaires: OpenOffice.org.
 - wiki.services.openoffice.org/wiki/Dictionaries
 
-DtPad ne récupère aucune information à propos des utilisateurs et de leur utilisation. Les informations pouvant être logguées dans le dossiers &quot;Logs&quot; ne concerne que les erreurs programme et ne contiennent en aucun cas des textes saisis par les utilisateurs ou toutes données privée.</value>
+DtPad ne récupère aucune information à propos des utilisateurs et de leur utilisation. Les informations pouvant être logguées dans le dossiers "Logs" ne concerne que les erreurs programme et ne contiennent en aucun cas des textes saisis par les utilisateurs ou toutes données privée.</value>
   </data>
   <data name="About_emailPictureBoxToolTip" xml:space="preserve">
-    <value>Envoyer un email à l&apos;auteur de DtPad</value>
+    <value>Envoyer un email à l'auteur de DtPad</value>
   </data>
   <data name="About_rssPictureBoxToolTip" xml:space="preserve">
     <value>Lire le flux RSS de diariotraduttore.com</value>
@@ -185,7 +185,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Site web:</value>
   </data>
   <data name="About_websitePictureBoxToolTip" xml:space="preserve">
-    <value>Visiter la page web de l&apos;auteur de DtPad</value>
+    <value>Visiter la page web de l'auteur de DtPad</value>
   </data>
   <data name="DatetimeSelect_cancelButton" xml:space="preserve">
     <value>Annuler</value>
@@ -221,7 +221,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Extension:</value>
   </data>
   <data name="Extensions_extensionPictureBoxToolTip" xml:space="preserve">
-    <value>Insérer seulement l&apos;extension des fichiers (par ex. &quot;txt&quot;)</value>
+    <value>Insérer seulement l'extension des fichiers (par ex. "txt")</value>
   </data>
   <data name="Extensions_helpLabel" xml:space="preserve">
     <value>Configurer les extensions de fichiers pris en charge par DtPad.</value>
@@ -230,7 +230,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>OK</value>
   </data>
   <data name="Extensions_removeButtonToolTip" xml:space="preserve">
-    <value>Supprimer l&apos;extension sélectionnée</value>
+    <value>Supprimer l'extension sélectionnée</value>
   </data>
   <data name="Extensions_Title" xml:space="preserve">
     <value>Extensions</value>
@@ -299,7 +299,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Aller à la ligne</value>
   </data>
   <data name="HelpManager_helpToolTip" xml:space="preserve">
-    <value>Besoin d&apos;aide supplémentaire?</value>
+    <value>Besoin d'aide supplémentaire?</value>
   </data>
   <data name="MergeTabs_cancelButton" xml:space="preserve">
     <value>Annuler</value>
@@ -311,10 +311,10 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Marquer les séparations entre onglets</value>
   </data>
   <data name="MergeTabs_moveDownButtonToolTip" xml:space="preserve">
-    <value>Remonter l&apos;onglet sélectionné</value>
+    <value>Remonter l'onglet sélectionné</value>
   </data>
   <data name="MergeTabs_moveUpButtonToolTip" xml:space="preserve">
-    <value>Descendre l&apos;onglet sélectionné</value>
+    <value>Descendre l'onglet sélectionné</value>
   </data>
   <data name="MergeTabs_okButton" xml:space="preserve">
     <value>Fusionner</value>
@@ -383,7 +383,7 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Gérer les extensions des fichiers</value>
   </data>
   <data name="Options_fileGroupBox1" xml:space="preserve">
-    <value>Répertoire d&apos;origine</value>
+    <value>Répertoire d'origine</value>
   </data>
   <data name="Options_fileGroupBox2" xml:space="preserve">
     <value>Autre</value>
@@ -404,8 +404,8 @@ DtPad ne récupère aucune information à propos des utilisateurs et de leur uti
     <value>Configurer DtPad.</value>
   </data>
   <data name="Options_infoProxyPictureBoxToolTip" xml:space="preserve">
-    <value>DtPad utilise les paramètres d&apos;Internet Explorer pour se connecter. Insérer
-les champs suivants dans le cas d&apos;une demande d&apos;authentification.</value>
+    <value>DtPad utilise les paramètres d'Internet Explorer pour se connecter. Insérer
+les champs suivants dans le cas d'une demande d'authentification.</value>
   </data>
   <data name="Options_internetGroupBox1" xml:space="preserve">
     <value>Proxy</value>
@@ -441,8 +441,8 @@ Español</value>
     <value>Mot passe:</value>
   </data>
   <data name="Options_proxyWarning" xml:space="preserve">
-    <value>Le paramétrage du proxy n&apos;est pas correct.
-Veuillez le désactiver ou vérifier que les nom d&apos;utilisateur et mot de passe sont évalués.</value>
+    <value>Le paramétrage du proxy n'est pas correct.
+Veuillez le désactiver ou vérifier que les nom d'utilisateur et mot de passe sont évalués.</value>
   </data>
   <data name="Options_recentFilesNumberLabel" xml:space="preserve">
     <value>Nom. fichiers récents:</value>
@@ -470,7 +470,7 @@ Windows classique</value>
     <value>Dossier spécifique</value>
   </data>
   <data name="Options_statusBarCheckBox" xml:space="preserve">
-    <value>Barre d&apos;etat</value>
+    <value>Barre d'etat</value>
   </data>
   <data name="Options_statusLabel" xml:space="preserve">
     <value>Statut:</value>
@@ -482,7 +482,7 @@ Windows classique</value>
     <value>Paramètres</value>
   </data>
   <data name="Options_toolbarCheckBox" xml:space="preserve">
-    <value>Barre d&apos;outils</value>
+    <value>Barre d'outils</value>
   </data>
   <data name="Options_urlsCheckBox" xml:space="preserve">
     <value>Mettre en valeur les URLs</value>
@@ -526,10 +526,10 @@ Autre</value>
     <value>Email: *</value>
   </data>
   <data name="ReportBug_errorMessageLabel" xml:space="preserve">
-    <value>Message d&apos;erreur (si présent):</value>
+    <value>Message d'erreur (si présent):</value>
   </data>
   <data name="ReportBug_helpLabel" xml:space="preserve">
-    <value>Envoyer un rapport de bug par email à l&apos;auteir de DtPad.</value>
+    <value>Envoyer un rapport de bug par email à l'auteir de DtPad.</value>
   </data>
   <data name="ReportBug_nameLabel" xml:space="preserve">
     <value>Nom: *</value>
@@ -541,7 +541,7 @@ Autre</value>
     <value>Envoyer</value>
   </data>
   <data name="ReportBug_sendMeACopyCheckBox" xml:space="preserve">
-    <value>M&apos;envoyer une copie</value>
+    <value>M'envoyer une copie</value>
   </data>
   <data name="ReportBug_Title" xml:space="preserve">
     <value>Rapport de bug</value>
@@ -556,20 +556,20 @@ Autre</value>
     <value>Ligne commande:</value>
   </data>
   <data name="Tools_commandLinePictureBoxToolTip" xml:space="preserve">
-    <value>Insérer le chemin et le nom de l&apos;exécutable
-(par ex. &quot;C:\Program Files\DtPad\DtPad.exe&quot;)</value>
+    <value>Insérer le chemin et le nom de l'exécutable
+(par ex. "C:\Program Files\DtPad\DtPad.exe")</value>
   </data>
   <data name="Tools_descriptionLabel" xml:space="preserve">
     <value>Description:</value>
   </data>
   <data name="Tools_helpLabel" xml:space="preserve">
-    <value>Gère les applications externes liées au menu &quot;Outils&quot; de DtPad.</value>
+    <value>Gère les applications externes liées au menu "Outils" de DtPad.</value>
   </data>
   <data name="Tools_okButton" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="Tools_removeButtonToolTip" xml:space="preserve">
-    <value>Supprimer l&apos;outil sélectionné</value>
+    <value>Supprimer l'outil sélectionné</value>
   </data>
   <data name="Tools_runComboBoxItems" xml:space="preserve">
     <value>Fenêtre normale
@@ -589,8 +589,8 @@ Taille maximale</value>
     <value>Répertoire travail:</value>
   </data>
   <data name="Tools_workingFolderPictureBoxToolTip" xml:space="preserve">
-    <value>Inserer le chemin de travail de l&apos;éxecutable
-(par ex. &quot;C:\Program Files\DtPad&quot;)</value>
+    <value>Inserer le chemin de travail de l'éxecutable
+(par ex. "C:\Program Files\DtPad")</value>
   </data>
   <data name="VersionCheck_closeButton" xml:space="preserve">
     <value>Fermer</value>
@@ -602,7 +602,7 @@ Taille maximale</value>
     <value>fermeture des onglets ouvers…</value>
   </data>
   <data name="VersionCheck_statusLabelConnection" xml:space="preserve">
-    <value>connexion en cours d&apos;établissement...</value>
+    <value>connexion en cours d'établissement...</value>
   </data>
   <data name="VersionCheck_statusLabelDownload" xml:space="preserve">
     <value>téléchargement informations de dernière version…</value>
@@ -645,7 +645,7 @@ Taille maximale</value>
 
 bienvenue dans DtPad, éditeur de
 texte facile à utiliser interface à onglets
-et un tas de fonctions intéressantes. Son développement est toujours en cours et donc tout commentaire au sujet de son utilisation sera le bienvenue! Utilisez pour cela la fontion &quot;Rapport de bug&quot; du menu d&apos;Aide ou envoyer un message en utilisant l’icône email dans la fenêtre &quot;A propos&quot;.
+et un tas de fonctions intéressantes. Son développement est toujours en cours et donc tout commentaire au sujet de son utilisation sera le bienvenue! Utilisez pour cela la fontion "Rapport de bug" du menu d'Aide ou envoyer un message en utilisant l’icône email dans la fenêtre "A propos".
 
 Salutations,</value>
   </data>
@@ -656,13 +656,13 @@ Salutations,</value>
     <value>Attention</value>
   </data>
   <data name="ErrorOR_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
-    <value>Vopier le message d&apos;erreur dans le presse-papier</value>
+    <value>Vopier le message d'erreur dans le presse-papier</value>
   </data>
   <data name="ErrorOR_reportBugButton" xml:space="preserve">
     <value>Rapport de bug</value>
   </data>
   <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
-    <value>Copier le message d&apos;erreur dans le presse-papier</value>
+    <value>Copier le message d'erreur dans le presse-papier</value>
   </data>
   <data name="ErrorO_okButton" xml:space="preserve">
     <value>OK</value>
@@ -731,7 +731,7 @@ Salutations,</value>
     <value>Chemin et nom du fichier</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Boucler à l&apos;EOF</value>
+    <value>Boucler à l'EOF</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>Nouveau</value>
@@ -878,7 +878,7 @@ Salutations,</value>
     <value>Email</value>
   </data>
   <data name="EmailManager_ErrorMessage" xml:space="preserve">
-    <value>Message d&apos;erreur</value>
+    <value>Message d'erreur</value>
   </data>
   <data name="EmailManager_Name" xml:space="preserve">
     <value>Nom</value>
@@ -893,13 +893,13 @@ Salutations,</value>
     <value>Note</value>
   </data>
   <data name="ExplorerManager_NoteNameNotEmpty" xml:space="preserve">
-    <value>Le titre d&apos;une note doit être renseigné.</value>
+    <value>Le titre d'une note doit être renseigné.</value>
   </data>
   <data name="ExtensionManager_AlreadyExists" xml:space="preserve">
     <value>Cette extension existe déjà! Choisissez une autre description.</value>
   </data>
   <data name="ExtensionManager_ExtensionNameNotEmpty" xml:space="preserve">
-    <value>Le nom de l&apos;extension doit être renseigné.</value>
+    <value>Le nom de l'extension doit être renseigné.</value>
   </data>
   <data name="ExtensionManager_New" xml:space="preserve">
     <value>Nouvelle extension</value>
@@ -909,19 +909,19 @@ Salutations,</value>
 Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
   </data>
   <data name="ExtensionManager_Removing" xml:space="preserve">
-    <value>Erreur lors de la suppression de l&apos;extension.
+    <value>Erreur lors de la suppression de l'extension.
 La fenêtre courante va être fermée.</value>
   </data>
   <data name="ExtensionManager_Saving" xml:space="preserve">
-    <value>Erreur lors de l&apos;enregistrement de l&apos;extension.
+    <value>Erreur lors de l'enregistrement de l'extension.
 La fenêtre courante va être fermée.</value>
   </data>
   <data name="ExtensionManager_Unvalorized" xml:space="preserve">
-    <value>Au moins une extension n&apos;est pas complètement renseignée.
+    <value>Au moins une extension n'est pas complètement renseignée.
 Finissez de remplir les informations pour poursuivre.</value>
   </data>
   <data name="FileListManager_ClearHistoryRecentFiles" xml:space="preserve">
-    <value>Etes vous sur de vouloir vider l&apos;historique récent des fichiers?</value>
+    <value>Etes vous sur de vouloir vider l'historique récent des fichiers?</value>
   </data>
   <data name="FileListManager_EmptyTool" xml:space="preserve">
     <value>Vide</value>
@@ -963,10 +963,10 @@ Finissez de remplir les informations pour poursuivre.</value>
     <value>Fermer le panneau de recherche</value>
   </data>
   <data name="Form1_closeToolStripButtonToolTip" xml:space="preserve">
-    <value>Fermer l&apos;onglet actif</value>
+    <value>Fermer l'onglet actif</value>
   </data>
   <data name="Form1_Closing" xml:space="preserve">
-    <value>A la fermeture de l&apos;application les données non enregistrées seront perdues.
+    <value>A la fermeture de l'application les données non enregistrées seront perdues.
 Désirez vous sauvegarder les changements?</value>
   </data>
   <data name="Form1_convertToolStripMenuItem" xml:space="preserve">
@@ -1204,7 +1204,7 @@ Désirez vous sauvegarder les changements?</value>
     <value>Sauver</value>
   </data>
   <data name="searchPanel_searchCountToolStripButton" xml:space="preserve">
-    <value>Nombre d&apos;occurrence</value>
+    <value>Nombre d'occurrence</value>
   </data>
   <data name="Form1_searchToolStripMenuItem" xml:space="preserve">
     <value>Chercher</value>
@@ -1228,7 +1228,7 @@ Désirez vous sauvegarder les changements?</value>
     <value>Spécifier un suffixe dans la boite de saisie supérieure.</value>
   </data>
   <data name="Form1_statusBarToolStripMenuItem" xml:space="preserve">
-    <value>Barre d&apos;etat</value>
+    <value>Barre d'etat</value>
   </data>
   <data name="Form1_stayOnTopToolStripButton" xml:space="preserve">
     <value>Garder au dessus</value>
@@ -1258,7 +1258,7 @@ Désirez vous sauvegarder les changements?</value>
     <value>Tout en minuscule</value>
   </data>
   <data name="Form1_toolbarToolStripMenuItem" xml:space="preserve">
-    <value>Barre d&apos;outils</value>
+    <value>Barre d'outils</value>
   </data>
   <data name="Form1_toolsToolStripMenuItem" xml:space="preserve">
     <value>Outils</value>
@@ -1276,7 +1276,7 @@ Désirez vous sauvegarder les changements?</value>
     <value>Annuler &lt;vide&gt;</value>
   </data>
   <data name="Form1_verticalContainerToolStripButton" xml:space="preserve">
-    <value>Monter l&apos;explorateur interne</value>
+    <value>Monter l'explorateur interne</value>
   </data>
   <data name="Form1_viewToolStripMenuItem" xml:space="preserve">
     <value>Affichage</value>
@@ -1310,15 +1310,15 @@ Appuyer sur OK pour choisir une autre destination.</value>
     <value>Une note avec ce titre existe déjà. Choisissez en un autre.</value>
   </data>
   <data name="NoteManager_ErrorCreation" xml:space="preserve">
-    <value>Erreur pendant la création du fichier d&apos;une note.
+    <value>Erreur pendant la création du fichier d'une note.
 Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
   </data>
   <data name="NoteManager_ErrorReading" xml:space="preserve">
-    <value>Erreur pendant la lecture du fichier d&apos;une note.
+    <value>Erreur pendant la lecture du fichier d'une note.
 Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
   </data>
   <data name="NoteManager_ErrorRemoving" xml:space="preserve">
-    <value>Erreur pendant la suppression du fichier d&apos;une note.
+    <value>Erreur pendant la suppression du fichier d'une note.
 Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
   </data>
   <data name="SearchManager_EOF" xml:space="preserve">
@@ -1326,7 +1326,7 @@ Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
 Redémarrer du début?</value>
   </data>
   <data name="SearchManager_NotFound" xml:space="preserve">
-    <value>Le texte recherché n&apos;a pas pu être trouvé.</value>
+    <value>Le texte recherché n'a pas pu être trouvé.</value>
   </data>
   <data name="SearchManager_OccurencesMore" xml:space="preserve">
     <value>occurences trouvées</value>
@@ -1358,41 +1358,41 @@ Voulez vous enregistrer le fichier avant de le fermer.</value>
     <value>Annuler</value>
   </data>
   <data name="ToolManager_AlreadyExists" xml:space="preserve">
-    <value>Le nom de l&apos;outil existe déjà! Choisissez une autre Description.</value>
+    <value>Le nom de l'outil existe déjà! Choisissez une autre Description.</value>
   </data>
   <data name="ToolManager_ErrorReading" xml:space="preserve">
-    <value>Erreur pendant la lecture du fichier d&apos;un outil.
+    <value>Erreur pendant la lecture du fichier d'un outil.
 Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
   </data>
   <data name="ToolManager_ErrorRemoving" xml:space="preserve">
-    <value>Erreur pendant la suppression d&apos;un outil.
+    <value>Erreur pendant la suppression d'un outil.
 La fenêtre actuelle va être fermée.</value>
   </data>
   <data name="ToolManager_ErrorSaving" xml:space="preserve">
-    <value>Erreur pendant l&apos;enregistrement d&apos;un outil.
+    <value>Erreur pendant l'enregistrement d'un outil.
 La fenêtre actuelle va être fermée.</value>
   </data>
   <data name="ToolManager_NameNotEmtpy" xml:space="preserve">
-    <value>Le nom de l&apos;outil doit être renseigné!</value>
+    <value>Le nom de l'outil doit être renseigné!</value>
   </data>
   <data name="ToolManager_New" xml:space="preserve">
     <value>Nouvel outil</value>
   </data>
   <data name="ToolManager_Unvalorized" xml:space="preserve">
-    <value>Au moins un outil n&apos;est pas complètement renseigné.
+    <value>Au moins un outil n'est pas complètement renseigné.
 Finissez de remplir les informations pour poursuivre.</value>
   </data>
   <data name="VersionCheckManager_ErrorConnection" xml:space="preserve">
     <value>Erreur de connexion.</value>
   </data>
   <data name="VersionCheckManager_ErrorDownloadingUpdater" xml:space="preserve">
-    <value>Erreur lors du téléchargement de la version de &quot;Mise à jour de DtPad&quot;.</value>
+    <value>Erreur lors du téléchargement de la version de "Mise à jour de DtPad".</value>
   </data>
   <data name="VersionCheckManager_InUse" xml:space="preserve">
     <value>est utilisé</value>
   </data>
   <data name="WindowManager_CommandExecution" xml:space="preserve">
-    <value>L&apos;exécution de la commande a été interompue!</value>
+    <value>L'exécution de la commande a été interompue!</value>
   </data>
   <data name="WindowManager_Exception" xml:space="preserve">
     <value>Une exception est intervenue:</value>
@@ -1401,7 +1401,7 @@ Finissez de remplir les informations pour poursuivre.</value>
     <value>Exception fatale:</value>
   </data>
   <data name="WindowManager_ProgramExecution" xml:space="preserve">
-    <value>L&apos;Exécution du programme a été interompue!</value>
+    <value>L'Exécution du programme a été interompue!</value>
   </data>
   <data name="Form1_tabPage1" xml:space="preserve">
     <value>Sans titre</value>
@@ -1413,7 +1413,7 @@ Finissez de remplir les informations pour poursuivre.</value>
     <value>Explorateur interne</value>
   </data>
   <data name="Options_tabCloseButtonOnComboBoxItems" xml:space="preserve">
-    <value>Marge de l&apos;onglet de droite
+    <value>Marge de l'onglet de droite
 Tous les onglets
 Onglet actif
 Ne pas afficher</value>
@@ -1511,7 +1511,7 @@ Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
     <value>Erreur: opérateur non valide.</value>
   </data>
   <data name="CalculationManager_ErrorParsing" xml:space="preserve">
-    <value>Erreur lors de l&apos;évaluation des valeurs dans la calculette.</value>
+    <value>Erreur lors de l'évaluation des valeurs dans la calculette.</value>
   </data>
   <data name="calculatorPanel_copyToolStripMenuItem2" xml:space="preserve">
     <value>Copier</value>
@@ -1523,7 +1523,7 @@ Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
     <value>Double tabulation vers tabulation</value>
   </data>
   <data name="Form1_returnToTabToolStripMenuItem" xml:space="preserve">
-    <value>Retourner à l&apos;onglet</value>
+    <value>Retourner à l'onglet</value>
   </data>
   <data name="Form1_fileExplorerTabPageToolTip" xml:space="preserve">
     <value>Explorateur de fichier</value>
@@ -1532,10 +1532,10 @@ Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
     <value>Erreur pendant le chargement des dossiers et fichiers.</value>
   </data>
   <data name="FileExplorerManager_ErrorLoadingTree" xml:space="preserve">
-    <value>Erreur pendant le chargement de l&apos;arborescence des lecteurs.</value>
+    <value>Erreur pendant le chargement de l'arborescence des lecteurs.</value>
   </data>
   <data name="FileExplorerManager_DeviceNotReady" xml:space="preserve">
-    <value>Le lecteur sélectionné n&apos;est pas prêt. Insérer un disque et ré-essayer.</value>
+    <value>Le lecteur sélectionné n'est pas prêt. Insérer un disque et ré-essayer.</value>
   </data>
   <data name="FileExplorerManager_NoDisk" xml:space="preserve">
     <value>Aucun disque</value>
@@ -1565,17 +1565,17 @@ Le fichier sera automatiquement recréé avec les valeurs par défaut!</value>
     <value>Fichiers exportés de DtPad</value>
   </data>
   <data name="ImportExportManager_ExportStatusLabel" xml:space="preserve">
-    <value>Paramètres et données &quot;{0}&quot; exportés</value>
+    <value>Paramètres et données "{0}" exportés</value>
   </data>
   <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Sélectionner le répertoire ou exporter les paramètres et données (par ex. notes, favoris):</value>
   </data>
   <data name="ImportExportManager_ImportStatusLabel" xml:space="preserve">
-    <value>Paramètres et données &quot;{0}&quot; importés</value>
+    <value>Paramètres et données "{0}" importés</value>
   </data>
   <data name="ImportExportManager_WarningImport" xml:space="preserve">
     <value>Le fichier sélectionné a été exporté avec une version différente de DtPad.
-Afin d&apos;éviter des problèmes de compatibilité, il est conseillé de ne pas l&apos;importer.
+Afin d'éviter des problèmes de compatibilité, il est conseillé de ne pas l'importer.
 Voulez vous tout de même continuer?</value>
   </data>
   <data name="Form1_toInitialUppercaseToolStripMenuItem" xml:space="preserve">
@@ -1591,19 +1591,19 @@ Voulez vous tout de même continuer?</value>
     <value>Extraire les fichiers sélectionnés</value>
   </data>
   <data name="ZipExtract_helpLabel" xml:space="preserve">
-    <value>Extraire le contenu de l&apos;archive ouverte.</value>
+    <value>Extraire le contenu de l'archive ouverte.</value>
   </data>
   <data name="ZipExtract_Title" xml:space="preserve">
-    <value>Extraction de l&apos;archive</value>
+    <value>Extraction de l'archive</value>
   </data>
   <data name="ZipExtract_zipContentLabel" xml:space="preserve">
-    <value>Contenu du fichier d&apos;archive:</value>
+    <value>Contenu du fichier d'archive:</value>
   </data>
   <data name="ZipManager_CompressedSizeColumn" xml:space="preserve">
     <value>Compressé</value>
   </data>
   <data name="ZipManager_ExtractSuccess" xml:space="preserve">
-    <value>L&apos;extraction des fichiers sélectionnés est terminée!</value>
+    <value>L'extraction des fichiers sélectionnés est terminée!</value>
   </data>
   <data name="ZipManager_folderBrowserDialogDescription" xml:space="preserve">
     <value>Sélectionner le répertoire où exraire le contenu du fichier:</value>
@@ -1615,8 +1615,8 @@ Voulez vous tout de même continuer?</value>
     <value>Taille</value>
   </data>
   <data name="ZipManager_OverwriteQuestion" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; existe déjà.
-Désirezz vous l&apos;écraser?</value>
+    <value>Le fichier "{0}" existe déjà.
+Désirezz vous l'écraser?</value>
   </data>
   <data name="ZipExtract_filenameLabel1" xml:space="preserve">
     <value>Nom du fichier:</value>
@@ -1625,7 +1625,7 @@ Désirezz vous l&apos;écraser?</value>
     <value>Fenêtre de commande</value>
   </data>
   <data name="PromptManager_Error" xml:space="preserve">
-    <value>Une erreur est survenue lors de l&apos;exécution d&apos;une commande en ligne!</value>
+    <value>Une erreur est survenue lors de l'exécution d'une commande en ligne!</value>
   </data>
   <data name="PromptManager_Date" xml:space="preserve">
     <value>La date actuelle est:</value>
@@ -1634,7 +1634,7 @@ Désirezz vous l&apos;écraser?</value>
     <value>Impossible de trouver le chemin spécifié</value>
   </data>
   <data name="PromptManager_Time" xml:space="preserve">
-    <value>L&apos;heure courante est:</value>
+    <value>L'heure courante est:</value>
   </data>
   <data name="PromptManager_UnrecognizedCommand" xml:space="preserve">
     <value>est une commande non reconnue</value>
@@ -1652,7 +1652,7 @@ Désirezz vous l&apos;écraser?</value>
     <value>Encodage </value>
   </data>
   <data name="Form1_useOriginalToolStripMenuItem" xml:space="preserve">
-    <value>Utiliser l&apos;encodage actuel des fichiers ouverts</value>
+    <value>Utiliser l'encodage actuel des fichiers ouverts</value>
   </data>
   <data name="Form1_uTF8ToolStripMenuItem" xml:space="preserve">
     <value>UTF-8</value>
@@ -1661,7 +1661,7 @@ Désirezz vous l&apos;écraser?</value>
     <value>Encodage</value>
   </data>
   <data name="Options_useExistingCheckBox" xml:space="preserve">
-    <value>Utiliser l&apos;encodage existant des fichiers ouverts</value>
+    <value>Utiliser l'encodage existant des fichiers ouverts</value>
   </data>
   <data name="Options_defaultComboBoxItems" xml:space="preserve">
     <value>ANSI
@@ -1709,7 +1709,7 @@ UTF-32 Little Endian</value>
     <value>ROT-13</value>
   </data>
   <data name="FileManager_NoFileToReadonly" xml:space="preserve">
-    <value>Les zones d&apos;édition temporaires ne peuvent pas être en lecture-seule.
+    <value>Les zones d'édition temporaires ne peuvent pas être en lecture-seule.
 Seuls les fichiers déja existant le peuvent.</value>
   </data>
   <data name="FileManager_NoTextForPDF" xml:space="preserve">
@@ -1755,7 +1755,7 @@ Seuls les fichiers déja existant le peuvent.</value>
     <value>Police:</value>
   </data>
   <data name="FontSelect_helpLabel" xml:space="preserve">
-    <value>Sélectionner la police de l&apos;éditeur de texte.</value>
+    <value>Sélectionner la police de l'éditeur de texte.</value>
   </data>
   <data name="FontSelect_italicCheckBox" xml:space="preserve">
     <value>Italique</value>
@@ -1803,7 +1803,7 @@ Seuls les fichiers déja existant le peuvent.</value>
     <value>Annuler</value>
   </data>
   <data name="ReplaceManager_NotFound" xml:space="preserve">
-    <value>Le texte cherché n&apos;a pu être trouvé.</value>
+    <value>Le texte cherché n'a pu être trouvé.</value>
   </data>
   <data name="ReplaceManager_ReplacedMore" xml:space="preserve">
     <value>occurrences remplacées</value>
@@ -1827,23 +1827,23 @@ Seuls les fichiers déja existant le peuvent.</value>
     <value>Session</value>
   </data>
   <data name="SessionManager_Closed" xml:space="preserve">
-    <value>La session &quot;{0}&quot; a été fermée</value>
+    <value>La session "{0}" a été fermée</value>
   </data>
   <data name="SessionManager_Opened" xml:space="preserve">
-    <value>Session &quot;{0}&quot; ouverte</value>
+    <value>Session "{0}" ouverte</value>
   </data>
   <data name="SessionManager_Saved" xml:space="preserve">
-    <value>Session &quot;{0}&quot; enregistrée</value>
+    <value>Session "{0}" enregistrée</value>
   </data>
   <data name="SessionManager_FileDialog" xml:space="preserve">
     <value>Fichier de session DtPad (*.dps)|*.dps</value>
   </data>
   <data name="SessionManager_AlreadyOpen" xml:space="preserve">
-    <value>Une session est déjà ouverte. Voulez vous l&apos;abandonner pour en ouvrir une nouvelle?
+    <value>Une session est déjà ouverte. Voulez vous l'abandonner pour en ouvrir une nouvelle?
 Les changements non enregistrés seront alors perdus.</value>
   </data>
   <data name="SessionManager_openingErrors" xml:space="preserve">
-    <value>Au moins un fichier de session ne peut être ouvert car n&apos;existant plus aux endroits indiqués:
+    <value>Au moins un fichier de session ne peut être ouvert car n'existant plus aux endroits indiqués:
 </value>
   </data>
   <data name="Form1_closeSessionToolStripButton" xml:space="preserve">
@@ -1876,10 +1876,10 @@ Cliquer sur OK afin de poursuivre vers la sélection du nom de fichier de la ses
     <value>Marco Macciò</value>
   </data>
   <data name="SessionManager_NoContent" xml:space="preserve">
-    <value>Il n&apos;y a aucun contenu à sauvegarder dans cette session.</value>
+    <value>Il n'y a aucun contenu à sauvegarder dans cette session.</value>
   </data>
   <data name="FileListManager_ClearHistoryRecentSessions" xml:space="preserve">
-    <value>Etes vous sur de vouloir vider l&apos;historique récent des sessions?</value>
+    <value>Etes vous sur de vouloir vider l'historique récent des sessions?</value>
   </data>
   <data name="Form1_clearSessionsToolStripMenuItem" xml:space="preserve">
     <value>Supprimer les sessions récentes</value>
@@ -1900,7 +1900,7 @@ Cliquer sur OK afin de poursuivre vers la sélection du nom de fichier de la ses
     <value>Sélectionner un caractère à copier dans le presse-papier.</value>
   </data>
   <data name="CharSelect_Title" xml:space="preserve">
-    <value>Sélection d&apos;un symbole</value>
+    <value>Sélection d'un symbole</value>
   </data>
   <data name="CharSelect_titleLabel" xml:space="preserve">
     <value>Double cliquer sur caractères pour copier dans presse-papier:</value>
@@ -1915,14 +1915,14 @@ Cliquer sur OK afin de poursuivre vers la sélection du nom de fichier de la ses
     <value>Classer les onglets alphabétiquement</value>
   </data>
   <data name="TabPageObject_WrongObject" xml:space="preserve">
-    <value>L&apos;objet d&apos;entrée n&apos;est pas un TabObjectPage: {0}.
-L&apos;operation ne peut pas être effectuée.</value>
+    <value>L'objet d'entrée n'est pas un TabObjectPage: {0}.
+L'operation ne peut pas être effectuée.</value>
   </data>
   <data name="FileManager_ReadonlyNo" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; a été mis en mode d&apos;accès normal</value>
+    <value>Le fichier "{0}" a été mis en mode d'accès normal</value>
   </data>
   <data name="FileManager_ReadonlyYes" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; a été mis en mode lecture-seule</value>
+    <value>Le fichier "{0}" a été mis en mode lecture-seule</value>
   </data>
   <data name="Options_tabGroupBox1" xml:space="preserve">
     <value>Paramètres</value>
@@ -1950,7 +1950,7 @@ Vertical</value>
     <value>Orientation onglets:</value>
   </data>
   <data name="Options_noteLabel" xml:space="preserve">
-    <value>Note: UTF-8 est un standard d&apos;encodage utilisé par de nombreuses applications de même pour ANSI. En cas de besoin spécifiques, il est recommandé d&apos;utiliser un de ces deux algorithme.</value>
+    <value>Note: UTF-8 est un standard d'encodage utilisé par de nombreuses applications de même pour ANSI. En cas de besoin spécifiques, il est recommandé d'utiliser un de ces deux algorithme.</value>
   </data>
   <data name="Options_backupAddExtensionRadioButton" xml:space="preserve">
     <value>Ajouter une extension au nom de fichier</value>
@@ -1971,10 +1971,10 @@ Vertical</value>
     <value>Emplacement</value>
   </data>
   <data name="Options_backupReplaceExtensionRadioButton" xml:space="preserve">
-    <value>Remplacer l&apos;extension du fichier avec celle des sauvegarde</value>
+    <value>Remplacer l'extension du fichier avec celle des sauvegarde</value>
   </data>
   <data name="Options_createBackupCheckBox" xml:space="preserve">
-    <value>Créer un fichier de sauvegarde lors de l&apos;enregistrement</value>
+    <value>Créer un fichier de sauvegarde lors de l'enregistrement</value>
   </data>
   <data name="Options_savingGroupBox1" xml:space="preserve">
     <value>Sauvegarde</value>
@@ -1995,13 +1995,13 @@ Vertical</value>
     <value>Sélectioner le répertoire par défaut pour enregistrer et ouvrir les fichiers:</value>
   </data>
   <data name="Options_backupExtensionWarning" xml:space="preserve">
-    <value>L&apos;extension de la sauvegarde doit être renseignée.</value>
+    <value>L'extension de la sauvegarde doit être renseignée.</value>
   </data>
   <data name="Options_backupIncrementalCheckBox" xml:space="preserve">
     <value>Numérotation incrémentale (par ex. back0, back1, ...)</value>
   </data>
   <data name="Options_backupLocationWarning" xml:space="preserve">
-    <value>Le répertoire de sauvegarde personnalisé n&apos;existe pas dans le système de fichiers.
+    <value>Le répertoire de sauvegarde personnalisé n'existe pas dans le système de fichiers.
 Sélectionner une autre destination.</value>
   </data>
   <data name="Form1_calendarTabPageToolTip" xml:space="preserve">
@@ -2011,17 +2011,17 @@ Sélectionner une autre destination.</value>
     <value>Insérer heure et date...</value>
   </data>
   <data name="FileManager_FileInUse" xml:space="preserve">
-    <value>Impossible d&apos;ouvrir &quot;{0}&quot;.
+    <value>Impossible d'ouvrir "{0}".
 Le fichier est utilisé par un autre processus.</value>
   </data>
   <data name="FileManager_FileNotExisting" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; n&apos;existe pas.</value>
+    <value>Le fichier "{0}" n'existe pas.</value>
   </data>
   <data name="FileManager_NoMessageFileInUse" xml:space="preserve">
-    <value>&quot;{0}&quot; est utilisé par un autre processus</value>
+    <value>"{0}" est utilisé par un autre processus</value>
   </data>
   <data name="FileManager_NoMessageFileNotExists" xml:space="preserve">
-    <value>&quot;{0}&quot; n&apos;existe pas</value>
+    <value>"{0}" n'existe pas</value>
   </data>
   <data name="PadText_helpLabel" xml:space="preserve">
     <value>Aligner texte avec caractère de remplissage.</value>
@@ -2084,7 +2084,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Comparer</value>
   </data>
   <data name="FileCompare_helpLabel" xml:space="preserve">
-    <value>Verifier le contenu pour définir s&apos;ils sont égaux.</value>
+    <value>Verifier le contenu pour définir s'ils sont égaux.</value>
   </data>
   <data name="FileCompare_selectTabsLabel" xml:space="preserve">
     <value>Choisir deux onglets pour comparaison:</value>
@@ -2134,7 +2134,7 @@ Le texte contenu dans les onglets est identique.</value>
     <value>XML/HTML avec DTD</value>
   </data>
   <data name="XmlValidator_Error" xml:space="preserve">
-    <value>Le contenu n&apos;est pas correct.
+    <value>Le contenu n'est pas correct.
 {0}</value>
   </data>
   <data name="XmlValidator_Success" xml:space="preserve">
@@ -2166,10 +2166,10 @@ Le texte contenu dans les onglets est identique.</value>
   </data>
   <data name="SessionManager_ClosingWindow" xml:space="preserve">
     <value>La session ouverte peut avoir été modifiée.
-Désirez vous l&apos;enregistrer avant de la fermer?</value>
+Désirez vous l'enregistrer avant de la fermer?</value>
   </data>
   <data name="FileManager_FileRenamed" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; vient d&apos;être renommé en &quot;{1}&quot;</value>
+    <value>Le fichier "{0}" vient d'être renommé en "{1}"</value>
   </data>
   <data name="FileManager_Reload" xml:space="preserve">
     <value>Le rechargement implique que les changements en cours du fichier vont être perdus.
@@ -2251,7 +2251,7 @@ maximale des longueurs des lignes sélectionnées</value>
     <value>Le nom du modèle existe daj? Choisissez une autre description.</value>
   </data>
   <data name="TemplateManager_ErrorReading" xml:space="preserve">
-    <value>lors de la lecture d&apos;un fichier de modèle.
+    <value>lors de la lecture d'un fichier de modèle.
 Le fichier sera automatiquement recréé avec ses valeurs par défaut!</value>
   </data>
   <data name="TemplateManager_ErrorRemoving" xml:space="preserve">
@@ -2259,7 +2259,7 @@ Le fichier sera automatiquement recréé avec ses valeurs par défaut!</value>
 La fenêtre en cours va être fermée.</value>
   </data>
   <data name="TemplateManager_ErrorSaving" xml:space="preserve">
-    <value>Erreur pendant l&apos;enregistrement du modèle
+    <value>Erreur pendant l'enregistrement du modèle
 La fenêtre actuelle va être fermée.</value>
   </data>
   <data name="TemplateManager_NameNotEmtpy" xml:space="preserve">
@@ -2269,14 +2269,14 @@ La fenêtre actuelle va être fermée.</value>
     <value>Nouveau modèle</value>
   </data>
   <data name="TemplateManager_Unvalorized" xml:space="preserve">
-    <value>Au moins un modèle n&apos;est pas complètement renseigné.
+    <value>Au moins un modèle n'est pas complètement renseigné.
 Compléter les information afin de poursuivre.</value>
   </data>
   <data name="Templates_helpLabel" xml:space="preserve">
     <value>Gérer les modèles de texte à utiliser dans DtPad.</value>
   </data>
   <data name="Form1_welcomeScreenToolStripMenuItem" xml:space="preserve">
-    <value>Ecran d&apos;accueil</value>
+    <value>Ecran d'accueil</value>
   </data>
   <data name="Form1_saveAsToolStripMenuItem3" xml:space="preserve">
     <value>Enregistrer sous...</value>
@@ -2306,7 +2306,7 @@ Compléter les information afin de poursuivre.</value>
     <value>Lignes -</value>
   </data>
   <data name="SearchManager_NoDuplicateLines" xml:space="preserve">
-    <value>Aucune ligne en double n&apos;a été trouvée.</value>
+    <value>Aucune ligne en double n'a été trouvée.</value>
   </data>
   <data name="Form1_gUIDToolStripMenuItem" xml:space="preserve">
     <value>GUID</value>
@@ -2324,21 +2324,21 @@ Compléter les information afin de poursuivre.</value>
     <value>Renommer...</value>
   </data>
   <data name="SessionManager_MoreSession" xml:space="preserve">
-    <value>Il existe plusieurs Sessions dans le fichier &quot;{0}&quot;.
+    <value>Il existe plusieurs Sessions dans le fichier "{0}".
 Le Fichier est probablement corrompu.</value>
   </data>
   <data name="SessionManager_Renamed" xml:space="preserve">
-    <value>Session&quot;{0}&quot; renommée</value>
+    <value>Session"{0}" renommée</value>
   </data>
   <data name="Form1_renameSessionToolStripButton" xml:space="preserve">
     <value>Renommer la session...</value>
   </data>
   <data name="SessionManager_FileInUse" xml:space="preserve">
-    <value>Impossible d&apos;ouvrir &quot;{0}&quot;.
+    <value>Impossible d'ouvrir "{0}".
 Le fichier est utilisé par un autre processus.</value>
   </data>
   <data name="SessionManager_FileNotExisting" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; n&apos;existe pas.</value>
+    <value>Le fichier "{0}" n'existe pas.</value>
   </data>
   <data name="Form1_listFilesToolStripMenuItem" xml:space="preserve">
     <value>Liste des fichiers</value>
@@ -2350,7 +2350,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Sélectionner tout</value>
   </data>
   <data name="Options_splashScreenCheckBox" xml:space="preserve">
-    <value>Ecran d&apos;accueil au démarrage de DtPad</value>
+    <value>Ecran d'accueil au démarrage de DtPad</value>
   </data>
   <data name="Splash_doNotShowCheckBox" xml:space="preserve">
     <value>Ne plus montrer</value>
@@ -2383,7 +2383,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Gauche</value>
   </data>
   <data name="Form1_rightTabToolStripMenuItem" xml:space="preserve">
-    <value>Bord droit du panneau d&apos;onglet</value>
+    <value>Bord droit du panneau d'onglet</value>
   </data>
   <data name="Form1_rightToolStripMenuItem" xml:space="preserve">
     <value>Droite</value>
@@ -2404,16 +2404,16 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Verticale</value>
   </data>
   <data name="Tools_moveDownButtonToolTip" xml:space="preserve">
-    <value>Déplacer l&apos;outil sélectionné vers le bas</value>
+    <value>Déplacer l'outil sélectionné vers le bas</value>
   </data>
   <data name="Tools_moveUpButtonToolTip" xml:space="preserve">
-    <value>Déplacer l&apos;outil sélectionné vers le haut</value>
+    <value>Déplacer l'outil sélectionné vers le haut</value>
   </data>
   <data name="Extensions_moveDownButtonToolTip" xml:space="preserve">
-    <value>Déplacer l&apos;extension sélectionné vers le bas</value>
+    <value>Déplacer l'extension sélectionné vers le bas</value>
   </data>
   <data name="Extensions_moveUpButtonToolTip" xml:space="preserve">
-    <value>Déplacer l&apos;extension sélectionné vers le haut</value>
+    <value>Déplacer l'extension sélectionné vers le haut</value>
   </data>
   <data name="Favourites_moveDownButtonToolTip" xml:space="preserve">
     <value>Descendre le favori sélectionné</value>
@@ -2437,7 +2437,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Résultats trouvés:</value>
   </data>
   <data name="RegularExpressionValidator_NoResultFounded" xml:space="preserve">
-    <value>Aucun résultat n&apos;a été trouvé.</value>
+    <value>Aucun résultat n'a été trouvé.</value>
   </data>
   <data name="Form1_hTMLTagToolStripMenuItem" xml:space="preserve">
     <value>Balise XML/HTML</value>
@@ -2452,7 +2452,7 @@ Le fichier est utilisé par un autre processus.</value>
     <value>Format XML/HTML</value>
   </data>
   <data name="FileListManager_ClearHistoryRecentPatterns" xml:space="preserve">
-    <value>Etes vous sur de vouloir vider l&apos;historique récent des modèles?</value>
+    <value>Etes vous sur de vouloir vider l'historique récent des modèles?</value>
   </data>
   <data name="Form1_customPatternsToolStripMenuItem" xml:space="preserve">
     <value>Personnaliser…</value>
@@ -2495,7 +2495,7 @@ aller sur le site www.regular-expressions.info</value>
     <value>Modèles...</value>
   </data>
   <data name="SearchPattern_historyComboBoxItems" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="Form1_xmlTreeToolStripMenuItem" xml:space="preserve">
     <value>Arbre XML</value>
@@ -2504,7 +2504,7 @@ aller sur le site www.regular-expressions.info</value>
     <value>Format</value>
   </data>
   <data name="Form1_treeViewToolStripMenuItem" xml:space="preserve">
-    <value>Affichage de l&apos;arbre XML</value>
+    <value>Affichage de l'arbre XML</value>
   </data>
   <data name="Form1_validationToolStripMenuItem1" xml:space="preserve">
     <value>Validation par DTD</value>
@@ -2553,7 +2553,7 @@ Vérifiez que votre connexion Internet est active et ré-essayez en envoyant une
     <value>Destination:</value>
   </data>
   <data name="TranslateText_helpLabel" xml:space="preserve">
-    <value>Choisir les langues d&apos;origine et de destination.</value>
+    <value>Choisir les langues d'origine et de destination.</value>
   </data>
   <data name="TranslateText_sourceLanguageLabel" xml:space="preserve">
     <value>Source:</value>
@@ -2566,14 +2566,14 @@ Vérifiez que votre connexion Internet est active et ré-essayez en envoyant une
   </data>
   <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
     <value>Le panneau des numéros de ligne a été temporairement désactivé à cause
-d&apos;un trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
+d'un trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
   </data>
   <data name="XmlEditor_Error" xml:space="preserve">
-    <value>Le contenu n&apos;est pas correct.
+    <value>Le contenu n'est pas correct.
 {0}</value>
   </data>
   <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d&apos;un
+    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d'un
 trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
   </data>
   <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
@@ -2629,23 +2629,23 @@ trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</
   </data>
   <data name="Options_helpHideLinesPictureBoxToolTip" xml:space="preserve">
     <value>Il est fortement recommandé de laissé cette propriété activée afin
-d&apos;éviter de ralentir l&apos;ouverture de fichiers de grande taille.</value>
+d'éviter de ralentir l'ouverture de fichiers de grande taille.</value>
   </data>
   <data name="ConstantUtil_NoDefault" xml:space="preserve">
-    <value>La valeur par défaut pour le paramètre &quot;{0}&quot; n&apos; a pas été trouvée.</value>
+    <value>La valeur par défaut pour le paramètre "{0}" n' a pas été trouvée.</value>
   </data>
   <data name="DateTimeUtil_DateTimeFormatWrong" xml:space="preserve">
-    <value>Ce format de date et heure n&apos;est pas supporté.</value>
+    <value>Ce format de date et heure n'est pas supporté.</value>
   </data>
   <data name="About_versionCheckLinkLabel" xml:space="preserve">
-    <value>Votre version de DtPad n&apos;est plus à jour!
+    <value>Votre version de DtPad n'est plus à jour!
 Cliquez ici pour exécuter le processus de mise à jour.</value>
   </data>
   <data name="Options_checkConnectionButton" xml:space="preserve">
     <value>Vérifier</value>
   </data>
   <data name="OptionManager_ConnectionTimeout" xml:space="preserve">
-    <value>Connexion trop longue à s&apos;établir!
+    <value>Connexion trop longue à s'établir!
 Le test nécessite plus de {0} secondes.</value>
   </data>
   <data name="OptionManager_SureReset" xml:space="preserve">
@@ -2683,7 +2683,7 @@ Tous les paramètres enregistrés seront perdus!</value>
     <value>Sélectionner le répertoire par défaut où rechercher dans des fichiers:</value>
   </data>
   <data name="SearchInFiles_helpLabel" xml:space="preserve">
-    <value>Rechercher le texte dans les fichiers d&apos;un certain répertoire.</value>
+    <value>Rechercher le texte dans les fichiers d'un certain répertoire.</value>
   </data>
   <data name="SearchInFiles_okButton" xml:space="preserve">
     <value>Chercher</value>
@@ -2713,13 +2713,13 @@ Tous les paramètres enregistrés seront perdus!</value>
     <value>Recherche en cours…</value>
   </data>
   <data name="SearchInFiles_FolderNotExists" xml:space="preserve">
-    <value>Le répertoire sélectionné n&apos;existe pas!</value>
+    <value>Le répertoire sélectionné n'existe pas!</value>
   </data>
   <data name="SearchInFiles_TextToSearchEmpty" xml:space="preserve">
     <value>Indiquer un texte à rechercher!</value>
   </data>
   <data name="SearchInFiles_searchFolderComboBoxItems" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="Form1_openFileListToolStripMenuItem" xml:space="preserve">
     <value>Liste de fichiers…</value>
@@ -2770,7 +2770,7 @@ Tous les paramètres enregistrés seront perdus!</value>
     <value>Etes vous sur de vider le résultat de la recherche dans les fichiers?</value>
   </data>
   <data name="SearchInFiles_NoResults" xml:space="preserve">
-    <value>Aucun résultat n&apos;a été trouvé!</value>
+    <value>Aucun résultat n'a été trouvé!</value>
   </data>
   <data name="searchInFilesPanel_openSelectedFilesToolStripMenuItem" xml:space="preserve">
     <value>Ouvrir le fichier</value>
@@ -2794,7 +2794,7 @@ Tous les paramètres enregistrés seront perdus!</value>
     <value>Afficher les numéros des semaines</value>
   </data>
   <data name="SessionManager_XmlDocError" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; ne contient pas de structure XML valide.</value>
+    <value>Le fichier "{0}" ne contient pas de structure XML valide.</value>
   </data>
   <data name="TabManager_LineNumbersDisabled" xml:space="preserve">
     <value>Le panneau des numéros de ligne a été temporairement désactivé car le
@@ -2825,7 +2825,7 @@ nombre de lignes est très grand. Il est possible de le réactivé à tout momen
     <value>Oui</value>
   </data>
   <data name="FileManager_InvalidPdf" xml:space="preserve">
-    <value>Le type de PDF sélectionné n&apos;est pas supporté par DtPad.</value>
+    <value>Le type de PDF sélectionné n'est pas supporté par DtPad.</value>
   </data>
   <data name="Form1_rowNumbersToolStripMenuItem" xml:space="preserve">
     <value>Numéros de lignes</value>
@@ -2867,16 +2867,16 @@ nombre de lignes est très grand. Il est possible de le réactivé à tout momen
     <value>[GG] Chercher le texte sélectionné</value>
   </data>
   <data name="InternetServicesManager_NoTextSelected" xml:space="preserve">
-    <value>Aucun texte n&apos;est sélectionné.</value>
+    <value>Aucun texte n'est sélectionné.</value>
   </data>
   <data name="Options_openWithCheckBox" xml:space="preserve">
-    <value>Lien de &quot;Ouvrir avec&quot;</value>
+    <value>Lien de "Ouvrir avec"</value>
   </data>
   <data name="Options_sendToCheckBox" xml:space="preserve">
-    <value>Lien de &quot;Envoyer vers&quot;</value>
+    <value>Lien de "Envoyer vers"</value>
   </data>
   <data name="Options_shellGroupBox1" xml:space="preserve">
-    <value>Menu contextuel de l&apos;explorateur</value>
+    <value>Menu contextuel de l'explorateur</value>
   </data>
   <data name="Options_shellNode" xml:space="preserve">
     <value>Intégration</value>
@@ -2888,7 +2888,7 @@ nombre de lignes est très grand. Il est possible de le réactivé à tout momen
     <value>Ouvrir avec DtPad</value>
   </data>
   <data name="Options_autoFormatLabel" xml:space="preserve">
-    <value>Formater automatiquement les fichiers de code suivant à l&apos;ouverture:</value>
+    <value>Formater automatiquement les fichiers de code suivant à l'ouverture:</value>
   </data>
   <data name="Options_htmlCheckBox" xml:space="preserve">
     <value>HTML</value>
@@ -2906,7 +2906,7 @@ nombre de lignes est très grand. Il est possible de le réactivé à tout momen
     <value>Mot commencant par une majuscule</value>
   </data>
   <data name="SearchPattern_denyRegexCheckBox" xml:space="preserve">
-    <value>Ignorer l&apos;expression régulière</value>
+    <value>Ignorer l'expression régulière</value>
   </data>
   <data name="SearchPattern_predefinedComboBoxItems" xml:space="preserve">
     <value>
@@ -2919,7 +2919,7 @@ Mots avec majuscule</value>
     <value>Prédéfinie:</value>
   </data>
   <data name="Form1_saveWithEncodingToolStripMenuItem" xml:space="preserve">
-    <value>Fichier avec sélection de l&apos;encodage...</value>
+    <value>Fichier avec sélection de l'encodage...</value>
   </data>
   <data name="Form1_saveWithEncodingToolStripMenuItem1" xml:space="preserve">
     <value>Enregistrer en encodant...</value>
@@ -2939,7 +2939,7 @@ UTF-32 Little Endian</value>
     <value>Encodage:</value>
   </data>
   <data name="TabEncoding_helpLabel" xml:space="preserve">
-    <value>Enregister un fichier avec l&apos;encodage désiré.</value>
+    <value>Enregister un fichier avec l'encodage désiré.</value>
   </data>
   <data name="TabEncoding_saveButton" xml:space="preserve">
     <value>Poursuivre</value>
@@ -2949,10 +2949,10 @@ UTF-32 Little Endian</value>
   </data>
   <data name="FileManager_FileAlreadyOpen" xml:space="preserve">
     <value>Ce fichier est déjà ouvert.
-Fermer l&apos;onglet correspondant et essayer de nouveau.</value>
+Fermer l'onglet correspondant et essayer de nouveau.</value>
   </data>
   <data name="EmailManager_EmailInvalid" xml:space="preserve">
-    <value>Le champ email n&apos;est pas correct.
+    <value>Le champ email n'est pas correct.
 Le format nécessaire est: example@email.com</value>
   </data>
   <data name="ReportBug_copyToolStripMenuItem" xml:space="preserve">
@@ -3157,7 +3157,7 @@ Le format nécessaire est: example@email.com</value>
     <value>Configurateur de fichier hosts</value>
   </data>
   <data name="Options_hostsConfiguratorCheckBox" xml:space="preserve">
-    <value>Démarrer le configurateur de fichier hosts à l&apos;ouverture de hosts</value>
+    <value>Démarrer le configurateur de fichier hosts à l'ouverture de hosts</value>
   </data>
   <data name="Options_openingGroupBox2" xml:space="preserve">
     <value>Fichiers système</value>
@@ -3183,7 +3183,7 @@ Le format nécessaire est: example@email.com</value>
     <value>Annuler</value>
   </data>
   <data name="UrlEntry_helpLabel" xml:space="preserve">
-    <value>Ouvrir le code source d&apos;une page web.</value>
+    <value>Ouvrir le code source d'une page web.</value>
   </data>
   <data name="UrlEntry_okButton" xml:space="preserve">
     <value>OK</value>
@@ -3204,32 +3204,32 @@ Le format nécessaire est: example@email.com</value>
     <value>Enregistrer</value>
   </data>
   <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d&apos;un
+    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d'un
 trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
   </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
-    <value>Fichier &quot;{0}&quot; supprimé</value>
+    <value>Fichier "{0}" supprimé</value>
   </data>
   <data name="FileManager_SureDeleteFile" xml:space="preserve">
     <value>Etes vous sur de vouloir supprimerle fichier
-&quot;{0}&quot;?</value>
+"{0}"?</value>
   </data>
   <data name="Form1_deleteFileToolStripMenuItem" xml:space="preserve">
     <value>Supprimer le fichier</value>
   </data>
   <data name="InternetManager_ErrorDownloading" xml:space="preserve">
     <value>Erreur durant le téléchargement du source de la page web.
-Vérifier que l&apos;URL est correcte et que le site est disponible.</value>
+Vérifier que l'URL est correcte et que le site est disponible.</value>
   </data>
   <data name="SearchInFiles_filenamePatternPictureBoxToolTip" xml:space="preserve">
     <value>Inserer types possibles séparés par des virgules ou des deux points
-(par ex. &quot;*.txt,*.dts&quot;)</value>
+(par ex. "*.txt,*.dts")</value>
   </data>
   <data name="SearchInFiles_caseSensitiveCheckBox" xml:space="preserve">
     <value>Sensible à la casse</value>
   </data>
   <data name="FileListManager_ClearObsoleteRecentFiles" xml:space="preserve">
-    <value>Etes vous sur de supprimer les fichiers qui n&apos;existent plus de la liste des fichiers récents?</value>
+    <value>Etes vous sur de supprimer les fichiers qui n'existent plus de la liste des fichiers récents?</value>
   </data>
   <data name="Form1_clearObsoleteFilesToolStripMenuItem" xml:space="preserve">
     <value>Supprimer les fichiers non-existants</value>
@@ -3253,10 +3253,10 @@ Vérifier que l&apos;URL est correcte et que le site est disponible.</value>
     <value>Caractères cachés</value>
   </data>
   <data name="calendarPanel_goToTodayToolStripMenuItem" xml:space="preserve">
-    <value>Aller à aujourdh&apos;ui</value>
+    <value>Aller à aujourdh'ui</value>
   </data>
   <data name="SearchInFiles_resizeButtonToolTip" xml:space="preserve">
-    <value>Agrandir la fenêtre jusqu&apos;à la taille del&apos;écran</value>
+    <value>Agrandir la fenêtre jusqu'à la taille del'écran</value>
   </data>
   <data name="Options_folderOpenedFileCheckBox" xml:space="preserve">
     <value>Ecraser avec le répertoire du fichier sélectionné</value>
@@ -3280,7 +3280,7 @@ Vérifier que l&apos;URL est correcte et que le site est disponible.</value>
     <value>Annuler</value>
   </data>
   <data name="Form1_OutdatedVersion" xml:space="preserve">
-    <value>La version de DtPad n&apos;est pas à jour!
+    <value>La version de DtPad n'est pas à jour!
 Voulez vous démarrer la mise à jour?</value>
   </data>
   <data name="Options_enableAutomaticUpdateCheckBox" xml:space="preserve">
@@ -3315,7 +3315,7 @@ Hebdomadaire</value>
     <value>Erreur la verification automatique de version de DtPad!</value>
   </data>
   <data name="Options_DPDefaultDirCharNotAllowed" xml:space="preserve">
-    <value>Les caractères suivants ne sont pas autorisés: \ / : ? * &lt; &gt; &quot; |</value>
+    <value>Les caractères suivants ne sont pas autorisés: \ / : ? * &lt; &gt; " |</value>
   </data>
   <data name="FileManager_SavedOnDropbox" xml:space="preserve">
     <value>enregistré sur Dropbox</value>
@@ -3333,7 +3333,7 @@ Hebdomadaire</value>
     <value>Supprimer</value>
   </data>
   <data name="DropboxFileDialog_DPDefaultFileCharNotAllowed" xml:space="preserve">
-    <value>Les caractères suivants ne sont pas autorisés: \ / : ? * &lt; &gt; &quot; |</value>
+    <value>Les caractères suivants ne sont pas autorisés: \ / : ? * &lt; &gt; " |</value>
   </data>
   <data name="DropboxFileDialog_fileNameLabel" xml:space="preserve">
     <value>Nom du fichier:</value>
@@ -3358,13 +3358,13 @@ Hebdomadaire</value>
   </data>
   <data name="FileManager_OverwriteFileOnDropbox" xml:space="preserve">
     <value>Un fichier portant se nom existe déjà sur Dropbox.
-Désirez vous l&apos;écraser?</value>
+Désirez vous l'écraser?</value>
   </data>
   <data name="Form1_fileOnDropboxToolStripMenuItem" xml:space="preserve">
     <value>Fichiers sur Dropbox sous…</value>
   </data>
   <data name="DropboxFileDialog_saveAsComboBoxItems" xml:space="preserve">
-    <value/>
+    <value />
   </data>
   <data name="DropboxFileDialog_saveAsLabel" xml:space="preserve">
     <value>Enregistrer sous:</value>
@@ -3379,7 +3379,7 @@ Désirez vous l&apos;écraser?</value>
     <value>Créer un nouveau répertoire</value>
   </data>
   <data name="DropboxFileDialog_superiorLevelButtonToolTip" xml:space="preserve">
-    <value>Monter d&apos;un niveau</value>
+    <value>Monter d'un niveau</value>
   </data>
   <data name="NameEntry_cancelButton" xml:space="preserve">
     <value>Annuler</value>
@@ -3415,11 +3415,11 @@ Désirez vous l&apos;écraser?</value>
     <value>Ouvrir</value>
   </data>
   <data name="FileManager_openingFileEmpty" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; est vide.</value>
+    <value>Le fichier "{0}" est vide.</value>
   </data>
   <data name="FileManager_openingFileNotExists" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; n&apos;a pas été trouvé dans le répertoire
-&quot;{1}&quot;.</value>
+    <value>Le fichier "{0}" n'a pas été trouvé dans le répertoire
+"{1}".</value>
   </data>
   <data name="DropboxFileDialog_saveAsLabel_Open" xml:space="preserve">
     <value>Type de fichier:</value>
@@ -3440,12 +3440,12 @@ Désirez vous l&apos;écraser?</value>
     <value>Colonnes:</value>
   </data>
   <data name="SearchInFiles_exclusionPatternLabel" xml:space="preserve">
-    <value>Expression d&apos;exclusion:</value>
+    <value>Expression d'exclusion:</value>
   </data>
   <data name="SearchInFiles_exclusionPatternPictureBoxToolTip" xml:space="preserve">
     <value>Inserer types possibles séparés par des virgules ou des deux points
-(par ex. &quot;*.txt,*.dts&quot;).
-Le filtre &quot;*.*&quot; n&apos;est pas autorisé.</value>
+(par ex. "*.txt,*.dts").
+Le filtre "*.*" n'est pas autorisé.</value>
   </data>
   <data name="Form1_dropboxToolStripDropDownButton" xml:space="preserve">
     <value>Dropbox</value>
@@ -3458,7 +3458,7 @@ Le filtre &quot;*.*&quot; n&apos;est pas autorisé.</value>
   </data>
   <data name="DropboxManager_UnauthorizedAccess" xml:space="preserve">
     <value>Accès non autorisé à la Dropbox.
-Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votre navigateur par défaut.</value>
+Verifier votre authentification en ouvrant "www.dropbox.com" avec votre navigateur par défaut.</value>
   </data>
   <data name="DropboxFileDialog_copyToolStripMenuItem2" xml:space="preserve">
     <value>Copier</value>
@@ -3482,7 +3482,7 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>Sauvegarder le mot de passe</value>
   </data>
   <data name="notePanel_openOnEditorToolStripMenuItem" xml:space="preserve">
-    <value>Ouvrir avec l&apos;editeur</value>
+    <value>Ouvrir avec l'editeur</value>
   </data>
   <data name="Options_keepBulletListOnReturnCheckBox" xml:space="preserve">
     <value>Garder la liste à puce au retour</value>
@@ -3506,13 +3506,13 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>Sélectionner tout</value>
   </data>
   <data name="ZipExtract_copyArchiveContentPictureBoxToolTip" xml:space="preserve">
-    <value>Copier le contenu de l&apos;archive dans le press-papier</value>
+    <value>Copier le contenu de l'archive dans le press-papier</value>
   </data>
   <data name="ZipManager_DirectoryColumn" xml:space="preserve">
     <value>Chemin</value>
   </data>
   <data name="ConfigUtil_NoValue" xml:space="preserve">
-    <value>La valeur pour le paramètre &quot;{0}&quot; n&apos;a pas été trouvé.</value>
+    <value>La valeur pour le paramètre "{0}" n'a pas été trouvé.</value>
   </data>
   <data name="FileProperties_EncodingWithoutBOM" xml:space="preserve">
     <value>Sans BOM</value>
@@ -3524,10 +3524,10 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>UTF-8 sans BOM</value>
   </data>
   <data name="UrlEntry_clearHistoryButtonToolTip" xml:space="preserve">
-    <value>Nettoyer l&apos;historique des URLs récentes</value>
+    <value>Nettoyer l'historique des URLs récentes</value>
   </data>
   <data name="Form1_urlEncoderToolStripMenuItem" xml:space="preserve">
-    <value>Formatter l&apos;URL</value>
+    <value>Formatter l'URL</value>
   </data>
   <data name="UrlEncode_cancelButton" xml:space="preserve">
     <value>Annuler</value>
@@ -3557,7 +3557,7 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>URL décodée:</value>
   </data>
   <data name="UrlEncode_Title" xml:space="preserve">
-    <value>Encoder l&apos;URL</value>
+    <value>Encoder l'URL</value>
   </data>
   <data name="UrlEncode_toolStripMenuItem1" xml:space="preserve">
     <value>Copier</value>
@@ -3572,7 +3572,7 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>Décoder</value>
   </data>
   <data name="InternetManager_EmptySource" xml:space="preserve">
-    <value>La source à l&apos;URL demandée est vide.</value>
+    <value>La source à l'URL demandée est vide.</value>
   </data>
   <data name="filePanel_filePropertiesToolStripMenuItem" xml:space="preserve">
     <value>Propriétés du fichier</value>
@@ -3590,13 +3590,13 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>Retour chariot vers espace</value>
   </data>
   <data name="PasswordUtil_NoValue" xml:space="preserve">
-    <value>La valeur pour le paramètre &quot;{0}&quot; n&apos;a pas été trouvé.</value>
+    <value>La valeur pour le paramètre "{0}" n'a pas été trouvé.</value>
   </data>
   <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
     <value>Fermere tout</value>
   </data>
   <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d&apos;un
+    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d'un
 trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
   </data>
   <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
@@ -3612,7 +3612,7 @@ trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</
     <value>Rouge</value>
   </data>
   <data name="Form1_setTabColorToolStripMenuItem" xml:space="preserve">
-    <value>Changer couleur de l&apos;onglet</value>
+    <value>Changer couleur de l'onglet</value>
   </data>
   <data name="Form1_setTabColorBlackToolStripMenuItem" xml:space="preserve">
     <value>Noir (standard)</value>
@@ -3644,7 +3644,7 @@ Veuillez sélectionner deux langues différentes.</value>
     <value>Version du CLR .NET:</value>
   </data>
   <data name="Statistics_helpLabel" xml:space="preserve">
-    <value>Informations à propos de l&apos;environnement système.</value>
+    <value>Informations à propos de l'environnement système.</value>
   </data>
   <data name="Statistics_machineNameLabel1" xml:space="preserve">
     <value>Nom ordianteur:</value>
@@ -3653,7 +3653,7 @@ Veuillez sélectionner deux langues différentes.</value>
     <value>Mémoire (ensemble travail):</value>
   </data>
   <data name="Statistics_osLabel1" xml:space="preserve">
-    <value>Système d&apos;exploitation:</value>
+    <value>Système d'exploitation:</value>
   </data>
   <data name="Statistics_processorsLabel1" xml:space="preserve">
     <value>Processeurs:</value>
@@ -3662,7 +3662,7 @@ Veuillez sélectionner deux langues différentes.</value>
     <value>Sélectionner tout</value>
   </data>
   <data name="Statistics_Title" xml:space="preserve">
-    <value>Statistiques sur l&apos;environnement</value>
+    <value>Statistiques sur l'environnement</value>
   </data>
   <data name="Statistics_usernameLabel1" xml:space="preserve">
     <value>Utilisateur:</value>
@@ -3674,7 +3674,7 @@ Veuillez sélectionner deux langues différentes.</value>
     <value>Autre</value>
   </data>
   <data name="Form1_statisticsToolStripMenuItem" xml:space="preserve">
-    <value>Statistiques de l&apos;environnement</value>
+    <value>Statistiques de l'environnement</value>
   </data>
   <data name="GoToLine_copyToolStripMenuItem" xml:space="preserve">
     <value>Copier</value>
@@ -3726,11 +3726,11 @@ Veuillez sélectionner deux langues différentes.</value>
   </data>
   <data name="FileManager_UnauthorizedAccess" xml:space="preserve">
     <value>Accès non autorisé au fichier!
-L&apos;utilisateur connecté ne possède pas les droits lui permettant d&apos;enregistrer ce fichier.</value>
+L'utilisateur connecté ne possède pas les droits lui permettant d'enregistrer ce fichier.</value>
   </data>
   <data name="FileManager_UserNotAdmin" xml:space="preserve">
-    <value>L&apos;utilisateur connecté ne possède pas les droits d&apos;administrateur.
-Il n&apos;est pas possible d&apos;enregistrer les modification de ce fichier.</value>
+    <value>L'utilisateur connecté ne possède pas les droits d'administrateur.
+Il n'est pas possible d'enregistrer les modification de ce fichier.</value>
   </data>
   <data name="SystemUtil_New" xml:space="preserve">
     <value>Ouvrir un nouvel onglet</value>
@@ -3817,8 +3817,8 @@ Il n&apos;est pas possible d&apos;enregistrer les modification de ce fichier.</v
     <value>Port:</value>
   </data>
   <data name="DropboxManager_UriFormat" xml:space="preserve">
-    <value>Erreur d&apos;accès à la Dropbox.
-Vérifiez votre compte sur &quot;www.dropbox.com&quot; et les paramètres du proxy (si vous en utilisez un) dans la fenêtres des paramètres.</value>
+    <value>Erreur d'accès à la Dropbox.
+Vérifiez votre compte sur "www.dropbox.com" et les paramètres du proxy (si vous en utilisez un) dans la fenêtres des paramètres.</value>
   </data>
   <data name="GoToLine_lineCurrentLabel1" xml:space="preserve">
     <value>Ligne en cours:</value>
@@ -3830,19 +3830,19 @@ Vérifiez votre compte sur &quot;www.dropbox.com&quot; et les paramètres du pro
     <value>Page HTML vers texte</value>
   </data>
   <data name="SessionManager_SaveAllFilesFailed" xml:space="preserve">
-    <value>Tous les fichiers n&apos;ont pas été enregistrés. Fermez les les ou
-enregistrez les avant de poursuivre l&apos;enregistrement de la session.</value>
+    <value>Tous les fichiers n'ont pas été enregistrés. Fermez les les ou
+enregistrez les avant de poursuivre l'enregistrement de la session.</value>
   </data>
   <data name="SessionManager_Empty" xml:space="preserve">
     <value>La Session sélectionnée est vide.
 Le fichier est peut être corompue.</value>
   </data>
   <data name="DropboxManager_ProxyHostRequired" xml:space="preserve">
-    <value>Pour s&apos;authentifier au travers du proxy, Dropbox doit connaitre son adresse. Veuillez remplir
-les champs appropriés de la fenêtre des paramètres (onglet &quot;Internet&quot;) et essayer de nouveau.</value>
+    <value>Pour s'authentifier au travers du proxy, Dropbox doit connaitre son adresse. Veuillez remplir
+les champs appropriés de la fenêtre des paramètres (onglet "Internet") et essayer de nouveau.</value>
   </data>
   <data name="DropboxManager_SuccessfullyAuth" xml:space="preserve">
-    <value>DtPad vioent d&apos;être autorisé à accéder à la Dropbox?
+    <value>DtPad vioent d'être autorisé à accéder à la Dropbox?
 
 Cliquer sur Oui pour continuer ou Non pour annuler.</value>
   </data>
@@ -3862,29 +3862,29 @@ Cliquer sur Oui pour continuer ou Non pour annuler.</value>
     <value>Ajouter au fichiers favoris</value>
   </data>
   <data name="DropboxManager_SureRenameFile" xml:space="preserve">
-    <value>Etes vous sur de vouloir renommer &quot;{0}&quot;
-sous &quot;{1}&quot;?</value>
+    <value>Etes vous sur de vouloir renommer "{0}"
+sous "{1}"?</value>
   </data>
   <data name="DropboxManager_SureRenameFolder" xml:space="preserve">
-    <value>Etes vous sur de renommer le répertoire &quot;{0}&quot;
-en &quot;{1}&quot;?</value>
+    <value>Etes vous sur de renommer le répertoire "{0}"
+en "{1}"?</value>
   </data>
   <data name="DropboxManager_WarningRenaming" xml:space="preserve">
-    <value>Il n&apos;a pas été possible de renommer l&apos;objet. Vérifiez si il n&apos;est pas en lecture seule.</value>
+    <value>Il n'a pas été possible de renommer l'objet. Vérifiez si il n'est pas en lecture seule.</value>
   </data>
   <data name="DropboxFileDialog_deleteToolStripMenuItem1" xml:space="preserve">
     <value>Supprimer</value>
   </data>
   <data name="DropboxManager_SureDeleteFile" xml:space="preserve">
     <value>Etes sur de vouloir supprimer le fichier
-&quot;{0}&quot;?</value>
+"{0}"?</value>
   </data>
   <data name="DropboxManager_SureDeleteFolder" xml:space="preserve">
     <value>Etes sur de vouloir supprimer le répertoire
-&quot;{0}&quot;?</value>
+"{0}"?</value>
   </data>
   <data name="DropboxManager_WarningDeleting" xml:space="preserve">
-    <value>Il n&apos;a pas été possible de supprimer les objets.</value>
+    <value>Il n'a pas été possible de supprimer les objets.</value>
   </data>
   <data name="Options_dropboxDeleteCheckBox" xml:space="preserve">
     <value>Autorise la suppression de fichiers et répertoires</value>
@@ -3932,7 +3932,7 @@ Empilage</value>
     <value>Desc</value>
   </data>
   <data name="SortText_helpLabel" xml:space="preserve">
-    <value>Trier le texte dans l&apos;ordre désiré.</value>
+    <value>Trier le texte dans l'ordre désiré.</value>
   </data>
   <data name="SortText_okButton" xml:space="preserve">
     <value>OK</value>
@@ -3968,13 +3968,13 @@ Empilage</value>
     <value>Copier le chemin complet du fichier dans le presse-papier</value>
   </data>
   <data name="CustomFilesManager_HelpAnnotation" xml:space="preserve">
-    <value>Ce panneau peut être utile pour différents usages, incluant l&apos;écriture de notes, ou faire une comparaison rapide entre deux textes. </value>
+    <value>Ce panneau peut être utile pour différents usages, incluant l'écriture de notes, ou faire une comparaison rapide entre deux textes. </value>
   </data>
   <data name="CustomFilesManager_WordWrapPanel" xml:space="preserve">
     <value>Retour à la ligne</value>
   </data>
   <data name="Form1_annotationPanelToolStripMenuItem" xml:space="preserve">
-    <value>Panneau d&apos;annotation</value>
+    <value>Panneau d'annotation</value>
   </data>
   <data name="CustomFilesManager_CopyPanel" xml:space="preserve">
     <value>Copier</value>
@@ -3992,18 +3992,18 @@ Empilage</value>
     <value>Sélectionner tout</value>
   </data>
   <data name="CustomFilesManager_WarningAnnotationPanelClose" xml:space="preserve">
-    <value>Etes vous sur ce vouloir fermer le panneau d&apos;annotation?
+    <value>Etes vous sur ce vouloir fermer le panneau d'annotation?
 Le texte contenu sera perdu.</value>
   </data>
   <data name="FileManager_EncodingXmlToSave" xml:space="preserve">
-    <value>L&apos;encodage déclaré dans le XML est différent de celui sélectionné dans DtPad.
+    <value>L'encodage déclaré dans le XML est différent de celui sélectionné dans DtPad.
 Le fichier sera enregistré avec le premier restant consistant.</value>
   </data>
   <data name="FileManager_InvalidXmlToSave" xml:space="preserve">
-    <value>Le contenu du fichier XML n&apos;est pas valide. Voulez vous tout de même continuer?</value>
+    <value>Le contenu du fichier XML n'est pas valide. Voulez vous tout de même continuer?</value>
   </data>
   <data name="FileListManager_AddedFavourite" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; vient d&apos;être ajouté aux favoris.</value>
+    <value>Le fichier "{0}" vient d'être ajouté aux favoris.</value>
   </data>
   <data name="Form1_normalizeToolStripMenuItem" xml:space="preserve">
     <value>Normaliser le HTML</value>
@@ -4024,7 +4024,7 @@ Le fichier sera enregistré avec le premier restant consistant.</value>
     <value>Autre</value>
   </data>
   <data name="FileListManager_ClearObsoleteRecentSessions" xml:space="preserve">
-    <value>Etes vous sur de supprimer les sessions qui n&apos;existent
+    <value>Etes vous sur de supprimer les sessions qui n'existent
 plus de la liste des sessions récentes?</value>
   </data>
   <data name="FileListManager_ObsoleteSessionsRemovedMore" xml:space="preserve">
@@ -4110,10 +4110,10 @@ ou de fin est manquante. Veuillez les insérer ou changer le type de balise.</va
     <value>Archive ZIP (*zip)|*.zip</value>
   </data>
   <data name="ZipManager_Saved" xml:space="preserve">
-    <value>L&apos;archive &quot;{0}&quot; vient d&apos;être enregistrée</value>
+    <value>L'archive "{0}" vient d'être enregistrée</value>
   </data>
   <data name="ZipManager_NoContent" xml:space="preserve">
-    <value>Il n&apos;existe pas de contenu ou de fichiers ouvertsà stocker dans l&apos;archive.</value>
+    <value>Il n'existe pas de contenu ou de fichiers ouvertsà stocker dans l'archive.</value>
   </data>
   <data name="Dictionary_Title" xml:space="preserve">
     <value>Dictionnaire et synonymes</value>
@@ -4125,10 +4125,10 @@ ou de fin est manquante. Veuillez les insérer ou changer le type de balise.</va
     <value>Signification: {0}</value>
   </data>
   <data name="DictionaryManager_Synonym" xml:space="preserve">
-    <value>&gt; synonyme: &quot;{0}&quot;</value>
+    <value>&gt; synonyme: "{0}"</value>
   </data>
   <data name="DictionaryManager_Tip" xml:space="preserve">
-    <value>&gt; sugestion: &quot;{0}&quot;</value>
+    <value>&gt; sugestion: "{0}"</value>
   </data>
   <data name="DictionaryManager_TipsMore" xml:space="preserve">
     <value>Il y a {0} suggestions de mots</value>
@@ -4140,7 +4140,7 @@ ou de fin est manquante. Veuillez les insérer ou changer le type de balise.</va
     <value>Incorrete</value>
   </data>
   <data name="DictionaryManager_Word" xml:space="preserve">
-    <value>The mot &quot;{0}&quot; est {1}</value>
+    <value>The mot "{0}" est {1}</value>
   </data>
   <data name="Dictionary_clearButton" xml:space="preserve">
     <value>Nettoyer résultats</value>
@@ -4161,8 +4161,8 @@ ou de fin est manquante. Veuillez les insérer ou changer le type de balise.</va
     <value>Langue:</value>
   </data>
   <data name="Dictionary_NoDictionaries" xml:space="preserve">
-    <value>Aucun dictionnaire n&apos;a été trouvé dans le répertoire &quot;Languages&quot;.
-Vérifier l&apos;URL de téléchargement ou cliquer sur le lien de la fenêtre suivante.
+    <value>Aucun dictionnaire n'a été trouvé dans le répertoire "Languages".
+Vérifier l'URL de téléchargement ou cliquer sur le lien de la fenêtre suivante.
 </value>
   </data>
   <data name="Dictionary_searchButton" xml:space="preserve">
@@ -4181,12 +4181,12 @@ Vérifier l&apos;URL de téléchargement ou cliquer sur le lien de la fenêtre s
     <value>Dictionnaire et synonymes...</value>
   </data>
   <data name="ZipManager_FilesNotSaved" xml:space="preserve">
-    <value>Certains fichiers n&apos;ont pas été enregistrés. Fermez les fichiers ou enregistrez les 
-avant de poursuivre avec la production de l&apos;archive.</value>
+    <value>Certains fichiers n'ont pas été enregistrés. Fermez les fichiers ou enregistrez les 
+avant de poursuivre avec la production de l'archive.</value>
   </data>
   <data name="ZipManager_SaveAllFiles" xml:space="preserve">
     <value>Tous les onglets modifiés vont être enregiostrés afin de pouvoir
-être sauvegardés dans l&apos;archive. Etes vous sur de vouloir poursuivre?</value>
+être sauvegardés dans l'archive. Etes vous sur de vouloir poursuivre?</value>
   </data>
   <data name="Dictionary_cutToolStripMenuItem" xml:space="preserve">
     <value>Couper</value>
@@ -4207,8 +4207,8 @@ avant de poursuivre avec la production de l&apos;archive.</value>
     <value>Annuler</value>
   </data>
   <data name="DictionaryManager_NoDictionary" xml:space="preserve">
-    <value>Le dictionnaire de la langue utilisée n&apos;a pas été trouvé dans le répertoire &quot;Languages&quot;.
-Vérifier l&apos;URL pour télécharge:
+    <value>Le dictionnaire de la langue utilisée n'a pas été trouvé dans le répertoire "Languages".
+Vérifier l'URL pour télécharge:
 </value>
   </data>
   <data name="Dictionary_verifyAllButton" xml:space="preserve">
@@ -4257,10 +4257,10 @@ Vérifier l&apos;URL pour télécharge:
     <value>Balise</value>
   </data>
   <data name="CustomFilesManager_HostsClose" xml:space="preserve">
-    <value>Pour ré-ouvrir le panneau, cliquer sur &quot;Afficher --&gt; Configurateur de fichier hosts&quot;.</value>
+    <value>Pour ré-ouvrir le panneau, cliquer sur "Afficher --&gt; Configurateur de fichier hosts".</value>
   </data>
   <data name="WindowManager_SureResetWindow" xml:space="preserve">
-    <value>Etes vous sur de vouloir restaurer les paramètres d&apos;apparence par défaut de DtPad?</value>
+    <value>Etes vous sur de vouloir restaurer les paramètres d'apparence par défaut de DtPad?</value>
   </data>
   <data name="calculatorPanel_clearCalculatorToolStripButton" xml:space="preserve">
     <value>Raz de la calculatrice</value>
@@ -4269,7 +4269,7 @@ Vérifier l&apos;URL pour télécharge:
     <value>Utiliser le séparateur pour les milliers</value>
   </data>
   <data name="FileExplorerManager_UnexistingPath" xml:space="preserve">
-    <value>Le chemin indiqué n&apos;existe pas.</value>
+    <value>Le chemin indiqué n'existe pas.</value>
   </data>
   <data name="Form1_redoAllToolStripMenuItem" xml:space="preserve">
     <value>Tourt refaire</value>
@@ -4302,17 +4302,17 @@ Vérifier l&apos;URL pour télécharge:
     <value>Raffraîchir le lecteur</value>
   </data>
   <data name="Form1_takeTabScreenshotToolStripMenuItem" xml:space="preserve">
-    <value>Faire une copie d&apos;écran de l&apos;onglet actuel</value>
+    <value>Faire une copie d'écran de l'onglet actuel</value>
   </data>
   <data name="WindowManager_ScreenshotInClipboard" xml:space="preserve">
-    <value>La copie d&apos;écran a été mise dans le presse-papier.</value>
+    <value>La copie d'écran a été mise dans le presse-papier.</value>
   </data>
   <data name="FileManager_FileTooHeavy" xml:space="preserve">
-    <value>Impossible d&apos;ouvrir &quot;{0}&quot;.
+    <value>Impossible d'ouvrir "{0}".
 La taille du fichier est plus importante que celle autorisée (100 MB).</value>
   </data>
   <data name="FileManager_NoMessageFileTooHeavy" xml:space="preserve">
-    <value>&quot;{0}&quot; est plus large qu ela taille autorisé (100 MB)</value>
+    <value>"{0}" est plus large qu ela taille autorisé (100 MB)</value>
   </data>
   <data name="FileProperties_Bytes" xml:space="preserve">
     <value>bytes</value>
@@ -4324,20 +4324,20 @@ La taille du fichier est plus importante que celle autorisée (100 MB).</value>
     <value>Archive ZIP (*.zip)|*.zip</value>
   </data>
   <data name="SessionManager_ExportSaved" xml:space="preserve">
-    <value>L&apos;archive &quot;{0}&quot; a été enregistrée</value>
+    <value>L'archive "{0}" a été enregistrée</value>
   </data>
   <data name="SessionManager_NoExport" xml:space="preserve">
-    <value>L&apos;exportation est autorisé seulement pour les sessions dont les fichiers sont situés dans
+    <value>L'exportation est autorisé seulement pour les sessions dont les fichiers sont situés dans
 le même répertoire de session ou dans des sous-répertoires. Cette session contient des
 ficheirs qui sont dans des arborescences différentes, le traitement ne peut être effectué.</value>
   </data>
   <data name="SessionManager_SaveSessionForExport" xml:space="preserve">
     <value>La session ouverte a peut petre été modifiée.
-Avant de l&apos;exporter, vous devez l’enregistrer, sinon l&apos;export sera interrompu.</value>
+Avant de l'exporter, vous devez l’enregistrer, sinon l'export sera interrompu.</value>
   </data>
   <data name="SessionManager_ArchiveNotExport" xml:space="preserve">
-    <value>L&apos;archive sélectionnée ne semble pas contenir une session valide.
-Le fichier DPS n&apos;a pas été trouvé.</value>
+    <value>L'archive sélectionnée ne semble pas contenir une session valide.
+Le fichier DPS n'a pas été trouvé.</value>
   </data>
   <data name="SessionManager_ExportSessionDescription" xml:space="preserve">
     <value>Archive session DtPad</value>
@@ -4346,14 +4346,14 @@ Le fichier DPS n&apos;a pas été trouvé.</value>
     <value>Sélectionner le répertoire ou placer les fichiers de la session:</value>
   </data>
   <data name="SessionManager_ImportOverwrite" xml:space="preserve">
-    <value>Le fichier &quot;{0}&quot; existe déjà dans le répertoire de destination.
-Voulez vous l&apos;écraser?</value>
+    <value>Le fichier "{0}" existe déjà dans le répertoire de destination.
+Voulez vous l'écraser?</value>
   </data>
   <data name="SessionManager_ImportStatusLabel" xml:space="preserve">
-    <value>Session &quot;{0}&quot; décompactée</value>
+    <value>Session "{0}" décompactée</value>
   </data>
   <data name="Form1_importFromZipToolStripMenuItem" xml:space="preserve">
-    <value>Importer à partir d&apos;un ZIP...</value>
+    <value>Importer à partir d'un ZIP...</value>
   </data>
   <data name="QuestionYYANC_cancelButton" xml:space="preserve">
     <value>Annuler</value>
@@ -4385,5 +4385,11 @@ Sélectionner les onglets concernés pour poursuivre.</value>
   </data>
   <data name="SelectLines_selectAllToolStripMenuItem" xml:space="preserve">
     <value>Sélectionner tout</value>
+  </data>
+  <data name="CustomFilesManager_UndoPanel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItemShortcutKeyDisplayString" xml:space="preserve">
+    <value>CTRL+Z</value>
   </data>
 </root>

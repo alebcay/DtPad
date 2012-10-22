@@ -190,7 +190,7 @@ Détail de l&apos;erreur:</value>
     <value>Suppression de fichiers...</value>
   </data>
   <data name="UninstallManager_DeleteLinks" xml:space="preserve">
-    <value>Suppression du rai du menu de Démarrage...</value>
+    <value>Suppression du raccourci du menu de Démarrage...</value>
   </data>
   <data name="UninstallManager_DeleteSendTo" xml:space="preserve">
     <value>Suppression de l&apos;association &quot;Envoyer vers&quot;...</value>

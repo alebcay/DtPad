@@ -220,6 +220,18 @@ namespace DtPad.Customs
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
+            else if (e.Control && e.KeyCode == Keys.Z)
+            {
+                TextManager.UndoRich(form);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
+            else if (e.Control && e.KeyCode == Keys.Y)
+            {
+                TextManager.RedoRich(form);
+                e.Handled = true;
+                e.SuppressKeyPress = true;
+            }
             else if (e.Control && e.KeyCode == Keys.X)
             {
                 TextManager.Cut(form);

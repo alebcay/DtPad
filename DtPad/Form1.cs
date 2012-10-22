@@ -2012,6 +2012,7 @@ namespace DtPad
             LanguageUtil.SetCurrentLanguage(this, isFormReloading);
 
             notifyIcon.BalloonTipText = LanguageUtil.GetCurrentLanguageString("notifyIconBalloonTipText", Name);
+            undoToolStripMenuItem.ShortcutKeyDisplayString = LanguageUtil.GetCurrentLanguageString("undoToolStripMenuItemShortcutKeyDisplayString", Name);
 
             //LanguageUtil.CicleControls(Name, notifyIcon.ContextMenuStrip.Items);
             LanguageUtil.CicleControls(Name, pageContextMenuStrip.Items);
