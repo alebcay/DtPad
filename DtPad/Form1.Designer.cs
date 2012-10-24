@@ -33,8 +33,8 @@ namespace DtPad
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pageContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.newToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem2 = new Customs.CustomToolStripMenuItem();
+            this.closeToolStripMenuItem = new Customs.CustomToolStripMenuItem();
             this.closeAllButThisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
@@ -4491,7 +4491,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripButton newToolStripButton;
         private System.Windows.Forms.ToolStripButton closeToolStripButton;
         internal System.Windows.Forms.ContextMenuStrip pageContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private Customs.CustomToolStripMenuItem closeToolStripMenuItem;
         private DevExpress.XtraTab.XtraTabPage tabPage1;
         private Customs.CustomRichTextBox pageTextBox;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
@@ -4621,7 +4621,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripButton indentToolStripButton;
         private System.Windows.Forms.ToolStripButton outdentToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem2;
+        private Customs.CustomToolStripMenuItem newToolStripMenuItem2;
         internal System.Windows.Forms.ContextMenuStrip searchContextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2;

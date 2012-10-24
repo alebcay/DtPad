@@ -34,10 +34,25 @@ namespace DtPad.Managers
             PictureBox zoomPictureBox = form.zoomPictureBox;
             ZoomTrackBarControl zoomTrackBarControl = form.zoomTrackBarControl;
 
+            if (ConfigUtil.GetBoolParameter("NoteModeTabs"))
+            {
+                ContextMenuStrip smallPageContextMenuStrip = new ContextMenuStrip();
+                for (int i = 0; i < 2; i++)
+                {
+                    smallPageContextMenuStrip.Items.Add(((CustomToolStripMenuItem)form.pageContextMenuStrip.Items[i]).Clone());
+                }
+                pagesTabControl.ContextMenuStrip = smallPageContextMenuStrip;
+                pagesTabControl.CustomHeaderButtons.Clear();
+            }
+            else
+            {
+                pagesTabControl.ContextMenuStrip = null;
+                pagesTabControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
+            }
+            
             menuStrip.Visible = false;
             toolStrip.Visible = false;
-            pagesTabControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.False;
-            pagesTabControl.ContextMenuStrip = null;
+            verticalSplitContainer.Panel1.Padding = new Padding(0, 0, 0, 0);
             verticalSplitContainer.Panel2Collapsed = true;
             sessionToolStrip.Visible = false;
             searchReplacePanel.Visible = false;
@@ -62,7 +77,7 @@ namespace DtPad.Managers
             }
 
             form.WindowState = FormWindowState.Normal;
-            form.Size = new Size(200, 200);
+            form.Size = new Size(ConfigUtil.GetIntParameter("NoteModeSizeX"), ConfigUtil.GetIntParameter("NoteModeSizeY")); //new Size(400, 300);
             if (CustomFilesManager.IsHostsSectionPanelOpen(form))
             {
                 form.Width += 180; //ProgramUtil.GetSectionsPanel(pagesTabControl.SelectedTabPage).Width;
@@ -88,11 +103,17 @@ namespace DtPad.Managers
             ZoomTrackBarControl zoomTrackBarControl = form.zoomTrackBarControl;
             ToolStripMenuItem closeToolStripMenuItem3 = form.closeToolStripMenuItem3;
 
+            if (ConfigUtil.GetBoolParameter("NoteModeTabs"))
+            {
+                pagesTabControl.CustomHeaderButtons.AddRange(new[] { new DevExpress.XtraTab.Buttons.CustomHeaderButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Ellipsis) });
+            }
+
             form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
             menuStrip.Visible = true;
             toolStrip.Visible = !ConfigUtil.GetBoolParameter("ToolbarInvisible");
             pagesTabControl.ShowTabHeader = DevExpress.Utils.DefaultBoolean.True;
             pagesTabControl.ContextMenuStrip = form.pageContextMenuStrip;
+            verticalSplitContainer.Panel1.Padding = new Padding(3, 0, 3, 0);
             sessionToolStrip.Visible = closeToolStripMenuItem3.Enabled;
             searchReplacePanel.Visible = !ConfigUtil.GetBoolParameter("SearchReplacePanelDisabled");
             statusStrip.Visible = !ConfigUtil.GetBoolParameter("StatusBarInvisible");

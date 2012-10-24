@@ -157,6 +157,9 @@
     <Compile Include="Customs\CustomTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Customs\CustomToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Customs\StringForm.cs">
       <SubType>Form</SubType>
     </Compile>

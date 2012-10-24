@@ -330,7 +330,7 @@ namespace DtPad.Utils
             {
                 Type itemType = item.GetType();
 
-                if (itemType == typeof(ToolStripMenuItem))
+                if (itemType == typeof(ToolStripMenuItem) || itemType == typeof(CustomToolStripMenuItem))
                 {
                     ToolStripMenuItemControl.ManageControl(item, formName);
                 }
