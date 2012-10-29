@@ -4394,7 +4394,7 @@ Reselect interested tabs to proceed.</value>
     <value>Appearance</value>
   </data>
   <data name="Options_noteModeInfoLabel" xml:space="preserve">
-    <value>Note: to enable the note mode, click with mouse right botton over a tab of the main text editing area, and select "Show As Note On Top".</value>
+    <value>Note: to enable the note mode, click with the mouse right button over a tab of the main text editing area, and select "Show As Note On Top".</value>
   </data>
   <data name="Options_noteModeNode" xml:space="preserve">
     <value>Note Mode</value>

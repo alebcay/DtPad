@@ -282,6 +282,6 @@ Start the update process from DtPad "Help -&gt; Check for New Version..." menu.<
     <value>Start Update</value>
   </data>
   <data name="Form1_whatIsInsideLabel" xml:space="preserve">
-    <value>This updates containes:</value>
+    <value>This update containes:</value>
   </data>
 </root>

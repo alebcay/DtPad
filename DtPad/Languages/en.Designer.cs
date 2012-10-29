@@ -7889,7 +7889,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Note: to enable the note mode, click with mouse right botton over a tab of the main text editing area, and select &quot;Show As Note On Top&quot;..
+        ///   Looks up a localized string similar to Note: to enable the note mode, click with the mouse right button over a tab of the main text editing area, and select &quot;Show As Note On Top&quot;..
         /// </summary>
         internal static string Options_noteModeInfoLabel {
             get {

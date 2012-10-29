@@ -226,7 +226,7 @@ namespace DtPadUpdater.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This updates containes:.
+        ///   Looks up a localized string similar to This update containes:.
         /// </summary>
         internal static string Form1_whatIsInsideLabel {
             get {
