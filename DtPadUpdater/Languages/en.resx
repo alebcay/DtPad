@@ -148,7 +148,7 @@ If a problem persist, or DtPad seems to be broken, download the latest version f
     <value>Start DtPad</value>
   </data>
   <data name="Form1_startButton" xml:space="preserve">
-    <value>Start Update</value>
+    <value>Next &gt;</value>
   </data>
   <data name="Form1_Title" xml:space="preserve">
     <value>DtPad Updater</value>
@@ -277,5 +277,11 @@ Start the update process from DtPad "Help -&gt; Check for New Version..." menu.<
   </data>
   <data name="PasswordUtil_NoValue" xml:space="preserve">
     <value>Value for "{0}" parameter not found.</value>
+  </data>
+  <data name="Form1_StartUpdate" xml:space="preserve">
+    <value>Start Update</value>
+  </data>
+  <data name="Form1_whatIsInsideLabel" xml:space="preserve">
+    <value>This updates containes:</value>
   </data>
 </root>

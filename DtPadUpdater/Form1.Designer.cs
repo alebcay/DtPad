@@ -44,11 +44,15 @@ namespace DtPadUpdater
             this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.infoPanel = new System.Windows.Forms.Panel();
+            this.whatIsInsideLabel = new System.Windows.Forms.Label();
+            this.whatIsInsideTextBox = new System.Windows.Forms.TextBox();
             this.introPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homePictureBox)).BeginInit();
             this.updatePanel.SuspendLayout();
             this.contentContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            this.infoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // introPanel
@@ -126,7 +130,7 @@ namespace DtPadUpdater
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(97, 23);
             this.startButton.TabIndex = 1;
-            this.startButton.Text = "Start Update";
+            this.startButton.Text = "Next >";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
@@ -206,6 +210,40 @@ namespace DtPadUpdater
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
             // 
+            // infoPanel
+            // 
+            this.infoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.infoPanel.Controls.Add(this.whatIsInsideLabel);
+            this.infoPanel.Controls.Add(this.whatIsInsideTextBox);
+            this.infoPanel.Location = new System.Drawing.Point(143, 12);
+            this.infoPanel.Name = "infoPanel";
+            this.infoPanel.Size = new System.Drawing.Size(356, 282);
+            this.infoPanel.TabIndex = 3;
+            this.infoPanel.Visible = false;
+            // 
+            // whatIsInsideLabel
+            // 
+            this.whatIsInsideLabel.AutoSize = true;
+            this.whatIsInsideLabel.Location = new System.Drawing.Point(3, 3);
+            this.whatIsInsideLabel.Name = "whatIsInsideLabel";
+            this.whatIsInsideLabel.Size = new System.Drawing.Size(115, 13);
+            this.whatIsInsideLabel.TabIndex = 2;
+            this.whatIsInsideLabel.Text = "This update containes:";
+            // 
+            // whatIsInsideTextBox
+            // 
+            this.whatIsInsideTextBox.ContextMenuStrip = this.contentContextMenuStrip;
+            this.whatIsInsideTextBox.Location = new System.Drawing.Point(3, 28);
+            this.whatIsInsideTextBox.Multiline = true;
+            this.whatIsInsideTextBox.Name = "whatIsInsideTextBox";
+            this.whatIsInsideTextBox.ReadOnly = true;
+            this.whatIsInsideTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.whatIsInsideTextBox.Size = new System.Drawing.Size(353, 254);
+            this.whatIsInsideTextBox.TabIndex = 1;
+            this.whatIsInsideTextBox.Text = resources.GetString("whatIsInsideTextBox.Text");
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,8 +252,9 @@ namespace DtPadUpdater
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.logoPictureBox);
-            this.Controls.Add(this.introPanel);
+            this.Controls.Add(this.infoPanel);
             this.Controls.Add(this.updatePanel);
+            this.Controls.Add(this.introPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -229,6 +268,8 @@ namespace DtPadUpdater
             this.updatePanel.PerformLayout();
             this.contentContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            this.infoPanel.ResumeLayout(false);
+            this.infoPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -250,5 +291,8 @@ namespace DtPadUpdater
         private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.Panel infoPanel;
+        private System.Windows.Forms.Label whatIsInsideLabel;
+        internal System.Windows.Forms.TextBox whatIsInsideTextBox;
     }
 }

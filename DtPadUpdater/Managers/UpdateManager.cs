@@ -17,6 +17,14 @@ namespace DtPadUpdater.Managers
         
         #region Internal Methods
 
+        //internal static void ReadChangelog(Form1 form, String executablePath, String culture)
+        //{
+        //    TextBox whatIsInsideTextBox = form.whatIsInsideTextBox;
+
+        //    WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
+        //    whatIsInsideTextBox.Text = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-changelog.log");
+        //}
+
         internal static bool UpdateProcess(Form1 form, String executablePath, TextBox updateTextBox, ProgressBar updateProgressBar, String culture)
         {
             bool updateFounded = false;
@@ -54,15 +62,7 @@ namespace DtPadUpdater.Managers
                 updateTextBox.Text = updateTextBox.Text + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Read", className, culture);
 
                 WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
-
-                String repository = ConstantUtil.generalRepository;
-                //#if Debug
-                //    repository = ConstantUtil.generalRepositoryDebug;
-                //#endif
-                #if ReleaseFE
-                    repository = ConstantUtil.generalRepositoryFE;
-                #endif
-                String fileContent = webClient.DownloadString(repository + "dtpad-versioning.log");
+                String fileContent = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-versioning.log");
 
                 String[] separator0 = { Environment.NewLine };
                 String[] split0 = fileContent.Split(separator0, StringSplitOptions.RemoveEmptyEntries);

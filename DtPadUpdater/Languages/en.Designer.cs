@@ -181,11 +181,20 @@ namespace DtPadUpdater.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start Update.
+        ///   Looks up a localized string similar to Next &gt;.
         /// </summary>
         internal static string Form1_startButton {
             get {
                 return ResourceManager.GetString("Form1_startButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Update.
+        /// </summary>
+        internal static string Form1_StartUpdate {
+            get {
+                return ResourceManager.GetString("Form1_StartUpdate", resourceCulture);
             }
         }
         
@@ -213,6 +222,15 @@ namespace DtPadUpdater.Languages {
         internal static string Form1_Updating {
             get {
                 return ResourceManager.GetString("Form1_Updating", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This updates containes:.
+        /// </summary>
+        internal static string Form1_whatIsInsideLabel {
+            get {
+                return ResourceManager.GetString("Form1_whatIsInsideLabel", resourceCulture);
             }
         }
         

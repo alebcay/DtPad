@@ -55,6 +55,19 @@ namespace DtPadUpdater.Utils
         //    return webClient;
         //}
 
+        internal static String GetRepository()
+        {
+            String repository = ConstantUtil.generalRepository;
+            //#if Debug
+            //    repository = ConstantUtil.generalRepositoryDebug;
+            //#endif
+            #if ReleaseFE
+                repository = ConstantUtil.generalRepositoryFE;
+            #endif
+
+            return repository;
+        }
+
         #endregion Internal Methods
     }
 }

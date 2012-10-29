@@ -9,6 +9,11 @@ namespace DtPadUpdater
     /// Main DtPadUpdater form.
     /// </summary>
     /// <author>Marco Macciò</author>
+    /// <remarks>
+    /// 0) Intro
+    /// 1) Info
+    /// 2) Update
+    /// </remarks>
     internal partial class Form1 : Form
     {
         private readonly String executablePath = String.Empty;
@@ -48,6 +53,15 @@ namespace DtPadUpdater
                 if (introPanel.Visible)
                 {
                     introPanel.Visible = false;
+                    infoPanel.Visible = true;
+                    startButton.Text = LanguageUtil.GetCurrentLanguageString("StartUpdate", Name, internalCulture);
+                    Refresh();
+
+                    //UpdateManager.ReadChangelog(this, executablePath, internalCulture);
+                }
+                else if (infoPanel.Visible)
+                {
+                    infoPanel.Visible = false;
                     updatePanel.Visible = true;
                     startButton.Enabled = false;
                     startButton.Text = LanguageUtil.GetCurrentLanguageString("Updating", Name, internalCulture);
