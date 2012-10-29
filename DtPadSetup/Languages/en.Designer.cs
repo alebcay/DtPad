@@ -250,11 +250,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Information: for the moment DtPad supports english,
-        ///italian, french and spanish languages. Maybe next
-        ///versions will support even other cultures. If you are
-        ///interested in giving help for other localizations, contact
-        ///me using the form contained on the following page..
+        ///   Looks up a localized string similar to Information: for the moment DtPad supports english, italian, french and spanish languages. Maybe next versions will support even other cultures. If you are interested in giving help for other localizations, contact the author using the form contained on the following page..
         /// </summary>
         internal static string Form1_infoLabel {
             get {
@@ -330,11 +326,8 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Information: DtPad use Internet Explorer settings to
-        ///connect on Internet.
-        ///If your PC is behind a proxy server which requires an
-        ///authentication, insert here your username and
-        ///password..
+        ///   Looks up a localized string similar to Information: DtPad use Internet Explorer settings to connect on Internet.
+        ///If your PC is behind a proxy server which requires an authentication, insert here your username and password..
         /// </summary>
         internal static string Form1_label1 {
             get {
@@ -505,8 +498,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Skip settings (it will be possible to change them
-        ///using options window).
+        ///   Looks up a localized string similar to Skip settings (it will be possible to change them using options window).
         /// </summary>
         internal static string Form1_skipSettingsCheckBox {
             get {

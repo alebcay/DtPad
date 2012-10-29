@@ -160,11 +160,7 @@
     <value>Seleziona la cartella dove posizionare DtPad:</value>
   </data>
   <data name="Form1_infoLabel" xml:space="preserve">
-    <value>Informazione: per il momento DtPad supporta la
-lingua inglese, italiana, francese e spagnola. Versioni
-future potrebbero supportare anche altre lingue.
-Se sei interessato a fornire aiuto, contattami usando
-la form contenuta nella pagina sotto indicata.</value>
+    <value>Informazione: per il momento DtPad supporta la lingua inglese, italiana, francese e spagnola. Versioni future potrebbero supportare anche altre lingue. Se sei interessato a fornire aiuto, contatta l'autore usando la form contenuta nella pagina sotto indicata.</value>
   </data>
   <data name="Form1_installGroupBox1" xml:space="preserve">
     <value>Installa</value>
@@ -192,11 +188,8 @@ Clicca sul bottone "Avanti" per procedere.</value>
     <value>Introduzione</value>
   </data>
   <data name="Form1_label1" xml:space="preserve">
-    <value>Informazione: DtPad utilizza le impostazioni di
-Internet Explorer per accedere a Internet.
-Se il tuo PC si trova dietro a un server proxy
-che richiede autenticazione, inserire qui di
-seguito utente e password.</value>
+    <value>Informazione: DtPad utilizza le impostazioni di Internet Explorer per accedere a Internet.
+Se il tuo PC si trova dietro a un server proxy che richiede autenticazione, inserire qui di seguito utente e password.</value>
   </data>
   <data name="Form1_languageGroupBox1" xml:space="preserve">
     <value>Lingua</value>
@@ -241,8 +234,7 @@ seguito utente e password.</value>
     <value>Crea collegamento sul desktop e nel menu Start</value>
   </data>
   <data name="Form1_skipSettingsCheckBox" xml:space="preserve">
-    <value>Salta impostazioni (sarà possibile cambiarle in
-seguito tramite la finestra delle opzioni)</value>
+    <value>Salta impostazioni (sarà possibile cambiarle in seguito tramite la finestra delle opzioni)</value>
   </data>
   <data name="Form1_statusLabel" xml:space="preserve">
     <value>Stato:</value>

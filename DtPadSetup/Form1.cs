@@ -168,6 +168,7 @@ namespace DtPadSetup
                 lookAndFeelPanel.Visible = false;
                 windowPanel.Visible = true;
                 LookFeelUtil.SetLookAndFeel(this, contentContextMenuStrip);
+                LookFeelUtil.SetLookAndFeel(this, contentContextMenuStrip1);
                 stepLabel.Text = LanguageUtil.GetCurrentLanguageString("WindowPhase", Name, OptionManager.GetLanguage(this));
                 stepPictureBox.Image = ImageResource.install_step_4;
             }

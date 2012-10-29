@@ -250,11 +250,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Informazione: per il momento DtPad supporta la
-        ///lingua inglese, italiana, francese e spagnola. Versioni
-        ///future potrebbero supportare anche altre lingue.
-        ///Se sei interessato a fornire aiuto, contattami usando
-        ///la form contenuta nella pagina sotto indicata..
+        ///   Looks up a localized string similar to Informazione: per il momento DtPad supporta la lingua inglese, italiana, francese e spagnola. Versioni future potrebbero supportare anche altre lingue. Se sei interessato a fornire aiuto, contatta l&apos;autore usando la form contenuta nella pagina sotto indicata..
         /// </summary>
         internal static string Form1_infoLabel {
             get {
@@ -330,11 +326,8 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Informazione: DtPad utilizza le impostazioni di
-        ///Internet Explorer per accedere a Internet.
-        ///Se il tuo PC si trova dietro a un server proxy
-        ///che richiede autenticazione, inserire qui di
-        ///seguito utente e password..
+        ///   Looks up a localized string similar to Informazione: DtPad utilizza le impostazioni di Internet Explorer per accedere a Internet.
+        ///Se il tuo PC si trova dietro a un server proxy che richiede autenticazione, inserire qui di seguito utente e password..
         /// </summary>
         internal static string Form1_label1 {
             get {
@@ -505,8 +498,7 @@ namespace DtPadSetup.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Salta impostazioni (sarà possibile cambiarle in
-        ///seguito tramite la finestra delle opzioni).
+        ///   Looks up a localized string similar to Salta impostazioni (sarà possibile cambiarle in seguito tramite la finestra delle opzioni).
         /// </summary>
         internal static string Form1_skipSettingsCheckBox {
             get {

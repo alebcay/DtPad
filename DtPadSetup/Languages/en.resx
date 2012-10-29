@@ -160,11 +160,7 @@
     <value>Select the folder where to place DtPad:</value>
   </data>
   <data name="Form1_infoLabel" xml:space="preserve">
-    <value>Information: for the moment DtPad supports english,
-italian, french and spanish languages. Maybe next
-versions will support even other cultures. If you are
-interested in giving help for other localizations, contact
-me using the form contained on the following page.</value>
+    <value>Information: for the moment DtPad supports english, italian, french and spanish languages. Maybe next versions will support even other cultures. If you are interested in giving help for other localizations, contact the author using the form contained on the following page.</value>
   </data>
   <data name="Form1_installGroupBox1" xml:space="preserve">
     <value>Install</value>
@@ -192,11 +188,8 @@ Click on "Next" button to proceed.</value>
     <value>Intro</value>
   </data>
   <data name="Form1_label1" xml:space="preserve">
-    <value>Information: DtPad use Internet Explorer settings to
-connect on Internet.
-If your PC is behind a proxy server which requires an
-authentication, insert here your username and
-password.</value>
+    <value>Information: DtPad use Internet Explorer settings to connect on Internet.
+If your PC is behind a proxy server which requires an authentication, insert here your username and password.</value>
   </data>
   <data name="Form1_languageGroupBox1" xml:space="preserve">
     <value>Language</value>
@@ -241,8 +234,7 @@ password.</value>
     <value>Create shortcuts on Start menu and desktop</value>
   </data>
   <data name="Form1_skipSettingsCheckBox" xml:space="preserve">
-    <value>Skip settings (it will be possible to change them
-using options window)</value>
+    <value>Skip settings (it will be possible to change them using options window)</value>
   </data>
   <data name="Form1_statusLabel" xml:space="preserve">
     <value>Status:</value>

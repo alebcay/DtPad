@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("DtPad Uninstaller")]
 [assembly: AssemblyDescription("Marco Macciò - diariotraduttore.com")]
-[assembly: AssemblyConfiguration("121022")]
+[assembly: AssemblyConfiguration("121029")]
 [assembly: AssemblyCompany("Diario di un traduttore")]
 [assembly: AssemblyProduct("DtPad Uninstaller")]
 [assembly: AssemblyCopyright("")]
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.2.5.40")]
-[assembly: AssemblyFileVersion("1.2.5.40")]
+[assembly: AssemblyVersion("1.3.0.40")]
+[assembly: AssemblyFileVersion("1.3.0.40")]
 [assembly: NeutralResourcesLanguage("en-GB")]
 [assembly: CLSCompliant(true)]
