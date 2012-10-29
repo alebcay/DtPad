@@ -4420,4 +4420,16 @@ Seleziona nuovamente i tab per procedere.</value>
   <data name="XmlEditor_copyToolStripMenuItem" xml:space="preserve">
     <value>Copia</value>
   </data>
+  <data name="TabsSwitch_backButtonToolTip" xml:space="preserve">
+    <value>Indietro</value>
+  </data>
+  <data name="TabsSwitch_nextButtonToolTip" xml:space="preserve">
+    <value>Avanti</value>
+  </data>
+  <data name="TabsSwitch_pagingLabel" xml:space="preserve">
+    <value>Pagina: {0}/{1}</value>
+  </data>
+  <data name="TabsSwitch_Title" xml:space="preserve">
+    <value>Cambio tab</value>
+  </data>
 </root>

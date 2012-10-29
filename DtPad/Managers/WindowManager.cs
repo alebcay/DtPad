@@ -430,6 +430,14 @@ namespace DtPad.Managers
             return translateText.ShowDialog(form);
         }
 
+        internal static void ShowTabsSwitch(Form form)
+        {
+            TabsSwitch tabsSwitch = new TabsSwitch { Owner = form };
+
+            tabsSwitch.InitializeForm();
+            tabsSwitch.ShowDialog(form);
+        }
+
         internal static void ShowErrorBox(Form form, String errorMessage, Exception exception)
         {
             LogUtil log = new LogUtil(MethodBase.GetCurrentMethod());

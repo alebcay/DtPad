@@ -10843,6 +10843,42 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Indietro.
+        /// </summary>
+        internal static string TabsSwitch_backButtonToolTip {
+            get {
+                return ResourceManager.GetString("TabsSwitch_backButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Avanti.
+        /// </summary>
+        internal static string TabsSwitch_nextButtonToolTip {
+            get {
+                return ResourceManager.GetString("TabsSwitch_nextButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pagina: {0}/{1}.
+        /// </summary>
+        internal static string TabsSwitch_pagingLabel {
+            get {
+                return ResourceManager.GetString("TabsSwitch_pagingLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cambio tab.
+        /// </summary>
+        internal static string TabsSwitch_Title {
+            get {
+                return ResourceManager.GetString("TabsSwitch_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chiudi.
         /// </summary>
         internal static string TagEntry_cancelButton {

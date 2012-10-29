@@ -99,40 +99,6 @@ namespace DtPad
 
         #endregion Button Methods
 
-        //#region ContextMenu Methods
-
-        //private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    TextManager.UndoControl(markSeparationTextBox);
-        //}
-
-        //private void cutToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    TextManager.CutControl(markSeparationTextBox);
-        //}
-
-        //private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    TextManager.CopyControl(markSeparationTextBox);
-        //}
-
-        //private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    TextManager.PasteControl(markSeparationTextBox);
-        //}
-
-        //private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    TextManager.DeleteControl(markSeparationTextBox);
-        //}
-
-        //private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    TextManager.SelectAllControl(markSeparationTextBox);
-        //}
-
-        //#endregion ContextMenu Methods
-
         #region Private Methods
 
         private void SetLanguage()

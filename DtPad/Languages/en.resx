@@ -4411,4 +4411,16 @@ Reselect interested tabs to proceed.</value>
   <data name="XmlEditor_copyToolStripMenuItem" xml:space="preserve">
     <value>Copy</value>
   </data>
+  <data name="TabsSwitch_backButtonToolTip" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="TabsSwitch_nextButtonToolTip" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="TabsSwitch_pagingLabel" xml:space="preserve">
+    <value>Page: {0}/{1}</value>
+  </data>
+  <data name="TabsSwitch_Title" xml:space="preserve">
+    <value>Tabs Switch</value>
+  </data>
 </root>

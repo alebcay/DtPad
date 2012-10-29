@@ -334,6 +334,12 @@
     <Compile Include="TabEncoding.Designer.cs">
       <DependentUpon>TabEncoding.cs</DependentUpon>
     </Compile>
+    <Compile Include="TabsSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabsSwitch.Designer.cs">
+      <DependentUpon>TabsSwitch.cs</DependentUpon>
+    </Compile>
     <Compile Include="TagEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -599,6 +605,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TabEncoding.resx">
       <DependentUpon>TabEncoding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabsSwitch.resx">
+      <DependentUpon>TabsSwitch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TagEntry.resx">
       <DependentUpon>TagEntry.cs</DependentUpon>
