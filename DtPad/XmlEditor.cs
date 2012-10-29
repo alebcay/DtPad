@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Net;
 using System.Windows.Forms;
 using System.Xml;
 using DtPad.Customs;
@@ -23,6 +22,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
+            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
             SetLanguage();
 
             Form1 form = (Form1)Owner;
@@ -62,13 +62,11 @@ namespace DtPad
             render.Close();
 
             GridBuilder builder = new GridBuilder();
-            GridCellGroup xmlgroup = new GridCellGroup();
-            xmlgroup.Flags = GroupFlags.Overlapped | GroupFlags.Expanded;
+            GridCellGroup xmlgroup = new GridCellGroup{ Flags = GroupFlags.Overlapped | GroupFlags.Expanded };
             builder.ParseNodes(xmlgroup, null, xmldoc.ChildNodes);
             root = new GridCellGroup();
             root.Table.SetBounds(1, 2);
-            root.Table[0, 0] = new GridHeadLabel();
-            root.Table[0, 0].Text = "Xml";
+            root.Table[0, 0] = new GridHeadLabel { Text = "XML" };
             root.Table[0, 1] = xmlgroup;
             xmlGridView.Cell = root;
 
@@ -99,6 +97,15 @@ namespace DtPad
         }
 
         #endregion Button Methods
+
+        #region Context Menu Methods
+
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            xmlGridView.FocusedCell.CopyToClipboard();
+        }
+
+        #endregion Context Menu Methods
 
         #region Private Methods
 

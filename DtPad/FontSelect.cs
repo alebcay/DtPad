@@ -24,7 +24,7 @@ namespace DtPad
 
             if (Owner.GetType() == typeof(Form1))
             {
-                Form1 form = (Form1) Owner;
+                Form1 form = (Form1)Owner;
                 Font font = form.TextFont;
                 Color color = form.TextFontColor;
 
@@ -115,8 +115,8 @@ namespace DtPad
             {
                 Form1 form = (Form1)Owner;
 
-                form.TextFont = FontManager.GetFontFromSelection(this);
-                form.TextFontColor = (Color) colorEdit.EditValue;
+                form.SetMainFont(FontManager.GetFontFromSelection(this)); //form.TextFont = FontManager.GetFontFromSelection(this);
+                form.TextFontColor = (Color)colorEdit.EditValue;
             }
             else if (Owner.GetType() == typeof(Options))
             {
@@ -167,7 +167,7 @@ namespace DtPad
             //for (int i = 0; i < listBox.Items.Count; i++)
             //{
             //    decimal item = Convert.ToDecimal(listBox.Items[i]);
-                
+
             //    if (item == valueToSearch)
             //    {
             //        return true;

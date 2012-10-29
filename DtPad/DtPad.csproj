@@ -160,6 +160,7 @@
     <Compile Include="Customs\CustomToolStripMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Customs\MainFontChangeArgs.cs" />
     <Compile Include="Customs\StringForm.cs">
       <SubType>Form</SubType>
     </Compile>

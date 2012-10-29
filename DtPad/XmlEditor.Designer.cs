@@ -33,20 +33,24 @@ namespace DtPad
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XmlEditor));
             this.xmlGridView = new WmHelp.XmlGrid.XmlGridView();
+            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeButton = new System.Windows.Forms.Button();
             this.collapseButton = new System.Windows.Forms.Button();
             this.expandButton = new System.Windows.Forms.Button();
             this.xmlEditorToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.contentContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // xmlGridView
             // 
-            this.xmlGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.xmlGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.xmlGridView.AutoHeightCells = true;
             this.xmlGridView.BackColor = System.Drawing.SystemColors.Window;
             this.xmlGridView.Cell = null;
+            this.xmlGridView.ContextMenuStrip = this.contentContextMenuStrip;
             this.xmlGridView.DefaultColumnWidth = 150;
             this.xmlGridView.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xmlGridView.Footer = null;
@@ -55,6 +59,21 @@ namespace DtPad
             this.xmlGridView.ShowColumnHeader = false;
             this.xmlGridView.Size = new System.Drawing.Size(498, 220);
             this.xmlGridView.TabIndex = 0;
+            // 
+            // contentContextMenuStrip
+            // 
+            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.copyToolStripMenuItem});
+            this.contentContextMenuStrip.Name = "contextMenuStrip";
+            this.contentContextMenuStrip.Size = new System.Drawing.Size(103, 26);
+            // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // closeButton
             // 
@@ -105,6 +124,7 @@ namespace DtPad
             this.Name = "XmlEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "XML Tree View";
+            this.contentContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -116,5 +136,7 @@ namespace DtPad
         private System.Windows.Forms.Button collapseButton;
         private System.Windows.Forms.Button expandButton;
         private System.Windows.Forms.ToolTip xmlEditorToolTip;
+        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
     }
 }

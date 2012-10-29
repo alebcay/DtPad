@@ -17,7 +17,7 @@ namespace DtPad.Customs
         #region Public Instance Fields
 
         [Category("Behavior"), Browsable(true), DisplayName("TextFont")]
-        public Font TextFont { get; set; }
+        public Font TextFont { get; private set; }
 
         [Category("Behavior"), Browsable(true), DisplayName("TextFontColor")]
         public Color TextFontColor { get; set; }
@@ -53,6 +53,21 @@ namespace DtPad.Customs
 
         #endregion Internal Instance Fields
 
+        #region Internal Event Methods
+
+        internal delegate void MainFontChanged(object sender, MainFontChangeArgs e);
+        internal event MainFontChanged MainFontChange;
+
+        internal void SetMainFont(Font newFont)
+        {
+            TextFont = newFont;
+
+            MainFontChangeArgs fontChange = new MainFontChangeArgs(newFont);
+            MainFontChange(this, fontChange);
+        }
+
+        #endregion Internal Event Methods
+
         #region Protected Methods
 
         protected override void OnShown(EventArgs e)
@@ -73,7 +88,7 @@ namespace DtPad.Customs
             KeepInitialSpacesOnReturn = ConfigUtil.GetBoolParameter("KeepInitialSpacesOnReturn");
             KeepBulletListOnReturn = ConfigUtil.GetBoolParameter("KeepBulletListOnReturn");
             //PreviousWindowState = (WindowState == FormWindowState.Minimized ? FormWindowState.Normal : WindowState);
-            
+
             TextFont = ConfigUtil.GetFontParameter("FontInUse");
             String[] argbFontColor = ConfigUtil.GetStringParameter("FontInUseColorARGB").Split(new[] { ';' });
             TextFontColor = Color.FromArgb(Convert.ToInt32(argbFontColor[0]), Convert.ToInt32(argbFontColor[1]), Convert.ToInt32(argbFontColor[2]), Convert.ToInt32(argbFontColor[3]));

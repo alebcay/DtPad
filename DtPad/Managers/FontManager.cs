@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DtPad.UserControls;
 using DtPad.Utils;
 
 namespace DtPad.Managers
@@ -42,7 +43,7 @@ namespace DtPad.Managers
             CheckBox italicCheckBox = form.italicCheckBox;
             CheckBox underlinedCheckBox = form.underlinedCheckBox;
             RichTextBox previewTextBox = form.previewTextBox;
-            
+
             if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("ResetQuestion", className)) == DialogResult.No)
             {
                 return;
@@ -60,7 +61,7 @@ namespace DtPad.Managers
         }
 
         internal static String SetARGBString(Color color)
-        {   
+        {
             return "255;" + color.R + ";" + color.G + ";" + color.B;
         }
 
@@ -82,6 +83,18 @@ namespace DtPad.Managers
             }
 
             return new Font(name, size, style);
+        }
+
+        internal static void ApplyNewFont(Form1 form, Font newFont)
+        {
+            NotePanel notePanel = form.notePanel;
+            CalculatorPanel calculatorPanel = form.calculatorPanel;
+
+            notePanel.nodeTextTextBox.Font = newFont;
+            notePanel.noteTitleTextBox.Font = newFont;
+
+            calculatorPanel.calcTextBox.Font = newFont;
+            calculatorPanel.calculationTextBox.Font = newFont;
         }
 
         #endregion Internal Methods

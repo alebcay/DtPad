@@ -194,6 +194,10 @@ namespace DtPad
             }
             
             lastCheckLabel.Text += " " + ConfigUtil.GetDateParameter("LastVersionCheck").ToString(LanguageUtil.GetShortDateTimeFormat());
+
+            noteModeTabsCheckBox.Checked = ConfigUtil.GetBoolParameter("NoteModeTabs");
+            noteModeSizeXNumericUpDown.Value = ConfigUtil.GetIntParameter("NoteModeSizeX");
+            noteModeSizeYNumericUpDown.Value = ConfigUtil.GetIntParameter("NoteModeSizeY");
         }
 
         internal void SetLanguage()
@@ -245,6 +249,10 @@ namespace DtPad
             else if (optionsTreeView.SelectedNode == optionsTreeView.Nodes["tabNode"])
             {
                 SetPanelVisible(tabPanel);
+            }
+            else if (optionsTreeView.SelectedNode == optionsTreeView.Nodes["noteModeNode"])
+            {
+                SetPanelVisible(noteModePanel);
             }
             else if (optionsTreeView.SelectedNode == optionsTreeView.Nodes["viewNode"])
             {
@@ -458,6 +466,7 @@ namespace DtPad
             formatPanel.Visible = false;
             languagePanel.Visible = false;
             tabPanel.Visible = false;
+            noteModePanel.Visible = false;
             viewPanel.Visible = false;
             lookAndFeelPanel.Visible = false;
             internetPanel.Visible = false;
@@ -523,7 +532,7 @@ namespace DtPad
                                           "BackupLocation", "BackupLocationCustom", "BackupIncremental", "SpacesInsteadTabs", "KeepInitialSpacesOnReturn",
                                           "KeepBulletListOnReturn", "ShowSplashScreen", "AutomaticSessionSave", "Translation", "TranslationUseSelect", "CheckLineNumber",
                                           "CheckLineNumberMax", "AutoFormatFiles", "AutoOpenHostsConfigurator", "ColorHostsConfigurator", "PeriodicVersionCheck",
-                                          "ActiveJumpList", "EnableDropboxDelete", "RememberDropboxAccess", "IgnoreNullChar" };
+                                          "ActiveJumpList", "EnableDropboxDelete", "RememberDropboxAccess", "IgnoreNullChar", "NoteModeTabs", "NoteModeSizeX", "NoteModeSizeY" };
             
             String[] parameterValues = { settingFolder.ToString(), specificFolderTextBox.Text, folderOpenedFileCheckBox.Checked.ToString(),
                                            recentFilesNumberNumericUpDown.Value.ToString(), searchHistoryNumericUpDown.Value.ToString(),
@@ -548,7 +557,7 @@ namespace DtPad
                                            hideLinesNumericUpDown.Value.ToString(), GetAutoFormatFilesString(), hostsConfiguratorCheckBox.Checked.ToString(),
                                            ColorUtil.GetColorFromTabInt(hostsConfiguratorTabColorComboBox.SelectedIndex).Name, periodicVersionCheck.ToString(),
                                            jumpListCheckBox.Checked.ToString(), dropboxDeleteCheckBox.Checked.ToString(), dropboxRememberCheckBox.Checked.ToString(),
-                                           nullCharCheckBox.Checked.ToString() };
+                                           nullCharCheckBox.Checked.ToString(), noteModeTabsCheckBox.Checked.ToString(), noteModeSizeXNumericUpDown.Value.ToString(), noteModeSizeYNumericUpDown.Value.ToString() };
 
             String[] passwordNames = { "ProxyUsername", "ProxyPassword", "ProxyDomain" };
             String[] passwordValues = { usernameTextBox.Text, CodingUtil.EncodeString(passwordTextBox.Text), domainTextBox.Text };

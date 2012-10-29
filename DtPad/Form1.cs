@@ -244,6 +244,11 @@ namespace DtPad
             InternetManager.ClearInternetCache(this);
         }
 
+        private void Form1_MainFontChange(object sender, MainFontChangeArgs e)
+        {
+            FontManager.ApplyNewFont(this, e.MainFont());
+        }
+
         private void toolsToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
         {
             if (!ToolsFirstLoadExecuted)
@@ -290,6 +295,11 @@ namespace DtPad
             else if (e.Page == tabExplorerTabPage)
             {
                 ExplorerManager.InitializeTabExplorer(this);
+            }
+            else if (e.Page == calculatorTabPage)
+            {
+                calculatorPanel.calculationTextBox.Select();
+                calculatorPanel.calculationTextBox.Focus();
             }
         }
 
@@ -949,7 +959,7 @@ namespace DtPad
                 WindowManager.ShowInfoBox(this, LanguageUtil.GetCurrentLanguageString("SpecifySuffix", Name));
                 return;
             }
-            
+
             TextManager.InsertFinalString(this, suffixToolStripTextBox.Text);
         }
 
@@ -1793,7 +1803,7 @@ namespace DtPad
         {
             ProgramUtil.OpenNewTabAndPaste(this);
         }
-        
+
         private void openToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ProgramUtil.OpenFile(this);
@@ -2044,8 +2054,8 @@ namespace DtPad
 
             if (VersionCheckManager.IsDtPadUpdated(out exception))
             {
-				ConfigUtil.UpdateParameter("TryLastVersionCheck", "0");
-            	ConfigUtil.UpdateParameter("LastVersionCheck", String.Format("{0}-{1}-{2}", DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day));
+                ConfigUtil.UpdateParameter("TryLastVersionCheck", "0");
+                ConfigUtil.UpdateParameter("LastVersionCheck", String.Format("{0}-{1}-{2}", DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day));
                 return;
             }
 
@@ -2083,9 +2093,9 @@ namespace DtPad
 
         private void SetFamilyEdition()
         {
-            #if ReleaseFE
+#if ReleaseFE
                 diarioDiUnTraduttoreToolStripMenuItem.Visible = false;
-            #endif
+#endif
         }
 
         #endregion Private Methods

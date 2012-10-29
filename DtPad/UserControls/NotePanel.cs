@@ -20,6 +20,8 @@ namespace DtPad.UserControls
 
             noteIdentity = 0;
             warningRemoveNoteToolStripButton.Checked = ConfigUtil.GetBoolParameter("WarningRemoveNote");
+            noteTitleTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");
+            nodeTextTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");
 
             int heightNoteList = ConfigUtil.GetIntParameter("HeightNoteList");
             if (noteSplitContainer.Height < heightNoteList)
@@ -119,7 +121,7 @@ namespace DtPad.UserControls
         private void xMLFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 form = (Form1)ParentForm;
-            
+
             NoteManager.ExportNotes(form, NoteManager.ExportTypeEnum.Xml);
         }
 

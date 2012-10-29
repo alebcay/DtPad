@@ -9,7 +9,7 @@ using DtControls;
 using DtPad.Customs;
 using DtPad.Objects;
 using DtPad.Utils;
-using ComboBox=System.Windows.Forms.ComboBox;
+using ComboBox = System.Windows.Forms.ComboBox;
 
 namespace DtPad.Managers
 {
@@ -20,7 +20,7 @@ namespace DtPad.Managers
     internal static class OptionManager
     {
         private const String className = "OptionManager";
-        
+
         #region Internal Methods
 
         internal static void CheckProxyStatus(Options form)
@@ -155,7 +155,7 @@ namespace DtPad.Managers
                     pageTextBox.DetectUrls = urlsCheckBox.Checked;
                 }
 
-                form1.TextFont = font;
+                form1.SetMainFont(font); //form1.TextFont = font;
                 form1.TextFontColor = fontColor;
                 form1.TextBackgroundColor = backgroundColor;
             }
@@ -182,7 +182,7 @@ namespace DtPad.Managers
         internal static void SetListExtensions(Options form)
         {
             ListBox extensionListBox = form.extensionListBox;
-            
+
             ExtensionObjectList extensionObjectList = ExtensionManager.GetExtensionObjectListFromExFile();
             extensionListBox.Items.Clear();
             foreach (ExtensionObject extensionObject in extensionObjectList)

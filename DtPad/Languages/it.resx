@@ -853,7 +853,7 @@ Cordiali saluti,</value>
     <value>File</value>
   </data>
   <data name="Options_formatNode" xml:space="preserve">
-    <value>Formato</value>
+    <value>Testo</value>
   </data>
   <data name="Options_internetNode" xml:space="preserve">
     <value>Internet</value>
@@ -4398,5 +4398,26 @@ Seleziona nuovamente i tab per procedere.</value>
   </data>
   <data name="Form1_undoToolStripMenuItemShortcutKeyDisplayString" xml:space="preserve">
     <value>CTRL+Z</value>
+  </data>
+  <data name="Options_noteModeGroupBox1" xml:space="preserve">
+    <value>Aspetto</value>
+  </data>
+  <data name="Options_noteModeInfoLabel" xml:space="preserve">
+    <value>Nota: per abilitare la modalità nota, clicca col tasto destro del mouse sopra un tab dell'area principale di editing e seleziona "Mostra come nota in primo piano".</value>
+  </data>
+  <data name="Options_noteModeNode" xml:space="preserve">
+    <value>Modalità nota</value>
+  </data>
+  <data name="Options_noteModeSizeLabel" xml:space="preserve">
+    <value>Dimensione finestra (x, y):</value>
+  </data>
+  <data name="Options_noteModeSizeXLabel" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="Options_noteModeTabsCheckBox" xml:space="preserve">
+    <value>Abilita visuale tab</value>
+  </data>
+  <data name="XmlEditor_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
   </data>
 </root>

@@ -9,6 +9,7 @@ using DtPad.Customs;
 using DtPad.Exceptions;
 using DtPad.Managers;
 using DtPad.Utils.Language;
+using WmHelp.XmlGrid;
 using ComboBox = System.Windows.Forms.ComboBox;
 
 namespace DtPad.Utils
@@ -261,9 +262,9 @@ namespace DtPad.Utils
                 {
                     Type controlType = control.GetType();
 
-                    if (controlType == typeof(TextBox) || controlType == typeof(Label) || controlType == typeof(LinkLabel) || controlType == typeof(Button)
-                        || controlType == typeof(CheckBox) || controlType == typeof(RadioButton) || controlType == typeof(RichTextBox)
-                        || (controlType == typeof(CustomXtraTabControl) && !isFormReloading) || controlType == typeof(TabControl) || controlType == typeof(XtraTabControl))
+                    if (controlType == typeof(TextBox) || controlType == typeof(Label) || controlType == typeof(LinkLabel) || controlType == typeof(Button) || controlType == typeof(CheckBox)
+                        || controlType == typeof(RadioButton) || controlType == typeof(RichTextBox) || (controlType == typeof(CustomXtraTabControl) && !isFormReloading) || controlType == typeof(TabControl)
+                        || controlType == typeof(XtraTabControl) || controlType == typeof(XmlGridView))
                     {
                         GeneralControl.ManageControl(control, formName, isFormReloading);
                     }

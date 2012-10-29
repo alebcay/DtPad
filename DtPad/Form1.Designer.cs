@@ -8,7 +8,7 @@ namespace DtPad
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -3971,7 +3971,7 @@ namespace DtPad
             // verticalSplitContainer.Panel2
             // 
             this.verticalSplitContainer.Panel2.Controls.Add(this.verticalTabControl);
-			this.verticalSplitContainer.Panel2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.verticalSplitContainer.Panel2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
             this.verticalSplitContainer.Size = new System.Drawing.Size(898, 445);
             this.verticalSplitContainer.SplitterDistance = 610;
             this.verticalSplitContainer.TabIndex = 2;
@@ -4441,6 +4441,7 @@ namespace DtPad
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DtPad - Untitled";
+            this.MainFontChange += new MainFontChanged(this.Form1_MainFontChange);
             this.HandleCreated += new System.EventHandler(this.Form1_HandleCreated);
             this.Closing += new System.ComponentModel.CancelEventHandler(this.Form1_Closing);
             this.pageContextMenuStrip.ResumeLayout(false);

@@ -853,7 +853,7 @@ Best regards,</value>
     <value>File</value>
   </data>
   <data name="Options_formatNode" xml:space="preserve">
-    <value>Format</value>
+    <value>Text</value>
   </data>
   <data name="Options_internetNode" xml:space="preserve">
     <value>Internet</value>
@@ -4389,5 +4389,26 @@ Reselect interested tabs to proceed.</value>
   </data>
   <data name="Form1_undoToolStripMenuItemShortcutKeyDisplayString" xml:space="preserve">
     <value>CTRL+Z</value>
+  </data>
+  <data name="Options_noteModeGroupBox1" xml:space="preserve">
+    <value>Appearance</value>
+  </data>
+  <data name="Options_noteModeInfoLabel" xml:space="preserve">
+    <value>Note: to enable the note mode, click with mouse right botton over a tab of the main text editing area, and select "Show As Note On Top".</value>
+  </data>
+  <data name="Options_noteModeNode" xml:space="preserve">
+    <value>Note Mode</value>
+  </data>
+  <data name="Options_noteModeSizeLabel" xml:space="preserve">
+    <value>Window size (x, y):</value>
+  </data>
+  <data name="Options_noteModeSizeXLabel" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="Options_noteModeTabsCheckBox" xml:space="preserve">
+    <value>Enable tabs view</value>
+  </data>
+  <data name="XmlEditor_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copy</value>
   </data>
 </root>

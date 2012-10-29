@@ -7564,7 +7564,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Format.
+        ///   Looks up a localized string similar to Text.
         /// </summary>
         internal static string Options_formatNode {
             get {
@@ -7876,6 +7876,60 @@ namespace DtPad.Languages {
         internal static string Options_noteLanguageLabel {
             get {
                 return ResourceManager.GetString("Options_noteLanguageLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appearance.
+        /// </summary>
+        internal static string Options_noteModeGroupBox1 {
+            get {
+                return ResourceManager.GetString("Options_noteModeGroupBox1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note: to enable the note mode, click with mouse right botton over a tab of the main text editing area, and select &quot;Show As Note On Top&quot;..
+        /// </summary>
+        internal static string Options_noteModeInfoLabel {
+            get {
+                return ResourceManager.GetString("Options_noteModeInfoLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note Mode.
+        /// </summary>
+        internal static string Options_noteModeNode {
+            get {
+                return ResourceManager.GetString("Options_noteModeNode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Window size (x, y):.
+        /// </summary>
+        internal static string Options_noteModeSizeLabel {
+            get {
+                return ResourceManager.GetString("Options_noteModeSizeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to x.
+        /// </summary>
+        internal static string Options_noteModeSizeXLabel {
+            get {
+                return ResourceManager.GetString("Options_noteModeSizeXLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable tabs view.
+        /// </summary>
+        internal static string Options_noteModeTabsCheckBox {
+            get {
+                return ResourceManager.GetString("Options_noteModeTabsCheckBox", resourceCulture);
             }
         }
         
@@ -12192,6 +12246,15 @@ namespace DtPad.Languages {
         internal static string XmlEditor_collapseButtonToolTip {
             get {
                 return ResourceManager.GetString("XmlEditor_collapseButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy.
+        /// </summary>
+        internal static string XmlEditor_copyToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("XmlEditor_copyToolStripMenuItem", resourceCulture);
             }
         }
         

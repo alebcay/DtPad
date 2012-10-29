@@ -18,6 +18,9 @@ namespace DtPad.UserControls
         {
             InitializeComponent();
             calculationManager = new CalculationManager(this, CultureInfo.CurrentCulture);
+
+            calculationTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");
+            calcTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");
         }
 
         #region Window Methods
