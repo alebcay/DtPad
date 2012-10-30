@@ -14,7 +14,7 @@ namespace DtPadUpdater.Managers
     internal static class UpdateManager
     {
         private const String className = "UpdateManager";
-        
+
         #region Internal Methods
 
         //internal static void ReadChangelog(Form1 form, String executablePath, String culture)
@@ -25,9 +25,11 @@ namespace DtPadUpdater.Managers
         //    whatIsInsideTextBox.Text = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-changelog.log");
         //}
 
-        internal static bool UpdateProcess(Form1 form, String executablePath, TextBox updateTextBox, ProgressBar updateProgressBar, String culture)
+        internal static bool UpdateProcess(Form1 form, String executablePath, TextBox updateTextBox, ProgressBar updateProgressBar, String culture, out String fromVersion, out String toVersion)
         {
             bool updateFounded = false;
+            fromVersion = String.Empty;
+            toVersion = String.Empty;
             String updateBackupPath = Path.Combine(executablePath, "UpdateBackup");
 
             try
@@ -42,7 +44,7 @@ namespace DtPadUpdater.Managers
                 }
                 updateTextBox.Text = LanguageUtil.GetCurrentLanguageString("Backup", className, culture);
                 form.Refresh();
-                
+
                 Directory.CreateDirectory(updateBackupPath);
                 foreach (String fileAndPathName in Directory.GetFiles(executablePath))
                 {
@@ -67,21 +69,22 @@ namespace DtPadUpdater.Managers
                 String[] separator0 = { Environment.NewLine };
                 String[] split0 = fileContent.Split(separator0, StringSplitOptions.RemoveEmptyEntries);
 
-                String dtPadVersion = AssemblyUtil.GetAssemblyVersion(updateBackupPath, "DtPad.exe");
+                fromVersion = AssemblyUtil.GetAssemblyVersion(updateBackupPath, "DtPad.exe");
+                toVersion = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-lastversion.log");
                 foreach (String t in split0)
                 {
                     if (t.StartsWith(ConstantUtil.commentStart))
                     {
                         continue; //Log comment row, the search continues from next log row
                     }
-                    
+
                     String[] separator1 = { "§" };
                     String[] split1 = t.Split(separator1, StringSplitOptions.RemoveEmptyEntries);
 
                     String[] separator2 = { "-" };
                     String[] split2 = split1[0].Split(separator2, StringSplitOptions.RemoveEmptyEntries);
 
-                    if (split2[0] != dtPadVersion)
+                    if (split2[0] != fromVersion)
                     {
                         continue; //Log update row different from desiderd, the search continues from next log row
                     }
@@ -93,7 +96,7 @@ namespace DtPadUpdater.Managers
 
                     String[] separator3 = { "|" };
                     String[] split3 = split1[1].Split(separator3, StringSplitOptions.RemoveEmptyEntries);
-                    
+
                     updateProgressBar.PerformStep(); //2
 
                     int remainingPBSteps = updateProgressBar.Maximum - updateProgressBar.Value;
@@ -165,13 +168,14 @@ namespace DtPadUpdater.Managers
             String actualVersion = AssemblyUtil.AssemblyVersion; //ConfigUtil.GetStringParameter("UpdaterVersion", String.Empty, executablePath);
             WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
 
-            String repository = ConstantUtil.generalRepository;
-            #if Debug
-                repository = ConstantUtil.generalRepositoryDebug;
-            #endif
-            #if ReleaseFE
-                repository = ConstantUtil.generalRepositoryFE;
-            #endif
+            String repository = ProxyUtil.GetRepository();
+            //String repository = ConstantUtil.generalRepository;
+            //#if Debug
+            //    repository = ConstantUtil.generalRepositoryDebug;
+            //#endif
+            //#if ReleaseFE
+            //    repository = ConstantUtil.generalRepositoryFE;
+            //#endif
 
             try
             {
@@ -197,22 +201,42 @@ namespace DtPadUpdater.Managers
             return true;
         }
 
+        internal static void CommitUpdate(bool ok, String fromVersion, String toVersion, String executablePath, String culture)
+        {
+            try
+            {
+                WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
+
+                if (ok)
+                {
+                    webClient.DownloadString(String.Format("{0}action/update_ok.php?from={1}&to={2}&version=production", ConstantUtil.updateRepository, fromVersion, toVersion));
+                }
+                else
+                {
+                    webClient.DownloadString(String.Format("{0}action/update_ko.php?from={1}&to={2}&version=production", ConstantUtil.updateRepository, fromVersion, toVersion));
+                }
+            }
+            catch (Exception)
+            {
+            }
+        }
+
         #endregion Internal Methods
 
         #region Private Methods
 
         private static bool IsFileInUse(String fileName)
         {
-	        try
-	        {
-	            FileStream fileStream = File.Open(fileName, FileMode.Open, FileAccess.Read);
-	            fileStream.Close();
+            try
+            {
+                FileStream fileStream = File.Open(fileName, FileMode.Open, FileAccess.Read);
+                fileStream.Close();
                 return false;
-	        }
-	        catch (Exception)
-	        {
-		        return true;
-	        }
+            }
+            catch (Exception)
+            {
+                return true;
+            }
         }
 
         private static void SwitchActions(Form1 form, String action, String value, String executablePath, Control updateTextBox, WebClient webClient, String culture)
@@ -223,12 +247,12 @@ namespace DtPadUpdater.Managers
             String filename;
 
             String repository = ConstantUtil.generalRepository;
-            #if Debug
-                repository = ConstantUtil.generalRepositoryDebug;
-            #endif
-            #if ReleaseFE
+#if Debug
+            repository = ConstantUtil.generalRepositoryDebug;
+#endif
+#if ReleaseFE
                 repository = ConstantUtil.generalRepositoryFE;
-            #endif
+#endif
 
             switch (action)
             {
@@ -318,7 +342,7 @@ namespace DtPadUpdater.Managers
         private static void EndReadOnlyCheck(String filePathAndName, bool wasReadOnly)
         {
             FileInfo fileInfo = new FileInfo(filePathAndName);
-            
+
             if (wasReadOnly)
             {
                 fileInfo.IsReadOnly = true;

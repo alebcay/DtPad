@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using DevExpress.XtraTab;
 using DtPad.Managers;
@@ -39,95 +40,60 @@ namespace DtPad
             }
 
             ReadOwnerFormTabs();
-            //for (int i = 0; i < 8; i++)
-            //{
-            //    TextBox nextTabTextBox = (TextBox)(Controls["tableLayoutPanel"].Controls[String.Format("tabTextBox{0}", (i + 1))]);
+        }
 
-            //    if (i < form.pagesTabControl.TabPages.Count)
-            //    {
-            //        XtraTabPage tabPage = form.pagesTabControl.TabPages[i];
-            //        nextTabTextBox.Text = ProgramUtil.GetPageTextBox(tabPage).Text;
-            //        nextTabTextBox.Tag = i;
-            //    }
-            //    else
-            //    {
-            //        nextTabTextBox.Visible = false;
-            //    }
-            //}
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (backButton.Enabled && keyData == (Keys.Left))
+            {
+                Back();
+                return true;
+            }
+            if (nextButton.Enabled && keyData == (Keys.Right))
+            {
+                Next();
+                return true;
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
         #endregion Window Methods
 
         #region Tabs Methods
 
-        private void tabTextBox1_Click(object sender, EventArgs e)
+        private void tabTextBox_Click(object sender, EventArgs e)
         {
-            SelectTab(tabTextBox1);
+            SelectTab((TextBox)sender);
         }
 
-        private void tabTextBox2_Click(object sender, EventArgs e)
+        private void tabTextBox_MouseEnter(object sender, EventArgs e)
         {
-            SelectTab(tabTextBox2);
+            ((TextBox)sender).BackColor = Color.LightSkyBlue;
         }
 
-        private void tabTextBox3_Click(object sender, EventArgs e)
+        private void tabTextBox_MouseLeave(object sender, EventArgs e)
         {
-            SelectTab(tabTextBox3);
-        }
-
-        private void tabTextBox4_Click(object sender, EventArgs e)
-        {
-            SelectTab(tabTextBox4);
-        }
-
-        private void tabTextBox5_Click(object sender, EventArgs e)
-        {
-            SelectTab(tabTextBox5);
-        }
-
-        private void tabTextBox6_Click(object sender, EventArgs e)
-        {
-            SelectTab(tabTextBox6);
-        }
-
-        private void tabTextBox7_Click(object sender, EventArgs e)
-        {
-            SelectTab(tabTextBox7);
-        }
-
-        private void tabTextBox8_Click(object sender, EventArgs e)
-        {
-            SelectTab(tabTextBox8);
+            ((TextBox)sender).BackColor = Color.White;
         }
 
         #endregion Tabs Methods
 
         #region Button Methods
 
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            WindowManager.CloseForm(this);
+        }
+
         private void backButton_Click(object sender, EventArgs e)
         {
-            currentPage--;
-            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
-            nextButton.Enabled = true;
-            if (currentPage <= 1)
-            {
-                backButton.Enabled = false;
-            }
-
-            ReadOwnerFormTabs();
+            Back();
         }
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            currentPage++;
-            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
-            backButton.Enabled = true;
-            if (currentPage >= totalPages)
-            {
-                nextButton.Enabled = false;
-            }
-
-            ReadOwnerFormTabs();
+            Next();
         }
 
         #endregion Button Methods
@@ -147,6 +113,7 @@ namespace DtPad
                 {
                     XtraTabPage tabPage = form.pagesTabControl.TabPages[i];
                     nextTabTextBox.Text = ProgramUtil.GetPageTextBox(tabPage).Text;
+                    nextTabTextBox.Select(0, 0);
                     tabsSwitchToolTip.SetToolTip(nextTabTextBox, tabPage.Text);
                     nextTabTextBox.Tag = i;
                     nextTabTextBox.Visible = true;
@@ -156,15 +123,44 @@ namespace DtPad
                     nextTabTextBox.Visible = false;
                 }
             }
+
+            Select();
         }
 
-        private void SelectTab(TextBox tabTextBox)
+        private void SelectTab(Control tabTextBox)
         {
             Form1 form = (Form1)Owner;
             XtraTabControl pagesTabControl = form.pagesTabControl;
 
             pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[Convert.ToInt32(tabTextBox.Tag)];
+            
             WindowManager.CloseForm(this);
+        }
+
+        private void Back()
+        {
+            currentPage--;
+            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
+            nextButton.Enabled = true;
+            if (currentPage <= 1)
+            {
+                backButton.Enabled = false;
+            }
+
+            ReadOwnerFormTabs();
+        }
+
+        private void Next()
+        {
+            currentPage++;
+            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
+            backButton.Enabled = true;
+            if (currentPage >= totalPages)
+            {
+                nextButton.Enabled = false;
+            }
+
+            ReadOwnerFormTabs();
         }
 
         private void SetLanguage()

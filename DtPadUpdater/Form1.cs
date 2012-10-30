@@ -18,7 +18,7 @@ namespace DtPadUpdater
     {
         private readonly String executablePath = String.Empty;
         private String internalCulture;
-        
+
         internal Form1(String path)
         {
             InitializeComponent();
@@ -74,13 +74,20 @@ namespace DtPadUpdater
                     }
                     else
                     {
-                        if (UpdateManager.UpdateProcess(this, executablePath, updateTextBox, updateProgressBar, internalCulture))
+                        String fromVersion;
+                        String toVersion;
+
+                        if (UpdateManager.UpdateProcess(this, executablePath, updateTextBox, updateProgressBar, internalCulture, out fromVersion, out toVersion))
                         {
+                            UpdateManager.CommitUpdate(true, fromVersion, toVersion, executablePath, internalCulture);
+
                             startButton.Text = LanguageUtil.GetCurrentLanguageString("Start", Name, internalCulture);
                             startButton.Enabled = true;
                         }
                         else
                         {
+                            UpdateManager.CommitUpdate(false, fromVersion, toVersion, executablePath, internalCulture);
+
                             startButton.Visible = false;
                         }
                     }

@@ -17,6 +17,7 @@ namespace DtPadUpdater.Utils
         internal const String generalRepositoryDebug = @"..\DebugRepository\";
         internal const String generalRepository = "http://dtpad.diariotraduttore.com/files/";
         internal const String generalRepositoryFE = "http://dtpad.diariotraduttore.com/files/fe/";
+        internal const String updateRepository = "http://dtpad.diariotraduttore.com/updates/";
         internal const String dtPadAppConfigName = "DtPad.exe.Config";
         internal const String tempDtPadAppConfigName = @"UpdateTemp\DtPad.exe.Config";
         internal const String dtPadURL = "http://dtpad.codeplex.com/";
