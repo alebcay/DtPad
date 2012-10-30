@@ -10870,7 +10870,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cambio tab.
+        ///   Looks up a localized string similar to Visuale tab.
         /// </summary>
         internal static string TabsSwitch_Title {
             get {

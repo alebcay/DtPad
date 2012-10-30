@@ -167,15 +167,7 @@ namespace DtPadUpdater.Managers
             String finalVersion;
             String actualVersion = AssemblyUtil.AssemblyVersion; //ConfigUtil.GetStringParameter("UpdaterVersion", String.Empty, executablePath);
             WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
-
             String repository = ProxyUtil.GetRepository();
-            //String repository = ConstantUtil.generalRepository;
-            //#if Debug
-            //    repository = ConstantUtil.generalRepositoryDebug;
-            //#endif
-            //#if ReleaseFE
-            //    repository = ConstantUtil.generalRepositoryFE;
-            //#endif
 
             try
             {
@@ -201,19 +193,14 @@ namespace DtPadUpdater.Managers
             return true;
         }
 
-        internal static void CommitUpdate(bool ok, String fromVersion, String toVersion, String executablePath, String culture)
+        internal static void CommitUpdate(String outcome, String fromVersion, String toVersion, String executablePath, String culture)
         {
             try
             {
-                WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
-
-                if (ok)
+                using (WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture))
                 {
-                    webClient.DownloadString(String.Format("{0}action/update_ok.php?from={1}&to={2}&version=production", ConstantUtil.updateRepository, fromVersion, toVersion));
-                }
-                else
-                {
-                    webClient.DownloadString(String.Format("{0}action/update_ko.php?from={1}&to={2}&version=production", ConstantUtil.updateRepository, fromVersion, toVersion));
+                    webClient.Headers.Add("user-agent", "DtPad Updater");
+                    webClient.DownloadString(String.Format("{0}updates.php?from={1}&to={2}&env=prod&out={3}", ConstantUtil.actionsRepository, fromVersion, toVersion, outcome));
                 }
             }
             catch (Exception)
@@ -245,14 +232,7 @@ namespace DtPadUpdater.Managers
             String[] valueSplit;
             bool wasReadOnly;
             String filename;
-
-            String repository = ConstantUtil.generalRepository;
-#if Debug
-            repository = ConstantUtil.generalRepositoryDebug;
-#endif
-#if ReleaseFE
-                repository = ConstantUtil.generalRepositoryFE;
-#endif
+            String repository = ProxyUtil.GetRepository();
 
             switch (action)
             {

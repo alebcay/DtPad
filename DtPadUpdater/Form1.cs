@@ -33,7 +33,7 @@ namespace DtPadUpdater
 
         private void updateTextBox_TextChanged(object sender, EventArgs e)
         {
-            updateTextBox.Select(updateTextBox.Text.Length - 1, 0);
+            updateTextBox.Select(updateTextBox.Text.Length, 0);
             updateTextBox.ScrollToCaret();
         }
 
@@ -79,14 +79,14 @@ namespace DtPadUpdater
 
                         if (UpdateManager.UpdateProcess(this, executablePath, updateTextBox, updateProgressBar, internalCulture, out fromVersion, out toVersion))
                         {
-                            UpdateManager.CommitUpdate(true, fromVersion, toVersion, executablePath, internalCulture);
+                            UpdateManager.CommitUpdate("ok", fromVersion, toVersion, executablePath, internalCulture);
 
                             startButton.Text = LanguageUtil.GetCurrentLanguageString("Start", Name, internalCulture);
                             startButton.Enabled = true;
                         }
                         else
                         {
-                            UpdateManager.CommitUpdate(false, fromVersion, toVersion, executablePath, internalCulture);
+                            UpdateManager.CommitUpdate("ko", fromVersion, toVersion, executablePath, internalCulture);
 
                             startButton.Visible = false;
                         }

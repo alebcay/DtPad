@@ -108,19 +108,25 @@ namespace DtPad
             for (int i = rangeStart; i < rangeStart + 8; i++)
             {
                 TextBox nextTabTextBox = (TextBox)(Controls["tableLayoutPanel"].Controls[String.Format("tabTextBox{0}", (i - (8 * (currentPage - 1)) + 1))]);
+                Label tabTitleLabel = (Label)(Controls["tableLayoutPanel"].Controls[String.Format("tabTitleLabel{0}", (i - (8 * (currentPage - 1)) + 1))]);
 
                 if (i < form.pagesTabControl.TabPages.Count)
                 {
                     XtraTabPage tabPage = form.pagesTabControl.TabPages[i];
+
+                    tabTitleLabel.Text = tabPage.Text;
                     nextTabTextBox.Text = ProgramUtil.GetPageTextBox(tabPage).Text;
                     nextTabTextBox.Select(0, 0);
                     tabsSwitchToolTip.SetToolTip(nextTabTextBox, tabPage.Text);
                     nextTabTextBox.Tag = i;
+
                     nextTabTextBox.Visible = true;
+                    tabTitleLabel.Visible = true;
                 }
                 else
                 {
                     nextTabTextBox.Visible = false;
+                    tabTitleLabel.Visible = false;
                 }
             }
 

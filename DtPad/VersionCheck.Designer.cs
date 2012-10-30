@@ -67,7 +67,7 @@ namespace DtPad
             // 
             this.updateButton.Enabled = false;
             this.updateButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.updateButton.Location = new System.Drawing.Point(113, 79);
+            this.updateButton.Location = new System.Drawing.Point(110, 79);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(89, 23);
             this.updateButton.TabIndex = 3;
