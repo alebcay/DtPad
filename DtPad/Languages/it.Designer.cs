@@ -1738,11 +1738,38 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aggiungi un nuovo file preferito.
+        ///   Looks up a localized string similar to File di sessione DtPad (*.dps)|*.dps.
+        /// </summary>
+        internal static string FavouriteManager_FileDialog {
+            get {
+                return ResourceManager.GetString("FavouriteManager_FileDialog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aggiungi un file come preferito.
         /// </summary>
         internal static string Favourites_addFavouriteButtonToolTip {
             get {
                 return ResourceManager.GetString("Favourites_addFavouriteButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aggiungi una sessione come preferito.
+        /// </summary>
+        internal static string Favourites_addFavouriteSessionButtonToolTip {
+            get {
+                return ResourceManager.GetString("Favourites_addFavouriteSessionButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aggiungi un URL come preferito.
+        /// </summary>
+        internal static string Favourites_addFavouriteUrlButtonToolTip {
+            get {
+                return ResourceManager.GetString("Favourites_addFavouriteUrlButtonToolTip", resourceCulture);
             }
         }
         
@@ -1756,7 +1783,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rimuovi il file preferito selezionato.
+        ///   Looks up a localized string similar to Rimuovi il preferito selezionato.
         /// </summary>
         internal static string Favourites_deleteFavouriteButtonToolTip {
             get {
@@ -1959,6 +1986,15 @@ namespace DtPad.Languages {
         internal static string FileListManager_AddedFavourite {
             get {
                 return ResourceManager.GetString("FileListManager_AddedFavourite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to L&apos;URL &quot;{0}&quot; è stato aggiunto ai preferiti..
+        /// </summary>
+        internal static string FileListManager_AddedFavouriteUrl {
+            get {
+                return ResourceManager.GetString("FileListManager_AddedFavouriteUrl", resourceCulture);
             }
         }
         
@@ -11917,6 +11953,15 @@ namespace DtPad.Languages {
         internal static string UrlEntry_Title {
             get {
                 return ResourceManager.GetString("UrlEntry_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URL preferito.
+        /// </summary>
+        internal static string UrlEntry_Title_FavouriteMode {
+            get {
+                return ResourceManager.GetString("UrlEntry_Title_FavouriteMode", resourceCulture);
             }
         }
         

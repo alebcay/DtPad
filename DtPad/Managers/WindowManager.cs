@@ -288,11 +288,11 @@ namespace DtPad.Managers
             colorSelect.ShowDialog(form);
         }
 
-        internal static void ShowUrlEntry(Form form)
+        internal static void ShowUrlEntry(Form form, bool addFavourite = false)
         {
             UrlEntry urlEntry = new UrlEntry { Owner = form };
 
-            urlEntry.InitializeForm();
+            urlEntry.InitializeForm(addFavourite);
             urlEntry.ShowDialog(form);
         }
 

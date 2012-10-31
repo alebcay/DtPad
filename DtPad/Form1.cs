@@ -325,12 +325,15 @@ namespace DtPad
         internal void favouriteFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             String fileName = sender.ToString();
-            if (fileName.StartsWith(ConstantUtil.sessionPrefix))
-            {
-                fileName = fileName.Substring(ConstantUtil.sessionPrefix.Length);
-            }
 
-            TabIdentity = FileManager.OpenFile(this, TabIdentity, new[] { fileName });
+            if (fileName.StartsWith("http://"))
+            {
+                InternetManager.OpenUrlSource(this, fileName);
+            }
+            else
+            {
+                TabIdentity = FileManager.OpenFile(this, TabIdentity, new[] { fileName });
+            }
         }
 
         internal void recentFileToolStripMenuItem_Click(object sender, EventArgs e)

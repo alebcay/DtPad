@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrlEntry));
             this.urlAddressLabel = new System.Windows.Forms.Label();
             this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -43,11 +42,10 @@
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.urlAddressTextBox = new DevExpress.XtraEditors.ComboBoxEdit();
             this.clearHistoryButton = new System.Windows.Forms.Button();
             this.urlEntryToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.urlAddressComboBox = new DtPad.Customs.CustomComboBox();
             this.contentContextMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.urlAddressTextBox.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // urlAddressLabel
@@ -71,27 +69,27 @@
             this.toolStripSeparator29,
             this.selectAllToolStripMenuItem});
             this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(129, 148);
+            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 148);
             this.contentContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contentContextMenuStrip_Opening);
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Enabled = false;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(119, 6);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
             // 
@@ -99,7 +97,7 @@
             // 
             this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
             // 
@@ -107,31 +105,32 @@
             // 
             this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
             // 
             // toolStripSeparator29
             // 
             this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
             // 
             // okButton
             // 
+            this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.Enabled = false;
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
             this.okButton.Location = new System.Drawing.Point(195, 61);
@@ -145,6 +144,7 @@
             // 
             // cancelButton
             // 
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelButton.Location = new System.Drawing.Point(276, 61);
             this.cancelButton.Name = "cancelButton";
@@ -155,23 +155,9 @@
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // urlAddressTextBox
-            // 
-            this.urlAddressTextBox.EditValue = "http://";
-            this.urlAddressTextBox.Location = new System.Drawing.Point(12, 25);
-            this.urlAddressTextBox.Name = "urlAddressTextBox";
-            this.urlAddressTextBox.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
-            this.urlAddressTextBox.Properties.ContextMenuStrip = this.contentContextMenuStrip;
-            this.urlAddressTextBox.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.urlAddressTextBox.Properties.LookAndFeel.UseWindowsXPTheme = true;
-            this.urlAddressTextBox.Size = new System.Drawing.Size(339, 20);
-            this.urlAddressTextBox.TabIndex = 1;
-            this.urlAddressTextBox.TextChanged += new System.EventHandler(this.urlAddressTextBox_TextChanged);
-            // 
             // clearHistoryButton
             // 
-            this.clearHistoryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.clearHistoryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.clearHistoryButton.Image = global::DtPad.ToolbarResource.bin;
             this.clearHistoryButton.Location = new System.Drawing.Point(15, 61);
             this.clearHistoryButton.Name = "clearHistoryButton";
@@ -180,6 +166,19 @@
             this.clearHistoryButton.UseVisualStyleBackColor = true;
             this.clearHistoryButton.Click += new System.EventHandler(this.clearHistoryButton_Click);
             // 
+            // urlAddressComboBox
+            // 
+            this.urlAddressComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.urlAddressComboBox.CustomContextMenuStrip = this.contentContextMenuStrip;
+            this.urlAddressComboBox.FormattingEnabled = true;
+            this.urlAddressComboBox.Location = new System.Drawing.Point(12, 25);
+            this.urlAddressComboBox.Name = "urlAddressComboBox";
+            this.urlAddressComboBox.Size = new System.Drawing.Size(339, 21);
+            this.urlAddressComboBox.TabIndex = 1;
+            this.urlAddressComboBox.Text = "http://";
+            this.urlAddressComboBox.TextChanged += new System.EventHandler(this.urlAddressComboBox_TextChanged);
+            // 
             // UrlEntry
             // 
             this.AcceptButton = this.okButton;
@@ -187,8 +186,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size(363, 97);
+            this.Controls.Add(this.urlAddressComboBox);
             this.Controls.Add(this.clearHistoryButton);
-            this.Controls.Add(this.urlAddressTextBox);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.urlAddressLabel);
@@ -203,7 +202,6 @@
             this.Text = "Open Web Page Source";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.UrlEntry_HelpButtonClicked);
             this.contentContextMenuStrip.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.urlAddressTextBox.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,8 +221,8 @@
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
-        internal DevExpress.XtraEditors.ComboBoxEdit urlAddressTextBox;
         private System.Windows.Forms.Button clearHistoryButton;
         private System.Windows.Forms.ToolTip urlEntryToolTip;
+        internal Customs.CustomComboBox urlAddressComboBox;
     }
 }

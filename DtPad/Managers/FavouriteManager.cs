@@ -11,6 +11,8 @@ namespace DtPad.Managers
     /// <author>Marco Macciò</author>
     internal static class FavouriteManager
     {
+        private const String className = "FavouriteManager";
+
         #region Internal Methods
 
         internal static void AddNewFavourite(Favourites form, Form1 form1)
@@ -32,6 +34,30 @@ namespace DtPad.Managers
             favouritesListBox.Items.Clear();
             form.InitializeForm(true);
             favouritesListBox.SelectedIndex = favouritesListBox.Items.Count - 1;
+        }
+
+        internal static void AddNewFavouriteSession(Favourites form, Form1 form1)
+        {
+            ListBox favouritesListBox = form.favouritesListBox;
+
+            String filter = LanguageUtil.GetCurrentLanguageString("FileDialog", className);
+            String fileName = FileUtil.GetFileNameAndPath(form1, filter, 0, "*.dps");
+
+            if (String.IsNullOrEmpty(fileName))
+            {
+                return;
+            }
+
+            FileListManager.SetNewFavouriteFile(form1, ConstantUtil.sessionPrefix + fileName);
+
+            favouritesListBox.Items.Clear();
+            form.InitializeForm(true);
+            favouritesListBox.SelectedIndex = favouritesListBox.Items.Count - 1;
+        }
+
+        internal static void AddNewFavouriteUrl(Favourites form)
+        {
+            WindowManager.ShowUrlEntry(form, true);
         }
 
         internal static void DeleteFavourite(Favourites form, Form1 form1)

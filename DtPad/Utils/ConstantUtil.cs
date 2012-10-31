@@ -100,6 +100,7 @@ namespace DtPad.Utils
         internal const String columnsHeaderShort = "10        20        30        40        50        60        70        80        90        100       110       120       130       140       150" + newLineNotCompatible +
             "....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|....5....|";
         internal const String sessionPrefix = "[S] ";
+        internal const String urlPrefix = "[U] ";
         internal const int clipboardRetryTimes = 15;
         internal const int clipboardRetryDelay = 100;
         internal const int maxFileByteLength = 104857600;

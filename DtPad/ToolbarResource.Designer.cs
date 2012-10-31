@@ -863,6 +863,26 @@ namespace DtPad {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus_session {
+            get {
+                object obj = ResourceManager.GetObject("plus_session", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_url {
+            get {
+                object obj = ResourceManager.GetObject("plus_url", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap plus_yellow {
             get {
                 object obj = ResourceManager.GetObject("plus_yellow", resourceCulture);
@@ -1256,6 +1276,16 @@ namespace DtPad {
         internal static System.Drawing.Bitmap top {
             get {
                 object obj = ResourceManager.GetObject("top", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap url_small {
+            get {
+                object obj = ResourceManager.GetObject("url_small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

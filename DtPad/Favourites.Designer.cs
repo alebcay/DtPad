@@ -37,17 +37,19 @@ namespace DtPad
             this.favouriteToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.moveDownButton = new System.Windows.Forms.Button();
             this.moveUpButton = new System.Windows.Forms.Button();
+            this.addFavouriteUrlButton = new System.Windows.Forms.Button();
+            this.addFavouriteSessionButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // favouritesListBox
             // 
-            this.favouritesListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.favouritesListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.favouritesListBox.FormattingEnabled = true;
             this.favouritesListBox.Location = new System.Drawing.Point(12, 12);
             this.favouritesListBox.Name = "favouritesListBox";
-            this.favouritesListBox.Size = new System.Drawing.Size(431, 160);
+            this.favouritesListBox.Size = new System.Drawing.Size(431, 225);
             this.favouritesListBox.TabIndex = 0;
             this.favouritesListBox.SelectedIndexChanged += new System.EventHandler(this.favouritesListBox_SelectedIndexChanged);
             // 
@@ -56,7 +58,7 @@ namespace DtPad
             this.deleteFavouriteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteFavouriteButton.Enabled = false;
             this.deleteFavouriteButton.Image = global::DtPad.ToolbarResource.minus;
-            this.deleteFavouriteButton.Location = new System.Drawing.Point(449, 41);
+            this.deleteFavouriteButton.Location = new System.Drawing.Point(448, 99);
             this.deleteFavouriteButton.Name = "deleteFavouriteButton";
             this.deleteFavouriteButton.Size = new System.Drawing.Size(23, 23);
             this.deleteFavouriteButton.TabIndex = 2;
@@ -80,7 +82,7 @@ namespace DtPad
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.closeButton.Location = new System.Drawing.Point(396, 186);
+            this.closeButton.Location = new System.Drawing.Point(396, 252);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 5;
@@ -93,7 +95,7 @@ namespace DtPad
             this.moveDownButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.moveDownButton.Enabled = false;
             this.moveDownButton.Image = global::DtPad.ToolbarResource.move_down;
-            this.moveDownButton.Location = new System.Drawing.Point(449, 149);
+            this.moveDownButton.Location = new System.Drawing.Point(449, 215);
             this.moveDownButton.Name = "moveDownButton";
             this.moveDownButton.Size = new System.Drawing.Size(23, 23);
             this.moveDownButton.TabIndex = 4;
@@ -106,7 +108,7 @@ namespace DtPad
             this.moveUpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.moveUpButton.Enabled = false;
             this.moveUpButton.Image = global::DtPad.ToolbarResource.move_up;
-            this.moveUpButton.Location = new System.Drawing.Point(449, 120);
+            this.moveUpButton.Location = new System.Drawing.Point(449, 186);
             this.moveUpButton.Name = "moveUpButton";
             this.moveUpButton.Size = new System.Drawing.Size(23, 23);
             this.moveUpButton.TabIndex = 3;
@@ -114,12 +116,38 @@ namespace DtPad
             this.moveUpButton.UseVisualStyleBackColor = true;
             this.moveUpButton.Click += new System.EventHandler(this.moveUpButton_Click);
             // 
+            // addFavouriteUrlButton
+            // 
+            this.addFavouriteUrlButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.addFavouriteUrlButton.Image = global::DtPad.ToolbarResource.plus_url;
+            this.addFavouriteUrlButton.Location = new System.Drawing.Point(448, 70);
+            this.addFavouriteUrlButton.Name = "addFavouriteUrlButton";
+            this.addFavouriteUrlButton.Size = new System.Drawing.Size(23, 23);
+            this.addFavouriteUrlButton.TabIndex = 6;
+            this.favouriteToolTip.SetToolTip(this.addFavouriteUrlButton, "Add new favourite");
+            this.addFavouriteUrlButton.UseVisualStyleBackColor = true;
+            this.addFavouriteUrlButton.Click += new System.EventHandler(this.addFavouriteUrlButton_Click);
+            // 
+            // addFavouriteSessionButton
+            // 
+            this.addFavouriteSessionButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.addFavouriteSessionButton.Image = global::DtPad.ToolbarResource.plus_session;
+            this.addFavouriteSessionButton.Location = new System.Drawing.Point(449, 41);
+            this.addFavouriteSessionButton.Name = "addFavouriteSessionButton";
+            this.addFavouriteSessionButton.Size = new System.Drawing.Size(23, 23);
+            this.addFavouriteSessionButton.TabIndex = 7;
+            this.favouriteToolTip.SetToolTip(this.addFavouriteSessionButton, "Add new favourite");
+            this.addFavouriteSessionButton.UseVisualStyleBackColor = true;
+            this.addFavouriteSessionButton.Click += new System.EventHandler(this.addFavouriteSessionButton_Click);
+            // 
             // Favourites
             // 
             this.AcceptButton = this.closeButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 221);
+            this.ClientSize = new System.Drawing.Size(483, 287);
+            this.Controls.Add(this.addFavouriteSessionButton);
+            this.Controls.Add(this.addFavouriteUrlButton);
             this.Controls.Add(this.moveDownButton);
             this.Controls.Add(this.moveUpButton);
             this.Controls.Add(this.closeButton);
@@ -149,5 +177,7 @@ namespace DtPad
         private System.Windows.Forms.ToolTip favouriteToolTip;
         private System.Windows.Forms.Button moveDownButton;
         private System.Windows.Forms.Button moveUpButton;
+        private System.Windows.Forms.Button addFavouriteUrlButton;
+        private System.Windows.Forms.Button addFavouriteSessionButton;
     }
 }

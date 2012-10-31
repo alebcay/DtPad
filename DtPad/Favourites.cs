@@ -48,9 +48,18 @@ namespace DtPad
             CheckObjectCount();
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void addFavouriteSessionButton_Click(object sender, EventArgs e)
         {
-            WindowManager.CloseForm(this);
+            Form1 form = (Form1)Owner;
+
+            FavouriteManager.AddNewFavouriteSession(this, form);
+            CheckObjectCount();
+        }
+
+        private void addFavouriteUrlButton_Click(object sender, EventArgs e)
+        {
+            FavouriteManager.AddNewFavouriteUrl(this);
+            CheckObjectCount();
         }
 
         private void deleteFavouriteButton_Click(object sender, EventArgs e)
@@ -75,6 +84,11 @@ namespace DtPad
             FavouriteManager.MoveFavourite(this, form, ObjectListUtil.Movement.Down);
         }
 
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            WindowManager.CloseForm(this);
+        }
+
         #endregion Button Methods
 
         #region Private Methods
@@ -82,8 +96,10 @@ namespace DtPad
         private void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
-            favouriteToolTip.SetToolTip(deleteFavouriteButton, LanguageUtil.GetCurrentLanguageString("deleteFavouriteButtonToolTip", Name));
             favouriteToolTip.SetToolTip(addFavouriteButton, LanguageUtil.GetCurrentLanguageString("addFavouriteButtonToolTip", Name));
+            favouriteToolTip.SetToolTip(addFavouriteSessionButton, LanguageUtil.GetCurrentLanguageString("addFavouriteSessionButtonToolTip", Name));
+            favouriteToolTip.SetToolTip(addFavouriteUrlButton, LanguageUtil.GetCurrentLanguageString("addFavouriteUrlButtonToolTip", Name));
+            favouriteToolTip.SetToolTip(deleteFavouriteButton, LanguageUtil.GetCurrentLanguageString("deleteFavouriteButtonToolTip", Name));
             favouriteToolTip.SetToolTip(moveUpButton, LanguageUtil.GetCurrentLanguageString("moveUpButtonToolTip", Name));
             favouriteToolTip.SetToolTip(moveDownButton, LanguageUtil.GetCurrentLanguageString("moveDownButtonToolTip", Name));
         }

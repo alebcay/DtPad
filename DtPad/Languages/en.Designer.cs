@@ -1737,11 +1737,38 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DtPad session files (*.dps)|*.dps.
+        /// </summary>
+        internal static string FavouriteManager_FileDialog {
+            get {
+                return ResourceManager.GetString("FavouriteManager_FileDialog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add new favourite.
         /// </summary>
         internal static string Favourites_addFavouriteButtonToolTip {
             get {
                 return ResourceManager.GetString("Favourites_addFavouriteButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add new favourite session.
+        /// </summary>
+        internal static string Favourites_addFavouriteSessionButtonToolTip {
+            get {
+                return ResourceManager.GetString("Favourites_addFavouriteSessionButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add new favourite URL.
+        /// </summary>
+        internal static string Favourites_addFavouriteUrlButtonToolTip {
+            get {
+                return ResourceManager.GetString("Favourites_addFavouriteUrlButtonToolTip", resourceCulture);
             }
         }
         
@@ -1958,6 +1985,15 @@ namespace DtPad.Languages {
         internal static string FileListManager_AddedFavourite {
             get {
                 return ResourceManager.GetString("FileListManager_AddedFavourite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to URL &quot;{0}&quot; was added to favourites..
+        /// </summary>
+        internal static string FileListManager_AddedFavouriteUrl {
+            get {
+                return ResourceManager.GetString("FileListManager_AddedFavouriteUrl", resourceCulture);
             }
         }
         
@@ -11908,6 +11944,15 @@ namespace DtPad.Languages {
         internal static string UrlEntry_Title {
             get {
                 return ResourceManager.GetString("UrlEntry_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Favourite URL.
+        /// </summary>
+        internal static string UrlEntry_Title_FavouriteMode {
+            get {
+                return ResourceManager.GetString("UrlEntry_Title_FavouriteMode", resourceCulture);
             }
         }
         

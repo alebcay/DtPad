@@ -12,15 +12,24 @@ namespace DtPad
     /// <author>Marco Macciò</author>
     internal partial class UrlEntry : Form
     {
+        private bool favouriteMode;
+
         #region Window Methods
 
-        internal void InitializeForm()
+        internal void InitializeForm(bool addFavourite)
         {
             InitializeComponent();
-
             LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
             SetLanguage();
+
             FileListManager.LoadRecentURLs(this);
+            favouriteMode = addFavourite;
+
+            if (favouriteMode)
+            {
+                HelpButton = false;
+                Text = LanguageUtil.GetCurrentLanguageString("Title_FavouriteMode", Name);
+            }
         }
 
         private void UrlEntry_HelpButtonClicked(object sender, CancelEventArgs e)
@@ -28,14 +37,14 @@ namespace DtPad
             HelpManager.ManageHelpPanel(this, e);
         }
 
-        private void urlAddressTextBox_TextChanged(object sender, EventArgs e)
+        private void urlAddressComboBox_TextChanged(object sender, EventArgs e)
         {
-            okButton.Enabled = !(String.IsNullOrEmpty(urlAddressTextBox.Text) || urlAddressTextBox.Text == "http://");
+            okButton.Enabled = !(String.IsNullOrEmpty(urlAddressComboBox.Text) || urlAddressComboBox.Text == "http://");
         }
 
         private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
-            undoToolStripMenuItem.Enabled = urlAddressTextBox.CanUndo;
+            undoToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender);
         }
 
         #endregion Window Methods
@@ -49,26 +58,43 @@ namespace DtPad
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            Form1 form = (Form1)Owner;
-
-            if (!urlAddressTextBox.Text.StartsWith("http://"))
+            if (!urlAddressComboBox.Text.StartsWith("http://"))
             {
-                urlAddressTextBox.Text = String.Format("http://{0}", urlAddressTextBox.Text);
+                urlAddressComboBox.Text = String.Format("http://{0}", urlAddressComboBox.Text);
             }
 
-            okButton.Enabled = false;
-            cancelButton.Enabled = false;
-            Refresh();
-
-            if (InternetManager.OpenUrlSource(form, urlAddressTextBox.Text))
+            if (favouriteMode)
             {
-                FileListManager.SetNewRecentURL(this, urlAddressTextBox.Text);
+                Favourites form = (Favourites)Owner;
+                Form1 form1 = (Form1)form.Owner;
+
+                ListBox favouritesListBox = form.favouritesListBox;
+                FileListManager.SetNewFavouriteFile(form1, ConstantUtil.urlPrefix + urlAddressComboBox.Text);
+
+                favouritesListBox.Items.Clear();
+                form.InitializeForm(true);
+                favouritesListBox.SelectedIndex = favouritesListBox.Items.Count - 1;
+
                 WindowManager.CloseForm(this);
             }
             else
             {
-                okButton.Enabled = true;
-                cancelButton.Enabled = true;
+                Form1 form = (Form1)Owner;
+
+                okButton.Enabled = false;
+                cancelButton.Enabled = false;
+                Refresh();
+
+                if (InternetManager.OpenUrlSource(form, urlAddressComboBox.Text))
+                {
+                    FileListManager.SetNewRecentURL(this, urlAddressComboBox.Text);
+                    WindowManager.CloseForm(this);
+                }
+                else
+                {
+                    okButton.Enabled = true;
+                    cancelButton.Enabled = true;
+                }
             }
         }
 

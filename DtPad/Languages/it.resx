@@ -236,13 +236,13 @@ DtPad non raccoglie alcuna informazione riguardante uso e utenti. I dati che pos
     <value>Estensioni</value>
   </data>
   <data name="Favourites_addFavouriteButtonToolTip" xml:space="preserve">
-    <value>Aggiungi un nuovo file preferito</value>
+    <value>Aggiungi un file come preferito</value>
   </data>
   <data name="Favourites_closeButton" xml:space="preserve">
     <value>Chiudi</value>
   </data>
   <data name="Favourites_deleteFavouriteButtonToolTip" xml:space="preserve">
-    <value>Rimuovi il file preferito selezionato</value>
+    <value>Rimuovi il preferito selezionato</value>
   </data>
   <data name="Favourites_helpLabel" xml:space="preserve">
     <value>Organizza i file preferiti per una più rapida apertura tramite DtPad.</value>
@@ -4431,5 +4431,20 @@ Seleziona nuovamente i tab per procedere.</value>
   </data>
   <data name="TabsSwitch_Title" xml:space="preserve">
     <value>Visuale tab</value>
+  </data>
+  <data name="FavouriteManager_FileDialog" xml:space="preserve">
+    <value>File di sessione DtPad (*.dps)|*.dps</value>
+  </data>
+  <data name="Favourites_addFavouriteSessionButtonToolTip" xml:space="preserve">
+    <value>Aggiungi una sessione come preferito</value>
+  </data>
+  <data name="Favourites_addFavouriteUrlButtonToolTip" xml:space="preserve">
+    <value>Aggiungi un URL come preferito</value>
+  </data>
+  <data name="FileListManager_AddedFavouriteUrl" xml:space="preserve">
+    <value>L'URL "{0}" è stato aggiunto ai preferiti.</value>
+  </data>
+  <data name="UrlEntry_Title_FavouriteMode" xml:space="preserve">
+    <value>URL preferito</value>
   </data>
 </root>

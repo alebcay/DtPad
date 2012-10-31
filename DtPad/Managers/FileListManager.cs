@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraEditors;
 using DtPad.Objects;
 using DtPad.Utils;
 using ComboBox = System.Windows.Forms.ComboBox;
@@ -275,13 +274,25 @@ namespace DtPad.Managers
             SaveFileList(ConstantUtil.fvFile, fileContent);
             LoadFavouriteFiles(form, true);
 
+            String addedFavourite;
             if (pathAndFileName.StartsWith(ConstantUtil.sessionPrefix))
             {
                 pathAndFileName = pathAndFileName.Substring(ConstantUtil.sessionPrefix.Length);
-            }
-            FileInfo fileInfo = new FileInfo(pathAndFileName);
-            String addedFavourite = String.Format(LanguageUtil.GetCurrentLanguageString("AddedFavourite", className), fileInfo.Name);
 
+                FileInfo fileInfo = new FileInfo(pathAndFileName);
+                addedFavourite = String.Format(LanguageUtil.GetCurrentLanguageString("AddedFavourite", className), fileInfo.Name);
+            }
+            else if (pathAndFileName.StartsWith(ConstantUtil.urlPrefix))
+            {
+                pathAndFileName = pathAndFileName.Substring(ConstantUtil.urlPrefix.Length);
+                addedFavourite = String.Format(LanguageUtil.GetCurrentLanguageString("AddedFavouriteUrl", className), pathAndFileName);
+            }
+            else
+            {
+                FileInfo fileInfo = new FileInfo(pathAndFileName);
+                addedFavourite = String.Format(LanguageUtil.GetCurrentLanguageString("AddedFavourite", className), fileInfo.Name);
+            }
+            
             toolStripStatusLabel.Text = addedFavourite.EndsWith(".") ? addedFavourite.Substring(0, addedFavourite.Length - 1) : addedFavourite;
             WindowManager.ShowInfoBox(form, addedFavourite);
         }
@@ -309,10 +320,15 @@ namespace DtPad.Managers
                 Image icon = null;
                 String text = splittedFileContentString;
 
-                if (splittedFileContentString.StartsWith("[S] "))
+                if (splittedFileContentString.StartsWith(ConstantUtil.sessionPrefix))
                 {
                     icon = ToolbarResource.session_small;
-                    text = text.Substring(4);
+                    text = text.Substring(ConstantUtil.sessionPrefix.Length);
+                }
+                else if (splittedFileContentString.StartsWith(ConstantUtil.urlPrefix))
+                {
+                    icon = ToolbarResource.url_small;
+                    text = text.Substring(ConstantUtil.urlPrefix.Length);
                 }
                 if (shortUrl)
                 {
@@ -833,16 +849,18 @@ namespace DtPad.Managers
 
         internal static void LoadRecentURLs(UrlEntry form)
         {
-            ComboBoxEdit urlAddressTextBox = form.urlAddressTextBox;
+            ComboBox urlAddressComboBox = form.urlAddressComboBox;
 
-            urlAddressTextBox.Properties.Items.Clear();
+            urlAddressComboBox.Items.Clear();
+            urlAddressComboBox.Items.Add("http://");
+
             String fileContent = FileUtil.ReadToEndWithStandardEncoding(Path.Combine(ConstantUtil.ApplicationExecutionPath(), ConstantUtil.ruFile));
             String[] separator = { Environment.NewLine };
             String[] splittedFileContent = fileContent.Split(separator, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (String splittedFileContentString in splittedFileContent)
             {
-                urlAddressTextBox.Properties.Items.Add(splittedFileContentString);
+                urlAddressComboBox.Items.Add(splittedFileContentString);
             }
         }
 
@@ -878,10 +896,15 @@ namespace DtPad.Managers
                         Image icon = null;
                         String text = splittedFileContentString;
 
-                        if (splittedFileContentString.StartsWith("[S] "))
+                        if (splittedFileContentString.StartsWith(ConstantUtil.sessionPrefix))
                         {
                             icon = ToolbarResource.session_small;
-                            text = text.Substring(4);
+                            text = text.Substring(ConstantUtil.sessionPrefix.Length);
+                        }
+                        else if (splittedFileContentString.StartsWith(ConstantUtil.urlPrefix))
+                        {
+                            icon = ToolbarResource.url_small;
+                            text = text.Substring(ConstantUtil.urlPrefix.Length);
                         }
 
                         toolStripMenuItem.DropDownItems.Add(StringUtil.CheckStringLength(text, maxCharsNumber), icon, form.favouriteFileToolStripMenuItem_Click);

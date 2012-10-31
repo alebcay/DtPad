@@ -44,6 +44,10 @@ namespace DtPad.Utils
                 {
                     return ((RichTextBox)focusedControl).CanUndo;
                 }
+                //if (focusedControl.GetType() == typeof(ComboBox))
+                //{
+                //    return ((ComboBox)focusedControl).und;
+                //}
             }
 
             return false;
