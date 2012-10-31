@@ -164,14 +164,13 @@ namespace DtPadUpdater.Managers
 
         internal static bool IsUpdaterVersionUpdated(String executablePath, TextBox updateTextBox, String culture)
         {
-            String finalVersion;
-            String actualVersion = AssemblyUtil.AssemblyVersion; //ConfigUtil.GetStringParameter("UpdaterVersion", String.Empty, executablePath);
+            String lastVersion;
             WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
             String repository = ProxyUtil.GetRepository();
 
             try
             {
-                finalVersion = webClient.DownloadString(String.Format("{0}dtpadupdater-lastversion.log", repository));
+                lastVersion = webClient.DownloadString(String.Format("{0}dtpadupdater-lastversion.log", repository));
             }
             catch (WebException)
             {
@@ -184,7 +183,7 @@ namespace DtPadUpdater.Managers
                 webClient.Dispose();
             }
 
-            if (actualVersion != finalVersion)
+            if (AssemblyUtil.AssemblyVersion != lastVersion)
             {
                 updateTextBox.Text = updateTextBox.Text + LanguageUtil.GetCurrentLanguageString("OldVersion", className, culture);
                 return false;
@@ -199,7 +198,7 @@ namespace DtPadUpdater.Managers
             {
                 using (WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture))
                 {
-                    webClient.Headers.Add("user-agent", "DtPad Updater");
+                    webClient.Headers.Add("user-agent", String.Format("DtPad Updater ({0})", AssemblyUtil.AssemblyVersion));
                     webClient.DownloadString(String.Format("{0}updates.php?from={1}&to={2}&env=prod&out={3}", ConstantUtil.actionsRepository, fromVersion, toVersion, outcome));
                 }
             }
