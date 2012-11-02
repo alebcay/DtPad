@@ -863,6 +863,7 @@
     <Compile Include="Utils\DirectoryUtil.cs" />
     <Compile Include="Utils\EncodingUtil.cs" />
     <Compile Include="Utils\FileUtil.cs" />
+    <Compile Include="Utils\Language\CustomComboBoxControl.cs" />
     <Compile Include="Utils\Language\ListViewControl.cs" />
     <Compile Include="Utils\LookFeelUtil.cs" />
     <Compile Include="Utils\MenuUtil.cs" />
