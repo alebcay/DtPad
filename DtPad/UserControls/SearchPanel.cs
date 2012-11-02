@@ -12,9 +12,18 @@ namespace DtPad.UserControls
     /// <author>Marco Macciò</author>
     internal partial class SearchPanel : UserControl
     {
+        internal ReturnAction returnAction;
+
+        internal enum ReturnAction
+        {
+            StartSearch,
+            InsertCR
+        }
+
         internal SearchPanel()
         {
             InitializeComponent();
+            returnAction = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? ReturnAction.StartSearch : ReturnAction.InsertCR;
         }
 
         #region Window Methods
@@ -175,17 +184,31 @@ namespace DtPad.UserControls
         {
             Form1 form = (Form1)ParentForm;
 
-            if (e.KeyCode == Keys.Enter && !e.Shift && !e.Alt && !e.Control)
+            switch (returnAction)
             {
-                SearchManager.SearchNextFactory(form);
-                e.SuppressKeyPress = true;
-            }
-            else if (e.KeyCode == Keys.Enter && (e.Shift || e.Alt || e.Control))
-            {
-                textBox.Text += Environment.NewLine;
-                textBox.Select(textBox.TextLength, 0);
-                textBox.ScrollToCaret();
-                e.SuppressKeyPress = true;
+                case ReturnAction.StartSearch:
+                    String initialText = textBox.Text;
+                    if (e.KeyCode == Keys.Enter && !e.Shift && !e.Alt && !e.Control)
+                    {
+                        e.SuppressKeyPress = true;
+                        e.Handled = true;
+
+                        SearchManager.SearchNextFactory(form);
+
+                        textBox.Text = initialText;
+                        textBox.Select(textBox.TextLength, 0);
+                        textBox.ScrollToCaret();
+                    }
+                    //else if (e.KeyCode == Keys.Enter && (e.Shift || e.Alt || e.Control))
+                    //{
+                    //    e.SuppressKeyPress = true;
+                    //    e.Handled = true;
+
+                    //    textBox.Text += Environment.NewLine;
+                    //    textBox.Select(textBox.TextLength, 0);
+                    //    textBox.ScrollToCaret();
+                    //}
+                    break;
             }
         }
 

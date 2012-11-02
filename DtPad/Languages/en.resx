@@ -4438,4 +4438,16 @@ Reselect interested tabs to proceed.</value>
   <data name="UrlEntry_Title_FavouriteMode" xml:space="preserve">
     <value>Favourite URL</value>
   </data>
+  <data name="Options_searchGroupBox2" xml:space="preserve">
+    <value>Keyboard</value>
+  </data>
+  <data name="Options_searchReturnLabel" xml:space="preserve">
+    <value>When RETURN is pressed inside search or replace textbox:</value>
+  </data>
+  <data name="Options_searchReturnRadioButton1" xml:space="preserve">
+    <value>Start the search</value>
+  </data>
+  <data name="Options_searchReturnRadioButton2" xml:space="preserve">
+    <value>Insert a carriage return</value>
+  </data>
 </root>

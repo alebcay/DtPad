@@ -8,6 +8,7 @@ using DevExpress.XtraTab;
 using DtControls;
 using DtPad.Customs;
 using DtPad.MessageBoxes;
+using DtPad.UserControls;
 using DtPad.Utils;
 using DtPad.Validators;
 
@@ -526,6 +527,16 @@ namespace DtPad.Managers
             showSearchPanelToolStripButton.Checked = !checkStatus;
             showSearchPanelToolStripMenuItem.Checked = !checkStatus;
             UpdateConfigParameter("SearchReplacePanelDisabled", checkStatus.ToString(), refreshConfig);
+
+            switch(ConfigUtil.GetIntParameter("SearchReturn"))
+            {
+                case 0:
+                    form.searchPanel.returnAction = SearchPanel.ReturnAction.StartSearch;
+                    break;
+                case 1:
+                    form.searchPanel.returnAction = SearchPanel.ReturnAction.InsertCR;
+                    break;
+            }
 
             if (checkStatus) // && !form.IsOpening)
             {

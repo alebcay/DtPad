@@ -67,6 +67,19 @@ namespace DtPad
             caseSensitiveCheckBox.Checked = ConfigUtil.GetBoolParameter("SearchCaseSensitive");
             loopAtEOFCheckBox.Checked = ConfigUtil.GetBoolParameter("SearchLoopAtEOF");
             highlightsResultsCheckBox.Checked = ConfigUtil.GetBoolParameter("SearchHighlightsResults");
+
+            switch (ConfigUtil.GetIntParameter("SearchReturn"))
+            {
+                case 0:
+                    searchReturnRadioButton1.Checked = true;
+                    searchReturnRadioButton2.Checked = false;
+                    break;
+                case 1:
+                    searchReturnRadioButton1.Checked = false;
+                    searchReturnRadioButton2.Checked = true;
+                    break;
+            }
+
             wordWrapCheckBox.Checked = !ConfigUtil.GetBoolParameter("WordWrapDisabled");
             recentFilesNumberNumericUpDown.Value = ConfigUtil.GetIntParameter("MaxNumRecentFile");
             searchHistoryNumericUpDown.Value = ConfigUtil.GetIntParameter("MaxNumSearchHistory");
@@ -512,6 +525,11 @@ namespace DtPad
             {
                 backupLocation = 1;
             }
+            int searchReturn = 0;
+            if (searchReturnRadioButton2.Checked)
+            {
+                searchReturn = 1;
+            }
 
             int periodicVersionCheck = 0;
             if (enableAutomaticUpdateCheckBox.Checked && frequencyAutomaticUpdateComboBox.SelectedIndex == 0)
@@ -526,7 +544,7 @@ namespace DtPad
             String[] parameterNames = { "SettingFolder", "SpecificFolder", "OverrideFolderWithActiveFile", "MaxNumRecentFile", "MaxNumSearchHistory", "StayOnTopDisabled",
                                           "ToolbarInvisible", "StatusBarInvisible", "MinimizeOnTrayIconDisabled", "LookAndFeel", "Language",
                                           "ProxyEnabled", "ProxyHost", "ProxyPort", "UseDefaultBrowser", "CustomBrowserCommand", "SearchReplacePanelDisabled",
-                                          "SearchCaseSensitive", "SearchLoopAtEOF", "SearchHighlightsResults", "WordWrapDisabled", "FontInUse", "FontInUseColorARGB",
+                                          "SearchCaseSensitive", "SearchLoopAtEOF", "SearchHighlightsResults", "SearchReturn", "WordWrapDisabled", "FontInUse", "FontInUseColorARGB",
                                           "BackgroundColorARGB", "HighlightURL", "InternalExplorerInvisible", "TabCloseButtonMode", "TabPosition", "TabOrientation",
                                           "TabMultiline", "DefaultEncoding", "Encoding", "LineNumbersVisible", "BackupEnabled", "BackupExtension", "BackupExtensionPosition",
                                           "BackupLocation", "BackupLocationCustom", "BackupIncremental", "SpacesInsteadTabs", "KeepInitialSpacesOnReturn",
@@ -541,7 +559,7 @@ namespace DtPad
                                            languageComboBox.SelectedItem.ToString(), enableProxySettingsCheckBox.Checked.ToString(), proxyHostTextBox.Text,
                                            proxyPortNumericUpDown.Value.ToString(), defaultBrowserRadioButton.Checked.ToString(), customBrowserTextBox.Text,
                                            (!showSearchPanelCheckBox.Checked).ToString(), caseSensitiveCheckBox.Checked.ToString(), loopAtEOFCheckBox.Checked.ToString(),
-                                           highlightsResultsCheckBox.Checked.ToString(), (!wordWrapCheckBox.Checked).ToString(), tc.ConvertToString(TextFont),
+                                           highlightsResultsCheckBox.Checked.ToString(), searchReturn.ToString(), (!wordWrapCheckBox.Checked).ToString(), tc.ConvertToString(TextFont),
                                            FontManager.SetARGBString(TextFontColor), FontManager.SetARGBString(TextBackgroundColor), urlsCheckBox.Checked.ToString(),
                                            (!internalExplorerCheckBox.Checked).ToString(), tabCloseButtonOnComboBox.SelectedIndex.ToString(),
                                            tabPositionComboBox.SelectedIndex.ToString(), tabOrientationComboBox.SelectedIndex.ToString(),

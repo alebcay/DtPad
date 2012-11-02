@@ -8150,6 +8150,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tastiera.
+        /// </summary>
+        internal static string Options_searchGroupBox2 {
+            get {
+                return ResourceManager.GetString("Options_searchGroupBox2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ultime ricerche:.
         /// </summary>
         internal static string Options_searchHistoryLabel {
@@ -8164,6 +8173,33 @@ namespace DtPad.Languages {
         internal static string Options_searchNode {
             get {
                 return ResourceManager.GetString("Options_searchNode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quando viene premuto INVIO nei campi di ricerca e sostituzione:.
+        /// </summary>
+        internal static string Options_searchReturnLabel {
+            get {
+                return ResourceManager.GetString("Options_searchReturnLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Avvia la ricerca.
+        /// </summary>
+        internal static string Options_searchReturnRadioButton1 {
+            get {
+                return ResourceManager.GetString("Options_searchReturnRadioButton1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inserisci un a-capo.
+        /// </summary>
+        internal static string Options_searchReturnRadioButton2 {
+            get {
+                return ResourceManager.GetString("Options_searchReturnRadioButton2", resourceCulture);
             }
         }
         

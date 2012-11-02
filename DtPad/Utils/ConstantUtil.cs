@@ -387,6 +387,7 @@ namespace DtPad.Utils
             new KeyValuePair<String, String>("SearchCaseSensitive", "False"),
             new KeyValuePair<String, String>("SearchLoopAtEOF", "False"),
             new KeyValuePair<String, String>("SearchHighlightsResults", "True"),
+            new KeyValuePair<String, String>("SearchReturn", "0"),
             new KeyValuePair<String, String>("WordWrapDisabled", "False"),
             new KeyValuePair<String, String>("StayOnTopDisabled", "True"),
             new KeyValuePair<String, String>("ToolbarInvisible", "False"),

@@ -59,6 +59,7 @@ namespace DtPad
             this.searchPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.searchGroupBox1 = new System.Windows.Forms.GroupBox();
             this.highlightsResultsCheckBox = new System.Windows.Forms.CheckBox();
+            this.searchHistoryNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.numberContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,6 +69,10 @@ namespace DtPad
             this.loopAtEOFCheckBox = new System.Windows.Forms.CheckBox();
             this.caseSensitiveCheckBox = new System.Windows.Forms.CheckBox();
             this.showSearchPanelCheckBox = new System.Windows.Forms.CheckBox();
+            this.searchGroupBox2 = new System.Windows.Forms.GroupBox();
+            this.searchReturnRadioButton2 = new System.Windows.Forms.RadioButton();
+            this.searchReturnRadioButton1 = new System.Windows.Forms.RadioButton();
+            this.searchReturnLabel = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
             this.formatPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.formatGroupBox1 = new System.Windows.Forms.GroupBox();
@@ -100,6 +105,7 @@ namespace DtPad
             this.statusBarCheckBox = new System.Windows.Forms.CheckBox();
             this.toolbarCheckBox = new System.Windows.Forms.CheckBox();
             this.viewGroupBox3 = new System.Windows.Forms.GroupBox();
+            this.hideLinesNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.helpHideLinesPictureBox = new System.Windows.Forms.PictureBox();
             this.hideLinesCheckBox = new System.Windows.Forms.CheckBox();
             this.lineNumbersCheckBox = new System.Windows.Forms.CheckBox();
@@ -108,6 +114,7 @@ namespace DtPad
             this.closeTabButtonOnLabel = new System.Windows.Forms.Label();
             this.internetPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.internetGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.proxyPortNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.proxyHostTextBox = new System.Windows.Forms.TextBox();
             this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -153,6 +160,7 @@ namespace DtPad
             this.extensionLabel = new System.Windows.Forms.Label();
             this.extensionListBox = new System.Windows.Forms.ListBox();
             this.clearRecentFilesButton = new System.Windows.Forms.Button();
+            this.recentFilesNumberNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.recentFilesNumberLabel = new System.Windows.Forms.Label();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.okButton = new System.Windows.Forms.Button();
@@ -224,19 +232,17 @@ namespace DtPad
             this.dropboxRememberCheckBox = new System.Windows.Forms.CheckBox();
             this.noteModePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.noteModeGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.noteModeSizeXNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
+            this.noteModeSizeYNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.noteModeInfoLabel = new System.Windows.Forms.Label();
             this.noteModeSizeXLabel = new System.Windows.Forms.Label();
             this.noteModeSizeLabel = new System.Windows.Forms.Label();
             this.noteModeTabsCheckBox = new System.Windows.Forms.CheckBox();
-            this.hideLinesNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.noteModeSizeXNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.noteModeSizeYNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.recentFilesNumberNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.proxyPortNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.searchHistoryNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.searchPanel.SuspendLayout();
             this.searchGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchHistoryNumericUpDown)).BeginInit();
             this.numberContextMenuStrip.SuspendLayout();
+            this.searchGroupBox2.SuspendLayout();
             this.formatPanel.SuspendLayout();
             this.formatGroupBox1.SuspendLayout();
             this.formatGroupBox2.SuspendLayout();
@@ -246,9 +252,11 @@ namespace DtPad
             this.viewGroupBox1.SuspendLayout();
             this.viewGroupBox2.SuspendLayout();
             this.viewGroupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hideLinesNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.helpHideLinesPictureBox)).BeginInit();
             this.internetPanel.SuspendLayout();
             this.internetGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proxyPortNumericUpDown)).BeginInit();
             this.contentContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoProxyPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).BeginInit();
@@ -259,6 +267,7 @@ namespace DtPad
             this.filePanel.SuspendLayout();
             this.fileGroupBox1.SuspendLayout();
             this.fileGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recentFilesNumberNumericUpDown)).BeginInit();
             this.encodingPanel.SuspendLayout();
             this.encodingGroupBox1.SuspendLayout();
             this.tabPanel.SuspendLayout();
@@ -284,12 +293,8 @@ namespace DtPad
             this.dropboxGroupBox1.SuspendLayout();
             this.noteModePanel.SuspendLayout();
             this.noteModeGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hideLinesNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeXNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeYNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.recentFilesNumberNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proxyPortNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchHistoryNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // optionsTreeView
@@ -346,6 +351,7 @@ namespace DtPad
             // searchPanel
             // 
             this.searchPanel.Controls.Add(this.searchGroupBox1);
+            this.searchPanel.Controls.Add(this.searchGroupBox2);
             this.searchPanel.Location = new System.Drawing.Point(150, 13);
             this.searchPanel.Name = "searchPanel";
             this.searchPanel.Size = new System.Drawing.Size(349, 287);
@@ -376,6 +382,29 @@ namespace DtPad
             this.highlightsResultsCheckBox.TabIndex = 5;
             this.highlightsResultsCheckBox.Text = "Highlights results";
             this.highlightsResultsCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // searchHistoryNumericUpDown
+            // 
+            this.searchHistoryNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
+            this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(120, 92);
+            this.searchHistoryNumericUpDown.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.searchHistoryNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.searchHistoryNumericUpDown.Name = "searchHistoryNumericUpDown";
+            this.searchHistoryNumericUpDown.Size = new System.Drawing.Size(44, 20);
+            this.searchHistoryNumericUpDown.TabIndex = 4;
+            this.searchHistoryNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numberContextMenuStrip
             // 
@@ -417,7 +446,7 @@ namespace DtPad
             // searchHistoryLabel
             // 
             this.searchHistoryLabel.AutoSize = true;
-            this.searchHistoryLabel.Location = new System.Drawing.Point(6, 94);
+            this.searchHistoryLabel.Location = new System.Drawing.Point(10, 94);
             this.searchHistoryLabel.Name = "searchHistoryLabel";
             this.searchHistoryLabel.Size = new System.Drawing.Size(77, 13);
             this.searchHistoryLabel.TabIndex = 3;
@@ -452,6 +481,49 @@ namespace DtPad
             this.showSearchPanelCheckBox.TabIndex = 0;
             this.showSearchPanelCheckBox.Text = "Show search panel";
             this.showSearchPanelCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // searchGroupBox2
+            // 
+            this.searchGroupBox2.Controls.Add(this.searchReturnRadioButton2);
+            this.searchGroupBox2.Controls.Add(this.searchReturnRadioButton1);
+            this.searchGroupBox2.Controls.Add(this.searchReturnLabel);
+            this.searchGroupBox2.Location = new System.Drawing.Point(3, 156);
+            this.searchGroupBox2.Name = "searchGroupBox2";
+            this.searchGroupBox2.Size = new System.Drawing.Size(346, 90);
+            this.searchGroupBox2.TabIndex = 1;
+            this.searchGroupBox2.TabStop = false;
+            this.searchGroupBox2.Text = "Keyboard";
+            // 
+            // searchReturnRadioButton2
+            // 
+            this.searchReturnRadioButton2.AutoSize = true;
+            this.searchReturnRadioButton2.Location = new System.Drawing.Point(10, 66);
+            this.searchReturnRadioButton2.Name = "searchReturnRadioButton2";
+            this.searchReturnRadioButton2.Size = new System.Drawing.Size(131, 17);
+            this.searchReturnRadioButton2.TabIndex = 2;
+            this.searchReturnRadioButton2.TabStop = true;
+            this.searchReturnRadioButton2.Text = "Insert a carriage return";
+            this.searchReturnRadioButton2.UseVisualStyleBackColor = true;
+            // 
+            // searchReturnRadioButton1
+            // 
+            this.searchReturnRadioButton1.AutoSize = true;
+            this.searchReturnRadioButton1.Location = new System.Drawing.Point(10, 43);
+            this.searchReturnRadioButton1.Name = "searchReturnRadioButton1";
+            this.searchReturnRadioButton1.Size = new System.Drawing.Size(100, 17);
+            this.searchReturnRadioButton1.TabIndex = 1;
+            this.searchReturnRadioButton1.TabStop = true;
+            this.searchReturnRadioButton1.Text = "Start the search";
+            this.searchReturnRadioButton1.UseVisualStyleBackColor = true;
+            // 
+            // searchReturnLabel
+            // 
+            this.searchReturnLabel.AutoSize = true;
+            this.searchReturnLabel.Location = new System.Drawing.Point(10, 20);
+            this.searchReturnLabel.Name = "searchReturnLabel";
+            this.searchReturnLabel.Size = new System.Drawing.Size(290, 13);
+            this.searchReturnLabel.TabIndex = 0;
+            this.searchReturnLabel.Text = "When RETURN is pressed inside search or replace textbox:";
             // 
             // cancelButton
             // 
@@ -711,7 +783,7 @@ namespace DtPad
             this.viewPanel.Location = new System.Drawing.Point(150, 13);
             this.viewPanel.Name = "viewPanel";
             this.viewPanel.Size = new System.Drawing.Size(349, 287);
-            this.viewPanel.TabIndex = 10;
+            this.viewPanel.TabIndex = 11;
             this.viewPanel.Visible = false;
             // 
             // viewGroupBox1
@@ -801,6 +873,29 @@ namespace DtPad
             this.viewGroupBox3.TabStop = false;
             this.viewGroupBox3.Text = "Other";
             // 
+            // hideLinesNumericUpDown
+            // 
+            this.hideLinesNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
+            this.hideLinesNumericUpDown.Location = new System.Drawing.Point(284, 42);
+            this.hideLinesNumericUpDown.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.hideLinesNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.hideLinesNumericUpDown.Name = "hideLinesNumericUpDown";
+            this.hideLinesNumericUpDown.Size = new System.Drawing.Size(49, 20);
+            this.hideLinesNumericUpDown.TabIndex = 3;
+            this.hideLinesNumericUpDown.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
             // helpHideLinesPictureBox
             // 
             this.helpHideLinesPictureBox.Image = global::DtPad.ToolbarResource.info_blue;
@@ -874,7 +969,7 @@ namespace DtPad
             this.internetPanel.Location = new System.Drawing.Point(150, 13);
             this.internetPanel.Name = "internetPanel";
             this.internetPanel.Size = new System.Drawing.Size(349, 287);
-            this.internetPanel.TabIndex = 12;
+            this.internetPanel.TabIndex = 0;
             this.internetPanel.Visible = false;
             // 
             // internetGroupBox1
@@ -900,6 +995,19 @@ namespace DtPad
             this.internetGroupBox1.TabIndex = 0;
             this.internetGroupBox1.TabStop = false;
             this.internetGroupBox1.Text = "Proxy";
+            // 
+            // proxyPortNumericUpDown
+            // 
+            this.proxyPortNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
+            this.proxyPortNumericUpDown.Location = new System.Drawing.Point(74, 170);
+            this.proxyPortNumericUpDown.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.proxyPortNumericUpDown.Name = "proxyPortNumericUpDown";
+            this.proxyPortNumericUpDown.Size = new System.Drawing.Size(77, 20);
+            this.proxyPortNumericUpDown.TabIndex = 12;
             // 
             // proxyHostTextBox
             // 
@@ -1164,7 +1272,7 @@ namespace DtPad
             this.lookAndFeelPanel.Location = new System.Drawing.Point(150, 13);
             this.lookAndFeelPanel.Name = "lookAndFeelPanel";
             this.lookAndFeelPanel.Size = new System.Drawing.Size(349, 287);
-            this.lookAndFeelPanel.TabIndex = 11;
+            this.lookAndFeelPanel.TabIndex = 12;
             this.lookAndFeelPanel.Visible = false;
             // 
             // lookAndFeelGroupBox1
@@ -1339,6 +1447,29 @@ namespace DtPad
             this.clearRecentFilesButton.Text = "Clear";
             this.clearRecentFilesButton.UseVisualStyleBackColor = true;
             this.clearRecentFilesButton.Click += new System.EventHandler(this.clearRecentFilesButton_Click);
+            // 
+            // recentFilesNumberNumericUpDown
+            // 
+            this.recentFilesNumberNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
+            this.recentFilesNumberNumericUpDown.Location = new System.Drawing.Point(120, 18);
+            this.recentFilesNumberNumericUpDown.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.recentFilesNumberNumericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.recentFilesNumberNumericUpDown.Name = "recentFilesNumberNumericUpDown";
+            this.recentFilesNumberNumericUpDown.Size = new System.Drawing.Size(44, 20);
+            this.recentFilesNumberNumericUpDown.TabIndex = 1;
+            this.recentFilesNumberNumericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // recentFilesNumberLabel
             // 
@@ -1992,7 +2123,7 @@ namespace DtPad
             this.updateGroupBox1.Location = new System.Drawing.Point(3, 3);
             this.updateGroupBox1.Name = "updateGroupBox1";
             this.updateGroupBox1.Size = new System.Drawing.Size(346, 102);
-            this.updateGroupBox1.TabIndex = 0;
+            this.updateGroupBox1.TabIndex = 1;
             this.updateGroupBox1.TabStop = false;
             this.updateGroupBox1.Text = "Automatic Check";
             // 
@@ -2083,7 +2214,7 @@ namespace DtPad
             this.noteModePanel.Location = new System.Drawing.Point(150, 13);
             this.noteModePanel.Name = "noteModePanel";
             this.noteModePanel.Size = new System.Drawing.Size(349, 287);
-            this.noteModePanel.TabIndex = 19;
+            this.noteModePanel.TabIndex = 10;
             this.noteModePanel.Visible = false;
             // 
             // noteModeGroupBox1
@@ -2101,66 +2232,6 @@ namespace DtPad
             this.noteModeGroupBox1.TabStop = false;
             this.noteModeGroupBox1.Text = "Appearance";
             // 
-            // noteModeInfoLabel
-            // 
-            this.noteModeInfoLabel.Location = new System.Drawing.Point(10, 81);
-            this.noteModeInfoLabel.Name = "noteModeInfoLabel";
-            this.noteModeInfoLabel.Size = new System.Drawing.Size(323, 46);
-            this.noteModeInfoLabel.TabIndex = 5;
-            this.noteModeInfoLabel.Text = "Note: to enable the note mode, click with mouse right botton over a tab of the ma" +
-    "in text editing area, and select \"Show As Note On Top\".";
-            // 
-            // noteModeSizeXLabel
-            // 
-            this.noteModeSizeXLabel.AutoSize = true;
-            this.noteModeSizeXLabel.Location = new System.Drawing.Point(240, 43);
-            this.noteModeSizeXLabel.Name = "noteModeSizeXLabel";
-            this.noteModeSizeXLabel.Size = new System.Drawing.Size(12, 13);
-            this.noteModeSizeXLabel.TabIndex = 4;
-            this.noteModeSizeXLabel.Text = "x";
-            // 
-            // noteModeSizeLabel
-            // 
-            this.noteModeSizeLabel.AutoSize = true;
-            this.noteModeSizeLabel.Location = new System.Drawing.Point(10, 43);
-            this.noteModeSizeLabel.Name = "noteModeSizeLabel";
-            this.noteModeSizeLabel.Size = new System.Drawing.Size(95, 13);
-            this.noteModeSizeLabel.TabIndex = 1;
-            this.noteModeSizeLabel.Text = "Window size (x, y):";
-            // 
-            // noteModeTabsCheckBox
-            // 
-            this.noteModeTabsCheckBox.AutoSize = true;
-            this.noteModeTabsCheckBox.Location = new System.Drawing.Point(10, 20);
-            this.noteModeTabsCheckBox.Name = "noteModeTabsCheckBox";
-            this.noteModeTabsCheckBox.Size = new System.Drawing.Size(107, 17);
-            this.noteModeTabsCheckBox.TabIndex = 0;
-            this.noteModeTabsCheckBox.Text = "Enable tabs view";
-            this.noteModeTabsCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // hideLinesNumericUpDown
-            // 
-            this.hideLinesNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
-            this.hideLinesNumericUpDown.Location = new System.Drawing.Point(284, 42);
-            this.hideLinesNumericUpDown.Maximum = new decimal(new int[] {
-            9999999,
-            0,
-            0,
-            0});
-            this.hideLinesNumericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.hideLinesNumericUpDown.Name = "hideLinesNumericUpDown";
-            this.hideLinesNumericUpDown.Size = new System.Drawing.Size(49, 20);
-            this.hideLinesNumericUpDown.TabIndex = 3;
-            this.hideLinesNumericUpDown.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
             // noteModeSizeXNumericUpDown
             // 
             this.noteModeSizeXNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
@@ -2177,7 +2248,7 @@ namespace DtPad
             0});
             this.noteModeSizeXNumericUpDown.Name = "noteModeSizeXNumericUpDown";
             this.noteModeSizeXNumericUpDown.Size = new System.Drawing.Size(75, 20);
-            this.noteModeSizeXNumericUpDown.TabIndex = 7;
+            this.noteModeSizeXNumericUpDown.TabIndex = 2;
             this.noteModeSizeXNumericUpDown.Value = new decimal(new int[] {
             100,
             0,
@@ -2200,71 +2271,49 @@ namespace DtPad
             0});
             this.noteModeSizeYNumericUpDown.Name = "noteModeSizeYNumericUpDown";
             this.noteModeSizeYNumericUpDown.Size = new System.Drawing.Size(75, 20);
-            this.noteModeSizeYNumericUpDown.TabIndex = 6;
+            this.noteModeSizeYNumericUpDown.TabIndex = 4;
             this.noteModeSizeYNumericUpDown.Value = new decimal(new int[] {
             100,
             0,
             0,
             0});
             // 
-            // recentFilesNumberNumericUpDown
+            // noteModeInfoLabel
             // 
-            this.recentFilesNumberNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
-            this.recentFilesNumberNumericUpDown.Location = new System.Drawing.Point(120, 18);
-            this.recentFilesNumberNumericUpDown.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.recentFilesNumberNumericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.recentFilesNumberNumericUpDown.Name = "recentFilesNumberNumericUpDown";
-            this.recentFilesNumberNumericUpDown.Size = new System.Drawing.Size(44, 20);
-            this.recentFilesNumberNumericUpDown.TabIndex = 1;
-            this.recentFilesNumberNumericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.noteModeInfoLabel.Location = new System.Drawing.Point(10, 81);
+            this.noteModeInfoLabel.Name = "noteModeInfoLabel";
+            this.noteModeInfoLabel.Size = new System.Drawing.Size(323, 46);
+            this.noteModeInfoLabel.TabIndex = 5;
+            this.noteModeInfoLabel.Text = "Note: to enable the note mode, click with mouse right botton over a tab of the ma" +
+    "in text editing area, and select \"Show As Note On Top\".";
             // 
-            // proxyPortNumericUpDown
+            // noteModeSizeXLabel
             // 
-            this.proxyPortNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
-            this.proxyPortNumericUpDown.Location = new System.Drawing.Point(74, 170);
-            this.proxyPortNumericUpDown.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.proxyPortNumericUpDown.Name = "proxyPortNumericUpDown";
-            this.proxyPortNumericUpDown.Size = new System.Drawing.Size(77, 20);
-            this.proxyPortNumericUpDown.TabIndex = 12;
+            this.noteModeSizeXLabel.AutoSize = true;
+            this.noteModeSizeXLabel.Location = new System.Drawing.Point(240, 43);
+            this.noteModeSizeXLabel.Name = "noteModeSizeXLabel";
+            this.noteModeSizeXLabel.Size = new System.Drawing.Size(12, 13);
+            this.noteModeSizeXLabel.TabIndex = 3;
+            this.noteModeSizeXLabel.Text = "x";
             // 
-            // searchHistoryNumericUpDown
+            // noteModeSizeLabel
             // 
-            this.searchHistoryNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
-            this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(120, 92);
-            this.searchHistoryNumericUpDown.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.searchHistoryNumericUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.searchHistoryNumericUpDown.Name = "searchHistoryNumericUpDown";
-            this.searchHistoryNumericUpDown.Size = new System.Drawing.Size(44, 20);
-            this.searchHistoryNumericUpDown.TabIndex = 4;
-            this.searchHistoryNumericUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.noteModeSizeLabel.AutoSize = true;
+            this.noteModeSizeLabel.Location = new System.Drawing.Point(10, 43);
+            this.noteModeSizeLabel.Name = "noteModeSizeLabel";
+            this.noteModeSizeLabel.Size = new System.Drawing.Size(95, 13);
+            this.noteModeSizeLabel.TabIndex = 1;
+            this.noteModeSizeLabel.Text = "Window size (x, y):";
+            // 
+            // noteModeTabsCheckBox
+            // 
+            this.noteModeTabsCheckBox.AutoSize = true;
+            this.noteModeTabsCheckBox.Location = new System.Drawing.Point(10, 20);
+            this.noteModeTabsCheckBox.Name = "noteModeTabsCheckBox";
+            this.noteModeTabsCheckBox.Size = new System.Drawing.Size(107, 17);
+            this.noteModeTabsCheckBox.TabIndex = 0;
+            this.noteModeTabsCheckBox.Text = "Enable tabs view";
+            this.noteModeTabsCheckBox.UseVisualStyleBackColor = true;
             // 
             // Options
             // 
@@ -2277,6 +2326,14 @@ namespace DtPad
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.applyButton);
+            this.Controls.Add(this.filePanel);
+            this.Controls.Add(this.updatePanel);
+            this.Controls.Add(this.dropboxPanel);
+            this.Controls.Add(this.shellPanel);
+            this.Controls.Add(this.lookAndFeelPanel);
+            this.Controls.Add(this.internetPanel);
+            this.Controls.Add(this.openingPanel);
+            this.Controls.Add(this.searchPanel);
             this.Controls.Add(this.formatPanel);
             this.Controls.Add(this.encodingPanel);
             this.Controls.Add(this.viewPanel);
@@ -2285,14 +2342,6 @@ namespace DtPad
             this.Controls.Add(this.tabPanel);
             this.Controls.Add(this.savingPanel);
             this.Controls.Add(this.noteModePanel);
-            this.Controls.Add(this.filePanel);
-            this.Controls.Add(this.updatePanel);
-            this.Controls.Add(this.dropboxPanel);
-            this.Controls.Add(this.shellPanel);
-            this.Controls.Add(this.openingPanel);
-            this.Controls.Add(this.lookAndFeelPanel);
-            this.Controls.Add(this.internetPanel);
-            this.Controls.Add(this.searchPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2306,7 +2355,10 @@ namespace DtPad
             this.searchPanel.ResumeLayout(false);
             this.searchGroupBox1.ResumeLayout(false);
             this.searchGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.searchHistoryNumericUpDown)).EndInit();
             this.numberContextMenuStrip.ResumeLayout(false);
+            this.searchGroupBox2.ResumeLayout(false);
+            this.searchGroupBox2.PerformLayout();
             this.formatPanel.ResumeLayout(false);
             this.formatGroupBox1.ResumeLayout(false);
             this.formatGroupBox1.PerformLayout();
@@ -2322,10 +2374,12 @@ namespace DtPad
             this.viewGroupBox2.PerformLayout();
             this.viewGroupBox3.ResumeLayout(false);
             this.viewGroupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hideLinesNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.helpHideLinesPictureBox)).EndInit();
             this.internetPanel.ResumeLayout(false);
             this.internetGroupBox1.ResumeLayout(false);
             this.internetGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proxyPortNumericUpDown)).EndInit();
             this.contentContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.infoProxyPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).EndInit();
@@ -2340,6 +2394,7 @@ namespace DtPad
             this.fileGroupBox1.PerformLayout();
             this.fileGroupBox2.ResumeLayout(false);
             this.fileGroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.recentFilesNumberNumericUpDown)).EndInit();
             this.encodingPanel.ResumeLayout(false);
             this.encodingGroupBox1.ResumeLayout(false);
             this.encodingGroupBox1.PerformLayout();
@@ -2378,12 +2433,8 @@ namespace DtPad
             this.noteModePanel.ResumeLayout(false);
             this.noteModeGroupBox1.ResumeLayout(false);
             this.noteModeGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hideLinesNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeXNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeYNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.recentFilesNumberNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.proxyPortNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchHistoryNumericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2569,5 +2620,9 @@ namespace DtPad
         private System.Windows.Forms.Label noteModeInfoLabel;
         private Customs.CustomNumericUpDown noteModeSizeXNumericUpDown;
         private Customs.CustomNumericUpDown noteModeSizeYNumericUpDown;
+        private System.Windows.Forms.GroupBox searchGroupBox2;
+        private System.Windows.Forms.RadioButton searchReturnRadioButton2;
+        private System.Windows.Forms.RadioButton searchReturnRadioButton1;
+        private System.Windows.Forms.Label searchReturnLabel;
     }
 }

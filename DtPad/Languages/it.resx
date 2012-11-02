@@ -4447,4 +4447,16 @@ Seleziona nuovamente i tab per procedere.</value>
   <data name="UrlEntry_Title_FavouriteMode" xml:space="preserve">
     <value>URL preferito</value>
   </data>
+  <data name="Options_searchGroupBox2" xml:space="preserve">
+    <value>Tastiera</value>
+  </data>
+  <data name="Options_searchReturnLabel" xml:space="preserve">
+    <value>Quando viene premuto INVIO nei campi di ricerca e sostituzione:</value>
+  </data>
+  <data name="Options_searchReturnRadioButton1" xml:space="preserve">
+    <value>Avvia la ricerca</value>
+  </data>
+  <data name="Options_searchReturnRadioButton2" xml:space="preserve">
+    <value>Inserisci un a-capo</value>
+  </data>
 </root>
