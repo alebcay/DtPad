@@ -249,7 +249,6 @@
             this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.searchTextBox.Size = new System.Drawing.Size(615, 38);
             this.searchTextBox.TabIndex = 0;
-            this.searchTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(searchTextBox_KeyDown);
             // 
             // replaceTextBox
             // 
@@ -260,7 +259,6 @@
             this.replaceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.replaceTextBox.Size = new System.Drawing.Size(615, 37);
             this.replaceTextBox.TabIndex = 1;
-            this.replaceTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(replaceTextBox_KeyDown);
             // 
             // rightSearchReplacePanel
             // 

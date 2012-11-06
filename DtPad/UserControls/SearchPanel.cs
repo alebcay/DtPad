@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using DtPad.Customs;
 using DtPad.Exceptions;
 using DtPad.Managers;
 using DtPad.Utils;
@@ -12,18 +13,11 @@ namespace DtPad.UserControls
     /// <author>Marco Macciò</author>
     internal partial class SearchPanel : UserControl
     {
-        internal ReturnAction returnAction;
-
-        internal enum ReturnAction
-        {
-            StartSearch,
-            InsertCR
-        }
-
         internal SearchPanel()
         {
             InitializeComponent();
-            returnAction = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? ReturnAction.StartSearch : ReturnAction.InsertCR;
+            searchTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
+            replaceTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
         }
 
         #region Window Methods
@@ -74,16 +68,6 @@ namespace DtPad.UserControls
             //{
             //    StringUtil.ClearHighlightsResults(form);
             //}
-        }
-
-        private void searchTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            ManageReturns(e, searchTextBox);
-        }
-
-        private void replaceTextBox_KeyDown(object sender, KeyEventArgs e)
-        {
-            ManageReturns(e, replaceTextBox);
         }
 
         #endregion Window Methods
@@ -177,41 +161,5 @@ namespace DtPad.UserControls
         }
 
         #endregion Multilanguage Methods
-
-        #region Private Methods
-
-        private void ManageReturns(KeyEventArgs e, TextBoxBase textBox)
-        {
-            Form1 form = (Form1)ParentForm;
-
-            switch (returnAction)
-            {
-                case ReturnAction.StartSearch:
-                    String initialText = textBox.Text;
-                    if (e.KeyCode == Keys.Enter && !e.Shift && !e.Alt && !e.Control)
-                    {
-                        e.SuppressKeyPress = true;
-                        e.Handled = true;
-
-                        SearchManager.SearchNextFactory(form);
-
-                        textBox.Text = initialText;
-                        textBox.Select(textBox.TextLength, 0);
-                        textBox.ScrollToCaret();
-                    }
-                    //else if (e.KeyCode == Keys.Enter && (e.Shift || e.Alt || e.Control))
-                    //{
-                    //    e.SuppressKeyPress = true;
-                    //    e.Handled = true;
-
-                    //    textBox.Text += Environment.NewLine;
-                    //    textBox.Select(textBox.TextLength, 0);
-                    //    textBox.ScrollToCaret();
-                    //}
-                    break;
-            }
-        }
-
-        #endregion Private Methods
     }
 }

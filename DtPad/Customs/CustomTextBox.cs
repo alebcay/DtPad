@@ -10,7 +10,24 @@ namespace DtPad.Customs
     /// <author>Marco Macciò</author>
     public class CustomTextBox : TextBox
     {
+        internal enum ReturnAction
+        {
+            InsertCR,
+            StartSearch
+        }
+
+        #region Internal Instance Fields
+
+        internal ReturnAction ReturnActionType { get; set; }
+
+        #endregion Internal Instance Fields
+
         #region Protected Methods
+
+        internal CustomTextBox()
+        {
+            ReturnActionType = ReturnAction.InsertCR;
+        }
 
         protected override void OnEnter(EventArgs e)
         {
@@ -82,6 +99,28 @@ namespace DtPad.Customs
                 TextManager.SelectAllControl(this);
                 e.Handled = true;
                 e.SuppressKeyPress = true;
+            }
+            else if ((e.KeyCode == Keys.Return || e.KeyCode == Keys.Enter) && !e.Shift && !e.Alt && !e.Control)
+            {
+                switch (ReturnActionType)
+                {
+                    case ReturnAction.StartSearch:
+                        String initialText = Text;
+                       
+                        SearchManager.SearchNextFactory(form);
+
+                        Text = initialText;
+                        Select(TextLength, 0);
+                        ScrollToCaret();
+
+                        e.Handled = true;
+                        e.SuppressKeyPress = true;
+                        break;
+
+                    default:
+                        base.OnKeyDown(e);
+                        break;
+                }
             }
             else
             {

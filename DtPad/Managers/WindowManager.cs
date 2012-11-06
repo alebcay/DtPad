@@ -8,7 +8,6 @@ using DevExpress.XtraTab;
 using DtControls;
 using DtPad.Customs;
 using DtPad.MessageBoxes;
-using DtPad.UserControls;
 using DtPad.Utils;
 using DtPad.Validators;
 
@@ -531,10 +530,12 @@ namespace DtPad.Managers
             switch(ConfigUtil.GetIntParameter("SearchReturn"))
             {
                 case 0:
-                    form.searchPanel.returnAction = SearchPanel.ReturnAction.StartSearch;
+                    form.searchPanel.searchTextBox.ReturnActionType = CustomTextBox.ReturnAction.StartSearch;
+                    form.searchPanel.replaceTextBox.ReturnActionType = CustomTextBox.ReturnAction.StartSearch;
                     break;
                 case 1:
-                    form.searchPanel.returnAction = SearchPanel.ReturnAction.InsertCR;
+                    form.searchPanel.searchTextBox.ReturnActionType = CustomTextBox.ReturnAction.InsertCR;
+                    form.searchPanel.replaceTextBox.ReturnActionType = CustomTextBox.ReturnAction.InsertCR;
                     break;
             }
 
