@@ -506,6 +506,16 @@ namespace DtPadSetup {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] LumenWorks_Framework_IO_dll {
+            get {
+                object obj = ResourceManager.GetObject("LumenWorks_Framework_IO_dll", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Microsoft_WindowsAPICodePack_dll {
             get {
                 object obj = ResourceManager.GetObject("Microsoft_WindowsAPICodePack_dll", resourceCulture);

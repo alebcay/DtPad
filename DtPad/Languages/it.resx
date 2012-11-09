@@ -141,7 +141,7 @@ Icone secondarie di: Mark James, VistaIcons.
 - famfamfam.com
 - vistaicons.com
 
-Componenti esterni referenziati: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET.
+Componenti esterni referenziati: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET, CsvReader.
 - sharpdevelop.net/OpenSource/SharpZipLib
 - itextpdf.com
 - logging.apache.org/log4net
@@ -150,6 +150,7 @@ Componenti esterni referenziati: SharpZip, iTextSharp, Log4Net, Be.HexEditor, Xm
 - www.codeproject.com/KB/selection/MonthCalendar.aspx
 - sharpbox.codeplex.com
 - json.codeplex.com
+- www.codeproject.com/Articles/9258/A-Fast-CSV-Reader
 
 Servizio di traduzione e ricerca di: Google Inc.
 - google.it/language_tools
@@ -4458,5 +4459,58 @@ Seleziona nuovamente i tab per procedere.</value>
   </data>
   <data name="Options_searchReturnRadioButton2" xml:space="preserve">
     <value>Inserisci un a-capo</value>
+  </data>
+  <data name="CsvEditor_applyButton" xml:space="preserve">
+    <value>Applica modifiche</value>
+  </data>
+  <data name="CsvEditor_closeButton" xml:space="preserve">
+    <value>Chiudi</value>
+  </data>
+  <data name="CsvEditor_CloseConfirm" xml:space="preserve">
+    <value>Tutte le modifiche apportate andranno perse. Sei sicuro di voler procedere?</value>
+  </data>
+  <data name="CsvEditor_delimiterComboBoxItems" xml:space="preserve">
+    <value>
+, (virgola)
+. (punto)
+; (punto e virgola)
+- (trattino)</value>
+  </data>
+  <data name="CsvEditor_delimiterLabel" xml:space="preserve">
+    <value>Delimitatore:</value>
+  </data>
+  <data name="CsvEditor_headerCheckBox" xml:space="preserve">
+    <value>Intestazione inclusa</value>
+  </data>
+  <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
+    <value>
+" (doppi apici)
+' (apice singolo)</value>
+  </data>
+  <data name="CsvEditor_quoteLabel" xml:space="preserve">
+    <value>Testo:</value>
+  </data>
+  <data name="CsvEditor_settingsGroupBox" xml:space="preserve">
+    <value>Configurazione file</value>
+  </data>
+  <data name="CsvEditor_Title" xml:space="preserve">
+    <value>Editor CSV</value>
+  </data>
+  <data name="CsvManager_ContentError" xml:space="preserve">
+    <value>Il contenuto non è un CSV corretto e non può esser renderizzato dall'editor.
+Se ritieni che lo sia, segnala l'errore includendo il testo.</value>
+  </data>
+  <data name="CsvManager_NoResults" xml:space="preserve">
+    <value>Il delimitatore selezionato non ha prodotto risultati.
+Prova a selezionarne uno differente.</value>
+  </data>
+  <data name="CsvManager_StandardColumnLabel" xml:space="preserve">
+    <value>Colonna {0}</value>
+  </data>
+  <data name="Form1_csvEditorToolStripMenuItem" xml:space="preserve">
+    <value>Editor CSV</value>
+  </data>
+  <data name="Form1_csvEditorToolStripButton" xml:space="preserve">
+    <value>Editor CSV</value>
   </data>
 </root>

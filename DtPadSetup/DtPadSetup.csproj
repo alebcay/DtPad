@@ -275,6 +275,7 @@
     <Content Include="Files\ICSharpCode.SharpZipLib.dll" />
     <None Include="Files\itextsharp.dll" />
     <Content Include="Files\InternetCache\Info.txt" />
+    <Content Include="Files\LumenWorks.Framework.IO.dll" />
     <Content Include="Files\Microsoft.WindowsAPICodePack.dll" />
     <Content Include="Files\Microsoft.WindowsAPICodePack.Shell.dll" />
     <Content Include="Files\MonthCalendar.dll" />

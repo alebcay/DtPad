@@ -153,9 +153,10 @@ namespace DtPad
             this.toolStripSeparator44 = new System.Windows.Forms.ToolStripSeparator();
             this.showFileInBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exadecimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xmlTreeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.csvEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hostsFileConfiguratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.annotationPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xmlTreeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showHiddenCharsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator41 = new System.Windows.Forms.ToolStripSeparator();
             this.promptWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -378,6 +379,7 @@ namespace DtPad
             this.toolStripSeparator69 = new System.Windows.Forms.ToolStripSeparator();
             this.insertTagToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tagsTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.csvEditorToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.mergeTabsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.appendFileToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.moveLinesUpDownToolStripButton = new System.Windows.Forms.ToolStripSplitButton();
@@ -1419,9 +1421,10 @@ namespace DtPad
             this.toolStripSeparator44,
             this.showFileInBrowserToolStripMenuItem,
             this.exadecimalToolStripMenuItem,
+            this.xmlTreeToolStripMenuItem,
+            this.csvEditorToolStripMenuItem,
             this.hostsFileConfiguratorToolStripMenuItem,
             this.annotationPanelToolStripMenuItem,
-            this.xmlTreeToolStripMenuItem,
             this.showHiddenCharsToolStripMenuItem,
             this.toolStripSeparator41,
             this.promptWindowToolStripMenuItem});
@@ -1505,7 +1508,7 @@ namespace DtPad
             // 
             // showFileInBrowserToolStripMenuItem
             // 
-            this.showFileInBrowserToolStripMenuItem.Image = global::DtPad.ToolbarResource.world;
+            //this.showFileInBrowserToolStripMenuItem.Image = global::DtPad.ToolbarResource.world;
             this.showFileInBrowserToolStripMenuItem.Name = "showFileInBrowserToolStripMenuItem";
             this.showFileInBrowserToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.showFileInBrowserToolStripMenuItem.Text = "Show File in Browser";
@@ -1518,6 +1521,22 @@ namespace DtPad
             this.exadecimalToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.exadecimalToolStripMenuItem.Text = "Hexadecimal";
             this.exadecimalToolStripMenuItem.Click += new System.EventHandler(this.exadecimalToolStripMenuItem_Click);
+            // 
+            // xmlTreeToolStripMenuItem
+            // 
+            this.xmlTreeToolStripMenuItem.Image = global::DtPad.ToolbarResource.xhtml;
+            this.xmlTreeToolStripMenuItem.Name = "xmlTreeToolStripMenuItem";
+            this.xmlTreeToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.xmlTreeToolStripMenuItem.Text = "XML Tree";
+            this.xmlTreeToolStripMenuItem.Click += new System.EventHandler(this.xmlTreeToolStripMenuItem_Click);
+            // 
+            // csvEditorToolStripMenuItem
+            // 
+            this.csvEditorToolStripMenuItem.Image = global::DtPad.ToolbarResource.csv;
+            this.csvEditorToolStripMenuItem.Name = "csvEditorToolStripMenuItem";
+            this.csvEditorToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.csvEditorToolStripMenuItem.Text = "CSV Editor";
+            this.csvEditorToolStripMenuItem.Click += new System.EventHandler(this.csvEditorToolStripMenuItem_Click);
             // 
             // hostsFileConfiguratorToolStripMenuItem
             // 
@@ -1534,13 +1553,6 @@ namespace DtPad
             this.annotationPanelToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.annotationPanelToolStripMenuItem.Text = "Annotation Panel";
             this.annotationPanelToolStripMenuItem.Click += new System.EventHandler(this.annotationPanelToolStripMenuItem_Click);
-            // 
-            // xmlTreeToolStripMenuItem
-            // 
-            this.xmlTreeToolStripMenuItem.Name = "xmlTreeToolStripMenuItem";
-            this.xmlTreeToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.xmlTreeToolStripMenuItem.Text = "XML Tree";
-            this.xmlTreeToolStripMenuItem.Click += new System.EventHandler(this.xmlTreeToolStripMenuItem_Click);
             // 
             // showHiddenCharsToolStripMenuItem
             // 
@@ -3104,6 +3116,7 @@ namespace DtPad
             this.indentToolStripButton,
             this.toolStripSeparator28,
             this.xmlToolsToolStripDropDownButton,
+            this.csvEditorToolStripButton,
             this.mergeTabsToolStripButton,
             this.appendFileToolStripButton,
             this.moveLinesUpDownToolStripButton,
@@ -3453,6 +3466,16 @@ namespace DtPad
             this.tagsTableToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.tagsTableToolStripMenuItem.Text = "Tags Table...";
             this.tagsTableToolStripMenuItem.Click += new System.EventHandler(this.tagsTableToolStripMenuItem_Click);
+            // 
+            // csvEditorToolStripButton
+            // 
+            this.csvEditorToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.csvEditorToolStripButton.Image = global::DtPad.ToolbarResource.csv;
+            this.csvEditorToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.csvEditorToolStripButton.Name = "csvEditorToolStripButton";
+            this.csvEditorToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.csvEditorToolStripButton.Text = "CSV Editor";
+            this.csvEditorToolStripButton.Click += new System.EventHandler(this.csvEditorToolStripButton_Click);
             // 
             // mergeTabsToolStripButton
             // 
@@ -4805,6 +4828,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem3;
         internal DtPad.UserControls.NotePanel notePanel;
         private System.Windows.Forms.ToolStripMenuItem exadecimalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem csvEditorToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator41;
         internal System.Windows.Forms.ToolStripStatusLabel insertModeToolStripStatusLabel;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator57;
@@ -4856,6 +4880,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripMenuItem xmlTreeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem showHiddenCharsToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton xmlToolsToolStripDropDownButton;
+        private System.Windows.Forms.ToolStripButton csvEditorToolStripButton;
         private System.Windows.Forms.ToolStripDropDownButton dropboxToolStripDropDownButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator64;
         private System.Windows.Forms.ToolStripMenuItem logoutFromDropboxToolStripMenuItem;

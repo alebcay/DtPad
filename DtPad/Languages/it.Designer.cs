@@ -537,6 +537,131 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Applica modifiche.
+        /// </summary>
+        internal static string CsvEditor_applyButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_applyButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chiudi.
+        /// </summary>
+        internal static string CsvEditor_closeButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_closeButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tutte le modifiche apportate andranno perse. Sei sicuro di voler procedere?.
+        /// </summary>
+        internal static string CsvEditor_CloseConfirm {
+            get {
+                return ResourceManager.GetString("CsvEditor_CloseConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///, (virgola)
+        ///. (punto)
+        ///; (punto e virgola)
+        ///- (trattino).
+        /// </summary>
+        internal static string CsvEditor_delimiterComboBoxItems {
+            get {
+                return ResourceManager.GetString("CsvEditor_delimiterComboBoxItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delimitatore:.
+        /// </summary>
+        internal static string CsvEditor_delimiterLabel {
+            get {
+                return ResourceManager.GetString("CsvEditor_delimiterLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Intestazione inclusa.
+        /// </summary>
+        internal static string CsvEditor_headerCheckBox {
+            get {
+                return ResourceManager.GetString("CsvEditor_headerCheckBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///&quot; (doppi apici)
+        ///&apos; (apice singolo).
+        /// </summary>
+        internal static string CsvEditor_quoteComboBoxItems {
+            get {
+                return ResourceManager.GetString("CsvEditor_quoteComboBoxItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Testo:.
+        /// </summary>
+        internal static string CsvEditor_quoteLabel {
+            get {
+                return ResourceManager.GetString("CsvEditor_quoteLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configurazione file.
+        /// </summary>
+        internal static string CsvEditor_settingsGroupBox {
+            get {
+                return ResourceManager.GetString("CsvEditor_settingsGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editor CSV.
+        /// </summary>
+        internal static string CsvEditor_Title {
+            get {
+                return ResourceManager.GetString("CsvEditor_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Il contenuto non è un CSV corretto e non può esser renderizzato dall&apos;editor.
+        ///Se ritieni che lo sia, segnala l&apos;errore includendo il testo..
+        /// </summary>
+        internal static string CsvManager_ContentError {
+            get {
+                return ResourceManager.GetString("CsvManager_ContentError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Il delimitatore selezionato non ha prodotto risultati.
+        ///Prova a selezionarne uno differente..
+        /// </summary>
+        internal static string CsvManager_NoResults {
+            get {
+                return ResourceManager.GetString("CsvManager_NoResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colonna {0}.
+        /// </summary>
+        internal static string CsvManager_StandardColumnLabel {
+            get {
+                return ResourceManager.GetString("CsvManager_StandardColumnLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chiudi il pannello.
         /// </summary>
         internal static string CustomFilesManager_ClosePanel {
@@ -3587,6 +3712,24 @@ namespace DtPad.Languages {
         internal static string Form1_countOccurencesToolStripMenuItem {
             get {
                 return ResourceManager.GetString("Form1_countOccurencesToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editor CSV.
+        /// </summary>
+        internal static string Form1_csvEditorToolStripButton {
+            get {
+                return ResourceManager.GetString("Form1_csvEditorToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editor CSV.
+        /// </summary>
+        internal static string Form1_csvEditorToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_csvEditorToolStripMenuItem", resourceCulture);
             }
         }
         

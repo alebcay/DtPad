@@ -65,7 +65,8 @@ namespace DtPadSetup.Managers
                                  FileResource.DtControls_dll.Length + FileResource.itextsharp_dll.Length + FileResource.Info_txt.Length + FileResource.DtPadUninstaller_exe.Length + FileResource.DtPad_exe_rs.Length +
                                  FileResource.DtPad_exe_tm.Length + FileResource.Be_Windows_Forms_HexBox_dll.Length + FileResource.DtPad_exe_rp.Length + FileResource.DtPad_exe_ru.Length + FileResource.XmlGridControl_dll.Length +
                                  FileResource.MonthCalendar_dll.Length + FileResource.AppLimit_CloudComputing_SharpBox_Net40_dll.Length + FileResource.Newtonsoft_Json_dll.Length + FileResource.Microsoft_WindowsAPICodePack_dll.Length +
-                                 FileResource.Microsoft_WindowsAPICodePack_Shell_dll.Length + FileResource.NHunspell_dll.Length + FileResource.Hunspellx86_dll.Length + FileResource.Hunspellx64_dll.Length;
+                                 FileResource.Microsoft_WindowsAPICodePack_Shell_dll.Length + FileResource.NHunspell_dll.Length + FileResource.Hunspellx86_dll.Length + FileResource.Hunspellx64_dll.Length +
+                                 FileResource.LumenWorks_Framework_IO_dll.Length;
                                 //+ GuideResource.DtPadGuide_en_dhg.Length + GuideResource.DtPadGuide_it_dhg.Length;
 
             double requiredMbSpace = (requiredSpace / 1024f) / 1024f;
@@ -154,6 +155,7 @@ namespace DtPadSetup.Managers
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Hunspellx86.dll"), FileResource.Hunspellx86_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Hunspellx64.dll"), FileResource.Hunspellx64_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "NHunspell.dll"), FileResource.NHunspell_dll);
+                WriteFileAndSetPermissions(Path.Combine(destinationPath, "LumenWorks.Framework.IO.dll"), FileResource.LumenWorks_Framework_IO_dll);
                 installProgressBar.PerformStep();
 
                 //Support files

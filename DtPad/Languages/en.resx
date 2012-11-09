@@ -141,7 +141,7 @@ Other icons by: Mark James, VistaIcons.
 - famfamfam.com
 - vistaicons.com
 
-External components referenced: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET.
+External components referenced: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET, CsvReader.
 - sharpdevelop.net/OpenSource/SharpZipLib
 - itextpdf.com
 - logging.apache.org/log4net
@@ -150,6 +150,7 @@ External components referenced: SharpZip, iTextSharp, Log4Net, Be.HexEditor, Xml
 - www.codeproject.com/KB/selection/MonthCalendar.aspx
 - sharpbox.codeplex.com
 - json.codeplex.com
+- www.codeproject.com/Articles/9258/A-Fast-CSV-Reader
 
 Translation and search service by: Google Inc.
 - google.com/language_tools
@@ -1834,7 +1835,7 @@ UTF-32 Little Endian</value>
     <value>Session "{0}" saved</value>
   </data>
   <data name="SessionManager_FileDialog" xml:space="preserve">
-    <value>DtPad session files (*.dps)|*.dps</value>
+    <value>DtPad session (*.dps)|*.dps</value>
   </data>
   <data name="SessionManager_AlreadyOpen" xml:space="preserve">
     <value>A session is already open. Do you want to discard it to open a new one?
@@ -4424,7 +4425,7 @@ Reselect interested tabs to proceed.</value>
     <value>Tabs Switch</value>
   </data>
   <data name="FavouriteManager_FileDialog" xml:space="preserve">
-    <value>DtPad session files (*.dps)|*.dps</value>
+    <value>DtPad session (*.dps)|*.dps</value>
   </data>
   <data name="Favourites_addFavouriteSessionButtonToolTip" xml:space="preserve">
     <value>Add new favourite session</value>
@@ -4449,5 +4450,58 @@ Reselect interested tabs to proceed.</value>
   </data>
   <data name="Options_searchReturnRadioButton2" xml:space="preserve">
     <value>Insert a carriage return</value>
+  </data>
+  <data name="CsvEditor_applyButton" xml:space="preserve">
+    <value>Apply changes</value>
+  </data>
+  <data name="CsvEditor_closeButton" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="CsvEditor_CloseConfirm" xml:space="preserve">
+    <value>All changes will get lost. Are you sure to proceed?</value>
+  </data>
+  <data name="CsvEditor_delimiterComboBoxItems" xml:space="preserve">
+    <value>
+, (comma)
+. (dot)
+; (semicolon)
+- (dash)</value>
+  </data>
+  <data name="CsvEditor_delimiterLabel" xml:space="preserve">
+    <value>Delimiter:</value>
+  </data>
+  <data name="CsvEditor_headerCheckBox" xml:space="preserve">
+    <value>Header present</value>
+  </data>
+  <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
+    <value>
+" (quotes)
+' (single quote)</value>
+  </data>
+  <data name="CsvEditor_quoteLabel" xml:space="preserve">
+    <value>Quote:</value>
+  </data>
+  <data name="CsvEditor_settingsGroupBox" xml:space="preserve">
+    <value>File configuration</value>
+  </data>
+  <data name="CsvEditor_Title" xml:space="preserve">
+    <value>CSV Editor</value>
+  </data>
+  <data name="CsvManager_ContentError" xml:space="preserve">
+    <value>The content is not a valid CSV and could not be rendered by the editor.
+If you think it is, make a report of this bug including the text.</value>
+  </data>
+  <data name="CsvManager_NoResults" xml:space="preserve">
+    <value>Selected delimiter does not produced results.
+Try to select another one.</value>
+  </data>
+  <data name="CsvManager_StandardColumnLabel" xml:space="preserve">
+    <value>Column {0}</value>
+  </data>
+  <data name="Form1_csvEditorToolStripMenuItem" xml:space="preserve">
+    <value>CSV Editor</value>
+  </data>
+  <data name="Form1_csvEditorToolStripButton" xml:space="preserve">
+    <value>CSV Editor</value>
   </data>
 </root>

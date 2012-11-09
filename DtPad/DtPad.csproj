@@ -93,6 +93,10 @@
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
     <Reference Include="itextsharp, Version=5.1.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" />
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="LumenWorks.Framework.IO, Version=3.8.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -128,6 +132,12 @@
     </Compile>
     <Compile Include="ColorSelect.Designer.cs">
       <DependentUpon>ColorSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsvEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsvEditor.Designer.cs">
+      <DependentUpon>CsvEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Customs\CustomComboBox.cs">
       <SubType>Component</SubType>
@@ -239,6 +249,7 @@
     <Compile Include="Managers\CalculationManager.cs" />
     <Compile Include="Managers\ClipboardToggleManager.cs" />
     <Compile Include="Managers\ColumnRulerManager.cs" />
+    <Compile Include="Managers\CsvManager.cs" />
     <Compile Include="Managers\CustomFilesManager.cs" />
     <Compile Include="Managers\DictionaryManager.cs" />
     <Compile Include="Managers\DropboxManager.cs" />
@@ -275,6 +286,7 @@
       <DependentUpon>NameEntry.cs</DependentUpon>
     </Compile>
     <Compile Include="Objects\ControlObject.cs" />
+    <Compile Include="Objects\CsvUndoHistory.cs" />
     <Compile Include="Objects\DropboxFSEObject.cs" />
     <Compile Include="Objects\PasswordObject.cs" />
     <Compile Include="Objects\TabPageObject.cs" />
@@ -536,6 +548,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ColorSelect.resx">
       <DependentUpon>ColorSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsvEditor.resx">
+      <DependentUpon>CsvEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary.resx">
       <DependentUpon>Dictionary.cs</DependentUpon>
@@ -935,6 +950,7 @@
     <None Include="Images\Toolbars\highlighter.png" />
     <None Include="Images\Toolbars\star-session.png" />
     <None Include="Images\Toolbars\convert-all.png" />
+    <Content Include="Images\Toolbars\csv.png" />
     <Content Include="Images\Toolbars\flag-esp.png" />
     <Content Include="Images\Toolbars\flag-fra.png" />
     <Content Include="Images\Toolbars\folder-32.gif" />
@@ -964,10 +980,12 @@
     <Content Include="Images\Toolbars\plus-session.png" />
     <Content Include="Images\Toolbars\plus-url.png" />
     <Content Include="Images\Toolbars\screenshot.png" />
+    <Content Include="Images\Toolbars\table-editor.png" />
     <Content Include="Images\Toolbars\url-small.png" />
     <Content Include="Images\Toolbars\zip-session.png" />
     <Content Include="Libraries\Hunspellx64.dll" />
     <Content Include="Libraries\Hunspellx86.dll" />
+    <Content Include="Libraries\LumenWorks.Framework.IO.dll" />
     <Content Include="Libraries\Newtonsoft.Json.dll" />
     <Content Include="Libraries\NHunspell.dll" />
     <Content Include="OtherFiles\License.txt" />

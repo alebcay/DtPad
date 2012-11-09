@@ -1278,6 +1278,11 @@ namespace DtPad
             WindowManager.ShowHexEditor(this);
         }
 
+        private void csvEditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WindowManager.ShowCsvEditor(this);
+        }
+
         private void duplicateLinesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SearchManager.SearchDuplicatedLines(this);
@@ -1757,6 +1762,11 @@ namespace DtPad
         private void tagsTableToolStripMenuItem_Click(object sender, EventArgs e)
         {
             WindowManager.ShowHtmlTags(this);
+        }
+
+        private void csvEditorToolStripButton_Click(object sender, EventArgs e)
+        {
+            WindowManager.ShowCsvEditor(this);
         }
 
         #endregion Toolbar Methods

@@ -397,6 +397,22 @@ namespace DtPad.Managers
             fileRename.Show(form);
         }
 
+        internal static void ShowCsvEditor(Form1 form)
+        {
+            CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(form.pagesTabControl.SelectedTabPage);
+
+            if (String.IsNullOrEmpty(pageTextBox.Text))
+            {
+                ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("TextEmpty", className));
+                return;
+            }
+
+            CsvEditor csvEditor = new CsvEditor { Owner = form };
+
+            csvEditor.InitializeForm();
+            csvEditor.Show(form);
+        }
+
         internal static void ShowSearchPattern(Form form)
         {
             SearchPattern searchPattern = new SearchPattern { Owner = form };
