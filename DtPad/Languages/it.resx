@@ -4477,18 +4477,19 @@ Seleziona nuovamente i tab per procedere.</value>
 - (trattino)</value>
   </data>
   <data name="CsvEditor_delimiterLabel" xml:space="preserve">
-    <value>Delimitatore:</value>
+    <value>Separatore:</value>
   </data>
   <data name="CsvEditor_headerCheckBox" xml:space="preserve">
     <value>Intestazione inclusa</value>
   </data>
   <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
     <value>
+[Nessun delimitatore testo]
 " (doppi apici)
 ' (apice singolo)</value>
   </data>
   <data name="CsvEditor_quoteLabel" xml:space="preserve">
-    <value>Testo:</value>
+    <value>Delimitatore testo:</value>
   </data>
   <data name="CsvEditor_settingsGroupBox" xml:space="preserve">
     <value>Configurazione file</value>
@@ -4501,7 +4502,7 @@ Seleziona nuovamente i tab per procedere.</value>
 Se ritieni che lo sia, segnala l'errore includendo il testo.</value>
   </data>
   <data name="CsvManager_NoResults" xml:space="preserve">
-    <value>Il delimitatore selezionato non ha prodotto risultati.
+    <value>Il separatore selezionato non ha prodotto risultati.
 Prova a selezionarne uno differente.</value>
   </data>
   <data name="CsvManager_StandardColumnLabel" xml:space="preserve">
@@ -4512,5 +4513,27 @@ Prova a selezionarne uno differente.</value>
   </data>
   <data name="Form1_csvEditorToolStripButton" xml:space="preserve">
     <value>Editor CSV</value>
+  </data>
+  <data name="CsvEditor_ResetChanges" xml:space="preserve">
+    <value>Se procedi, ogni modifica effettuata al CSV andrà persa.
+Sei sicuro di voler continuare?</value>
+  </data>
+  <data name="CsvEditor_addNewColumnToolStripButton" xml:space="preserve">
+    <value>Aggiungi una nuova colonna</value>
+  </data>
+  <data name="CsvEditor_addNewColumnToolStripTextBox" xml:space="preserve">
+    <value>Inserire nome nuova colonna</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedRowsToolStripMenuItem" xml:space="preserve">
+    <value>Cancella righe selezionate</value>
+  </data>
+  <data name="CsvEditor_undoAllToolStripMenuItem" xml:space="preserve">
+    <value>Annulla tutto</value>
+  </data>
+  <data name="CsvEditor_undoToolStripMenuItem" xml:space="preserve">
+    <value>Annulla ultima azione</value>
+  </data>
+  <data name="CsvEditor_undoToolStripSplitButton" xml:space="preserve">
+    <value>Annulla ultima azione</value>
   </data>
 </root>

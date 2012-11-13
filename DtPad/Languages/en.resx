@@ -4475,11 +4475,12 @@ Reselect interested tabs to proceed.</value>
   </data>
   <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
     <value>
+[No text quote]
 " (quotes)
 ' (single quote)</value>
   </data>
   <data name="CsvEditor_quoteLabel" xml:space="preserve">
-    <value>Quote:</value>
+    <value>Text quote:</value>
   </data>
   <data name="CsvEditor_settingsGroupBox" xml:space="preserve">
     <value>File configuration</value>
@@ -4503,5 +4504,27 @@ Try to select another one.</value>
   </data>
   <data name="Form1_csvEditorToolStripButton" xml:space="preserve">
     <value>CSV Editor</value>
+  </data>
+  <data name="CsvEditor_ResetChanges" xml:space="preserve">
+    <value>If you proceed, any changes you made to the CSV will get lost.
+Are you sure to continue?</value>
+  </data>
+  <data name="CsvEditor_addNewColumnToolStripButton" xml:space="preserve">
+    <value>Add New Column</value>
+  </data>
+  <data name="CsvEditor_addNewColumnToolStripTextBox" xml:space="preserve">
+    <value>Insert new column name</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedRowsToolStripMenuItem" xml:space="preserve">
+    <value>Delete Selected Rows</value>
+  </data>
+  <data name="CsvEditor_undoAllToolStripMenuItem" xml:space="preserve">
+    <value>Undo All</value>
+  </data>
+  <data name="CsvEditor_undoToolStripMenuItem" xml:space="preserve">
+    <value>Undo Last Action</value>
+  </data>
+  <data name="CsvEditor_undoToolStripSplitButton" xml:space="preserve">
+    <value>Undo Last Action</value>
   </data>
 </root>

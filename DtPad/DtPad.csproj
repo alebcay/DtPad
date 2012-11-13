@@ -950,6 +950,7 @@
     <None Include="Images\Toolbars\highlighter.png" />
     <None Include="Images\Toolbars\star-session.png" />
     <None Include="Images\Toolbars\convert-all.png" />
+    <Content Include="Images\Toolbars\add-column.png" />
     <Content Include="Images\Toolbars\csv.png" />
     <Content Include="Images\Toolbars\flag-esp.png" />
     <Content Include="Images\Toolbars\flag-fra.png" />

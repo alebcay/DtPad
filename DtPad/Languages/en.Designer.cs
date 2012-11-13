@@ -537,6 +537,24 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add New Column.
+        /// </summary>
+        internal static string CsvEditor_addNewColumnToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_addNewColumnToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insert new column name.
+        /// </summary>
+        internal static string CsvEditor_addNewColumnToolStripTextBox {
+            get {
+                return ResourceManager.GetString("CsvEditor_addNewColumnToolStripTextBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Apply changes.
         /// </summary>
         internal static string CsvEditor_applyButton {
@@ -560,6 +578,15 @@ namespace DtPad.Languages {
         internal static string CsvEditor_CloseConfirm {
             get {
                 return ResourceManager.GetString("CsvEditor_CloseConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Selected Rows.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedRowsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedRowsToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -596,6 +623,7 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to 
+        ///[No text quote]
         ///&quot; (quotes)
         ///&apos; (single quote).
         /// </summary>
@@ -606,11 +634,21 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Quote:.
+        ///   Looks up a localized string similar to Text quote:.
         /// </summary>
         internal static string CsvEditor_quoteLabel {
             get {
                 return ResourceManager.GetString("CsvEditor_quoteLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you proceed, any changes you made to the CSV will get lost.
+        ///Are you sure to continue?.
+        /// </summary>
+        internal static string CsvEditor_ResetChanges {
+            get {
+                return ResourceManager.GetString("CsvEditor_ResetChanges", resourceCulture);
             }
         }
         
@@ -629,6 +667,33 @@ namespace DtPad.Languages {
         internal static string CsvEditor_Title {
             get {
                 return ResourceManager.GetString("CsvEditor_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Undo All.
+        /// </summary>
+        internal static string CsvEditor_undoAllToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoAllToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Undo Last Action.
+        /// </summary>
+        internal static string CsvEditor_undoToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Undo Last Action.
+        /// </summary>
+        internal static string CsvEditor_undoToolStripSplitButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoToolStripSplitButton", resourceCulture);
             }
         }
         

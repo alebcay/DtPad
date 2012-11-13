@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
@@ -25,17 +26,17 @@ namespace DtPad.Managers
             Form1 form1 = (Form1)form.Owner;
             XtraTabControl pagesTabControl = form1.pagesTabControl;
             DataGridView csvGridView = form.csvGridView;
-            ContextMenuStrip contentContextMenuStrip = form.contentContextMenuStrip;
+            //ContextMenuStrip contentContextMenuStrip = form.contentContextMenuStrip;
 
-            Encoding fileEncoding = EncodingUtil.GetDefaultEncoding();
+            Encoding textEncoding = EncodingUtil.GetDefaultEncoding();
             String text = String.Empty;
             if (pagesTabControl != null)
             {
-                fileEncoding = TabUtil.GetTabTextEncoding(pagesTabControl.SelectedTabPage);
+                textEncoding = TabUtil.GetTabTextEncoding(pagesTabControl.SelectedTabPage);
                 text = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage).Text;
             }
 
-            byte[] byteArray = fileEncoding.GetBytes(text);
+            byte[] byteArray = textEncoding.GetBytes(text);
             using (MemoryStream stream = new MemoryStream(byteArray))
             {
                 try
@@ -51,16 +52,17 @@ namespace DtPad.Managers
                         }
 
                         //PutCsvReaderIntoDataGrid(csv, csvGridView);
+                        csvGridView.Columns.Clear();
                         csvGridView.DataSource = ConvertCsvReaderToDataTable(csv);
                     }
 
-                    for (int i = 0; i < csvGridView.Rows.Count; i++)
-                    {
-                        for (int j = 0; j < csvGridView.Rows[i].Cells.Count; j++)
-                        {
-                            csvGridView.Rows[i].Cells[j].ContextMenuStrip = contentContextMenuStrip;
-                        }
-                    }
+                    //for (int i = 0; i < csvGridView.Rows.Count; i++)
+                    //{
+                    //    for (int j = 0; j < csvGridView.Rows[i].Cells.Count; j++)
+                    //    {
+                    //        csvGridView.Rows[i].Cells[j].ContextMenuStrip = contentContextMenuStrip;
+                    //    }
+                    //}
                 }
                 catch (Exception exception)
                 {
@@ -106,36 +108,36 @@ namespace DtPad.Managers
             return csvDataTable;
         }
 
-        private static void PutCsvReaderIntoDataGrid(CsvReader csv, DataGridView csvGridView)
-        {
-            String[] csvHeaders = csv.GetFieldHeaders();
-            if (csvHeaders.Length > 0)
-            {
-                foreach (String csvHeader in csvHeaders)
-                {
-                    csvGridView.Columns.Add(csvHeader, csvHeader);
-                }
-            }
-            else
-            {
-                for (int i = 0; i < csv.FieldCount; i++)
-                {
-                    csvGridView.Columns.Add(String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), i), String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), i));
-                }
-            }
+        //private static void PutCsvReaderIntoDataGrid(CsvReader csv, DataGridView csvGridView)
+        //{
+        //    String[] csvHeaders = csv.GetFieldHeaders();
+        //    if (csvHeaders.Length > 0)
+        //    {
+        //        foreach (String csvHeader in csvHeaders)
+        //        {
+        //            csvGridView.Columns.Add(csvHeader, csvHeader);
+        //        }
+        //    }
+        //    else
+        //    {
+        //        for (int i = 0; i < csv.FieldCount; i++)
+        //        {
+        //            csvGridView.Columns.Add(String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), i), String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), i));
+        //        }
+        //    }
 
-            do
-            {
-                object[] csvRow = new object[csvGridView.Columns.Count];
+        //    do
+        //    {
+        //        object[] csvRow = new object[csvGridView.Columns.Count];
 
-                for (int i = 0; i < csv.FieldCount; i++)
-                {
-                    csvRow[i] = csv[i];
-                }
+        //        for (int i = 0; i < csv.FieldCount; i++)
+        //        {
+        //            csvRow[i] = csv[i];
+        //        }
 
-                csvGridView.Rows.Add(csvRow);
-            } while (csv.ReadNextRecord());
-        }
+        //        csvGridView.Rows.Add(csvRow);
+        //    } while (csv.ReadNextRecord());
+        //}
 
         #endregion Read Methods
         
@@ -150,12 +152,13 @@ namespace DtPad.Managers
             CheckBox headerCheckBox = form.headerCheckBox;
 
             String finalText = String.Empty;
+            String quoteStr = (quote == '\0') ? String.Empty : quote.ToString();
 
             if (headerCheckBox.Checked)
             {
                 for (int i = 0; i < csvGridView.Columns.Count; i++)
                 {
-                    finalText += quote + csvGridView.Columns[i].HeaderText + quote + delimiter;
+                    finalText += quoteStr + csvGridView.Columns[i].HeaderText + quoteStr + delimiter;
                 }
 
                 finalText = finalText.Substring(0, finalText.Length - 1) + ConstantUtil.newLine;
@@ -165,7 +168,14 @@ namespace DtPad.Managers
             {
                 for (int j = 0; j < csvGridView.Rows[i].Cells.Count; j++)
                 {
-                    finalText += quote + csvGridView.Rows[i].Cells[j].Value.ToString() + quote + delimiter;
+                    if (csvGridView.Rows[i].Cells[j].Value == null)
+                    {
+                        finalText += quoteStr + String.Empty + quoteStr + delimiter;
+                    }
+                    else
+                    {
+                        finalText += quoteStr + csvGridView.Rows[i].Cells[j].Value + quoteStr + delimiter;
+                    }
                 }
 
                 finalText = finalText.Substring(0, finalText.Length - 1) + ConstantUtil.newLine;
@@ -174,10 +184,37 @@ namespace DtPad.Managers
             finalText = finalText.Substring(0, finalText.Length - 1);
 
             pageTextBox.SelectAll();
-            pageTextBox.Text = finalText;
+            pageTextBox.SelectedText = finalText;
             TextManager.RefreshUndoRedoExternal(form1);
         }
 
         #endregion Write Methods
+
+        #region Other Methods
+
+        internal static void AddNewColumn(CsvEditor form)
+        {
+            DataGridView csvGridView = form.csvGridView;
+            ToolStripTextBox addNewColumnToolStripTextBox = form.addNewColumnToolStripTextBox;
+
+            if (addNewColumnToolStripTextBox.Enabled)
+            {
+                csvGridView.Columns.Add(addNewColumnToolStripTextBox.Text, addNewColumnToolStripTextBox.Text);
+            }
+            else
+            {
+                String columnName = String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), csvGridView.Columns.Count);
+                csvGridView.Columns.Add(columnName, columnName);
+            }
+        }
+
+        internal static bool IsNewColumnNameValorized(CsvEditor form)
+        {
+            ToolStripTextBox addNewColumnToolStripTextBox = form.addNewColumnToolStripTextBox;
+
+            return addNewColumnToolStripTextBox.ForeColor != SystemColors.ControlDark;
+        }
+
+        #endregion Other Methods
     }
 }

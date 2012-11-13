@@ -537,6 +537,24 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Aggiungi una nuova colonna.
+        /// </summary>
+        internal static string CsvEditor_addNewColumnToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_addNewColumnToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inserire nome nuova colonna.
+        /// </summary>
+        internal static string CsvEditor_addNewColumnToolStripTextBox {
+            get {
+                return ResourceManager.GetString("CsvEditor_addNewColumnToolStripTextBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Applica modifiche.
         /// </summary>
         internal static string CsvEditor_applyButton {
@@ -564,6 +582,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancella righe selezionate.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedRowsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedRowsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 
         ///, (virgola)
         ///. (punto)
@@ -577,7 +604,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delimitatore:.
+        ///   Looks up a localized string similar to Separatore:.
         /// </summary>
         internal static string CsvEditor_delimiterLabel {
             get {
@@ -596,6 +623,7 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to 
+        ///[Nessun delimitatore testo]
         ///&quot; (doppi apici)
         ///&apos; (apice singolo).
         /// </summary>
@@ -606,11 +634,21 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Testo:.
+        ///   Looks up a localized string similar to Delimitatore testo:.
         /// </summary>
         internal static string CsvEditor_quoteLabel {
             get {
                 return ResourceManager.GetString("CsvEditor_quoteLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Se procedi, ogni modifica effettuata al CSV andrà persa.
+        ///Sei sicuro di voler continuare?.
+        /// </summary>
+        internal static string CsvEditor_ResetChanges {
+            get {
+                return ResourceManager.GetString("CsvEditor_ResetChanges", resourceCulture);
             }
         }
         
@@ -633,6 +671,33 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Annulla tutto.
+        /// </summary>
+        internal static string CsvEditor_undoAllToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoAllToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annulla ultima azione.
+        /// </summary>
+        internal static string CsvEditor_undoToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annulla ultima azione.
+        /// </summary>
+        internal static string CsvEditor_undoToolStripSplitButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoToolStripSplitButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Il contenuto non è un CSV corretto e non può esser renderizzato dall&apos;editor.
         ///Se ritieni che lo sia, segnala l&apos;errore includendo il testo..
         /// </summary>
@@ -643,7 +708,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Il delimitatore selezionato non ha prodotto risultati.
+        ///   Looks up a localized string similar to Il separatore selezionato non ha prodotto risultati.
         ///Prova a selezionarne uno differente..
         /// </summary>
         internal static string CsvManager_NoResults {
