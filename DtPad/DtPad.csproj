@@ -170,6 +170,9 @@
     <Compile Include="Customs\CustomToolStripMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Customs\CustomToolStripTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Customs\MainFontChangeArgs.cs" />
     <Compile Include="Customs\StringForm.cs">
       <SubType>Form</SubType>
@@ -952,6 +955,8 @@
     <None Include="Images\Toolbars\convert-all.png" />
     <Content Include="Images\Toolbars\add-column.png" />
     <Content Include="Images\Toolbars\csv.png" />
+    <Content Include="Images\Toolbars\delete-column.png" />
+    <Content Include="Images\Toolbars\delete-row.png" />
     <Content Include="Images\Toolbars\flag-esp.png" />
     <Content Include="Images\Toolbars\flag-fra.png" />
     <Content Include="Images\Toolbars\folder-32.gif" />

@@ -4536,4 +4536,31 @@ Sei sicuro di voler continuare?</value>
   <data name="CsvEditor_undoToolStripSplitButton" xml:space="preserve">
     <value>Annulla ultima azione</value>
   </data>
+  <data name="CsvEditor_allToolStripMenuItem" xml:space="preserve">
+    <value>Tutto</value>
+  </data>
+  <data name="CsvEditor_currentColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Colonne attuali</value>
+  </data>
+  <data name="CsvEditor_currentRowsToolStripMenuItem" xml:space="preserve">
+    <value>Righe attuali</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedColumnsToolStripButton" xml:space="preserve">
+    <value>Cancella colonne selezionate</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Cancella colonne selezionate</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedRowsToolStripButton" xml:space="preserve">
+    <value>Cancella righe selezionate</value>
+  </data>
+  <data name="CsvEditor_selectCurrentColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona colonne attuali</value>
+  </data>
+  <data name="CsvEditor_selectCurrentRowsToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona righe attuali</value>
+  </data>
+  <data name="CsvEditor_selectToolStripDropDownButton" xml:space="preserve">
+    <value>Seleziona...</value>
+  </data>
 </root>

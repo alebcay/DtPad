@@ -555,6 +555,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tutto.
+        /// </summary>
+        internal static string CsvEditor_allToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_allToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Applica modifiche.
         /// </summary>
         internal static string CsvEditor_applyButton {
@@ -578,6 +587,51 @@ namespace DtPad.Languages {
         internal static string CsvEditor_CloseConfirm {
             get {
                 return ResourceManager.GetString("CsvEditor_CloseConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colonne attuali.
+        /// </summary>
+        internal static string CsvEditor_currentColumnsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_currentColumnsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Righe attuali.
+        /// </summary>
+        internal static string CsvEditor_currentRowsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_currentRowsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancella colonne selezionate.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedColumnsToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedColumnsToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancella colonne selezionate.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedColumnsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedColumnsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancella righe selezionate.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedRowsToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedRowsToolStripButton", resourceCulture);
             }
         }
         
@@ -649,6 +703,33 @@ namespace DtPad.Languages {
         internal static string CsvEditor_ResetChanges {
             get {
                 return ResourceManager.GetString("CsvEditor_ResetChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleziona colonne attuali.
+        /// </summary>
+        internal static string CsvEditor_selectCurrentColumnsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectCurrentColumnsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleziona righe attuali.
+        /// </summary>
+        internal static string CsvEditor_selectCurrentRowsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectCurrentRowsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleziona....
+        /// </summary>
+        internal static string CsvEditor_selectToolStripDropDownButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectToolStripDropDownButton", resourceCulture);
             }
         }
         

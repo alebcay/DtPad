@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -6,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraTab;
 using DtPad.Customs;
+using DtPad.Objects;
 using DtPad.Utils;
 using LumenWorks.Framework.IO.Csv;
 
@@ -190,7 +192,7 @@ namespace DtPad.Managers
 
         #endregion Write Methods
 
-        #region Other Methods
+        #region Column Methods
 
         internal static void AddNewColumn(CsvEditor form)
         {
@@ -199,13 +201,18 @@ namespace DtPad.Managers
 
             if (addNewColumnToolStripTextBox.Enabled)
             {
-                csvGridView.Columns.Add(addNewColumnToolStripTextBox.Text, addNewColumnToolStripTextBox.Text);
+                ((DataTable)csvGridView.DataSource).Columns.Add(addNewColumnToolStripTextBox.Text, typeof(String));
+                //csvGridView.Columns.Add(addNewColumnToolStripTextBox.Text, addNewColumnToolStripTextBox.Text);
             }
             else
             {
                 String columnName = String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), csvGridView.Columns.Count);
-                csvGridView.Columns.Add(columnName, columnName);
+                ((DataTable)csvGridView.DataSource).Columns.Add(columnName, typeof(String));
+                //csvGridView.Columns.Add(columnName, columnName);
             }
+
+            csvGridView.CurrentCell = csvGridView.Rows[0].Cells[csvGridView.Columns.Count - 1];
+            SelectColumns(form, csvGridView.CurrentCell);
         }
 
         internal static bool IsNewColumnNameValorized(CsvEditor form)
@@ -215,6 +222,209 @@ namespace DtPad.Managers
             return addNewColumnToolStripTextBox.ForeColor != SystemColors.ControlDark;
         }
 
-        #endregion Other Methods
+        internal static DataTable MoveColumn(CsvEditor form, int startingIndex, int endingIndex)
+        {
+            DataGridView csvGridView = form.csvGridView;
+
+            DataTable modifiedCsvDataTable = ((DataTable)csvGridView.DataSource).Copy();
+            modifiedCsvDataTable.Columns[startingIndex].SetOrdinal(endingIndex);
+
+            return modifiedCsvDataTable;
+        }
+
+        internal static List<int> SelectColumns(CsvEditor form, DataGridViewSelectedCellCollection selectedCells)
+        {
+            DataGridView csvGridView = form.csvGridView;
+            ToolStripButton deleteSelectedColumnsToolStripButton = form.deleteSelectedColumnsToolStripButton;
+
+            csvGridView.ClearSelection();
+            List<int> columnIndexes = new List<int>();
+
+            foreach (DataGridViewCell cell in selectedCells)
+            {
+                for (int i = 0; i < csvGridView.RowCount; i++)
+                {
+                    csvGridView[cell.ColumnIndex, i].Selected = true;
+                }
+
+                columnIndexes.Add(cell.ColumnIndex);
+            }
+
+            deleteSelectedColumnsToolStripButton.Enabled = true;
+            return columnIndexes;
+        }
+        private static void SelectColumns(CsvEditor form, DataGridViewCell cell)
+        {
+            DataGridView csvGridView = form.csvGridView;
+            ToolStripButton deleteSelectedColumnsToolStripButton = form.deleteSelectedColumnsToolStripButton;
+
+            csvGridView.ClearSelection();
+            for (int i = 0; i < csvGridView.RowCount; i++)
+            {
+                csvGridView[cell.ColumnIndex, i].Selected = true;
+            }
+
+            deleteSelectedColumnsToolStripButton.Enabled = true;
+        }
+
+        internal static void DeleteSelectedColumns(CsvEditor form, List<int> selectedColumns)
+        {
+            DataGridView csvGridView = form.csvGridView;
+
+            DataTable modifiedCsvDataTable = ((DataTable)csvGridView.DataSource).Copy();
+            selectedColumns.Sort();
+            int[] selectedColumnsCopy = new int[selectedColumns.Count];
+            selectedColumns.CopyTo(selectedColumnsCopy);
+
+            for (int i = selectedColumnsCopy.Length - 1; i >= 0; i--)
+            {
+                modifiedCsvDataTable.Columns.RemoveAt(selectedColumnsCopy[i]);
+                csvGridView.Columns.RemoveAt(selectedColumnsCopy[i]);
+            }
+
+            AddUndo(form, modifiedCsvDataTable);
+        }
+
+        #endregion Column Methods
+
+        #region Row Methods
+
+        internal static List<int> SelectRows(CsvEditor form, DataGridViewSelectedCellCollection selectedCells)
+        {
+            DataGridView csvGridView = form.csvGridView;
+            ToolStripButton deleteSelectedRowsToolStripButton = form.deleteSelectedRowsToolStripButton;
+
+            csvGridView.ClearSelection();
+            List<int> rowsIndexes = new List<int>();
+
+            foreach (DataGridViewCell cell in selectedCells)
+            {
+                for (int i = 0; i < csvGridView.ColumnCount; i++)
+                {
+                    csvGridView[i, cell.RowIndex].Selected = true;
+                }
+
+                rowsIndexes.Add(cell.RowIndex);
+            }
+
+            deleteSelectedRowsToolStripButton.Enabled = true;
+            return rowsIndexes;
+        }
+
+        internal static void DeleteSelectedRows(CsvEditor form, List<int> selectedRows)
+        {
+            DataGridView csvGridView = form.csvGridView;
+
+            if (csvGridView.SelectedRows.Count > 0)
+            {
+                foreach (DataGridViewRow selectedRow in csvGridView.SelectedRows)
+                {
+                    if (!selectedRow.IsNewRow)
+                    {
+                        csvGridView.Rows.RemoveAt(selectedRow.Index);
+                    }
+                }
+            }
+            else if (selectedRows.Count > 0)
+            {
+                DataTable modifiedCsvDataTable = ((DataTable)csvGridView.DataSource).Copy();
+                selectedRows.Sort();
+                int[] selectedRowsCopy = new int[selectedRows.Count];
+                selectedRows.CopyTo(selectedRowsCopy);
+
+                for (int i = selectedRowsCopy.Length - 1; i >= 0; i--)
+                {
+                    modifiedCsvDataTable.Rows.RemoveAt(selectedRowsCopy[i]);
+                    csvGridView.Rows.RemoveAt(selectedRowsCopy[i]);
+                }
+
+                AddUndo(form, modifiedCsvDataTable);
+            }
+        }
+
+        #endregion Row Methods
+
+        #region Clipboard Methods
+
+        internal static void AddUndo(CsvEditor form, DataTable dataSource = null)
+        {
+            DataGridView csvGridView = form.csvGridView;
+            ComboBox delimiterComboBox = form.delimiterComboBox;
+            ComboBox quoteComboBox = form.quoteComboBox;
+            CheckBox headerCheckBox = form.headerCheckBox;
+
+            if (form.noAutomaticalActionForControls)
+            {
+                return;
+            }
+
+            if (dataSource == null)
+            {
+                dataSource = ((DataTable)csvGridView.DataSource).Copy();
+            }
+
+            //if (form.undoHistory.Count == 0 || !(form.undoHistory[form.undoHistory.Count - 1].CsvGridView.Equals(csvGridView.DataSource)))
+            //{
+            form.undoHistory.Add(new CsvUndoHistory(dataSource, delimiterComboBox.SelectedIndex, quoteComboBox.SelectedIndex, headerCheckBox.Checked));
+            ManageApplyButton(form);
+            //}
+        }
+
+        internal static void PerformUndo(CsvEditor form)
+        {
+            DataGridView csvGridView = form.csvGridView;
+            ComboBox delimiterComboBox = form.delimiterComboBox;
+            ComboBox quoteComboBox = form.quoteComboBox;
+            CheckBox headerCheckBox = form.headerCheckBox;
+
+            form.noAutomaticalActionForControls = true;
+
+            csvGridView.Columns.Clear();
+            csvGridView.DataSource = form.undoHistory[form.undoHistory.Count - 2].CsvGridView.Copy();
+            delimiterComboBox.SelectedIndex = form.undoHistory[form.undoHistory.Count - 2].DelimiterComboBox;
+            quoteComboBox.SelectedIndex = form.undoHistory[form.undoHistory.Count - 2].QuoteComboBox;
+            headerCheckBox.Checked = form.undoHistory[form.undoHistory.Count - 2].HeaderCheckBox;
+
+            form.undoHistory.RemoveAt(form.undoHistory.Count - 1);
+
+            form.noAutomaticalActionForControls = false;
+
+            ManageApplyButton(form);
+        }
+
+        internal static void ClearUndo(CsvEditor form)
+        {
+            Button applyButton = form.applyButton;
+            ToolStripSplitButton undoToolStripSplitButton = form.undoToolStripSplitButton;
+            ToolStripMenuItem undoToolStripMenuItem = form.undoToolStripMenuItem;
+
+            undoToolStripSplitButton.Enabled = false;
+            undoToolStripMenuItem.Enabled = false;
+            applyButton.Enabled = false;
+
+            form.undoHistory.RemoveRange(1, form.undoHistory.Count - 1);
+        }
+
+        internal static void ManageApplyButton(CsvEditor form)
+        {
+            Button applyButton = form.applyButton;
+            ToolStripSplitButton undoToolStripSplitButton = form.undoToolStripSplitButton;
+            ToolStripMenuItem undoToolStripMenuItem = form.undoToolStripMenuItem;
+
+            if (form.undoHistory.Count > 1) // || currentDelimiter != standardDelimiter || currentQuote != standardQuote)
+            {
+                applyButton.Enabled = true;
+                undoToolStripSplitButton.Enabled = true;
+                undoToolStripMenuItem.Enabled = true;
+            }
+            else
+            {
+                applyButton.Enabled = false;
+                undoToolStripSplitButton.Enabled = false;
+                undoToolStripMenuItem.Enabled = false;
+            }
+        }
+
+        #endregion Clipboard Methods
     }
 }

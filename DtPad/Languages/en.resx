@@ -4527,4 +4527,31 @@ Are you sure to continue?</value>
   <data name="CsvEditor_undoToolStripSplitButton" xml:space="preserve">
     <value>Undo Last Action</value>
   </data>
+  <data name="CsvEditor_allToolStripMenuItem" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="CsvEditor_currentColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Current Columns</value>
+  </data>
+  <data name="CsvEditor_currentRowsToolStripMenuItem" xml:space="preserve">
+    <value>Current Rows</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedColumnsToolStripButton" xml:space="preserve">
+    <value>Delete Selected Columns</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Delete Selected Columns</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedRowsToolStripButton" xml:space="preserve">
+    <value>Delete Selected Rows</value>
+  </data>
+  <data name="CsvEditor_selectCurrentColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Select Current Columns</value>
+  </data>
+  <data name="CsvEditor_selectCurrentRowsToolStripMenuItem" xml:space="preserve">
+    <value>Select Current Rows</value>
+  </data>
+  <data name="CsvEditor_selectToolStripDropDownButton" xml:space="preserve">
+    <value>Select...</value>
+  </data>
 </root>

@@ -410,7 +410,7 @@ namespace DtPad.Managers
             CsvEditor csvEditor = new CsvEditor { Owner = form };
 
             csvEditor.InitializeForm();
-            csvEditor.Show(form);
+            csvEditor.ShowDialog(form);
         }
 
         internal static void ShowSearchPattern(Form form)

@@ -72,6 +72,11 @@ namespace DtPad.Customs
 
         protected override void OnShown(EventArgs e)
         {
+            #if Debug
+                base.OnShown(e);
+                return;
+            #endif
+
             WindowManager.ShowWelcome(this);
             base.OnShown(e);
         }

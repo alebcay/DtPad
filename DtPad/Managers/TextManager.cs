@@ -772,7 +772,7 @@ namespace DtPad.Managers
         internal static void UndoControl(Control activeControl)
         {
             Type controlType = activeControl.GetType();
-            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox))
+            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox) || controlType == typeof(CustomToolStripTextBox))
             {
                 TextBox textBox = (TextBox)activeControl;
 
@@ -800,7 +800,7 @@ namespace DtPad.Managers
         {
             Type controlType = activeControl.GetType();
 
-            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox))
+            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox) || controlType == typeof(CustomToolStripTextBox))
             {
                 TextBox textBox = (TextBox)activeControl;
 
@@ -847,7 +847,7 @@ namespace DtPad.Managers
         {
             Type controlType = activeControl.GetType();
 
-            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox))
+            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox) || controlType == typeof(CustomToolStripTextBox))
             {
                 TextBox textBox = (TextBox)activeControl;
 
@@ -887,7 +887,7 @@ namespace DtPad.Managers
         {
             Type controlType = activeControl.GetType();
 
-            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox))
+            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox) || controlType == typeof(CustomToolStripTextBox))
             {
                 TextBox textBox = (TextBox)activeControl;
 
@@ -945,7 +945,7 @@ namespace DtPad.Managers
         {
             Type controlType = activeControl.GetType();
 
-            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox))
+            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox) || controlType == typeof(CustomToolStripTextBox))
             {
                 TextBox textBox = (TextBox)activeControl;
 
@@ -984,7 +984,7 @@ namespace DtPad.Managers
         {
             Type controlType = activeControl.GetType();
 
-            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox))
+            if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox) || controlType == typeof(CustomToolStripTextBox))
             {
                 TextBox textBox = (TextBox)activeControl;
 
