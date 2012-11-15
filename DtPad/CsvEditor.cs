@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using DtPad.Managers;
@@ -24,10 +25,13 @@ namespace DtPad
         internal bool noAutomaticalActionForControls;
         private bool resetQuestionMade;
         private bool columnMovementDone;
+        internal bool addingNewColumn;
 
-        internal List<CsvUndoHistory> undoHistory;
+        internal List<CsvUndoHistory> undoHistory = new List<CsvUndoHistory>();
         private List<int> selectedColumns = new List<int>();
         private List<int> selectedRows = new List<int>();
+
+        internal DataTable startingData;
 
         #region Window Methods
 
@@ -38,18 +42,13 @@ namespace DtPad
             currentDelimiter = standardDelimiter;
             currentQuote = standardQuote;
 
-            noAutomaticalActionForControls = true;
+            noAutomaticalActionForControls = true; //Needed until show event has ended
 
             delimiterComboBox.SelectedIndex = 1;
             quoteComboBox.SelectedIndex = 2;
             CsvManager.ReadCsv(this, headerCheckBox.Checked, currentDelimiter, currentQuote);
 
-            noAutomaticalActionForControls = false;
-
-            undoHistory = new List<CsvUndoHistory>();
-            CsvManager.AddUndo(this);
-
-            noAutomaticalActionForControls = true; //Needed until show event has ended
+            startingData = ((DataTable)csvGridView.DataSource).Copy();
         }
 
         protected override void OnShown(EventArgs e)
@@ -59,11 +58,6 @@ namespace DtPad
             noAutomaticalActionForControls = false; //Now I can free the flag
         }
 
-        private void csvGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        {
-            CsvManager.AddUndo(this);
-        }
-
         private void delimiterComboBox_TextChanged(object sender, EventArgs e)
         {
             if (noAutomaticalActionForControls || String.IsNullOrEmpty(delimiterComboBox.Text))
@@ -71,7 +65,7 @@ namespace DtPad
                 return;
             }
 
-            if (undoHistory.Count > 1)
+            if (undoHistory.Count > 0)
             {
                 if (resetQuestionMade || (WindowManager.ShowQuestionBox(this, LanguageUtil.GetCurrentLanguageString("ResetChanges", Name)) != DialogResult.No))
                 {
@@ -100,7 +94,7 @@ namespace DtPad
                 return;
             }
 
-            if (undoHistory.Count > 1)
+            if (undoHistory.Count > 0)
             {
                 if (resetQuestionMade || (WindowManager.ShowQuestionBox(this, LanguageUtil.GetCurrentLanguageString("ResetChanges", Name)) != DialogResult.No))
                 {
@@ -117,14 +111,7 @@ namespace DtPad
                 return;
             }
 
-            if (quoteComboBox.SelectedIndex != 1)
-            {
-                currentQuote = quoteComboBox.Text[0];
-            }
-            else
-            {
-                currentQuote = '\0';
-            }
+            currentQuote = quoteComboBox.SelectedIndex != 1 ? quoteComboBox.Text[0] : '\0';
             CsvManager.ReadCsv(this, headerCheckBox.Checked, currentDelimiter, currentQuote);
             //ClearUndo();
         }
@@ -133,7 +120,7 @@ namespace DtPad
         {
             if (!noAutomaticalActionForControls)
             {
-                if (undoHistory.Count > 1 && WindowManager.ShowQuestionBox(this, LanguageUtil.GetCurrentLanguageString("ResetChanges", Name)) == DialogResult.No)
+                if (undoHistory.Count > 0 && WindowManager.ShowQuestionBox(this, LanguageUtil.GetCurrentLanguageString("ResetChanges", Name)) == DialogResult.No)
                 {
                     noAutomaticalActionForControls = true;
                     headerCheckBox.Checked = !headerCheckBox.Checked;
@@ -194,14 +181,9 @@ namespace DtPad
         {
             if (e.Column.Index != e.Column.DisplayIndex && !columnMovementDone)
             {
-                CsvManager.AddUndo(this, CsvManager.MoveColumn(this, e.Column.Index, e.Column.DisplayIndex));
+                CsvManager.AddUndo(this);
                 columnMovementDone = true;
             }
-        }
-
-        private void csvGridView_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
-        {
-            columnMovementDone = false;
         }
 
         private void csvGridView_SelectionChanged(object sender, EventArgs e)
@@ -225,13 +207,31 @@ namespace DtPad
             deleteSelectedRowsToolStripButton.Enabled = (csvGridView.SelectedRows.Count > 0 || selectedRows.Count > 0);
         }
 
+        private void csvGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (!addingNewColumn)
+            {
+                CsvManager.AddUndo(this);
+            }
+        }
+
+        private void csvGridView_Sorted(object sender, EventArgs e)
+        {
+            CsvManager.AddUndo(this);
+        }
+
+        private void csvGridView_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            columnMovementDone = false;
+        }
+
         private void CsvEditor_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (undoHistory.Count > 1 && WindowManager.ShowQuestionBox(this, LanguageUtil.GetCurrentLanguageString("CloseConfirm", Name)) == DialogResult.Yes)
+            if (undoHistory.Count > 0 && WindowManager.ShowQuestionBox(this, LanguageUtil.GetCurrentLanguageString("CloseConfirm", Name)) == DialogResult.Yes)
             {
                 CsvManager.ClearUndo(this);
             }
-            else if (undoHistory.Count <= 1)
+            else if (undoHistory.Count == 0)
             {
                 CsvManager.ClearUndo(this);
             }
@@ -254,7 +254,7 @@ namespace DtPad
         {
             csvGridView.SuspendLayout();
 
-            while (undoHistory.Count > 1)
+            while (undoHistory.Count > 0)
             {
                 CsvManager.PerformUndo(this);
             }
@@ -315,8 +315,8 @@ namespace DtPad
 
         private void gridViewContextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
-            deleteSelectedColumnsToolStripMenuItem.Enabled = deleteSelectedColumnsToolStripButton.Enabled; //(selectedColumns.Count > 0);
-            deleteSelectedRowsToolStripMenuItem.Enabled = deleteSelectedRowsToolStripButton.Enabled; //(csvGridView.SelectedRows.Count > 0 || selectedRows.Count > 0);
+            deleteSelectedColumnsToolStripMenuItem.Enabled = deleteSelectedColumnsToolStripButton.Enabled;
+            deleteSelectedRowsToolStripMenuItem.Enabled = deleteSelectedRowsToolStripButton.Enabled;
         }
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)

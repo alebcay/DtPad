@@ -199,6 +199,9 @@ namespace DtPad.Managers
             DataGridView csvGridView = form.csvGridView;
             ToolStripTextBox addNewColumnToolStripTextBox = form.addNewColumnToolStripTextBox;
 
+            AddUndo(form);
+            form.addingNewColumn = true;
+
             if (addNewColumnToolStripTextBox.Enabled)
             {
                 ((DataTable)csvGridView.DataSource).Columns.Add(addNewColumnToolStripTextBox.Text, typeof(String));
@@ -213,6 +216,8 @@ namespace DtPad.Managers
 
             csvGridView.CurrentCell = csvGridView.Rows[0].Cells[csvGridView.Columns.Count - 1];
             SelectColumns(form, csvGridView.CurrentCell);
+
+            form.addingNewColumn = false;
         }
 
         internal static bool IsNewColumnNameValorized(CsvEditor form)
@@ -220,16 +225,6 @@ namespace DtPad.Managers
             ToolStripTextBox addNewColumnToolStripTextBox = form.addNewColumnToolStripTextBox;
 
             return addNewColumnToolStripTextBox.ForeColor != SystemColors.ControlDark;
-        }
-
-        internal static DataTable MoveColumn(CsvEditor form, int startingIndex, int endingIndex)
-        {
-            DataGridView csvGridView = form.csvGridView;
-
-            DataTable modifiedCsvDataTable = ((DataTable)csvGridView.DataSource).Copy();
-            modifiedCsvDataTable.Columns[startingIndex].SetOrdinal(endingIndex);
-
-            return modifiedCsvDataTable;
         }
 
         internal static List<int> SelectColumns(CsvEditor form, DataGridViewSelectedCellCollection selectedCells)
@@ -271,18 +266,16 @@ namespace DtPad.Managers
         {
             DataGridView csvGridView = form.csvGridView;
 
-            DataTable modifiedCsvDataTable = ((DataTable)csvGridView.DataSource).Copy();
+            AddUndo(form);
+
             selectedColumns.Sort();
             int[] selectedColumnsCopy = new int[selectedColumns.Count];
             selectedColumns.CopyTo(selectedColumnsCopy);
 
             for (int i = selectedColumnsCopy.Length - 1; i >= 0; i--)
             {
-                modifiedCsvDataTable.Columns.RemoveAt(selectedColumnsCopy[i]);
                 csvGridView.Columns.RemoveAt(selectedColumnsCopy[i]);
             }
-
-            AddUndo(form, modifiedCsvDataTable);
         }
 
         #endregion Column Methods
@@ -315,6 +308,8 @@ namespace DtPad.Managers
         {
             DataGridView csvGridView = form.csvGridView;
 
+            AddUndo(form);
+
             if (csvGridView.SelectedRows.Count > 0)
             {
                 foreach (DataGridViewRow selectedRow in csvGridView.SelectedRows)
@@ -327,18 +322,14 @@ namespace DtPad.Managers
             }
             else if (selectedRows.Count > 0)
             {
-                DataTable modifiedCsvDataTable = ((DataTable)csvGridView.DataSource).Copy();
                 selectedRows.Sort();
                 int[] selectedRowsCopy = new int[selectedRows.Count];
                 selectedRows.CopyTo(selectedRowsCopy);
 
                 for (int i = selectedRowsCopy.Length - 1; i >= 0; i--)
                 {
-                    modifiedCsvDataTable.Rows.RemoveAt(selectedRowsCopy[i]);
                     csvGridView.Rows.RemoveAt(selectedRowsCopy[i]);
                 }
-
-                AddUndo(form, modifiedCsvDataTable);
             }
         }
 
@@ -353,7 +344,7 @@ namespace DtPad.Managers
             ComboBox quoteComboBox = form.quoteComboBox;
             CheckBox headerCheckBox = form.headerCheckBox;
 
-            if (form.noAutomaticalActionForControls)
+            if (form.noAutomaticalActionForControls) // || csvGridView.IsCurrentCellInEditMode)
             {
                 return;
             }
@@ -363,11 +354,12 @@ namespace DtPad.Managers
                 dataSource = ((DataTable)csvGridView.DataSource).Copy();
             }
 
-            //if (form.undoHistory.Count == 0 || !(form.undoHistory[form.undoHistory.Count - 1].CsvGridView.Equals(csvGridView.DataSource)))
-            //{
-            form.undoHistory.Add(new CsvUndoHistory(dataSource, delimiterComboBox.SelectedIndex, quoteComboBox.SelectedIndex, headerCheckBox.Checked));
-            ManageApplyButton(form);
-            //}
+            if ((form.undoHistory.Count == 0 && !form.startingData.Equals(csvGridView.DataSource))
+                || !(form.undoHistory[form.undoHistory.Count - 1].CsvGridView.Equals(csvGridView.DataSource)))
+            {
+                form.undoHistory.Add(new CsvUndoHistory(dataSource, delimiterComboBox.SelectedIndex, quoteComboBox.SelectedIndex, headerCheckBox.Checked));
+                ManageApplyButton(form);
+            }
         }
 
         internal static void PerformUndo(CsvEditor form)
@@ -380,10 +372,10 @@ namespace DtPad.Managers
             form.noAutomaticalActionForControls = true;
 
             csvGridView.Columns.Clear();
-            csvGridView.DataSource = form.undoHistory[form.undoHistory.Count - 2].CsvGridView.Copy();
-            delimiterComboBox.SelectedIndex = form.undoHistory[form.undoHistory.Count - 2].DelimiterComboBox;
-            quoteComboBox.SelectedIndex = form.undoHistory[form.undoHistory.Count - 2].QuoteComboBox;
-            headerCheckBox.Checked = form.undoHistory[form.undoHistory.Count - 2].HeaderCheckBox;
+            csvGridView.DataSource = form.undoHistory[form.undoHistory.Count - 1].CsvGridView.Copy();
+            delimiterComboBox.SelectedIndex = form.undoHistory[form.undoHistory.Count - 1].DelimiterComboBox;
+            quoteComboBox.SelectedIndex = form.undoHistory[form.undoHistory.Count - 1].QuoteComboBox;
+            headerCheckBox.Checked = form.undoHistory[form.undoHistory.Count - 1].HeaderCheckBox;
 
             form.undoHistory.RemoveAt(form.undoHistory.Count - 1);
 
@@ -392,26 +384,44 @@ namespace DtPad.Managers
             ManageApplyButton(form);
         }
 
+        internal static void ClearLastUndo(CsvEditor form)
+        {
+            Button applyButton = form.applyButton;
+            ToolStripSplitButton undoToolStripSplitButton = form.undoToolStripSplitButton;
+            ToolStripMenuItem undoToolStripMenuItem = form.undoToolStripMenuItem;
+
+            if (form.undoHistory.Count == 0)
+            {
+                return;
+            }
+
+            form.undoHistory.RemoveAt(form.undoHistory.Count - 1);
+
+            undoToolStripSplitButton.Enabled = (form.undoHistory.Count > 0);
+            undoToolStripMenuItem.Enabled = (form.undoHistory.Count > 0);
+            applyButton.Enabled = (form.undoHistory.Count > 0);
+        }
+
         internal static void ClearUndo(CsvEditor form)
         {
             Button applyButton = form.applyButton;
             ToolStripSplitButton undoToolStripSplitButton = form.undoToolStripSplitButton;
             ToolStripMenuItem undoToolStripMenuItem = form.undoToolStripMenuItem;
 
+            form.undoHistory.Clear();
+
             undoToolStripSplitButton.Enabled = false;
             undoToolStripMenuItem.Enabled = false;
             applyButton.Enabled = false;
-
-            form.undoHistory.RemoveRange(1, form.undoHistory.Count - 1);
         }
 
-        internal static void ManageApplyButton(CsvEditor form)
+        private static void ManageApplyButton(CsvEditor form)
         {
             Button applyButton = form.applyButton;
             ToolStripSplitButton undoToolStripSplitButton = form.undoToolStripSplitButton;
             ToolStripMenuItem undoToolStripMenuItem = form.undoToolStripMenuItem;
 
-            if (form.undoHistory.Count > 1) // || currentDelimiter != standardDelimiter || currentQuote != standardQuote)
+            if (form.undoHistory.Count > 0)
             {
                 applyButton.Enabled = true;
                 undoToolStripSplitButton.Enabled = true;

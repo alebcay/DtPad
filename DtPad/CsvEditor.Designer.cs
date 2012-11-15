@@ -96,10 +96,11 @@
             this.csvGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.csvGridView.Size = new System.Drawing.Size(673, 376);
             this.csvGridView.TabIndex = 0;
+            this.csvGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.csvGridView_CellValueChanged);
             this.csvGridView.ColumnDisplayIndexChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.csvGridView_ColumnDisplayIndexChanged);
-            this.csvGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.csvGridView_DataBindingComplete);
             this.csvGridView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.csvGridView_RowPostPaint);
             this.csvGridView.SelectionChanged += new System.EventHandler(this.csvGridView_SelectionChanged);
+            this.csvGridView.Sorted += new System.EventHandler(this.csvGridView_Sorted);
             // 
             // gridViewContextMenuStrip
             // 
@@ -117,6 +118,7 @@
             // 
             // undoToolStripMenuItem
             // 
+            this.undoToolStripMenuItem.Enabled = false;
             this.undoToolStripMenuItem.Image = global::DtPad.ToolbarResource.arrow_left;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
@@ -216,7 +218,7 @@
             this.quoteComboBox.CustomContextMenuStrip = this.contentContextMenuStrip;
             this.quoteComboBox.FormattingEnabled = true;
             this.quoteComboBox.Items.AddRange(new object[] {
-            global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems,
+            global::DtPad.Languages.it.SearchPattern_historyComboBoxItems,
             "[Empty quote]",
             "\" (quotes)",
             "\' (single quote)"});
@@ -305,7 +307,7 @@
             this.delimiterComboBox.CustomContextMenuStrip = this.contentContextMenuStrip;
             this.delimiterComboBox.FormattingEnabled = true;
             this.delimiterComboBox.Items.AddRange(new object[] {
-            global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems,
+            global::DtPad.Languages.it.SearchPattern_historyComboBoxItems,
             ", (comma)",
             ". (dot)",
             "; (semicolon)",
@@ -339,6 +341,7 @@
             this.undoToolStripSplitButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.undoToolStripSplitButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.undoAllToolStripMenuItem});
+            this.undoToolStripSplitButton.Enabled = false;
             this.undoToolStripSplitButton.Image = global::DtPad.ToolbarResource.arrow_left;
             this.undoToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.undoToolStripSplitButton.Name = "undoToolStripSplitButton";
