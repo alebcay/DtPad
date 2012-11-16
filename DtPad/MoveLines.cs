@@ -19,7 +19,7 @@ namespace DtPad
         {
             InitializeComponent();
             LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
-            SetLanguage();
+            LanguageUtil.SetCurrentLanguage(this);
 
             Form1 form = (Form1)Owner;
 
@@ -137,12 +137,6 @@ namespace DtPad
                     lineNumericUpDown.Maximum = 0;
                 }
             }
-        }
-
-        private void SetLanguage()
-        {
-            LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, contentContextMenuStrip.Items);
         }
 
         #endregion Private Methods

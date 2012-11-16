@@ -128,7 +128,6 @@ namespace DtPad
         private void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, content2contextMenuStrip.Items);
             padTextToolTip.SetToolTip(absoluteWidthPictureBox, LanguageUtil.GetCurrentLanguageString("absoluteWidthPictureBoxToolTip", Name));
         }
 

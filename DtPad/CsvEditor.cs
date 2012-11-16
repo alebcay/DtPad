@@ -38,6 +38,9 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
+            LookFeelUtil.SetLookAndFeel(customContextMenuStrip);
+            LookFeelUtil.SetLookAndFeel(gridViewContextMenuStrip);
+            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
             SetLanguage();
             currentDelimiter = standardDelimiter;
             currentQuote = standardQuote;
@@ -358,11 +361,51 @@ namespace DtPad
 
         #endregion Context Menu Methods
 
+        #region Custom Context Menu Methods
+
+        private void customContextMenuStrip_Opening(object sender, CancelEventArgs e)
+        {
+            undoCustomToolStripMenuItem.Enabled = addNewColumnToolStripTextBox.CanUndo;
+        }
+
+        private void undoCustomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addNewColumnToolStripTextBox.Undo();
+        }
+
+        private void cutCustomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addNewColumnToolStripTextBox.Cut();
+        }
+
+        private void copyCustomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addNewColumnToolStripTextBox.Copy();
+        }
+
+        private void pasteCustomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addNewColumnToolStripTextBox.Paste();
+        }
+
+        private void deleteCustomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addNewColumnToolStripTextBox.SelectedText = String.Empty;
+        }
+
+        private void selectAllCustomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addNewColumnToolStripTextBox.SelectAll();
+        }
+
+        #endregion Custom Context Menu Methods
+
         #region Private Methods
 
         private void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
+            LanguageUtil.CicleControls(Name, customContextMenuStrip.Items);
             addNewColumnToolStripTextBox.Text = LanguageUtil.GetCurrentLanguageString("addNewColumnToolStripTextBox", Name);
         }
 

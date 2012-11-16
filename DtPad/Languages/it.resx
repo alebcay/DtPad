@@ -4563,4 +4563,40 @@ Sei sicuro di voler continuare?</value>
   <data name="CsvEditor_selectToolStripDropDownButton" xml:space="preserve">
     <value>Seleziona...</value>
   </data>
+  <data name="CsvEditor_copyCustomToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="CsvEditor_cutCustomToolStripMenuItem" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="CsvEditor_deleteCustomToolStripMenuItem" xml:space="preserve">
+    <value>Cancella</value>
+  </data>
+  <data name="CsvEditor_pasteCustomToolStripMenuItem" xml:space="preserve">
+    <value>Incolla</value>
+  </data>
+  <data name="CsvEditor_selectAllCustomToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="CsvEditor_undoCustomToolStripMenuItem" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="CsvEditor_copyToolStripMenuItem" xml:space="preserve">
+    <value>Copia</value>
+  </data>
+  <data name="CsvEditor_cutToolStripMenuItem" xml:space="preserve">
+    <value>Taglia</value>
+  </data>
+  <data name="CsvEditor_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Cancella</value>
+  </data>
+  <data name="CsvEditor_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Incolla</value>
+  </data>
+  <data name="CsvEditor_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
+  <data name="CsvEditor_undoToolStripMenuItem1" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
 </root>

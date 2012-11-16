@@ -27,7 +27,8 @@ namespace DtPad
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
-            Encoding encoding = String.IsNullOrEmpty(pageTextBox.CustomEncoding) ? EncodingUtil.GetDefaultEncoding() : TabUtil.GetTabTextEncoding(pagesTabControl.SelectedTabPage);
+            //Encoding encoding = String.IsNullOrEmpty(pageTextBox.CustomEncoding) ? EncodingUtil.GetDefaultEncoding() : TabUtil.GetTabTextEncoding(pagesTabControl.SelectedTabPage);
+            Encoding encoding = TabUtil.GetTabTextEncoding(pagesTabControl.SelectedTabPage);
 
             hexBox.ByteProvider = new DynamicByteProvider(encoding.GetBytes(pageTextBox.Text));
             hexBox.Font = pageTextBox.Font;
@@ -48,7 +49,7 @@ namespace DtPad
 
         #endregion Button Methods
 
-        #region ContextMenu Methods
+        #region Context Menu Methods
 
         private void copyToolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -65,9 +66,9 @@ namespace DtPad
             hexBox.SelectAll();
         }
 
-        #endregion ContextMenu Methods
+        #endregion Context Menu Methods
 
-        #region Multilanguage Methods
+        #region Private Methods
 
         private void SetLanguage()
         {
@@ -75,6 +76,6 @@ namespace DtPad
             LanguageUtil.CicleControls(Name, textMenuStrip.Items);
         }
 
-        #endregion Multilanguage Methods
+        #endregion Private Methods
     }
 }

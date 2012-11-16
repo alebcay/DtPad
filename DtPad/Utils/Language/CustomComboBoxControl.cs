@@ -14,14 +14,14 @@ namespace DtPad.Utils.Language
 
         internal static void ManageControl(Control control, String formName)
         {
-            CustomComboBox controlCustomCombo = ((CustomComboBox) control);
+            CustomComboBox controlCustomCombo = ((CustomComboBox)control);
 
             if (controlCustomCombo.CustomContextMenuStrip != null)
             {
                 LanguageUtil.CicleControls(formName, controlCustomCombo.CustomContextMenuStrip.Items);
             }
 
-            String items = LanguageUtil.GetCurrentLanguageString(String.Format("{0}Items", control.Name), formName);
+            String items = LanguageUtil.GetCurrentLanguageString(String.Format("{0}Items", controlCustomCombo.Name), formName);
             if (String.IsNullOrEmpty(items))
             {
                 return;

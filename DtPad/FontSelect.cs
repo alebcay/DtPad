@@ -20,7 +20,7 @@ namespace DtPad
         {
             InitializeComponent();
             LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
-            SetLanguage();
+            LanguageUtil.SetCurrentLanguage(this);
 
             if (Owner.GetType() == typeof(Form1))
             {
@@ -141,7 +141,7 @@ namespace DtPad
 
         #endregion Button Methods
 
-        #region ContextMenu Methods
+        #region Context Menu Methods
 
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -158,7 +158,7 @@ namespace DtPad
             TextManager.SelectAllControl(sizeNumericUpDown);
         }
 
-        #endregion ContextMenu Methods
+        #endregion Context Menu Methods
 
         #region Private Methods
 
@@ -175,12 +175,6 @@ namespace DtPad
             //}
 
             return (from object t in listBox.Items select Convert.ToDecimal(t)).Any(item => item == valueToSearch);
-        }
-
-        private void SetLanguage()
-        {
-            LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, contentContextMenuStrip.Items);
         }
 
         #endregion Private Methods

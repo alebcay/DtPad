@@ -18,7 +18,7 @@ namespace DtPad
         {
             InitializeComponent();
             LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
-            SetLanguage();
+            LanguageUtil.SetCurrentLanguage(this);
 
             Form1 form = (Form1)Owner;
 
@@ -56,7 +56,7 @@ namespace DtPad
 
         #endregion Button Methods
 
-        #region ContextMenu Methods
+        #region Context Menu Methods
 
         private void copyToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -94,16 +94,6 @@ namespace DtPad
             }
         }
 
-        #endregion ContextMenu Methods
-
-        #region Private Methods
-
-        private void SetLanguage()
-        {
-            LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, contentContextMenuStrip.Items);
-        }
-
-        #endregion Private Methods
+        #endregion Context Menu Methods
     }
 }

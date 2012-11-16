@@ -305,6 +305,10 @@ namespace DtPad.Utils
                     {
                         CustomComboBoxControl.ManageControl(control, formName);
                     }
+                    else if (controlType == typeof(CustomNumericUpDown))
+                    {
+                        CustomNumericUpDownControl.ManageControl(control, formName);
+                    }
                     else if (controlType == typeof(TreeView))
                     {
                         TreeViewControl.ManageControl(control, formName);

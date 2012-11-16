@@ -591,6 +591,24 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Copia.
+        /// </summary>
+        internal static string CsvEditor_copyCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_copyCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copia.
+        /// </summary>
+        internal static string CsvEditor_copyToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_copyToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Colonne attuali.
         /// </summary>
         internal static string CsvEditor_currentColumnsToolStripMenuItem {
@@ -605,6 +623,33 @@ namespace DtPad.Languages {
         internal static string CsvEditor_currentRowsToolStripMenuItem {
             get {
                 return ResourceManager.GetString("CsvEditor_currentRowsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taglia.
+        /// </summary>
+        internal static string CsvEditor_cutCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_cutCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taglia.
+        /// </summary>
+        internal static string CsvEditor_cutToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_cutToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancella.
+        /// </summary>
+        internal static string CsvEditor_deleteCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteCustomToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -645,6 +690,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancella.
+        /// </summary>
+        internal static string CsvEditor_deleteToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 
         ///, (virgola)
         ///. (punto)
@@ -676,6 +730,24 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Incolla.
+        /// </summary>
+        internal static string CsvEditor_pasteCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_pasteCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Incolla.
+        /// </summary>
+        internal static string CsvEditor_pasteToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_pasteToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 
         ///[Nessun delimitatore testo]
         ///&quot; (doppi apici)
@@ -703,6 +775,24 @@ namespace DtPad.Languages {
         internal static string CsvEditor_ResetChanges {
             get {
                 return ResourceManager.GetString("CsvEditor_ResetChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleziona tutto.
+        /// </summary>
+        internal static string CsvEditor_selectAllCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectAllCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seleziona tutto.
+        /// </summary>
+        internal static string CsvEditor_selectAllToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -761,11 +851,29 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Annulla.
+        /// </summary>
+        internal static string CsvEditor_undoCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Annulla ultima azione.
         /// </summary>
         internal static string CsvEditor_undoToolStripMenuItem {
             get {
                 return ResourceManager.GetString("CsvEditor_undoToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annulla.
+        /// </summary>
+        internal static string CsvEditor_undoToolStripMenuItem1 {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoToolStripMenuItem1", resourceCulture);
             }
         }
         

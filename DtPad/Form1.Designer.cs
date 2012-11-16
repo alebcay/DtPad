@@ -1526,6 +1526,7 @@ namespace DtPad
             // 
             this.xmlTreeToolStripMenuItem.Image = global::DtPad.ToolbarResource.xhtml;
             this.xmlTreeToolStripMenuItem.Name = "xmlTreeToolStripMenuItem";
+            this.xmlTreeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F7;
             this.xmlTreeToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.xmlTreeToolStripMenuItem.Text = "XML Tree";
             this.xmlTreeToolStripMenuItem.Click += new System.EventHandler(this.xmlTreeToolStripMenuItem_Click);
@@ -1534,6 +1535,7 @@ namespace DtPad
             // 
             this.csvEditorToolStripMenuItem.Image = global::DtPad.ToolbarResource.csv;
             this.csvEditorToolStripMenuItem.Name = "csvEditorToolStripMenuItem";
+            this.csvEditorToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F8;
             this.csvEditorToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.csvEditorToolStripMenuItem.Text = "CSV Editor";
             this.csvEditorToolStripMenuItem.Click += new System.EventHandler(this.csvEditorToolStripMenuItem_Click);

@@ -38,7 +38,7 @@ namespace DtPad
         private void SetFamilyEdition()
         {
             #if ReleaseFE
-            signLabel.Text = LanguageUtil.GetCurrentLanguageString("signLabel_FE", Name);
+                signLabel.Text = LanguageUtil.GetCurrentLanguageString("signLabel_FE", Name);
             #endif
         }
 

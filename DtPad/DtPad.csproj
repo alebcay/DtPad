@@ -80,7 +80,10 @@
     <CodeAnalysisRuleSet>DtPad.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Be.Windows.Forms.HexBox, Version=1.4.7.13476, Culture=neutral, PublicKeyToken=e0e5adf0ebc99863, processorArchitecture=MSIL" />
+    <Reference Include="Be.Windows.Forms.HexBox, Version=1.5.0.30785, Culture=neutral, PublicKeyToken=e0e5adf0ebc99863, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\Be.Windows.Forms.HexBox.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -883,6 +886,7 @@
     <Compile Include="Utils\FileUtil.cs" />
     <Compile Include="Utils\Language\CustomComboBoxControl.cs" />
     <Compile Include="Utils\Language\ListViewControl.cs" />
+    <Compile Include="Utils\Language\CustomNumericUpDownControl.cs" />
     <Compile Include="Utils\LookFeelUtil.cs" />
     <Compile Include="Utils\MenuUtil.cs" />
     <Compile Include="Utils\ObjectListUtil.cs" />

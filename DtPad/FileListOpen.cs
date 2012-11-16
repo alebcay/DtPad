@@ -102,15 +102,15 @@ namespace DtPad
 
         #endregion ContextMenu Methods
 
-        #region Multilanguage Methods
+        #region Private Methods
 
         private void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, contentContextMenuStrip.Items);
+            //LanguageUtil.CicleControls(Name, contentContextMenuStrip.Items);
             fileListOpenToolTip.SetToolTip(pasteFromClipboardButton, LanguageUtil.GetCurrentLanguageString("pasteFromClipboardButtonToolTip", Name));
         }
 
-        #endregion Multilanguage Methods
+        #endregion Private Methods
     }
 }

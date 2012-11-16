@@ -135,7 +135,7 @@ namespace DtPad.Managers
             toolStripStatusLabel.Text = notFoundMessage;
         }
 
-        private static bool SearchFirst(Form1 form, bool searchInAllFiles)
+        private static bool SearchFirst(Form1 form, bool searchInAllFiles, String specificTextToSearch = null)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
@@ -144,14 +144,15 @@ namespace DtPad.Managers
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
             bool valueFounded = false;
-            
-            if (String.IsNullOrEmpty(searchTextBox.Text))
+
+            if (String.IsNullOrEmpty(searchTextBox.Text) && String.IsNullOrEmpty(specificTextToSearch))
             {
                 return false;
             }
 
             String textWhereToSearch = pageTextBox.Text;
-            String textToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
+            String textToSearch = !String.IsNullOrEmpty(specificTextToSearch) ? specificTextToSearch : searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
+
             FileListManager.SetNewSearchHistory(form, textToSearch);
 
             if (!caseCheckBox.Checked)
@@ -163,7 +164,7 @@ namespace DtPad.Managers
             int positionSearchedText = textWhereToSearch.IndexOf(textToSearch);
             if (positionSearchedText != -1)
             {
-                int occurences = SearchCountOccurency(form, searchInAllFiles);
+                int occurences = SearchCountOccurency(form, searchInAllFiles, false, specificTextToSearch);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
@@ -344,12 +345,12 @@ namespace DtPad.Managers
                 {
                     if (loopAtEOF)
                     {
-                        return SearchFirst(form, false);
+                        return SearchFirst(form, false, textToSearch);
                     }
 
                     if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("EOF", className)) == DialogResult.Yes)
                     {
-                        return SearchFirst(form, false);
+                        return SearchFirst(form, false, textToSearch);
                     }
                 }
             }
@@ -814,14 +815,14 @@ namespace DtPad.Managers
 
         #region Private Methods
 
-        internal static int SearchCountOccurency(Form1 form, bool searchInAllFiles, bool forceDisableHighlight = false)
+        internal static int SearchCountOccurency(Form1 form, bool searchInAllFiles, bool forceDisableHighlight = false, String specificTextToSearch = null)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
 
             int counter = 0;
-            String stringToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
+            String stringToSearch = !String.IsNullOrEmpty(specificTextToSearch) ? specificTextToSearch : searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
 
             if (searchInAllFiles)
             {

@@ -105,6 +105,9 @@ namespace DtPad.Customs
                 switch (ReturnActionType)
                 {
                     case ReturnAction.StartSearch:
+                        e.Handled = true;
+                        e.SuppressKeyPress = true;
+
                         String initialText = Text;
                        
                         SearchManager.SearchNextFactory(form);
@@ -113,8 +116,7 @@ namespace DtPad.Customs
                         Select(TextLength, 0);
                         ScrollToCaret();
 
-                        e.Handled = true;
-                        e.SuppressKeyPress = true;
+                        Focus();
                         break;
 
                     default:

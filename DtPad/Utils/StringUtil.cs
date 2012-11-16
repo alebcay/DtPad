@@ -293,7 +293,7 @@ namespace DtPad.Utils
             }
 
             text = text.Replace(Environment.NewLine, ConstantUtil.newLine);
-            String[] split = text.Split(new[] { ConstantUtil.newLine, "\r", }, StringSplitOptions.None);
+            String[] split = text.Split(new[] { ConstantUtil.newLine, "\r" }, StringSplitOptions.None);
 
             return split.Length > ConfigUtil.GetIntParameter("CheckLineNumberMax");
         }

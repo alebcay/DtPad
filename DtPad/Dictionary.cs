@@ -109,8 +109,8 @@ namespace DtPad
         private void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, contentContextMenuStrip.Items);
-            LanguageUtil.CicleControls(Name, contextMenuStrip1.Items);
+            //LanguageUtil.CicleControls(Name, contentContextMenuStrip.Items);
+            //LanguageUtil.CicleControls(Name, contextMenuStrip1.Items);
         }
 
         private void CheckDictionaries()
