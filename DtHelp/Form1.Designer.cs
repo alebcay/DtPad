@@ -164,13 +164,13 @@
             this.copyToolStripMenuItem1,
             this.selectAllToolStripMenuItem1});
             this.browserContextMenuStrip.Name = "browserContextMenuStrip";
-            this.browserContextMenuStrip.Size = new System.Drawing.Size(129, 98);
+            this.browserContextMenuStrip.Size = new System.Drawing.Size(123, 98);
             // 
             // goBackToolStripMenuItem1
             // 
             this.goBackToolStripMenuItem1.Image = global::DtHelp.ToolbarResource.arrow_left;
             this.goBackToolStripMenuItem1.Name = "goBackToolStripMenuItem1";
-            this.goBackToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.goBackToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.goBackToolStripMenuItem1.Text = "Back";
             this.goBackToolStripMenuItem1.Click += new System.EventHandler(this.goBackToolStripMenuItem1_Click);
             // 
@@ -178,27 +178,27 @@
             // 
             this.goForwardToolStripMenuItem1.Image = global::DtHelp.ToolbarResource.arrow_right;
             this.goForwardToolStripMenuItem1.Name = "goForwardToolStripMenuItem1";
-            this.goForwardToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.goForwardToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.goForwardToolStripMenuItem1.Text = "Foward";
             this.goForwardToolStripMenuItem1.Click += new System.EventHandler(this.goForwardToolStripMenuItem1_Click);
             // 
             // toolStripSeparator9
             // 
             this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator9.Size = new System.Drawing.Size(119, 6);
             // 
             // copyToolStripMenuItem1
             // 
             this.copyToolStripMenuItem1.Image = global::DtHelp.ToolbarResource.copy;
             this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
-            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.copyToolStripMenuItem1.Text = "Copy";
             this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
             // 
             // selectAllToolStripMenuItem1
             // 
             this.selectAllToolStripMenuItem1.Name = "selectAllToolStripMenuItem1";
-            this.selectAllToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
+            this.selectAllToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.selectAllToolStripMenuItem1.Text = "Select All";
             this.selectAllToolStripMenuItem1.Click += new System.EventHandler(this.selectAllToolStripMenuItem1_Click);
             // 
@@ -435,8 +435,8 @@
             // 
             this.collapseAllToolStripMenuItem.Image = global::DtHelp.ToolbarResource.arrows_in;
             this.collapseAllToolStripMenuItem.Name = "collapseAllToolStripMenuItem";
-            this.collapseAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift)
-                        | System.Windows.Forms.Keys.E)));
+            this.collapseAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.E)));
             this.collapseAllToolStripMenuItem.Size = new System.Drawing.Size(208, 22);
             this.collapseAllToolStripMenuItem.Text = "Collapse All";
             this.collapseAllToolStripMenuItem.Click += new System.EventHandler(this.collapseAllToolStripMenuItem_Click);
@@ -838,25 +838,25 @@
             this.toolStripSeparator13,
             this.selectAllToolStripMenuItem3});
             this.textContextMenuStrip.Name = "textContextMenuStrip";
-            this.textContextMenuStrip.Size = new System.Drawing.Size(129, 148);
+            this.textContextMenuStrip.Size = new System.Drawing.Size(123, 148);
             // 
             // undoToolStripMenuItem
             // 
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(119, 6);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Image = global::DtHelp.ToolbarResource.cut;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
@@ -864,7 +864,7 @@
             // 
             this.copyToolStripMenuItem3.Image = global::DtHelp.ToolbarResource.copy;
             this.copyToolStripMenuItem3.Name = "copyToolStripMenuItem3";
-            this.copyToolStripMenuItem3.Size = new System.Drawing.Size(128, 22);
+            this.copyToolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
             this.copyToolStripMenuItem3.Text = "Copy";
             this.copyToolStripMenuItem3.Click += new System.EventHandler(this.copyToolStripMenuItem3_Click);
             // 
@@ -872,26 +872,26 @@
             // 
             this.pasteToolStripMenuItem.Image = global::DtHelp.ToolbarResource.paste;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(119, 6);
             // 
             // selectAllToolStripMenuItem3
             // 
             this.selectAllToolStripMenuItem3.Name = "selectAllToolStripMenuItem3";
-            this.selectAllToolStripMenuItem3.Size = new System.Drawing.Size(128, 22);
+            this.selectAllToolStripMenuItem3.Size = new System.Drawing.Size(122, 22);
             this.selectAllToolStripMenuItem3.Text = "Select All";
             this.selectAllToolStripMenuItem3.Click += new System.EventHandler(this.selectAllToolStripMenuItem3_Click);
             // 
@@ -957,20 +957,20 @@
             this.copyToolStripMenuItem2,
             this.selectAllToolStripMenuItem2});
             this.urlContextMenuStrip.Name = "urlContextMenuStrip";
-            this.urlContextMenuStrip.Size = new System.Drawing.Size(129, 48);
+            this.urlContextMenuStrip.Size = new System.Drawing.Size(123, 48);
             // 
             // copyToolStripMenuItem2
             // 
             this.copyToolStripMenuItem2.Image = global::DtHelp.ToolbarResource.copy;
             this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
-            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
+            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
             this.copyToolStripMenuItem2.Text = "Copy";
             this.copyToolStripMenuItem2.Click += new System.EventHandler(this.copyToolStripMenuItem2_Click);
             // 
             // selectAllToolStripMenuItem2
             // 
             this.selectAllToolStripMenuItem2.Name = "selectAllToolStripMenuItem2";
-            this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
+            this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
             this.selectAllToolStripMenuItem2.Text = "Select All";
             this.selectAllToolStripMenuItem2.Click += new System.EventHandler(this.selectAllToolStripMenuItem2_Click);
             // 
@@ -988,6 +988,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DtHelp";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.browserContextMenuStrip.ResumeLayout(false);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();

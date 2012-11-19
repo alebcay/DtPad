@@ -160,6 +160,9 @@ namespace DtHelp
             // 
             // descriptionTextBox
             // 
+            this.descriptionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.descriptionTextBox.BackColor = System.Drawing.SystemColors.Control;
             this.descriptionTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.descriptionTextBox.Location = new System.Drawing.Point(146, 130);
@@ -167,7 +170,7 @@ namespace DtHelp
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.ReadOnly = true;
             this.descriptionTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.descriptionTextBox.Size = new System.Drawing.Size(275, 95);
+            this.descriptionTextBox.Size = new System.Drawing.Size(353, 164);
             this.descriptionTextBox.TabIndex = 7;
             this.descriptionTextBox.TabStop = false;
             // 
@@ -202,18 +205,21 @@ namespace DtHelp
             // 
             // logoPictureBox
             // 
+            this.logoPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.logoPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.logoPictureBox.Image = global::DtHelp.WindowResource.banner_vertical;
             this.logoPictureBox.InitialImage = null;
             this.logoPictureBox.Location = new System.Drawing.Point(12, 12);
             this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(125, 213);
+            this.logoPictureBox.Size = new System.Drawing.Size(125, 282);
             this.logoPictureBox.TabIndex = 11;
             this.logoPictureBox.TabStop = false;
             // 
             // closeButton
             // 
-            this.closeButton.Location = new System.Drawing.Point(346, 246);
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeButton.Location = new System.Drawing.Point(424, 315);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 8;
@@ -226,7 +232,7 @@ namespace DtHelp
             this.AcceptButton = this.closeButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 281);
+            this.ClientSize = new System.Drawing.Size(511, 350);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.logoPictureBox);
             this.Controls.Add(this.descriptionTextBox);

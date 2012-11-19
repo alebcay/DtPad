@@ -7500,7 +7500,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keep bullet lists on return.
+        ///   Looks up a localized string similar to Keep bullet lists on return to new line.
         /// </summary>
         internal static string Options_keepBulletListOnReturnCheckBox {
             get {
@@ -7518,7 +7518,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Keep previous line initial spaces on return.
+        ///   Looks up a localized string similar to Keep previous line initial spaces on return to new line.
         /// </summary>
         internal static string Options_keepInitialSpacesOnReturnCheckBox {
             get {
@@ -7892,7 +7892,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to When RETURN is pressed inside search or replace textbox:.
+        ///   Looks up a localized string similar to When ENTER is pressed inside search or replace textbox:.
         /// </summary>
         internal static string Options_searchReturnLabel {
             get {

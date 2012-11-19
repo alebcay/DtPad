@@ -2182,7 +2182,7 @@ Do you want to remove read-only and proceed?</value>
     <value>Folder:</value>
   </data>
   <data name="Options_keepInitialSpacesOnReturnCheckBox" xml:space="preserve">
-    <value>Keep previous line initial spaces on return</value>
+    <value>Keep previous line initial spaces on return to new line</value>
   </data>
   <data name="PadText_absoluteWidthCheckBox" xml:space="preserve">
     <value>Absolute width</value>
@@ -3172,7 +3172,7 @@ Verify to be authenticated on it by opening "www.dropbox.com" with your default 
     <value>Open Into Editor</value>
   </data>
   <data name="Options_keepBulletListOnReturnCheckBox" xml:space="preserve">
-    <value>Keep bullet lists on return</value>
+    <value>Keep bullet lists on return to new line</value>
   </data>
   <data name="Options_keepBulletListOnReturnLabel" xml:space="preserve">
     <value>Allowed list templates:</value>
@@ -4011,7 +4011,7 @@ Reselect interested tabs to proceed.</value>
     <value>Keyboard</value>
   </data>
   <data name="Options_searchReturnLabel" xml:space="preserve">
-    <value>When RETURN is pressed inside search or replace textbox:</value>
+    <value>When ENTER is pressed inside search or replace textbox:</value>
   </data>
   <data name="Options_searchReturnRadioButton1" xml:space="preserve">
     <value>Start the search</value>
