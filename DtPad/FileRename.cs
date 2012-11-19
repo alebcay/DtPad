@@ -28,7 +28,7 @@ namespace DtPad
         internal void InitializeForm(FileTypes fileTypeToRename, String fileNameAndPath)
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(new[] { contentContextMenuStrip, contentContextMenuStrip1 });
+            ControlUtil.SetContextMenuStrip(this, new[] { renameToTextBox, fileNameValueLabel, folderValueLabel });
             LanguageUtil.SetCurrentLanguage(this);
 
             fileType = fileTypeToRename;
@@ -57,11 +57,6 @@ namespace DtPad
         private void renameToTextBox_TextChanged(object sender, EventArgs e)
         {
             renameButton.Enabled = !String.IsNullOrEmpty(renameToTextBox.Text);
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = renameToTextBox.CanUndo;
         }
 
         #endregion Window Methods

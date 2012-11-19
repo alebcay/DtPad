@@ -19,7 +19,7 @@ namespace DtPad
         internal void InitializeForm(bool addFavourite)
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, urlAddressComboBox);
             SetLanguage();
 
             FileListManager.LoadRecentURLs(this);
@@ -40,11 +40,6 @@ namespace DtPad
         private void urlAddressComboBox_TextChanged(object sender, EventArgs e)
         {
             okButton.Enabled = !(String.IsNullOrEmpty(urlAddressComboBox.Text) || urlAddressComboBox.Text == "http://");
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender);
         }
 
         #endregion Window Methods

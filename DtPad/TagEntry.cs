@@ -17,7 +17,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, new[] { customTextBox1, customTextBox2, tagTextBox });
             LanguageUtil.SetCurrentLanguage(this);
         }
 
@@ -30,11 +30,6 @@ namespace DtPad
         private void tagTextBox_TextChanged(object sender, EventArgs e)
         {
             okButton.Enabled = !String.IsNullOrEmpty(tagTextBox.Text);
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender);
         }
 
         private void TagEntry_HelpButtonClicked(object sender, CancelEventArgs e)

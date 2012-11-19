@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using DtPad.Exceptions;
 using DtPad.Managers;
 using DtPad.Utils;
 
@@ -41,15 +40,7 @@ namespace DtPad.UserControls
                 return;
             }
 
-            Form1 form = (Form1)ParentForm;
-
-            if (form == null)
-            {
-                throw new ProgramException();
-            }
-
-            nodeTextTextBox.ContextMenuStrip = form.searchContextMenuStrip;
-            noteTitleTextBox.ContextMenuStrip = form.searchContextMenuStrip;
+            ControlUtil.SetContextMenuStrip(this, new[] { nodeTextTextBox, noteTitleTextBox });
         }
 
         private void notesTreeView_AfterSelect(object sender, TreeViewEventArgs e)
@@ -162,7 +153,7 @@ namespace DtPad.UserControls
 
         #endregion Button Methods
 
-        #region ContextMenu Methods
+        #region Context Menu Methods
 
         private void newToolStripMenuItem3_Click(object sender, EventArgs e)
         {
@@ -220,14 +211,13 @@ namespace DtPad.UserControls
             NoteManager.ChangeNoteColor(form, NoteManager.TagEnum.Black);
         }
 
-        #endregion ContextMenu Methods
+        #endregion Context Menu Methods
 
         #region Multilanguage Methods
 
         internal void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, noteContextMenuStrip.Items);
         }
 
         #endregion Multilanguage Methods

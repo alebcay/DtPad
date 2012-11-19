@@ -18,7 +18,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, regularExpressionTextBox);
             SetLanguage();
 
             FileListManager.LoadRecentPatterns(this);
@@ -62,11 +62,6 @@ namespace DtPad
             }
         }
 
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = regularExpressionTextBox.CanUndo;
-        }
-
         #endregion Window Methods
 
         #region Button Methods
@@ -97,40 +92,6 @@ namespace DtPad
         }
 
         #endregion Button Methods
-
-        #region ContextMenu Methods
-
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.UndoControl(regularExpressionTextBox);
-        }
-
-        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CutControl(regularExpressionTextBox);
-        }
-
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CopyControl(regularExpressionTextBox);
-        }
-
-        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.PasteControl(regularExpressionTextBox);
-        }
-
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.DeleteControl(regularExpressionTextBox);
-        }
-
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAllControl(regularExpressionTextBox);
-        }
-
-        #endregion ContextMenu Methods
 
         #region Private Methods
 

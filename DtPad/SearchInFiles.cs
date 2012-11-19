@@ -34,7 +34,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, new[] { textToSearchTextBox, filenamePatternTextBox, exclusionPatternTextBox, (Control)searchFolderComboBox });
             SetLanguage();
 
             FileListManager.LoadRecentSearchInFilesDirs(this);
@@ -54,11 +54,6 @@ namespace DtPad
         {
             e.Cancel = false;
             KillExecution();
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender);
         }
 
         private void resizeButton_Click(object sender, EventArgs e)

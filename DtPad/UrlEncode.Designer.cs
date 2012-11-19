@@ -31,15 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrlEncode));
             this.stringToEncodeTextBox = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.encodedURLTextBox = new System.Windows.Forms.TextBox();
             this.stringToEncodeLabel = new System.Windows.Forms.Label();
             this.encodedURLLabel = new System.Windows.Forms.Label();
@@ -47,92 +38,18 @@
             this.okButton = new System.Windows.Forms.Button();
             this.encodeButton = new System.Windows.Forms.Button();
             this.decodeButton = new System.Windows.Forms.Button();
-            this.contentContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // stringToEncodeTextBox
             // 
-            this.stringToEncodeTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.stringToEncodeTextBox.Location = new System.Drawing.Point(15, 25);
             this.stringToEncodeTextBox.Multiline = true;
             this.stringToEncodeTextBox.Name = "stringToEncodeTextBox";
             this.stringToEncodeTextBox.Size = new System.Drawing.Size(432, 72);
             this.stringToEncodeTextBox.TabIndex = 1;
             // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.cutToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.pasteToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.toolStripMenuItem2});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(129, 148);
-            this.contentContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contentContextMenuStrip_Opening);
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(125, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
-            this.cutToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Image = global::DtPad.ToolbarResource.copy;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
-            this.toolStripMenuItem1.Text = "Copy";
-            this.toolStripMenuItem1.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(125, 6);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
-            this.toolStripMenuItem2.Text = "Select All";
-            this.toolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
-            // 
             // encodedURLTextBox
             // 
-            this.encodedURLTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.encodedURLTextBox.Location = new System.Drawing.Point(12, 132);
             this.encodedURLTextBox.Multiline = true;
             this.encodedURLTextBox.Name = "encodedURLTextBox";
@@ -210,7 +127,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "URL Encoder";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.UrlEncode_HelpButtonClicked);
-            this.contentContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,15 +141,6 @@
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button encodeButton;
         private System.Windows.Forms.ToolTip urlEncodeToolTip;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.Button decodeButton;
     }
 }

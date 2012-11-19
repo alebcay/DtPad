@@ -28,6 +28,7 @@ namespace DtPad
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.titleLabel = new System.Windows.Forms.Label();
             this.versionLabel1 = new System.Windows.Forms.Label();
@@ -37,24 +38,19 @@ namespace DtPad
             this.createdByLabel = new System.Windows.Forms.Label();
             this.websiteLabel = new System.Windows.Forms.Label();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeButton = new System.Windows.Forms.Button();
-            this.aboutToolTip = new System.Windows.Forms.ToolTip();
-            this.versionCheckLinkLabel = new System.Windows.Forms.LinkLabel();
-            this.versionCheckPictureBox = new System.Windows.Forms.PictureBox();
-            this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.rssPictureBox = new System.Windows.Forms.PictureBox();
             this.websitePictureBox = new System.Windows.Forms.PictureBox();
             this.emailPictureBox = new System.Windows.Forms.PictureBox();
-            this.contentContextMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.versionCheckPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            this.versionCheckLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.versionCheckPictureBox = new System.Windows.Forms.PictureBox();
+            this.logoPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.rssPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.websitePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.versionCheckPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -127,7 +123,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.descriptionTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.descriptionTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.descriptionTextBox.Location = new System.Drawing.Point(146, 130);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
@@ -136,27 +131,6 @@ namespace DtPad
             this.descriptionTextBox.Size = new System.Drawing.Size(353, 164);
             this.descriptionTextBox.TabIndex = 7;
             this.descriptionTextBox.TabStop = false;
-            // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 54);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
             // closeButton
             // 
@@ -169,6 +143,45 @@ namespace DtPad
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
+            // rssPictureBox
+            // 
+            this.rssPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rssPictureBox.Image = global::DtPad.ToolbarResource.rss;
+            this.rssPictureBox.InitialImage = null;
+            this.rssPictureBox.Location = new System.Drawing.Point(343, 100);
+            this.rssPictureBox.Name = "rssPictureBox";
+            this.rssPictureBox.Size = new System.Drawing.Size(16, 16);
+            this.rssPictureBox.TabIndex = 6;
+            this.rssPictureBox.TabStop = false;
+            this.aboutToolTip.SetToolTip(this.rssPictureBox, "Read RSS feed of diariotraduttore.com");
+            this.rssPictureBox.Click += new System.EventHandler(this.rssPictureBox_Click);
+            // 
+            // websitePictureBox
+            // 
+            this.websitePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.websitePictureBox.Image = global::DtPad.ToolbarResource.home;
+            this.websitePictureBox.InitialImage = null;
+            this.websitePictureBox.Location = new System.Drawing.Point(321, 100);
+            this.websitePictureBox.Name = "websitePictureBox";
+            this.websitePictureBox.Size = new System.Drawing.Size(16, 16);
+            this.websitePictureBox.TabIndex = 5;
+            this.websitePictureBox.TabStop = false;
+            this.aboutToolTip.SetToolTip(this.websitePictureBox, "Visit DtPad\'s author homepage");
+            this.websitePictureBox.Click += new System.EventHandler(this.websitePictureBox_Click);
+            // 
+            // emailPictureBox
+            // 
+            this.emailPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.emailPictureBox.Image = global::DtPad.ToolbarResource.email;
+            this.emailPictureBox.InitialImage = null;
+            this.emailPictureBox.Location = new System.Drawing.Point(321, 70);
+            this.emailPictureBox.Name = "emailPictureBox";
+            this.emailPictureBox.Size = new System.Drawing.Size(16, 16);
+            this.emailPictureBox.TabIndex = 3;
+            this.emailPictureBox.TabStop = false;
+            this.aboutToolTip.SetToolTip(this.emailPictureBox, "Write an e-mail to DtPad\'s author");
+            this.emailPictureBox.Click += new System.EventHandler(this.emailPictureBox_Click);
             // 
             // versionCheckLinkLabel
             // 
@@ -213,53 +226,6 @@ namespace DtPad
             this.logoPictureBox.TabIndex = 11;
             this.logoPictureBox.TabStop = false;
             // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
-            // 
-            // rssPictureBox
-            // 
-            this.rssPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rssPictureBox.Image = global::DtPad.ToolbarResource.rss;
-            this.rssPictureBox.InitialImage = null;
-            this.rssPictureBox.Location = new System.Drawing.Point(343, 100);
-            this.rssPictureBox.Name = "rssPictureBox";
-            this.rssPictureBox.Size = new System.Drawing.Size(16, 16);
-            this.rssPictureBox.TabIndex = 6;
-            this.rssPictureBox.TabStop = false;
-            this.aboutToolTip.SetToolTip(this.rssPictureBox, "Read RSS feed of diariotraduttore.com");
-            this.rssPictureBox.Click += new System.EventHandler(this.rssPictureBox_Click);
-            // 
-            // websitePictureBox
-            // 
-            this.websitePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.websitePictureBox.Image = global::DtPad.ToolbarResource.home;
-            this.websitePictureBox.InitialImage = null;
-            this.websitePictureBox.Location = new System.Drawing.Point(321, 100);
-            this.websitePictureBox.Name = "websitePictureBox";
-            this.websitePictureBox.Size = new System.Drawing.Size(16, 16);
-            this.websitePictureBox.TabIndex = 5;
-            this.websitePictureBox.TabStop = false;
-            this.aboutToolTip.SetToolTip(this.websitePictureBox, "Visit DtPad\'s author homepage");
-            this.websitePictureBox.Click += new System.EventHandler(this.websitePictureBox_Click);
-            // 
-            // emailPictureBox
-            // 
-            this.emailPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.emailPictureBox.Image = global::DtPad.ToolbarResource.email;
-            this.emailPictureBox.InitialImage = null;
-            this.emailPictureBox.Location = new System.Drawing.Point(321, 70);
-            this.emailPictureBox.Name = "emailPictureBox";
-            this.emailPictureBox.Size = new System.Drawing.Size(16, 16);
-            this.emailPictureBox.TabIndex = 3;
-            this.emailPictureBox.TabStop = false;
-            this.aboutToolTip.SetToolTip(this.emailPictureBox, "Write an e-mail to DtPad\'s author");
-            this.emailPictureBox.Click += new System.EventHandler(this.emailPictureBox_Click);
-            // 
             // About
             // 
             this.AcceptButton = this.closeButton;
@@ -291,12 +257,11 @@ namespace DtPad
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.About_FormClosing);
-            this.contentContextMenuStrip.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.versionCheckPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rssPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.websitePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emailPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.versionCheckPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,9 +285,5 @@ namespace DtPad
         private System.Windows.Forms.ToolTip aboutToolTip;
         private System.Windows.Forms.LinkLabel versionCheckLinkLabel;
         private System.Windows.Forms.PictureBox versionCheckPictureBox;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
     }
 }

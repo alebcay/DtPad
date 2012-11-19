@@ -772,6 +772,7 @@ namespace DtPad.Managers
         internal static void UndoControl(Control activeControl)
         {
             Type controlType = activeControl.GetType();
+
             if (controlType == typeof(TextBox) || controlType == typeof(CustomTextBox) || controlType == typeof(TextBoxMaskBox))
             {
                 TextBox textBox = (TextBox)activeControl;
@@ -822,7 +823,7 @@ namespace DtPad.Managers
                 textBox.Focus();
                 textBox.Copy();
             }
-            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox))
+            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox) || activeControl is ComboBox)
             {
                 ComboBox comboBox = (ComboBox)activeControl;
 
@@ -869,7 +870,7 @@ namespace DtPad.Managers
                 textBox.Focus();
                 textBox.Cut();
             }
-            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox))
+            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox) || activeControl is ComboBox)
             {
                 ComboBox comboBox = (ComboBox)activeControl;
 
@@ -911,7 +912,7 @@ namespace DtPad.Managers
                 textBox.Focus();
                 textBox.SelectedText = clipboardText; //textBox.Paste(DataFormats.GetFormat(DataFormats.Text));
             }
-            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox))
+            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox) || activeControl is ComboBox)
             {
                 ComboBox comboBox = (ComboBox)activeControl;
 
@@ -967,7 +968,7 @@ namespace DtPad.Managers
                 textBox.Focus();
                 textBox.SelectedText = String.Empty;
             }
-            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox))
+            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox) || activeControl is ComboBox)
             {
                 ComboBox comboBox = (ComboBox)activeControl;
 
@@ -998,7 +999,7 @@ namespace DtPad.Managers
                 textBox.Focus();
                 textBox.SelectAll();
             }
-            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox))
+            else if (controlType == typeof(ComboBox) || controlType == typeof(CustomComboBox) || activeControl is ComboBox)
             {
                 ComboBox comboBox = (ComboBox)activeControl;
 

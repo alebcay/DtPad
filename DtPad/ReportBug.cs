@@ -17,7 +17,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, new[] { nameTextBox, emailTextBox, errorMessageTextBox, descriptionTextBox });
             LanguageUtil.SetCurrentLanguage(this);
         }
 
@@ -44,11 +44,6 @@ namespace DtPad
         private void ReportBug_HelpButtonClicked(object sender, CancelEventArgs e)
         {
             HelpManager.ManageHelpPanel(this, e);
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender);
         }
 
         #endregion Window Methods

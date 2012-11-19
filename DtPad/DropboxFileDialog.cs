@@ -54,12 +54,10 @@ namespace DtPad
             if (windowType == WindowType.Open)
             {
                 fileNameTextBox.ReadOnly = true;
-                fileNameTextBox.ContextMenuStrip = textMenuStrip;
+                //fileNameTextBox.ContextMenuStrip = textMenuStrip;
             }
+            ControlUtil.SetContextMenuStrip(this, fileNameTextBox);
             SetLanguage();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
-            LookFeelUtil.SetLookAndFeel(textMenuStrip);
-            LookFeelUtil.SetLookAndFeel(dropboxFileDialogContextMenuStrip);
 
             if (!String.IsNullOrEmpty(form.LastDropboxFolder) && DropboxManager.ExistsDirectory(form, form.LastDropboxFolder))
             {
@@ -85,11 +83,6 @@ namespace DtPad
         private void fileNameTextBox_TextChanged(object sender, EventArgs e)
         {
             okButton.Enabled = !(String.IsNullOrEmpty(fileNameTextBox.Text));
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = fileNameTextBox.CanUndo;
         }
 
         private void fseListView_ItemActivate(object sender, EventArgs e)

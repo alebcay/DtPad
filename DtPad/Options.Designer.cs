@@ -60,11 +60,6 @@ namespace DtPad
             this.searchGroupBox1 = new System.Windows.Forms.GroupBox();
             this.highlightsResultsCheckBox = new System.Windows.Forms.CheckBox();
             this.searchHistoryNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.numberContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.searchHistoryLabel = new System.Windows.Forms.Label();
             this.loopAtEOFCheckBox = new System.Windows.Forms.CheckBox();
             this.caseSensitiveCheckBox = new System.Windows.Forms.CheckBox();
@@ -116,15 +111,6 @@ namespace DtPad
             this.internetGroupBox1 = new System.Windows.Forms.GroupBox();
             this.proxyPortNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.proxyHostTextBox = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proxyPortLabel = new System.Windows.Forms.Label();
             this.proxyHostLabel = new System.Windows.Forms.Label();
             this.checkConnectionButton = new System.Windows.Forms.Button();
@@ -241,7 +227,6 @@ namespace DtPad
             this.searchPanel.SuspendLayout();
             this.searchGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchHistoryNumericUpDown)).BeginInit();
-            this.numberContextMenuStrip.SuspendLayout();
             this.searchGroupBox2.SuspendLayout();
             this.formatPanel.SuspendLayout();
             this.formatGroupBox1.SuspendLayout();
@@ -257,7 +242,6 @@ namespace DtPad
             this.internetPanel.SuspendLayout();
             this.internetGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.proxyPortNumericUpDown)).BeginInit();
-            this.contentContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.infoProxyPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).BeginInit();
             this.internetGroupBox2.SuspendLayout();
@@ -385,7 +369,6 @@ namespace DtPad
             // 
             // searchHistoryNumericUpDown
             // 
-            this.searchHistoryNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
             this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(120, 92);
             this.searchHistoryNumericUpDown.Maximum = new decimal(new int[] {
             15,
@@ -405,43 +388,6 @@ namespace DtPad
             0,
             0,
             0});
-            // 
-            // numberContextMenuStrip
-            // 
-            this.numberContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem1,
-            this.pasteToolStripMenuItem1,
-            this.toolStripSeparator2,
-            this.selectAllToolStripMenuItem1});
-            this.numberContextMenuStrip.Name = "searchContextMenuStrip";
-            this.numberContextMenuStrip.Size = new System.Drawing.Size(123, 76);
-            // 
-            // copyToolStripMenuItem1
-            // 
-            this.copyToolStripMenuItem1.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
-            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem1.Text = "Copy";
-            // 
-            // pasteToolStripMenuItem1
-            // 
-            this.pasteToolStripMenuItem1.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem1.Name = "pasteToolStripMenuItem1";
-            this.pasteToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.pasteToolStripMenuItem1.Text = "Paste";
-            this.pasteToolStripMenuItem1.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllToolStripMenuItem1
-            // 
-            this.selectAllToolStripMenuItem1.Name = "selectAllToolStripMenuItem1";
-            this.selectAllToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem1.Text = "Select All";
-            this.selectAllToolStripMenuItem1.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
             // 
             // searchHistoryLabel
             // 
@@ -875,7 +821,6 @@ namespace DtPad
             // 
             // hideLinesNumericUpDown
             // 
-            this.hideLinesNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
             this.hideLinesNumericUpDown.Location = new System.Drawing.Point(284, 42);
             this.hideLinesNumericUpDown.Maximum = new decimal(new int[] {
             9999999,
@@ -998,7 +943,6 @@ namespace DtPad
             // 
             // proxyPortNumericUpDown
             // 
-            this.proxyPortNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
             this.proxyPortNumericUpDown.Location = new System.Drawing.Point(74, 170);
             this.proxyPortNumericUpDown.Maximum = new decimal(new int[] {
             9999,
@@ -1011,82 +955,10 @@ namespace DtPad
             // 
             // proxyHostTextBox
             // 
-            this.proxyHostTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.proxyHostTextBox.Location = new System.Drawing.Point(74, 146);
             this.proxyHostTextBox.Name = "proxyHostTextBox";
             this.proxyHostTextBox.Size = new System.Drawing.Size(258, 20);
             this.proxyHostTextBox.TabIndex = 10;
-            // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 148);
-            this.contentContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contentContextMenuStrip_Opening);
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(119, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
-            this.cutToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
             // 
             // proxyPortLabel
             // 
@@ -1137,7 +1009,6 @@ namespace DtPad
             // 
             // domainTextBox
             // 
-            this.domainTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.domainTextBox.Location = new System.Drawing.Point(74, 86);
             this.domainTextBox.Name = "domainTextBox";
             this.domainTextBox.Size = new System.Drawing.Size(258, 20);
@@ -1146,7 +1017,6 @@ namespace DtPad
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.passwordTextBox.Location = new System.Drawing.Point(74, 63);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(258, 20);
@@ -1156,7 +1026,6 @@ namespace DtPad
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.usernameTextBox.Location = new System.Drawing.Point(74, 40);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(258, 20);
@@ -1236,7 +1105,6 @@ namespace DtPad
             // 
             // customBrowserTextBox
             // 
-            this.customBrowserTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.customBrowserTextBox.Enabled = false;
             this.customBrowserTextBox.Location = new System.Drawing.Point(10, 44);
             this.customBrowserTextBox.Name = "customBrowserTextBox";
@@ -1365,7 +1233,6 @@ namespace DtPad
             // 
             // specificFolderTextBox
             // 
-            this.specificFolderTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.specificFolderTextBox.Enabled = false;
             this.specificFolderTextBox.Location = new System.Drawing.Point(10, 44);
             this.specificFolderTextBox.Name = "specificFolderTextBox";
@@ -1450,7 +1317,6 @@ namespace DtPad
             // 
             // recentFilesNumberNumericUpDown
             // 
-            this.recentFilesNumberNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
             this.recentFilesNumberNumericUpDown.Location = new System.Drawing.Point(120, 18);
             this.recentFilesNumberNumericUpDown.Maximum = new decimal(new int[] {
             15,
@@ -1712,7 +1578,6 @@ namespace DtPad
             // 
             // backupExtensionTextBox
             // 
-            this.backupExtensionTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.backupExtensionTextBox.Location = new System.Drawing.Point(77, 40);
             this.backupExtensionTextBox.Name = "backupExtensionTextBox";
             this.backupExtensionTextBox.Size = new System.Drawing.Size(154, 20);
@@ -1754,7 +1619,6 @@ namespace DtPad
             // 
             this.backupCustomFolderTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.backupCustomFolderTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
-            this.backupCustomFolderTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.backupCustomFolderTextBox.Enabled = false;
             this.backupCustomFolderTextBox.Location = new System.Drawing.Point(10, 43);
             this.backupCustomFolderTextBox.Name = "backupCustomFolderTextBox";
@@ -2234,7 +2098,6 @@ namespace DtPad
             // 
             // noteModeSizeXNumericUpDown
             // 
-            this.noteModeSizeXNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
             this.noteModeSizeXNumericUpDown.Location = new System.Drawing.Point(159, 40);
             this.noteModeSizeXNumericUpDown.Maximum = new decimal(new int[] {
             3000,
@@ -2257,7 +2120,6 @@ namespace DtPad
             // 
             // noteModeSizeYNumericUpDown
             // 
-            this.noteModeSizeYNumericUpDown.CustomContextMenuStrip = this.numberContextMenuStrip;
             this.noteModeSizeYNumericUpDown.Location = new System.Drawing.Point(258, 40);
             this.noteModeSizeYNumericUpDown.Maximum = new decimal(new int[] {
             3000,
@@ -2356,7 +2218,6 @@ namespace DtPad
             this.searchGroupBox1.ResumeLayout(false);
             this.searchGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchHistoryNumericUpDown)).EndInit();
-            this.numberContextMenuStrip.ResumeLayout(false);
             this.searchGroupBox2.ResumeLayout(false);
             this.searchGroupBox2.PerformLayout();
             this.formatPanel.ResumeLayout(false);
@@ -2380,7 +2241,6 @@ namespace DtPad
             this.internetGroupBox1.ResumeLayout(false);
             this.internetGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.proxyPortNumericUpDown)).EndInit();
-            this.contentContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.infoProxyPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).EndInit();
             this.internetGroupBox2.ResumeLayout(false);
@@ -2570,15 +2430,6 @@ namespace DtPad
         private System.Windows.Forms.Label autoFormatLabel;
         private System.Windows.Forms.CheckBox xmlCheckBox;
         private System.Windows.Forms.CheckBox htmlCheckBox;
-        internal System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
         private System.Windows.Forms.GroupBox openingGroupBox2;
         private System.Windows.Forms.CheckBox hostsConfiguratorCheckBox;
         internal System.Windows.Forms.CheckBox folderOpenedFileCheckBox;
@@ -2595,11 +2446,6 @@ namespace DtPad
         private System.Windows.Forms.Label keepBulletListOnReturnLabel2;
         private System.Windows.Forms.ComboBox hostsConfiguratorTabColorComboBox;
         private System.Windows.Forms.Label hostsConfiguratorTabColorLabel;
-        internal System.Windows.Forms.ContextMenuStrip numberContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem1;
         private System.Windows.Forms.CheckBox highlightsResultsCheckBox;
         internal System.Windows.Forms.CheckBox jumpListCheckBox;
         internal System.Windows.Forms.TextBox proxyHostTextBox;

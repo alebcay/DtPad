@@ -28,33 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TagEntry));
             this.typeGroupBox = new System.Windows.Forms.GroupBox();
-            this.extensionGroupBox = new System.Windows.Forms.GroupBox();
-            this.xhtmlRadioButton = new System.Windows.Forms.RadioButton();
-            this.forumRadioButton = new System.Windows.Forms.RadioButton();
-            this.customRadioButton = new System.Windows.Forms.RadioButton();
+            this.customTextBox2 = new System.Windows.Forms.TextBox();
             this.customTextBox1 = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.completeRadioButton = new System.Windows.Forms.RadioButton();
+            this.customRadioButton = new System.Windows.Forms.RadioButton();
+            this.forumRadioButton = new System.Windows.Forms.RadioButton();
+            this.xhtmlRadioButton = new System.Windows.Forms.RadioButton();
+            this.extensionGroupBox = new System.Windows.Forms.GroupBox();
             this.shortRadioButton = new System.Windows.Forms.RadioButton();
+            this.completeRadioButton = new System.Windows.Forms.RadioButton();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
-            this.customTextBox2 = new System.Windows.Forms.TextBox();
             this.tagTextBox = new System.Windows.Forms.TextBox();
             this.tagLabel = new System.Windows.Forms.Label();
             this.typeGroupBox.SuspendLayout();
             this.extensionGroupBox.SuspendLayout();
-            this.contentContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // typeGroupBox
@@ -71,38 +60,21 @@
             this.typeGroupBox.TabStop = false;
             this.typeGroupBox.Text = "Type";
             // 
-            // extensionGroupBox
+            // customTextBox2
             // 
-            this.extensionGroupBox.Controls.Add(this.shortRadioButton);
-            this.extensionGroupBox.Controls.Add(this.completeRadioButton);
-            this.extensionGroupBox.Location = new System.Drawing.Point(188, 12);
-            this.extensionGroupBox.Name = "extensionGroupBox";
-            this.extensionGroupBox.Size = new System.Drawing.Size(170, 70);
-            this.extensionGroupBox.TabIndex = 1;
-            this.extensionGroupBox.TabStop = false;
-            this.extensionGroupBox.Text = "Extension";
+            this.customTextBox2.Enabled = false;
+            this.customTextBox2.Location = new System.Drawing.Point(94, 89);
+            this.customTextBox2.Name = "customTextBox2";
+            this.customTextBox2.Size = new System.Drawing.Size(66, 20);
+            this.customTextBox2.TabIndex = 4;
             // 
-            // xhtmlRadioButton
+            // customTextBox1
             // 
-            this.xhtmlRadioButton.AutoSize = true;
-            this.xhtmlRadioButton.Checked = true;
-            this.xhtmlRadioButton.Location = new System.Drawing.Point(6, 19);
-            this.xhtmlRadioButton.Name = "xhtmlRadioButton";
-            this.xhtmlRadioButton.Size = new System.Drawing.Size(82, 17);
-            this.xhtmlRadioButton.TabIndex = 0;
-            this.xhtmlRadioButton.TabStop = true;
-            this.xhtmlRadioButton.Text = "XML/HTML (<, >)";
-            this.xhtmlRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // forumRadioButton
-            // 
-            this.forumRadioButton.AutoSize = true;
-            this.forumRadioButton.Location = new System.Drawing.Point(6, 43);
-            this.forumRadioButton.Name = "forumRadioButton";
-            this.forumRadioButton.Size = new System.Drawing.Size(54, 17);
-            this.forumRadioButton.TabIndex = 1;
-            this.forumRadioButton.Text = "Forum ([, ])";
-            this.forumRadioButton.UseVisualStyleBackColor = true;
+            this.customTextBox1.Enabled = false;
+            this.customTextBox1.Location = new System.Drawing.Point(22, 89);
+            this.customTextBox1.Name = "customTextBox1";
+            this.customTextBox1.Size = new System.Drawing.Size(66, 20);
+            this.customTextBox1.TabIndex = 3;
             // 
             // customRadioButton
             // 
@@ -115,85 +87,48 @@
             this.customRadioButton.UseVisualStyleBackColor = true;
             this.customRadioButton.CheckedChanged += new System.EventHandler(this.customRadioButton_CheckedChanged);
             // 
-            // customTextBox1
+            // forumRadioButton
             // 
-            this.customTextBox1.ContextMenuStrip = this.contentContextMenuStrip;
-            this.customTextBox1.Enabled = false;
-            this.customTextBox1.Location = new System.Drawing.Point(22, 89);
-            this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.Size = new System.Drawing.Size(66, 20);
-            this.customTextBox1.TabIndex = 3;
+            this.forumRadioButton.AutoSize = true;
+            this.forumRadioButton.Location = new System.Drawing.Point(6, 43);
+            this.forumRadioButton.Name = "forumRadioButton";
+            this.forumRadioButton.Size = new System.Drawing.Size(75, 17);
+            this.forumRadioButton.TabIndex = 1;
+            this.forumRadioButton.Text = "Forum ([, ])";
+            this.forumRadioButton.UseVisualStyleBackColor = true;
             // 
-            // contentContextMenuStrip
+            // xhtmlRadioButton
             // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "contentContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(153, 170);
-            this.contentContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contentContextMenuStrip_Opening);
+            this.xhtmlRadioButton.AutoSize = true;
+            this.xhtmlRadioButton.Checked = true;
+            this.xhtmlRadioButton.Location = new System.Drawing.Point(6, 19);
+            this.xhtmlRadioButton.Name = "xhtmlRadioButton";
+            this.xhtmlRadioButton.Size = new System.Drawing.Size(109, 17);
+            this.xhtmlRadioButton.TabIndex = 0;
+            this.xhtmlRadioButton.TabStop = true;
+            this.xhtmlRadioButton.Text = "XML/HTML (<, >)";
+            this.xhtmlRadioButton.UseVisualStyleBackColor = true;
             // 
-            // undoToolStripMenuItem
+            // extensionGroupBox
             // 
-            this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
+            this.extensionGroupBox.Controls.Add(this.shortRadioButton);
+            this.extensionGroupBox.Controls.Add(this.completeRadioButton);
+            this.extensionGroupBox.Location = new System.Drawing.Point(188, 12);
+            this.extensionGroupBox.Name = "extensionGroupBox";
+            this.extensionGroupBox.Size = new System.Drawing.Size(170, 70);
+            this.extensionGroupBox.TabIndex = 1;
+            this.extensionGroupBox.TabStop = false;
+            this.extensionGroupBox.Text = "Extension";
             // 
-            // toolStripSeparator1
+            // shortRadioButton
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
-            this.cutToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(149, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
+            this.shortRadioButton.AutoSize = true;
+            this.shortRadioButton.Location = new System.Drawing.Point(6, 42);
+            this.shortRadioButton.Name = "shortRadioButton";
+            this.shortRadioButton.Size = new System.Drawing.Size(102, 17);
+            this.shortRadioButton.TabIndex = 1;
+            this.shortRadioButton.Text = "Short (ie. <br />)";
+            this.shortRadioButton.UseVisualStyleBackColor = true;
             // 
             // completeRadioButton
             // 
@@ -206,16 +141,6 @@
             this.completeRadioButton.TabStop = true;
             this.completeRadioButton.Text = "Complete (ie. <b></b>)";
             this.completeRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // shortRadioButton
-            // 
-            this.shortRadioButton.AutoSize = true;
-            this.shortRadioButton.Location = new System.Drawing.Point(6, 42);
-            this.shortRadioButton.Name = "shortRadioButton";
-            this.shortRadioButton.Size = new System.Drawing.Size(102, 17);
-            this.shortRadioButton.TabIndex = 1;
-            this.shortRadioButton.Text = "Short (ie. <br />)";
-            this.shortRadioButton.UseVisualStyleBackColor = true;
             // 
             // okButton
             // 
@@ -243,18 +168,8 @@
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
-            // customTextBox2
-            // 
-            this.customTextBox2.ContextMenuStrip = this.contentContextMenuStrip;
-            this.customTextBox2.Enabled = false;
-            this.customTextBox2.Location = new System.Drawing.Point(94, 89);
-            this.customTextBox2.Name = "customTextBox2";
-            this.customTextBox2.Size = new System.Drawing.Size(66, 20);
-            this.customTextBox2.TabIndex = 4;
-            // 
             // tagTextBox
             // 
-            this.tagTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.tagTextBox.Location = new System.Drawing.Point(243, 101);
             this.tagTextBox.Name = "tagTextBox";
             this.tagTextBox.Size = new System.Drawing.Size(115, 20);
@@ -297,7 +212,6 @@
             this.typeGroupBox.PerformLayout();
             this.extensionGroupBox.ResumeLayout(false);
             this.extensionGroupBox.PerformLayout();
-            this.contentContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -318,14 +232,5 @@
         private System.Windows.Forms.TextBox customTextBox2;
         private System.Windows.Forms.TextBox tagTextBox;
         private System.Windows.Forms.Label tagLabel;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
     }
 }

@@ -33,18 +33,12 @@
             this.lineNumberLabel = new System.Windows.Forms.Label();
             this.lineNumberLabel1 = new System.Windows.Forms.Label();
             this.lineFromNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lineToNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
             this.fromLabel = new System.Windows.Forms.Label();
             this.toLabel = new System.Windows.Forms.Label();
             this.okButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.lineFromNumericUpDown)).BeginInit();
-            this.contentContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lineToNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +62,6 @@
             // 
             // lineFromNumericUpDown
             // 
-            this.lineFromNumericUpDown.CustomContextMenuStrip = this.contentContextMenuStrip;
             this.lineFromNumericUpDown.Location = new System.Drawing.Point(65, 39);
             this.lineFromNumericUpDown.Minimum = new decimal(new int[] {
             1,
@@ -84,47 +77,8 @@
             0,
             0});
             // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 76);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
-            // 
             // lineToNumericUpDown
             // 
-            this.lineToNumericUpDown.CustomContextMenuStrip = this.contentContextMenuStrip;
             this.lineToNumericUpDown.Location = new System.Drawing.Point(65, 65);
             this.lineToNumericUpDown.Minimum = new decimal(new int[] {
             1,
@@ -208,7 +162,6 @@
             this.Text = "Select lines";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.SelectLines_HelpButtonClicked);
             ((System.ComponentModel.ISupportInitialize)(this.lineFromNumericUpDown)).EndInit();
-            this.contentContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lineToNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,10 +178,5 @@
         private System.Windows.Forms.Label toLabel;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Button cancelButton;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
     }
 }

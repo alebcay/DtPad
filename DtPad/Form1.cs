@@ -95,6 +95,7 @@ namespace DtPad
 
             ClipboardToggleManager.ToggleClipboardOnClick(this, true);
             SystemUtil.SetWindowsJumpList(this);
+            ControlUtil.SetContextMenuStrip(this, prefixToolStripComboBox);
             SetFamilyEdition();
 
             WindowManager.CloseSplash(SplashWindow);
@@ -517,11 +518,6 @@ namespace DtPad
         private void editToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
         {
             ClipboardToggleManager.ToggleClipboard(this);
-        }
-
-        private void searchContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            ClipboardToggleManager.ToggleUndoOnTextBox(this);
         }
 
         private void prefixToolStripTextBox_Enter(object sender, EventArgs e)
@@ -1985,39 +1981,45 @@ namespace DtPad
 
         #endregion TextBox Context Methods
 
-        #region Search Context Methods
+        #region Common Standard Context Methods
 
-        private void undoToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void commonStandardContextMenuStrip_Opening(object sender, CancelEventArgs e)
         {
-            TextManager.Undo(this);
+            if (commonStandardContextMenuStrip.SourceControl == null)
+            {
+                return;
+            }
+
+            commonStandardContextMenuStrip.SourceControl.Focus();
+            undoCommonStandardToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender);
+
+            if (commonStandardContextMenuStrip.SourceControl is CustomNumericUpDown)
+            {
+                undoCommonStandardToolStripMenuItem.Visible = false;
+                toolStripSeparator71.Visible = false;
+                cutCommonStandardToolStripMenuItem.Visible = false;
+                pasteCommonStandardToolStripMenuItem.Visible = true;
+                deleteCommonStandardToolStripMenuItem.Visible = false;
+            }
+            else if (!ControlUtil.FocusedControlIsReadonly(sender))
+            {
+                undoCommonStandardToolStripMenuItem.Visible = true;
+                toolStripSeparator71.Visible = true;
+                cutCommonStandardToolStripMenuItem.Visible = true;
+                pasteCommonStandardToolStripMenuItem.Visible = true;
+                deleteCommonStandardToolStripMenuItem.Visible = true;
+            }
+            else
+            {
+                undoCommonStandardToolStripMenuItem.Visible = false;
+                toolStripSeparator71.Visible = false;
+                cutCommonStandardToolStripMenuItem.Visible = false;
+                pasteCommonStandardToolStripMenuItem.Visible = false;
+                deleteCommonStandardToolStripMenuItem.Visible = false;
+            }
         }
 
-        private void cutToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            TextManager.Cut(this);
-        }
-
-        private void copyToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            TextManager.Copy(this);
-        }
-
-        private void pasteToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            TextManager.Paste(this);
-        }
-
-        private void deleteToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            TextManager.Delete(this);
-        }
-
-        private void selectAllToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAll(this);
-        }
-
-        #endregion Search Context Methods
+        #endregion Common Standard Context Methods
 
         #region Internal Explorer Context Methods
 
@@ -2041,8 +2043,8 @@ namespace DtPad
             LanguageUtil.CicleControls(Name, pageContextMenuStrip.Items);
             LanguageUtil.CicleControls(Name, trayContextMenuStrip.Items);
             LanguageUtil.CicleControls(Name, textBoxContextMenuStrip.Items);
-            LanguageUtil.CicleControls(Name, searchContextMenuStrip.Items);
             LanguageUtil.CicleControls(Name, internalExplorerContextMenuStrip.Items);
+            LanguageUtil.CicleControls(Name, commonStandardContextMenuStrip.Items);
 
             //if (!verticalSplitContainer.Panel2Collapsed)
             //{
@@ -2106,9 +2108,9 @@ namespace DtPad
 
         private void SetFamilyEdition()
         {
-#if ReleaseFE
+            #if ReleaseFE
                 diarioDiUnTraduttoreToolStripMenuItem.Visible = false;
-#endif
+            #endif
         }
 
         #endregion Private Methods

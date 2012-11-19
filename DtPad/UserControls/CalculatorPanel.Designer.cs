@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.textMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.calculatorToolStrip = new System.Windows.Forms.ToolStrip();
             this.clearCalculatorToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.thousandSepToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.calculationTextBox = new DtPad.Customs.CustomTextBox();
             this.tableLayoutPanel = new DtPad.Customs.CustomTableLayoutPanel();
             this.plusButton = new System.Windows.Forms.Button();
             this.commaButton = new System.Windows.Forms.Button();
@@ -58,40 +52,11 @@
             this.eightButton = new System.Windows.Forms.Button();
             this.sevenButton = new System.Windows.Forms.Button();
             this.backspaceButton = new System.Windows.Forms.Button();
-            this.calcTextBox = new DtPad.Customs.CustomTextBox();
-            this.textMenuStrip.SuspendLayout();
+            this.calculationTextBox = new Customs.CustomTextBox();
+            this.calcTextBox = new Customs.CustomTextBox();
             this.calculatorToolStrip.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textMenuStrip
-            // 
-            this.textMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem2,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem2});
-            this.textMenuStrip.Name = "searchContextMenuStrip";
-            this.textMenuStrip.Size = new System.Drawing.Size(123, 54);
-            // 
-            // copyToolStripMenuItem2
-            // 
-            this.copyToolStripMenuItem2.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
-            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem2.Text = "Copy";
-            this.copyToolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllToolStripMenuItem2
-            // 
-            this.selectAllToolStripMenuItem2.Name = "selectAllToolStripMenuItem2";
-            this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem2.Text = "Select All";
-            this.selectAllToolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
             // 
             // calculatorToolStrip
             // 
@@ -136,7 +101,6 @@
             // 
             this.calculationTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.calculationTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.calculationTextBox.ContextMenuStrip = this.textMenuStrip;
             this.calculationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.calculationTextBox.Location = new System.Drawing.Point(0, 25);
             this.calculationTextBox.Multiline = true;
@@ -444,7 +408,6 @@
             this.calcTextBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.calcTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel.SetColumnSpan(this.calcTextBox, 5);
-            this.calcTextBox.ContextMenuStrip = this.textMenuStrip;
             this.calcTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.calcTextBox.Location = new System.Drawing.Point(3, 19);
             this.calcTextBox.Name = "calcTextBox";
@@ -464,8 +427,8 @@
             this.Controls.Add(this.tableLayoutPanel);
             this.Name = "CalculatorPanel";
             this.Size = new System.Drawing.Size(206, 385);
+            this.Load += new System.EventHandler(this.CalculatorPanel_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CalculatorPanel_KeyDown);
-            this.textMenuStrip.ResumeLayout(false);
             this.calculatorToolStrip.ResumeLayout(false);
             this.calculatorToolStrip.PerformLayout();
             this.tableLayoutPanel.ResumeLayout(false);
@@ -499,10 +462,6 @@
         private System.Windows.Forms.Button sevenButton;
         private System.Windows.Forms.Button backspaceButton;
         internal Customs.CustomTextBox calcTextBox;
-        internal System.Windows.Forms.ContextMenuStrip textMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem2;
         internal System.Windows.Forms.ToolStrip calculatorToolStrip;
         private System.Windows.Forms.ToolStripButton clearCalculatorToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;

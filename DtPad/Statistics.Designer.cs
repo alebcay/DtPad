@@ -32,10 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statistics));
             this.closeButton = new System.Windows.Forms.Button();
             this.memoryLabel = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.memoryLabel1 = new System.Windows.Forms.Label();
             this.frameworkVersionLabel = new System.Windows.Forms.TextBox();
             this.processorsLabel = new System.Windows.Forms.TextBox();
@@ -55,7 +51,6 @@
             this.refreshButton = new System.Windows.Forms.Button();
             this.statisticsToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.copyButton = new System.Windows.Forms.Button();
-            this.contentContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // closeButton
@@ -73,42 +68,12 @@
             // 
             this.memoryLabel.BackColor = System.Drawing.SystemColors.Control;
             this.memoryLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.memoryLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.memoryLabel.Location = new System.Drawing.Point(158, 170);
             this.memoryLabel.Name = "memoryLabel";
             this.memoryLabel.ReadOnly = true;
             this.memoryLabel.Size = new System.Drawing.Size(250, 13);
             this.memoryLabel.TabIndex = 15;
             this.memoryLabel.Text = "memoryLabel";
-            // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(129, 54);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(125, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
             // 
             // memoryLabel1
             // 
@@ -123,7 +88,6 @@
             // 
             this.frameworkVersionLabel.BackColor = System.Drawing.SystemColors.Control;
             this.frameworkVersionLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.frameworkVersionLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.frameworkVersionLabel.Location = new System.Drawing.Point(158, 147);
             this.frameworkVersionLabel.Name = "frameworkVersionLabel";
             this.frameworkVersionLabel.ReadOnly = true;
@@ -135,7 +99,6 @@
             // 
             this.processorsLabel.BackColor = System.Drawing.SystemColors.Control;
             this.processorsLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.processorsLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.processorsLabel.Location = new System.Drawing.Point(158, 124);
             this.processorsLabel.Name = "processorsLabel";
             this.processorsLabel.ReadOnly = true;
@@ -147,7 +110,6 @@
             // 
             this.machineNameLabel.BackColor = System.Drawing.SystemColors.Control;
             this.machineNameLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.machineNameLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.machineNameLabel.Location = new System.Drawing.Point(158, 78);
             this.machineNameLabel.Name = "machineNameLabel";
             this.machineNameLabel.ReadOnly = true;
@@ -159,7 +121,6 @@
             // 
             this.workingDirectoryLabel.BackColor = System.Drawing.SystemColors.Control;
             this.workingDirectoryLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.workingDirectoryLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.workingDirectoryLabel.Location = new System.Drawing.Point(158, 55);
             this.workingDirectoryLabel.Name = "workingDirectoryLabel";
             this.workingDirectoryLabel.ReadOnly = true;
@@ -207,7 +168,6 @@
             // 
             this.domainLabel.BackColor = System.Drawing.SystemColors.Control;
             this.domainLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.domainLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.domainLabel.Location = new System.Drawing.Point(158, 32);
             this.domainLabel.Name = "domainLabel";
             this.domainLabel.ReadOnly = true;
@@ -219,7 +179,6 @@
             // 
             this.osLabel.BackColor = System.Drawing.SystemColors.Control;
             this.osLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.osLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.osLabel.Location = new System.Drawing.Point(158, 101);
             this.osLabel.Name = "osLabel";
             this.osLabel.ReadOnly = true;
@@ -231,7 +190,6 @@
             // 
             this.usernameLabel.BackColor = System.Drawing.SystemColors.Control;
             this.usernameLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.usernameLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.usernameLabel.Location = new System.Drawing.Point(158, 9);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.ReadOnly = true;
@@ -324,7 +282,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Statistics";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.Statistics_HelpButtonClicked);
-            this.contentContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,10 +307,6 @@
         private System.Windows.Forms.Label domainLabel1;
         private System.Windows.Forms.Label usernameLabel1;
         private System.Windows.Forms.ToolTip directoryToolTip;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
         private System.Windows.Forms.Button refreshButton;
         private System.Windows.Forms.ToolTip statisticsToolTip;
         private System.Windows.Forms.Button copyButton;

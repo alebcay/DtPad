@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using DtPad.Customs;
-using DtPad.Exceptions;
 using DtPad.Managers;
 using DtPad.Utils;
 
@@ -29,15 +28,7 @@ namespace DtPad.UserControls
                 return;
             }
             
-            Form1 form = (Form1)ParentForm;
-
-            if (form == null)
-            {
-                throw new ProgramException();
-            }
-
-            searchTextBox.ContextMenuStrip = form.searchContextMenuStrip;
-            replaceTextBox.ContextMenuStrip = form.searchContextMenuStrip;
+            ControlUtil.SetContextMenuStrip(this, new[] { searchTextBox, replaceTextBox });
         }
 
         private void caseCheckBox_CheckedChanged(object sender, EventArgs e)

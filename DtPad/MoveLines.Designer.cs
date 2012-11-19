@@ -32,18 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MoveLines));
             this.lineNumberLabel1 = new System.Windows.Forms.Label();
             this.lineNumberLabel = new System.Windows.Forms.Label();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
             this.upRadioButton = new System.Windows.Forms.RadioButton();
             this.downRadioButton = new System.Windows.Forms.RadioButton();
             this.lineLabel = new System.Windows.Forms.Label();
             this.lineNumericUpDown = new DtPad.Customs.CustomNumericUpDown();
-            this.contentContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lineNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,44 +59,6 @@
             this.lineNumberLabel.Size = new System.Drawing.Size(86, 13);
             this.lineNumberLabel.TabIndex = 1;
             this.lineNumberLabel.Text = "lineNumberLabel";
-            // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 76);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
             // cancelButton
             // 
@@ -169,7 +125,6 @@
             // 
             this.lineNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lineNumericUpDown.CustomContextMenuStrip = this.contentContextMenuStrip;
             this.lineNumericUpDown.Location = new System.Drawing.Point(16, 55);
             this.lineNumericUpDown.Minimum = new decimal(new int[] {
             1,
@@ -210,7 +165,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Move Rows";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.MoveLines_HelpButtonClicked);
-            this.contentContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lineNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,11 +180,6 @@
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.RadioButton upRadioButton;
         private System.Windows.Forms.RadioButton downRadioButton;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
         private System.Windows.Forms.Label lineLabel;
     }
 }

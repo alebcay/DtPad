@@ -25,6 +25,16 @@ namespace DtPad.UserControls
 
         #region Window Methods
 
+        private void CalculatorPanel_Load(object sender, EventArgs e)
+        {
+            if (ParentForm == null || ParentForm.GetType() != typeof(Form1))
+            {
+                return;
+            }
+
+            ControlUtil.SetContextMenuStrip(this, new[] { calculationTextBox, calcTextBox });
+        }
+
         private void CalculatorPanel_KeyDown(object sender, KeyEventArgs e)
         {
             CheckKeyPressed(e);
@@ -241,7 +251,6 @@ namespace DtPad.UserControls
         internal void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, textMenuStrip.Items);
         }
 
         #endregion Multilanguage Methods

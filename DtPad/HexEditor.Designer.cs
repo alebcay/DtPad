@@ -69,7 +69,7 @@
             this.copyHexadecimalToolStripMenuItem,
             this.toolStripSeparator29,
             this.selectAllToolStripMenuItem2});
-            this.textMenuStrip.Name = "searchContextMenuStrip";
+            this.textMenuStrip.Name = "textMenuStrip";
             this.textMenuStrip.Size = new System.Drawing.Size(174, 76);
             // 
             // copyToolStripMenuItem2

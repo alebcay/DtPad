@@ -155,16 +155,16 @@ namespace DtPad.Managers
                     pageTextBox.DetectUrls = urlsCheckBox.Checked;
                 }
 
-                form1.SetMainFont(font); //form1.TextFont = font;
+                form1.SetMainFont(font);
                 form1.TextFontColor = fontColor;
                 form1.TextBackgroundColor = backgroundColor;
             }
 
             LookFeelUtil.SetForm1LookAndFeel(form1);
-            if (!closeOptionsAfterSave)
-            {
-                LookFeelUtil.SetOptionsLookAndFeel(form);
-            }
+            //if (!closeOptionsAfterSave)
+            //{
+            //    LookFeelUtil.SetOptionsLookAndFeel(form);
+            //}
 
             if (previousLanguage == languageComboBox.SelectedItem.ToString())
             {

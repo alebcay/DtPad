@@ -35,6 +35,7 @@
             this.clipboardContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showAllContentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.clipboardToolStrip.SuspendLayout();
             this.clipboardContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             this.clearClipboardToolStripButton.Image = global::DtPad.ToolbarResource.bin;
             this.clearClipboardToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.clearClipboardToolStripButton.Name = "clearClipboardToolStripButton";
-            this.clearClipboardToolStripButton.Size = new System.Drawing.Size(100, 22);
+            this.clearClipboardToolStripButton.Size = new System.Drawing.Size(109, 22);
             this.clearClipboardToolStripButton.Text = "Clear Clipboard";
             this.clearClipboardToolStripButton.Click += new System.EventHandler(this.clearClipboardToolStripButton_Click);
             // 
@@ -66,7 +67,7 @@
             this.clipboardListBox.FormattingEnabled = true;
             this.clipboardListBox.Location = new System.Drawing.Point(0, 25);
             this.clipboardListBox.Name = "clipboardListBox";
-            this.clipboardListBox.Size = new System.Drawing.Size(150, 117);
+            this.clipboardListBox.Size = new System.Drawing.Size(150, 125);
             this.clipboardListBox.TabIndex = 1;
             this.clipboardListBox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.clipboardListBox_MouseDoubleClick);
             this.clipboardListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.clipboardListBox_MouseDown);
@@ -75,24 +76,30 @@
             // 
             this.clipboardContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.copyToolStripMenuItem,
+            this.toolStripSeparator1,
             this.showAllContentToolStripMenuItem});
             this.clipboardContextMenuStrip.Name = "clipboardContextMenuStrip";
-            this.clipboardContextMenuStrip.Size = new System.Drawing.Size(168, 48);
+            this.clipboardContextMenuStrip.Size = new System.Drawing.Size(167, 76);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // showAllContentToolStripMenuItem
             // 
             this.showAllContentToolStripMenuItem.Name = "showAllContentToolStripMenuItem";
-            this.showAllContentToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.showAllContentToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.showAllContentToolStripMenuItem.Text = "Show All Content";
             this.showAllContentToolStripMenuItem.Click += new System.EventHandler(this.showAllContentToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(163, 6);
             // 
             // ClipboardPanel
             // 
@@ -117,5 +124,6 @@
         private System.Windows.Forms.ToolStripMenuItem showAllContentToolStripMenuItem;
         internal System.Windows.Forms.ContextMenuStrip clipboardContextMenuStrip;
         internal System.Windows.Forms.ToolStrip clipboardToolStrip;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }

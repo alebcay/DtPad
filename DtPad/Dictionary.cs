@@ -17,8 +17,8 @@ namespace DtPad
         {
             InitializeComponent();
             SetLanguage();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
-            LookFeelUtil.SetLookAndFeel(contextMenuStrip1);
+            ControlUtil.SetContextMenuStrip(this, new[] { wordTextBox, contentTextBox });
+
             contentTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");
 
             //languageComboBox.EditValue = ConfigUtil.GetStringParameter("Language");
@@ -67,11 +67,6 @@ namespace DtPad
         private void Dictionary_HelpButtonClicked(object sender, CancelEventArgs e)
         {
             HelpManager.ManageHelpPanel(this, e);
-        }
-
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = wordTextBox.CanUndo;
         }
 
         #endregion Window Methods

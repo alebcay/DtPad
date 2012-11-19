@@ -28,7 +28,6 @@ namespace DtPad
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReportBug));
             this.nameLabel = new System.Windows.Forms.Label();
             this.emailLabel = new System.Windows.Forms.Label();
@@ -44,16 +43,6 @@ namespace DtPad
             this.sendButton = new System.Windows.Forms.Button();
             this.requiredFieldsLabel = new System.Windows.Forms.Label();
             this.sendMeACopyCheckBox = new System.Windows.Forms.CheckBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -103,7 +92,6 @@ namespace DtPad
             // 
             // nameTextBox
             // 
-            this.nameTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.nameTextBox.Location = new System.Drawing.Point(81, 12);
             this.nameTextBox.MaxLength = 100;
             this.nameTextBox.Name = "nameTextBox";
@@ -113,7 +101,6 @@ namespace DtPad
             // 
             // emailTextBox
             // 
-            this.emailTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.emailTextBox.Location = new System.Drawing.Point(81, 38);
             this.emailTextBox.MaxLength = 100;
             this.emailTextBox.Name = "emailTextBox";
@@ -124,7 +111,6 @@ namespace DtPad
             // descriptionTextBox
             // 
             this.descriptionTextBox.AcceptsReturn = true;
-            this.descriptionTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.descriptionTextBox.Location = new System.Drawing.Point(15, 212);
             this.descriptionTextBox.MaxLength = 650;
             this.descriptionTextBox.Multiline = true;
@@ -139,7 +125,7 @@ namespace DtPad
             this.areaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.areaComboBox.FormattingEnabled = true;
             this.areaComboBox.Items.AddRange(new object[] {
-            global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems,
+            global::DtPad.Languages.it.SearchPattern_historyComboBoxItems,
             "File",
             "Edit",
             "View",
@@ -160,7 +146,6 @@ namespace DtPad
             // errorMessageTextBox
             // 
             this.errorMessageTextBox.AcceptsReturn = true;
-            this.errorMessageTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.errorMessageTextBox.Location = new System.Drawing.Point(15, 110);
             this.errorMessageTextBox.MaxLength = 650;
             this.errorMessageTextBox.Multiline = true;
@@ -213,77 +198,6 @@ namespace DtPad
             this.sendMeACopyCheckBox.Text = "Send me a copy";
             this.sendMeACopyCheckBox.UseVisualStyleBackColor = true;
             // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(153, 170);
-            this.contentContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contentContextMenuStrip_Opening);
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
-            this.cutToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(149, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
-            // 
             // ReportBug
             // 
             this.AcceptButton = this.sendButton;
@@ -315,7 +229,6 @@ namespace DtPad
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bug Report";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.ReportBug_HelpButtonClicked);
-            this.contentContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,14 +250,5 @@ namespace DtPad
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.Label requiredFieldsLabel;
         internal System.Windows.Forms.CheckBox sendMeACopyCheckBox;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
     }
 }

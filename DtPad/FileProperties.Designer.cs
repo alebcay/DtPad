@@ -34,10 +34,6 @@ namespace DtPad
             this.creationDateLabel1 = new System.Windows.Forms.Label();
             this.directoryLabel1 = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.directoryLabel = new System.Windows.Forms.TextBox();
             this.creationDateLabel = new System.Windows.Forms.TextBox();
             this.closeButton = new System.Windows.Forms.Button();
@@ -56,7 +52,6 @@ namespace DtPad
             this.encodingLabel = new System.Windows.Forms.TextBox();
             this.copyButton = new System.Windows.Forms.Button();
             this.filePropertiesToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.contentContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +89,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nameLabel.BackColor = System.Drawing.SystemColors.Control;
             this.nameLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nameLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.nameLabel.Location = new System.Drawing.Point(110, 9);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.ReadOnly = true;
@@ -103,42 +97,12 @@ namespace DtPad
             this.nameLabel.Text = "nameLabel";
             this.nameLabel.MouseLeave += new System.EventHandler(this.nameLabel_MouseLeave);
             // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(153, 76);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(149, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
-            // 
             // directoryLabel
             // 
             this.directoryLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.directoryLabel.BackColor = System.Drawing.SystemColors.Control;
             this.directoryLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.directoryLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.directoryLabel.Location = new System.Drawing.Point(110, 101);
             this.directoryLabel.Name = "directoryLabel";
             this.directoryLabel.ReadOnly = true;
@@ -153,7 +117,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.creationDateLabel.BackColor = System.Drawing.SystemColors.Control;
             this.creationDateLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.creationDateLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.creationDateLabel.Location = new System.Drawing.Point(110, 32);
             this.creationDateLabel.Name = "creationDateLabel";
             this.creationDateLabel.ReadOnly = true;
@@ -214,7 +177,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lastUpdateLabel.BackColor = System.Drawing.SystemColors.Control;
             this.lastUpdateLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lastUpdateLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.lastUpdateLabel.Location = new System.Drawing.Point(110, 55);
             this.lastUpdateLabel.Name = "lastUpdateLabel";
             this.lastUpdateLabel.ReadOnly = true;
@@ -228,7 +190,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lastAccessLabel.BackColor = System.Drawing.SystemColors.Control;
             this.lastAccessLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lastAccessLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.lastAccessLabel.Location = new System.Drawing.Point(110, 78);
             this.lastAccessLabel.Name = "lastAccessLabel";
             this.lastAccessLabel.ReadOnly = true;
@@ -242,7 +203,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.readonlyLabel.BackColor = System.Drawing.SystemColors.Control;
             this.readonlyLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.readonlyLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.readonlyLabel.Location = new System.Drawing.Point(110, 124);
             this.readonlyLabel.Name = "readonlyLabel";
             this.readonlyLabel.ReadOnly = true;
@@ -256,7 +216,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sizeLabel.BackColor = System.Drawing.SystemColors.Control;
             this.sizeLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.sizeLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.sizeLabel.Location = new System.Drawing.Point(110, 147);
             this.sizeLabel.Name = "sizeLabel";
             this.sizeLabel.ReadOnly = true;
@@ -288,7 +247,6 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.encodingLabel.BackColor = System.Drawing.SystemColors.Control;
             this.encodingLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.encodingLabel.ContextMenuStrip = this.contentContextMenuStrip;
             this.encodingLabel.Location = new System.Drawing.Point(110, 170);
             this.encodingLabel.Name = "encodingLabel";
             this.encodingLabel.ReadOnly = true;
@@ -340,7 +298,6 @@ namespace DtPad
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "File Properties";
-            this.contentContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -369,10 +326,6 @@ namespace DtPad
         private System.Windows.Forms.PictureBox iconPictureBox;
         private System.Windows.Forms.Label encodingLabel1;
         private System.Windows.Forms.TextBox encodingLabel;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
         private System.Windows.Forms.Button copyButton;
         private System.Windows.Forms.ToolTip filePropertiesToolTip;
     }

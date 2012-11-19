@@ -41,7 +41,8 @@ namespace DtPad
             Form1 form = (Form1)Owner;
             
             InitializeComponent();
-            LookFeelUtil.SetOptionsLookAndFeel(this);
+            ControlUtil.SetContextMenuStrip(this, new[] { proxyHostTextBox, domainTextBox, passwordTextBox, usernameTextBox, customBrowserTextBox, specificFolderTextBox, backupExtensionTextBox, backupCustomFolderTextBox,
+                searchHistoryNumericUpDown, hideLinesNumericUpDown, proxyPortNumericUpDown, recentFilesNumberNumericUpDown, noteModeSizeXNumericUpDown, (Control)noteModeSizeYNumericUpDown });
             SetLanguage();
 
             optionsTreeView.ExpandAll();
@@ -216,7 +217,6 @@ namespace DtPad
         internal void SetLanguage()
         {
             LanguageUtil.SetCurrentLanguage(this);
-            LanguageUtil.CicleControls(Name, numberContextMenuStrip.Items);
             optionsToolTip.SetToolTip(extensionsButton, LanguageUtil.GetCurrentLanguageString("extensionsButtonToolTip", Name));
             optionsToolTip.SetToolTip(infoProxyPictureBox, LanguageUtil.GetCurrentLanguageString("infoProxyPictureBoxToolTip", Name));
             optionsToolTip.SetToolTip(helpHideLinesPictureBox, LanguageUtil.GetCurrentLanguageString("helpHideLinesPictureBoxToolTip", Name));
@@ -358,11 +358,6 @@ namespace DtPad
         private void domainTextBox_TextChanged(object sender, EventArgs e)
         {
             statusPictureBox.Visible = false;
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender);
         }
 
         private void enableAutomaticUpdateCheckBox_CheckedChanged(object sender, EventArgs e)

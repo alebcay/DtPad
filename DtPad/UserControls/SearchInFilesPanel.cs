@@ -16,10 +16,19 @@ namespace DtPad.UserControls
         {
             InitializeComponent();
             LookFeelUtil.SetLookAndFeel(searchInFilesContextMenuStrip);
-            LookFeelUtil.SetLookAndFeel(textMenuStrip);
         }
 
         #region Window Methods
+
+        private void SearchInFilesPanel_Load(object sender, EventArgs e)
+        {
+            if (ParentForm == null || ParentForm.GetType() != typeof(Form1))
+            {
+                return;
+            }
+
+            ControlUtil.SetContextMenuStrip(this, new[] { infoDirLabel, infoTextLabel });
+        }
 
         private void searchInFilesListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -134,7 +143,6 @@ namespace DtPad.UserControls
         {
             LanguageUtil.SetCurrentLanguage(this);
             LanguageUtil.CicleControls(Name, searchInFilesContextMenuStrip.Items);
-            LanguageUtil.CicleControls(Name, textMenuStrip.Items);
             //LanguageUtil.CicleControls(Name, infoPanel.Controls, false);
         }
 

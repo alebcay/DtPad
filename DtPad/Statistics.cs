@@ -19,7 +19,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, new[] { usernameLabel, domainLabel, workingDirectoryLabel, machineNameLabel, osLabel, processorsLabel, frameworkVersionLabel, memoryLabel });
             SetLanguage();
 
             LoadData();

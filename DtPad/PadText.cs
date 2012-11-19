@@ -17,8 +17,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
-            LookFeelUtil.SetLookAndFeel(content2contextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, new[] { whiteCharacterTextBox, (Control)widthNumericUpDown });
             SetLanguage();
         }
 
@@ -40,11 +39,6 @@ namespace DtPad
         private void rightCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             leftCheckBox.Checked = !rightCheckBox.Checked;
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = whiteCharacterTextBox.CanUndo;
         }
 
         #endregion Window Methods
@@ -73,55 +67,6 @@ namespace DtPad
         }
 
         #endregion Button Methods
-
-        #region ContextMenu Methods
-
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.UndoControl(whiteCharacterTextBox);
-        }
-
-        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CutControl(whiteCharacterTextBox);
-        }
-
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CopyControl(whiteCharacterTextBox);
-        }
-
-        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.PasteControl(whiteCharacterTextBox);
-        }
-
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.DeleteControl(whiteCharacterTextBox);
-        }
-
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAllControl(whiteCharacterTextBox);
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            TextManager.CopyControl(widthNumericUpDown);
-        }
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            TextManager.PasteControl(widthNumericUpDown);
-        }
-
-        private void toolStripMenuItem3_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAllControl(widthNumericUpDown);
-        }
-
-        #endregion ContextMenu Methods
 
         #region Private Methods
 

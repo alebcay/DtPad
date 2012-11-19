@@ -423,15 +423,6 @@ namespace DtPad
             this.recentFilesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.undoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator55 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.printDialog = new System.Windows.Forms.PrintDialog();
             this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.pageSetupDialog = new System.Windows.Forms.PageSetupDialog();
@@ -479,13 +470,21 @@ namespace DtPad
             this.openFileOnDropboxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator61 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator62 = new System.Windows.Forms.ToolStripSeparator();
+            this.commonStandardContextMenuStrip = new System.Windows.Forms.ContextMenuStrip();
+            this.undoCommonStandardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator71 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutCommonStandardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyCommonStandardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteCommonStandardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteCommonStandardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator72 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllCommonStandardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pageContextMenuStrip.SuspendLayout();
             this.textBoxContextMenuStrip.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.trayContextMenuStrip.SuspendLayout();
-            this.searchContextMenuStrip.SuspendLayout();
             this.verticalSplitContainer.Panel1.SuspendLayout();
             this.verticalSplitContainer.Panel2.SuspendLayout();
             this.verticalSplitContainer.SuspendLayout();
@@ -504,6 +503,7 @@ namespace DtPad
             this.calculatorTabPage.SuspendLayout();
             this.calendarTabPage.SuspendLayout();
             this.searchInFilesTabPage.SuspendLayout();
+            this.commonStandardContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPictureBox)).BeginInit();
@@ -3549,7 +3549,6 @@ namespace DtPad
             this.prefixToolStripComboBox.Enter += new System.EventHandler(this.prefixToolStripComboBox_Enter);
             this.prefixToolStripComboBox.TextChanged += new System.EventHandler(this.prefixToolStripComboBox_TextChanged);
             this.prefixToolStripComboBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.prefixToolStripComboBox_MouseDown);
-            this.prefixToolStripComboBox.ComboBox.ContextMenuStrip = searchContextMenuStrip;
             // 
             // prefixToolStripButton
             // 
@@ -3875,76 +3874,6 @@ namespace DtPad
             this.exitToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
-            // 
-            // searchContextMenuStrip
-            // 
-            this.searchContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem2,
-            this.toolStripSeparator55,
-            this.cutToolStripMenuItem2,
-            this.copyToolStripMenuItem2,
-            this.pasteToolStripMenuItem2,
-            this.deleteToolStripMenuItem2,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem2});
-            this.searchContextMenuStrip.Name = "searchContextMenuStrip";
-            this.searchContextMenuStrip.Size = new System.Drawing.Size(129, 148);
-            this.searchContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.searchContextMenuStrip_Opening);
-            // 
-            // undoToolStripMenuItem2
-            // 
-            this.undoToolStripMenuItem2.Name = "undoToolStripMenuItem2";
-            this.undoToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
-            this.undoToolStripMenuItem2.Text = "Undo";
-            this.undoToolStripMenuItem2.Click += new System.EventHandler(this.undoToolStripMenuItem2_Click);
-            // 
-            // toolStripSeparator55
-            // 
-            this.toolStripSeparator55.Name = "toolStripSeparator55";
-            this.toolStripSeparator55.Size = new System.Drawing.Size(125, 6);
-            // 
-            // cutToolStripMenuItem2
-            // 
-            this.cutToolStripMenuItem2.Image = global::DtPad.ToolbarResource.cut;
-            this.cutToolStripMenuItem2.Name = "cutToolStripMenuItem2";
-            this.cutToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
-            this.cutToolStripMenuItem2.Text = "Cut";
-            this.cutToolStripMenuItem2.Click += new System.EventHandler(this.cutToolStripMenuItem2_Click);
-            // 
-            // copyToolStripMenuItem2
-            // 
-            this.copyToolStripMenuItem2.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
-            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
-            this.copyToolStripMenuItem2.Text = "Copy";
-            this.copyToolStripMenuItem2.Click += new System.EventHandler(this.copyToolStripMenuItem2_Click);
-            // 
-            // pasteToolStripMenuItem2
-            // 
-            this.pasteToolStripMenuItem2.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem2.Name = "pasteToolStripMenuItem2";
-            this.pasteToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
-            this.pasteToolStripMenuItem2.Text = "Paste";
-            this.pasteToolStripMenuItem2.Click += new System.EventHandler(this.pasteToolStripMenuItem2_Click);
-            // 
-            // deleteToolStripMenuItem2
-            // 
-            this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
-            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
-            this.deleteToolStripMenuItem2.Text = "Delete";
-            this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.deleteToolStripMenuItem2_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(125, 6);
-            // 
-            // selectAllToolStripMenuItem2
-            // 
-            this.selectAllToolStripMenuItem2.Name = "selectAllToolStripMenuItem2";
-            this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
-            this.selectAllToolStripMenuItem2.Text = "Select All";
-            this.selectAllToolStripMenuItem2.Click += new System.EventHandler(this.selectAllToolStripMenuItem2_Click);
             // 
             // printDialog
             // 
@@ -4448,6 +4377,77 @@ namespace DtPad
             this.toolStripSeparator62.Name = "toolStripSeparator62";
             this.toolStripSeparator62.Size = new System.Drawing.Size(184, 6);
             // 
+            // commonStandardContextMenuStrip
+            // 
+            this.commonStandardContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoCommonStandardToolStripMenuItem,
+            this.toolStripSeparator71,
+            this.cutCommonStandardToolStripMenuItem,
+            this.copyCommonStandardToolStripMenuItem,
+            this.pasteCommonStandardToolStripMenuItem,
+            this.deleteCommonStandardToolStripMenuItem,
+            this.toolStripSeparator72,
+            this.selectAllCommonStandardToolStripMenuItem});
+            this.commonStandardContextMenuStrip.Name = "commonStandardContextMenuStrip";
+            this.commonStandardContextMenuStrip.Size = new System.Drawing.Size(123, 148);
+            this.commonStandardContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.commonStandardContextMenuStrip_Opening);
+            // 
+            // undoCommonStandardToolStripMenuItem
+            // 
+            this.undoCommonStandardToolStripMenuItem.Enabled = false;
+            this.undoCommonStandardToolStripMenuItem.Name = "undoCommonStandardToolStripMenuItem";
+            this.undoCommonStandardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.undoCommonStandardToolStripMenuItem.Text = "Undo";
+            this.undoCommonStandardToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator71
+            // 
+            this.toolStripSeparator71.Name = "toolStripSeparator71";
+            this.toolStripSeparator71.Size = new System.Drawing.Size(119, 6);
+            // 
+            // cutCommonStandardToolStripMenuItem
+            // 
+            this.cutCommonStandardToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
+            this.cutCommonStandardToolStripMenuItem.Name = "cutCommonStandardToolStripMenuItem";
+            this.cutCommonStandardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.cutCommonStandardToolStripMenuItem.Text = "Cut";
+            this.cutCommonStandardToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
+            // 
+            // copyCommonStandardToolStripMenuItem
+            // 
+            this.copyCommonStandardToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
+            this.copyCommonStandardToolStripMenuItem.Name = "copyCommonStandardToolStripMenuItem";
+            this.copyCommonStandardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.copyCommonStandardToolStripMenuItem.Text = "Copy";
+            this.copyCommonStandardToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
+            // 
+            // pasteCommonStandardToolStripMenuItem
+            // 
+            this.pasteCommonStandardToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
+            this.pasteCommonStandardToolStripMenuItem.Name = "pasteCommonStandardToolStripMenuItem";
+            this.pasteCommonStandardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.pasteCommonStandardToolStripMenuItem.Text = "Paste";
+            this.pasteCommonStandardToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
+            // 
+            // deleteCommonStandardToolStripMenuItem
+            // 
+            this.deleteCommonStandardToolStripMenuItem.Name = "deleteCommonStandardToolStripMenuItem";
+            this.deleteCommonStandardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.deleteCommonStandardToolStripMenuItem.Text = "Delete";
+            this.deleteCommonStandardToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator72
+            // 
+            this.toolStripSeparator72.Name = "toolStripSeparator72";
+            this.toolStripSeparator72.Size = new System.Drawing.Size(119, 6);
+            // 
+            // selectAllCommonStandardToolStripMenuItem
+            // 
+            this.selectAllCommonStandardToolStripMenuItem.Name = "selectAllCommonStandardToolStripMenuItem";
+            this.selectAllCommonStandardToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.selectAllCommonStandardToolStripMenuItem.Text = "Select All";
+            this.selectAllCommonStandardToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AllowDrop = true;
@@ -4478,7 +4478,6 @@ namespace DtPad
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.trayContextMenuStrip.ResumeLayout(false);
-            this.searchContextMenuStrip.ResumeLayout(false);
             this.verticalSplitContainer.Panel1.ResumeLayout(false);
             this.verticalSplitContainer.Panel1.PerformLayout();
             this.verticalSplitContainer.Panel2.ResumeLayout(false);
@@ -4500,6 +4499,7 @@ namespace DtPad
             this.calculatorTabPage.ResumeLayout(false);
             this.calendarTabPage.ResumeLayout(false);
             this.searchInFilesTabPage.ResumeLayout(false);
+            this.commonStandardContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomTrackBarControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.zoomPictureBox)).EndInit();
@@ -4650,13 +4650,6 @@ namespace DtPad
         private System.Windows.Forms.ToolStripButton outdentToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator28;
         private Customs.CustomToolStripMenuItem newToolStripMenuItem2;
-        internal System.Windows.Forms.ContextMenuStrip searchContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
         internal System.Windows.Forms.NotifyIcon notifyIcon;
         private System.Windows.Forms.ToolStripMenuItem prefixToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removePrefixToolStripMenuItem;
@@ -4800,7 +4793,6 @@ namespace DtPad
         private System.Windows.Forms.ToolStripMenuItem xMLSchemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator54;
         internal DtPad.UserControls.CalendarPanel calendarPanel;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator55;
         internal System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem cutAppendToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
@@ -4816,7 +4808,6 @@ namespace DtPad
         internal System.Windows.Forms.ToolStripButton cutToolStripButton;
         internal System.Windows.Forms.ToolStripButton copyToolStripButton;
         internal System.Windows.Forms.ToolStripButton pasteToolStripButton;
-        internal System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem2;
         internal System.Windows.Forms.ToolStripTextBox prefixToolStripTextBox;
         internal System.Windows.Forms.ToolStripTextBox suffixToolStripTextBox;
         internal System.Windows.Forms.ToolStripMenuItem renameToolStripMenuItem;
@@ -4957,5 +4948,14 @@ namespace DtPad
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator61;
         private System.Windows.Forms.ToolStripMenuItem openFileOnDropboxToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator62;
+        internal System.Windows.Forms.ContextMenuStrip commonStandardContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem undoCommonStandardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator71;
+        private System.Windows.Forms.ToolStripMenuItem cutCommonStandardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem copyCommonStandardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasteCommonStandardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteCommonStandardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator72;
+        private System.Windows.Forms.ToolStripMenuItem selectAllCommonStandardToolStripMenuItem;
     }
 }

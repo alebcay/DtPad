@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Windows.Forms;
 using DtPad.Managers;
 using DtPad.Utils;
@@ -17,16 +16,10 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, contentTextBox);
             SetLanguage();
 
             contentTextBox.Select(0, 0);
-
-            if (ConfigUtil.GetIntParameter("LookAndFeel") == 1)
-            {
-                contentContextMenuStrip.RenderMode = ToolStripRenderMode.System;
-            }
-
             contentTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");
         }
 
@@ -34,11 +27,6 @@ namespace DtPad
         {
             openButton.Enabled = !String.IsNullOrEmpty(contentTextBox.Text);
             //undoToolStripMenuItem.Enabled = contentTextBox.CanUndo;
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = contentTextBox.CanUndo;
         }
 
         #endregion Window Methods
@@ -67,40 +55,6 @@ namespace DtPad
         }
 
         #endregion Button Methods
-
-        #region ContextMenu Methods
-
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.UndoControl(contentTextBox);
-        }
-
-        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CutControl(contentTextBox);
-        }
-
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CopyControl(contentTextBox);
-        }
-
-        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.PasteControl(contentTextBox);
-        }
-
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.DeleteControl(contentTextBox);
-        }
-
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAllControl(contentTextBox);
-        }
-
-        #endregion ContextMenu Methods
 
         #region Private Methods
 

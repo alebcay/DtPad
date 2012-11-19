@@ -13,47 +13,47 @@ namespace DtPad.Managers
     {
         #region Internal Methods
 
-        internal static void ToggleUndoOnTextBox(Form1 form)
-        {
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
-            TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
-            TextBox calculationTextBox = form.calculatorPanel.calculationTextBox;
-            TextBox calcTextBox = form.calculatorPanel.calcTextBox;
-            ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
+        //internal static void ToggleUndoOnTextBox(Form1 form)
+        //{
+        //    TextBox searchTextBox = form.searchPanel.searchTextBox;
+        //    TextBox replaceTextBox = form.searchPanel.replaceTextBox;
+        //    TextBox noteTitleTextBox = form.notePanel.noteTitleTextBox;
+        //    TextBox nodeTextTextBox = form.notePanel.nodeTextTextBox;
+        //    TextBox calculationTextBox = form.calculatorPanel.calculationTextBox;
+        //    TextBox calcTextBox = form.calculatorPanel.calcTextBox;
+        //    ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
 
-            ToolStripMenuItem undoToolStripMenuItem2 = form.undoToolStripMenuItem2;
+        //    ToolStripMenuItem undoToolStripMenuItem2 = form.undoToolStripMenuItem2;
 
-            if (searchTextBox.Focused)
-            {
-                undoToolStripMenuItem2.Enabled = searchTextBox.CanUndo;
-            }
-            else if (replaceTextBox.Focused)
-            {
-                undoToolStripMenuItem2.Enabled = replaceTextBox.CanUndo;
-            }
-            else if (noteTitleTextBox.Focused)
-            {
-                undoToolStripMenuItem2.Enabled = noteTitleTextBox.CanUndo;
-            }
-            else if (nodeTextTextBox.Focused)
-            {
-                undoToolStripMenuItem2.Enabled = nodeTextTextBox.CanUndo;
-            }
-            else if (calculationTextBox.Focused)
-            {
-                undoToolStripMenuItem2.Enabled = calculationTextBox.CanUndo;
-            }
-            else if (calcTextBox.Focused)
-            {
-                undoToolStripMenuItem2.Enabled = calcTextBox.CanUndo;
-            }
-            else if (prefixToolStripComboBox.Focused)
-            {
-                undoToolStripMenuItem2.Enabled = false;
-            }
-        }
+        //    if (searchTextBox.Focused)
+        //    {
+        //        undoToolStripMenuItem2.Enabled = searchTextBox.CanUndo;
+        //    }
+        //    else if (replaceTextBox.Focused)
+        //    {
+        //        undoToolStripMenuItem2.Enabled = replaceTextBox.CanUndo;
+        //    }
+        //    else if (noteTitleTextBox.Focused)
+        //    {
+        //        undoToolStripMenuItem2.Enabled = noteTitleTextBox.CanUndo;
+        //    }
+        //    else if (nodeTextTextBox.Focused)
+        //    {
+        //        undoToolStripMenuItem2.Enabled = nodeTextTextBox.CanUndo;
+        //    }
+        //    else if (calculationTextBox.Focused)
+        //    {
+        //        undoToolStripMenuItem2.Enabled = calculationTextBox.CanUndo;
+        //    }
+        //    else if (calcTextBox.Focused)
+        //    {
+        //        undoToolStripMenuItem2.Enabled = calcTextBox.CanUndo;
+        //    }
+        //    else if (prefixToolStripComboBox.Focused)
+        //    {
+        //        undoToolStripMenuItem2.Enabled = false;
+        //    }
+        //}
 
         internal static void ToggleClipboard(Form1 form)
         {

@@ -22,7 +22,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, descriptionTextBox);
             SetLanguage();
 
             versionLabel.Text = String.Format("{0} - build {1}", AssemblyUtil.AssemblyVersion, AssemblyUtil.AssemblyConfiguration);
@@ -79,20 +79,6 @@ namespace DtPad
         }
 
         #endregion Buttons Methods
-
-        #region ContextMenu Methods
-
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CopyControl(descriptionTextBox);
-        }
-
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAllControl(descriptionTextBox);
-        }
-
-        #endregion ContextMenu Methods
 
         #region Private Methods
 

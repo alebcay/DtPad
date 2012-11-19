@@ -42,16 +42,11 @@
             this.openSelectedFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyFileFullPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoPanel = new DtPad.Customs.CustomPanel();
-            this.infoTextLabel = new DtPad.Customs.CustomTextBox();
-            this.textMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoDirLabel = new DtPad.Customs.CustomTextBox();
+            this.infoTextLabel = new Customs.CustomTextBox();
+            this.infoDirLabel = new Customs.CustomTextBox();
             this.searchInFilesToolStrip.SuspendLayout();
             this.searchInFilesContextMenuStrip.SuspendLayout();
             this.infoPanel.SuspendLayout();
-            this.textMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // searchInFilesToolStrip
@@ -176,9 +171,11 @@
             this.infoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.infoPanel.ForeColor = System.Drawing.Color.SteelBlue;
             this.infoPanel.HorizontalLine = true;
+            this.infoPanel.HorizontalLineOnTop = false;
             this.infoPanel.Location = new System.Drawing.Point(0, 25);
             this.infoPanel.MarginBottomHorizontalLine = 3;
             this.infoPanel.MarginLeftHorizontalLine = 0;
+            this.infoPanel.MarginTopHorizontalLine = 1;
             this.infoPanel.Name = "infoPanel";
             this.infoPanel.NotShowLine = false;
             this.infoPanel.Size = new System.Drawing.Size(150, 41);
@@ -189,7 +186,6 @@
             this.infoTextLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.infoTextLabel.BackColor = System.Drawing.Color.White;
             this.infoTextLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.infoTextLabel.ContextMenuStrip = this.textMenuStrip;
             this.infoTextLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.infoTextLabel.Location = new System.Drawing.Point(0, 22);
             this.infoTextLabel.Name = "infoTextLabel";
@@ -197,41 +193,11 @@
             this.infoTextLabel.Size = new System.Drawing.Size(150, 13);
             this.infoTextLabel.TabIndex = 1;
             // 
-            // textMenuStrip
-            // 
-            this.textMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyToolStripMenuItem2,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem2});
-            this.textMenuStrip.Name = "searchContextMenuStrip";
-            this.textMenuStrip.Size = new System.Drawing.Size(153, 76);
-            // 
-            // copyToolStripMenuItem2
-            // 
-            this.copyToolStripMenuItem2.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
-            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.copyToolStripMenuItem2.Text = "Copy";
-            this.copyToolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(149, 6);
-            // 
-            // selectAllToolStripMenuItem2
-            // 
-            this.selectAllToolStripMenuItem2.Name = "selectAllToolStripMenuItem2";
-            this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.selectAllToolStripMenuItem2.Text = "Select All";
-            this.selectAllToolStripMenuItem2.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
-            // 
             // infoDirLabel
             // 
             this.infoDirLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.infoDirLabel.BackColor = System.Drawing.Color.White;
             this.infoDirLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.infoDirLabel.ContextMenuStrip = this.textMenuStrip;
             this.infoDirLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.infoDirLabel.Location = new System.Drawing.Point(0, 5);
             this.infoDirLabel.Name = "infoDirLabel";
@@ -249,12 +215,12 @@
             this.Controls.Add(this.searchInFilesToolStrip);
             this.Name = "SearchInFilesPanel";
             this.Size = new System.Drawing.Size(150, 226);
+            this.Load += new System.EventHandler(this.SearchInFilesPanel_Load);
             this.searchInFilesToolStrip.ResumeLayout(false);
             this.searchInFilesToolStrip.PerformLayout();
             this.searchInFilesContextMenuStrip.ResumeLayout(false);
             this.infoPanel.ResumeLayout(false);
             this.infoPanel.PerformLayout();
-            this.textMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,9 +243,5 @@
         private System.Windows.Forms.ToolStripButton newSearchToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem copyFileFullPathToolStripMenuItem;
-        internal System.Windows.Forms.ContextMenuStrip textMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem2;
     }
 }

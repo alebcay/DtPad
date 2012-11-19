@@ -38,14 +38,14 @@
             // 
             // tabPagesListBox
             // 
-            this.tabPagesListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabPagesListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabPagesListBox.FormattingEnabled = true;
             this.tabPagesListBox.Location = new System.Drawing.Point(12, 29);
             this.tabPagesListBox.Name = "tabPagesListBox";
             this.tabPagesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.tabPagesListBox.Size = new System.Drawing.Size(286, 160);
+            this.tabPagesListBox.Size = new System.Drawing.Size(419, 212);
             this.tabPagesListBox.TabIndex = 1;
             this.tabPagesListBox.SelectedIndexChanged += new System.EventHandler(this.tabPagesListBox_SelectedIndexChanged);
             // 
@@ -63,11 +63,12 @@
             this.compareButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.compareButton.Enabled = false;
             this.compareButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.compareButton.Location = new System.Drawing.Point(130, 227);
+            this.compareButton.Location = new System.Drawing.Point(240, 290);
             this.compareButton.Name = "compareButton";
-            this.compareButton.Size = new System.Drawing.Size(88, 23);
+            this.compareButton.Size = new System.Drawing.Size(111, 23);
             this.compareButton.TabIndex = 3;
             this.compareButton.Text = "Compare";
+            this.compareButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.compareButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.compareButton.UseVisualStyleBackColor = true;
             this.compareButton.Click += new System.EventHandler(this.compareButton_Click);
@@ -76,7 +77,7 @@
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.closeButton.Location = new System.Drawing.Point(224, 227);
+            this.closeButton.Location = new System.Drawing.Point(357, 290);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 4;
@@ -89,7 +90,7 @@
             // 
             this.caseSensitiveCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.caseSensitiveCheckBox.AutoSize = true;
-            this.caseSensitiveCheckBox.Location = new System.Drawing.Point(12, 195);
+            this.caseSensitiveCheckBox.Location = new System.Drawing.Point(12, 258);
             this.caseSensitiveCheckBox.Name = "caseSensitiveCheckBox";
             this.caseSensitiveCheckBox.Size = new System.Drawing.Size(94, 17);
             this.caseSensitiveCheckBox.TabIndex = 2;
@@ -102,7 +103,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.closeButton;
-            this.ClientSize = new System.Drawing.Size(311, 262);
+            this.ClientSize = new System.Drawing.Size(444, 325);
             this.Controls.Add(this.caseSensitiveCheckBox);
             this.Controls.Add(this.compareButton);
             this.Controls.Add(this.closeButton);

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Windows.Forms;
 using DtPad.Customs;
 using DtPad.Managers;
@@ -18,6 +17,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
+            ControlUtil.SetContextMenuStrip(this, fileNameTextBox);
             SetLanguage();
         }
 
@@ -33,11 +33,6 @@ namespace DtPad
                 WindowManager.ShowAlertBox(this, LanguageUtil.GetCurrentLanguageString("DPDefaultFileCharNotAllowed", Name));
                 fileNameTextBox.Focus();
             }
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = fileNameTextBox.CanUndo;
         }
 
         #endregion Window Methods

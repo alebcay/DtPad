@@ -17,17 +17,11 @@ namespace DtPad
         internal void InitializeForm(String content, bool helpMode)
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
-            contentTextBox.Text = content;
+            ControlUtil.SetContextMenuStrip(this, contentTextBox);
             LanguageUtil.SetCurrentLanguage(this);
 
+            contentTextBox.Text = content;
             contentTextBox.Select(0, 0);
-
-            if (ConfigUtil.GetIntParameter("LookAndFeel") == 1)
-            {
-                contentContextMenuStrip.RenderMode = ToolStripRenderMode.System;
-            }
-
             contentTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");
 
             if (helpMode)
@@ -57,19 +51,5 @@ namespace DtPad
         }
 
         #endregion Button Methods
-
-        #region Contex tMenu Methods
-
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CopyControl(contentTextBox);
-        }
-
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAllControl(contentTextBox);
-        }
-
-        #endregion Context Menu Methods
     }
 }

@@ -40,15 +40,6 @@
             this.workingFolderLabel = new System.Windows.Forms.Label();
             this.commandLinePictureBox = new System.Windows.Forms.PictureBox();
             this.workingFolderTextBox = new System.Windows.Forms.TextBox();
-            this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.commandLineTextBox = new System.Windows.Forms.TextBox();
             this.commandLineLabel = new System.Windows.Forms.Label();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
@@ -63,7 +54,6 @@
             this.toolGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.workingFolderPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandLinePictureBox)).BeginInit();
-            this.contentContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolTreeView
@@ -108,7 +98,7 @@
             this.toolGroupBox1.Controls.Add(this.descriptionLabel);
             this.toolGroupBox1.Location = new System.Drawing.Point(3, 3);
             this.toolGroupBox1.Name = "toolGroupBox1";
-            this.toolGroupBox1.Size = new System.Drawing.Size(316, 117);
+            this.toolGroupBox1.Size = new System.Drawing.Size(316, 213);
             this.toolGroupBox1.TabIndex = 0;
             this.toolGroupBox1.TabStop = false;
             this.toolGroupBox1.Text = "Settings";
@@ -121,7 +111,7 @@
             "Normal window",
             "Minimized",
             "Maximized"});
-            this.runComboBox.Location = new System.Drawing.Point(101, 86);
+            this.runComboBox.Location = new System.Drawing.Point(101, 182);
             this.runComboBox.Name = "runComboBox";
             this.runComboBox.Size = new System.Drawing.Size(135, 21);
             this.runComboBox.TabIndex = 7;
@@ -130,7 +120,7 @@
             // runLabel
             // 
             this.runLabel.AutoSize = true;
-            this.runLabel.Location = new System.Drawing.Point(10, 89);
+            this.runLabel.Location = new System.Drawing.Point(10, 185);
             this.runLabel.Name = "runLabel";
             this.runLabel.Size = new System.Drawing.Size(30, 13);
             this.runLabel.TabIndex = 6;
@@ -139,7 +129,7 @@
             // workingFolderPictureBox
             // 
             this.workingFolderPictureBox.Image = global::DtPad.ToolbarResource.info_blue;
-            this.workingFolderPictureBox.Location = new System.Drawing.Point(288, 66);
+            this.workingFolderPictureBox.Location = new System.Drawing.Point(288, 114);
             this.workingFolderPictureBox.Name = "workingFolderPictureBox";
             this.workingFolderPictureBox.Size = new System.Drawing.Size(16, 16);
             this.workingFolderPictureBox.TabIndex = 7;
@@ -149,7 +139,7 @@
             // workingFolderLabel
             // 
             this.workingFolderLabel.AutoSize = true;
-            this.workingFolderLabel.Location = new System.Drawing.Point(10, 66);
+            this.workingFolderLabel.Location = new System.Drawing.Point(10, 114);
             this.workingFolderLabel.Name = "workingFolderLabel";
             this.workingFolderLabel.Size = new System.Drawing.Size(79, 13);
             this.workingFolderLabel.TabIndex = 4;
@@ -168,90 +158,21 @@
             // 
             // workingFolderTextBox
             // 
-            this.workingFolderTextBox.ContextMenuStrip = this.contentContextMenuStrip;
-            this.workingFolderTextBox.Location = new System.Drawing.Point(101, 63);
+            this.workingFolderTextBox.Location = new System.Drawing.Point(101, 111);
+            this.workingFolderTextBox.Multiline = true;
             this.workingFolderTextBox.Name = "workingFolderTextBox";
-            this.workingFolderTextBox.Size = new System.Drawing.Size(181, 20);
+            this.workingFolderTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.workingFolderTextBox.Size = new System.Drawing.Size(181, 65);
             this.workingFolderTextBox.TabIndex = 5;
             this.workingFolderTextBox.Leave += new System.EventHandler(this.workingFolderTextBox_Leave);
             // 
-            // contentContextMenuStrip
-            // 
-            this.contentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.toolStripSeparator29,
-            this.selectAllToolStripMenuItem});
-            this.contentContextMenuStrip.Name = "searchContextMenuStrip";
-            this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 148);
-            this.contentContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.contentContextMenuStrip_Opening);
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.undoToolStripMenuItem.Text = "Undo";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.undoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(119, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.cutToolStripMenuItem.Text = "Cut";
-            this.cutToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.cutToolStripMenuItem_Click);
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPad.ToolbarResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.copyToolStripMenuItem_Click);
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = global::DtPad.ToolbarResource.paste;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.pasteToolStripMenuItem.Text = "Paste";
-            this.pasteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.pasteToolStripMenuItem_Click);
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.deleteToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator29
-            // 
-            this.toolStripSeparator29.Name = "toolStripSeparator29";
-            this.toolStripSeparator29.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(DtPad.Customs.CustomEvents.selectAllToolStripMenuItem_Click);
-            // 
             // commandLineTextBox
             // 
-            this.commandLineTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.commandLineTextBox.Location = new System.Drawing.Point(101, 40);
+            this.commandLineTextBox.Multiline = true;
             this.commandLineTextBox.Name = "commandLineTextBox";
-            this.commandLineTextBox.Size = new System.Drawing.Size(181, 20);
+            this.commandLineTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.commandLineTextBox.Size = new System.Drawing.Size(181, 65);
             this.commandLineTextBox.TabIndex = 3;
             this.commandLineTextBox.Leave += new System.EventHandler(this.commandLineTextBox_Leave);
             // 
@@ -266,7 +187,6 @@
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.ContextMenuStrip = this.contentContextMenuStrip;
             this.descriptionTextBox.Location = new System.Drawing.Point(101, 17);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(203, 20);
@@ -370,7 +290,6 @@
             this.toolGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.workingFolderPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandLinePictureBox)).EndInit();
-            this.contentContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -397,14 +316,5 @@
         internal System.Windows.Forms.ComboBox runComboBox;
         private System.Windows.Forms.Button moveUpButton;
         private System.Windows.Forms.Button moveDownButton;
-        private System.Windows.Forms.ContextMenuStrip contentContextMenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator29;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
     }
 }

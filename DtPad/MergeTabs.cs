@@ -20,7 +20,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, markSeparationTextBox);
             SetLanguage();
 
             Form1 form = (Form1)Owner;
@@ -54,11 +54,6 @@ namespace DtPad
         private void MergeTabs_HelpButtonClicked(object sender, CancelEventArgs e)
         {
             HelpManager.ManageHelpPanel(this, e);
-        }
-
-        private void contentContextMenuStrip_Opening(object sender, CancelEventArgs e)
-        {
-            undoToolStripMenuItem.Enabled = ControlUtil.FocusedTextBoxCanUndo(sender); //markSeparationTextBox.CanUndo;
         }
 
         #endregion Window Methods

@@ -38,10 +38,10 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(customContextMenuStrip);
-            LookFeelUtil.SetLookAndFeel(gridViewContextMenuStrip);
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            LookFeelUtil.SetLookAndFeel(new[] { customContextMenuStrip, gridViewContextMenuStrip });
+            ControlUtil.SetContextMenuStrip(this, new[] { delimiterComboBox, quoteComboBox });
             SetLanguage();
+
             currentDelimiter = standardDelimiter;
             currentQuote = standardQuote;
 

@@ -17,6 +17,7 @@ namespace DtPad.Managers
     internal static class ClipboardManager
     {
         private const String className = "ClipboardManager";
+        private const int maxCharCount = 50;
         
         #region Internal Methods
 
@@ -87,7 +88,7 @@ namespace DtPad.Managers
 
             String shortContent = content.Replace(ConstantUtil.newLine, " ");
             shortContent = shortContent.Replace(Environment.NewLine, " ");
-            shortContent = StringUtil.CheckStringLengthEnd(shortContent, 35);
+            shortContent = StringUtil.CheckStringLengthEnd(shortContent, maxCharCount);
             //shortContent.Replace("<", "&lt;");
             //shortContent.Replace(">", "&gt;");
 

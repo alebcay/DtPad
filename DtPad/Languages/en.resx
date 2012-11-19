@@ -763,19 +763,10 @@ Best regards,</value>
   <data name="Form1_copyToolStripMenuItem1" xml:space="preserve">
     <value>Copy</value>
   </data>
-  <data name="Form1_copyToolStripMenuItem2" xml:space="preserve">
-    <value>Copy</value>
-  </data>
   <data name="Form1_cutToolStripMenuItem1" xml:space="preserve">
     <value>Cut</value>
   </data>
-  <data name="Form1_cutToolStripMenuItem2" xml:space="preserve">
-    <value>Cut</value>
-  </data>
   <data name="Form1_deleteToolStripMenuItem1" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="Form1_deleteToolStripMenuItem2" xml:space="preserve">
     <value>Delete</value>
   </data>
   <data name="Form1_goToToolStripMenuItem1" xml:space="preserve">
@@ -784,16 +775,10 @@ Best regards,</value>
   <data name="Form1_pasteToolStripMenuItem1" xml:space="preserve">
     <value>Paste</value>
   </data>
-  <data name="Form1_pasteToolStripMenuItem2" xml:space="preserve">
-    <value>Paste</value>
-  </data>
   <data name="Form1_redoToolStripMenuItem1" xml:space="preserve">
     <value>Redo &lt;Empty&gt;</value>
   </data>
   <data name="Form1_selectAllToolStripMenuItem1" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Form1_selectAllToolStripMenuItem2" xml:space="preserve">
     <value>Select All</value>
   </data>
   <data name="Form1_undoToolStripMenuItem1" xml:space="preserve">
@@ -1513,12 +1498,6 @@ File will be automatically recreated with default values!</value>
   <data name="CalculationManager_ErrorParsing" xml:space="preserve">
     <value>Error during calculator value parsing.</value>
   </data>
-  <data name="calculatorPanel_copyToolStripMenuItem2" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="calculatorPanel_selectAllToolStripMenuItem2" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="Form1_doubleTabToTabToolStripMenuItem" xml:space="preserve">
     <value>Double Tab To Tab</value>
   </data>
@@ -2148,9 +2127,6 @@ Text contained into tabs is equal.</value>
   <data name="ColorSelect_previewTextBox" xml:space="preserve">
     <value>This text is a font example</value>
   </data>
-  <data name="Form1_undoToolStripMenuItem2" xml:space="preserve">
-    <value>Undo</value>
-  </data>
   <data name="TextManager_ClipboardNotText" xml:space="preserve">
     <value>Clipboard does not contain text.</value>
   </data>
@@ -2341,12 +2317,6 @@ File is in use by another process.</value>
   </data>
   <data name="Form1_listFilesToolStripMenuItem" xml:space="preserve">
     <value>Files List</value>
-  </data>
-  <data name="ShowContent_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="ShowContent_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
   </data>
   <data name="Options_splashScreenCheckBox" xml:space="preserve">
     <value>Splash screen on DtPad startup</value>
@@ -2726,15 +2696,6 @@ All saved settings will get lost!</value>
   <data name="FileListOpen_closeButton" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="FileListOpen_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="FileListOpen_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="FileListOpen_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
   <data name="FileListOpen_fileListLabel" xml:space="preserve">
     <value>Copy here the file list to open (each file in a row):</value>
   </data>
@@ -2744,17 +2705,8 @@ All saved settings will get lost!</value>
   <data name="FileListOpen_pasteFromClipboardButtonToolTip" xml:space="preserve">
     <value>Paste from clipboard</value>
   </data>
-  <data name="FileListOpen_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="FileListOpen_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="FileListOpen_Title" xml:space="preserve">
     <value>Open File List</value>
-  </data>
-  <data name="FileListOpen_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
   </data>
   <data name="searchInFilesPanel_clearToolStripButton" xml:space="preserve">
     <value>Clear List</value>
@@ -2954,204 +2906,6 @@ Close the relative tab and try again.</value>
     <value>E-mail field is not correct.
 Required format: example@email.com</value>
   </data>
-  <data name="ReportBug_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="ReportBug_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="ReportBug_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="ReportBug_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="ReportBug_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="ReportBug_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="About_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="About_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Extensions_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="Extensions_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="Extensions_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="Extensions_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="Extensions_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Extensions_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="FileProperties_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="FileProperties_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="FileRename_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="FileRename_copyToolStripMenuItem1" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="FileRename_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="FileRename_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="FileRename_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="FileRename_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="FileRename_selectAllToolStripMenuItem1" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="FileRename_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="MergeTabs_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="MergeTabs_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="MergeTabs_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="MergeTabs_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="MergeTabs_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="MergeTabs_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="PadText_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="PadText_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="PadText_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="PadText_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="PadText_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="PadText_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="Options_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="Options_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="Options_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="Options_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="Options_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Options_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="SearchInFiles_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="SearchInFiles_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="SearchInFiles_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="SearchInFiles_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="SearchInFiles_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="SearchInFiles_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="SearchPattern_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="SearchPattern_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="SearchPattern_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="SearchPattern_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="SearchPattern_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="SearchPattern_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="Templates_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="Templates_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="Templates_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="Templates_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="Templates_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Templates_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
-  <data name="Tools_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="Tools_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="Tools_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="Tools_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="Tools_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Tools_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
   <data name="Form1_hostsFileConfiguratorToolStripMenuItem" xml:space="preserve">
     <value>Hosts File Configurator</value>
   </data>
@@ -3260,24 +3014,6 @@ Verify that URL is correct, or that its website is available.</value>
   <data name="Options_folderOpenedFileCheckBox" xml:space="preserve">
     <value>Override setting with the folder of active file</value>
   </data>
-  <data name="UrlEntry_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="UrlEntry_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="UrlEntry_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="UrlEntry_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="UrlEntry_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="UrlEntry_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
-  </data>
   <data name="Form1_OutdatedVersion" xml:space="preserve">
     <value>DtPad version is outdated!
 Do you want to start now update process?</value>
@@ -3304,12 +3040,6 @@ Weekly</value>
   <data name="searchInFilesPanel_copyFileFullPathToolStripMenuItem" xml:space="preserve">
     <value>Copy File Full Path</value>
   </data>
-  <data name="searchInFilesPanel_copyToolStripMenuItem2" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="searchInFilesPanel_selectAllToolStripMenuItem2" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="Form1_CheckVersionException" xml:space="preserve">
     <value>Error during automatic DtPad version check!</value>
   </data>
@@ -3321,15 +3051,6 @@ Weekly</value>
   </data>
   <data name="DropboxFileDialog_cancelButton" xml:space="preserve">
     <value>Cancel</value>
-  </data>
-  <data name="DropboxFileDialog_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="DropboxFileDialog_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="DropboxFileDialog_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
   </data>
   <data name="DropboxFileDialog_DPDefaultFileCharNotAllowed" xml:space="preserve">
     <value>The following characters are not allowed: \ / : ? * &lt; &gt; " |</value>
@@ -3343,17 +3064,8 @@ Weekly</value>
   <data name="DropboxFileDialog_okButton" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="DropboxFileDialog_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="DropboxFileDialog_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="DropboxFileDialog_Title" xml:space="preserve">
     <value>Save File As</value>
-  </data>
-  <data name="DropboxFileDialog_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
   </data>
   <data name="FileManager_OverwriteFileOnDropbox" xml:space="preserve">
     <value>A file with this name already exists on Dropbox.
@@ -3383,32 +3095,14 @@ Do you want to overwrite it?</value>
   <data name="NameEntry_cancelButton" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="NameEntry_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="NameEntry_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="NameEntry_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
   <data name="NameEntry_fileNameLabel_DropboxFileDialog" xml:space="preserve">
     <value>Directory name:</value>
   </data>
   <data name="NameEntry_okButton_DropboxFileDialog" xml:space="preserve">
     <value>Create</value>
   </data>
-  <data name="NameEntry_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="NameEntry_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="NameEntry_Title_DropboxFileDialog" xml:space="preserve">
     <value>New Folder Name</value>
-  </data>
-  <data name="NameEntry_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
   </data>
   <data name="DropboxFileDialog_okButton_Open" xml:space="preserve">
     <value>Open</value>
@@ -3458,12 +3152,6 @@ Do you want to overwrite it?</value>
   <data name="DropboxManager_UnauthorizedAccess" xml:space="preserve">
     <value>Unauthorized access to Dropbox!
 Verify to be authenticated on it by opening "www.dropbox.com" with your default browser.</value>
-  </data>
-  <data name="DropboxFileDialog_copyToolStripMenuItem2" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="DropboxFileDialog_selectAllToolStripMenuItem2" xml:space="preserve">
-    <value>Select All</value>
   </data>
   <data name="FileManager_OpenedFromDropbox" xml:space="preserve">
     <value>opened from Dropbox</value>
@@ -3531,12 +3219,6 @@ Verify to be authenticated on it by opening "www.dropbox.com" with your default 
   <data name="UrlEncode_cancelButton" xml:space="preserve">
     <value>Cancel</value>
   </data>
-  <data name="UrlEncode_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="UrlEncode_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
   <data name="UrlEncode_encodeButtonToolTip" xml:space="preserve">
     <value>Encode</value>
   </data>
@@ -3549,23 +3231,11 @@ Verify to be authenticated on it by opening "www.dropbox.com" with your default 
   <data name="UrlEncode_okButton" xml:space="preserve">
     <value>Close</value>
   </data>
-  <data name="UrlEncode_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
   <data name="UrlEncode_stringToEncodeLabel" xml:space="preserve">
     <value>Decoded URL:</value>
   </data>
   <data name="UrlEncode_Title" xml:space="preserve">
     <value>Encode URL</value>
-  </data>
-  <data name="UrlEncode_toolStripMenuItem1" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="UrlEncode_toolStripMenuItem2" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="UrlEncode_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
   </data>
   <data name="UrlEncode_decodeButtonToolTip" xml:space="preserve">
     <value>Decode</value>
@@ -3633,9 +3303,6 @@ Select two different languages to proceed.</value>
   <data name="Statistics_closeButton" xml:space="preserve">
     <value>Close</value>
   </data>
-  <data name="Statistics_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
   <data name="Statistics_domainLabel1" xml:space="preserve">
     <value>Domain:</value>
   </data>
@@ -3657,9 +3324,6 @@ Select two different languages to proceed.</value>
   <data name="Statistics_processorsLabel1" xml:space="preserve">
     <value>Processors:</value>
   </data>
-  <data name="Statistics_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="Statistics_Title" xml:space="preserve">
     <value>Environment Statistics</value>
   </data>
@@ -3674,51 +3338,6 @@ Select two different languages to proceed.</value>
   </data>
   <data name="Form1_statisticsToolStripMenuItem" xml:space="preserve">
     <value>Environment Statistics</value>
-  </data>
-  <data name="GoToLine_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="GoToLine_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="GoToLine_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="MoveLines_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="MoveLines_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="MoveLines_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Options_copyToolStripMenuItem1" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="Options_pasteToolStripMenuItem1" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="Options_selectAllToolStripMenuItem1" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="PadText_toolStripMenuItem1" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="PadText_toolStripMenuItem2" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="PadText_toolStripMenuItem3" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="FontSelect_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="FontSelect_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="FontSelect_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
   </data>
   <data name="RegularExpressionValidator_InvalidRegex" xml:space="preserve">
     <value>Requested regex is invalid.</value>
@@ -4049,21 +3668,12 @@ The file will be saved with the first of the two to maintain it consistent.</val
   <data name="TagEntry_completeRadioButton" xml:space="preserve">
     <value>Complete (ie. &lt;b&gt;&lt;/b&gt;)</value>
   </data>
-  <data name="TagEntry_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
   <data name="TagEntry_customRadioButton" xml:space="preserve">
     <value>Custom</value>
   </data>
   <data name="TagEntry_CustomTagTypeEmpty" xml:space="preserve">
     <value>Custom tag type has been selected, but begin or end tag is missing.
 Insert them, or change tag type selection.</value>
-  </data>
-  <data name="TagEntry_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="TagEntry_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
   </data>
   <data name="TagEntry_extensionGroupBox" xml:space="preserve">
     <value>Extension</value>
@@ -4077,12 +3687,6 @@ Insert them, or change tag type selection.</value>
   <data name="TagEntry_okButton" xml:space="preserve">
     <value>Insert</value>
   </data>
-  <data name="TagEntry_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="TagEntry_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="TagEntry_shortRadioButton" xml:space="preserve">
     <value>Short (ie. &lt;br /&gt;)</value>
   </data>
@@ -4094,9 +3698,6 @@ Insert them, or change tag type selection.</value>
   </data>
   <data name="TagEntry_typeGroupBox" xml:space="preserve">
     <value>Type</value>
-  </data>
-  <data name="TagEntry_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
   </data>
   <data name="TagEntry_xhtmlRadioButton" xml:space="preserve">
     <value>XML/HTML (&lt;, &gt;)</value>
@@ -4146,9 +3747,6 @@ Insert them, or change tag type selection.</value>
   <data name="Dictionary_closeButton" xml:space="preserve">
     <value>Close</value>
   </data>
-  <data name="Dictionary_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
   <data name="Dictionary_dictionariesLabel" xml:space="preserve">
     <value>Click here to download new dictionaries</value>
   </data>
@@ -4166,9 +3764,6 @@ Check this URL to download them or click the link on the following window:
   <data name="Dictionary_searchButton" xml:space="preserve">
     <value>Search</value>
   </data>
-  <data name="Dictionary_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
-  </data>
   <data name="Dictionary_wordLabel" xml:space="preserve">
     <value>Word:</value>
   </data>
@@ -4185,24 +3780,6 @@ before to proceed with archive generation.</value>
   <data name="ZipManager_SaveAllFiles" xml:space="preserve">
     <value>All modified tabs will be saved, so they could be stored inside the archive.
 Are you sure you want to proceed?</value>
-  </data>
-  <data name="Dictionary_cutToolStripMenuItem" xml:space="preserve">
-    <value>Cut</value>
-  </data>
-  <data name="Dictionary_deleteToolStripMenuItem" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="Dictionary_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="Dictionary_toolStripMenuItem1" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="Dictionary_toolStripMenuItem2" xml:space="preserve">
-    <value>Select All</value>
-  </data>
-  <data name="Dictionary_undoToolStripMenuItem" xml:space="preserve">
-    <value>Undo</value>
   </data>
   <data name="DictionaryManager_NoDictionary" xml:space="preserve">
     <value>The dictionary of language in use was not found in the program folder "Languages".
@@ -4375,15 +3952,6 @@ Reselect interested tabs to proceed.</value>
   </data>
   <data name="Form1_copyIntoNoteToolStripMenuItem" xml:space="preserve">
     <value>Copy Into New Note</value>
-  </data>
-  <data name="SelectLines_copyToolStripMenuItem" xml:space="preserve">
-    <value>Copy</value>
-  </data>
-  <data name="SelectLines_pasteToolStripMenuItem" xml:space="preserve">
-    <value>Paste</value>
-  </data>
-  <data name="SelectLines_selectAllToolStripMenuItem" xml:space="preserve">
-    <value>Select All</value>
   </data>
   <data name="CustomFilesManager_UndoPanel" xml:space="preserve">
     <value>Undo</value>
@@ -4572,22 +4140,22 @@ Are you sure to continue?</value>
   <data name="CsvEditor_undoCustomToolStripMenuItem" xml:space="preserve">
     <value>Undo</value>
   </data>
-  <data name="CsvEditor_copyToolStripMenuItem" xml:space="preserve">
+  <data name="Form1_copyCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Copy</value>
   </data>
-  <data name="CsvEditor_cutToolStripMenuItem" xml:space="preserve">
+  <data name="Form1_cutCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Cut</value>
   </data>
-  <data name="CsvEditor_deleteToolStripMenuItem" xml:space="preserve">
+  <data name="Form1_deleteCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Delete</value>
   </data>
-  <data name="CsvEditor_pasteToolStripMenuItem" xml:space="preserve">
+  <data name="Form1_pasteCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Paste</value>
   </data>
-  <data name="CsvEditor_selectAllToolStripMenuItem" xml:space="preserve">
+  <data name="Form1_selectAllCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Select All</value>
   </data>
-  <data name="CsvEditor_undoToolStripMenuItem1" xml:space="preserve">
+  <data name="Form1_undoCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Undo</value>
   </data>
 </root>

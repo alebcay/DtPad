@@ -17,7 +17,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            LookFeelUtil.SetLookAndFeel(contentContextMenuStrip);
+            ControlUtil.SetContextMenuStrip(this, lineNumericUpDown);
             LanguageUtil.SetCurrentLanguage(this);
 
             Form1 form = (Form1)Owner;
@@ -59,24 +59,5 @@ namespace DtPad
         }
 
         #endregion Button Methods
-
-        #region Context Menu Methods
-
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.CopyControl(lineNumericUpDown);
-        }
-
-        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.PasteControl(lineNumericUpDown);
-        }
-
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TextManager.SelectAllControl(lineNumericUpDown);
-        }
-
-        #endregion Context Menu Methods
     }
 }
