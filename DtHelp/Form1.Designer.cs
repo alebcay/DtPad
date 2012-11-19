@@ -949,7 +949,6 @@
             // openFileDialog
             // 
             this.openFileDialog.Filter = "Guide document (*.dhg)|*.dhg|Xml document (*.xml)|*.xml|All files (*.*)|*.*";
-            this.openFileDialog.ShowHelp = true;
             // 
             // urlContextMenuStrip
             // 
