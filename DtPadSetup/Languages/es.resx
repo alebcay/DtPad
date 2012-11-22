@@ -160,12 +160,7 @@
     <value>Seleccione la carpeta donde colocar DtPad:</value>
   </data>
   <data name="Form1_infoLabel" xml:space="preserve">
-    <value>Información: para el momento DtPad soporta los
-idiomas inglés, italiano, francés y español. Quizás
-próximas versiones apoyará incluso otras culturas.
-Si usted está interesado en dar ayuda a otras
-idiomas, ponerse en contacto conmigo a través del
-formulario que figura en la página siguiente.</value>
+    <value>Información: para el momento DtPad soporta los idiomas inglés, italiano, francés y español. Quizás próximas versiones apoyará incluso otras culturas. Si usted está interesado en dar ayuda a otras idiomas, ponerse en contacto conmigo a través del formulario que figura en la página siguiente.</value>
   </data>
   <data name="Form1_installGroupBox1" xml:space="preserve">
     <value>Instalar</value>
@@ -193,11 +188,8 @@ Haga clic en &quot;Siguiente&quot; para continuar.</value>
     <value>Introducción</value>
   </data>
   <data name="Form1_label1" xml:space="preserve">
-    <value>Información: DtPad utiliza la configuración de
-Internet Explorer para conectarse a Internet.
-Si su PC está detrás de un servidor proxy que
-requiere una autenticación, introduzca aquí su
-nombre de usuario y contraseña.</value>
+    <value>Información: DtPad utiliza la configuración de Internet Explorer para conectarse a Internet.
+Si su PC está detrás de un servidor proxy que requiere una autenticación, introduzca aquí su nombre de usuario y contraseña.</value>
   </data>
   <data name="Form1_languageGroupBox1" xml:space="preserve">
     <value>Idioma</value>
@@ -242,8 +234,7 @@ nombre de usuario y contraseña.</value>
     <value>Crear accesos directos en menú Inicio y escritorio</value>
   </data>
   <data name="Form1_skipSettingsCheckBox" xml:space="preserve">
-    <value>Saltar ajustes (será posible cambiarlos usando la
-ventana de opciones)</value>
+    <value>Saltar ajustes (será posible cambiarlos usando la ventana de opciones)</value>
   </data>
   <data name="Form1_statusLabel" xml:space="preserve">
     <value>Estado:</value>

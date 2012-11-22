@@ -35,6 +35,11 @@ namespace DtPad.Utils
             return (CustomLineNumbers)tabPage.Controls["customLineNumbers"];
         }
 
+        //internal static CustomLineNumbers GetCustomLineNumbers(CustomRichTextBox pageTextBox)
+        //{
+        //    return (CustomLineNumbers)pageTextBox.Parent.Controls["customLineNumbers"];
+        //}
+
         internal static String GetFilenameTabPage(XtraTabPage tabPage)
         {
             return tabPage.Controls["filenameTabPage"].Text;

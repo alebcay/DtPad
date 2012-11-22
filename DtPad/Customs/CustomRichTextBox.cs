@@ -11,11 +11,17 @@ namespace DtPad.Customs
     /// <summary>
     /// Custom RichTextBox (to use clipboard toggle manager and other custom functions).
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, external source</author>
     public class CustomRichTextBox : CustomRichTextBoxBase
     {
         private bool ctrlFlag;
-        //const int WM_MOUSEWHEEL = 0x020A;
+        const uint WM_MOUSEWHEEL = 0x20A;
+        const uint WM_VSCROLL = 0x115;
+        const uint SB_LINEUP = 0;
+        const uint SB_LINEDOWN = 1;
+
+        [DllImport("user32.dll")]
+        public static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
 
         #region Public Instance Fields
 
@@ -154,6 +160,20 @@ namespace DtPad.Customs
         //        base.WndProc(ref m);
         //    }
         //}
+
+        protected override void WndProc(ref Message m)
+        {
+            switch ((uint)m.Msg)
+            {
+                case WM_MOUSEWHEEL:
+                    Intercept(ref m);
+                    break;
+
+                default:
+                    base.WndProc(ref m);
+                    break;
+            }
+        }
 
         protected override void OnEnter(EventArgs e)
         {
@@ -443,5 +463,22 @@ namespace DtPad.Customs
         }
 
         #endregion Protected Methods
+
+        #region Private Methods
+
+        private void Intercept(ref Message m)
+        {
+            long delta = (long)m.WParam >> 16 & 0xFF;
+            if ((delta >> 7) == 1)
+            {
+                SendMessage(m.HWnd, WM_VSCROLL, (IntPtr)SB_LINEDOWN, (IntPtr)0);
+            }
+            else
+            {
+                SendMessage(m.HWnd, WM_VSCROLL, (IntPtr)SB_LINEUP, (IntPtr)0);
+            }
+        }
+
+        #endregion Private Methods
     }
 }

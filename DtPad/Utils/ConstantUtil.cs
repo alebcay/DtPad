@@ -430,7 +430,7 @@ namespace DtPad.Utils
             new KeyValuePair<String, String>("Translation", "en|it"),
             new KeyValuePair<String, String>("TranslationUseSelect", "False"),
             new KeyValuePair<String, String>("CheckLineNumber", "True"),
-            new KeyValuePair<String, String>("CheckLineNumberMax", "500"),
+            new KeyValuePair<String, String>("CheckLineNumberMax", "1000"),
             new KeyValuePair<String, String>("AutoFormatFiles", String.Empty),
             new KeyValuePair<String, String>("AutoOpenHostsConfigurator", "True"),
             new KeyValuePair<String, String>("ColorHostsConfigurator", "Orange"),
