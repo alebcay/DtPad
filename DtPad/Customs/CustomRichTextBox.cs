@@ -439,28 +439,28 @@ namespace DtPad.Customs
             base.OnFontChanged(e);
         }
 
-        protected override void OnMouseWheel(MouseEventArgs e)
-        {
-            Form1 form = (Form1)FindForm();
-            if (form == null)
-            {
-                base.OnMouseWheel(e);
-                return;
-            }
+        //protected override void OnMouseWheel(MouseEventArgs e)
+        //{
+        //    Form1 form = (Form1)FindForm();
+        //    if (form == null)
+        //    {
+        //        base.OnMouseWheel(e);
+        //        return;
+        //    }
 
-            if (ctrlFlag && e.Delta > 0)
-            {
-                TabManager.SetZoomFromMouse(form, 1);
-            }
-            else if (ctrlFlag && e.Delta < 0)
-            {
-                TabManager.SetZoomFromMouse(form, -1);
-            }
-            else if (!ctrlFlag)
-            {
-                base.OnMouseWheel(e);
-            }
-        }
+        //    if (ctrlFlag && e.Delta > 0)
+        //    {
+        //        TabManager.SetZoomFromMouse(form, 1);
+        //    }
+        //    else if (ctrlFlag && e.Delta < 0)
+        //    {
+        //        TabManager.SetZoomFromMouse(form, -1);
+        //    }
+        //    else if (!ctrlFlag)
+        //    {
+        //        base.OnMouseWheel(e);
+        //    }
+        //}
 
         #endregion Protected Methods
 
@@ -469,13 +469,28 @@ namespace DtPad.Customs
         private void Intercept(ref Message m)
         {
             long delta = (long)m.WParam >> 16 & 0xFF;
-            if ((delta >> 7) == 1)
+
+            if (ctrlFlag)
             {
-                SendMessage(m.HWnd, WM_VSCROLL, (IntPtr)SB_LINEDOWN, (IntPtr)0);
+                if ((delta >> 7) == 1)
+                {
+                    TabManager.SetZoomFromMouse((Form1)FindForm(), -1);
+                }
+                else
+                {
+                    TabManager.SetZoomFromMouse((Form1)FindForm(), 1);
+                }
             }
             else
             {
-                SendMessage(m.HWnd, WM_VSCROLL, (IntPtr)SB_LINEUP, (IntPtr)0);
+                if ((delta >> 7) == 1)
+                {
+                    SendMessage(m.HWnd, WM_VSCROLL, (IntPtr) SB_LINEDOWN, (IntPtr) 0);
+                }
+                else
+                {
+                    SendMessage(m.HWnd, WM_VSCROLL, (IntPtr) SB_LINEUP, (IntPtr) 0);
+                }
             }
         }
 
