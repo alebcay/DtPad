@@ -43,7 +43,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.9.0.40")]
-[assembly: AssemblyFileVersion("2.9.0.40")]
+[assembly: AssemblyVersion("3.0.0.40")]
+[assembly: AssemblyFileVersion("3.0.0.40")]
 [assembly: NeutralResourcesLanguageAttribute("en-GB")]
 [assembly: CLSCompliant(true)]

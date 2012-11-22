@@ -30,7 +30,10 @@ namespace DtPad
             //Encoding encoding = String.IsNullOrEmpty(pageTextBox.CustomEncoding) ? EncodingUtil.GetDefaultEncoding() : TabUtil.GetTabTextEncoding(pagesTabControl.SelectedTabPage);
             Encoding encoding = TabUtil.GetTabTextEncoding(pagesTabControl.SelectedTabPage);
 
-            hexBox.ByteProvider = new DynamicByteProvider(encoding.GetBytes(pageTextBox.Text));
+            byte[] byteArray = encoding.GetBytes(pageTextBox.Text);
+            byteArray = Encoding.Convert(encoding, Encoding.Default, byteArray);
+
+            hexBox.ByteProvider = new DynamicByteProvider(byteArray);
             hexBox.Font = pageTextBox.Font;
             hexBox.ForeColor = pageTextBox.ForeColor;
             hexBox.BackColor = pageTextBox.BackColor;
