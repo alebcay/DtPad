@@ -29,19 +29,15 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
     Private zContentRectangle As Rectangle = Nothing
     Private zDockSide As LineNumberDockSide = LineNumberDockSide.Left
     Private zParentIsScrolling As Boolean = False
-    Private zSeeThroughMode As Boolean = False
 
-    Private zGradient_Show As Boolean = True
     Private zGradient_Direction As Drawing2D.LinearGradientMode = Drawing2D.LinearGradientMode.Horizontal
     Private zGradient_StartColor As Color = Color.FromArgb(0, 0, 0, 0)
     Private zGradient_EndColor As Color = Color.LightSteelBlue
 
-    Private zGridLines_Show As Boolean = True
     Private zGridLines_Thickness As Single = 1
     Private zGridLines_Style As Drawing2D.DashStyle = Drawing2D.DashStyle.Dot
     Private zGridLines_Color As Color = Color.SlateGray
 
-    Private zBorderLines_Show As Boolean = True
     Private zBorderLines_Thickness As Single = 1
     Private zBorderLines_Style As Drawing2D.DashStyle = Drawing2D.DashStyle.Dot
     Private zBorderLines_Color As Color = Color.SlateGray
@@ -53,8 +49,6 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
     Private zMarginLines_Color As Color = Color.SlateGray
 
     Private zLineNumbers_Show As Boolean = True
-    Private zLineNumbers_ShowLeadingZeroes As Boolean = True
-    Private zLineNumbers_ShowAsHexadecimal As Boolean = False
     Private zLineNumbers_ClipByItemRectangle As Boolean = True
     Private zLineNumbers_Offset As New Size(0, 0)
     Private zLineNumbers_Format As String = "0"
@@ -142,28 +136,6 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
         End Set
     End Property
 
-    <System.ComponentModel.Description("Use this property to enable the control to act as an overlay ontop of the RichTextBox.")> _
-    <System.ComponentModel.Category("Additional Behavior")> Public Property _SeeThroughMode_() As Boolean
-        Get
-            Return zSeeThroughMode
-        End Get
-        Set(ByVal value As Boolean)
-            zSeeThroughMode = value
-            Me.Invalidate()
-        End Set
-    End Property
-
-    <System.ComponentModel.Description("BorderLines are shown on all sides of the LineNumber control.")> _
-    <System.ComponentModel.Category("Additional Behavior")> Public Property Show_BorderLines() As Boolean
-        Get
-            Return zBorderLines_Show
-        End Get
-        Set(ByVal value As Boolean)
-            zBorderLines_Show = value
-            Me.Invalidate()
-        End Set
-    End Property
-
     <System.ComponentModel.Category("Additional Appearance")> Public Property BorderLines_Color() As Color
         Get
             Return zBorderLines_Color
@@ -191,17 +163,6 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
         Set(ByVal value As Drawing2D.DashStyle)
             If value = Drawing2D.DashStyle.Custom Then value = Drawing2D.DashStyle.Solid
             zBorderLines_Style = value
-            Me.Invalidate()
-        End Set
-    End Property
-
-    <System.ComponentModel.Description("GridLines are the horizontal divider-lines shown above each LineNumber.")> _
-    <System.ComponentModel.Category("Additional Behavior")> Public Property Show_GridLines() As Boolean
-        Get
-            Return zGridLines_Show
-        End Get
-        Set(ByVal value As Boolean)
-            zGridLines_Show = value
             Me.Invalidate()
         End Set
     End Property
@@ -289,17 +250,6 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
         End Set
     End Property
 
-    <System.ComponentModel.Description("The BackgroundGradient is a gradual blend of two colors, shown in the back of each LineNumber's item-area.")> _
-    <System.ComponentModel.Category("Additional Behavior")> Public Property Show_BackgroundGradient() As Boolean
-        Get
-            Return zGradient_Show
-        End Get
-        Set(ByVal value As Boolean)
-            zGradient_Show = value
-            Me.Invalidate()
-        End Set
-    End Property
-
     <System.ComponentModel.Category("Additional Appearance")> Public Property BackgroundGradient_AlphaColor() As Color
         Get
             Return zGradient_StartColor
@@ -347,30 +297,6 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
         End Get
         Set(ByVal value As Boolean)
             zLineNumbers_ClipByItemRectangle = value
-            Me.Invalidate()
-        End Set
-    End Property
-
-    <System.ComponentModel.Description("Use this to set whether the LineNumbers should have leading zeroes (based on the total amount of textlines).")> _
-    <System.ComponentModel.Category("Additional Behavior")> Public Property LineNrs_LeadingZeroes() As Boolean
-        Get
-            Return zLineNumbers_ShowLeadingZeroes
-        End Get
-        Set(ByVal value As Boolean)
-            zLineNumbers_ShowLeadingZeroes = value
-            Me.Refresh()
-            Me.Invalidate()
-        End Set
-    End Property
-
-    <System.ComponentModel.Description("Use this to set whether the LineNumbers should be shown as hexadecimal values.")> _
-    <System.ComponentModel.Category("Additional Behavior")> Public Property LineNrs_AsHexadecimal() As Boolean
-        Get
-            Return zLineNumbers_ShowAsHexadecimal
-        End Get
-        Set(ByVal value As Boolean)
-            zLineNumbers_ShowAsHexadecimal = value
-            Me.Refresh()
             Me.Invalidate()
         End Set
     End Property
@@ -611,11 +537,7 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
             zLNIs.RemoveAt(zLNIs.Count - 1)
 
             'Set the Format to the width of the highest possible number so that LeadingZeroes shows the correct amount of zeroes.
-            If zLineNumbers_ShowAsHexadecimal = True Then
-                zLineNumbers_Format = "".PadRight(zSplit.Length.ToString("X").Length, "0")
-            Else
-                zLineNumbers_Format = "".PadRight(zSplit.Length.ToString.Length, "0")
-            End If
+            zLineNumbers_Format = "".PadRight(zSplit.Length.ToString.Length, "0")
         End If
 
         'To measure the LineNumber's width, its Format 0 is replaced by w as that is likely to be one of the widest characters in non-monospace fonts. 
@@ -725,35 +647,10 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
             zSF.FormatFlags = StringFormatFlags.FitBlackBox + StringFormatFlags.NoClip + StringFormatFlags.NoWrap
 
             For zA As Integer = 0 To zLNIs.Count - 1
-
-                '--- BackgroundGradient
-                If zGradient_Show = True Then
-                    zLGB = New Drawing2D.LinearGradientBrush(zLNIs(zA).Rectangle, zGradient_StartColor, zGradient_EndColor, zGradient_Direction)
-                    e.Graphics.FillRectangle(zLGB, zLNIs(zA).Rectangle)
-                End If
-
-                '--- GridLines
-                If zGridLines_Show = True Then
-                    e.Graphics.DrawLine(zPen, New Point(0, zLNIs(zA).Rectangle.Y), New Point(Me.Width, zLNIs(zA).Rectangle.Y))
-
-                    'Note: Every item in a GraphicsPath is a closed figure, so instead of adding gridlines as lines, we'll add them
-                    'as rectangles that loop out of sight. Their height uses the zContentRectangle which is the maxsize of 
-                    'the ParentRichTextBox's contents. 
-                    'Note: Slight adjustment needed when the first item has a negative Y coordinate. 
-                    'This explains the " - zLNIs(0).Rectangle.Y" (which adds the negative size to the height 
-                    'to make sure the rectangle's bottompart stays out of sight) 
-                    zGP_GridLines.AddRectangle(New Rectangle(-zGridLines_Thickness, zLNIs(zA).Rectangle.Y, Me.Width + zGridLines_Thickness * 2, Me.Height - zLNIs(0).Rectangle.Y + zGridLines_Thickness))
-                    zGP_GridLines.CloseFigure()
-                End If
-
                 '--- LineNumbers
                 If zLineNumbers_Show = True Then
                     'TextFormatting
-                    If zLineNumbers_ShowLeadingZeroes = True Then
-                        zTextToShow = IIf(zLineNumbers_ShowAsHexadecimal, zLNIs(zA).LineNumber.ToString("X"), zLNIs(zA).LineNumber.ToString(zLineNumbers_Format))
-                    Else
-                        zTextToShow = IIf(zLineNumbers_ShowAsHexadecimal, zLNIs(zA).LineNumber.ToString("X"), zLNIs(zA).LineNumber.ToString)
-                    End If
+                    zTextToShow = zLNIs(zA).LineNumber.ToString
                     'TextSizing
                     zTextSize = e.Graphics.MeasureString(zTextToShow, Me.Font, zPoint, zSF)
                     'TextAlignment and positioning   (zPoint = TopLeftCornerPoint of the text)
@@ -796,12 +693,6 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
                 End If
             Next
 
-            '--- GridLinesThickness and Linestyle in SeeThroughMode. All GraphicsPath lines are drawn as solid to keep the paintingspeed high.
-            If zGridLines_Show = True Then
-                zPen.DashStyle = Drawing2D.DashStyle.Solid
-                zGP_GridLines.Widen(zPen)
-            End If
-
             '--- Memory CleanUp
             If zLGB IsNot Nothing Then zLGB.Dispose()
         End If
@@ -813,17 +704,7 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
 
         '--- BorderLines 
         Dim zBorderLines_Points() As Point = {New Point(zP_Left.X, zP_Left.Y), New Point(zP_Right.X, zP_Left.Y), New Point(zP_Right.X, zP_Right.Y), New Point(zP_Left.X, zP_Right.Y), New Point(zP_Left.X, zP_Left.Y)}
-        If zBorderLines_Show = True Then
-            zPen = New Pen(zBorderLines_Color, zBorderLines_Thickness)
-            zPen.DashStyle = zBorderLines_Style
-            e.Graphics.DrawLines(zPen, zBorderLines_Points)
-            zGP_BorderLines.AddLines(zBorderLines_Points)
-            zGP_BorderLines.CloseFigure()
-            'BorderThickness and Style for SeeThroughMode
-            zPen.DashStyle = Drawing2D.DashStyle.Solid
-            zGP_BorderLines.Widen(zPen)
-        End If
-
+        
         '--- MarginLines 
         If zMarginLines_Show = True AndAlso zMarginLines_Side > LineNumberDockSide.None Then
             zP_Left = New Point(-zMarginLines_Thickness, -zMarginLines_Thickness)
@@ -844,17 +725,6 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
             zGP_MarginLines.AddRectangle(New Rectangle(zP_Left, New Size(zP_Right.X - zP_Left.X, zP_Right.Y - zP_Left.Y)))
             zPen.DashStyle = Drawing2D.DashStyle.Solid
             zGP_MarginLines.Widen(zPen)
-        End If
-
-        '----------------------------------------------
-        '--- SeeThroughMode
-        'combine all the GraphicsPaths (= zGP_... ) and set them as the region for the control.
-        If zSeeThroughMode = True Then
-            zRegion.MakeEmpty()
-            zRegion.Union(zGP_BorderLines)
-            zRegion.Union(zGP_MarginLines)
-            zRegion.Union(zGP_GridLines)
-            zRegion.Union(zGP_LineNumbers)
         End If
 
         '--- Region
@@ -896,7 +766,7 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
         Me.Invalidate()
     End Sub
 
-    Private Sub zParent_Scroll(ByVal sender As Object, ByVal e As System.EventArgs) Handles zParent.HScroll, zParent.VScroll
+    Private Sub zParent_Scroll(ByVal sender As Object, ByVal e As System.EventArgs) Handles zParent.VScroll ', zParent.HScroll
         zParentIsScrolling = True
         Me.Invalidate()
     End Sub

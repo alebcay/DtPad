@@ -110,7 +110,6 @@ namespace DtPad.Managers
 
             CustomLineNumbers customLineNumbers = new CustomLineNumbers
                                                       {
-                                                          _SeeThroughMode_ = false,
                                                           AutoSizing = true,
                                                           BackColor = form.TextBackgroundColor,
                                                           BackgroundGradient_AlphaColor = Color.FromArgb(0, 0, 0, 0),
@@ -128,9 +127,7 @@ namespace DtPad.Managers
                                                           GridLines_Thickness = 1F,
                                                           LineNrs_Alignment = ContentAlignment.TopRight,
                                                           LineNrs_AntiAlias = false,
-                                                          LineNrs_AsHexadecimal = false,
                                                           LineNrs_ClippedByItemRectangle = true,
-                                                          LineNrs_LeadingZeroes = false,
                                                           LineNrs_Offset = new Size(0, 0),
                                                           Location = new Point(3, 3),
                                                           Margin = new Padding(0),
@@ -142,9 +139,6 @@ namespace DtPad.Managers
                                                           Name = "customLineNumbers",
                                                           Padding = new Padding(0, 0, 5, 0),
                                                           ParentRichTextBox = newTabPageTextBox,
-                                                          Show_BackgroundGradient = false,
-                                                          Show_BorderLines = false,
-                                                          Show_GridLines = false,
                                                           Show_LineNrs = true,
                                                           Show_MarginLines = true,
                                                           Size = new Size(45, 308),

@@ -3993,7 +3993,6 @@ namespace DtPad
             // 
             // customLineNumbers
             // 
-            this.customLineNumbers._SeeThroughMode_ = false;
             this.customLineNumbers.AutoSizing = true;
             this.customLineNumbers.BackColor = System.Drawing.SystemColors.Window;
             this.customLineNumbers.BackgroundGradient_AlphaColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -4011,9 +4010,7 @@ namespace DtPad
             this.customLineNumbers.GridLines_Thickness = 1F;
             this.customLineNumbers.LineNrs_Alignment = System.Drawing.ContentAlignment.TopRight;
             this.customLineNumbers.LineNrs_AntiAlias = false;
-            this.customLineNumbers.LineNrs_AsHexadecimal = false;
             this.customLineNumbers.LineNrs_ClippedByItemRectangle = true;
-            this.customLineNumbers.LineNrs_LeadingZeroes = false;
             this.customLineNumbers.LineNrs_Offset = new System.Drawing.Size(0, 0);
             this.customLineNumbers.Location = new System.Drawing.Point(3, 3);
             this.customLineNumbers.Margin = new System.Windows.Forms.Padding(0);
@@ -4025,9 +4022,6 @@ namespace DtPad
             this.customLineNumbers.Name = "customLineNumbers";
             this.customLineNumbers.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.customLineNumbers.ParentRichTextBox = this.pageTextBox;
-            this.customLineNumbers.Show_BackgroundGradient = false;
-            this.customLineNumbers.Show_BorderLines = false;
-            this.customLineNumbers.Show_GridLines = false;
             this.customLineNumbers.Show_LineNrs = true;
             this.customLineNumbers.Show_MarginLines = true;
             this.customLineNumbers.Size = new System.Drawing.Size(45, 308);
