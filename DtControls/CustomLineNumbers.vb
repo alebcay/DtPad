@@ -551,9 +551,10 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
             Dim zPoint As Point = zParent.GetPositionFromCharIndex(0)
             zLNIs.Add(New LineNumberItem(1, New Rectangle(New Point(0, zPoint.Y - 1 + zParentInMe), New Size(Me.Width, zContentRectangle.Height - zPoint.Y))))
 
-        ElseIf zParentIsScrolling = True Then
-            zTimer.Start()
-        ElseIf zParentIsScrolling = False Then
+            'ElseIf zParentIsScrolling = True Then
+            '    zTimer.Start()
+            'ElseIf zParentIsScrolling = False Then
+        Else
 
             'Multiple lines, but store only those LineNumberItems for lines that are visible.
             Dim zTimeSpan As New TimeSpan(Now.Ticks)
@@ -577,7 +578,7 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
                 'For performance reasons, the list of LineNumberItems (zLNIs) is first built with only the location of its 
                 'itemrectangle being used. The height of those rectangles will be computed afterwards by comparing the items' Y coordinates.
                 zLNIs.Add(New LineNumberItem(zA + 1, New Rectangle(0, zPoint.Y - 1 + zParentInMe, Me.Width, 1)))
-                If zParentIsScrolling = True Then ' AndAlso Now.Ticks > zTimeSpan.Ticks + 500000 Then
+                If zParentIsScrolling = True Then 'AndAlso Now.Ticks > zTimeSpan.Ticks + 500000 Then
                     'The more lines there are in the RTB, the slower the RTB's .GetPositionFromCharIndex() method becomes
                     'To avoid those delays from interfering with the scrollingspeed, this speedbased exit for is applied (0.05 sec)
                     'zLNIs will have at least 1 item, and if that's the only one, then change its location to 0,0 to make it readable

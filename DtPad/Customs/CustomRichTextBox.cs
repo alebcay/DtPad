@@ -16,12 +16,12 @@ namespace DtPad.Customs
     {
         private bool ctrlFlag;
         const uint WM_MOUSEWHEEL = 0x20A;
-        const uint WM_VSCROLL = 0x115;
-        const uint SB_LINEUP = 0;
-        const uint SB_LINEDOWN = 1;
+        //const uint WM_VSCROLL = 0x115;
+        //const uint SB_LINEUP = 0;
+        //const uint SB_LINEDOWN = 1;
 
-        [DllImport("user32.dll")]
-        public static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
+        //[DllImport("user32.dll")]
+        //public static extern IntPtr SendMessage(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
 
         #region Public Instance Fields
 
@@ -121,45 +121,6 @@ namespace DtPad.Customs
         #endregion Suspend-Resume Painting
 
         #region Protected Methods
-
-        //protected override void WndProc(ref Message m)
-        //{
-        //    if (ctrlFlag && m.Msg == WM_MOUSEWHEEL)
-        //    {
-        //        Form1 form = (Form1)FindForm();
-        //        if (form == null)
-        //        {
-        //            base.WndProc(ref m);
-        //            return;
-        //        }
-
-        //        long param = 0;
-        //        try
-        //        {
-        //            param = Convert.ToInt64(m.WParam);
-        //        }
-        //        catch (Exception)
-        //        {
-        //        }
-
-        //        if (param > 0)
-        //        {
-        //            TabManager.SetZoomFromMouse(form, 1);
-        //        }
-        //        else if (param < 0)
-        //        {
-        //            TabManager.SetZoomFromMouse(form, -1);
-        //        }
-        //        else
-        //        {
-        //            base.WndProc(ref m);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        base.WndProc(ref m);
-        //    }
-        //}
 
         protected override void WndProc(ref Message m)
         {
@@ -439,28 +400,12 @@ namespace DtPad.Customs
             base.OnFontChanged(e);
         }
 
-        //protected override void OnMouseWheel(MouseEventArgs e)
-        //{
-        //    Form1 form = (Form1)FindForm();
-        //    if (form == null)
-        //    {
-        //        base.OnMouseWheel(e);
-        //        return;
-        //    }
+        protected override void OnLostFocus(EventArgs e)
+        {
+            ctrlFlag = false;
 
-        //    if (ctrlFlag && e.Delta > 0)
-        //    {
-        //        TabManager.SetZoomFromMouse(form, 1);
-        //    }
-        //    else if (ctrlFlag && e.Delta < 0)
-        //    {
-        //        TabManager.SetZoomFromMouse(form, -1);
-        //    }
-        //    else if (!ctrlFlag)
-        //    {
-        //        base.OnMouseWheel(e);
-        //    }
-        //}
+            base.OnLostFocus(e);
+        }
 
         #endregion Protected Methods
 
@@ -483,15 +428,19 @@ namespace DtPad.Customs
             }
             else
             {
-                if ((delta >> 7) == 1)
-                {
-                    SendMessage(m.HWnd, WM_VSCROLL, (IntPtr) SB_LINEDOWN, (IntPtr) 0);
-                }
-                else
-                {
-                    SendMessage(m.HWnd, WM_VSCROLL, (IntPtr) SB_LINEUP, (IntPtr) 0);
-                }
+                base.WndProc(ref m);
             }
+            //else
+            //{
+            //    if ((delta >> 7) == 1)
+            //    {
+            //        SendMessage(m.HWnd, WM_VSCROLL, (IntPtr)SB_LINEDOWN, (IntPtr)0);
+            //    }
+            //    else
+            //    {
+            //        SendMessage(m.HWnd, WM_VSCROLL, (IntPtr)SB_LINEUP, (IntPtr)0);
+            //    }
+            //}
         }
 
         #endregion Private Methods

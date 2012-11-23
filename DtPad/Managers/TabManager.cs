@@ -138,7 +138,7 @@ namespace DtPad.Managers
                                                           MarginLines_Side = CustomLineNumbers.LineNumberDockSide.Right,
                                                           MarginLines_Style = DashStyle.Dash,
                                                           MarginLines_Thickness = 1F,
-                                                          MinimumSize = new Size(50, 0),
+                                                          MinimumSize = new Size(45, 0),
                                                           Name = "customLineNumbers",
                                                           Padding = new Padding(0, 0, 5, 0),
                                                           ParentRichTextBox = newTabPageTextBox,
@@ -147,7 +147,7 @@ namespace DtPad.Managers
                                                           Show_GridLines = false,
                                                           Show_LineNrs = true,
                                                           Show_MarginLines = true,
-                                                          Size = new Size(50, 308),
+                                                          Size = new Size(45, 308),
                                                           TabIndex = 2,
                                                           Visible = rowNumbersVisibile
                                                       };
