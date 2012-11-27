@@ -375,15 +375,6 @@ namespace DtPadUninstaller.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apri con DtPad.
-        /// </summary>
-        internal static string UninstallManager_ShellString {
-            get {
-                return ResourceManager.GetString("UninstallManager_ShellString", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Avvio procedura di disinstallazione di DtPad....
         /// </summary>
         internal static string UninstallManager_Start {

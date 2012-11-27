@@ -233,9 +233,6 @@ All configuration files will be deleted.</value>
   <data name="UninstallManager_Key" xml:space="preserve">
     <value>Key</value>
   </data>
-  <data name="UninstallManager_ShellString" xml:space="preserve">
-    <value>Open with DtPad</value>
-  </data>
   <data name="Form1_copyToolStripMenuItem" xml:space="preserve">
     <value>Copy</value>
   </data>
