@@ -4018,13 +4018,13 @@ namespace DtPad
             this.customLineNumbers.MarginLines_Side = DtControls.CustomLineNumbers.LineNumberDockSide.Right;
             this.customLineNumbers.MarginLines_Style = System.Drawing.Drawing2D.DashStyle.Dash;
             this.customLineNumbers.MarginLines_Thickness = 1F;
-            this.customLineNumbers.MinimumSize = new System.Drawing.Size(45, 0);
+            this.customLineNumbers.MinimumSize = new System.Drawing.Size(47, 0);
             this.customLineNumbers.Name = "customLineNumbers";
-            this.customLineNumbers.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
+            this.customLineNumbers.Padding = new System.Windows.Forms.Padding(0, 0, 7, 0);
             this.customLineNumbers.ParentRichTextBox = this.pageTextBox;
             this.customLineNumbers.Show_LineNrs = true;
             this.customLineNumbers.Show_MarginLines = true;
-            this.customLineNumbers.Size = new System.Drawing.Size(45, 308);
+            this.customLineNumbers.Size = new System.Drawing.Size(47, 308);
             this.customLineNumbers.TabIndex = 0;
             // 
             // filenameTabPage
