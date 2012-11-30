@@ -160,10 +160,7 @@
     <value>Sélectionner le répertoire où placer DtPad:</value>
   </data>
   <data name="Form1_infoLabel" xml:space="preserve">
-    <value>Information: pour le moment DtPad existe en Anglais,
-Italien, Français et Espagnol. Si vous êtes intéressé
-pour aider pour d&apos;autres localisations, veuillez me
-contacter en utilisant le formulaire de la page suivante.</value>
+    <value>Information: pour le moment DtPad existe en Anglais, Italien, Français et Espagnol. Si vous êtes intéressé pour aider pour d&apos;autres localisations, veuillez me contacter en utilisant le formulaire de la page suivante.</value>
   </data>
   <data name="Form1_installGroupBox1" xml:space="preserve">
     <value>Installer</value>
@@ -191,11 +188,8 @@ Cliquer sur le bouton &quot;Suivant&quot; pour poursuivre.</value>
     <value>Introduction</value>
   </data>
   <data name="Form1_label1" xml:space="preserve">
-    <value>Information: DtPad utilise les paramètres 
-d&apos;Internet Explorer pour se connecter à Internet.
-Si votre PC est localisé derrière un serveur proxy
-nécessitant une authentification, veuillez insérer
-ici votre nom d&apos;utilisateur et mot de passe.</value>
+    <value>Information: DtPad utilise les paramètres d&apos;Internet Explorer pour se connecter à Internet.
+Si votre PC est localisé derrière un serveur proxy nécessitant une authentification, veuillez insérer ici votre nom d&apos;utilisateur et mot de passe.</value>
   </data>
   <data name="Form1_languageGroupBox1" xml:space="preserve">
     <value>Langue</value>
@@ -240,8 +234,7 @@ ici votre nom d&apos;utilisateur et mot de passe.</value>
     <value>Création des raccourcis démarrage et bureau</value>
   </data>
   <data name="Form1_skipSettingsCheckBox" xml:space="preserve">
-    <value>Ignorer les paramètres (il sera possible de 
-les modifier plus tard).</value>
+    <value>Ignorer les paramètres (il sera possible de les modifier plus tard).</value>
   </data>
   <data name="Form1_statusLabel" xml:space="preserve">
     <value>Statut:</value>

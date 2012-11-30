@@ -148,7 +148,7 @@ Si un problème persiste, ou si DtPad semble dysfonctionner, télécharger la de
     <value>Démarrer DtPad</value>
   </data>
   <data name="Form1_startButton" xml:space="preserve">
-    <value>Démarrer la mise à jour</value>
+    <value>Suivant &gt;</value>
   </data>
   <data name="Form1_Title" xml:space="preserve">
     <value>DtPad Updater</value>
@@ -277,5 +277,11 @@ Démarrer la mise à jour à partir du menu &quot;Aide -&gt; Vérifier nouvelle 
   </data>
   <data name="PasswordUtil_NoValue" xml:space="preserve">
     <value>La valeur pour &quot;{0}&quot; n&apos;a pas été trouvé.</value>
+  </data>
+  <data name="Form1_StartUpdate" xml:space="preserve">
+    <value>Démarrer mise à jour</value>
+  </data>
+  <data name="Form1_whatIsInsideLabel" xml:space="preserve">
+    <value>Cette mise à jour contient (seulement en anglais):</value>
   </data>
 </root>

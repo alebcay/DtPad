@@ -4010,7 +4010,7 @@ Seleccionar las pestañas más interesados ​​para proceder.</value>
     <value>Teclado</value>
   </data>
   <data name="Options_searchReturnLabel" xml:space="preserve">
-    <value>Cuando se pulsa INTRO en el cuadro de texto de búsqueda o reemplazo:</value>
+    <value>Cuando se pulsa INTRO en el cuadro de búsqueda o reemplazo:</value>
   </data>
   <data name="Options_searchReturnRadioButton1" xml:space="preserve">
     <value>Iniciar la búsqueda</value>
