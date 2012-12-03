@@ -3470,7 +3470,7 @@ Cliquer sur Oui pour continuer ou Non pour annuler.</value>
     <value>Deconnexion de Dropbox</value>
   </data>
   <data name="DropboxManager_DropboxLogOut" xml:space="preserve">
-    <value>Deconnexion de la Dropbox</value>
+    <value>Deconnexion de Dropbox</value>
   </data>
   <data name="FileListManager_AlreadyFavourite" xml:space="preserve">
     <value>Le fichier sélectionné est déjà enregistré comme favori.</value>
@@ -4182,5 +4182,8 @@ Etes vous sur de continuer?</value>
   <data name="CsvEditorHeader_EmptyColumnName" xml:space="preserve">
     <value>Au moins un nom de colonne est vide.
 Saisissez tous les champs avant de continuer.</value>
+  </data>
+  <data name="DropboxManager_DropboxLogIn" xml:space="preserve">
+    <value>Connecté à Dropbox</value>
   </data>
 </root>

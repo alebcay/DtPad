@@ -4179,4 +4179,7 @@ Trate de seleccionar otro.</value>
     <value>Al menos un nombre de columna está vacía.
 Introducir todos los campos antes de continuar.</value>
   </data>
+  <data name="DropboxManager_DropboxLogIn" xml:space="preserve">
+    <value>Conectado a Dropbox</value>
+  </data>
 </root>
