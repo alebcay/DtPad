@@ -32,7 +32,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLimit.CloudComputing.Sha
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
+		SccNumberOfProjects = 9
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs29
 		SccLocalPath0 = .
@@ -64,6 +64,10 @@ Global
 		SccProjectTopLevelParentUniqueName7 = DtDesk.sln
 		SccProjectName7 = XmlGridControl
 		SccLocalPath7 = XmlGridControl
+		SccProjectUniqueName8 = AppLimit.CloudComputing.SharpBox\\AppLimit.CloudComputing.SharpBox.csproj
+		SccProjectTopLevelParentUniqueName8 = DtDesk.sln
+		SccProjectName8 = AppLimit.CloudComputing.SharpBox
+		SccLocalPath8 = AppLimit.CloudComputing.SharpBox
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

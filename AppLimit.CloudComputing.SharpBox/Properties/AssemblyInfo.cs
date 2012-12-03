@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("SharpBox")]
 [assembly: AssemblyDescription("SharpBox - A cloud storage API")]
-[assembly: AssemblyConfiguration("20121203.94877")]
+[assembly: AssemblyConfiguration("121203.94877")]
 [assembly: AssemblyCompany("sharpbox.codeplex.com")]
 [assembly: AssemblyProduct("SharpBox")]
 [assembly: AssemblyCopyright("Copyright (c) 2010 Dirk Eisenberg, Yury Averkiev, Renald Dubus, Jay Ongg")]
