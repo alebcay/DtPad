@@ -241,9 +241,6 @@
   <data name="SearchInFiles_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\Icons\JL\SearchInFiles.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AppLimit_CloudComputing_SharpBox_Net40_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Files\AppLimit.CloudComputing.SharpBox.Net40.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Newtonsoft_Json_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\Newtonsoft.Json.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -276,5 +273,8 @@
   </data>
   <data name="LumenWorks_Framework_IO_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\LumenWorks.Framework.IO.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AppLimit_CloudComputing_SharpBox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\AppLimit.CloudComputing.SharpBox.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

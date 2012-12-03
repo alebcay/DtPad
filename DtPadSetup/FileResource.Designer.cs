@@ -63,9 +63,9 @@ namespace DtPadSetup {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] AppLimit_CloudComputing_SharpBox_Net40_dll {
+        internal static byte[] AppLimit_CloudComputing_SharpBox_dll {
             get {
-                object obj = ResourceManager.GetObject("AppLimit_CloudComputing_SharpBox_Net40_dll", resourceCulture);
+                object obj = ResourceManager.GetObject("AppLimit_CloudComputing_SharpBox_dll", resourceCulture);
                 return ((byte[])(obj));
             }
         }

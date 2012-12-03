@@ -261,6 +261,7 @@
     <None Include="Files\Icons\DtPadUninstaller.ico" />
     <None Include="Files\Icons\Dt.ico" />
     <None Include="Files\Be.Windows.Forms.HexBox.dll" />
+    <None Include="Files\AppLimit.CloudComputing.SharpBox.dll" />
     <Content Include="Files\DevExpress.Data.v12.1.dll" />
     <Content Include="Files\DevExpress.Utils.v12.1.dll" />
     <Content Include="Files\DevExpress.XtraEditors.v12.1.dll" />

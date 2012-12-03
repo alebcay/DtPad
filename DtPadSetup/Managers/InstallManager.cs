@@ -64,7 +64,7 @@ namespace DtPadSetup.Managers
                                  FileResource.DevExpress_Utils_v12_1_dll.Length + FileResource.DevExpress_XtraEditors_v12_1_dll.Length + FileResource.log4net_dll.Length + FileResource.ICSharpCode_SharpZipLib_dll.Length +
                                  FileResource.DtControls_dll.Length + FileResource.itextsharp_dll.Length + FileResource.Info_txt.Length + FileResource.DtPadUninstaller_exe.Length + FileResource.DtPad_exe_rs.Length +
                                  FileResource.DtPad_exe_tm.Length + FileResource.Be_Windows_Forms_HexBox_dll.Length + FileResource.DtPad_exe_rp.Length + FileResource.DtPad_exe_ru.Length + FileResource.XmlGridControl_dll.Length +
-                                 FileResource.MonthCalendar_dll.Length + FileResource.AppLimit_CloudComputing_SharpBox_Net40_dll.Length + FileResource.Newtonsoft_Json_dll.Length + FileResource.Microsoft_WindowsAPICodePack_dll.Length +
+                                 FileResource.MonthCalendar_dll.Length + FileResource.AppLimit_CloudComputing_SharpBox_dll.Length + FileResource.Newtonsoft_Json_dll.Length + FileResource.Microsoft_WindowsAPICodePack_dll.Length +
                                  FileResource.Microsoft_WindowsAPICodePack_Shell_dll.Length + FileResource.NHunspell_dll.Length + FileResource.Hunspellx86_dll.Length + FileResource.Hunspellx64_dll.Length +
                                  FileResource.LumenWorks_Framework_IO_dll.Length;
                                 //+ GuideResource.DtPadGuide_en_dhg.Length + GuideResource.DtPadGuide_it_dhg.Length;
@@ -148,7 +148,7 @@ namespace DtPadSetup.Managers
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Be.Windows.Forms.HexBox.dll"), FileResource.Be_Windows_Forms_HexBox_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "XmlGridControl.dll"), FileResource.XmlGridControl_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "MonthCalendar.dll"), FileResource.MonthCalendar_dll);
-                WriteFileAndSetPermissions(Path.Combine(destinationPath, "AppLimit.CloudComputing.SharpBox.Net40.dll"), FileResource.AppLimit_CloudComputing_SharpBox_Net40_dll);
+                WriteFileAndSetPermissions(Path.Combine(destinationPath, "AppLimit.CloudComputing.SharpBox.dll"), FileResource.AppLimit_CloudComputing_SharpBox_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Newtonsoft.Json.dll"), FileResource.Newtonsoft_Json_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Microsoft.WindowsAPICodePack.dll"), FileResource.Microsoft_WindowsAPICodePack_dll);
                 WriteFileAndSetPermissions(Path.Combine(destinationPath, "Microsoft.WindowsAPICodePack.Shell.dll"), FileResource.Microsoft_WindowsAPICodePack_Shell_dll);
