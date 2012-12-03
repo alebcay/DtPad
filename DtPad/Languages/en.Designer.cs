@@ -658,6 +658,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit Header.
+        /// </summary>
+        internal static string CsvEditor_editHeaderToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_editHeaderToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Header present.
         /// </summary>
         internal static string CsvEditor_headerCheckBox {
@@ -793,6 +802,61 @@ namespace DtPad.Languages {
         internal static string CsvEditor_undoToolStripSplitButton {
             get {
                 return ResourceManager.GetString("CsvEditor_undoToolStripSplitButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string CsvEditorHeader_cancelButton {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_cancelButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Column {0}:.
+        /// </summary>
+        internal static string CsvEditorHeader_ColumnLabel {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_ColumnLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to At least one column name is empty.
+        ///Insert all fields before proceeding..
+        /// </summary>
+        internal static string CsvEditorHeader_EmptyColumnName {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_EmptyColumnName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modify or create the CSV header..
+        /// </summary>
+        internal static string CsvEditorHeader_helpLabel {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_helpLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string CsvEditorHeader_okButton {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_okButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CSV Editor - Header.
+        /// </summary>
+        internal static string CsvEditorHeader_Title {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_Title", resourceCulture);
             }
         }
         

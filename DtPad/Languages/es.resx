@@ -4157,4 +4157,26 @@ Trate de seleccionar otro.</value>
   <data name="Form1_undoCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Deshacer</value>
   </data>
+  <data name="CsvEditorHeader_cancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="CsvEditorHeader_ColumnLabel" xml:space="preserve">
+    <value>Columna {0}:</value>
+  </data>
+  <data name="CsvEditorHeader_helpLabel" xml:space="preserve">
+    <value>Modificar o crear el encabezado CSV.</value>
+  </data>
+  <data name="CsvEditorHeader_okButton" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="CsvEditorHeader_Title" xml:space="preserve">
+    <value>Editor CSV - Encabezado</value>
+  </data>
+  <data name="CsvEditor_editHeaderToolStripButton" xml:space="preserve">
+    <value>Editar encabezado</value>
+  </data>
+  <data name="CsvEditorHeader_EmptyColumnName" xml:space="preserve">
+    <value>Al menos un nombre de columna está vacía.
+Introducir todos los campos antes de continuar.</value>
+  </data>
 </root>

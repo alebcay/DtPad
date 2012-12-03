@@ -4158,4 +4158,26 @@ Are you sure to continue?</value>
   <data name="Form1_undoCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Undo</value>
   </data>
+  <data name="CsvEditorHeader_cancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CsvEditorHeader_ColumnLabel" xml:space="preserve">
+    <value>Column {0}:</value>
+  </data>
+  <data name="CsvEditorHeader_helpLabel" xml:space="preserve">
+    <value>Modify or create the CSV header.</value>
+  </data>
+  <data name="CsvEditorHeader_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CsvEditorHeader_Title" xml:space="preserve">
+    <value>CSV Editor - Header</value>
+  </data>
+  <data name="CsvEditor_editHeaderToolStripButton" xml:space="preserve">
+    <value>Edit Header</value>
+  </data>
+  <data name="CsvEditorHeader_EmptyColumnName" xml:space="preserve">
+    <value>At least one column name is empty.
+Insert all fields before proceeding.</value>
+  </data>
 </root>

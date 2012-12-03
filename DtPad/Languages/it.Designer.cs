@@ -658,6 +658,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Modifica intestazione.
+        /// </summary>
+        internal static string CsvEditor_editHeaderToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_editHeaderToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Intestazione inclusa.
         /// </summary>
         internal static string CsvEditor_headerCheckBox {
@@ -793,6 +802,61 @@ namespace DtPad.Languages {
         internal static string CsvEditor_undoToolStripSplitButton {
             get {
                 return ResourceManager.GetString("CsvEditor_undoToolStripSplitButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annulla.
+        /// </summary>
+        internal static string CsvEditorHeader_cancelButton {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_cancelButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colonna {0}:.
+        /// </summary>
+        internal static string CsvEditorHeader_ColumnLabel {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_ColumnLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Almeno un nome colonna è vuoto.
+        ///Valorizzare tutti i campi prima di procedere..
+        /// </summary>
+        internal static string CsvEditorHeader_EmptyColumnName {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_EmptyColumnName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modifica o crea l&apos;intestazione del CSV..
+        /// </summary>
+        internal static string CsvEditorHeader_helpLabel {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_helpLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string CsvEditorHeader_okButton {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_okButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editor CSV - Intestazione.
+        /// </summary>
+        internal static string CsvEditorHeader_Title {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_Title", resourceCulture);
             }
         }
         

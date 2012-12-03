@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CsvEditor));
             this.csvGridView = new System.Windows.Forms.DataGridView();
             this.gridViewContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -70,7 +70,9 @@
             this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteSelectedColumnsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.deleteSelectedRowsToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.editHeaderToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.applyButton = new System.Windows.Forms.Button();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.csvGridView)).BeginInit();
             this.gridViewContextMenuStrip.SuspendLayout();
             this.settingsGroupBox.SuspendLayout();
@@ -81,8 +83,8 @@
             // csvGridView
             // 
             this.csvGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.csvGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.csvGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.csvGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -215,9 +217,10 @@
             // 
             // quoteComboBox
             // 
+            this.quoteComboBox.CustomContextMenuStrip = null;
             this.quoteComboBox.FormattingEnabled = true;
             this.quoteComboBox.Items.AddRange(new object[] {
-            global::DtPad.Languages.it.SearchPattern_historyComboBoxItems,
+            "",
             "[Empty quote]",
             "\" (quotes)",
             "\' (single quote)"});
@@ -239,9 +242,10 @@
             // 
             // delimiterComboBox
             // 
+            this.delimiterComboBox.CustomContextMenuStrip = null;
             this.delimiterComboBox.FormattingEnabled = true;
             this.delimiterComboBox.Items.AddRange(new object[] {
-            global::DtPad.Languages.it.SearchPattern_historyComboBoxItems,
+            "",
             ", (comma)",
             ". (dot)",
             "; (semicolon)",
@@ -263,7 +267,9 @@
             this.toolStripSeparator5,
             this.selectToolStripDropDownButton,
             this.deleteSelectedColumnsToolStripButton,
-            this.deleteSelectedRowsToolStripButton});
+            this.deleteSelectedRowsToolStripButton,
+            this.toolStripSeparator3,
+            this.editHeaderToolStripButton});
             this.csvEditorToolStrip.Location = new System.Drawing.Point(0, 0);
             this.csvEditorToolStrip.Name = "csvEditorToolStrip";
             this.csvEditorToolStrip.Size = new System.Drawing.Size(697, 25);
@@ -455,6 +461,16 @@
             this.deleteSelectedRowsToolStripButton.Text = "Delete Selected Rows";
             this.deleteSelectedRowsToolStripButton.Click += new System.EventHandler(this.deleteSelectedRowsToolStripButton_Click);
             // 
+            // editHeaderToolStripButton
+            // 
+            this.editHeaderToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.editHeaderToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("editHeaderToolStripButton.Image")));
+            this.editHeaderToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.editHeaderToolStripButton.Name = "editHeaderToolStripButton";
+            this.editHeaderToolStripButton.Size = new System.Drawing.Size(72, 22);
+            this.editHeaderToolStripButton.Text = "Edit Header";
+            this.editHeaderToolStripButton.Click += new System.EventHandler(this.editHeaderToolStripButton_Click);
+            // 
             // applyButton
             // 
             this.applyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -469,6 +485,11 @@
             this.applyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.applyButton.UseVisualStyleBackColor = true;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
             // CsvEditor
             // 
@@ -541,5 +562,7 @@
         private System.Windows.Forms.ToolStripMenuItem deleteCustomToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem selectAllCustomToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton editHeaderToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }

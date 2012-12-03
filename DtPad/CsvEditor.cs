@@ -297,6 +297,11 @@ namespace DtPad
             CsvManager.DeleteSelectedRows(this, selectedRows);
         }
 
+        private void editHeaderToolStripButton_Click(object sender, EventArgs e)
+        {
+            WindowManager.ShowCsvEditorHeader(this);
+        }
+
         #endregion Toolbar Methods
 
         #region Button Methods

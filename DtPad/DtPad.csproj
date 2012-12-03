@@ -101,6 +101,7 @@
       <HintPath>Libraries\LumenWorks.Framework.IO.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="MonthCalendar, Version=1.8.2.0, Culture=neutral, PublicKeyToken=9d22151b1b463438, processorArchitecture=MSIL" />
@@ -141,6 +142,12 @@
     </Compile>
     <Compile Include="CsvEditor.Designer.cs">
       <DependentUpon>CsvEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsvEditorHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsvEditorHeader.Designer.cs">
+      <DependentUpon>CsvEditorHeader.cs</DependentUpon>
     </Compile>
     <Compile Include="Customs\CustomComboBox.cs">
       <SubType>Component</SubType>
@@ -557,6 +564,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CsvEditor.resx">
       <DependentUpon>CsvEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsvEditorHeader.resx">
+      <DependentUpon>CsvEditorHeader.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dictionary.resx">
       <DependentUpon>Dictionary.cs</DependentUpon>

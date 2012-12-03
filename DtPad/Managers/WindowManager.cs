@@ -413,6 +413,14 @@ namespace DtPad.Managers
             csvEditor.ShowDialog(form);
         }
 
+        internal static void ShowCsvEditorHeader(Form form)
+        {
+            CsvEditorHeader csvEditorHeader = new CsvEditorHeader { Owner = form };
+
+            csvEditorHeader.InitializeForm();
+            csvEditorHeader.ShowDialog(form);
+        }
+
         internal static void ShowSearchPattern(Form form)
         {
             SearchPattern searchPattern = new SearchPattern { Owner = form };

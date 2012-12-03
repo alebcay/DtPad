@@ -91,7 +91,7 @@ namespace DtPad.Managers
             {
                 for (int i = 0; i < csv.FieldCount; i++)
                 {
-                    csvDataTable.Columns.Add(String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), i), typeof(String));
+                    csvDataTable.Columns.Add(String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), i + 1), typeof(String));
                 }
             }
 
@@ -209,7 +209,7 @@ namespace DtPad.Managers
             }
             else
             {
-                String columnName = String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), csvGridView.Columns.Count);
+                String columnName = String.Format(LanguageUtil.GetCurrentLanguageString("StandardColumnLabel", className), csvGridView.Columns.Count + 1);
                 ((DataTable)csvGridView.DataSource).Columns.Add(columnName, typeof(String));
                 //csvGridView.Columns.Add(columnName, columnName);
             }

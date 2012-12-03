@@ -4167,4 +4167,26 @@ Sei sicuro di voler continuare?</value>
   <data name="Form1_undoCommonStandardToolStripMenuItem" xml:space="preserve">
     <value>Annulla</value>
   </data>
+  <data name="CsvEditorHeader_cancelButton" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="CsvEditorHeader_ColumnLabel" xml:space="preserve">
+    <value>Colonna {0}:</value>
+  </data>
+  <data name="CsvEditorHeader_helpLabel" xml:space="preserve">
+    <value>Modifica o crea l'intestazione del CSV.</value>
+  </data>
+  <data name="CsvEditorHeader_okButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="CsvEditorHeader_Title" xml:space="preserve">
+    <value>Editor CSV - Intestazione</value>
+  </data>
+  <data name="CsvEditor_editHeaderToolStripButton" xml:space="preserve">
+    <value>Modifica intestazione</value>
+  </data>
+  <data name="CsvEditorHeader_EmptyColumnName" xml:space="preserve">
+    <value>Almeno un nome colonna è vuoto.
+Valorizzare tutti i campi prima di procedere.</value>
+  </data>
 </root>
