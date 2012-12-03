@@ -716,6 +716,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Acquisisci schermata dei dati correnti.
+        /// </summary>
+        internal static string CsvEditor_screenshotToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_screenshotToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Seleziona tutto.
         /// </summary>
         internal static string CsvEditor_selectAllCustomToolStripMenuItem {

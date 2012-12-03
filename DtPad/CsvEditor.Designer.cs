@@ -29,17 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CsvEditor));
             this.csvGridView = new System.Windows.Forms.DataGridView();
             this.gridViewContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.selectCurrentColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectCurrentRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.deleteSelectedColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteSelectedRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeButton = new System.Windows.Forms.Button();
             this.delimiterLabel = new System.Windows.Forms.Label();
             this.headerCheckBox = new System.Windows.Forms.CheckBox();
@@ -48,21 +45,23 @@
             this.quoteLabel = new System.Windows.Forms.Label();
             this.delimiterComboBox = new DtPad.Customs.CustomComboBox();
             this.csvEditorToolStrip = new System.Windows.Forms.ToolStrip();
-            this.undoToolStripSplitButton = new System.Windows.Forms.ToolStripSplitButton();
-            this.undoAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.addNewColumnToolStripTextBox = new DtPad.Customs.CustomToolStripTextBox();
             this.customContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.undoCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewColumnToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.undoToolStripSplitButton = new System.Windows.Forms.ToolStripSplitButton();
+            this.undoAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cutCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewColumnToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.editHeaderToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.selectToolStripDropDownButton = new System.Windows.Forms.ToolStripDropDownButton();
             this.currentColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.currentRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,9 +69,11 @@
             this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteSelectedColumnsToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.deleteSelectedRowsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.editHeaderToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.screenshotToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.applyButton = new System.Windows.Forms.Button();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteSelectedColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteSelectedRowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.csvGridView)).BeginInit();
             this.gridViewContextMenuStrip.SuspendLayout();
             this.settingsGroupBox.SuspendLayout();
@@ -83,8 +84,8 @@
             // csvGridView
             // 
             this.csvGridView.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.csvGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.csvGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.csvGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -118,15 +119,6 @@
             this.gridViewContextMenuStrip.Size = new System.Drawing.Size(206, 126);
             this.gridViewContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.gridViewContextMenuStrip_Opening);
             // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Enabled = false;
-            this.undoToolStripMenuItem.Image = global::DtPad.ToolbarResource.arrow_left;
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.undoToolStripMenuItem.Text = "Undo Last Action";
-            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
-            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -150,22 +142,6 @@
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(202, 6);
-            // 
-            // deleteSelectedColumnsToolStripMenuItem
-            // 
-            this.deleteSelectedColumnsToolStripMenuItem.Image = global::DtPad.ToolbarResource.delete_column;
-            this.deleteSelectedColumnsToolStripMenuItem.Name = "deleteSelectedColumnsToolStripMenuItem";
-            this.deleteSelectedColumnsToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.deleteSelectedColumnsToolStripMenuItem.Text = "Delete Selected Columns";
-            this.deleteSelectedColumnsToolStripMenuItem.Click += new System.EventHandler(this.deleteSelectedColumnsToolStripMenuItem_Click);
-            // 
-            // deleteSelectedRowsToolStripMenuItem
-            // 
-            this.deleteSelectedRowsToolStripMenuItem.Image = global::DtPad.ToolbarResource.delete_row;
-            this.deleteSelectedRowsToolStripMenuItem.Name = "deleteSelectedRowsToolStripMenuItem";
-            this.deleteSelectedRowsToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.deleteSelectedRowsToolStripMenuItem.Text = "Delete Selected Rows";
-            this.deleteSelectedRowsToolStripMenuItem.Click += new System.EventHandler(this.deleteSelectedRowsToolStripMenuItem_Click);
             // 
             // closeButton
             // 
@@ -220,7 +196,7 @@
             this.quoteComboBox.CustomContextMenuStrip = null;
             this.quoteComboBox.FormattingEnabled = true;
             this.quoteComboBox.Items.AddRange(new object[] {
-            "",
+            global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems,
             "[Empty quote]",
             "\" (quotes)",
             "\' (single quote)"});
@@ -245,7 +221,7 @@
             this.delimiterComboBox.CustomContextMenuStrip = null;
             this.delimiterComboBox.FormattingEnabled = true;
             this.delimiterComboBox.Items.AddRange(new object[] {
-            "",
+            global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems,
             ", (comma)",
             ". (dot)",
             "; (semicolon)",
@@ -266,35 +242,16 @@
             this.addNewColumnToolStripButton,
             this.toolStripSeparator5,
             this.selectToolStripDropDownButton,
+            this.editHeaderToolStripButton,
             this.deleteSelectedColumnsToolStripButton,
             this.deleteSelectedRowsToolStripButton,
             this.toolStripSeparator3,
-            this.editHeaderToolStripButton});
+            this.screenshotToolStripButton});
             this.csvEditorToolStrip.Location = new System.Drawing.Point(0, 0);
             this.csvEditorToolStrip.Name = "csvEditorToolStrip";
             this.csvEditorToolStrip.Size = new System.Drawing.Size(697, 25);
             this.csvEditorToolStrip.TabIndex = 4;
             this.csvEditorToolStrip.Text = "csvEditorToolStrip";
-            // 
-            // undoToolStripSplitButton
-            // 
-            this.undoToolStripSplitButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.undoToolStripSplitButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoAllToolStripMenuItem});
-            this.undoToolStripSplitButton.Enabled = false;
-            this.undoToolStripSplitButton.Image = global::DtPad.ToolbarResource.arrow_left;
-            this.undoToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.undoToolStripSplitButton.Name = "undoToolStripSplitButton";
-            this.undoToolStripSplitButton.Size = new System.Drawing.Size(32, 22);
-            this.undoToolStripSplitButton.Text = "Undo Last Action";
-            this.undoToolStripSplitButton.ButtonClick += new System.EventHandler(this.undoToolStripSplitButton_ButtonClick);
-            // 
-            // undoAllToolStripMenuItem
-            // 
-            this.undoAllToolStripMenuItem.Name = "undoAllToolStripMenuItem";
-            this.undoAllToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
-            this.undoAllToolStripMenuItem.Text = "Undo All";
-            this.undoAllToolStripMenuItem.Click += new System.EventHandler(this.undoAllToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -343,6 +300,55 @@
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(119, 6);
             // 
+            // deleteCustomToolStripMenuItem
+            // 
+            this.deleteCustomToolStripMenuItem.Name = "deleteCustomToolStripMenuItem";
+            this.deleteCustomToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.deleteCustomToolStripMenuItem.Text = "Delete";
+            this.deleteCustomToolStripMenuItem.Click += new System.EventHandler(this.deleteCustomToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(119, 6);
+            // 
+            // selectAllCustomToolStripMenuItem
+            // 
+            this.selectAllCustomToolStripMenuItem.Name = "selectAllCustomToolStripMenuItem";
+            this.selectAllCustomToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.selectAllCustomToolStripMenuItem.Text = "Select All";
+            this.selectAllCustomToolStripMenuItem.Click += new System.EventHandler(this.selectAllCustomToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // undoToolStripSplitButton
+            // 
+            this.undoToolStripSplitButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.undoToolStripSplitButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoAllToolStripMenuItem});
+            this.undoToolStripSplitButton.Enabled = false;
+            this.undoToolStripSplitButton.Image = global::DtPad.ToolbarResource.arrow_left;
+            this.undoToolStripSplitButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.undoToolStripSplitButton.Name = "undoToolStripSplitButton";
+            this.undoToolStripSplitButton.Size = new System.Drawing.Size(32, 22);
+            this.undoToolStripSplitButton.Text = "Undo Last Action";
+            this.undoToolStripSplitButton.ButtonClick += new System.EventHandler(this.undoToolStripSplitButton_ButtonClick);
+            // 
+            // undoAllToolStripMenuItem
+            // 
+            this.undoAllToolStripMenuItem.Name = "undoAllToolStripMenuItem";
+            this.undoAllToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.undoAllToolStripMenuItem.Text = "Undo All";
+            this.undoAllToolStripMenuItem.Click += new System.EventHandler(this.undoAllToolStripMenuItem_Click);
+            // 
             // cutCustomToolStripMenuItem
             // 
             this.cutCustomToolStripMenuItem.Image = global::DtPad.ToolbarResource.cut;
@@ -367,25 +373,6 @@
             this.pasteCustomToolStripMenuItem.Text = "Paste";
             this.pasteCustomToolStripMenuItem.Click += new System.EventHandler(this.pasteCustomToolStripMenuItem_Click);
             // 
-            // deleteCustomToolStripMenuItem
-            // 
-            this.deleteCustomToolStripMenuItem.Name = "deleteCustomToolStripMenuItem";
-            this.deleteCustomToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.deleteCustomToolStripMenuItem.Text = "Delete";
-            this.deleteCustomToolStripMenuItem.Click += new System.EventHandler(this.deleteCustomToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(119, 6);
-            // 
-            // selectAllCustomToolStripMenuItem
-            // 
-            this.selectAllCustomToolStripMenuItem.Name = "selectAllCustomToolStripMenuItem";
-            this.selectAllCustomToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.selectAllCustomToolStripMenuItem.Text = "Select All";
-            this.selectAllCustomToolStripMenuItem.Click += new System.EventHandler(this.selectAllCustomToolStripMenuItem_Click);
-            // 
             // addNewColumnToolStripButton
             // 
             this.addNewColumnToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -396,10 +383,14 @@
             this.addNewColumnToolStripButton.Text = "Add New Column";
             this.addNewColumnToolStripButton.Click += new System.EventHandler(this.addNewColumnToolStripButton_Click);
             // 
-            // toolStripSeparator5
+            // editHeaderToolStripButton
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            this.editHeaderToolStripButton.Image = global::DtPad.ToolbarResource.header;
+            this.editHeaderToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.editHeaderToolStripButton.Name = "editHeaderToolStripButton";
+            this.editHeaderToolStripButton.Size = new System.Drawing.Size(88, 22);
+            this.editHeaderToolStripButton.Text = "Edit Header";
+            this.editHeaderToolStripButton.Click += new System.EventHandler(this.editHeaderToolStripButton_Click);
             // 
             // selectToolStripDropDownButton
             // 
@@ -461,15 +452,15 @@
             this.deleteSelectedRowsToolStripButton.Text = "Delete Selected Rows";
             this.deleteSelectedRowsToolStripButton.Click += new System.EventHandler(this.deleteSelectedRowsToolStripButton_Click);
             // 
-            // editHeaderToolStripButton
+            // screenshotToolStripButton
             // 
-            this.editHeaderToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.editHeaderToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("editHeaderToolStripButton.Image")));
-            this.editHeaderToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.editHeaderToolStripButton.Name = "editHeaderToolStripButton";
-            this.editHeaderToolStripButton.Size = new System.Drawing.Size(72, 22);
-            this.editHeaderToolStripButton.Text = "Edit Header";
-            this.editHeaderToolStripButton.Click += new System.EventHandler(this.editHeaderToolStripButton_Click);
+            this.screenshotToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.screenshotToolStripButton.Image = global::DtPad.ToolbarResource.screenshot;
+            this.screenshotToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.screenshotToolStripButton.Name = "screenshotToolStripButton";
+            this.screenshotToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.screenshotToolStripButton.Text = "toolStripButton1";
+            this.screenshotToolStripButton.Click += new System.EventHandler(this.screenshotToolStripButton_Click);
             // 
             // applyButton
             // 
@@ -486,10 +477,30 @@
             this.applyButton.UseVisualStyleBackColor = true;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
-            // toolStripSeparator3
+            // undoToolStripMenuItem
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.undoToolStripMenuItem.Enabled = false;
+            this.undoToolStripMenuItem.Image = global::DtPad.ToolbarResource.arrow_left;
+            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.undoToolStripMenuItem.Text = "Undo Last Action";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
+            // 
+            // deleteSelectedColumnsToolStripMenuItem
+            // 
+            this.deleteSelectedColumnsToolStripMenuItem.Image = global::DtPad.ToolbarResource.delete_column;
+            this.deleteSelectedColumnsToolStripMenuItem.Name = "deleteSelectedColumnsToolStripMenuItem";
+            this.deleteSelectedColumnsToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.deleteSelectedColumnsToolStripMenuItem.Text = "Delete Selected Columns";
+            this.deleteSelectedColumnsToolStripMenuItem.Click += new System.EventHandler(this.deleteSelectedColumnsToolStripMenuItem_Click);
+            // 
+            // deleteSelectedRowsToolStripMenuItem
+            // 
+            this.deleteSelectedRowsToolStripMenuItem.Image = global::DtPad.ToolbarResource.delete_row;
+            this.deleteSelectedRowsToolStripMenuItem.Name = "deleteSelectedRowsToolStripMenuItem";
+            this.deleteSelectedRowsToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.deleteSelectedRowsToolStripMenuItem.Text = "Delete Selected Rows";
+            this.deleteSelectedRowsToolStripMenuItem.Click += new System.EventHandler(this.deleteSelectedRowsToolStripMenuItem_Click);
             // 
             // CsvEditor
             // 
@@ -564,5 +575,6 @@
         private System.Windows.Forms.ToolStripMenuItem selectAllCustomToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton editHeaderToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton screenshotToolStripButton;
     }
 }

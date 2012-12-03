@@ -302,6 +302,11 @@ namespace DtPad
             WindowManager.ShowCsvEditorHeader(this);
         }
 
+        private void screenshotToolStripButton_Click(object sender, EventArgs e)
+        {
+            WindowManager.TakeDataGridViewScreenshot(this);
+        }
+
         #endregion Toolbar Methods
 
         #region Button Methods

@@ -976,6 +976,7 @@
     <Content Include="Images\Toolbars\folder-32.gif" />
     <None Include="Images\Toolbars\move-first.png" />
     <None Include="Images\Toolbars\move-last.png" />
+    <Content Include="Images\Toolbars\header.png" />
     <Content Include="Images\Toolbars\no-highlighter.png" />
     <None Include="Images\Toolbars\note-blue.png" />
     <None Include="Images\Toolbars\note-green.png" />

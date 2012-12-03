@@ -1,5 +1,6 @@
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 using System.Xml;
@@ -1001,13 +1002,43 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
 
             Rectangle screenshotArea = pagesTabControl.RectangleToScreen(pagesTabControl.ClientRectangle);
-            Rectangle bounds = pagesTabControl.Bounds;
+            //Rectangle bounds = pagesTabControl.Bounds;
 
-            using (Bitmap screenshot = new Bitmap(bounds.Width, bounds.Height))
+            using (Bitmap screenshot = new Bitmap(screenshotArea.Width, screenshotArea.Height))
             {
                 using (Graphics graphic = Graphics.FromImage(screenshot))
                 {
-                    graphic.CopyFromScreen(new Point(screenshotArea.Left, screenshotArea.Top), Point.Empty, bounds.Size);
+                    graphic.CopyFromScreen(new Point(screenshotArea.Left, screenshotArea.Top), Point.Empty, screenshotArea.Size);
+                }
+                Clipboard.SetImage(screenshot);
+            }
+
+            ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("ScreenshotInClipboard", className));
+        }
+
+        internal static void TakeDataGridViewScreenshot(CsvEditor form)
+        {
+            DataGridView csvGridView = form.csvGridView;
+
+            csvGridView.ClearSelection();
+            csvGridView.Refresh();
+
+            int columnsSize = csvGridView.Columns.Cast<DataGridViewColumn>().Sum(column => column.Width);
+            //int columnsSize = 0;
+            //foreach (DataGridViewColumn column in csvGridView.Columns)
+            //{
+            //    columnsSize += column.Width;
+            //}
+
+            Rectangle screenshotArea = new Rectangle(
+                csvGridView.PointToScreen(new Point(csvGridView.ClientRectangle.Location.X + csvGridView.RowHeadersWidth, csvGridView.ClientRectangle.Location.Y)),
+                new Size(columnsSize, csvGridView.Height));
+
+            using (Bitmap screenshot = new Bitmap(screenshotArea.Width, screenshotArea.Height))
+            {
+                using (Graphics graphic = Graphics.FromImage(screenshot))
+                {
+                    graphic.CopyFromScreen(new Point(screenshotArea.Left, screenshotArea.Top), Point.Empty, screenshotArea.Size);
                 }
                 Clipboard.SetImage(screenshot);
             }

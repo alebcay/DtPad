@@ -3876,7 +3876,7 @@ Marque esta URL para descargar:
     <value>Actualizar unidades</value>
   </data>
   <data name="Form1_takeTabScreenshotToolStripMenuItem" xml:space="preserve">
-    <value>Tome captura de pantalla de la pestaña actual</value>
+    <value>Capturar pantalla de pestaña actual</value>
   </data>
   <data name="WindowManager_ScreenshotInClipboard" xml:space="preserve">
     <value>La captura de pantalla se ha guardado en portapapeles.</value>
@@ -4181,5 +4181,8 @@ Introducir todos los campos antes de continuar.</value>
   </data>
   <data name="DropboxManager_DropboxLogIn" xml:space="preserve">
     <value>Conectado a Dropbox</value>
+  </data>
+  <data name="CsvEditor_screenshotToolStripButton" xml:space="preserve">
+    <value>Capturar pantalla de datos actual</value>
   </data>
 </root>

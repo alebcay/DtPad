@@ -4183,4 +4183,7 @@ Insert all fields before proceeding.</value>
   <data name="DropboxManager_DropboxLogIn" xml:space="preserve">
     <value>Logged into Dropbox</value>
   </data>
+  <data name="CsvEditor_screenshotToolStripButton" xml:space="preserve">
+    <value>Take Current Data Screenshot</value>
+  </data>
 </root>
