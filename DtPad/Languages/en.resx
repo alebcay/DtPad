@@ -4180,4 +4180,7 @@ Are you sure to continue?</value>
     <value>At least one column name is empty.
 Insert all fields before proceeding.</value>
   </data>
+  <data name="DropboxManager_DropboxLogIn" xml:space="preserve">
+    <value>Logged into Dropbox</value>
+  </data>
 </root>

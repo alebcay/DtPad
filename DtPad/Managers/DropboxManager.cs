@@ -28,12 +28,14 @@ namespace DtPad.Managers
             return (cloudStorage != null && cloudStorage.IsOpened);
         }
 
-        internal static CloudStorage InitCouldStorage(Form form, CloudStorage cloudStorage)
+        internal static CloudStorage InitCouldStorage(Form1 form, CloudStorage cloudStorage)
         {
             if (IsCloudStorageOpen(cloudStorage))
             {
                 return cloudStorage;
             }
+
+            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
 
             try
             {
@@ -66,7 +68,7 @@ namespace DtPad.Managers
                 catch (Exception) //No way, I should renew my access token
                 {
                     standardConfiguration.AuthorizationCallBack = new Uri(ConstantUtil.dropboxAuthUrl);
-                    Object requestToken = DropBoxStorageProviderTools.GetDropBoxRequestToken(standardConfiguration, ConstantUtil.dropboxConsumerKey, ConstantUtil.dropboxConsumerSecret);
+                    DropBoxRequestToken requestToken = DropBoxStorageProviderTools.GetDropBoxRequestToken(standardConfiguration, ConstantUtil.dropboxConsumerKey, ConstantUtil.dropboxConsumerSecret);
 
                     if (requestToken == null)
                     {
@@ -105,6 +107,8 @@ namespace DtPad.Managers
                     {
                         ConfigUtil.UpdateParameter("LastDropboxAccessToken", String.Empty);
                     }
+
+                    toolStripStatusLabel.Text = LanguageUtil.GetCurrentLanguageString("DropboxLogIn", className);
                 }
 
                 return cloudStorage;

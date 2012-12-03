@@ -1,0 +1,37 @@
+﻿using System;
+using System.Reflection;
+using System.Resources;
+using System.Runtime.InteropServices;
+
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+[assembly: AssemblyTitle("SharpBox")]
+[assembly: AssemblyDescription("SharpBox - A cloud storage API")]
+[assembly: AssemblyConfiguration("20121203.94877")]
+[assembly: AssemblyCompany("sharpbox.codeplex.com")]
+[assembly: AssemblyProduct("SharpBox")]
+[assembly: AssemblyCopyright("Copyright (c) 2010 Dirk Eisenberg, Yury Averkiev, Renald Dubus, Jay Ongg")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+
+// Setting ComVisible to false makes the types in this assembly not visible 
+// to COM components.  If you need to access a type in this assembly from 
+// COM, set the ComVisible attribute to true on that type.
+[assembly: ComVisible(false)]
+
+// The following GUID is for the ID of the typelib if this project is exposed to COM
+[assembly: Guid("c9d2c468-721a-4ff0-9a21-7814a60947e2")]
+
+
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+[assembly: AssemblyVersion("1.1.0.443")]
+[assembly: AssemblyFileVersion("1.1.0.443")]
+[assembly: NeutralResourcesLanguageAttribute("en-GB")]
+[assembly: CLSCompliant(true)]

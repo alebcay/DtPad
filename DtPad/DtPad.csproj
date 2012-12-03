@@ -1203,9 +1203,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AppLimit.CloudComputing.SharpBox\AppLimit.CloudComputing.SharpBox.Net40.csproj">
+    <ProjectReference Include="..\AppLimit.CloudComputing.SharpBox\AppLimit.CloudComputing.SharpBox.csproj">
       <Project>{5B779AE9-72B6-4B7E-88B7-47227B92112A}</Project>
-      <Name>AppLimit.CloudComputing.SharpBox.Net40</Name>
+      <Name>AppLimit.CloudComputing.SharpBox</Name>
     </ProjectReference>
     <ProjectReference Include="..\DtControls\DtControls.vbproj">
       <Project>{0920B39A-C62F-43D6-9589-2DBFDA6E1C6C}</Project>

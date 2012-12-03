@@ -4189,4 +4189,7 @@ Sei sicuro di voler continuare?</value>
     <value>Almeno un nome colonna è vuoto.
 Valorizzare tutti i campi prima di procedere.</value>
   </data>
+  <data name="DropboxManager_DropboxLogIn" xml:space="preserve">
+    <value>Collegato a Dropbox</value>
+  </data>
 </root>

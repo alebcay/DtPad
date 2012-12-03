@@ -1437,6 +1437,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Collegato a Dropbox.
+        /// </summary>
+        internal static string DropboxManager_DropboxLogIn {
+            get {
+                return ResourceManager.GetString("DropboxManager_DropboxLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Scollegato da Dropbox.
         /// </summary>
         internal static string DropboxManager_DropboxLogOut {

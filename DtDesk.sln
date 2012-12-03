@@ -26,48 +26,44 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtPadUninstaller", "DtPadUn
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalProjects", "ExternalProjects", "{2A318CF5-20C5-41BD-AE6F-D3EBF6B60D81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLimit.CloudComputing.SharpBox.Net40", "AppLimit.CloudComputing.SharpBox\AppLimit.CloudComputing.SharpBox.Net40.csproj", "{5B779AE9-72B6-4B7E-88B7-47227B92112A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlGridControl", "XmlGridControl\XmlGridControl.csproj", "{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppLimit.CloudComputing.SharpBox", "AppLimit.CloudComputing.SharpBox\AppLimit.CloudComputing.SharpBox.csproj", "{5B779AE9-72B6-4B7E-88B7-47227B92112A}"
 EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
+		SccNumberOfProjects = 8
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs29
-		SccProjectUniqueName0 = DtPad\\DtPad.csproj
-		SccProjectTopLevelParentUniqueName0 = DtDesk.sln
-		SccProjectName0 = DtPad
-		SccLocalPath0 = DtPad
-		SccProjectUniqueName1 = DtPadUpdater\\DtPadUpdater.csproj
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DtPad\\DtPad.csproj
 		SccProjectTopLevelParentUniqueName1 = DtDesk.sln
-		SccProjectName1 = DtPadUpdater
-		SccLocalPath1 = DtPadUpdater
-		SccProjectUniqueName2 = DtPadSetup\\DtPadSetup.csproj
+		SccProjectName1 = DtPad
+		SccLocalPath1 = DtPad
+		SccProjectUniqueName2 = DtPadUpdater\\DtPadUpdater.csproj
 		SccProjectTopLevelParentUniqueName2 = DtDesk.sln
-		SccProjectName2 = DtPadSetup
-		SccLocalPath2 = DtPadSetup
-		SccProjectUniqueName3 = DtHelp\\DtHelp.csproj
+		SccProjectName2 = DtPadUpdater
+		SccLocalPath2 = DtPadUpdater
+		SccProjectUniqueName3 = DtPadSetup\\DtPadSetup.csproj
 		SccProjectTopLevelParentUniqueName3 = DtDesk.sln
-		SccProjectName3 = DtHelp
-		SccLocalPath3 = DtHelp
-		SccProjectUniqueName4 = DtControls\\DtControls.vbproj
+		SccProjectName3 = DtPadSetup
+		SccLocalPath3 = DtPadSetup
+		SccProjectUniqueName4 = DtHelp\\DtHelp.csproj
 		SccProjectTopLevelParentUniqueName4 = DtDesk.sln
-		SccProjectName4 = DtControls
-		SccLocalPath4 = DtControls
-		SccProjectUniqueName5 = DtPadUninstaller\\DtPadUninstaller.csproj
+		SccProjectName4 = DtHelp
+		SccLocalPath4 = DtHelp
+		SccProjectUniqueName5 = DtControls\\DtControls.vbproj
 		SccProjectTopLevelParentUniqueName5 = DtDesk.sln
-		SccProjectName5 = DtPadUninstaller
-		SccLocalPath5 = DtPadUninstaller
-		SccProjectUniqueName6 = AppLimit.CloudComputing.SharpBox\\AppLimit.CloudComputing.SharpBox.Net40.csproj
+		SccProjectName5 = DtControls
+		SccLocalPath5 = DtControls
+		SccProjectUniqueName6 = DtPadUninstaller\\DtPadUninstaller.csproj
 		SccProjectTopLevelParentUniqueName6 = DtDesk.sln
-		SccProjectName6 = AppLimit.CloudComputing.SharpBox
-		SccLocalPath6 = AppLimit.CloudComputing.SharpBox
+		SccProjectName6 = DtPadUninstaller
+		SccLocalPath6 = DtPadUninstaller
 		SccProjectUniqueName7 = XmlGridControl\\XmlGridControl.csproj
 		SccProjectTopLevelParentUniqueName7 = DtDesk.sln
 		SccProjectName7 = XmlGridControl
 		SccLocalPath7 = XmlGridControl
-		SccLocalPath8 = .
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,21 +167,6 @@ Global
 		{843733B4-F827-450E-A7C7-AFF9FDFFD525}.ReleaseFE|Mixed Platforms.ActiveCfg = ReleaseFE|Any CPU
 		{843733B4-F827-450E-A7C7-AFF9FDFFD525}.ReleaseFE|Mixed Platforms.Build.0 = ReleaseFE|Any CPU
 		{843733B4-F827-450E-A7C7-AFF9FDFFD525}.ReleaseFE|x86.ActiveCfg = ReleaseFE|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|x86.ActiveCfg = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Any CPU.ActiveCfg = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Any CPU.Build.0 = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Mixed Platforms.Build.0 = Release|Any CPU
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|x86.ActiveCfg = Release|Any CPU
 		{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -201,6 +182,21 @@ Global
 		{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}.ReleaseFE|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}.ReleaseFE|Mixed Platforms.Build.0 = Release|Any CPU
 		{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B}.ReleaseFE|x86.ActiveCfg = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Any CPU.ActiveCfg = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Any CPU.Build.0 = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|Mixed Platforms.Build.0 = Release|Any CPU
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A}.ReleaseFE|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -212,7 +208,7 @@ Global
 		{843733B4-F827-450E-A7C7-AFF9FDFFD525} = {AC4D9764-87FD-4A38-939D-95FE4154A596}
 		{3859082A-0BCE-48AA-B9CA-A6C87F1FF116} = {49447B3E-A14A-4E82-B365-18F763F97309}
 		{0920B39A-C62F-43D6-9589-2DBFDA6E1C6C} = {2A318CF5-20C5-41BD-AE6F-D3EBF6B60D81}
-		{5B779AE9-72B6-4B7E-88B7-47227B92112A} = {2A318CF5-20C5-41BD-AE6F-D3EBF6B60D81}
 		{3EA7DB44-3C1D-4B74-A925-68F6D80BC98B} = {2A318CF5-20C5-41BD-AE6F-D3EBF6B60D81}
+		{5B779AE9-72B6-4B7E-88B7-47227B92112A} = {2A318CF5-20C5-41BD-AE6F-D3EBF6B60D81}
 	EndGlobalSection
 EndGlobal
