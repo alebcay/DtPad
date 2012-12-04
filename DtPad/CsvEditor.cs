@@ -287,6 +287,11 @@ namespace DtPad
             csvGridView.SelectAll();
         }
 
+        private void editHeaderToolStripButton_Click(object sender, EventArgs e)
+        {
+            WindowManager.ShowCsvEditorHeader(this);
+        }
+
         private void deleteSelectedColumnsToolStripButton_Click(object sender, EventArgs e)
         {
             CsvManager.DeleteSelectedColumns(this, selectedColumns);
@@ -297,9 +302,10 @@ namespace DtPad
             CsvManager.DeleteSelectedRows(this, selectedRows);
         }
 
-        private void editHeaderToolStripButton_Click(object sender, EventArgs e)
+        private void cellWrapToolStripButton_CheckedChanged(object sender, EventArgs e)
         {
-            WindowManager.ShowCsvEditorHeader(this);
+            csvGridView.DefaultCellStyle.WrapMode = cellWrapToolStripButton.Checked ? DataGridViewTriState.True : DataGridViewTriState.False;
+            csvGridView.AutoResizeRows();
         }
 
         private void screenshotToolStripButton_Click(object sender, EventArgs e)

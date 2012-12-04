@@ -1274,7 +1274,7 @@ Désirez vous sauvegarder les changements?</value>
     <value>Fenêtre</value>
   </data>
   <data name="Form1_wordWrapToolStripMenuItem" xml:space="preserve">
-    <value>Retour à la ligne automatique</value>
+    <value>Retour automatique à la ligne</value>
   </data>
   <data name="FileManager_Appended" xml:space="preserve">
     <value>ajouté</value>
@@ -1677,7 +1677,7 @@ UTF-32 Little Endian</value>
     <value>Numéros des lignes</value>
   </data>
   <data name="Form1_wordWrapToolStripButton" xml:space="preserve">
-    <value>Retour à la ligne automatique</value>
+    <value>Retour automatique à la ligne</value>
   </data>
   <data name="Form1_closeToolStripMenuItem2" xml:space="preserve">
     <value>Fermer Internet Explorer</value>
@@ -3591,7 +3591,7 @@ Empilage</value>
     <value>Ce panneau peut être utile pour différents usages, incluant l&apos;écriture de notes, ou faire une comparaison rapide entre deux textes. </value>
   </data>
   <data name="CustomFilesManager_WordWrapPanel" xml:space="preserve">
-    <value>Retour à la ligne</value>
+    <value>Retour automatique à la ligne</value>
   </data>
   <data name="Form1_annotationPanelToolStripMenuItem" xml:space="preserve">
     <value>Panneau d&apos;annotation</value>
@@ -4188,5 +4188,8 @@ Saisissez tous les champs avant de continuer.</value>
   </data>
   <data name="CsvEditor_screenshotToolStripButton" xml:space="preserve">
     <value>Faire une copie d&apos;écran de données actuel</value>
+  </data>
+  <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
+    <value>Retour automatique à la ligne</value>
   </data>
 </root>

@@ -19,7 +19,15 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, sizeNumericUpDown);
+
+            if (Owner is Form1)
+            {
+                ControlUtil.SetContextMenuStrip(this, sizeNumericUpDown);
+            }
+            else if (Owner is Options)
+            {
+                ControlUtil.SetContextMenuStrip(Owner, sizeNumericUpDown);
+            }
             LanguageUtil.SetCurrentLanguage(this);
 
             if (Owner.GetType() == typeof(Form1))

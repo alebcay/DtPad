@@ -1019,20 +1019,27 @@ namespace DtPad.Managers
         internal static void TakeDataGridViewScreenshot(CsvEditor form)
         {
             DataGridView csvGridView = form.csvGridView;
+            CheckBox headerCheckBox = form.headerCheckBox;
 
             csvGridView.ClearSelection();
             csvGridView.Refresh();
 
-            int columnsSize = csvGridView.Columns.Cast<DataGridViewColumn>().Sum(column => column.Width);
+            int x = csvGridView.ClientRectangle.Location.X + csvGridView.RowHeadersWidth;
+            int y = csvGridView.ClientRectangle.Location.Y;
+            int width = csvGridView.Columns.Cast<DataGridViewColumn>().Sum(column => column.Width);
             //int columnsSize = 0;
             //foreach (DataGridViewColumn column in csvGridView.Columns)
             //{
             //    columnsSize += column.Width;
             //}
+            int height = csvGridView.Height;
+            if (!headerCheckBox.Checked)
+            {
+                height -= csvGridView.ColumnHeadersHeight;
+                y += csvGridView.ColumnHeadersHeight;
+            }
 
-            Rectangle screenshotArea = new Rectangle(
-                csvGridView.PointToScreen(new Point(csvGridView.ClientRectangle.Location.X + csvGridView.RowHeadersWidth, csvGridView.ClientRectangle.Location.Y)),
-                new Size(columnsSize, csvGridView.Height));
+            Rectangle screenshotArea = new Rectangle(csvGridView.PointToScreen(new Point(x, y)), new Size(width, height));
 
             using (Bitmap screenshot = new Bitmap(screenshotArea.Width, screenshotArea.Height))
             {

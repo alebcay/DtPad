@@ -4186,4 +4186,7 @@ Insert all fields before proceeding.</value>
   <data name="CsvEditor_screenshotToolStripButton" xml:space="preserve">
     <value>Take Current Data Screenshot</value>
   </data>
+  <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
+    <value>Word Wrap</value>
+  </data>
 </root>

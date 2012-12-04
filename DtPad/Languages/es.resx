@@ -4185,4 +4185,7 @@ Introducir todos los campos antes de continuar.</value>
   <data name="CsvEditor_screenshotToolStripButton" xml:space="preserve">
     <value>Capturar pantalla de datos actual</value>
   </data>
+  <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
+    <value>Ajuste de línea</value>
+  </data>
 </root>

@@ -4195,4 +4195,7 @@ Valorizzare tutti i campi prima di procedere.</value>
   <data name="CsvEditor_screenshotToolStripButton" xml:space="preserve">
     <value>Acquisisci schermata dei dati correnti</value>
   </data>
+  <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
+    <value>A capo automatico</value>
+  </data>
 </root>

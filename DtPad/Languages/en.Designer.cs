@@ -537,6 +537,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Word Wrap.
+        /// </summary>
+        internal static string CsvEditor_cellWrapToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_cellWrapToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Close.
         /// </summary>
         internal static string CsvEditor_closeButton {
