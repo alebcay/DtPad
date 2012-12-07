@@ -284,4 +284,13 @@ Start the update process from DtPad "Help -&gt; Check for New Version..." menu.<
   <data name="Form1_whatIsInsideLabel" xml:space="preserve">
     <value>This update contains:</value>
   </data>
+  <data name="Form1_ErrorLoadingChangeLog" xml:space="preserve">
+    <value>An error occurred loading DtPad changelog!</value>
+  </data>
+  <data name="Form1_whatIsInsideTextBox" xml:space="preserve">
+    <value>Loading changelog...
+
+It is not necessary to wait for the change log before to proceed.
+Press "Start Update" when you want to start the update.</value>
+  </data>
 </root>

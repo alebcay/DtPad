@@ -284,4 +284,13 @@ Inicie el proceso de actualización desde el menú DtPad &quot;Ayuda -&gt; Compr
   <data name="Form1_whatIsInsideLabel" xml:space="preserve">
     <value>Esta actualización contiene (sólo en Inglés):</value>
   </data>
+  <data name="Form1_ErrorLoadingChangeLog" xml:space="preserve">
+    <value>Error al cargar la lista de cambios de DtPad!</value>
+  </data>
+  <data name="Form1_whatIsInsideTextBox" xml:space="preserve">
+    <value>Cargar registro de cambios...
+
+No es necesario esperar a que el registro de cambios para ser cargado antes de proceder.
+Pulse el botón &quot;Iniciar actualización&quot; cuando se quiere iniciar la actualización.</value>
+  </data>
 </root>

@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("DtPad Setup")]
 [assembly: AssemblyDescription("Marco Macciò - diariotraduttore.com")]
-[assembly: AssemblyConfiguration("121205")]
+[assembly: AssemblyConfiguration("121207")]
 [assembly: AssemblyCompany("Diario di un traduttore")]
 [assembly: AssemblyProduct("DtPad Setup")]
 [assembly: AssemblyCopyright("")]
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.9.0.40")]
-[assembly: AssemblyFileVersion("2.9.0.40")]
+[assembly: AssemblyVersion("2.9.1.40")]
+[assembly: AssemblyFileVersion("2.9.1.40")]
 [assembly: NeutralResourcesLanguage("en-GB")]
 [assembly: CLSCompliant(true)]

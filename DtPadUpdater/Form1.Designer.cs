@@ -46,8 +46,10 @@ namespace DtPadUpdater
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.infoPanel = new System.Windows.Forms.Panel();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.whatIsInsideLabel = new System.Windows.Forms.Label();
             this.whatIsInsideTextBox = new System.Windows.Forms.TextBox();
+            this.adminModeLabel = new System.Windows.Forms.Label();
             this.introPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homePictureBox)).BeginInit();
             this.updatePanel.SuspendLayout();
@@ -210,12 +212,14 @@ namespace DtPadUpdater
             this.logoPictureBox.Size = new System.Drawing.Size(125, 282);
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
+            this.logoPictureBox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.logoPictureBox_MouseDoubleClick);
             // 
             // infoPanel
             // 
             this.infoPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.infoPanel.Controls.Add(this.progressBar);
             this.infoPanel.Controls.Add(this.whatIsInsideLabel);
             this.infoPanel.Controls.Add(this.whatIsInsideTextBox);
             this.infoPanel.Location = new System.Drawing.Point(143, 12);
@@ -223,6 +227,15 @@ namespace DtPadUpdater
             this.infoPanel.Size = new System.Drawing.Size(356, 282);
             this.infoPanel.TabIndex = 3;
             this.infoPanel.Visible = false;
+            // 
+            // progressBar
+            // 
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBar.Location = new System.Drawing.Point(228, 3);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(125, 18);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 4;
             // 
             // whatIsInsideLabel
             // 
@@ -243,13 +256,26 @@ namespace DtPadUpdater
             this.whatIsInsideTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.whatIsInsideTextBox.Size = new System.Drawing.Size(353, 254);
             this.whatIsInsideTextBox.TabIndex = 1;
-            this.whatIsInsideTextBox.Text = resources.GetString("whatIsInsideTextBox.Text");
+            this.whatIsInsideTextBox.Text = "Loading change log...\r\n\r\nIt is not necessary to wait for the change log before to" +
+    " proceed.\r\nPress \"Start Update\" when you want to start the update.";
+            // 
+            // adminModeLabel
+            // 
+            this.adminModeLabel.AutoSize = true;
+            this.adminModeLabel.ForeColor = System.Drawing.Color.DarkGray;
+            this.adminModeLabel.Location = new System.Drawing.Point(12, 297);
+            this.adminModeLabel.Name = "adminModeLabel";
+            this.adminModeLabel.Size = new System.Drawing.Size(10, 13);
+            this.adminModeLabel.TabIndex = 4;
+            this.adminModeLabel.Text = ".";
+            this.adminModeLabel.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(511, 350);
+            this.Controls.Add(this.adminModeLabel);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.logoPictureBox);
@@ -262,6 +288,7 @@ namespace DtPadUpdater
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DtPad Updater";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.introPanel.ResumeLayout(false);
             this.introPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.homePictureBox)).EndInit();
@@ -272,6 +299,7 @@ namespace DtPadUpdater
             this.infoPanel.ResumeLayout(false);
             this.infoPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -295,5 +323,7 @@ namespace DtPadUpdater
         private System.Windows.Forms.Panel infoPanel;
         private System.Windows.Forms.Label whatIsInsideLabel;
         internal System.Windows.Forms.TextBox whatIsInsideTextBox;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Label adminModeLabel;
     }
 }

@@ -129,26 +129,6 @@ If a problem persist, or DtPad seems to be broken, download the last version fro
   <metadata name="contentContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>145, 17</value>
   </metadata>
-  <data name="whatIsInsideTextBox.Text" xml:space="preserve">
-    <value>+ A new built-in editor for the management of CSV files, including the edit of cells, deleting and adding new rows, replacement of delimiter character and much more (issue #1137)
-+ The limit of rows allowed before the decommissioning of their side panel has been raised (new default: 1.000) (issue #1155, only partially solved)
-+ Pressing CTRL+TAB now DtPad opens a screen that shows the list of opened tabs (issue #1143)
-+ Note mode improvement, now able to handle multiple tabs and customizable in size of opening
-+ Tracking of DtPad updates (about the user is stored only its IP at the time of the request)
-+ Management of web addresses into favourites (along with sessions and files)
-- The font used by the notes and the calculator is now fit to the main editing area
-- DtPad Updater now informs the user about the contents of the update, before its execution
-- Improvement of RETURN key usage to start a search into search panel (now it it possible to choose which configuration is preferred into settings window)
-- Update of Be.HexEditor component, for a better hexadecimal view
-- Update of SharpBox component, to use the last API of Dropbox (issue #1166)
-- The tabs no longer lose focus while working
-- Fixed a bug about the usage of CTRL+mouse wheel to change the zoom inside the main editing area
-- Bug fixing inside the hexadecimal editor, because of encoding misunderstood
-- Resizing windows of DtPad Updater, DtPad Setup and DtPad Uninstaller, in order to make them more manageable
-- Several improvements to code, interface and localizations
-
-More informations here: http://dtpad.codeplex.com/releases/view/96761</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

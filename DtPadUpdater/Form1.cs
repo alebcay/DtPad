@@ -1,4 +1,6 @@
 using System;
+using System.Net;
+using System.Threading;
 using System.Windows.Forms;
 using DtPadUpdater.Managers;
 using DtPadUpdater.Utils;
@@ -16,8 +18,14 @@ namespace DtPadUpdater
     /// </remarks>
     internal partial class Form1 : Form
     {
+        private Thread newThread;
+        private bool updaterClosed;
+        private String changeLog;
+        private delegate void ThreadCallBack();
+
         private readonly String executablePath = String.Empty;
         private String internalCulture;
+        private bool isUserAdmin;
 
         internal Form1(String path)
         {
@@ -35,6 +43,24 @@ namespace DtPadUpdater
         {
             updateTextBox.Select(updateTextBox.Text.Length, 0);
             updateTextBox.ScrollToCaret();
+        }
+
+        private void logoPictureBox_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (e.X < 20 && e.Y < 20)
+            {
+                isUserAdmin = true;
+                adminModeLabel.Visible = true;
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (newThread != null && newThread.IsAlive)
+            {
+                updaterClosed = true;
+                //newThread.Abort();
+            }
         }
 
         #endregion Window Methods
@@ -57,7 +83,9 @@ namespace DtPadUpdater
                     startButton.Text = LanguageUtil.GetCurrentLanguageString("StartUpdate", Name, internalCulture);
                     Refresh();
 
-                    //UpdateManager.ReadChangelog(this, executablePath, internalCulture);
+                    newThread = new Thread(CheckChangeLog);
+                    newThread.IsBackground = true;
+                    newThread.Start();
                 }
                 else if (infoPanel.Visible)
                 {
@@ -79,14 +107,14 @@ namespace DtPadUpdater
 
                         if (UpdateManager.UpdateProcess(this, executablePath, updateTextBox, updateProgressBar, internalCulture, out fromVersion, out toVersion))
                         {
-                            UpdateManager.CommitUpdate("ok", fromVersion, toVersion, executablePath, internalCulture);
+                            UpdateManager.CommitUpdate(isUserAdmin, "ok", fromVersion, toVersion, executablePath, internalCulture);
 
                             startButton.Text = LanguageUtil.GetCurrentLanguageString("Start", Name, internalCulture);
                             startButton.Enabled = true;
                         }
                         else
                         {
-                            UpdateManager.CommitUpdate("ko", fromVersion, toVersion, executablePath, internalCulture);
+                            UpdateManager.CommitUpdate(isUserAdmin, "ko", fromVersion, toVersion, executablePath, internalCulture);
 
                             startButton.Visible = false;
                         }
@@ -133,6 +161,36 @@ namespace DtPadUpdater
         #endregion ContextMenu Methods
 
         #region Private Methods
+
+        private void CheckChangeLog()
+        {
+            WebException exception;
+            changeLog = UpdateManager.CheckChangeLog(executablePath, internalCulture, out exception);
+
+            if (String.IsNullOrEmpty(changeLog) || exception != null)
+            {
+                Invoke(new ThreadCallBack(ShowError));
+            }
+
+            if (!updaterClosed)
+            {
+                Invoke(new ThreadCallBack(ShowChangeLog));
+            }
+        }
+
+        private void ShowError()
+        {
+            whatIsInsideTextBox.Text = LanguageUtil.GetCurrentLanguageString("ErrorLoadingChangeLog", Name, internalCulture);
+            progressBar.Visible = false;
+            Refresh();
+        }
+
+        private void ShowChangeLog()
+        {
+            whatIsInsideTextBox.Text = changeLog;
+            progressBar.Visible = false;
+            Refresh();
+        }
 
         private void SetLanguage()
         {

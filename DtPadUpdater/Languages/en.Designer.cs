@@ -163,6 +163,15 @@ namespace DtPadUpdater.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to An error occurred loading DtPad changelog!.
+        /// </summary>
+        internal static string Form1_ErrorLoadingChangeLog {
+            get {
+                return ResourceManager.GetString("Form1_ErrorLoadingChangeLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select All.
         /// </summary>
         internal static string Form1_selectAllToolStripMenuItem {
@@ -231,6 +240,18 @@ namespace DtPadUpdater.Languages {
         internal static string Form1_whatIsInsideLabel {
             get {
                 return ResourceManager.GetString("Form1_whatIsInsideLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loading changelog...
+        ///
+        ///It is not necessary to wait for the change log before to proceed.
+        ///Press &quot;Start Update&quot; when you want to start the update..
+        /// </summary>
+        internal static string Form1_whatIsInsideTextBox {
+            get {
+                return ResourceManager.GetString("Form1_whatIsInsideTextBox", resourceCulture);
             }
         }
         

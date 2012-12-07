@@ -76,13 +76,13 @@ namespace DtPad
             String user = String.Format(@"{0}\{1}", Environment.UserDomainName, Environment.UserName);
             AuthorizationRuleCollection collection = Directory.GetAccessControl(Path.Combine(ConstantUtil.ApplicationExecutionPath(), "DtPad.exe")).GetAccessRules(true, true, typeof(NTAccount));
 
-            if (collection.Cast<FileSystemAccessRule>().Any(rule => rule.IdentityReference.Value == user && rule.AccessControlType == AccessControlType.Allow && rule.FileSystemRights == FileSystemRights.FullControl))
+            if (collection.Cast<FileSystemAccessRule>().Any(rule => rule.IdentityReference.Value.ToLower() == user.ToLower() && rule.AccessControlType == AccessControlType.Allow && rule.FileSystemRights == FileSystemRights.FullControl))
             {
                 return true;
             }
             //foreach (FileSystemAccessRule rule in collection)
             //{
-            //    if (rule.IdentityReference.Value == user && rule.AccessControlType == AccessControlType.Allow && rule.FileSystemRights == FileSystemRights.FullControl)
+            //    if (rule.IdentityReference.Value.ToLower() == user.ToLower() && rule.AccessControlType == AccessControlType.Allow && rule.FileSystemRights == FileSystemRights.FullControl)
             //    {
             //        return true;
             //    }

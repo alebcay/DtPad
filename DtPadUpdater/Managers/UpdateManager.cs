@@ -17,13 +17,33 @@ namespace DtPadUpdater.Managers
 
         #region Internal Methods
 
-        //internal static void ReadChangelog(Form1 form, String executablePath, String culture)
-        //{
-        //    TextBox whatIsInsideTextBox = form.whatIsInsideTextBox;
+        internal static String CheckChangeLog(String executablePath, String culture, out WebException exception)
+        {
+            exception = null;
 
-        //    WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
-        //    whatIsInsideTextBox.Text = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-changelog.log");
-        //}
+            WebClient webClient = null;
+            String fileContent;
+
+            try
+            {
+                webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
+                fileContent = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-changelog.log");
+            }
+            catch (WebException webException)
+            {
+                exception = webException;
+                return String.Empty;
+            }
+            finally
+            {
+                if (webClient != null)
+                {
+                    webClient.Dispose();
+                }
+            }
+
+            return fileContent;
+        }
 
         internal static bool UpdateProcess(Form1 form, String executablePath, TextBox updateTextBox, ProgressBar updateProgressBar, String culture, out String fromVersion, out String toVersion)
         {
@@ -192,8 +212,13 @@ namespace DtPadUpdater.Managers
             return true;
         }
 
-        internal static void CommitUpdate(String outcome, String fromVersion, String toVersion, String executablePath, String culture)
+        internal static void CommitUpdate(bool isUserAdmin, String outcome, String fromVersion, String toVersion, String executablePath, String culture)
         {
+            if (isUserAdmin)
+            {
+                return;
+            }
+
             try
             {
                 using (WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture))

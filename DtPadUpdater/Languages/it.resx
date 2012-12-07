@@ -284,4 +284,13 @@ Avvia il processo di aggiornamento dal menu "? -&gt; Controlla aggiornamenti..."
   <data name="Form1_whatIsInsideLabel" xml:space="preserve">
     <value>Questo aggiornamento contiene (solo in inglese):</value>
   </data>
+  <data name="Form1_ErrorLoadingChangeLog" xml:space="preserve">
+    <value>Si è verificato un errore durante il caricamento del change log!</value>
+  </data>
+  <data name="Form1_whatIsInsideTextBox" xml:space="preserve">
+    <value>Caricamento change log...
+
+Non è necessario attendere il caricamento per procedere.
+Premi il bottone "Aggiorna" quando desideri avviare l'aggiornamento.</value>
+  </data>
 </root>

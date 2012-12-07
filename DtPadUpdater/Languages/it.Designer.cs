@@ -163,6 +163,15 @@ namespace DtPadUpdater.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Si è verificato un errore durante il caricamento del change log!.
+        /// </summary>
+        internal static string Form1_ErrorLoadingChangeLog {
+            get {
+                return ResourceManager.GetString("Form1_ErrorLoadingChangeLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Seleziona tutto.
         /// </summary>
         internal static string Form1_selectAllToolStripMenuItem {
@@ -231,6 +240,18 @@ namespace DtPadUpdater.Languages {
         internal static string Form1_whatIsInsideLabel {
             get {
                 return ResourceManager.GetString("Form1_whatIsInsideLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Caricamento change log...
+        ///
+        ///Non è necessario attendere il caricamento per procedere.
+        ///Premi il bottone &quot;Aggiorna&quot; quando desideri avviare l&apos;aggiornamento..
+        /// </summary>
+        internal static string Form1_whatIsInsideTextBox {
+            get {
+                return ResourceManager.GetString("Form1_whatIsInsideTextBox", resourceCulture);
             }
         }
         

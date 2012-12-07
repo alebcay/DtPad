@@ -185,6 +185,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DtPadUpdater.ruleset" />
+    <None Include="Logs\dtpad-changelog.log" />
     <None Include="Logs\dtpad-versioning.log" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
