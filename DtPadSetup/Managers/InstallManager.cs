@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
@@ -15,7 +15,7 @@ namespace DtPadSetup.Managers
     /// Install steps manager.
     /// </summary>
     /// <remarks>Rem lines because of inline help disabled.</remarks>
-    /// <author>Marco Macci�</author>
+    /// <author>Marco Macciò</author>
     internal static class InstallManager
     {
         private const String className = "InstallManager";
@@ -70,12 +70,12 @@ namespace DtPadSetup.Managers
                                 //+ GuideResource.DtPadGuide_en_dhg.Length + GuideResource.DtPadGuide_it_dhg.Length;
 
             double requiredMbSpace = (requiredSpace / 1024f) / 1024f;
-            requiredSpaceLabel1.Text = requiredMbSpace.ToString("#,#", CultureInfo.GetCultureInfo(GetCulture(languageComboBox))) + " MB";
+            requiredSpaceLabel1.Text = requiredMbSpace.ToString("#,#", CultureInfo.GetCultureInfo(LanguageUtil.GetCulture(languageComboBox))) + " MB";
 
             if (foundDrive)
             {
                 double freeMbSpace = (selectedDrive.TotalFreeSpace / 1024f) / 1024f;
-                availableSpaceLabel1.Text = freeMbSpace.ToString("#,#", CultureInfo.GetCultureInfo(GetCulture(languageComboBox))) + " MB";
+                availableSpaceLabel1.Text = freeMbSpace.ToString("#,#", CultureInfo.GetCultureInfo(LanguageUtil.GetCulture(languageComboBox))) + " MB";
             }
             else
             {
@@ -256,7 +256,7 @@ namespace DtPadSetup.Managers
                 {
                     ConfigUtil.UpdateParameter("LookAndFeel", "1", destinationPath);
                 }
-                ConfigUtil.UpdateParameter("Language", GetLongCulture(form.languageComboBox), destinationPath);
+                ConfigUtil.UpdateParameter("Language", LanguageUtil.GetLongCulture(form.languageComboBox), destinationPath);
                 installProgressBar.PerformStep();
 
                 installTextBox.Text += Environment.NewLine + LanguageUtil.GetCurrentLanguageString("InstallComplete", className, culture);
@@ -276,52 +276,6 @@ namespace DtPadSetup.Managers
         }
 
         #endregion Internal Methods
-
-        #region Culture Methods
-
-        private static String GetCulture(ListControl languageComboBox)
-        {
-            String language;
-            
-            switch (languageComboBox.SelectedIndex)
-            {
-                case 0:
-                    language = "en-GB";
-                    break;
-                case 1:
-                    language = "it-IT";
-                    break;
-
-                default:
-                    language = "en";
-                    break;
-            }
-
-            return language;
-        }
-
-        private static String GetLongCulture(ListControl languageComboBox)
-        {
-            String language;
-
-            switch (languageComboBox.SelectedIndex)
-            {
-                case 0:
-                    language = "English";
-                    break;
-                case 1:
-                    language = "Italiano";
-                    break;
-
-                default:
-                    language = "English";
-                    break;
-            }
-
-            return language;
-        }
-
-        #endregion Culture Methods
 
         #region Shortcuts And Association Methods
 
@@ -346,7 +300,7 @@ namespace DtPadSetup.Managers
 
             StreamWriter textFile = File.CreateText(Path.Combine(startDir, String.Format("{0}.url", LanguageUtil.GetCurrentLanguageString("LinkWebsite", className, culture))));
             textFile.WriteLine("[InternetShortcut]");
-            textFile.WriteLine(String.Format("URL={0}", ConstantUtil.dtPadURL));
+            textFile.WriteLine("URL={0}", ConstantUtil.dtPadURL);
             textFile.WriteLine("IconIndex=0");
             textFile.WriteLine("IconFile=" + Path.Combine(destinationPath, "Icons\\Dt.ico"));
             textFile.Close();

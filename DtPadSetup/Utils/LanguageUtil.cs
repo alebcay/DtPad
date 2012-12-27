@@ -91,6 +91,66 @@ namespace DtPadSetup.Utils
 
         #region Culture Description Methods
 
+        internal static String GetCulture(ListControl languageComboBox)
+        {
+            String language;
+            
+            switch (languageComboBox.SelectedIndex)
+            {
+                case 0:
+                    language = "en-GB";
+                    break;
+                case 1:
+                    language = "it-IT";
+                    break;
+                case 2:
+                    language = "fr-FR";
+                    break;
+                case 3:
+                    language = "es-ES";
+                    break;
+                case 4:
+                    language = "ru-RU";
+                    break;
+
+                default:
+                    language = "en-GB";
+                    break;
+            }
+
+            return language;
+        }
+
+        internal static String GetLongCulture(ListControl languageComboBox)
+        {
+            String language;
+
+            switch (languageComboBox.SelectedIndex)
+            {
+                case 0:
+                    language = "English";
+                    break;
+                case 1:
+                    language = "Italiano";
+                    break;
+                case 2:
+                    language = "Français";
+                    break;
+                case 3:
+                    language = "Español";
+                    break;
+                case 4:
+                    language = "Pусский";
+                    break;
+
+                default:
+                    language = "English";
+                    break;
+            }
+            
+            return language;
+        }
+
         internal static String GetReallyShortCulture(String cultureName)
         {
             String language;
