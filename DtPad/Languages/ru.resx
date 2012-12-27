@@ -1,0 +1,4192 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="About_createdByLabel" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="About_createdByLabel1" xml:space="preserve">
+    <value>Автор:</value>
+  </data>
+  <data name="About_descriptionTextBox" xml:space="preserve">
+    <value>DtPad (2009-2012) предоставляется по лицензии Apache 2.0.
+- apache.org/licenses/LICENSE-2.0
+
+Это приложение требует наличия Microsoft .NET Framework 4 и хранит в реестре Windows только сопоставления файлов для контекстного меню &quot;Открыть с помощью&quot; Проводника.
+
+Автор французского перевода: Alain Buferne.
+Автор русского перевода: Артем Вахитов (Artem Vakhitov).
+
+Автор основного набора значков: Delacro.
+- delacro.deviantart.com
+
+Авторы прочих значков: Mark James, VistaIcons.
+- famfamfam.com
+- vistaicons.com
+
+Внешние компоненты, на которые ссылается приложение: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET, CsvReader.
+- sharpdevelop.net/OpenSource/SharpZipLib
+- itextpdf.com
+- logging.apache.org/log4net
+- hexbox.sourceforge.net
+- xmlgrid.codeplex.com
+- www.codeproject.com/KB/selection/MonthCalendar.aspx
+- sharpbox.codeplex.com
+- json.codeplex.com
+- www.codeproject.com/Articles/9258/A-Fast-CSV-Reader
+
+Сервис перевода и поиска: Google Inc.
+- google.com/language_tools
+- google.com
+
+Сервис Dropbox: Dropbox Inc.
+- dropbox.com
+
+Словари: OpenOffice.org.
+- wiki.services.openoffice.org/wiki/Dictionaries
+
+DtPad не собирает никаких данных о работе с приложением и пользователях. Данные, которые могут регистрироваться в папке &quot;Logs&quot;, относятся только к программным ошибкам и предупреждениям, отображаемым в том числе и в пользовательском интерфейсе, и ни при каких обстоятельствах не содержат текст пользователя или другую конфиденциальную информацию.</value>
+  </data>
+  <data name="About_emailPictureBoxToolTip" xml:space="preserve">
+    <value>Написать по электронной почте автору DtPad</value>
+  </data>
+  <data name="About_rssPictureBoxToolTip" xml:space="preserve">
+    <value>Читать RSS-канал diariotraduttore.com</value>
+  </data>
+  <data name="About_Title" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="About_titleLabel" xml:space="preserve">
+    <value>DtPad</value>
+  </data>
+  <data name="About_versionLabel1" xml:space="preserve">
+    <value>Версия:</value>
+  </data>
+  <data name="About_websiteLabel" xml:space="preserve">
+    <value>diariotraduttore.com</value>
+  </data>
+  <data name="About_websiteLabel1" xml:space="preserve">
+    <value>Веб-сайт:</value>
+  </data>
+  <data name="About_websitePictureBoxToolTip" xml:space="preserve">
+    <value>Посетить домашнюю страницу автора DtPad</value>
+  </data>
+  <data name="DatetimeSelect_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="DatetimeSelect_descriptionLabel" xml:space="preserve">
+    <value>Выберите формат даты и времени для вставки:</value>
+  </data>
+  <data name="DatetimeSelect_helpLabel" xml:space="preserve">
+    <value>Выберите формат даты и времени для вставки.</value>
+  </data>
+  <data name="DatetimeSelect_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="DatetimeSelect_Title" xml:space="preserve">
+    <value>Дата и время</value>
+  </data>
+  <data name="Extensions_addButtonToolTip" xml:space="preserve">
+    <value>Добавить тип файлов</value>
+  </data>
+  <data name="Extensions_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Extensions_defaultCheckBox" xml:space="preserve">
+    <value>Установить по умолчанию</value>
+  </data>
+  <data name="Extensions_descriptionLabel" xml:space="preserve">
+    <value>Описание:</value>
+  </data>
+  <data name="Extensions_extensionGroupBox1" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="Extensions_extensionLabel" xml:space="preserve">
+    <value>Расширение:</value>
+  </data>
+  <data name="Extensions_extensionPictureBoxToolTip" xml:space="preserve">
+    <value>Введите только расширение фaйла (например, &quot;txt&quot;)</value>
+  </data>
+  <data name="Extensions_helpLabel" xml:space="preserve">
+    <value>Управление типами файлов, которые поддерживает DtPad.</value>
+  </data>
+  <data name="Extensions_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Extensions_removeButtonToolTip" xml:space="preserve">
+    <value>Удалить тип файлов из списка</value>
+  </data>
+  <data name="Extensions_Title" xml:space="preserve">
+    <value>Типы файлов</value>
+  </data>
+  <data name="Favourites_addFavouriteButtonToolTip" xml:space="preserve">
+    <value>Добавить файл в избранное</value>
+  </data>
+  <data name="Favourites_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Favourites_deleteFavouriteButtonToolTip" xml:space="preserve">
+    <value>Удалить из избранного</value>
+  </data>
+  <data name="Favourites_helpLabel" xml:space="preserve">
+    <value>Управление избранными файлами для быстрого открытия в DtPad.</value>
+  </data>
+  <data name="Favourites_Title" xml:space="preserve">
+    <value>Избранное</value>
+  </data>
+  <data name="FileProperties_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="FileProperties_creationDateLabel1" xml:space="preserve">
+    <value>Дата создания:</value>
+  </data>
+  <data name="FileProperties_directoryLabel1" xml:space="preserve">
+    <value>Каталог:</value>
+  </data>
+  <data name="FileProperties_lastAccessLabel1" xml:space="preserve">
+    <value>Последний доступ:</value>
+  </data>
+  <data name="FileProperties_lastUpdateLabel1" xml:space="preserve">
+    <value>Обновлен:</value>
+  </data>
+  <data name="FileProperties_nameLabel1" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="FileProperties_readonlyLabel1" xml:space="preserve">
+    <value>Только чтение:</value>
+  </data>
+  <data name="FileProperties_readonlyLabel1No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="FileProperties_readonlyLabel1Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="FileProperties_sizeLabel1" xml:space="preserve">
+    <value>Размер:</value>
+  </data>
+  <data name="FileProperties_Title" xml:space="preserve">
+    <value>Свойства файла</value>
+  </data>
+  <data name="GoToLine_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="GoToLine_helpLabel" xml:space="preserve">
+    <value>Выбор строки для перехода.</value>
+  </data>
+  <data name="GoToLine_lineNumberLabel1" xml:space="preserve">
+    <value>Всего строк:</value>
+  </data>
+  <data name="GoToLine_okButton" xml:space="preserve">
+    <value>Перейти</value>
+  </data>
+  <data name="GoToLine_Title" xml:space="preserve">
+    <value>Переход к строке</value>
+  </data>
+  <data name="HelpManager_helpToolTip" xml:space="preserve">
+    <value>Нужна дополнительная помощь?</value>
+  </data>
+  <data name="MergeTabs_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="MergeTabs_helpLabel" xml:space="preserve">
+    <value>Объединение содержимого двух и более вкладок на другой вкладке.</value>
+  </data>
+  <data name="MergeTabs_markSeparationCheckBox" xml:space="preserve">
+    <value>Разделить содержимое вкладок меткой</value>
+  </data>
+  <data name="MergeTabs_moveDownButtonToolTip" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="MergeTabs_moveUpButtonToolTip" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="MergeTabs_okButton" xml:space="preserve">
+    <value>Объединить</value>
+  </data>
+  <data name="MergeTabs_selectTabsLabel" xml:space="preserve">
+    <value>Выберите вкладки для объединения (не менее 2-х):</value>
+  </data>
+  <data name="MergeTabs_Title" xml:space="preserve">
+    <value>Объединение вкладок</value>
+  </data>
+  <data name="MoveLines_cancelButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="MoveLines_downRadioButton" xml:space="preserve">
+    <value>Ниже</value>
+  </data>
+  <data name="MoveLines_helpLabel" xml:space="preserve">
+    <value>Перемещение выделенных строк вверх/вниз.</value>
+  </data>
+  <data name="MoveLines_lineNumberLabel1" xml:space="preserve">
+    <value>Всего строк:</value>
+  </data>
+  <data name="MoveLines_okButton" xml:space="preserve">
+    <value>Переместить</value>
+  </data>
+  <data name="MoveLines_Title" xml:space="preserve">
+    <value>Перемещение строк</value>
+  </data>
+  <data name="MoveLines_upRadioButton" xml:space="preserve">
+    <value>Выше</value>
+  </data>
+  <data name="Options_applyButton" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Options_backgroundButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Options_backgroundColorLabel" xml:space="preserve">
+    <value>Фон:</value>
+  </data>
+  <data name="Options_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Options_caseSensitiveCheckBox" xml:space="preserve">
+    <value>Учитывать регистр</value>
+  </data>
+  <data name="Options_clearRecentFilesButton" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="Options_domainLabel" xml:space="preserve">
+    <value>Домен:</value>
+  </data>
+  <data name="Options_customBrowserRadioButton" xml:space="preserve">
+    <value>Использовать команду ниже</value>
+  </data>
+  <data name="Options_defaultBrowserRadioButton" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="Options_enableProxySettingsCheckBox" xml:space="preserve">
+    <value>Использовать прокси-сервер</value>
+  </data>
+  <data name="Options_extensionLabel" xml:space="preserve">
+    <value>Типы:</value>
+  </data>
+  <data name="Options_extensionsButtonToolTip" xml:space="preserve">
+    <value>Управление типами файлов</value>
+  </data>
+  <data name="Options_fileGroupBox1" xml:space="preserve">
+    <value>Исходная папка</value>
+  </data>
+  <data name="Options_fileGroupBox2" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="Options_fontColorLabel" xml:space="preserve">
+    <value>Цвет:</value>
+  </data>
+  <data name="Options_fontLabel" xml:space="preserve">
+    <value>Шрифт:</value>
+  </data>
+  <data name="Options_formatGroupBox1" xml:space="preserve">
+    <value>Внешний вид</value>
+  </data>
+  <data name="Options_languageGroupBox1" xml:space="preserve">
+    <value>DtPad</value>
+  </data>
+  <data name="Options_helpLabel" xml:space="preserve">
+    <value>Настройка DtPad.</value>
+  </data>
+  <data name="Options_infoProxyPictureBoxToolTip" xml:space="preserve">
+    <value>DtPad использует для подключения параметры Internet Explorer. Заполните следующие
+поля, если требуется ручная проверка подлинности.</value>
+  </data>
+  <data name="Options_internetGroupBox1" xml:space="preserve">
+    <value>Прокси-сервер</value>
+  </data>
+  <data name="Options_internetGroupBox2" xml:space="preserve">
+    <value>Браузер</value>
+  </data>
+  <data name="Options_languageComboBoxItems" xml:space="preserve">
+    <value>English
+Italiano
+Français
+Español
+Pусский</value>
+  </data>
+  <data name="Options_languageLabel" xml:space="preserve">
+    <value>Язык:</value>
+  </data>
+  <data name="Options_lastUsedFolderRadioButton" xml:space="preserve">
+    <value>Последняя</value>
+  </data>
+  <data name="Options_lookAndFeelGroupBox1" xml:space="preserve">
+    <value>Стиль</value>
+  </data>
+  <data name="Options_loopAtEOFCheckBox" xml:space="preserve">
+    <value>Идти к началу в конце файла</value>
+  </data>
+  <data name="Options_minimizeOnTrayIconCheckBox" xml:space="preserve">
+    <value>Сворачивать в значок</value>
+  </data>
+  <data name="Options_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Options_passwordLabel" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="Options_proxyWarning" xml:space="preserve">
+    <value>Неверные параметры прокси-сервера.
+Отключите прокси-сервер или проверьте правильность имени пользователя и пароля.</value>
+  </data>
+  <data name="Options_recentFilesNumberLabel" xml:space="preserve">
+    <value>Список недавних:</value>
+  </data>
+  <data name="Options_renderModeComboBoxItems" xml:space="preserve">
+    <value>Стандартная
+Классическая Windows</value>
+  </data>
+  <data name="Options_renderModeLabel" xml:space="preserve">
+    <value>Тема:</value>
+  </data>
+  <data name="Options_searchGroupBox1" xml:space="preserve">
+    <value>Панель поиска</value>
+  </data>
+  <data name="Options_searchHistoryLabel" xml:space="preserve">
+    <value>История поиска:</value>
+  </data>
+  <data name="Options_showSearchPanelCheckBox" xml:space="preserve">
+    <value>Показывать панель поиска</value>
+  </data>
+  <data name="Options_specificFolderButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Options_specificFolderRadioButton" xml:space="preserve">
+    <value>Заданная ниже</value>
+  </data>
+  <data name="Options_statusBarCheckBox" xml:space="preserve">
+    <value>Строка состояния</value>
+  </data>
+  <data name="Options_statusLabel" xml:space="preserve">
+    <value>Состояние:</value>
+  </data>
+  <data name="Options_stayOnTopCheckBox" xml:space="preserve">
+    <value>Поверх других окон</value>
+  </data>
+  <data name="Options_Title" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="Options_toolbarCheckBox" xml:space="preserve">
+    <value>Панель инструментов</value>
+  </data>
+  <data name="Options_urlsCheckBox" xml:space="preserve">
+    <value>Выделять URL-адреса</value>
+  </data>
+  <data name="Options_usernameLabel" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="Options_viewGroupBox1" xml:space="preserve">
+    <value>Окно</value>
+  </data>
+  <data name="Options_viewGroupBox2" xml:space="preserve">
+    <value>Панели</value>
+  </data>
+  <data name="Options_wordWrapCheckBox" xml:space="preserve">
+    <value>Перенос по словам</value>
+  </data>
+  <data name="ReportBug_areaComboBoxItems" xml:space="preserve">
+    <value>
+Файл
+Правка
+Вид
+Сеанс
+Поиск
+Действие
+Настройка
+Программы
+Окно
+Справка
+Прочее</value>
+  </data>
+  <data name="ReportBug_areaLabel" xml:space="preserve">
+    <value>Место ошибки: *</value>
+  </data>
+  <data name="ReportBug_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="ReportBug_descriptionLabel" xml:space="preserve">
+    <value>Описание: *</value>
+  </data>
+  <data name="ReportBug_emailLabel" xml:space="preserve">
+    <value>Эл. почта: *</value>
+  </data>
+  <data name="ReportBug_errorMessageLabel" xml:space="preserve">
+    <value>Сообщение об ошибке (если есть):</value>
+  </data>
+  <data name="ReportBug_helpLabel" xml:space="preserve">
+    <value>Уведомление автора DtPad об ошибке по электронной почте.</value>
+  </data>
+  <data name="ReportBug_nameLabel" xml:space="preserve">
+    <value>Имя: *</value>
+  </data>
+  <data name="ReportBug_requiredFieldsLabel" xml:space="preserve">
+    <value>* Обязательные поля</value>
+  </data>
+  <data name="ReportBug_sendButton" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="ReportBug_sendMeACopyCheckBox" xml:space="preserve">
+    <value>Отправить копию себе</value>
+  </data>
+  <data name="ReportBug_Title" xml:space="preserve">
+    <value>Отчет об ошибке</value>
+  </data>
+  <data name="Tools_addButtonToolTip" xml:space="preserve">
+    <value>Добавить программу</value>
+  </data>
+  <data name="Tools_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Tools_commandLineLabel" xml:space="preserve">
+    <value>Команда:</value>
+  </data>
+  <data name="Tools_commandLinePictureBoxToolTip" xml:space="preserve">
+    <value>Вставьте путь и имя исполняемого файла
+(например, &quot;C:\Program Files\DtPad\DtPad.exe&quot;)</value>
+  </data>
+  <data name="Tools_descriptionLabel" xml:space="preserve">
+    <value>Описание:</value>
+  </data>
+  <data name="Tools_helpLabel" xml:space="preserve">
+    <value>Управление ссылками на внешние приложения в меню &quot;Программы&quot;.</value>
+  </data>
+  <data name="Tools_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Tools_removeButtonToolTip" xml:space="preserve">
+    <value>Удалить программу из списка</value>
+  </data>
+  <data name="Tools_runComboBoxItems" xml:space="preserve">
+    <value>обычного размера
+свернутое
+развернутое</value>
+  </data>
+  <data name="Tools_runLabel" xml:space="preserve">
+    <value>Окно:</value>
+  </data>
+  <data name="Tools_Title" xml:space="preserve">
+    <value>Программы</value>
+  </data>
+  <data name="Tools_toolGroupBox1" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="Tools_workingFolderLabel" xml:space="preserve">
+    <value>Рабочая папка:</value>
+  </data>
+  <data name="Tools_workingFolderPictureBoxToolTip" xml:space="preserve">
+    <value>Введите здесь путь к рабочей папке исполняемого файла
+(например, &quot;C:\Program Files\DtPad&quot;)</value>
+  </data>
+  <data name="VersionCheck_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="VersionCheck_statusLabel1" xml:space="preserve">
+    <value>Состояние:</value>
+  </data>
+  <data name="VersionCheck_statusLabelClosing" xml:space="preserve">
+    <value>закрытие открытых вкладок...</value>
+  </data>
+  <data name="VersionCheck_statusLabelConnection" xml:space="preserve">
+    <value>установление соединения...</value>
+  </data>
+  <data name="VersionCheck_statusLabelDownload" xml:space="preserve">
+    <value>загрузка данных о последней версии...</value>
+  </data>
+  <data name="VersionCheck_statusLabelError" xml:space="preserve">
+    <value>ошибка соединения.</value>
+  </data>
+  <data name="VersionCheck_statusLabelOk" xml:space="preserve">
+    <value>у вас последняя версия.</value>
+  </data>
+  <data name="VersionCheck_statusLabelOld" xml:space="preserve">
+    <value>у вас последняя версия.</value>
+  </data>
+  <data name="VersionCheck_statusLabelProxy" xml:space="preserve">
+    <value>настройка параметров прокси-сервера...</value>
+  </data>
+  <data name="VersionCheck_statusLabelUpdater" xml:space="preserve">
+    <value>проверка новой версии DtPad Updater...</value>
+  </data>
+  <data name="VersionCheck_Title" xml:space="preserve">
+    <value>Проверка версии</value>
+  </data>
+  <data name="VersionCheck_updateButton" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="Welcome_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Welcome_signLabel" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="Welcome_Title" xml:space="preserve">
+    <value>Вас приветствует DtPad</value>
+  </data>
+  <data name="Welcome_titleLabel" xml:space="preserve">
+    <value>DtPad</value>
+  </data>
+  <data name="Welcome_welcomeLabel" xml:space="preserve">
+    <value>Уважаемый пользователь,
+
+Вас приветствует DtPad - простой в использовании текстовый редактор
+на базе вкладок с множеством интересных функций. Программа непрерывно совершенствуется, поэтому любые ваши отзывы о DtPad приветствуются! Выберите команду &quot;Справка -&gt; Уведомить об ошибке&quot; или напишите автору электронное письмо, щелкнув соответствующий значок в окне &quot;О программе&quot;.
+С наилучшими пожеланиями,</value>
+  </data>
+  <data name="AlertO_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="AlertO_Title" xml:space="preserve">
+    <value>Оповещение</value>
+  </data>
+  <data name="ErrorOR_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Копировать сообщение об ошибке в буфер</value>
+  </data>
+  <data name="ErrorOR_reportBugButton" xml:space="preserve">
+    <value>Отчет об ошибке</value>
+  </data>
+  <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Копировать сообщение об ошибке в буфер</value>
+  </data>
+  <data name="ErrorO_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="ErrorO_Title" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Form1_closeAllButThisToolStripMenuItem" xml:space="preserve">
+    <value>Закрыть все вкладки, кроме этой</value>
+  </data>
+  <data name="InfoO_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="InfoO_Title" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="QuestionYNC_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="QuestionYNC_noButton" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="QuestionYNC_Title" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="QuestionYNC_yesButton" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="QuestionYN_noButton" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="QuestionYN_Title" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="QuestionYN_yesButton" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="WarningYNC_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="WarningYNC_noButton" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="WarningYNC_Title" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="WarningYNC_yesButton" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="ErrorOR_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="ErrorOR_Title" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="searchPanel_caseCheckBox" xml:space="preserve">
+    <value>Учитывать регистр</value>
+  </data>
+  <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
+    <value>Закрыть все</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Form1_copyFullPathToolStripMenuItem" xml:space="preserve">
+    <value>Путь и имя файла</value>
+  </data>
+  <data name="searchPanel_loopCheckBox" xml:space="preserve">
+    <value>Идти к началу в конце</value>
+  </data>
+  <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="Form1_openFileFolderPromptToolStripMenuItem" xml:space="preserve">
+    <value>Открыть командную строку в папке файла</value>
+  </data>
+  <data name="Form1_openFileFolderToolStripMenuItem" xml:space="preserve">
+    <value>Открыть папку файла</value>
+  </data>
+  <data name="searchPanel_replaceLabel" xml:space="preserve">
+    <value>Заменить на:</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem1" xml:space="preserve">
+    <value>Сохранить как...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem1" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
+    <value>На всех вкладках</value>
+  </data>
+  <data name="searchPanel_searchLabel" xml:space="preserve">
+    <value>Найти:</value>
+  </data>
+  <data name="Form1_Title" xml:space="preserve">
+    <value>DtPad - Безымянный</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem1" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem1" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem1" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Form1_goToToolStripMenuItem1" xml:space="preserve">
+    <value>Перейти к строке...</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem1" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_redoToolStripMenuItem1" xml:space="preserve">
+    <value>Повторить &lt;пусто&gt;</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem1" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem1" xml:space="preserve">
+    <value>Отменить &lt;пусто&gt;</value>
+  </data>
+  <data name="Form1_addCurrentFileToolStripMenuItem" xml:space="preserve">
+    <value>Добавить текущий файл</value>
+  </data>
+  <data name="Form1_clearFilesToolStripMenuItem" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="Form1_closeAllToolStripMenuItem" xml:space="preserve">
+    <value>Закрыть все</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem1" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Form1_exitToolStripMenuItem" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Form1_favouriteFilesToolStripMenuItem" xml:space="preserve">
+    <value>Избранное</value>
+  </data>
+  <data name="Form1_filePropertiesToolStripMenuItem" xml:space="preserve">
+    <value>Свойства файла</value>
+  </data>
+  <data name="Form1_manageFavouritesToolStripMenuItem" xml:space="preserve">
+    <value>Управление...</value>
+  </data>
+  <data name="Form1_newToolStripMenuItem" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem" xml:space="preserve">
+    <value>Файл...</value>
+  </data>
+  <data name="Form1_printPreviewToolStripMenuItem" xml:space="preserve">
+    <value>Предварительный просмотр</value>
+  </data>
+  <data name="Form1_printSetupToolStripMenuItem" xml:space="preserve">
+    <value>Параметры страницы...</value>
+  </data>
+  <data name="Form1_printToolStripMenuItem" xml:space="preserve">
+    <value>Печать...</value>
+  </data>
+  <data name="Form1_recentFilesToolStripMenuItem" xml:space="preserve">
+    <value>Недавние файлы</value>
+  </data>
+  <data name="Form1_saveAllToolStripMenuItem" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem" xml:space="preserve">
+    <value>Файл как...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="Options_fileNode" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="Options_formatNode" xml:space="preserve">
+    <value>Текст</value>
+  </data>
+  <data name="Options_internetNode" xml:space="preserve">
+    <value>Интернет</value>
+  </data>
+  <data name="Options_lookAndFeelNode" xml:space="preserve">
+    <value>Стиль</value>
+  </data>
+  <data name="Options_searchNode" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Options_viewNode" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="EmailManager_Area" xml:space="preserve">
+    <value>Место</value>
+  </data>
+  <data name="EmailManager_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="EmailManager_Email" xml:space="preserve">
+    <value>Эл. почта</value>
+  </data>
+  <data name="EmailManager_ErrorMessage" xml:space="preserve">
+    <value>Сообщение об ошибке</value>
+  </data>
+  <data name="EmailManager_Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="EmailManager_BugReport" xml:space="preserve">
+    <value>Отчет об ошибке</value>
+  </data>
+  <data name="ExplorerManager_DeleteNote" xml:space="preserve">
+    <value>Удалить заметку?</value>
+  </data>
+  <data name="ExplorerManager_Note" xml:space="preserve">
+    <value>Заметка</value>
+  </data>
+  <data name="ExplorerManager_NoteNameNotEmpty" xml:space="preserve">
+    <value>Заголовок заметки не может быть пустым.</value>
+  </data>
+  <data name="ExtensionManager_AlreadyExists" xml:space="preserve">
+    <value>Тип файлов с таким описанием уже существует. Выберите другое описание.</value>
+  </data>
+  <data name="ExtensionManager_ExtensionNameNotEmpty" xml:space="preserve">
+    <value>Описание типа файлов не может быть пустым.</value>
+  </data>
+  <data name="ExtensionManager_New" xml:space="preserve">
+    <value>Добавить тип файлов</value>
+  </data>
+  <data name="ExtensionManager_Reading" xml:space="preserve">
+    <value>Ошибка при чтении файла типов.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="ExtensionManager_Removing" xml:space="preserve">
+    <value>Ошибка при удалении типа файлов.
+Текущее окно будет закрыто.</value>
+  </data>
+  <data name="ExtensionManager_Saving" xml:space="preserve">
+    <value>Ошибка при сохранении типа файлов.
+Текущее окно будет закрыто.</value>
+  </data>
+  <data name="ExtensionManager_Unvalorized" xml:space="preserve">
+    <value>По крайней мере для одного типа файлов не введены данные.
+Введите полностью данные о расширениях, чтобы продолжить.</value>
+  </data>
+  <data name="FileListManager_ClearHistoryRecentFiles" xml:space="preserve">
+    <value>Очистить список недавних файлов?</value>
+  </data>
+  <data name="FileListManager_EmptyTool" xml:space="preserve">
+    <value>Пусто</value>
+  </data>
+  <data name="Form1_aboutToolStripButton" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="Form1_aboutToolStripMenuItem" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="Form1_addNewToolToolStripMenuItem" xml:space="preserve">
+    <value>Управление...</value>
+  </data>
+  <data name="notePanel_addNoteToolStripButton" xml:space="preserve">
+    <value>Добавить заметку</value>
+  </data>
+  <data name="Form1_addPrefixToolStripMenuItem" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_appendFileToolStripButton" xml:space="preserve">
+    <value>Присоединить файл...</value>
+  </data>
+  <data name="Form1_appendFileToolStripMenuItem" xml:space="preserve">
+    <value>Присоединить файл...</value>
+  </data>
+  <data name="Form1_characterCasingToolStripMenuItem" xml:space="preserve">
+    <value>Регистр</value>
+  </data>
+  <data name="Form1_checkForNewVersionToolStripMenuItem" xml:space="preserve">
+    <value>Проверить наличие новой версии...</value>
+  </data>
+  <data name="searchPanel_clearHistoryToolStripMenuItem" xml:space="preserve">
+    <value>Очистить историю</value>
+  </data>
+  <data name="Form1_closeToolStripButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="searchPanel_closeToolStripButton2" xml:space="preserve">
+    <value>Закрыть панель поиска</value>
+  </data>
+  <data name="Form1_closeToolStripButtonToolTip" xml:space="preserve">
+    <value>Закрыть текущую вкладку</value>
+  </data>
+  <data name="Form1_Closing" xml:space="preserve">
+    <value>При закрытии DtPad все несохранённые данные будут потеряны.
+Сохранить изменения?</value>
+  </data>
+  <data name="Form1_convertToolStripMenuItem" xml:space="preserve">
+    <value>Преобразовать</value>
+  </data>
+  <data name="Form1_copyAppendToolStripMenuItem" xml:space="preserve">
+    <value>Копировать в конец буфера</value>
+  </data>
+  <data name="Form1_copyToolStripButton" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="Form1_countOccurencesToolStripMenuItem" xml:space="preserve">
+    <value>Подсчитать совпадения</value>
+  </data>
+  <data name="Form1_cutAppendToolStripMenuItem" xml:space="preserve">
+    <value>Вырезать в конец буфера</value>
+  </data>
+  <data name="Form1_cutToolStripButton" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
+    <value>Блог &quot;Diario di un traduttore&quot; (итал.)</value>
+  </data>
+  <data name="Form1_doubleReturnToReturnToolStripMenuItem" xml:space="preserve">
+    <value>Двойные возвраты каретки в одинарные</value>
+  </data>
+  <data name="Form1_doubleSpacesSpacesToolStripMenuItem" xml:space="preserve">
+    <value>Двойные пробелы в одинарные</value>
+  </data>
+  <data name="Form1_editToolStripMenuItem" xml:space="preserve">
+    <value>Правка</value>
+  </data>
+  <data name="Form1_emptyToolStripMenuItem" xml:space="preserve">
+    <value>Пусто</value>
+  </data>
+  <data name="Form1_exitToolStripMenuItem1" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Form1_favouriteFilesToolStripDropDownButton" xml:space="preserve">
+    <value>Избранное</value>
+  </data>
+  <data name="Form1_fileExtensionsToolStripMenuItem" xml:space="preserve">
+    <value>Типы файлов...</value>
+  </data>
+  <data name="Form1_fileToolStripMenuItem" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="searchPanel_findFirstToolStripButton" xml:space="preserve">
+    <value>Первое совпадение</value>
+  </data>
+  <data name="Form1_findFirstToolStripMenuItem" xml:space="preserve">
+    <value>Первое совпадение</value>
+  </data>
+  <data name="searchPanel_findLastToolStripButton" xml:space="preserve">
+    <value>Последнее</value>
+  </data>
+  <data name="Form1_findLastToolStripMenuItem" xml:space="preserve">
+    <value>Последнее</value>
+  </data>
+  <data name="searchPanel_findNextToolStripButton" xml:space="preserve">
+    <value>Следующее</value>
+  </data>
+  <data name="Form1_findNextToolStripMenuItem" xml:space="preserve">
+    <value>Следующее</value>
+  </data>
+  <data name="searchPanel_findPreviousToolStripButton" xml:space="preserve">
+    <value>Предыдущее</value>
+  </data>
+  <data name="Form1_findPreviousToolStripMenuItem" xml:space="preserve">
+    <value>Предыдущее</value>
+  </data>
+  <data name="Form1_fontToolStripMenuItem" xml:space="preserve">
+    <value>Шрифт...</value>
+  </data>
+  <data name="Form1_formatToolStripMenuItem" xml:space="preserve">
+    <value>Настройка</value>
+  </data>
+  <data name="Form1_goToToolStripMenuItem" xml:space="preserve">
+    <value>Перейти к строке...</value>
+  </data>
+  <data name="Form1_helpToolStripMenuItem" xml:space="preserve">
+    <value>Справка</value>
+  </data>
+  <data name="Form1_helpToolStripMenuItem1" xml:space="preserve">
+    <value>Справка</value>
+  </data>
+  <data name="searchPanel_historyToolStripDropDownButton" xml:space="preserve">
+    <value>История поиска</value>
+  </data>
+  <data name="Form1_indentationToolStripMenuItem" xml:space="preserve">
+    <value>Отступы и выступы</value>
+  </data>
+  <data name="Form1_indentToolStripButton" xml:space="preserve">
+    <value>Отступ</value>
+  </data>
+  <data name="Form1_indentToolStripMenuItem" xml:space="preserve">
+    <value>Отступ</value>
+  </data>
+  <data name="Form1_internalExplorerToolStripMenuItem" xml:space="preserve">
+    <value>Боковая панель</value>
+  </data>
+  <data name="Form1_mergeTabsToolStripButton" xml:space="preserve">
+    <value>Объединить вкладки...</value>
+  </data>
+  <data name="Form1_mergeToolStripMenuItem" xml:space="preserve">
+    <value>Объединить вкладки...</value>
+  </data>
+  <data name="Form1_minimizeOnTrayIconToolStripMenuItem" xml:space="preserve">
+    <value>Сворачивать в значок</value>
+  </data>
+  <data name="Form1_moveToolStripMenuItem" xml:space="preserve">
+    <value>Переместить</value>
+  </data>
+  <data name="Form1_newToolStripButton" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="Form1_newToolStripButtonToolTip" xml:space="preserve">
+    <value>Открыть новую вкладку</value>
+  </data>
+  <data name="Form1_newToolStripMenuItem1" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="notePanel_newToolStripMenuItem3" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="Form1_nextTabToolStripMenuItem" xml:space="preserve">
+    <value>Следующая вкладка</value>
+  </data>
+  <data name="Form1_notesTabPageToolTip" xml:space="preserve">
+    <value>Заметки</value>
+  </data>
+  <data name="Form1_notifyIconBalloonTipText" xml:space="preserve">
+    <value>Щелкните этот значок, чтобы восстановить окно DtPad</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem1" xml:space="preserve">
+    <value>Открыть...</value>
+  </data>
+  <data name="Form1_openToolStripSplitButton" xml:space="preserve">
+    <value>Открыть...</value>
+  </data>
+  <data name="Form1_optionsToolStripButton" xml:space="preserve">
+    <value>Параметры...</value>
+  </data>
+  <data name="Form1_optionsToolStripMenuItem" xml:space="preserve">
+    <value>Параметры...</value>
+  </data>
+  <data name="Form1_outdentToolStripButton" xml:space="preserve">
+    <value>Выступ</value>
+  </data>
+  <data name="Form1_outdentToolStripMenuItem" xml:space="preserve">
+    <value>Выступ</value>
+  </data>
+  <data name="Form1_pasteToolStripButton" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_prefixToolStripButton" xml:space="preserve">
+    <value>Вставить префикс</value>
+  </data>
+  <data name="Form1_prefixToolStripComboBox" xml:space="preserve">
+    <value>Введите текст</value>
+  </data>
+  <data name="Form1_prefixToolStripMenuItem" xml:space="preserve">
+    <value>Префикс</value>
+  </data>
+  <data name="Form1_prefixToolStripTextBox" xml:space="preserve">
+    <value>Введите префикс</value>
+  </data>
+  <data name="Form1_previousTabToolStripMenuItem" xml:space="preserve">
+    <value>Предыдущая вкладка</value>
+  </data>
+  <data name="Form1_printToolStripButton" xml:space="preserve">
+    <value>Печать...</value>
+  </data>
+  <data name="Form1_readmeToolStripMenuItem" xml:space="preserve">
+    <value>Дополнительная информация</value>
+  </data>
+  <data name="Form1_recentFilesToolStripMenuItem1" xml:space="preserve">
+    <value>Недавние файлы</value>
+  </data>
+  <data name="Form1_redoToolStripButton" xml:space="preserve">
+    <value>Повторить &lt;пусто&gt;</value>
+  </data>
+  <data name="Form1_redoToolStripMenuItem" xml:space="preserve">
+    <value>Повторить &lt;пусто&gt;</value>
+  </data>
+  <data name="notePanel_removeNoteToolStripButton" xml:space="preserve">
+    <value>Удалить заметку</value>
+  </data>
+  <data name="Form1_removePrefixToolStripMenuItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="notePanel_removeToolStripMenuItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="searchPanel_replaceAllToolStripButton" xml:space="preserve">
+    <value>Заменить все</value>
+  </data>
+  <data name="Form1_replaceAllToolStripMenuItem" xml:space="preserve">
+    <value>Заменить все</value>
+  </data>
+  <data name="searchPanel_replacePreviousToolStripButton" xml:space="preserve">
+    <value>Заменить предыдущее</value>
+  </data>
+  <data name="Form1_replacePreviousToolStripMenuItem" xml:space="preserve">
+    <value>Заменить предыдущее</value>
+  </data>
+  <data name="searchPanel_replaceToolStripButton2" xml:space="preserve">
+    <value>Заменить</value>
+  </data>
+  <data name="Form1_replaceToolStripMenuItem" xml:space="preserve">
+    <value>Заменить</value>
+  </data>
+  <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
+    <value>Уведомить о ошибке...</value>
+  </data>
+  <data name="Form1_restoreDtPadToolStripMenuItem" xml:space="preserve">
+    <value>Восстановить окно DtPad</value>
+  </data>
+  <data name="Form1_saveAllToolStripButton" xml:space="preserve">
+    <value>Сохранить все</value>
+  </data>
+  <data name="Form1_saveToolStripButton" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="searchPanel_searchCountToolStripButton" xml:space="preserve">
+    <value>Подсчитать совпадения</value>
+  </data>
+  <data name="Form1_searchToolStripMenuItem" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="Form1_selectedLinesToolStripMenuItem" xml:space="preserve">
+    <value>Строки выше/ниже...</value>
+  </data>
+  <data name="Form1_showSearchPanelToolStripButton" xml:space="preserve">
+    <value>Показывать панель поиска</value>
+  </data>
+  <data name="Form1_showSearchPanelToolStripMenuItem" xml:space="preserve">
+    <value>Показывать панель поиска</value>
+  </data>
+  <data name="Form1_spacesTabToolStripMenuItem" xml:space="preserve">
+    <value>Пробелы в знаки табуляции</value>
+  </data>
+  <data name="Form1_SpecifyPrefix" xml:space="preserve">
+    <value>Введите префикс в текстовое поле вверху.</value>
+  </data>
+  <data name="Form1_statusBarToolStripMenuItem" xml:space="preserve">
+    <value>Строка состояния</value>
+  </data>
+  <data name="Form1_stayOnTopToolStripButton" xml:space="preserve">
+    <value>Поверх других окон</value>
+  </data>
+  <data name="Form1_stayOnTopToolStripMenuItem" xml:space="preserve">
+    <value>Поверх других окон</value>
+  </data>
+  <data name="Form1_swapWithClipboardToolStripMenuItem" xml:space="preserve">
+    <value>Обменять с буфером</value>
+  </data>
+  <data name="Form1_tabExplorerTabPageToolTip" xml:space="preserve">
+    <value>Обзор вкладок</value>
+  </data>
+  <data name="Form1_tabSpaceToolStripMenuItem" xml:space="preserve">
+    <value>Знаки табуляции в пробелы</value>
+  </data>
+  <data name="Form1_tabToolStripMenuItem" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="Form1_tabToReturnToolStripMenuItem" xml:space="preserve">
+    <value>Знаки табуляции в возвраты каретки</value>
+  </data>
+  <data name="Form1_timeDateToolStripMenuItem" xml:space="preserve">
+    <value>Дату и время...</value>
+  </data>
+  <data name="Form1_toLowercaseToolStripMenuItem" xml:space="preserve">
+    <value>Строчные буквы</value>
+  </data>
+  <data name="Form1_toolbarToolStripMenuItem" xml:space="preserve">
+    <value>Панель инструментов</value>
+  </data>
+  <data name="Form1_toolsToolStripMenuItem" xml:space="preserve">
+    <value>Программы</value>
+  </data>
+  <data name="Form1_toolStripStatusLabel" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="Form1_toUppercaseToolStripMenuItem" xml:space="preserve">
+    <value>Прописные буквы</value>
+  </data>
+  <data name="Form1_undoToolStripButton" xml:space="preserve">
+    <value>Отменить &lt;пусто&gt;</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem" xml:space="preserve">
+    <value>Отменить &lt;пусто&gt;</value>
+  </data>
+  <data name="Form1_verticalContainerToolStripButton" xml:space="preserve">
+    <value>Показывать боковую панель</value>
+  </data>
+  <data name="Form1_viewToolStripMenuItem" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="notePanel_warningRemoveNoteToolStripButton" xml:space="preserve">
+    <value>Подтверждать удаление заметок</value>
+  </data>
+  <data name="Form1_windowToolStripMenuItem" xml:space="preserve">
+    <value>Окно</value>
+  </data>
+  <data name="Form1_wordWrapToolStripMenuItem" xml:space="preserve">
+    <value>Перенос по словам</value>
+  </data>
+  <data name="FileManager_Appended" xml:space="preserve">
+    <value>присоединен</value>
+  </data>
+  <data name="FileManager_File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="FileManager_Opened" xml:space="preserve">
+    <value>открыт</value>
+  </data>
+  <data name="FileManager_Saved" xml:space="preserve">
+    <value>сохранен</value>
+  </data>
+  <data name="FileManager_SavingReadonly" xml:space="preserve">
+    <value>Выбранный файл доступен только для чтения и не может быть перезаписан.
+Нажмите ОК, чтобы выбрать другой файл для сохранения изменений.</value>
+  </data>
+  <data name="NoteManager_AlreadyExists" xml:space="preserve">
+    <value>Заметка с таким заголовком уже есть. Выберите другой заголовок.</value>
+  </data>
+  <data name="NoteManager_ErrorCreation" xml:space="preserve">
+    <value>Ошибка при создании файла заметок.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="NoteManager_ErrorReading" xml:space="preserve">
+    <value>Ошибка при чтении файла заметок.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="NoteManager_ErrorRemoving" xml:space="preserve">
+    <value>Ошибка при удалении файла заметок.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="SearchManager_EOF" xml:space="preserve">
+    <value>Достигнут конец документа.
+Продолжить с начала?</value>
+  </data>
+  <data name="SearchManager_NotFound" xml:space="preserve">
+    <value>Искомый текст не найден.</value>
+  </data>
+  <data name="SearchManager_OccurencesMore" xml:space="preserve">
+    <value>совпадений найдено</value>
+  </data>
+  <data name="SearchManager_ReplacedMore" xml:space="preserve">
+    <value>совпадений заменено</value>
+  </data>
+  <data name="SearchManager_SOF" xml:space="preserve">
+    <value>Достигнуто начало документа.
+Продолжить с конца?</value>
+  </data>
+  <data name="Form1_rowToolStripStatusLabel" xml:space="preserve">
+    <value>Строка:</value>
+  </data>
+  <data name="TabManager_SaveUntitled" xml:space="preserve">
+    <value>Текущий безымянный файл был изменен.
+Сохранить файл перед его закрытием?</value>
+  </data>
+  <data name="TabManager_TabMerged" xml:space="preserve">
+    <value>вкладок объединено</value>
+  </data>
+  <data name="TextManager_LastAction" xml:space="preserve">
+    <value>Последнее действие</value>
+  </data>
+  <data name="TextManager_Redo" xml:space="preserve">
+    <value>Повторить</value>
+  </data>
+  <data name="TextManager_Undo" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="ToolManager_AlreadyExists" xml:space="preserve">
+    <value>Программа с таким описанием уже есть в списке. Выберите другое описание.</value>
+  </data>
+  <data name="ToolManager_ErrorReading" xml:space="preserve">
+    <value>Ошибка при чтении файла программ.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="ToolManager_ErrorRemoving" xml:space="preserve">
+    <value>Ошибка при удалении программы из списка.
+Текущее окно будет закрыто.</value>
+  </data>
+  <data name="ToolManager_ErrorSaving" xml:space="preserve">
+    <value>Ошибка при сохранении программы в списке.
+Текущее окно будет закрыто.</value>
+  </data>
+  <data name="ToolManager_NameNotEmtpy" xml:space="preserve">
+    <value>Описание программы не может быть пустым.</value>
+  </data>
+  <data name="ToolManager_New" xml:space="preserve">
+    <value>Добавить программу</value>
+  </data>
+  <data name="ToolManager_Unvalorized" xml:space="preserve">
+    <value>По крайней мере для одной программы не введены данные.
+Введите полностью данные о программах, чтобы продолжить.</value>
+  </data>
+  <data name="VersionCheckManager_ErrorConnection" xml:space="preserve">
+    <value>Ошибка соединения.</value>
+  </data>
+  <data name="VersionCheckManager_ErrorDownloadingUpdater" xml:space="preserve">
+    <value>Ошика при загрузке новой версии DtPad Updater.</value>
+  </data>
+  <data name="VersionCheckManager_InUse" xml:space="preserve">
+    <value>занят</value>
+  </data>
+  <data name="WindowManager_CommandExecution" xml:space="preserve">
+    <value>Исполнение команды прервано.</value>
+  </data>
+  <data name="WindowManager_Exception" xml:space="preserve">
+    <value>Возникло исключение:</value>
+  </data>
+  <data name="WindowManager_FatalException" xml:space="preserve">
+    <value>Возникло неустранимое исключение:</value>
+  </data>
+  <data name="WindowManager_ProgramExecution" xml:space="preserve">
+    <value>Выполнение программы прервано.</value>
+  </data>
+  <data name="Form1_tabPage1" xml:space="preserve">
+    <value>Безымянный</value>
+  </data>
+  <data name="Options_closeTabButtonOnLabel" xml:space="preserve">
+    <value>Кнопка закрытия:</value>
+  </data>
+  <data name="Options_internalExplorerCheckBox" xml:space="preserve">
+    <value>Боковая панель</value>
+  </data>
+  <data name="Options_tabCloseButtonOnComboBoxItems" xml:space="preserve">
+    <value>у дальнего края панели вкладок
+на каждой вкладке
+на активной вкладке
+не отображается</value>
+  </data>
+  <data name="Options_viewGroupBox3" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="DatetimeSelect_dateLabel" xml:space="preserve">
+    <value>Дата:</value>
+  </data>
+  <data name="DatetimeSelect_resetDatetimeButtonToolTip" xml:space="preserve">
+    <value>Установить текущие дату и время</value>
+  </data>
+  <data name="DatetimeSelect_timeLabel" xml:space="preserve">
+    <value>Время:</value>
+  </data>
+  <data name="Form1_licenseAgreementToolStripMenuItem" xml:space="preserve">
+    <value>Лицензионное соглашение</value>
+  </data>
+  <data name="clipboardPanel_clearClipboardToolStripButton" xml:space="preserve">
+    <value>Очистить историю буфера</value>
+  </data>
+  <data name="Form1_clipboardTabPageToolTip" xml:space="preserve">
+    <value>Буфер</value>
+  </data>
+  <data name="ClipboardManager_ErrorCreation" xml:space="preserve">
+    <value>Ошибка при создании файла буфера.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="ClipboardManager_ErrorReading" xml:space="preserve">
+    <value>Ошибка при чтении файла буфера.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="clipboardPanel_copyToolStripMenuItem" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="clipboardPanel_showAllContentToolStripMenuItem" xml:space="preserve">
+    <value>Показать все содержимое</value>
+  </data>
+  <data name="ShowContent_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="ShowContent_Title" xml:space="preserve">
+    <value>Содержимое</value>
+  </data>
+  <data name="Form1_deleteLineToolStripMenuItem" xml:space="preserve">
+    <value>Удалить выделенные строки</value>
+  </data>
+  <data name="Form1_addSuffixToolStripMenuItem" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_removeSuffixToolStripMenuItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Form1_suffixToolStripMenuItem" xml:space="preserve">
+    <value>Суффикс</value>
+  </data>
+  <data name="Form1_suffixToolStripTextBox" xml:space="preserve">
+    <value>Введите суффикс</value>
+  </data>
+  <data name="Form1_SpecifySuffix" xml:space="preserve">
+    <value>Введите суффикс в текстовое поле вверху.</value>
+  </data>
+  <data name="Form1_oneLineDownToolStripMenuItem" xml:space="preserve">
+    <value>Строки ниже</value>
+  </data>
+  <data name="Form1_oneLineUpToolStripMenuItem" xml:space="preserve">
+    <value>Строки выше</value>
+  </data>
+  <data name="Form1_moveLinesUpDownToolStripButton" xml:space="preserve">
+    <value>Переместить строки выше/ниже</value>
+  </data>
+  <data name="Form1_oneLineDownToolStripMenuItem1" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="Form1_oneLineUpToolStripMenuItem1" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="Form1_removePrefixToolStripMenuItem1" xml:space="preserve">
+    <value>Удалить префикс</value>
+  </data>
+  <data name="Form1_insertSuffixToolStripMenuItem" xml:space="preserve">
+    <value>Вставить суффикс</value>
+  </data>
+  <data name="Form1_removeSuffixToolStripMenuItem1" xml:space="preserve">
+    <value>Удалить суффикс</value>
+  </data>
+  <data name="Form1_tabPage1ToolTip" xml:space="preserve">
+    <value>Безымянный</value>
+  </data>
+  <data name="Form1_calculatorTabPageToolTip" xml:space="preserve">
+    <value>Калькулятор</value>
+  </data>
+  <data name="CalculationManager_ErrorNoOperation" xml:space="preserve">
+    <value>Ошибка: недопустимый оператор.</value>
+  </data>
+  <data name="CalculationManager_ErrorParsing" xml:space="preserve">
+    <value>Ошибка при синтаксическом разборе значения калькулятором.</value>
+  </data>
+  <data name="Form1_doubleTabToTabToolStripMenuItem" xml:space="preserve">
+    <value>Двойные знаки табуляции в одинарные</value>
+  </data>
+  <data name="Form1_returnToTabToolStripMenuItem" xml:space="preserve">
+    <value>Возвраты каретки в знаки табуляции</value>
+  </data>
+  <data name="Form1_fileExplorerTabPageToolTip" xml:space="preserve">
+    <value>Обозреватель файлов</value>
+  </data>
+  <data name="FileExplorerManager_ErrorLoadingDirFiles" xml:space="preserve">
+    <value>Ошибка при загрузке каталогов и файлов.</value>
+  </data>
+  <data name="FileExplorerManager_ErrorLoadingTree" xml:space="preserve">
+    <value>Ошибка при загрузке дерева дисков.</value>
+  </data>
+  <data name="FileExplorerManager_DeviceNotReady" xml:space="preserve">
+    <value>Выбранное устройство не готово. Вставьте диск и повторите попытку.</value>
+  </data>
+  <data name="FileExplorerManager_NoDisk" xml:space="preserve">
+    <value>Отсутствует диск</value>
+  </data>
+  <data name="filePanel_openIntoWindowsExplorerToolStripMenuItem" xml:space="preserve">
+    <value>Открыть в Проводнике</value>
+  </data>
+  <data name="filePanel_openToolStripMenuItem" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="filePanel_refreshToolStripMenuItem" xml:space="preserve">
+    <value>Обновить папку</value>
+  </data>
+  <data name="filePanel_hiddenToolStripButton" xml:space="preserve">
+    <value>Показывать скрытые файлы и папки</value>
+  </data>
+  <data name="filePanel_hiddenToolStripButtonToolTip" xml:space="preserve">
+    <value>Показывать скрытые файлы и папки</value>
+  </data>
+  <data name="Form1_exportPreferencesToolStripMenuItem" xml:space="preserve">
+    <value>Экспорт параметров и данных...</value>
+  </data>
+  <data name="Form1_importPreferencesToolStripMenuItem" xml:space="preserve">
+    <value>Импорт параметров и данных...</value>
+  </data>
+  <data name="ImportExportManager_ExportFileDescription" xml:space="preserve">
+    <value>Файлы экспорта DtPad</value>
+  </data>
+  <data name="ImportExportManager_ExportStatusLabel" xml:space="preserve">
+    <value>Файл параметров и данных &quot;{0}&quot; экспортирован</value>
+  </data>
+  <data name="ImportExportManager_folderBrowserDialogDescription" xml:space="preserve">
+    <value>Выберите папку, в которую будет экспортирован файл параметров и данных (с заметками, списком избранных файлов и т.д.):</value>
+  </data>
+  <data name="ImportExportManager_ImportStatusLabel" xml:space="preserve">
+    <value>Файл параметров и данных &quot;{0}&quot; импортирован</value>
+  </data>
+  <data name="ImportExportManager_WarningImport" xml:space="preserve">
+    <value>Выбранный файл экспорта был создан в другой версии DtPad.
+Во избежание проблем с совместимостью рекомендуется не импортировать его.
+Выполнить импорт?</value>
+  </data>
+  <data name="Form1_toInitialUppercaseToolStripMenuItem" xml:space="preserve">
+    <value>Начинать с прописных букв</value>
+  </data>
+  <data name="TextManager_ChangeCharsCase" xml:space="preserve">
+    <value>Выделите фрагмент текста, который нужно преобразовать.</value>
+  </data>
+  <data name="ZipExtract_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="ZipExtract_extractSelectedFilesButton" xml:space="preserve">
+    <value>Извлечь выбранные файлы</value>
+  </data>
+  <data name="ZipExtract_helpLabel" xml:space="preserve">
+    <value>Извлечение содержимого из открытого архива.</value>
+  </data>
+  <data name="ZipExtract_Title" xml:space="preserve">
+    <value>Извлечение из архива</value>
+  </data>
+  <data name="ZipExtract_zipContentLabel" xml:space="preserve">
+    <value>Содержимое архивного файла:</value>
+  </data>
+  <data name="ZipManager_CompressedSizeColumn" xml:space="preserve">
+    <value>В сжатом виде</value>
+  </data>
+  <data name="ZipManager_ExtractSuccess" xml:space="preserve">
+    <value>Выбранные файлы извлечены.</value>
+  </data>
+  <data name="ZipManager_folderBrowserDialogDescription" xml:space="preserve">
+    <value>Выберите папку, в которую будет извлечено содержимое архивного файла:</value>
+  </data>
+  <data name="ZipManager_NameColumn" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="ZipManager_OriginalSizeColumn" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="ZipManager_OverwriteQuestion" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; уже существует.
+Перезаписать его?</value>
+  </data>
+  <data name="ZipExtract_filenameLabel1" xml:space="preserve">
+    <value>Имя файла:</value>
+  </data>
+  <data name="Form1_promptWindowToolStripMenuItem" xml:space="preserve">
+    <value>Окно командной строки</value>
+  </data>
+  <data name="PromptManager_Error" xml:space="preserve">
+    <value>Ошибка выполнения в командной строке.</value>
+  </data>
+  <data name="PromptManager_Date" xml:space="preserve">
+    <value>Текущая дата:</value>
+  </data>
+  <data name="PromptManager_NotFindPath" xml:space="preserve">
+    <value>Не удается найти указанный путь</value>
+  </data>
+  <data name="PromptManager_Time" xml:space="preserve">
+    <value>Текущее время:</value>
+  </data>
+  <data name="PromptManager_UnrecognizedCommand" xml:space="preserve">
+    <value>- неопознанная команда</value>
+  </data>
+  <data name="Form1_reloadToolStripMenuItem" xml:space="preserve">
+    <value>Открыть заново</value>
+  </data>
+  <data name="Form1_aSCIIToolStripMenuItem" xml:space="preserve">
+    <value>ANSI</value>
+  </data>
+  <data name="Form1_defaultToolStripMenuItem" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="Form1_fileEncodingToolStripMenuItem" xml:space="preserve">
+    <value>Кодировка файлов</value>
+  </data>
+  <data name="Form1_useOriginalToolStripMenuItem" xml:space="preserve">
+    <value>Использовать кодировку открытых файлов</value>
+  </data>
+  <data name="Form1_uTF8ToolStripMenuItem" xml:space="preserve">
+    <value>UTF-8</value>
+  </data>
+  <data name="Options_encodingNode" xml:space="preserve">
+    <value>Кодировка</value>
+  </data>
+  <data name="Options_useExistingCheckBox" xml:space="preserve">
+    <value>Использовать кодировку открытых файлов</value>
+  </data>
+  <data name="Options_defaultComboBoxItems" xml:space="preserve">
+    <value>ANSI
+UTF-8
+UTF-16 (ст.-&gt;мл.)
+UTF-32 (мл.-&gt;ст.)</value>
+  </data>
+  <data name="Options_defaultLabel" xml:space="preserve">
+    <value>По умолчанию:</value>
+  </data>
+  <data name="Options_encodingGroupBox1" xml:space="preserve">
+    <value>Кодировка</value>
+  </data>
+  <data name="Form1_uTF16BigEndianToolStripMenuItem" xml:space="preserve">
+    <value>UTF-16 (ст-&gt;мл.)</value>
+  </data>
+  <data name="Form1_uTF32LittleEndianToolStripMenuItem" xml:space="preserve">
+    <value>UTF-32 (мл.-&gt;ст.)</value>
+  </data>
+  <data name="Form1_resetSettingsToolStripMenuItem" xml:space="preserve">
+    <value>Сбросить параметры</value>
+  </data>
+  <data name="VersionCheck_warningPictureBoxToolTip" xml:space="preserve">
+    <value>Если вы используете прокси-сервер, попробуйте указать его в окне параметров</value>
+  </data>
+  <data name="Form1_lineNumbersToolStripMenuItem" xml:space="preserve">
+    <value>Номера строк</value>
+  </data>
+  <data name="Form1_lineNumbersToolStripButton" xml:space="preserve">
+    <value>Номера строк</value>
+  </data>
+  <data name="Options_lineNumbersCheckBox" xml:space="preserve">
+    <value>Номера строк</value>
+  </data>
+  <data name="Form1_wordWrapToolStripButton" xml:space="preserve">
+    <value>Перенос по словам</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem2" xml:space="preserve">
+    <value>Закрыть боковую панель</value>
+  </data>
+  <data name="Form1_resetWindowLayoutToolStripMenuItem" xml:space="preserve">
+    <value>Сбросить конфигурацию окна</value>
+  </data>
+  <data name="Form1_rOT13ToolStripMenuItem" xml:space="preserve">
+    <value>ROT-13</value>
+  </data>
+  <data name="FileManager_NoFileToReadonly" xml:space="preserve">
+    <value>Временную область редактирования нельзя сделать доступной только для чтения. Это возможно только для текстовых файлов.</value>
+  </data>
+  <data name="FileManager_NoTextForPDF" xml:space="preserve">
+    <value>Текстовая область пуста.</value>
+  </data>
+  <data name="FileManager_PDFFile" xml:space="preserve">
+    <value>Документ PDF (*.pdf)|*.pdf</value>
+  </data>
+  <data name="Form1_toggleReadonlyToolStripMenuItem" xml:space="preserve">
+    <value>Переключить атрибут &quot;Только чтение&quot;</value>
+  </data>
+  <data name="Form1_saveAsPDFToolStripMenuItem" xml:space="preserve">
+    <value>Файл как PDF...</value>
+  </data>
+  <data name="Form1_showFileInBrowserToolStripMenuItem" xml:space="preserve">
+    <value>Показать файл в браузере</value>
+  </data>
+  <data name="Form1_focusOnEditorToolStripMenuItem" xml:space="preserve">
+    <value>Вернуть фокус в главную текстовую область</value>
+  </data>
+  <data name="tabPanel_moveTabDownToolStripButton" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="tabPanel_moveTabUpToolStripButton" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="InternetManager_NoContent" xml:space="preserve">
+    <value>Текстовая область пуста.</value>
+  </data>
+  <data name="filePanel_openSelectedFileToolStripButton" xml:space="preserve">
+    <value>Открыть выбранный файл</value>
+  </data>
+  <data name="FontSelect_boldCheckBox" xml:space="preserve">
+    <value>Полужирный</value>
+  </data>
+  <data name="FontSelect_colorLabel" xml:space="preserve">
+    <value>Цвет:</value>
+  </data>
+  <data name="FontSelect_effectsGroupBox" xml:space="preserve">
+    <value>Эффекты</value>
+  </data>
+  <data name="FontSelect_fontLabel" xml:space="preserve">
+    <value>Шрифт:</value>
+  </data>
+  <data name="FontSelect_helpLabel" xml:space="preserve">
+    <value>Выберите внешний вид шрифта.</value>
+  </data>
+  <data name="FontSelect_italicCheckBox" xml:space="preserve">
+    <value>Курсив</value>
+  </data>
+  <data name="FontSelect_previewGroupBox" xml:space="preserve">
+    <value>Предварительный просмотр</value>
+  </data>
+  <data name="FontSelect_previewTextBox" xml:space="preserve">
+    <value>Так будет выглядеть текст</value>
+  </data>
+  <data name="FontSelect_sizeLabel" xml:space="preserve">
+    <value>Размер:</value>
+  </data>
+  <data name="FontSelect_Title" xml:space="preserve">
+    <value>Шрифт</value>
+  </data>
+  <data name="FontSelect_underlinedCheckBox" xml:space="preserve">
+    <value>Подчеркивание</value>
+  </data>
+  <data name="FontManager_ResetQuestion" xml:space="preserve">
+    <value>Вернуть шрифт по умолчанию?</value>
+  </data>
+  <data name="FontSelect_resetButton" xml:space="preserve">
+    <value>Сбросить</value>
+  </data>
+  <data name="ColorSelect_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="ColorSelect_colorLabel" xml:space="preserve">
+    <value>Цвет:</value>
+  </data>
+  <data name="ColorSelect_helpLabel" xml:space="preserve">
+    <value>Выбор цвета.</value>
+  </data>
+  <data name="ColorSelect_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Options_BrowserFileDialog" xml:space="preserve">
+    <value>Все файлы (*.*)|*.*|Исполняемые файлы (*.exe)|*.exe</value>
+  </data>
+  <data name="ColorSelect_Title" xml:space="preserve">
+    <value>Цвет</value>
+  </data>
+  <data name="FontSelect_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="ReplaceManager_NotFound" xml:space="preserve">
+    <value>Не удается найти искомый текст.</value>
+  </data>
+  <data name="ReplaceManager_ReplacedMore" xml:space="preserve">
+    <value>совпадений заменено</value>
+  </data>
+  <data name="Form1_closeToolStripMenuItem3" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem2" xml:space="preserve">
+    <value>Открыть...</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem2" xml:space="preserve">
+    <value>Сохранить как...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem2" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Form1_sessionToolStripMenuItem" xml:space="preserve">
+    <value>Сеанс</value>
+  </data>
+  <data name="Form1_sessionImageToolStripButton" xml:space="preserve">
+    <value>Сеанс</value>
+  </data>
+  <data name="SessionManager_Closed" xml:space="preserve">
+    <value>Сеанс &quot;{0}&quot; закрыт</value>
+  </data>
+  <data name="SessionManager_Opened" xml:space="preserve">
+    <value>Сеанс &quot;{0}&quot; открыт</value>
+  </data>
+  <data name="SessionManager_Saved" xml:space="preserve">
+    <value>Сеанс &quot;{0}&quot; сохранен</value>
+  </data>
+  <data name="SessionManager_FileDialog" xml:space="preserve">
+    <value>Сеанс DtPad (*.dps)|*.dps</value>
+  </data>
+  <data name="SessionManager_AlreadyOpen" xml:space="preserve">
+    <value>В настоящее время уже открыт сеанс. Открыть вместо него другой?
+Несохраненные изменения будут потеряны.</value>
+  </data>
+  <data name="SessionManager_openingErrors" xml:space="preserve">
+    <value>Не удается открыть один или несколько файлов сеансов, так как они не найдены в указанных папках:
+</value>
+  </data>
+  <data name="Form1_closeSessionToolStripButton" xml:space="preserve">
+    <value>Закрыть сеанс</value>
+  </data>
+  <data name="Form1_saveSessionToolStripButton" xml:space="preserve">
+    <value>Сохранить сеанс</value>
+  </data>
+  <data name="SessionManager_SaveAllFiles" xml:space="preserve">
+    <value>Все измененные вкладки будут сохранены, чтобы на них можно было ссылаться в сеансе.
+Продолжить?</value>
+  </data>
+  <data name="SessionManager_SaveSession" xml:space="preserve">
+    <value>Все вкладки сохранены.
+Нажмите ОК, чтобы перейти к выбору имени файла сеанса.</value>
+  </data>
+  <data name="About_createdByLabel_FE" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="About_titleLabel_FE" xml:space="preserve">
+    <value>DtPad - Family Edition</value>
+  </data>
+  <data name="About_websiteLabel1_FE" xml:space="preserve">
+    <value>(C)</value>
+  </data>
+  <data name="About_websiteLabel_FE" xml:space="preserve">
+    <value>2012</value>
+  </data>
+  <data name="Welcome_signLabel_FE" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="SessionManager_NoContent" xml:space="preserve">
+    <value>Нет содержимого для сохранения в сеансе.</value>
+  </data>
+  <data name="FileListManager_ClearHistoryRecentSessions" xml:space="preserve">
+    <value>Очистить список недавних сеансов?</value>
+  </data>
+  <data name="Form1_clearSessionsToolStripMenuItem" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="Form1_recentSessionsToolStripMenuItem" xml:space="preserve">
+    <value>Недавние сеансы</value>
+  </data>
+  <data name="CharSelect_clipboardedLabel" xml:space="preserve">
+    <value>&lt;пусто&gt;</value>
+  </data>
+  <data name="CharSelect_clipboardedLabel1" xml:space="preserve">
+    <value>Сохранено в буфере:</value>
+  </data>
+  <data name="CharSelect_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="CharSelect_helpLabel" xml:space="preserve">
+    <value>Выберите символ для копирования в буфер.</value>
+  </data>
+  <data name="CharSelect_Title" xml:space="preserve">
+    <value>Выбор символа</value>
+  </data>
+  <data name="CharSelect_titleLabel" xml:space="preserve">
+    <value>Дважды щелкните символ, чтобы скопировать его в буфер:</value>
+  </data>
+  <data name="Form1_insertSpecialCharToolStripMenuItem" xml:space="preserve">
+    <value>Специальный символ...</value>
+  </data>
+  <data name="Form1_sortTabsAlphabeticallyToolStripMenuItem" xml:space="preserve">
+    <value>Сортировать вкладки по алфавиту</value>
+  </data>
+  <data name="tabPanel_sortTabsAlphabeticallyToolStripButton" xml:space="preserve">
+    <value>Сортировать вкладки по алфавиту</value>
+  </data>
+  <data name="TabPageObject_WrongObject" xml:space="preserve">
+    <value>Входной объект не принадлежит к классу TabPageObject : {0}.
+Операция не может быть завершена.</value>
+  </data>
+  <data name="FileManager_ReadonlyNo" xml:space="preserve">
+    <value>Для файла &quot;{0}&quot; установлен нормальный режим доступа</value>
+  </data>
+  <data name="FileManager_ReadonlyYes" xml:space="preserve">
+    <value>Для файла &quot;{0}&quot; установлен режим доступа только для чтения</value>
+  </data>
+  <data name="Options_tabGroupBox1" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="Options_tabNode" xml:space="preserve">
+    <value>Вкладки</value>
+  </data>
+  <data name="Options_tabPositionComboBoxItems" xml:space="preserve">
+    <value>вверху (по умолчанию)
+справа
+снизу
+слева</value>
+  </data>
+  <data name="Options_tabPositionLabel" xml:space="preserve">
+    <value>Расположение:</value>
+  </data>
+  <data name="Options_tabMultilineCheckBox" xml:space="preserve">
+    <value>Многострочное выравнивание</value>
+  </data>
+  <data name="Options_tabOrientationComboBoxItems" xml:space="preserve">
+    <value>горизонтальная
+вертикальная</value>
+  </data>
+  <data name="Options_tabOrientationLabel" xml:space="preserve">
+    <value>Ориентация:</value>
+  </data>
+  <data name="Options_noteLabel" xml:space="preserve">
+    <value>Примечание. UTF-8 - стандартная кодировка, используемая очень многими приложениями наряду с ANSI. Если нет каких-то специфических нужд, рекомендуется использовать один из этих двух алгоритмов.</value>
+  </data>
+  <data name="Options_backupAddExtensionRadioButton" xml:space="preserve">
+    <value>Добавлять расширение к имени файла</value>
+  </data>
+  <data name="Options_backupCustomFolderButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="Options_backupCustomFolderRadioButton" xml:space="preserve">
+    <value>Заданная ниже</value>
+  </data>
+  <data name="Options_backupEditedFileRadioButton" xml:space="preserve">
+    <value>Редактируемого файла</value>
+  </data>
+  <data name="Options_backupExtensionLabel" xml:space="preserve">
+    <value>Расширение:</value>
+  </data>
+  <data name="Options_backupGroupBox2" xml:space="preserve">
+    <value>Папка</value>
+  </data>
+  <data name="Options_backupReplaceExtensionRadioButton" xml:space="preserve">
+    <value>Заменять имеющееся расширение</value>
+  </data>
+  <data name="Options_createBackupCheckBox" xml:space="preserve">
+    <value>Создавать резервную копию файла при сохранении</value>
+  </data>
+  <data name="Options_savingGroupBox1" xml:space="preserve">
+    <value>Резервные копии</value>
+  </data>
+  <data name="Options_savingNode" xml:space="preserve">
+    <value>Сохранение</value>
+  </data>
+  <data name="Form1_saveWithBackupToolStripMenuItem" xml:space="preserve">
+    <value>Сохранить с резервной копией</value>
+  </data>
+  <data name="Form1_saveWithBackupToolStripMenuItem1" xml:space="preserve">
+    <value>Файл с резервной копией</value>
+  </data>
+  <data name="FileUtil_folderDialogBackup" xml:space="preserve">
+    <value>Выберите папку, куда будет помещаться резервная копия:</value>
+  </data>
+  <data name="FileUtil_folderDialogDefault" xml:space="preserve">
+    <value>Выберите папку по умолчанию для открытия и сохранения файлов:</value>
+  </data>
+  <data name="Options_backupExtensionWarning" xml:space="preserve">
+    <value>Расширение файла резервной копии не может быть пустым.</value>
+  </data>
+  <data name="Options_backupIncrementalCheckBox" xml:space="preserve">
+    <value>Инкрементальная нумерация (например, bak0, bak1, ...)</value>
+  </data>
+  <data name="Options_backupLocationWarning" xml:space="preserve">
+    <value>Указанная папка не найдена в файловой системе.
+Выберите другую папку для резервных копий.</value>
+  </data>
+  <data name="Form1_calendarTabPageToolTip" xml:space="preserve">
+    <value>Календарь</value>
+  </data>
+  <data name="calendarPanel_insertDatetimeToolStripButton" xml:space="preserve">
+    <value>Вставить дату и время...</value>
+  </data>
+  <data name="FileManager_FileInUse" xml:space="preserve">
+    <value>Не удается открыть &quot;{0}&quot;.
+Файл занят другим процессом.</value>
+  </data>
+  <data name="FileManager_FileNotExisting" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; не существует.</value>
+  </data>
+  <data name="FileManager_NoMessageFileInUse" xml:space="preserve">
+    <value>&quot;{0}&quot; занят другим процессом</value>
+  </data>
+  <data name="FileManager_NoMessageFileNotExists" xml:space="preserve">
+    <value>&quot;{0}&quot; не существует</value>
+  </data>
+  <data name="PadText_helpLabel" xml:space="preserve">
+    <value>Выравнивание текста с помощью символа-заполнителя.</value>
+  </data>
+  <data name="PadText_Title" xml:space="preserve">
+    <value>Выравнивание текста</value>
+  </data>
+  <data name="Form1_padTextToolStripMenuItem" xml:space="preserve">
+    <value>Выровнять текст...</value>
+  </data>
+  <data name="PadText_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="PadText_leftCheckBox" xml:space="preserve">
+    <value>влево</value>
+  </data>
+  <data name="PadText_okButton" xml:space="preserve">
+    <value>Выровнять</value>
+  </data>
+  <data name="PadText_padToLabel" xml:space="preserve">
+    <value>Выровнять текст:</value>
+  </data>
+  <data name="PadText_rightCheckBox" xml:space="preserve">
+    <value>вправо</value>
+  </data>
+  <data name="PadText_whiteCharacterLabel" xml:space="preserve">
+    <value>Заполнитель:</value>
+  </data>
+  <data name="PadText_widthLabel" xml:space="preserve">
+    <value>Ширина:</value>
+  </data>
+  <data name="PadText_applyToLabel" xml:space="preserve">
+    <value>Применить:</value>
+  </data>
+  <data name="PadText_allTextRadioButton" xml:space="preserve">
+    <value>ко всему тексту</value>
+  </data>
+  <data name="PadText_selectedTextRadioButton" xml:space="preserve">
+    <value>к выделенному тексту</value>
+  </data>
+  <data name="Form1_charactersStatToolStripMenuItem" xml:space="preserve">
+    <value>Знаков:</value>
+  </data>
+  <data name="Form1_rowsStatToolStripMenuItem" xml:space="preserve">
+    <value>Строк:</value>
+  </data>
+  <data name="Form1_wordsStatToolStripMenuItem" xml:space="preserve">
+    <value>Слов:</value>
+  </data>
+  <data name="Form1_showTabAsNoteOnTopToolStripMenuItem" xml:space="preserve">
+    <value>Отображать как заметку поверх всех окон</value>
+  </data>
+  <data name="Form1_showTabAsNoteOnTopToolStripMenuItem1" xml:space="preserve">
+    <value>Отображать вкладки как заметку поверх всех окон</value>
+  </data>
+  <data name="FileCompare_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="FileCompare_compareButton" xml:space="preserve">
+    <value>Сравнить</value>
+  </data>
+  <data name="FileCompare_helpLabel" xml:space="preserve">
+    <value>Проверка содержимого вкладок на совпадение.</value>
+  </data>
+  <data name="FileCompare_selectTabsLabel" xml:space="preserve">
+    <value>Выберите две вкладки для сравнения:</value>
+  </data>
+  <data name="FileCompare_Title" xml:space="preserve">
+    <value>Сравнение вкладок</value>
+  </data>
+  <data name="Form1_compareTabsToolStripMenuItem" xml:space="preserve">
+    <value>Сравнить вкладки...</value>
+  </data>
+  <data name="TabManager_ErrorCompare" xml:space="preserve">
+    <value>Ошибка при сравнении вкладок. Необходимо выбрать две вкладки,
+(другие комбинации не допускаются).</value>
+  </data>
+  <data name="TabManager_TabAlmostEquals_Returns" xml:space="preserve">
+    <value>ТЕКСТЫ ПОЧТИ СОВПАДАЮТ.
+
+Содержимое вкладок различается только знаками возврата каретки.</value>
+  </data>
+  <data name="TabManager_TabAlmostEquals_ReturnsAndSpaces" xml:space="preserve">
+    <value>ТЕКСТЫ ПОЧТИ СОВПАДАЮТ.
+
+Содержимое вкладок различается только знаками возврата каретки и пробелами.</value>
+  </data>
+  <data name="TabManager_TabAlmostEquals_Spaces" xml:space="preserve">
+    <value>ТЕКСТЫ ПОЧТИ СОВПАДАЮТ.
+
+Содержимое вкладок различается только пробелами.</value>
+  </data>
+  <data name="TabManager_TabDifferents" xml:space="preserve">
+    <value>ТЕКСТЫ НЕ СОВПАДАЮТ.
+
+Содержимое вкладок различается.</value>
+  </data>
+  <data name="TabManager_TabEquals" xml:space="preserve">
+    <value>ТЕКСТЫ СОВПАДАЮТ.
+
+Содержимое вкладок одинаково.</value>
+  </data>
+  <data name="FileCompare_caseSensitiveCheckBox" xml:space="preserve">
+    <value>Учитывать регистр</value>
+  </data>
+  <data name="Form1_validationToolStripMenuItem" xml:space="preserve">
+    <value>Валидация</value>
+  </data>
+  <data name="Form1_xMLToolStripMenuItem" xml:space="preserve">
+    <value>XML/HTML по DTD</value>
+  </data>
+  <data name="XmlValidator_Error" xml:space="preserve">
+    <value>Содержимое не является валидным.
+{0}</value>
+  </data>
+  <data name="XmlValidator_Success" xml:space="preserve">
+    <value>Содержимое является валидным.</value>
+  </data>
+  <data name="Options_useSpacesInsteadTabsCheckBox" xml:space="preserve">
+    <value>Использовать пробелы вместо знаков табуляции</value>
+  </data>
+  <data name="ColorSelect_previewGroupBox" xml:space="preserve">
+    <value>Предварительный просмотр</value>
+  </data>
+  <data name="ColorSelect_previewTextBox" xml:space="preserve">
+    <value>Так будет выглядеть текст</value>
+  </data>
+  <data name="TextManager_ClipboardNotText" xml:space="preserve">
+    <value>В буфере нет текста.</value>
+  </data>
+  <data name="TextManager_Unknown" xml:space="preserve">
+    <value>Неизвестен</value>
+  </data>
+  <data name="TemplateManager_Unknown" xml:space="preserve">
+    <value>Запрошен неизвестный шаблон.</value>
+  </data>
+  <data name="Form1_templatesToolStripMenuItem" xml:space="preserve">
+    <value>Шаблоны содержимого</value>
+  </data>
+  <data name="SessionManager_ClosingWindow" xml:space="preserve">
+    <value>Открытый сеанс мог быть изменен.
+Сохранить его перед закрытием?</value>
+  </data>
+  <data name="FileManager_FileRenamed" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; переменован в &quot;{1}&quot;</value>
+  </data>
+  <data name="FileManager_Reload" xml:space="preserve">
+    <value>Пр перезагрузке файла все изменения будут потеряны.
+Продолжить?</value>
+  </data>
+  <data name="FileManager_RemoveReadonlyToRename" xml:space="preserve">
+    <value>Текущий файл доступен только для чтения и не может быть переименован.
+Снять атрибут &quot;только чтение&quot; и продолжить?</value>
+  </data>
+  <data name="FileRename_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="FileRename_fileNameLabel" xml:space="preserve">
+    <value>Имя файла:</value>
+  </data>
+  <data name="FileRename_helpLabel" xml:space="preserve">
+    <value>Переименование открытого файла непосредственно из DtPad.</value>
+  </data>
+  <data name="FileRename_renameButton" xml:space="preserve">
+    <value>Переименовать</value>
+  </data>
+  <data name="FileRename_renameToLabel" xml:space="preserve">
+    <value>Новое имя:</value>
+  </data>
+  <data name="FileRename_Title" xml:space="preserve">
+    <value>Переименование файла</value>
+  </data>
+  <data name="Form1_renameToolStripMenuItem" xml:space="preserve">
+    <value>Переименовать...</value>
+  </data>
+  <data name="Form1_renameToolStripMenuItem1" xml:space="preserve">
+    <value>Переименовать...</value>
+  </data>
+  <data name="FileRename_folderLabel" xml:space="preserve">
+    <value>Папка:</value>
+  </data>
+  <data name="Options_keepInitialSpacesOnReturnCheckBox" xml:space="preserve">
+    <value>Начальные пробелы в новой строке как в предыдущей</value>
+  </data>
+  <data name="PadText_absoluteWidthCheckBox" xml:space="preserve">
+    <value>Абсолютная ширина</value>
+  </data>
+  <data name="PadText_absoluteWidthPictureBoxToolTip" xml:space="preserve">
+    <value>Если установлен этот флажок, ширина интерпретируется как
+абсолютное значение, иначе она добавляется к
+размеру самой длинной из выделенных строк</value>
+  </data>
+  <data name="Form1_addNewTemplateToolStripMenuItem" xml:space="preserve">
+    <value>Управление...</value>
+  </data>
+  <data name="Form1_emptyTemplateToolStripMenuItem" xml:space="preserve">
+    <value>Пусто</value>
+  </data>
+  <data name="Templates_addButtonToolTip" xml:space="preserve">
+    <value>Добавить шаблон</value>
+  </data>
+  <data name="Templates_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Templates_descriptionLabel" xml:space="preserve">
+    <value>Описание:</value>
+  </data>
+  <data name="Templates_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="Templates_removeButtonToolTip" xml:space="preserve">
+    <value>Удалить шаблон</value>
+  </data>
+  <data name="Templates_textLabel" xml:space="preserve">
+    <value>Текст:</value>
+  </data>
+  <data name="Templates_Title" xml:space="preserve">
+    <value>Шаблоны содержимого</value>
+  </data>
+  <data name="Templates_toolGroupBox1" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="TemplateManager_AlreadyExists" xml:space="preserve">
+    <value>Шаблон с таким описанием уже есть. Выберите другое описание.</value>
+  </data>
+  <data name="TemplateManager_ErrorReading" xml:space="preserve">
+    <value>Ошибка при чтении файла шаблонов.
+Файл будет автоматически воссоздан со значениями по умолчанию.</value>
+  </data>
+  <data name="TemplateManager_ErrorRemoving" xml:space="preserve">
+    <value>Ошибка при удалении шаблона.
+Текущее окно будет закрыто.</value>
+  </data>
+  <data name="TemplateManager_ErrorSaving" xml:space="preserve">
+    <value>Ошибка при сохранении шаблона.
+Текущее окно будет закрыто.</value>
+  </data>
+  <data name="TemplateManager_NameNotEmtpy" xml:space="preserve">
+    <value>Имя шаблона не может быть пустым.</value>
+  </data>
+  <data name="TemplateManager_New" xml:space="preserve">
+    <value>Создать шаблон</value>
+  </data>
+  <data name="TemplateManager_Unvalorized" xml:space="preserve">
+    <value>По крайней мере для одного шаблона введены не все данные.
+Введите полностью данные о шаблонах, чтобы продолжить.</value>
+  </data>
+  <data name="Templates_helpLabel" xml:space="preserve">
+    <value>Управление шаблонами текстового содержимого, используемыми в DtPad.</value>
+  </data>
+  <data name="Form1_welcomeScreenToolStripMenuItem" xml:space="preserve">
+    <value>Окно приветствия</value>
+  </data>
+  <data name="Form1_saveAsToolStripMenuItem3" xml:space="preserve">
+    <value>Сохранить как...</value>
+  </data>
+  <data name="Form1_exadecimalToolStripMenuItem" xml:space="preserve">
+    <value>Шестнадцатеричные коды</value>
+  </data>
+  <data name="HexEditor_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="HexEditor_Title" xml:space="preserve">
+    <value>Шестнадцатеричные коды</value>
+  </data>
+  <data name="WindowManager_TextEmpty" xml:space="preserve">
+    <value>Текстовая область пуста.</value>
+  </data>
+  <data name="FileProperties_encodingLabel1" xml:space="preserve">
+    <value>Кодировка:</value>
+  </data>
+  <data name="Form1_duplicateLinesToolStripMenuItem" xml:space="preserve">
+    <value>Одинаковые строки</value>
+  </data>
+  <data name="SearchManager_DuplicateLines" xml:space="preserve">
+    <value>Найдены одинаковые строки:</value>
+  </data>
+  <data name="SearchManager_Lines" xml:space="preserve">
+    <value>Строки -</value>
+  </data>
+  <data name="SearchManager_NoDuplicateLines" xml:space="preserve">
+    <value>Идентичных срок не найдено.</value>
+  </data>
+  <data name="Form1_gUIDToolStripMenuItem" xml:space="preserve">
+    <value>GUID</value>
+  </data>
+  <data name="Form1_insertToolStripMenuItem" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_insertSpecialCharToolStripButton" xml:space="preserve">
+    <value>Вставить специальный символ...</value>
+  </data>
+  <data name="Form1_selectCurrentLineToolStripMenuItem" xml:space="preserve">
+    <value>Выделить текущие строки</value>
+  </data>
+  <data name="Form1_renameSessionToolStripMenuItem" xml:space="preserve">
+    <value>Переименовать...</value>
+  </data>
+  <data name="SessionManager_MoreSession" xml:space="preserve">
+    <value>В файле &quot;{0}&quot; содержится больше сеансов, чем ожидалось.
+Он может быть поврежден.</value>
+  </data>
+  <data name="SessionManager_Renamed" xml:space="preserve">
+    <value>Сеанс &quot;{0}&quot; переименован</value>
+  </data>
+  <data name="Form1_renameSessionToolStripButton" xml:space="preserve">
+    <value>Переименовать сеанс...</value>
+  </data>
+  <data name="SessionManager_FileInUse" xml:space="preserve">
+    <value>Не удается открыть &quot;{0}&quot;.
+Файл занят другим процессом.</value>
+  </data>
+  <data name="SessionManager_FileNotExisting" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; не существует.</value>
+  </data>
+  <data name="Form1_listFilesToolStripMenuItem" xml:space="preserve">
+    <value>Список файлов</value>
+  </data>
+  <data name="Options_splashScreenCheckBox" xml:space="preserve">
+    <value>Показывать заставку при запуске DtPad</value>
+  </data>
+  <data name="Splash_doNotShowCheckBox" xml:space="preserve">
+    <value>Больше не показывать</value>
+  </data>
+  <data name="Splash_titleLabel" xml:space="preserve">
+    <value>загрузка...</value>
+  </data>
+  <data name="Form1_activeTabToolStripMenuItem" xml:space="preserve">
+    <value>На активной вкладке</value>
+  </data>
+  <data name="Form1_aspectToolStripMenuItem" xml:space="preserve">
+    <value>Внешний вид</value>
+  </data>
+  <data name="Form1_bottomToolStripMenuItem" xml:space="preserve">
+    <value>Внизу</value>
+  </data>
+  <data name="Form1_closeButtonToolStripMenuItem" xml:space="preserve">
+    <value>Кнопка закрытия</value>
+  </data>
+  <data name="Form1_doNotShowToolStripMenuItem" xml:space="preserve">
+    <value>Не показывать</value>
+  </data>
+  <data name="Form1_eachTabToolStripMenuItem" xml:space="preserve">
+    <value>На каждой вкладке</value>
+  </data>
+  <data name="Form1_horizontalToolStripMenuItem" xml:space="preserve">
+    <value>Горизонтальная</value>
+  </data>
+  <data name="Form1_leftToolStripMenuItem" xml:space="preserve">
+    <value>Слева</value>
+  </data>
+  <data name="Form1_rightTabToolStripMenuItem" xml:space="preserve">
+    <value>У дальнего края панели вкладок</value>
+  </data>
+  <data name="Form1_rightToolStripMenuItem" xml:space="preserve">
+    <value>Справа</value>
+  </data>
+  <data name="Form1_tabOrientationToolStripMenuItem" xml:space="preserve">
+    <value>Ориентация вкладок</value>
+  </data>
+  <data name="Form1_tabPositionToolStripMenuItem" xml:space="preserve">
+    <value>Расположение вкладок</value>
+  </data>
+  <data name="Form1_topToolStripMenuItem" xml:space="preserve">
+    <value>Вверху</value>
+  </data>
+  <data name="Form1_useDefaultToolStripMenuItem" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="Form1_verticalToolStripMenuItem" xml:space="preserve">
+    <value>Вертикальная</value>
+  </data>
+  <data name="Tools_moveDownButtonToolTip" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="Tools_moveUpButtonToolTip" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="Extensions_moveDownButtonToolTip" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="Extensions_moveUpButtonToolTip" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="Favourites_moveDownButtonToolTip" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="Favourites_moveUpButtonToolTip" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="Templates_moveDownButtonToolTip" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="Templates_moveUpButtonToolTip" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="Form1_emailAddressesToolStripMenuItem" xml:space="preserve">
+    <value>Адреса эл. почты</value>
+  </data>
+  <data name="Form1_patternsToolStripMenuItem" xml:space="preserve">
+    <value>Шаблоны поиска</value>
+  </data>
+  <data name="RegularExpressionValidator_ResultFounded" xml:space="preserve">
+    <value>Найдено результатов:</value>
+  </data>
+  <data name="RegularExpressionValidator_NoResultFounded" xml:space="preserve">
+    <value>Ничего не найдено.</value>
+  </data>
+  <data name="Form1_hTMLTagToolStripMenuItem" xml:space="preserve">
+    <value>Теги XML/HTML</value>
+  </data>
+  <data name="Form1_iPAddressesToolStripMenuItem" xml:space="preserve">
+    <value>IP-адреса</value>
+  </data>
+  <data name="Form1_formatToolStripMenuItem1" xml:space="preserve">
+    <value>Форматирование и нормализация</value>
+  </data>
+  <data name="Form1_xMLToolStripMenuItem1" xml:space="preserve">
+    <value>Форматировать XML/HTML</value>
+  </data>
+  <data name="FileListManager_ClearHistoryRecentPatterns" xml:space="preserve">
+    <value>Очистить список недавних шаблонов поиска?</value>
+  </data>
+  <data name="Form1_customPatternsToolStripMenuItem" xml:space="preserve">
+    <value>Пользовательский...</value>
+  </data>
+  <data name="Options_automaticSessionSaveCheckBox" xml:space="preserve">
+    <value>Автоматически сохранять открытый сеанс при закрытии</value>
+  </data>
+  <data name="Options_sessionGroupBox1" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="Options_sessionNode" xml:space="preserve">
+    <value>Сеанс</value>
+  </data>
+  <data name="SearchPattern_clearHistoryButtonToolTip" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="SearchPattern_closeButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="SearchPattern_helpLabel" xml:space="preserve">
+    <value>Поиск текста с использованием регулярных выражений.</value>
+  </data>
+  <data name="SearchPattern_historyLabel" xml:space="preserve">
+    <value>История поиска:</value>
+  </data>
+  <data name="SearchPattern_regularExpressionLabel" xml:space="preserve">
+    <value>Регулярное выражение:</value>
+  </data>
+  <data name="SearchPattern_regularExpressionPictureBoxToolTip" xml:space="preserve">
+    <value>Узнать подробнее о регулярных выражениях можно на следующем
+веб-сайте: www.regular-expressions.info</value>
+  </data>
+  <data name="SearchPattern_searchButton" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="SearchPattern_Title" xml:space="preserve">
+    <value>Поиск по шаблону</value>
+  </data>
+  <data name="searchPanel_patternToolStripButton" xml:space="preserve">
+    <value>Шаблоны поиска...</value>
+  </data>
+  <data name="SearchPattern_historyComboBoxItems" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="Form1_xmlTreeToolStripMenuItem" xml:space="preserve">
+    <value>Дерево XML</value>
+  </data>
+  <data name="Form1_formatToolStripMenuItem2" xml:space="preserve">
+    <value>Форматировать</value>
+  </data>
+  <data name="Form1_treeViewToolStripMenuItem" xml:space="preserve">
+    <value>Дерево XML</value>
+  </data>
+  <data name="Form1_validationToolStripMenuItem1" xml:space="preserve">
+    <value>Проверить по DTD</value>
+  </data>
+  <data name="Form1_xmlToolsToolStripDropDownButton" xml:space="preserve">
+    <value>Инструменты XML/HTML</value>
+  </data>
+  <data name="XmlEditor_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="XmlEditor_Title" xml:space="preserve">
+    <value>Дерево XML</value>
+  </data>
+  <data name="InternetServicesManager_Error" xml:space="preserve">
+    <value>При отправке запроса в Google произошла ошибка.
+Проверьте подключение к Интернету или попытайтесь уменьшить количество текста в запросе.</value>
+  </data>
+  <data name="Form1_translateSelectedTextToolStripMenuItem" xml:space="preserve">
+    <value>[GG] Перевести выделенный текст...</value>
+  </data>
+  <data name="Form1_translateSelectedTextToolStripMenuItem1" xml:space="preserve">
+    <value>[GG] Перевести выделенный текст...</value>
+  </data>
+  <data name="Options_destinationLanguageLabel" xml:space="preserve">
+    <value>На язык:</value>
+  </data>
+  <data name="Options_noteLanguageLabel" xml:space="preserve">
+    <value>Примечание. Для перевода используется Google, поэтому необходимо подключение к Интернету.</value>
+  </data>
+  <data name="Options_sourceLanguageLabel" xml:space="preserve">
+    <value>С языка:</value>
+  </data>
+  <data name="Options_languageGroupBox2" xml:space="preserve">
+    <value>Перевод Google</value>
+  </data>
+  <data name="Options_languageNode" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Options_useSelectedSettingsLanguageCheckBox" xml:space="preserve">
+    <value>Всегда использовать эти языки</value>
+  </data>
+  <data name="TranslateText_closeButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="TranslateText_destinationLanguageLabel" xml:space="preserve">
+    <value>На язык:</value>
+  </data>
+  <data name="TranslateText_helpLabel" xml:space="preserve">
+    <value>Выбор исходного и конечного языков для перевода.</value>
+  </data>
+  <data name="TranslateText_sourceLanguageLabel" xml:space="preserve">
+    <value>С языка:</value>
+  </data>
+  <data name="TranslateText_Title" xml:space="preserve">
+    <value>Перевод текста</value>
+  </data>
+  <data name="TranslateText_translateButton" xml:space="preserve">
+    <value>Перевести</value>
+  </data>
+  <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Панель номеров строк временно закрыта из-за большого количества
+вставленных в текст строк. Ее можно снова открыть в любое время.</value>
+  </data>
+  <data name="XmlEditor_Error" xml:space="preserve">
+    <value>Некорректное содержимое.
+{0}</value>
+  </data>
+  <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Панель номеров строк временно закрыта из-за большого количества 
+строк в тексте. Ее можно снова открыть в любое время.</value>
+  </data>
+  <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
+    <value>Создать и вставить</value>
+  </data>
+  <data name="FileExplorerManager_File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="FileExplorerManager_Saved" xml:space="preserve">
+    <value>сохранен</value>
+  </data>
+  <data name="filePanel_listFolderContentIntoFileToolStripMenuItem" xml:space="preserve">
+    <value>Показать содержимое папки</value>
+  </data>
+  <data name="filePanel_refreshToolStripButton" xml:space="preserve">
+    <value>Обновить выбранную папку</value>
+  </data>
+  <data name="XmlEditor_collapseButtonToolTip" xml:space="preserve">
+    <value>Свернуть все узлы</value>
+  </data>
+  <data name="XmlEditor_expandButtonToolTip" xml:space="preserve">
+    <value>Развернуть все узлы</value>
+  </data>
+  <data name="Options_hideLinesCheckBox" xml:space="preserve">
+    <value>Скрывать номера строк, если их более</value>
+  </data>
+  <data name="FileExplorerManager_ListDirectoryHeader" xml:space="preserve">
+    <value>Содержимое каталога:</value>
+  </data>
+  <data name="Form1_selectLinesToolStripMenuItem" xml:space="preserve">
+    <value>Выделить строки...</value>
+  </data>
+  <data name="SelectLines_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="SelectLines_fromLabel" xml:space="preserve">
+    <value>От:</value>
+  </data>
+  <data name="SelectLines_helpLabel" xml:space="preserve">
+    <value>Укажите номера строк для выделения.</value>
+  </data>
+  <data name="SelectLines_lineNumberLabel1" xml:space="preserve">
+    <value>Всего строк:</value>
+  </data>
+  <data name="SelectLines_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="SelectLines_Title" xml:space="preserve">
+    <value>Выделение строк</value>
+  </data>
+  <data name="SelectLines_toLabel" xml:space="preserve">
+    <value>До:</value>
+  </data>
+  <data name="Options_helpHideLinesPictureBoxToolTip" xml:space="preserve">
+    <value>It is strongly recommended to leave following property
+enabled, so as to avoid slow opening of large files.</value>
+  </data>
+  <data name="ConstantUtil_NoDefault" xml:space="preserve">
+    <value>Значение по умолчанию параметра &quot;{0}&quot; не найдено.</value>
+  </data>
+  <data name="DateTimeUtil_DateTimeFormatWrong" xml:space="preserve">
+    <value>Этот формат даты и времени не поддерживается.</value>
+  </data>
+  <data name="About_versionCheckLinkLabel" xml:space="preserve">
+    <value>Эта версия DtPad устарела.
+Щелкните здесь, чтобы запустить обновление.</value>
+  </data>
+  <data name="Options_checkConnectionButton" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="OptionManager_ConnectionTimeout" xml:space="preserve">
+    <value>Время ожидания соединения истекло.
+Тест занял более {0} секунд.</value>
+  </data>
+  <data name="OptionManager_SureReset" xml:space="preserve">
+    <value>Вернуться к параметрам по умолчанию?
+Все сохраненные настройки будут потеряны.</value>
+  </data>
+  <data name="notePanel_exportNotesToolStripSplitButton" xml:space="preserve">
+    <value>Экспортировать как...</value>
+  </data>
+  <data name="notePanel_xMLFileToolStripMenuItem" xml:space="preserve">
+    <value>Один XML-файл</value>
+  </data>
+  <data name="notePanel_tXTFilesToolStripMenuItem" xml:space="preserve">
+    <value>Несколько TXT-файлов</value>
+  </data>
+  <data name="notePanel_moveDownToolStripButton" xml:space="preserve">
+    <value>Переместить ниже</value>
+  </data>
+  <data name="notePanel_moveUpToolStripButton" xml:space="preserve">
+    <value>Переместить выше</value>
+  </data>
+  <data name="Form1_fullscreenToolStripMenuItem" xml:space="preserve">
+    <value>Выйти из полноэкранного режима (F11)</value>
+  </data>
+  <data name="Form1_fullScreenToolStripMenuItem1" xml:space="preserve">
+    <value>Полноэкранный режим</value>
+  </data>
+  <data name="SearchInFiles_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="SearchInFiles_filenamePatternLabel" xml:space="preserve">
+    <value>Шаблон имени файла:</value>
+  </data>
+  <data name="SearchFilesManager_folderDialogDefault" xml:space="preserve">
+    <value>Выберите папку, в файлах которой будет вестись поиск по умолчанию:</value>
+  </data>
+  <data name="SearchInFiles_helpLabel" xml:space="preserve">
+    <value>Поиск текста во всех файлах, содержащихся в выбранной папке.</value>
+  </data>
+  <data name="SearchInFiles_okButton" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="SearchInFiles_searchFolderButton" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="SearchInFiles_searchFolderLabel" xml:space="preserve">
+    <value>Папка для поиска:</value>
+  </data>
+  <data name="SearchInFiles_searchSubdirsCheckBox" xml:space="preserve">
+    <value>Искать в подкаталогах</value>
+  </data>
+  <data name="SearchInFiles_textToSearchLabel" xml:space="preserve">
+    <value>Искать текст:</value>
+  </data>
+  <data name="SearchInFiles_Title" xml:space="preserve">
+    <value>Поиск в файлах</value>
+  </data>
+  <data name="Form1_searchInFilesToolStripMenuItem" xml:space="preserve">
+    <value>Поиск в файлах...</value>
+  </data>
+  <data name="SearchInFiles_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="SearchInFiles_searchInProgressLabel" xml:space="preserve">
+    <value>Выполняется поиск...</value>
+  </data>
+  <data name="SearchInFiles_FolderNotExists" xml:space="preserve">
+    <value>Указанной папки не существует.</value>
+  </data>
+  <data name="SearchInFiles_TextToSearchEmpty" xml:space="preserve">
+    <value>Введите текст для поиска.</value>
+  </data>
+  <data name="SearchInFiles_searchFolderComboBoxItems" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="Form1_openFileListToolStripMenuItem" xml:space="preserve">
+    <value>Файлы по списку...</value>
+  </data>
+  <data name="FileListOpen_closeButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="FileListOpen_fileListLabel" xml:space="preserve">
+    <value>Скопируйте сюда список файлов для открытия (по одному файлу в строке):</value>
+  </data>
+  <data name="FileListOpen_openButton" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="FileListOpen_pasteFromClipboardButtonToolTip" xml:space="preserve">
+    <value>Вставить из буфера</value>
+  </data>
+  <data name="FileListOpen_Title" xml:space="preserve">
+    <value>Открытие файлов по списку</value>
+  </data>
+  <data name="searchInFilesPanel_clearToolStripButton" xml:space="preserve">
+    <value>Очистить список</value>
+  </data>
+  <data name="searchInFilesPanel_exportListToolStripButton" xml:space="preserve">
+    <value>Экспортировать список файлов</value>
+  </data>
+  <data name="searchInFilesPanel_openFileToolStripButton" xml:space="preserve">
+    <value>Открыть выбранные файлы</value>
+  </data>
+  <data name="SearchFilesManager_SureToClean" xml:space="preserve">
+    <value>Очистить результаты поиска в файлах?</value>
+  </data>
+  <data name="SearchInFiles_NoResults" xml:space="preserve">
+    <value>Ничего не найдено.</value>
+  </data>
+  <data name="searchInFilesPanel_openSelectedFilesToolStripMenuItem" xml:space="preserve">
+    <value>Открыть файл</value>
+  </data>
+  <data name="Form1_searchInFilesTabPageToolTip" xml:space="preserve">
+    <value>Поиск в файлах</value>
+  </data>
+  <data name="SearchInFiles_hiddenFilesCheckBox" xml:space="preserve">
+    <value>Искать в скрытых файлах</value>
+  </data>
+  <data name="Form1_propertiesToolStripMenuItem" xml:space="preserve">
+    <value>Свойства файла</value>
+  </data>
+  <data name="TranslateText_switchButtonToolTip" xml:space="preserve">
+    <value>Поменять местами языки</value>
+  </data>
+  <data name="Form1_randomNumberToolStripMenuItem" xml:space="preserve">
+    <value>Случайное число</value>
+  </data>
+  <data name="calendarPanel_weekNumbersToolStripButton" xml:space="preserve">
+    <value>Показывать номера недель</value>
+  </data>
+  <data name="SessionManager_XmlDocError" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; не содержит корректной структуры XML.</value>
+  </data>
+  <data name="TabManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Панель номеров строк временно закрыта из-за большого количества 
+строк в тексте. Ее можно снова открыть в любое время.</value>
+  </data>
+  <data name="searchInFilesPanel_newSearchToolStripButton" xml:space="preserve">
+    <value>Новый поиск...</value>
+  </data>
+  <data name="SearchInFiles_InfoText" xml:space="preserve">
+    <value>Текст:</value>
+  </data>
+  <data name="ZipManager_Bytes" xml:space="preserve">
+    <value>байтов</value>
+  </data>
+  <data name="ZipManager_CanDecompressColumn" xml:space="preserve">
+    <value>Можно извлечь</value>
+  </data>
+  <data name="ZipManager_DateTimeColumn" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="Form1_ZipError" xml:space="preserve">
+    <value>В ZIP-файле обнаружена ошибка:</value>
+  </data>
+  <data name="ZipManager_No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="ZipManager_Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="FileManager_InvalidPdf" xml:space="preserve">
+    <value>Выбранный тип PDF-файлов не поддерживается DtPad.</value>
+  </data>
+  <data name="Form1_rowNumbersToolStripMenuItem" xml:space="preserve">
+    <value>Номера строк</value>
+  </data>
+  <data name="Form1_w3CCSSToolStripMenuItem" xml:space="preserve">
+    <value>CSS (W3C)</value>
+  </data>
+  <data name="Form1_w3CHTMLToolStripMenuItem" xml:space="preserve">
+    <value>HTML (W3C)</value>
+  </data>
+  <data name="W3CValidator_NoContent" xml:space="preserve">
+    <value>Текстовая область пуста.</value>
+  </data>
+  <data name="W3CValidator_Validate" xml:space="preserve">
+    <value>Отправить на сайт W3C для валидации</value>
+  </data>
+  <data name="W3CValidator_TitleCss" xml:space="preserve">
+    <value>DtPad - валидация CSS (W3C)</value>
+  </data>
+  <data name="W3CValidator_TitleHtml" xml:space="preserve">
+    <value>DtPad - валидация HTML (W3C)</value>
+  </data>
+  <data name="ConstantUtil_SpaceChar" xml:space="preserve">
+    <value>Пробел</value>
+  </data>
+  <data name="Form1_hTMLTableTagsToolStripMenuItem" xml:space="preserve">
+    <value>Таблица спец. символов HTML...</value>
+  </data>
+  <data name="Form1_tagsTableToolStripMenuItem" xml:space="preserve">
+    <value>Таблица спец. символов HTML...</value>
+  </data>
+  <data name="Form1_textToHTMLPageToolStripMenuItem" xml:space="preserve">
+    <value>Текст в HTML-страницу</value>
+  </data>
+  <data name="Form1_searchInGoogleToolStripMenuItem" xml:space="preserve">
+    <value>[GG] Искать выделенный текст</value>
+  </data>
+  <data name="Form1_searchInGoogleToolStripMenuItem1" xml:space="preserve">
+    <value>[GG] Искать выделенный текст</value>
+  </data>
+  <data name="InternetServicesManager_NoTextSelected" xml:space="preserve">
+    <value>Текст не выделен.</value>
+  </data>
+  <data name="Options_openWithCheckBox" xml:space="preserve">
+    <value>Пункт в меню &quot;Открыть с помощью&quot;</value>
+  </data>
+  <data name="Options_sendToCheckBox" xml:space="preserve">
+    <value>Пункт в меню &quot;Отправить&quot;</value>
+  </data>
+  <data name="Options_shellGroupBox1" xml:space="preserve">
+    <value>Контекстное меню Проводника</value>
+  </data>
+  <data name="Options_shellNode" xml:space="preserve">
+    <value>Интеграция</value>
+  </data>
+  <data name="ShellManager_LinkLaunchDtPad" xml:space="preserve">
+    <value>Запустить DtPad</value>
+  </data>
+  <data name="ShellManager_ShellString" xml:space="preserve">
+    <value>Открыть с помощью DtPad</value>
+  </data>
+  <data name="Options_autoFormatLabel" xml:space="preserve">
+    <value>Автоматически форматировать при открытии файлы с кодом:</value>
+  </data>
+  <data name="Options_htmlCheckBox" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="Options_openingGroupBox1" xml:space="preserve">
+    <value>Файлы с кодом</value>
+  </data>
+  <data name="Options_openingNode" xml:space="preserve">
+    <value>Открытие</value>
+  </data>
+  <data name="Options_xmlCheckBox" xml:space="preserve">
+    <value>XML</value>
+  </data>
+  <data name="Form1_capitalizedWordsToolStripMenuItem" xml:space="preserve">
+    <value>Слова из прописных букв</value>
+  </data>
+  <data name="SearchPattern_denyRegexCheckBox" xml:space="preserve">
+    <value>Искать несоответствия</value>
+  </data>
+  <data name="SearchPattern_predefinedComboBoxItems" xml:space="preserve">
+    <value>
+Адреса эл. почты
+IP-адреса
+Теги XML/HTML
+Слова из прописных букв</value>
+  </data>
+  <data name="SearchPattern_predefinedLabel" xml:space="preserve">
+    <value>Заготовка:</value>
+  </data>
+  <data name="Form1_saveWithEncodingToolStripMenuItem" xml:space="preserve">
+    <value>Файл в кодировке...</value>
+  </data>
+  <data name="Form1_saveWithEncodingToolStripMenuItem1" xml:space="preserve">
+    <value>Сохранить в кодировке...</value>
+  </data>
+  <data name="TabEncoding_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="TabEncoding_changeIntoComboBoxItems" xml:space="preserve">
+    <value>ANSI
+UTF-8
+UTF-8 без сигнатуры
+UTF-16 (мл.-&gt;ст.)
+UTF-16 (ст.-&gt;мл.)
+UTF-32 (мл.-&gt;ст.)</value>
+  </data>
+  <data name="TabEncoding_encodingLabel" xml:space="preserve">
+    <value>Кодировка:</value>
+  </data>
+  <data name="TabEncoding_helpLabel" xml:space="preserve">
+    <value>Сохранение файла в выбранной кодировке.</value>
+  </data>
+  <data name="TabEncoding_saveButton" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="TabEncoding_Title" xml:space="preserve">
+    <value>Сохранение в выбранной кодировке</value>
+  </data>
+  <data name="FileManager_FileAlreadyOpen" xml:space="preserve">
+    <value>Этот файл уже открыт.
+Закройте соответствующую вкладку и повторите попытку.</value>
+  </data>
+  <data name="EmailManager_EmailInvalid" xml:space="preserve">
+    <value>Адрес электронной почты введен неверно.
+Требуемый формат: example@email.com</value>
+  </data>
+  <data name="Form1_hostsFileConfiguratorToolStripMenuItem" xml:space="preserve">
+    <value>Настройка файла hosts</value>
+  </data>
+  <data name="Options_hostsConfiguratorCheckBox" xml:space="preserve">
+    <value>Запускать настройку файла hosts при его открытии</value>
+  </data>
+  <data name="Options_openingGroupBox2" xml:space="preserve">
+    <value>Системные файлы</value>
+  </data>
+  <data name="CustomFilesManager_ClosePanel" xml:space="preserve">
+    <value>Закрыть панель</value>
+  </data>
+  <data name="CustomFilesManager_HostsHelp" xml:space="preserve">
+    <value>Вставьте метки для разделения логических конфигураций IP-адресов.
+
+#ИМЯ РАЗДЕЛА 1
+123.45.67.89 www.domain.com
+123.45.67.89 www.domain.it
+
+#ИМЯ РАЗДЕЛА 2
+123.45.67.80 www.domain.org
+123.45.67.80 www.domain.net</value>
+  </data>
+  <data name="CustomFilesManager_HelpPanel" xml:space="preserve">
+    <value>Принцип работы</value>
+  </data>
+  <data name="UrlEntry_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="UrlEntry_helpLabel" xml:space="preserve">
+    <value>Открытие исходного кода веб-страницы.</value>
+  </data>
+  <data name="UrlEntry_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="UrlEntry_Title" xml:space="preserve">
+    <value>Открыть исходный код веб-страницы</value>
+  </data>
+  <data name="UrlEntry_urlAddressLabel" xml:space="preserve">
+    <value>URL-адрес:</value>
+  </data>
+  <data name="Form1_openToolStripMenuItem3" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="Form1_openWebPageSourceToolStripMenuItem" xml:space="preserve">
+    <value>Исходный код веб-страницы...</value>
+  </data>
+  <data name="Form1_saveToolStripMenuItem3" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Панель номеров строк временно закрыта из-за большого количества 
+строк в тексте. Ее можно снова открыть в любое время.</value>
+  </data>
+  <data name="FileManager_FileDeleted" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; удален</value>
+  </data>
+  <data name="FileManager_SureDeleteFile" xml:space="preserve">
+    <value>Удалить файл
+&quot;{0}&quot;?</value>
+  </data>
+  <data name="Form1_deleteFileToolStripMenuItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="InternetManager_ErrorDownloading" xml:space="preserve">
+    <value>Ошибка при загрузке исходного кода веб-страницы.
+Проверьте правильность URL-адреса и доступность веб-сайта.</value>
+  </data>
+  <data name="SearchInFiles_filenamePatternPictureBoxToolTip" xml:space="preserve">
+    <value>Введите шаблоны через запятую или точку с запятой 
+(например, &quot;*.txt,*.dts&quot;)</value>
+  </data>
+  <data name="SearchInFiles_caseSensitiveCheckBox" xml:space="preserve">
+    <value>Учитывать регистр</value>
+  </data>
+  <data name="FileListManager_ClearObsoleteRecentFiles" xml:space="preserve">
+    <value>Убрать несуществующие файлы из списка недавних файлов?</value>
+  </data>
+  <data name="Form1_clearObsoleteFilesToolStripMenuItem" xml:space="preserve">
+    <value>Убрать несуществующие</value>
+  </data>
+  <data name="FileListManager_ObsoleteFilesRemovedMore" xml:space="preserve">
+    <value>{0} несуществующих файлов исключено из списка недавних файлов</value>
+  </data>
+  <data name="FileListManager_ObsoleteFilesRemovedOne" xml:space="preserve">
+    <value>{0} несуществующий файл исключен из списка недавних файлов</value>
+  </data>
+  <data name="ReplaceManager_ReplacedOne" xml:space="preserve">
+    <value>совпадений заменено</value>
+  </data>
+  <data name="SearchManager_OccurencesOne" xml:space="preserve">
+    <value>совпадений найдено</value>
+  </data>
+  <data name="SearchManager_ReplacedOne" xml:space="preserve">
+    <value>совпадений заменено</value>
+  </data>
+  <data name="Form1_showHiddenCharsToolStripMenuItem" xml:space="preserve">
+    <value>Непечатаемые символы</value>
+  </data>
+  <data name="calendarPanel_goToTodayToolStripMenuItem" xml:space="preserve">
+    <value>Перейти к текущей дате</value>
+  </data>
+  <data name="SearchInFiles_resizeButtonToolTip" xml:space="preserve">
+    <value>Развернуть окно на весь экран</value>
+  </data>
+  <data name="Options_folderOpenedFileCheckBox" xml:space="preserve">
+    <value>Использовать папку активного файла</value>
+  </data>
+  <data name="Form1_OutdatedVersion" xml:space="preserve">
+    <value>Эта версия DtPad устарела.
+Запустить обновление?</value>
+  </data>
+  <data name="Options_enableAutomaticUpdateCheckBox" xml:space="preserve">
+    <value>Автоматически проверять версию DtPad</value>
+  </data>
+  <data name="Options_frequencyAutomaticUpdateComboBoxItems" xml:space="preserve">
+    <value>еженедельно
+ежедневно</value>
+  </data>
+  <data name="Options_frequencyAutomaticUpdateLabel" xml:space="preserve">
+    <value>Частота:</value>
+  </data>
+  <data name="Options_lastCheckLabel" xml:space="preserve">
+    <value>Последняя проверка:</value>
+  </data>
+  <data name="Options_updateGroupBox1" xml:space="preserve">
+    <value>Автоматическая проверка</value>
+  </data>
+  <data name="Options_updateNode" xml:space="preserve">
+    <value>Обновления</value>
+  </data>
+  <data name="searchInFilesPanel_copyFileFullPathToolStripMenuItem" xml:space="preserve">
+    <value>Копировать полный путь к файлу</value>
+  </data>
+  <data name="Form1_CheckVersionException" xml:space="preserve">
+    <value>Ошика при автоматической проверке версии DtPad.</value>
+  </data>
+  <data name="Options_DPDefaultDirCharNotAllowed" xml:space="preserve">
+    <value>Следующие символы не допускаются: \ / : ? * &lt; &gt; &quot; |</value>
+  </data>
+  <data name="FileManager_SavedOnDropbox" xml:space="preserve">
+    <value>сохранено в Dropbox</value>
+  </data>
+  <data name="DropboxFileDialog_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="DropboxFileDialog_DPDefaultFileCharNotAllowed" xml:space="preserve">
+    <value>Следующие символы не допускаются: \ / : ? * &lt; &gt; &quot; |</value>
+  </data>
+  <data name="DropboxFileDialog_fileNameLabel" xml:space="preserve">
+    <value>Имя файла:</value>
+  </data>
+  <data name="DropboxFileDialog_helpLabel" xml:space="preserve">
+    <value>Сохранение или открытие файлов в Dropbox.</value>
+  </data>
+  <data name="DropboxFileDialog_okButton" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="DropboxFileDialog_Title" xml:space="preserve">
+    <value>Сохранить файл как</value>
+  </data>
+  <data name="FileManager_OverwriteFileOnDropbox" xml:space="preserve">
+    <value>Файл с таким именем уже есть в Dropbox.
+Перезаписать его?</value>
+  </data>
+  <data name="Form1_fileOnDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Файл в Dropbox как...</value>
+  </data>
+  <data name="DropboxFileDialog_saveAsComboBoxItems" xml:space="preserve">
+    <value/>
+  </data>
+  <data name="DropboxFileDialog_saveAsLabel" xml:space="preserve">
+    <value>Сохранить как:</value>
+  </data>
+  <data name="DropboxFileDialog_saveInLabel" xml:space="preserve">
+    <value>Место сохранения:</value>
+  </data>
+  <data name="DropboxManager_ExistsFolderOnDropbox" xml:space="preserve">
+    <value>Папка с таким именем уже существует на выбранной позиции в Dropbox.</value>
+  </data>
+  <data name="DropboxFileDialog_newFolderButtonToolTip" xml:space="preserve">
+    <value>Создать папку</value>
+  </data>
+  <data name="DropboxFileDialog_superiorLevelButtonToolTip" xml:space="preserve">
+    <value>На уровень выше</value>
+  </data>
+  <data name="NameEntry_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="NameEntry_fileNameLabel_DropboxFileDialog" xml:space="preserve">
+    <value>Имя каталога:</value>
+  </data>
+  <data name="NameEntry_okButton_DropboxFileDialog" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="NameEntry_Title_DropboxFileDialog" xml:space="preserve">
+    <value>Имя новой папки</value>
+  </data>
+  <data name="DropboxFileDialog_okButton_Open" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="FileManager_openingFileEmpty" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; пуст.</value>
+  </data>
+  <data name="FileManager_openingFileNotExists" xml:space="preserve">
+    <value>Не удалось найти файл &quot;{0}&quot; в папке
+&quot;{1}&quot;.</value>
+  </data>
+  <data name="DropboxFileDialog_saveAsLabel_Open" xml:space="preserve">
+    <value>Тип файла:</value>
+  </data>
+  <data name="DropboxFileDialog_saveInLabel_Open" xml:space="preserve">
+    <value>Место поиска:</value>
+  </data>
+  <data name="DropboxFileDialog_Title_Open" xml:space="preserve">
+    <value>Открыть файл</value>
+  </data>
+  <data name="Form1_openFileOnDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Файл из Dropbox...</value>
+  </data>
+  <data name="Form1_columnNumbersToolStripMenuItem" xml:space="preserve">
+    <value>Номера колонок</value>
+  </data>
+  <data name="Form1_columnsStatToolStripMenuItem" xml:space="preserve">
+    <value>Колонок:</value>
+  </data>
+  <data name="SearchInFiles_exclusionPatternLabel" xml:space="preserve">
+    <value>Исключить шаблон:</value>
+  </data>
+  <data name="SearchInFiles_exclusionPatternPictureBoxToolTip" xml:space="preserve">
+    <value>Введите шаблоны через запятую или точку с запятой 
+(например, &quot;*.txt,*.dts&quot;)
+Фильтр &quot;*.*&quot; не допускается.
+</value>
+  </data>
+  <data name="Form1_dropboxToolStripDropDownButton" xml:space="preserve">
+    <value>Dropbox</value>
+  </data>
+  <data name="Form1_openFromDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Открыть файл из Dropbox...</value>
+  </data>
+  <data name="Form1_saveOnDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Сохранить файл в Dropbox как...</value>
+  </data>
+  <data name="DropboxManager_UnauthorizedAccess" xml:space="preserve">
+    <value>Отказано в доступе к Dropbox.
+Проверьте, что вы прошли проверку подлинности в Dropbox, открыв ссылку &quot;www.dropbox.com&quot; в браузере по умолчанию.</value>
+  </data>
+  <data name="FileManager_OpenedFromDropbox" xml:space="preserve">
+    <value>открыто из Dropbox</value>
+  </data>
+  <data name="Form1_columnNumbersToolStripMenuItem2" xml:space="preserve">
+    <value>Номера колонок</value>
+  </data>
+  <data name="NameEntry_fileNameLabel_ZipExtract" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="NameEntry_okButton_ZipExtract" xml:space="preserve">
+    <value>Извлечь</value>
+  </data>
+  <data name="NameEntry_Title_ZipExtract" xml:space="preserve">
+    <value>Ввод пароля к архиву</value>
+  </data>
+  <data name="notePanel_openOnEditorToolStripMenuItem" xml:space="preserve">
+    <value>Открыть в редакторе</value>
+  </data>
+  <data name="Options_keepBulletListOnReturnCheckBox" xml:space="preserve">
+    <value>Продолжать маркированный список в новой строке</value>
+  </data>
+  <data name="Options_keepBulletListOnReturnLabel" xml:space="preserve">
+    <value>Шаблоны списков:</value>
+  </data>
+  <data name="Options_formatGroupBox2" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="Options_switchButtonToolTip" xml:space="preserve">
+    <value>Поменять местами языки</value>
+  </data>
+  <data name="HexEditor_copyHexadecimalToolStripMenuItem" xml:space="preserve">
+    <value>Копировать шестнадцатеричный код</value>
+  </data>
+  <data name="HexEditor_copyToolStripMenuItem2" xml:space="preserve">
+    <value>Копировать текст</value>
+  </data>
+  <data name="HexEditor_selectAllToolStripMenuItem2" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="ZipExtract_copyArchiveContentPictureBoxToolTip" xml:space="preserve">
+    <value>Копировать содержимое архива в буфер</value>
+  </data>
+  <data name="ZipManager_DirectoryColumn" xml:space="preserve">
+    <value>Пусть</value>
+  </data>
+  <data name="ConfigUtil_NoValue" xml:space="preserve">
+    <value>Значение параметра &quot;{0}&quot; не найдено.</value>
+  </data>
+  <data name="FileProperties_EncodingWithoutBOM" xml:space="preserve">
+    <value>Без сигнатуры</value>
+  </data>
+  <data name="Form1_uTF16LittleEndianToolStripMenuItem" xml:space="preserve">
+    <value>UTF-16 (мл.-&gt;ст.)</value>
+  </data>
+  <data name="Form1_uTF8WithoutBOMToolStripMenuItem" xml:space="preserve">
+    <value>UTF-8 без сигнатуры</value>
+  </data>
+  <data name="UrlEntry_clearHistoryButtonToolTip" xml:space="preserve">
+    <value>Очистить список недавних URL-адресов</value>
+  </data>
+  <data name="Form1_urlEncoderToolStripMenuItem" xml:space="preserve">
+    <value>Форматировать URL-адрес</value>
+  </data>
+  <data name="UrlEncode_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="UrlEncode_encodeButtonToolTip" xml:space="preserve">
+    <value>Кодировать</value>
+  </data>
+  <data name="UrlEncode_encodedURLLabel" xml:space="preserve">
+    <value>Кодированный URL-адрес:</value>
+  </data>
+  <data name="UrlEncode_helpLabel" xml:space="preserve">
+    <value>Кодирование строке в формате URL-адреса.</value>
+  </data>
+  <data name="UrlEncode_okButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="UrlEncode_stringToEncodeLabel" xml:space="preserve">
+    <value>Декодированный URL-адрес:</value>
+  </data>
+  <data name="UrlEncode_Title" xml:space="preserve">
+    <value>Кодирование URL-адреса</value>
+  </data>
+  <data name="UrlEncode_decodeButtonToolTip" xml:space="preserve">
+    <value>Декодировать</value>
+  </data>
+  <data name="InternetManager_EmptySource" xml:space="preserve">
+    <value>Запрошенный исходный URL-адрес пуст.</value>
+  </data>
+  <data name="filePanel_filePropertiesToolStripMenuItem" xml:space="preserve">
+    <value>Свойства файла</value>
+  </data>
+  <data name="filePanel_listFolderContentWithLenghtToolStripMenuItem" xml:space="preserve">
+    <value>Отображать содержимое папки (в т.ч. размер)</value>
+  </data>
+  <data name="FileExplorerManager_Files" xml:space="preserve">
+    <value>файлов</value>
+  </data>
+  <data name="FileExplorerManager_Directories" xml:space="preserve">
+    <value>папок</value>
+  </data>
+  <data name="Form1_returnToSpaceToolStripMenuItem" xml:space="preserve">
+    <value>Возвраты каретки в пробелы</value>
+  </data>
+  <data name="PasswordUtil_NoValue" xml:space="preserve">
+    <value>Значение параметра &quot;{0}&quot; не найдено.</value>
+  </data>
+  <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
+    <value>Закрыть все</value>
+  </data>
+  <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Панель номеров строк временно закрыта из-за большого количества 
+строк в тексте. Ее можно снова открыть в любое время.</value>
+  </data>
+  <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
+    <value>Голубой</value>
+  </data>
+  <data name="Form1_setTabColorGreenToolStripMenuItem" xml:space="preserve">
+    <value>Зеленый</value>
+  </data>
+  <data name="Form1_setTabColorOrangeToolStripMenuItem" xml:space="preserve">
+    <value>Оранжевый</value>
+  </data>
+  <data name="Form1_setTabColorRedToolStripMenuItem" xml:space="preserve">
+    <value>Красный</value>
+  </data>
+  <data name="Form1_setTabColorToolStripMenuItem" xml:space="preserve">
+    <value>Цвет вкладки</value>
+  </data>
+  <data name="Form1_setTabColorBlackToolStripMenuItem" xml:space="preserve">
+    <value>Черный (стандарт)</value>
+  </data>
+  <data name="Options_hostsConfiguratorTabColorComboBoxItems" xml:space="preserve">
+    <value>Оранжевый
+Красный
+Зеленый
+Голубой
+Черный</value>
+  </data>
+  <data name="Options_hostsConfiguratorTabColorLabel" xml:space="preserve">
+    <value>Цвет вкладки:</value>
+  </data>
+  <data name="TranslateText_SourceEqualToDestionation" xml:space="preserve">
+    <value>Исходный и конечный языки совпадают.
+Выберите разные языки, чтобы продолжить.</value>
+  </data>
+  <data name="Statistics_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Statistics_domainLabel1" xml:space="preserve">
+    <value>Домен:</value>
+  </data>
+  <data name="Statistics_frameworkVersionLabel1" xml:space="preserve">
+    <value>Версия .NET CLR:</value>
+  </data>
+  <data name="Statistics_helpLabel" xml:space="preserve">
+    <value>Некоторые сведения о системном окружении.</value>
+  </data>
+  <data name="Statistics_machineNameLabel1" xml:space="preserve">
+    <value>Имя компьютера:</value>
+  </data>
+  <data name="Statistics_memoryLabel1" xml:space="preserve">
+    <value>Память (занятый объём):</value>
+  </data>
+  <data name="Statistics_osLabel1" xml:space="preserve">
+    <value>Операционная система:</value>
+  </data>
+  <data name="Statistics_processorsLabel1" xml:space="preserve">
+    <value>Число процессоров:</value>
+  </data>
+  <data name="Statistics_Title" xml:space="preserve">
+    <value>Статистика окружения</value>
+  </data>
+  <data name="Statistics_usernameLabel1" xml:space="preserve">
+    <value>Имя пользователя:</value>
+  </data>
+  <data name="Statistics_workingDirectoryLabel1" xml:space="preserve">
+    <value>Рабочий каталог:</value>
+  </data>
+  <data name="SystemUtil_OSOther" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="Form1_statisticsToolStripMenuItem" xml:space="preserve">
+    <value>Статистика окружения</value>
+  </data>
+  <data name="RegularExpressionValidator_InvalidRegex" xml:space="preserve">
+    <value>Недопустимое регулярное выражение.</value>
+  </data>
+  <data name="FileManager_UnauthorizedAccess" xml:space="preserve">
+    <value>Отказано в доступе к файлу.
+У текущего пользователя нет прав для сохранения этого файла.</value>
+  </data>
+  <data name="FileManager_UserNotAdmin" xml:space="preserve">
+    <value>У текущего пользователя нет прав администратора.
+Сохранение изменений в этом файле невозможно.</value>
+  </data>
+  <data name="SystemUtil_New" xml:space="preserve">
+    <value>Открыть новую вкладку</value>
+  </data>
+  <data name="SystemUtil_NewAndPaste" xml:space="preserve">
+    <value>Открыть новую вкладку и вставить текст</value>
+  </data>
+  <data name="SystemUtil_OpenFile" xml:space="preserve">
+    <value>Открыть файл...</value>
+  </data>
+  <data name="SystemUtil_OpenSession" xml:space="preserve">
+    <value>Открыть сеанс...</value>
+  </data>
+  <data name="SystemUtil_WebSite" xml:space="preserve">
+    <value>Открыть веб-страницу DtPad</value>
+  </data>
+  <data name="SystemUtil_CheckNewVersion" xml:space="preserve">
+    <value>Проверить наличие новой версии...</value>
+  </data>
+  <data name="SystemUtil_SearchInFiles" xml:space="preserve">
+    <value>Поиск в файлах...</value>
+  </data>
+  <data name="Statistics_refreshButtonToolTip" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="Form1_pasteSpecialHtmlToolStripMenuItem" xml:space="preserve">
+    <value>HTML</value>
+  </data>
+  <data name="Form1_pasteSpecialRtfToolStripMenuItem" xml:space="preserve">
+    <value>RTF</value>
+  </data>
+  <data name="Form1_pasteSpecialToolStripMenuItem" xml:space="preserve">
+    <value>Специальная вставка</value>
+  </data>
+  <data name="TextManager_NoSpecialData" xml:space="preserve">
+    <value>Буфер не содержит данных в выбранном формате.</value>
+  </data>
+  <data name="Form1_newAndPasteToolStripMenuItem2" xml:space="preserve">
+    <value>Создать и вставить</value>
+  </data>
+  <data name="Form1_internetServicesToolStripMenuItem" xml:space="preserve">
+    <value>Интернет-сервисы</value>
+  </data>
+  <data name="Form1_searchInWikipediaToolStripMenuItem1" xml:space="preserve">
+    <value>[WP] Искать выделенный текст</value>
+  </data>
+  <data name="Form1_internetServicesToolStripMenuItem1" xml:space="preserve">
+    <value>Интернет-сервисы</value>
+  </data>
+  <data name="Options_highlightsResultsCheckBox" xml:space="preserve">
+    <value>Выделять цветом совпадения</value>
+  </data>
+  <data name="searchPanel_clearHighlightsToolStripButton" xml:space="preserve">
+    <value>Снять цветовое выделение</value>
+  </data>
+  <data name="searchPanel_highlightsResultsToolStripButton" xml:space="preserve">
+    <value>Выделять цветом совпадения</value>
+  </data>
+  <data name="filePanel_listFolderContentWithPatternToolStripMenuItem" xml:space="preserve">
+    <value>Вставить содержимое папки (с фильтрами)</value>
+  </data>
+  <data name="filePanel_listToolStripMenuItem" xml:space="preserve">
+    <value>Вставить содержимое папки</value>
+  </data>
+  <data name="filePanel_includeSubdirectoriesToolStripMenuItem" xml:space="preserve">
+    <value>Включить подкаталоги</value>
+  </data>
+  <data name="filePanel_showSizeToolStripMenuItem" xml:space="preserve">
+    <value>Показывать размер</value>
+  </data>
+  <data name="FileExplorerManager_TotalSize" xml:space="preserve">
+    <value>Общий размер:</value>
+  </data>
+  <data name="Form1_searchInWikipediaToolStripMenuItem" xml:space="preserve">
+    <value>[WP] Искать выделенный текст</value>
+  </data>
+  <data name="Options_jumpListCheckBox" xml:space="preserve">
+    <value>Включить список переходов (только в Windows 7)</value>
+  </data>
+  <data name="Options_proxyHostLabel" xml:space="preserve">
+    <value>Адрес:</value>
+  </data>
+  <data name="Options_proxyPortLabel" xml:space="preserve">
+    <value>Порт:</value>
+  </data>
+  <data name="DropboxManager_UriFormat" xml:space="preserve">
+    <value>Ошибка доступа к Dropbox!
+Проверьте свою учетную запись на сайте &quot;www.dropbox.com&quot; и параметры прокси сервера (если он используется) в окне параметров.</value>
+  </data>
+  <data name="GoToLine_lineCurrentLabel1" xml:space="preserve">
+    <value>Текущая строка:</value>
+  </data>
+  <data name="Form1_searchInFilesToolStripButton" xml:space="preserve">
+    <value>Поиск в файлах...</value>
+  </data>
+  <data name="Form1_htmlToTextPageToolStripMenuItem" xml:space="preserve">
+    <value>HTML-страницу в текст</value>
+  </data>
+  <data name="SessionManager_SaveAllFilesFailed" xml:space="preserve">
+    <value>Не все файлы были сохранены. Закройте файлы или сохраните их,
+прежде чем сохранять сеанс.</value>
+  </data>
+  <data name="SessionManager_Empty" xml:space="preserve">
+    <value>Выбранный сеанс пуст.
+Он может быть поврежден.</value>
+  </data>
+  <data name="DropboxManager_ProxyHostRequired" xml:space="preserve">
+    <value>Для проверки подлинности через прокси-сервер Dropbox требует явно указать его адрес.
+Введите адрес в соответствующее поле в окна параметров (раздел &quot;Интернет&quot;) и повторите попытку.</value>
+  </data>
+  <data name="DropboxManager_SuccessfullyAuth" xml:space="preserve">
+    <value>Предоставлен ли редактору DtPad доступ к Dropbox?
+
+Нажмите &quot;Да&quot; для продолжения или &quot;Нет&quot; для отмены.</value>
+  </data>
+  <data name="Form1_logoutFromDropboxToolStripMenuItem" xml:space="preserve">
+    <value>Выйти из Dropbox</value>
+  </data>
+  <data name="DropboxManager_DropboxLogOut" xml:space="preserve">
+    <value>Произведен выход из Dropbox</value>
+  </data>
+  <data name="FileListManager_AlreadyFavourite" xml:space="preserve">
+    <value>Указанный файл уже добавлен в избранное.</value>
+  </data>
+  <data name="Form1_favouriteSessionToolStripButton" xml:space="preserve">
+    <value>Добавить сеанс в избранное</value>
+  </data>
+  <data name="Form1_favouriteSessionToolStripMenuItem" xml:space="preserve">
+    <value>Добавить в избранное</value>
+  </data>
+  <data name="DropboxManager_SureRenameFile" xml:space="preserve">
+    <value>Переименовать файл &quot;{0}&quot;
+в &quot;{1}&quot;?</value>
+  </data>
+  <data name="DropboxManager_SureRenameFolder" xml:space="preserve">
+    <value>Переименовать папку &quot;{0}&quot;
+в &quot;{1}&quot;?</value>
+  </data>
+  <data name="DropboxManager_WarningRenaming" xml:space="preserve">
+    <value>Не удалось переименовать объект. Проверьте, не установлен ли к нему доступ только для чтения.</value>
+  </data>
+  <data name="DropboxFileDialog_deleteToolStripMenuItem1" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DropboxManager_SureDeleteFile" xml:space="preserve">
+    <value>Удалить файл
+&quot;{0}&quot;?</value>
+  </data>
+  <data name="DropboxManager_SureDeleteFolder" xml:space="preserve">
+    <value>Удалить папку
+&quot;{0}&quot;?</value>
+  </data>
+  <data name="DropboxManager_WarningDeleting" xml:space="preserve">
+    <value>Не удалось удалить объект.</value>
+  </data>
+  <data name="Options_dropboxDeleteCheckBox" xml:space="preserve">
+    <value>Разрешить удаление файлов и папок</value>
+  </data>
+  <data name="Options_dropboxGroupBox1" xml:space="preserve">
+    <value>Использование</value>
+  </data>
+  <data name="Options_dropboxNode" xml:space="preserve">
+    <value>Dropbox</value>
+  </data>
+  <data name="Options_dropboxRememberCheckBox" xml:space="preserve">
+    <value>Запоминать учётные данные при выходе</value>
+  </data>
+  <data name="Statistics_copyButtonToolTip" xml:space="preserve">
+    <value>Копировать статистику в буфер</value>
+  </data>
+  <data name="InternalBrowser_proceedButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="InternalBrowser_Title" xml:space="preserve">
+    <value>Встроенный браузер</value>
+  </data>
+  <data name="DropboxFileDialog_viewComboBoxItems" xml:space="preserve">
+    <value>Крупные значки
+Мелкие значки
+Список
+Плитка</value>
+  </data>
+  <data name="Form1_sortTextToolStripMenuItem" xml:space="preserve">
+    <value>Сортировать текст...</value>
+  </data>
+  <data name="SortText_allTextRadioButton" xml:space="preserve">
+    <value>ко всему тексту</value>
+  </data>
+  <data name="SortText_applyToLabel" xml:space="preserve">
+    <value>Применить:</value>
+  </data>
+  <data name="SortText_ascCheckBox" xml:space="preserve">
+    <value>Возр.</value>
+  </data>
+  <data name="SortText_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="SortText_descCheckBox" xml:space="preserve">
+    <value>Убыв.</value>
+  </data>
+  <data name="SortText_helpLabel" xml:space="preserve">
+    <value>Сортировка текста в заданном порядке.</value>
+  </data>
+  <data name="SortText_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="SortText_selectedTextRadioButton" xml:space="preserve">
+    <value>к выделенному тексту</value>
+  </data>
+  <data name="SortText_sortTypeLabel" xml:space="preserve">
+    <value>Тип сортировки:</value>
+  </data>
+  <data name="SortText_Title" xml:space="preserve">
+    <value>Сортировка текста</value>
+  </data>
+  <data name="TextManager_TextEmpty" xml:space="preserve">
+    <value>Текстовая область пуста.</value>
+  </data>
+  <data name="Form1_validationSchemaToolStripMenuItem1" xml:space="preserve">
+    <value>Проверить по схеме</value>
+  </data>
+  <data name="Form1_xMLSchemaToolStripMenuItem" xml:space="preserve">
+    <value>XML/HTML по схеме</value>
+  </data>
+  <data name="Form1_linesWithoutDuplidatesToolStripMenuItem" xml:space="preserve">
+    <value>Уникальные строки</value>
+  </data>
+  <data name="FileProperties_TitleSession" xml:space="preserve">
+    <value>Свойства сеанса</value>
+  </data>
+  <data name="Form1_sessionPropertiesToolStripMenuItem" xml:space="preserve">
+    <value>Свойства сеанса</value>
+  </data>
+  <data name="FileProperties_copyButtonToolTip" xml:space="preserve">
+    <value>Копировать полный путь в буфер</value>
+  </data>
+  <data name="CustomFilesManager_HelpAnnotation" xml:space="preserve">
+    <value>Эта панель может использоваться для разных целей, в том числе для комментариев и для быстрого сравнения содержимого двух вкладок.</value>
+  </data>
+  <data name="CustomFilesManager_WordWrapPanel" xml:space="preserve">
+    <value>Перенос по словам</value>
+  </data>
+  <data name="Form1_annotationPanelToolStripMenuItem" xml:space="preserve">
+    <value>Панель комментариев</value>
+  </data>
+  <data name="CustomFilesManager_CopyPanel" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="CustomFilesManager_CutPanel" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="CustomFilesManager_DeletePanel" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="CustomFilesManager_PastePanel" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="CustomFilesManager_SelectAllPanel" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="CustomFilesManager_WarningAnnotationPanelClose" xml:space="preserve">
+    <value>Закрыть панель комментариев?
+Содержащийся в ней текст будет потерян.</value>
+  </data>
+  <data name="FileManager_EncodingXmlToSave" xml:space="preserve">
+    <value>Кодировка, объявленная в XML-коде, отличается от той, которая выбрана в DtPad.
+Файл будет сохранен в объявленной кодировке для обеспечения согласованности.</value>
+  </data>
+  <data name="FileManager_InvalidXmlToSave" xml:space="preserve">
+    <value>Содержимое XML-файла не является валидным. Продолжить?</value>
+  </data>
+  <data name="FileListManager_AddedFavourite" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; добавлен в избранное.</value>
+  </data>
+  <data name="Form1_normalizeToolStripMenuItem" xml:space="preserve">
+    <value>Нормализовать HTML-код</value>
+  </data>
+  <data name="Form1_normalizeXMLToolStripMenuItem" xml:space="preserve">
+    <value>Нормализовать HTML-код</value>
+  </data>
+  <data name="notePanel_moveFirstToolStripButton" xml:space="preserve">
+    <value>Переместить в начало</value>
+  </data>
+  <data name="notePanel_moveLastToolStripButton" xml:space="preserve">
+    <value>Переместить в конец</value>
+  </data>
+  <data name="Options_nullCharCheckBox" xml:space="preserve">
+    <value>Не интерпретировать символ NULL (\0) как конец строки</value>
+  </data>
+  <data name="Options_openingGroupBox3" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="FileListManager_ClearObsoleteRecentSessions" xml:space="preserve">
+    <value>Убрать несуществующие сеансы из списка недавних сеансов?</value>
+  </data>
+  <data name="FileListManager_ObsoleteSessionsRemovedMore" xml:space="preserve">
+    <value>{0} несуществующих сеансов исключено из списка недавних сеансов</value>
+  </data>
+  <data name="FileListManager_ObsoleteSessionsRemovedOne" xml:space="preserve">
+    <value>{0} несуществующий сеанс исключен из списка недавних сеансов</value>
+  </data>
+  <data name="Form1_clearObsoleteSessionsToolStripMenuItem" xml:space="preserve">
+    <value>Убрать несуществующие</value>
+  </data>
+  <data name="Form1_insertTagToolStripMenuItem" xml:space="preserve">
+    <value>Вставить тег...</value>
+  </data>
+  <data name="Form1_tagToolStripMenuItem" xml:space="preserve">
+    <value>Тег...</value>
+  </data>
+  <data name="FormatManager_TagTypeEmpty" xml:space="preserve">
+    <value>Не указано значение типа тега.</value>
+  </data>
+  <data name="TagEntry_cancelButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="TagEntry_completeRadioButton" xml:space="preserve">
+    <value>Парный (пример: &lt;b&gt;&lt;/b&gt;)</value>
+  </data>
+  <data name="TagEntry_customRadioButton" xml:space="preserve">
+    <value>Пользовательский</value>
+  </data>
+  <data name="TagEntry_CustomTagTypeEmpty" xml:space="preserve">
+    <value>Выбран пользовательский тип тега, но отсутствует открывающий или закрывающий тег.
+Вставьте недостающий тег или выберите другой тип тега.</value>
+  </data>
+  <data name="TagEntry_extensionGroupBox" xml:space="preserve">
+    <value>Форма</value>
+  </data>
+  <data name="TagEntry_forumRadioButton" xml:space="preserve">
+    <value>Форумный ([, ])</value>
+  </data>
+  <data name="TagEntry_helpLabel" xml:space="preserve">
+    <value>Вставка тега в текст.</value>
+  </data>
+  <data name="TagEntry_okButton" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="TagEntry_shortRadioButton" xml:space="preserve">
+    <value>Одиночный (пример: &lt;br /&gt;)</value>
+  </data>
+  <data name="TagEntry_tagLabel" xml:space="preserve">
+    <value>Тег:</value>
+  </data>
+  <data name="TagEntry_Title" xml:space="preserve">
+    <value>Ввод тега</value>
+  </data>
+  <data name="TagEntry_typeGroupBox" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="TagEntry_xhtmlRadioButton" xml:space="preserve">
+    <value>XML/HTML (&lt;, &gt;)</value>
+  </data>
+  <data name="Form1_saveAllAsZipToolStripMenuItem" xml:space="preserve">
+    <value>Все как ZIP-архив...</value>
+  </data>
+  <data name="ZipManager_FileDialog" xml:space="preserve">
+    <value>Архив ZIP (*.zip)|*.zip</value>
+  </data>
+  <data name="ZipManager_Saved" xml:space="preserve">
+    <value>Архив &quot;{0}&quot; сохранен</value>
+  </data>
+  <data name="ZipManager_NoContent" xml:space="preserve">
+    <value>Нет содержимого или открытых файлов для сохранения в архиве.</value>
+  </data>
+  <data name="Dictionary_Title" xml:space="preserve">
+    <value>Правописание и синонимы</value>
+  </data>
+  <data name="DictionaryManager_Correct" xml:space="preserve">
+    <value>написано верно</value>
+  </data>
+  <data name="DictionaryManager_Meaning" xml:space="preserve">
+    <value>Значение: {0}</value>
+  </data>
+  <data name="DictionaryManager_Synonym" xml:space="preserve">
+    <value>&gt; синоним: &quot;{0}&quot;</value>
+  </data>
+  <data name="DictionaryManager_Tip" xml:space="preserve">
+    <value>&gt; вариант замены: &quot;{0}&quot;</value>
+  </data>
+  <data name="DictionaryManager_TipsMore" xml:space="preserve">
+    <value>Вариантов замены: {0}</value>
+  </data>
+  <data name="DictionaryManager_TipsOne" xml:space="preserve">
+    <value>Вариантов замены:  {0} </value>
+  </data>
+  <data name="DictionaryManager_Uncorrect" xml:space="preserve">
+    <value>написано неверно</value>
+  </data>
+  <data name="DictionaryManager_Word" xml:space="preserve">
+    <value>Слово &quot;{0}&quot; {1}</value>
+  </data>
+  <data name="Dictionary_clearButton" xml:space="preserve">
+    <value>Очистить результаты</value>
+  </data>
+  <data name="Dictionary_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="Dictionary_dictionariesLabel" xml:space="preserve">
+    <value>Щелкните, чтобы загрузить новые словари</value>
+  </data>
+  <data name="Dictionary_helpLabel" xml:space="preserve">
+    <value>Проверка правописания слов и писк синонимов.</value>
+  </data>
+  <data name="Dictionary_languageLabel" xml:space="preserve">
+    <value>Язык:</value>
+  </data>
+  <data name="Dictionary_NoDictionaries" xml:space="preserve">
+    <value>В папке &quot;Languages&quot; программы DtPad не найдено ни одного словаря.
+Щелкните ссылку в следущем окне или посетите следующий веб-сайт для загрузки словарей:
+</value>
+  </data>
+  <data name="Dictionary_searchButton" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="Dictionary_wordLabel" xml:space="preserve">
+    <value>Слово:</value>
+  </data>
+  <data name="Form1_dictionaryToolStripMenuItem" xml:space="preserve">
+    <value>Правописание и синонимы</value>
+  </data>
+  <data name="Form1_dictionaryToolStripMenuItem1" xml:space="preserve">
+    <value>Правописание и синонимы...</value>
+  </data>
+  <data name="ZipManager_FilesNotSaved" xml:space="preserve">
+    <value>Не все файлы были сохранены. Закройте файлы или сохраните их,
+прежде чем сохранять их в архиве.</value>
+  </data>
+  <data name="ZipManager_SaveAllFiles" xml:space="preserve">
+    <value>Все измененные вкладки будут сохранены, чтобы их можно было сохранить в архиве.
+Продолжить?</value>
+  </data>
+  <data name="DictionaryManager_NoDictionary" xml:space="preserve">
+    <value>Словарь для используемого языка не найден в папке &quot;Languages&quot; программы DtPad.
+Для загрузки словаря посетите следующий веб-сайт:
+</value>
+  </data>
+  <data name="Dictionary_verifyAllButton" xml:space="preserve">
+    <value>Проверить все</value>
+  </data>
+  <data name="Form1_dictionaryTextToolStripMenuItem" xml:space="preserve">
+    <value>Проверить все</value>
+  </data>
+  <data name="Form1_dictionaryToolStripButton" xml:space="preserve">
+    <value>Правописание и синонимы...</value>
+  </data>
+  <data name="Form1_dictionaryWordToolStripMenuItem" xml:space="preserve">
+    <value>Проверить слово...</value>
+  </data>
+  <data name="DictionaryManager_TextCorrect" xml:space="preserve">
+    <value>В тексте нет ошибок.</value>
+  </data>
+  <data name="Form1_dictionaryClearToolStripMenuItem" xml:space="preserve">
+    <value>Снять цветовое выделение</value>
+  </data>
+  <data name="MoveLines_lineLabel" xml:space="preserve">
+    <value>На сколько позиций переместить:</value>
+  </data>
+  <data name="tabPanel_moveTabFirstToolStripButton" xml:space="preserve">
+    <value>Переместить в начало</value>
+  </data>
+  <data name="tabPanel_moveTabLastToolStripButton" xml:space="preserve">
+    <value>Переместить в конец</value>
+  </data>
+  <data name="notePanel_blackstandardToolStripMenuItem" xml:space="preserve">
+    <value>Черный (стандарт)</value>
+  </data>
+  <data name="notePanel_blueToolStripMenuItem" xml:space="preserve">
+    <value>Голубой</value>
+  </data>
+  <data name="notePanel_greenToolStripMenuItem" xml:space="preserve">
+    <value>Зеленый</value>
+  </data>
+  <data name="notePanel_orangeToolStripMenuItem" xml:space="preserve">
+    <value>Оранжевый</value>
+  </data>
+  <data name="notePanel_redToolStripMenuItem" xml:space="preserve">
+    <value>Красный</value>
+  </data>
+  <data name="notePanel_tagToolStripMenuItem" xml:space="preserve">
+    <value>Тег</value>
+  </data>
+  <data name="CustomFilesManager_HostsClose" xml:space="preserve">
+    <value>Чтобы снова открыть эту панель, выберите &quot;Вид -&gt; Настройка файла hosts&quot;.</value>
+  </data>
+  <data name="WindowManager_SureResetWindow" xml:space="preserve">
+    <value>Восстановить внешний вид DtPad по умолчанию?</value>
+  </data>
+  <data name="calculatorPanel_clearCalculatorToolStripButton" xml:space="preserve">
+    <value>Очистить экран калькулятора</value>
+  </data>
+  <data name="calculatorPanel_thousandSepToolStripButton" xml:space="preserve">
+    <value>Использовать разделитель тысяч</value>
+  </data>
+  <data name="FileExplorerManager_UnexistingPath" xml:space="preserve">
+    <value>Указанный путь не существует.</value>
+  </data>
+  <data name="Form1_redoAllToolStripMenuItem" xml:space="preserve">
+    <value>Повторить все</value>
+  </data>
+  <data name="Form1_undoAllToolStripMenuItem" xml:space="preserve">
+    <value>Отменить все</value>
+  </data>
+  <data name="QuestionYNNAC_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="QuestionYNNAC_noButton" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="QuestionYNNAC_noToAllButton" xml:space="preserve">
+    <value>Нет для всех</value>
+  </data>
+  <data name="QuestionYNNAC_Title" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="QuestionYNNAC_yesButton" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Form1_copyFileNameToolStripMenuItem" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="Form1_copyFileNamesToolStripMenuItem" xml:space="preserve">
+    <value>Копировать...</value>
+  </data>
+  <data name="filePanel_refreshDriveToolStripButton" xml:space="preserve">
+    <value>Обновить дерево дисков</value>
+  </data>
+  <data name="Form1_takeTabScreenshotToolStripMenuItem" xml:space="preserve">
+    <value>Сделать снимок экрана текущей вкладки</value>
+  </data>
+  <data name="WindowManager_ScreenshotInClipboard" xml:space="preserve">
+    <value>Снимок экрана сохранен в буфере.</value>
+  </data>
+  <data name="FileManager_FileTooHeavy" xml:space="preserve">
+    <value>Не удается открыть &quot;{0}&quot;.
+Размер файла больше допустимого (100 МБ).</value>
+  </data>
+  <data name="FileManager_NoMessageFileTooHeavy" xml:space="preserve">
+    <value>Размер &quot;{0}&quot; больше допустимого (100 МБ)</value>
+  </data>
+  <data name="FileProperties_Bytes" xml:space="preserve">
+    <value>байтов</value>
+  </data>
+  <data name="Form1_exportAsZipToolStripMenuItem" xml:space="preserve">
+    <value>Экспортировать как ZIP-архив...</value>
+  </data>
+  <data name="SessionManager_ExportFileDialog" xml:space="preserve">
+    <value>Архив ZIP (*.zip)|*.zip</value>
+  </data>
+  <data name="SessionManager_ExportSaved" xml:space="preserve">
+    <value>Архив &quot;{0}&quot; сохранен</value>
+  </data>
+  <data name="SessionManager_NoExport" xml:space="preserve">
+    <value>Экспорт разрешен только для сеансов, файлы которых хранятся в той же
+папке сеанса или вложенных в нее папках.
+Сеанс содержит файлы, находящиеся в разных деревьях каталогов, поэтому продолжение невозможно.</value>
+  </data>
+  <data name="SessionManager_SaveSessionForExport" xml:space="preserve">
+    <value>Открытый сеанс мог быть изменен.
+Перед экспортом его необходимо сохранить. Продолжить?
+Если вы откажетесь, экспорт будет прерван.</value>
+  </data>
+  <data name="SessionManager_ArchiveNotExport" xml:space="preserve">
+    <value>Выбранный архив не содержит действительного сеанса.
+DPS-файл не найден.</value>
+  </data>
+  <data name="SessionManager_ExportSessionDescription" xml:space="preserve">
+    <value>Архив сеанса DtPad</value>
+  </data>
+  <data name="SessionManager_folderBrowserDialogDescription" xml:space="preserve">
+    <value>Выберите папку, куда будут помещаться файлы сеансов:</value>
+  </data>
+  <data name="SessionManager_ImportOverwrite" xml:space="preserve">
+    <value>Файл &quot;{0}&quot; уже существует в конечной папке.
+Перезаписать его?</value>
+  </data>
+  <data name="SessionManager_ImportStatusLabel" xml:space="preserve">
+    <value>Сеанс &quot;{0}&quot; распакован</value>
+  </data>
+  <data name="Form1_importFromZipToolStripMenuItem" xml:space="preserve">
+    <value>Импортировать из ZIP-архива...</value>
+  </data>
+  <data name="QuestionYYANC_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="QuestionYYANC_noButton" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="QuestionYYANC_Title" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="QuestionYYANC_yesButton" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
+    <value>Да для всех</value>
+  </data>
+  <data name="MergeTabs_Conflict" xml:space="preserve">
+    <value>Вкладки под окном объединения обновлены.
+Повторно выберите интересующие вас вкладки, чтоы продолжить.</value>
+  </data>
+  <data name="Form1_copyIntoNoteToolStripMenuItem" xml:space="preserve">
+    <value>Копировать в новую заметку</value>
+  </data>
+  <data name="CustomFilesManager_UndoPanel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItemShortcutKeyDisplayString" xml:space="preserve">
+    <value>Ctrl+Z</value>
+  </data>
+  <data name="Options_noteModeGroupBox1" xml:space="preserve">
+    <value>Внешний вид</value>
+  </data>
+  <data name="Options_noteModeInfoLabel" xml:space="preserve">
+    <value>Примечание. Чтобы включить режим заметки, щелкните правой кнопкой мыши вкладку основной области редактирования и выберите команду &quot;Отображать как заметку поверх всех окон&quot;.</value>
+  </data>
+  <data name="Options_noteModeNode" xml:space="preserve">
+    <value>Режим заметки</value>
+  </data>
+  <data name="Options_noteModeSizeLabel" xml:space="preserve">
+    <value>Размер окна (x, y):</value>
+  </data>
+  <data name="Options_noteModeSizeXLabel" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="Options_noteModeTabsCheckBox" xml:space="preserve">
+    <value>Отображать вкладки как заметки</value>
+  </data>
+  <data name="XmlEditor_copyToolStripMenuItem" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="TabsSwitch_backButtonToolTip" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="TabsSwitch_nextButtonToolTip" xml:space="preserve">
+    <value>Далее</value>
+  </data>
+  <data name="TabsSwitch_pagingLabel" xml:space="preserve">
+    <value>Страница: {0}/{1}</value>
+  </data>
+  <data name="TabsSwitch_Title" xml:space="preserve">
+    <value>Переключение вкладок</value>
+  </data>
+  <data name="FavouriteManager_FileDialog" xml:space="preserve">
+    <value>Сеанс DtPad (*.dps)|*.dps</value>
+  </data>
+  <data name="Favourites_addFavouriteSessionButtonToolTip" xml:space="preserve">
+    <value>Добавить сеанс в избранное</value>
+  </data>
+  <data name="Favourites_addFavouriteUrlButtonToolTip" xml:space="preserve">
+    <value>Добавить URL-адрес в избранное</value>
+  </data>
+  <data name="FileListManager_AddedFavouriteUrl" xml:space="preserve">
+    <value>URL-адрес &quot;{0}&quot; добавлен в избранное.</value>
+  </data>
+  <data name="UrlEntry_Title_FavouriteMode" xml:space="preserve">
+    <value>Избранные URL-адреса</value>
+  </data>
+  <data name="Options_searchGroupBox2" xml:space="preserve">
+    <value>Клавиатура</value>
+  </data>
+  <data name="Options_searchReturnLabel" xml:space="preserve">
+    <value>По нажатию ENTER в поле поиска или замены:</value>
+  </data>
+  <data name="Options_searchReturnRadioButton1" xml:space="preserve">
+    <value>Запускать поиск</value>
+  </data>
+  <data name="Options_searchReturnRadioButton2" xml:space="preserve">
+    <value>Вставлять возврат каретки</value>
+  </data>
+  <data name="CsvEditor_applyButton" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="CsvEditor_closeButton" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="CsvEditor_CloseConfirm" xml:space="preserve">
+    <value>Все изменения будут потеряны. Продолжить?</value>
+  </data>
+  <data name="CsvEditor_delimiterComboBoxItems" xml:space="preserve">
+    <value>, (запятая)
+. (точка)
+; (точка с запятой)
+- (дефис)</value>
+  </data>
+  <data name="CsvEditor_delimiterLabel" xml:space="preserve">
+    <value>Разделитель:</value>
+  </data>
+  <data name="CsvEditor_headerCheckBox" xml:space="preserve">
+    <value>Есть заголовок</value>
+  </data>
+  <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
+    <value>[Без кавычек]
+&quot; (кавычки)
+&apos; (одинарные кавычки)</value>
+  </data>
+  <data name="CsvEditor_quoteLabel" xml:space="preserve">
+    <value>Кавычки:</value>
+  </data>
+  <data name="CsvEditor_settingsGroupBox" xml:space="preserve">
+    <value>Конфигурация файла</value>
+  </data>
+  <data name="CsvEditor_Title" xml:space="preserve">
+    <value>Редактор CSV-файлов</value>
+  </data>
+  <data name="CsvManager_ContentError" xml:space="preserve">
+    <value>Содержимое не соответствует формату CSV и не может быть отображено в редакторе.
+Если вы уверены в обратном, уведомите автора об этой ошибке, приложив текст.</value>
+  </data>
+  <data name="CsvManager_NoResults" xml:space="preserve">
+    <value>Указанный разделитель не дал результатов.
+Попытайтесь выбрать другой разделитель.</value>
+  </data>
+  <data name="CsvManager_StandardColumnLabel" xml:space="preserve">
+    <value>Столбец {0}</value>
+  </data>
+  <data name="Form1_csvEditorToolStripMenuItem" xml:space="preserve">
+    <value>Редактор CSV-файлов</value>
+  </data>
+  <data name="Form1_csvEditorToolStripButton" xml:space="preserve">
+    <value>Редактор CSV-файлов</value>
+  </data>
+  <data name="CsvEditor_ResetChanges" xml:space="preserve">
+    <value>Все изменения, сделанные в CSV-файле, будут потеряны.
+Продолжить?</value>
+  </data>
+  <data name="CsvEditor_addNewColumnToolStripButton" xml:space="preserve">
+    <value>Добавить столбец</value>
+  </data>
+  <data name="CsvEditor_addNewColumnToolStripTextBox" xml:space="preserve">
+    <value>Введите имя нового столбца</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedRowsToolStripMenuItem" xml:space="preserve">
+    <value>Удалить выделенные строки</value>
+  </data>
+  <data name="CsvEditor_undoAllToolStripMenuItem" xml:space="preserve">
+    <value>Отменить все</value>
+  </data>
+  <data name="CsvEditor_undoToolStripMenuItem" xml:space="preserve">
+    <value>Отменить последнее действие</value>
+  </data>
+  <data name="CsvEditor_undoToolStripSplitButton" xml:space="preserve">
+    <value>Отменить последнее действие</value>
+  </data>
+  <data name="CsvEditor_allToolStripMenuItem" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="CsvEditor_currentColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Текущие столбцы</value>
+  </data>
+  <data name="CsvEditor_currentRowsToolStripMenuItem" xml:space="preserve">
+    <value>Текущие строки</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedColumnsToolStripButton" xml:space="preserve">
+    <value>Удалить выделенные столбцы</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Удалить выделенные столбцы</value>
+  </data>
+  <data name="CsvEditor_deleteSelectedRowsToolStripButton" xml:space="preserve">
+    <value>Удалить выделенные строки</value>
+  </data>
+  <data name="CsvEditor_selectCurrentColumnsToolStripMenuItem" xml:space="preserve">
+    <value>Выделить текущие столбцы</value>
+  </data>
+  <data name="CsvEditor_selectCurrentRowsToolStripMenuItem" xml:space="preserve">
+    <value>Выделить текущие строки</value>
+  </data>
+  <data name="CsvEditor_selectToolStripDropDownButton" xml:space="preserve">
+    <value>Выделить...</value>
+  </data>
+  <data name="CsvEditor_copyCustomToolStripMenuItem" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="CsvEditor_cutCustomToolStripMenuItem" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="CsvEditor_deleteCustomToolStripMenuItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="CsvEditor_pasteCustomToolStripMenuItem" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="CsvEditor_selectAllCustomToolStripMenuItem" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="CsvEditor_undoCustomToolStripMenuItem" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Form1_copyCommonStandardToolStripMenuItem" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="Form1_cutCommonStandardToolStripMenuItem" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="Form1_deleteCommonStandardToolStripMenuItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Form1_pasteCommonStandardToolStripMenuItem" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_selectAllCommonStandardToolStripMenuItem" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="Form1_undoCommonStandardToolStripMenuItem" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="CsvEditorHeader_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="CsvEditorHeader_ColumnLabel" xml:space="preserve">
+    <value>Стобец {0}:</value>
+  </data>
+  <data name="CsvEditorHeader_helpLabel" xml:space="preserve">
+    <value>Изменение или создание заголовка CSV-файла.</value>
+  </data>
+  <data name="CsvEditorHeader_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="CsvEditorHeader_Title" xml:space="preserve">
+    <value>Редактор CSV-файлов - Заголовок</value>
+  </data>
+  <data name="CsvEditor_editHeaderToolStripButton" xml:space="preserve">
+    <value>Изменить заголовок</value>
+  </data>
+  <data name="CsvEditorHeader_EmptyColumnName" xml:space="preserve">
+    <value>Имя по крайней мере одного столбца не указано.
+Заполните все поля, чтобы продолжить.</value>
+  </data>
+  <data name="DropboxManager_DropboxLogIn" xml:space="preserve">
+    <value>Произведен вход в Dropbox</value>
+  </data>
+  <data name="CsvEditor_screenshotToolStripButton" xml:space="preserve">
+    <value>Сделать снимок экрана с текущими данными</value>
+  </data>
+  <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
+    <value>Перенос по словам</value>
+  </data>
+</root>

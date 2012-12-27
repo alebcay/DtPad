@@ -84,13 +84,12 @@ namespace DtPadUpdater.Managers
                 updateTextBox.Text = updateTextBox.Text + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Read", className, culture);
 
                 WebClient webClient = ProxyUtil.InitWebClientProxy(executablePath, culture);
-                String fileContent = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-versioning.log");
-
-                String[] separator0 = { Environment.NewLine };
-                String[] split0 = fileContent.Split(separator0, StringSplitOptions.RemoveEmptyEntries);
 
                 fromVersion = AssemblyUtil.GetAssemblyVersion(updateBackupPath, "DtPad.exe");
                 toVersion = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-lastversion.log");
+
+                String fileContent = webClient.DownloadString(ProxyUtil.GetRepository() + "dtpad-versioning.log");
+                String[] split0 = fileContent.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
                 foreach (String t in split0)
                 {
                     if (t.StartsWith(ConstantUtil.commentStart))
@@ -98,11 +97,8 @@ namespace DtPadUpdater.Managers
                         continue; //Log comment row, the search continues from next log row
                     }
 
-                    String[] separator1 = { "§" };
-                    String[] split1 = t.Split(separator1, StringSplitOptions.RemoveEmptyEntries);
-
-                    String[] separator2 = { "-" };
-                    String[] split2 = split1[0].Split(separator2, StringSplitOptions.RemoveEmptyEntries);
+                    String[] split1 = t.Split(new[] { "§" }, StringSplitOptions.RemoveEmptyEntries);
+                    String[] split2 = split1[0].Split(new[] { "-" }, StringSplitOptions.RemoveEmptyEntries);
 
                     if (split2[0] != fromVersion)
                     {
@@ -114,8 +110,7 @@ namespace DtPadUpdater.Managers
                     updateTextBox.Text = updateTextBox.Text + Environment.NewLine + LanguageUtil.GetCurrentLanguageString("Update", className, culture);
                     form.Refresh();
 
-                    String[] separator3 = { "|" };
-                    String[] split3 = split1[1].Split(separator3, StringSplitOptions.RemoveEmptyEntries);
+                    String[] split3 = split1[1].Split(new[] { "|" }, StringSplitOptions.RemoveEmptyEntries);
 
                     updateProgressBar.PerformStep(); //2
 
@@ -124,8 +119,7 @@ namespace DtPadUpdater.Managers
 
                     foreach (String t1 in split3)
                     {
-                        String[] separator4 = { "%" };
-                        String[] split4 = t1.Split(separator4, StringSplitOptions.RemoveEmptyEntries);
+                        String[] split4 = t1.Split(new[] { "%" }, StringSplitOptions.RemoveEmptyEntries);
 
                         SwitchActions(form, split4[0], split4[1], executablePath, updateTextBox, webClient, culture);
                         updateProgressBar.PerformStep(); //n

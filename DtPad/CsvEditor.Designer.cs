@@ -99,7 +99,7 @@
             this.csvGridView.Name = "csvGridView";
             this.csvGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.csvGridView.Size = new System.Drawing.Size(673, 376);
-            this.csvGridView.TabIndex = 0;
+            this.csvGridView.TabIndex = 1;
             this.csvGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.csvGridView_CellValueChanged);
             this.csvGridView.ColumnDisplayIndexChanged += new System.Windows.Forms.DataGridViewColumnEventHandler(this.csvGridView_ColumnDisplayIndexChanged);
             this.csvGridView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.csvGridView_RowPostPaint);
@@ -176,7 +176,7 @@
             this.closeButton.Location = new System.Drawing.Point(543, 463);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(142, 23);
-            this.closeButton.TabIndex = 3;
+            this.closeButton.TabIndex = 4;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
@@ -213,7 +213,7 @@
             this.settingsGroupBox.Location = new System.Drawing.Point(12, 410);
             this.settingsGroupBox.Name = "settingsGroupBox";
             this.settingsGroupBox.Size = new System.Drawing.Size(525, 77);
-            this.settingsGroupBox.TabIndex = 1;
+            this.settingsGroupBox.TabIndex = 2;
             this.settingsGroupBox.TabStop = false;
             this.settingsGroupBox.Text = "File configuration";
             // 
@@ -222,7 +222,6 @@
             this.quoteComboBox.CustomContextMenuStrip = null;
             this.quoteComboBox.FormattingEnabled = true;
             this.quoteComboBox.Items.AddRange(new object[] {
-            global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems,
             "[Empty quote]",
             "\" (quotes)",
             "\' (single quote)"});
@@ -247,7 +246,6 @@
             this.delimiterComboBox.CustomContextMenuStrip = null;
             this.delimiterComboBox.FormattingEnabled = true;
             this.delimiterComboBox.Items.AddRange(new object[] {
-            global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems,
             ", (comma)",
             ". (dot)",
             "; (semicolon)",
@@ -277,7 +275,7 @@
             this.csvEditorToolStrip.Location = new System.Drawing.Point(0, 0);
             this.csvEditorToolStrip.Name = "csvEditorToolStrip";
             this.csvEditorToolStrip.Size = new System.Drawing.Size(697, 25);
-            this.csvEditorToolStrip.TabIndex = 4;
+            this.csvEditorToolStrip.TabIndex = 0;
             this.csvEditorToolStrip.Text = "csvEditorToolStrip";
             // 
             // undoToolStripSplitButton
@@ -508,8 +506,8 @@
             this.applyButton.Location = new System.Drawing.Point(543, 433);
             this.applyButton.Name = "applyButton";
             this.applyButton.Size = new System.Drawing.Size(142, 23);
-            this.applyButton.TabIndex = 2;
-            this.applyButton.Text = "Apply changes";
+            this.applyButton.TabIndex = 3;
+            this.applyButton.Text = "Apply Changes";
             this.applyButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.applyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.applyButton.UseVisualStyleBackColor = true;

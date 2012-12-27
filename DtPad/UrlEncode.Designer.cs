@@ -47,6 +47,7 @@
             this.stringToEncodeTextBox.Name = "stringToEncodeTextBox";
             this.stringToEncodeTextBox.Size = new System.Drawing.Size(432, 72);
             this.stringToEncodeTextBox.TabIndex = 1;
+            this.stringToEncodeTextBox.Tag = "DontTranslate";
             // 
             // encodedURLTextBox
             // 
@@ -55,6 +56,7 @@
             this.encodedURLTextBox.Name = "encodedURLTextBox";
             this.encodedURLTextBox.Size = new System.Drawing.Size(435, 72);
             this.encodedURLTextBox.TabIndex = 3;
+            this.encodedURLTextBox.Tag = "DontTranslate";
             // 
             // stringToEncodeLabel
             // 

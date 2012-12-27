@@ -1,0 +1,406 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorO_copyErrorDescriptionPictureBoxToolTip" xml:space="preserve">
+    <value>Копировать сообщение об ошибке в буфер</value>
+  </data>
+  <data name="ErrorO_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="ErrorO_Title" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Form1_availableSpaceLabel" xml:space="preserve">
+    <value>Свободно на диске:</value>
+  </data>
+  <data name="Form1_backButton" xml:space="preserve">
+    <value>&lt; Назад</value>
+  </data>
+  <data name="Form1_browseButton" xml:space="preserve">
+    <value>Обзор...</value>
+  </data>
+  <data name="Form1_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="Form1_cancelButtonExit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Form1_domainLabel" xml:space="preserve">
+    <value>Домен:</value>
+  </data>
+  <data name="Form1_destinationPathLabel" xml:space="preserve">
+    <value>Выберите папку для установки:</value>
+  </data>
+  <data name="Form1_dotNetRadioButton" xml:space="preserve">
+    <value>Стандартная</value>
+  </data>
+  <data name="Form1_enableProxySettingsCheckBox" xml:space="preserve">
+    <value>Использовать прокси-сервер</value>
+  </data>
+  <data name="Form1_EndPhase" xml:space="preserve">
+    <value>Завершение</value>
+  </data>
+  <data name="Form1_folderBrowserDialog" xml:space="preserve">
+    <value>Выберите папку для установки DtPad:</value>
+  </data>
+  <data name="Form1_infoLabel" xml:space="preserve">
+    <value>Сейчас DtPad поддерживает английский, итальянский, французский, испанский и русский языки. Возможно, в будущем он будет переведён и на другие языки. Если вы хотите помочь с локализацией, свяжитесь с автором через форму на следующей странице.</value>
+  </data>
+  <data name="Form1_installGroupBox1" xml:space="preserve">
+    <value>Установка</value>
+  </data>
+  <data name="Form1_InstallPhase" xml:space="preserve">
+    <value>Установка</value>
+  </data>
+  <data name="Form1_internetGroupBox1" xml:space="preserve">
+    <value>Соединение</value>
+  </data>
+  <data name="Form1_InternetPhase" xml:space="preserve">
+    <value>Интернет</value>
+  </data>
+  <data name="Form1_introHeaderLabel" xml:space="preserve">
+    <value>DtPad</value>
+  </data>
+  <data name="Form1_introLabel" xml:space="preserve">
+    <value>Вас приветствует программа установки DtPad!
+
+DtPad — это текстовый редактор на базе .NET Framework 4, распространяемый по лицензии Apache 2.0 (apache.org/licenses/LICENSE-2.0). Наличие среды .NET Framework 4 обязательно; при необходимости загрузите её с веб-сайта Майкрософт и установите.
+
+Чтобы продолжить, нажмите кнопку &quot;Далее&quot;.</value>
+  </data>
+  <data name="Form1_IntroPhase" xml:space="preserve">
+    <value>Введение</value>
+  </data>
+  <data name="Form1_label1" xml:space="preserve">
+    <value>Для подключения к Интернету DtPad использует настройки Internet Explorer .
+Если ваш ПК подключён через прокси-сервер с проверкой подлинности, введите выше имя пользователя и пароль.</value>
+  </data>
+  <data name="Form1_languageGroupBox1" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Form1_languageLabel" xml:space="preserve">
+    <value>Выберите язык:</value>
+  </data>
+  <data name="Form1_LanguagePhase" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="Form1_linkContattiLabel" xml:space="preserve">
+    <value>diariotraduttore.com/contatti</value>
+  </data>
+  <data name="Form1_lookAndFeelGroupBox1" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="Form1_LookAndFeelPhase" xml:space="preserve">
+    <value>Внешний вид</value>
+  </data>
+  <data name="Form1_minimizeOnTrayIconCheckBox" xml:space="preserve">
+    <value>Сворачивать в значок</value>
+  </data>
+  <data name="Form1_nextButton" xml:space="preserve">
+    <value>Далее &gt;</value>
+  </data>
+  <data name="Form1_nextButtonInstall" xml:space="preserve">
+    <value>Установка</value>
+  </data>
+  <data name="Form1_nextButtonStart" xml:space="preserve">
+    <value>Запустить DtPad</value>
+  </data>
+  <data name="Form1_passwordLabel" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="Form1_requiredSpaceLabel" xml:space="preserve">
+    <value>Требуется места:</value>
+  </data>
+  <data name="Form1_sendToCheckBox" xml:space="preserve">
+    <value>Создать ярлык в меню &quot;Отправить&quot;</value>
+  </data>
+  <data name="Form1_shortcutsCheckBox" xml:space="preserve">
+    <value>Создать ярлыки в меню &quot;Пуск&quot; и на рабочем столе</value>
+  </data>
+  <data name="Form1_skipSettingsCheckBox" xml:space="preserve">
+    <value>Пропустить настройки (их можно будет потом изменить в окне &quot;Параметры&quot;)</value>
+  </data>
+  <data name="Form1_statusLabel" xml:space="preserve">
+    <value>Состояние:</value>
+  </data>
+  <data name="Form1_stayOnTopCheckBox" xml:space="preserve">
+    <value>Поверх других окон</value>
+  </data>
+  <data name="Form1_stepLabel" xml:space="preserve">
+    <value>Введение</value>
+  </data>
+  <data name="Form1_Title" xml:space="preserve">
+    <value>Установка DtPad</value>
+  </data>
+  <data name="Form1_Unavailable" xml:space="preserve">
+    <value>Недоступен</value>
+  </data>
+  <data name="Form1_usernameLabel" xml:space="preserve">
+    <value>Имя пользователя:</value>
+  </data>
+  <data name="Form1_windowGroupBox1" xml:space="preserve">
+    <value>Окно</value>
+  </data>
+  <data name="Form1_WindowPhase" xml:space="preserve">
+    <value>Окно</value>
+  </data>
+  <data name="Form1_windowsRadioButton" xml:space="preserve">
+    <value>Классическая Windows</value>
+  </data>
+  <data name="InstallManager_CreatingAssociation" xml:space="preserve">
+    <value>Создание сопоставления файлов для меню &quot;Открыть с помощью&quot;...</value>
+  </data>
+  <data name="InstallManager_CreatingDir" xml:space="preserve">
+    <value>Создание каталогов...</value>
+  </data>
+  <data name="InstallManager_CreatingShortcut" xml:space="preserve">
+    <value>Создание ярлыков в меню &quot;Пуск&quot;...</value>
+  </data>
+  <data name="InstallManager_EndInfo" xml:space="preserve">
+    <value>Нажмите кнопку &quot;Запустить DtPad&quot;, чтобы открыть установленный редактор.</value>
+  </data>
+  <data name="InstallManager_Error1" xml:space="preserve">
+    <value>Ошибка при установке.</value>
+  </data>
+  <data name="InstallManager_Error2" xml:space="preserve">
+    <value>В папке установки могли остаться некоторые файлы.</value>
+  </data>
+  <data name="InstallManager_Exception" xml:space="preserve">
+    <value>Исключение:</value>
+  </data>
+  <data name="InstallManager_ExtractingFile" xml:space="preserve">
+    <value>Извлечение файлов...</value>
+  </data>
+  <data name="InstallManager_InstallComplete" xml:space="preserve">
+    <value>Установка успешно завершена.</value>
+  </data>
+  <data name="InstallManager_LinkLaunchDtPad" xml:space="preserve">
+    <value>Запустить DtPad</value>
+  </data>
+  <data name="InstallManager_LinkLaunchDtPadUpdater" xml:space="preserve">
+    <value>Запустить DtPad Updater</value>
+  </data>
+  <data name="InstallManager_LinkReadme" xml:space="preserve">
+    <value>Узнать подробнее о DtPad</value>
+  </data>
+  <data name="InstallManager_LinkWebsite" xml:space="preserve">
+    <value>Веб-сайт</value>
+  </data>
+  <data name="InstallManager_PreparingInstall" xml:space="preserve">
+    <value>Подготовка к установке...</value>
+  </data>
+  <data name="InstallManager_Unavailable" xml:space="preserve">
+    <value>Недоступен</value>
+  </data>
+  <data name="InstallManager_UpdatingSetting" xml:space="preserve">
+    <value>Обновление настроек...</value>
+  </data>
+  <data name="WindowManager_CommandExecution" xml:space="preserve">
+    <value>Исполнение команды прервано.</value>
+  </data>
+  <data name="WindowManager_Exception" xml:space="preserve">
+    <value>Возникло исключение:</value>
+  </data>
+  <data name="WindowManager_FatalException" xml:space="preserve">
+    <value>Возникло неустранимое исключение:</value>
+  </data>
+  <data name="WindowManager_ProgramExecution" xml:space="preserve">
+    <value>Выполнение программы прервано.</value>
+  </data>
+  <data name="Form1_BrowseDescription" xml:space="preserve">
+    <value>Выберите папку для установки DtPad:</value>
+  </data>
+  <data name="InstallManager_LinkLaunchDtPadUninstaller" xml:space="preserve">
+    <value>Запустить DtPad Uninstaller</value>
+  </data>
+  <data name="Form1_testProxyButton" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="OptionManager_ConnectionTimeout" xml:space="preserve">
+    <value>Время ожидания соединения истекло.
+Тест занял более {0} секунд.</value>
+  </data>
+  <data name="AlertO_okButton" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="AlertO_Title" xml:space="preserve">
+    <value>Оповещение</value>
+  </data>
+  <data name="Form1_shellCheckBox" xml:space="preserve">
+    <value>Добавить ссылку в контекстное меню Проводника</value>
+  </data>
+  <data name="InstallManager_IntegratingShell" xml:space="preserve">
+    <value>Интеграция DtPad в контекстное меню Проводника...</value>
+  </data>
+  <data name="InstallManager_IntegratingShellError" xml:space="preserve">
+    <value>Ошибка при интеграции в контекстное меню Проводника.</value>
+  </data>
+  <data name="InstallManager_ShellString" xml:space="preserve">
+    <value>Открыть с помощью DtPad</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="Form1_copyToolStripMenuItem1" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="Form1_cutToolStripMenuItem1" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="Form1_deleteToolStripMenuItem1" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Form1_pasteToolStripMenuItem1" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="Form1_selectAllToolStripMenuItem1" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="Form1_undoToolStripMenuItem1" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="InstallManager_DestinationDirWithDtPad" xml:space="preserve">
+    <value>DtPad уже установлен в конечной папке. Продолжить?
+
+При перезаписи программы все конфигурационные файлы сохранятся.</value>
+  </data>
+  <data name="InstallManager_DestinationDirWithFiles" xml:space="preserve">
+    <value>В конечной папке уже есть файлы. Продолжить?
+
+В папку будут записаны файлы DtPad.</value>
+  </data>
+  <data name="WarningYNC_cancelButton" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="WarningYNC_noButton" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="WarningYNC_Title" xml:space="preserve">
+    <value>Предупреждение</value>
+  </data>
+  <data name="WarningYNC_yesButton" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="InstallManager_InstallInterrupted" xml:space="preserve">
+    <value>Установка прервана пользователем.</value>
+  </data>
+</root>

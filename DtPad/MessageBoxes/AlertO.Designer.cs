@@ -42,6 +42,7 @@ namespace DtPad.MessageBoxes
             this.alertPictureBox.Size = new System.Drawing.Size(50, 50);
             this.alertPictureBox.TabIndex = 0;
             this.alertPictureBox.TabStop = false;
+            this.alertPictureBox.Tag = "DontTranslate";
             // 
             // alertLabel
             // 
@@ -51,6 +52,7 @@ namespace DtPad.MessageBoxes
             this.alertLabel.Name = "alertLabel";
             this.alertLabel.Size = new System.Drawing.Size(53, 13);
             this.alertLabel.TabIndex = 0;
+            this.alertLabel.Tag = "DontTranslate";
             this.alertLabel.Text = "alertLabel";
             // 
             // okButton

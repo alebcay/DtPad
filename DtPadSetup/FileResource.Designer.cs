@@ -594,6 +594,16 @@ namespace DtPadSetup {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] ru_resources {
+            get {
+                object obj = ResourceManager.GetObject("ru_resources", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon SearchInFiles_ico {

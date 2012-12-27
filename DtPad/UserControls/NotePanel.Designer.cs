@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NotePanel));
+            this.nodeTextTextBox = new Customs.CustomTextBox();
+            this.noteTitleTextBox = new Customs.CustomTextBox();
             this.noteToolStrip = new System.Windows.Forms.ToolStrip();
             this.addNoteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.removeNoteToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -48,8 +50,6 @@
             this.notesTreeView = new System.Windows.Forms.TreeView();
             this.noteImageList = new System.Windows.Forms.ImageList(this.components);
             this.noteGroupBox = new System.Windows.Forms.Panel();
-            this.nodeTextTextBox = new DtPad.Customs.CustomTextBox();
-            this.noteTitleTextBox = new DtPad.Customs.CustomTextBox();
             this.noteContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.newToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -220,7 +220,7 @@
             // noteSplitContainer.Panel2
             // 
             this.noteSplitContainer.Panel2.Controls.Add(this.noteGroupBox);
-            this.noteSplitContainer.Size = new System.Drawing.Size(160, 297);
+            this.noteSplitContainer.Size = new System.Drawing.Size(150, 297);
             this.noteSplitContainer.SplitterDistance = 160;
             this.noteSplitContainer.TabIndex = 5;
             this.noteSplitContainer.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.noteSplitContainer_SplitterMoved);
@@ -240,7 +240,7 @@
             this.notesTreeView.ShowLines = false;
             this.notesTreeView.ShowPlusMinus = false;
             this.notesTreeView.ShowRootLines = false;
-            this.notesTreeView.Size = new System.Drawing.Size(150, 150);
+            this.notesTreeView.Size = new System.Drawing.Size(150, 160);
             this.notesTreeView.TabIndex = 0;
             this.notesTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.notesTreeView_AfterSelect);
             this.notesTreeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.notesTreeView_NodeMouseClick);
@@ -262,31 +262,32 @@
             this.noteGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.noteGroupBox.Location = new System.Drawing.Point(0, 0);
             this.noteGroupBox.Name = "noteGroupBox";
-            this.noteGroupBox.Size = new System.Drawing.Size(150, 143);
+            this.noteGroupBox.Size = new System.Drawing.Size(150, 133);
             this.noteGroupBox.TabIndex = 0;
-            this.noteGroupBox.TabStop = false;
             // 
             // nodeTextTextBox
             // 
             this.nodeTextTextBox.BackColor = System.Drawing.Color.LemonChiffon;
             this.nodeTextTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nodeTextTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nodeTextTextBox.Location = new System.Drawing.Point(3, 36);
+            this.nodeTextTextBox.Location = new System.Drawing.Point(0, 20);
             this.nodeTextTextBox.Multiline = true;
             this.nodeTextTextBox.Name = "nodeTextTextBox";
             this.nodeTextTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.nodeTextTextBox.Size = new System.Drawing.Size(144, 104);
+            this.nodeTextTextBox.Size = new System.Drawing.Size(150, 113);
             this.nodeTextTextBox.TabIndex = 1;
+            this.nodeTextTextBox.Tag = "DontTranslate";
             this.nodeTextTextBox.Leave += new System.EventHandler(this.nodeTextTextBox_Leave);
             // 
             // noteTitleTextBox
             // 
             this.noteTitleTextBox.BackColor = System.Drawing.Color.LemonChiffon;
             this.noteTitleTextBox.Dock = System.Windows.Forms.DockStyle.Top;
-            this.noteTitleTextBox.Location = new System.Drawing.Point(3, 16);
+            this.noteTitleTextBox.Location = new System.Drawing.Point(0, 0);
             this.noteTitleTextBox.Name = "noteTitleTextBox";
-            this.noteTitleTextBox.Size = new System.Drawing.Size(144, 20);
+            this.noteTitleTextBox.Size = new System.Drawing.Size(150, 20);
             this.noteTitleTextBox.TabIndex = 0;
+            this.noteTitleTextBox.Tag = "DontTranslate";
             this.noteTitleTextBox.Leave += new System.EventHandler(this.noteTitleTextBox_Leave);
             // 
             // noteContextMenuStrip
@@ -299,7 +300,7 @@
             this.toolStripSeparator5,
             this.tagToolStripMenuItem});
             this.noteContextMenuStrip.Name = "noteContextMenuStrip";
-            this.noteContextMenuStrip.Size = new System.Drawing.Size(155, 126);
+            this.noteContextMenuStrip.Size = new System.Drawing.Size(155, 104);
             // 
             // newToolStripMenuItem3
             // 

@@ -54,22 +54,26 @@ namespace DtPad
             // 
             // checkProgressBar
             // 
+            this.checkProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.checkProgressBar.Location = new System.Drawing.Point(13, 40);
             this.checkProgressBar.Name = "checkProgressBar";
             this.checkProgressBar.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.checkProgressBar.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.checkProgressBar.Properties.ShowTitle = true;
             this.checkProgressBar.Properties.Step = 25;
-            this.checkProgressBar.Size = new System.Drawing.Size(267, 23);
+            this.checkProgressBar.Size = new System.Drawing.Size(329, 23);
             this.checkProgressBar.TabIndex = 2;
+            this.checkProgressBar.Tag = "DontTranslate";
             // 
             // updateButton
             // 
+            this.updateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.updateButton.Enabled = false;
             this.updateButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.updateButton.Location = new System.Drawing.Point(110, 79);
+            this.updateButton.Location = new System.Drawing.Point(161, 79);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(89, 23);
+            this.updateButton.Size = new System.Drawing.Size(100, 23);
             this.updateButton.TabIndex = 3;
             this.updateButton.Text = "Update";
             this.updateButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -80,7 +84,7 @@ namespace DtPad
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(55, 13);
+            this.statusLabel.Location = new System.Drawing.Point(74, 13);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(61, 13);
             this.statusLabel.TabIndex = 1;
@@ -88,8 +92,9 @@ namespace DtPad
             // 
             // closeButton
             // 
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.closeButton.Location = new System.Drawing.Point(205, 79);
+            this.closeButton.Location = new System.Drawing.Point(267, 79);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 4;
@@ -100,6 +105,7 @@ namespace DtPad
             // 
             // warningPictureBox
             // 
+            this.warningPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.warningPictureBox.Cursor = System.Windows.Forms.Cursors.Help;
             this.warningPictureBox.Image = global::DtPad.ToolbarResource.question_red;
             this.warningPictureBox.InitialImage = null;
@@ -114,9 +120,10 @@ namespace DtPad
             // 
             // newVersionPictureBox
             // 
+            this.newVersionPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.newVersionPictureBox.Image = global::DtPad.ToolbarResource.info_blue;
             this.newVersionPictureBox.InitialImage = null;
-            this.newVersionPictureBox.Location = new System.Drawing.Point(264, 10);
+            this.newVersionPictureBox.Location = new System.Drawing.Point(326, 10);
             this.newVersionPictureBox.Name = "newVersionPictureBox";
             this.newVersionPictureBox.Size = new System.Drawing.Size(16, 16);
             this.newVersionPictureBox.TabIndex = 7;
@@ -129,7 +136,7 @@ namespace DtPad
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.closeButton;
-            this.ClientSize = new System.Drawing.Size(292, 114);
+            this.ClientSize = new System.Drawing.Size(354, 114);
             this.Controls.Add(this.newVersionPictureBox);
             this.Controls.Add(this.warningPictureBox);
             this.Controls.Add(this.closeButton);

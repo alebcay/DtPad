@@ -231,9 +231,9 @@ namespace DtPadUpdater
             // progressBar
             // 
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar.Location = new System.Drawing.Point(228, 3);
+            this.progressBar.Location = new System.Drawing.Point(281, 3);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(125, 18);
+            this.progressBar.Size = new System.Drawing.Size(72, 18);
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar.TabIndex = 4;
             // 

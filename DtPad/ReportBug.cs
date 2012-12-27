@@ -17,8 +17,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { nameTextBox, emailTextBox, errorMessageTextBox, descriptionTextBox });
             LanguageUtil.SetCurrentLanguage(this);
+            ControlUtil.SetContextMenuStrip(this, new[] { nameTextBox, emailTextBox, errorMessageTextBox, descriptionTextBox });
         }
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)

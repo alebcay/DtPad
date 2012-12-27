@@ -11,6 +11,7 @@ using DtPad.Exceptions;
 using DtPad.Utils;
 using DtPad.Validators;
 using ICSharpCode.SharpZipLib.Zip;
+using Microsoft.VisualBasic.FileIO;
 
 namespace DtPad.Managers
 {
@@ -246,11 +247,15 @@ namespace DtPad.Managers
 
                     if (!anonymousFile)
                     {
+                        String fileNameWithoutPath = Path.GetFileName(fileName);
+
                         pageTextBox.CustomModified = false;
                         ProgramUtil.SetFilenameTabPage(pagesTabControl.SelectedTabPage, fileName);
                         pagesTabControl.SelectedTabPage.ImageIndex = fileInfo.IsReadOnly ? 2 : 0;
-                        pagesTabControl.SelectedTabPage.Text = Path.GetFileName(fileName);
-                        form.Text = String.Format("DtPad - {0}", Path.GetFileName(fileName));
+                        pagesTabControl.SelectedTabPage.Text = fileNameWithoutPath;
+                        pagesTabControl.SelectedTabPage.Tooltip = fileName;
+                        pagesTabControl.SelectedTabPage.TooltipTitle = fileNameWithoutPath;
+                        form.Text = String.Format("DtPad - {0}", fileNameWithoutPath);
                         TabManager.ToggleTabFileTools(form, true);
                     }
                     else
@@ -998,7 +1003,7 @@ namespace DtPad.Managers
                 ToggleReadonly(form);
             }
 
-            File.Delete(fileName);
+            FileSystem.DeleteFile(fileName, UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin); //File.Delete(fileName);
             toolStripStatusLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("FileDeleted", className), fileName);
 
             TabManager.ClosePage(form, false);

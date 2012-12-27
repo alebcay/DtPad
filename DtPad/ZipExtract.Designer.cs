@@ -50,9 +50,9 @@
             this.zipContentDataGridView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.zipContentDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.zipContentDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.zipContentDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.zipContentDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.zipContentDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.zipContentDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
@@ -71,6 +71,7 @@
             this.zipContentDataGridView.ShowRowErrors = false;
             this.zipContentDataGridView.Size = new System.Drawing.Size(507, 249);
             this.zipContentDataGridView.TabIndex = 3;
+            this.zipContentDataGridView.Tag = "DontTranslate";
             // 
             // zipContentLabel
             // 
@@ -97,11 +98,14 @@
             // 
             this.extractSelectedFilesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.extractSelectedFilesButton.AutoSize = true;
-            this.extractSelectedFilesButton.Location = new System.Drawing.Point(310, 312);
+            this.extractSelectedFilesButton.Image = global::DtPad.MessageBoxResource.ok;
+            this.extractSelectedFilesButton.Location = new System.Drawing.Point(232, 312);
             this.extractSelectedFilesButton.Name = "extractSelectedFilesButton";
-            this.extractSelectedFilesButton.Size = new System.Drawing.Size(132, 23);
+            this.extractSelectedFilesButton.Size = new System.Drawing.Size(210, 23);
             this.extractSelectedFilesButton.TabIndex = 4;
             this.extractSelectedFilesButton.Text = "Extract Selected Files";
+            this.extractSelectedFilesButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.extractSelectedFilesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.extractSelectedFilesButton.UseVisualStyleBackColor = true;
             this.extractSelectedFilesButton.Click += new System.EventHandler(this.extractSelectedFilesButton_Click);
             // 
@@ -121,6 +125,7 @@
             this.filenameLabel.Name = "filenameLabel";
             this.filenameLabel.Size = new System.Drawing.Size(72, 13);
             this.filenameLabel.TabIndex = 1;
+            this.filenameLabel.Tag = "DontTranslate";
             this.filenameLabel.Text = "filenameLabel";
             // 
             // copyArchiveContentPictureBox

@@ -131,7 +131,7 @@
             this.sortTabsAlphabeticallyToolStripButton.Image = global::DtPad.ToolbarResource.sort;
             this.sortTabsAlphabeticallyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.sortTabsAlphabeticallyToolStripButton.Name = "sortTabsAlphabeticallyToolStripButton";
-            this.sortTabsAlphabeticallyToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.sortTabsAlphabeticallyToolStripButton.Size = new System.Drawing.Size(23, 20);
             this.sortTabsAlphabeticallyToolStripButton.Text = "Sort Tabs Alphabetically";
             this.sortTabsAlphabeticallyToolStripButton.Click += new System.EventHandler(this.sortTabsAlphabeticallyToolStripButton_Click);
             // 
@@ -140,7 +140,6 @@
             this.tabExplorerTreeView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tabExplorerTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabExplorerTreeView.FullRowSelect = true;
-            this.tabExplorerTreeView.HideSelection = true;
             this.tabExplorerTreeView.ImageIndex = 0;
             this.tabExplorerTreeView.ImageList = this.imageList;
             this.tabExplorerTreeView.Indent = 5;
@@ -152,6 +151,7 @@
             this.tabExplorerTreeView.ShowRootLines = false;
             this.tabExplorerTreeView.Size = new System.Drawing.Size(150, 125);
             this.tabExplorerTreeView.TabIndex = 1;
+            this.tabExplorerTreeView.Tag = "DontTranslate";
             this.tabExplorerTreeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.tabExplorerTreeView_NodeMouseClick);
             this.tabExplorerTreeView.LostFocus += new System.EventHandler(this.tabExplorerTreeView_LostFocus);
             // 

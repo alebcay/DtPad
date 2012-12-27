@@ -21,8 +21,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { descriptionTextBox, textTextBox });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { descriptionTextBox, textTextBox });
 
             templateObjectList = TemplateManager.LoadTemplatesList(this);
         }

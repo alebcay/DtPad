@@ -1,4 +1,4 @@
-namespace DtPad
+﻿namespace DtPad
 {
     partial class Options
     {
@@ -29,28 +29,28 @@ namespace DtPad
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Encoding");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Opening");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Saving");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("File", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Session");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Search");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Text");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Language");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Tab");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Note Mode");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Look & Feel");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
-            treeNode11});
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Updates");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Dropbox");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Internet", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Shell Integration");
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Encoding");
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Opening");
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("Saving");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("File", new System.Windows.Forms.TreeNode[] {
+            treeNode65,
+            treeNode66,
+            treeNode67});
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("Session");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("Search");
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("Text");
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("Language");
+            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("Tab");
+            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("Note Mode");
+            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Look & Feel");
+            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
+            treeNode75});
+            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("Updates");
+            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Dropbox");
+            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Internet", new System.Windows.Forms.TreeNode[] {
+            treeNode77,
+            treeNode78});
+            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("Shell Integration");
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -285,49 +285,49 @@ namespace DtPad
             // 
             this.optionsTreeView.Location = new System.Drawing.Point(13, 13);
             this.optionsTreeView.Name = "optionsTreeView";
-            treeNode1.Name = "encodingNode";
-            treeNode1.Text = "Encoding";
-            treeNode2.Name = "openingNode";
-            treeNode2.Text = "Opening";
-            treeNode3.Name = "savingNode";
-            treeNode3.Text = "Saving";
-            treeNode4.Name = "fileNode";
-            treeNode4.Text = "File";
-            treeNode5.Name = "sessionNode";
-            treeNode5.Text = "Session";
-            treeNode6.Name = "searchNode";
-            treeNode6.Text = "Search";
-            treeNode7.Name = "formatNode";
-            treeNode7.Text = "Text";
-            treeNode8.Name = "languageNode";
-            treeNode8.Text = "Language";
-            treeNode9.Name = "tabNode";
-            treeNode9.Text = "Tab";
-            treeNode10.Name = "noteModeNode";
-            treeNode10.Text = "Note Mode";
-            treeNode11.Name = "lookAndFeelNode";
-            treeNode11.Text = "Look & Feel";
-            treeNode12.Name = "viewNode";
-            treeNode12.Text = "View";
-            treeNode13.Name = "updateNode";
-            treeNode13.Text = "Updates";
-            treeNode14.Name = "dropboxNode";
-            treeNode14.Text = "Dropbox";
-            treeNode15.Name = "internetNode";
-            treeNode15.Text = "Internet";
-            treeNode16.Name = "shellNode";
-            treeNode16.Text = "Shell Integration";
+            treeNode65.Name = "encodingNode";
+            treeNode65.Text = "Encoding";
+            treeNode66.Name = "openingNode";
+            treeNode66.Text = "Opening";
+            treeNode67.Name = "savingNode";
+            treeNode67.Text = "Saving";
+            treeNode68.Name = "fileNode";
+            treeNode68.Text = "File";
+            treeNode69.Name = "sessionNode";
+            treeNode69.Text = "Session";
+            treeNode70.Name = "searchNode";
+            treeNode70.Text = "Search";
+            treeNode71.Name = "formatNode";
+            treeNode71.Text = "Text";
+            treeNode72.Name = "languageNode";
+            treeNode72.Text = "Language";
+            treeNode73.Name = "tabNode";
+            treeNode73.Text = "Tab";
+            treeNode74.Name = "noteModeNode";
+            treeNode74.Text = "Note Mode";
+            treeNode75.Name = "lookAndFeelNode";
+            treeNode75.Text = "Look & Feel";
+            treeNode76.Name = "viewNode";
+            treeNode76.Text = "View";
+            treeNode77.Name = "updateNode";
+            treeNode77.Text = "Updates";
+            treeNode78.Name = "dropboxNode";
+            treeNode78.Text = "Dropbox";
+            treeNode79.Name = "internetNode";
+            treeNode79.Text = "Internet";
+            treeNode80.Name = "shellNode";
+            treeNode80.Text = "Shell Integration";
             this.optionsTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode12,
-            treeNode15,
-            treeNode16});
+            treeNode68,
+            treeNode69,
+            treeNode70,
+            treeNode71,
+            treeNode72,
+            treeNode73,
+            treeNode74,
+            treeNode76,
+            treeNode79,
+            treeNode80});
             this.optionsTreeView.Size = new System.Drawing.Size(131, 287);
             this.optionsTreeView.TabIndex = 0;
             this.optionsTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.optionsTreeView_AfterSelect);
@@ -369,6 +369,7 @@ namespace DtPad
             // 
             // searchHistoryNumericUpDown
             // 
+            this.searchHistoryNumericUpDown.CustomContextMenuStrip = null;
             this.searchHistoryNumericUpDown.Location = new System.Drawing.Point(120, 92);
             this.searchHistoryNumericUpDown.Maximum = new decimal(new int[] {
             15,
@@ -383,6 +384,7 @@ namespace DtPad
             this.searchHistoryNumericUpDown.Name = "searchHistoryNumericUpDown";
             this.searchHistoryNumericUpDown.Size = new System.Drawing.Size(44, 20);
             this.searchHistoryNumericUpDown.TabIndex = 4;
+            this.searchHistoryNumericUpDown.Tag = "DontTranslate";
             this.searchHistoryNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
@@ -403,9 +405,9 @@ namespace DtPad
             this.loopAtEOFCheckBox.AutoSize = true;
             this.loopAtEOFCheckBox.Location = new System.Drawing.Point(10, 66);
             this.loopAtEOFCheckBox.Name = "loopAtEOFCheckBox";
-            this.loopAtEOFCheckBox.Size = new System.Drawing.Size(141, 17);
+            this.loopAtEOFCheckBox.Size = new System.Drawing.Size(117, 17);
             this.loopAtEOFCheckBox.TabIndex = 2;
-            this.loopAtEOFCheckBox.Text = "Loop at end of file (EOF)";
+            this.loopAtEOFCheckBox.Text = "Loop at End-Of-File";
             this.loopAtEOFCheckBox.UseVisualStyleBackColor = true;
             // 
             // caseSensitiveCheckBox
@@ -474,7 +476,7 @@ namespace DtPad
             // cancelButton
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(343, 315);
+            this.cancelButton.Location = new System.Drawing.Point(320, 315);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 17;
@@ -521,6 +523,7 @@ namespace DtPad
             this.backgroundColorTextBox.ReadOnly = true;
             this.backgroundColorTextBox.Size = new System.Drawing.Size(52, 17);
             this.backgroundColorTextBox.TabIndex = 7;
+            this.backgroundColorTextBox.Tag = "DontTranslate";
             // 
             // fontColorTextBox
             // 
@@ -532,6 +535,7 @@ namespace DtPad
             this.fontColorTextBox.ReadOnly = true;
             this.fontColorTextBox.Size = new System.Drawing.Size(52, 17);
             this.fontColorTextBox.TabIndex = 5;
+            this.fontColorTextBox.Tag = "DontTranslate";
             // 
             // backgroundButton
             // 
@@ -568,6 +572,7 @@ namespace DtPad
             this.fontLabel1.Name = "fontLabel1";
             this.fontLabel1.Size = new System.Drawing.Size(57, 13);
             this.fontLabel1.TabIndex = 2;
+            this.fontLabel1.Tag = "DontTranslate";
             this.fontLabel1.Text = "fontLabel1";
             // 
             // fontLabel
@@ -622,6 +627,7 @@ namespace DtPad
             this.keepBulletListOnReturnLabel2.Name = "keepBulletListOnReturnLabel2";
             this.keepBulletListOnReturnLabel2.Size = new System.Drawing.Size(182, 14);
             this.keepBulletListOnReturnLabel2.TabIndex = 5;
+            this.keepBulletListOnReturnLabel2.Tag = "DontTranslate";
             this.keepBulletListOnReturnLabel2.Text = "\'1) \', \'1. \', \'1- \', \'- \'";
             // 
             // keepBulletListOnReturnLabel
@@ -694,8 +700,9 @@ namespace DtPad
             this.languageComboBox.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Fran�ais", "Fran�ais", 2),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Espa�ol", "Espa�ol", 3)});
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Pусский", "Pусский", 5)});
             this.languageComboBox.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.languageComboBox.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.languageComboBox.Properties.SmallImages = this.languageImageList;
@@ -711,6 +718,7 @@ namespace DtPad
             this.languageImageList.Images.SetKeyName(2, "flag-fra.png");
             this.languageImageList.Images.SetKeyName(3, "flag-esp.png");
             this.languageImageList.Images.SetKeyName(4, "flag-ger.png");
+            this.languageImageList.Images.SetKeyName(5, "flag-rus.png");
             // 
             // languageLabel
             // 
@@ -821,6 +829,7 @@ namespace DtPad
             // 
             // hideLinesNumericUpDown
             // 
+            this.hideLinesNumericUpDown.CustomContextMenuStrip = null;
             this.hideLinesNumericUpDown.Location = new System.Drawing.Point(284, 42);
             this.hideLinesNumericUpDown.Maximum = new decimal(new int[] {
             9999999,
@@ -835,6 +844,7 @@ namespace DtPad
             this.hideLinesNumericUpDown.Name = "hideLinesNumericUpDown";
             this.hideLinesNumericUpDown.Size = new System.Drawing.Size(49, 20);
             this.hideLinesNumericUpDown.TabIndex = 3;
+            this.hideLinesNumericUpDown.Tag = "DontTranslate";
             this.hideLinesNumericUpDown.Value = new decimal(new int[] {
             2,
             0,
@@ -943,6 +953,7 @@ namespace DtPad
             // 
             // proxyPortNumericUpDown
             // 
+            this.proxyPortNumericUpDown.CustomContextMenuStrip = null;
             this.proxyPortNumericUpDown.Location = new System.Drawing.Point(74, 170);
             this.proxyPortNumericUpDown.Maximum = new decimal(new int[] {
             9999,
@@ -952,6 +963,7 @@ namespace DtPad
             this.proxyPortNumericUpDown.Name = "proxyPortNumericUpDown";
             this.proxyPortNumericUpDown.Size = new System.Drawing.Size(77, 20);
             this.proxyPortNumericUpDown.TabIndex = 12;
+            this.proxyPortNumericUpDown.Tag = "DontTranslate";
             // 
             // proxyHostTextBox
             // 
@@ -959,6 +971,7 @@ namespace DtPad
             this.proxyHostTextBox.Name = "proxyHostTextBox";
             this.proxyHostTextBox.Size = new System.Drawing.Size(258, 20);
             this.proxyHostTextBox.TabIndex = 10;
+            this.proxyHostTextBox.Tag = "DontTranslate";
             // 
             // proxyPortLabel
             // 
@@ -980,9 +993,9 @@ namespace DtPad
             // 
             // checkConnectionButton
             // 
-            this.checkConnectionButton.Location = new System.Drawing.Point(273, 112);
+            this.checkConnectionButton.Location = new System.Drawing.Point(254, 112);
             this.checkConnectionButton.Name = "checkConnectionButton";
-            this.checkConnectionButton.Size = new System.Drawing.Size(60, 23);
+            this.checkConnectionButton.Size = new System.Drawing.Size(79, 23);
             this.checkConnectionButton.TabIndex = 8;
             this.checkConnectionButton.Text = "Verify";
             this.checkConnectionButton.UseVisualStyleBackColor = true;
@@ -991,7 +1004,7 @@ namespace DtPad
             // infoProxyPictureBox
             // 
             this.infoProxyPictureBox.Image = global::DtPad.ToolbarResource.info_blue;
-            this.infoProxyPictureBox.Location = new System.Drawing.Point(248, 19);
+            this.infoProxyPictureBox.Location = new System.Drawing.Point(230, 19);
             this.infoProxyPictureBox.Name = "infoProxyPictureBox";
             this.infoProxyPictureBox.Size = new System.Drawing.Size(16, 16);
             this.infoProxyPictureBox.TabIndex = 9;
@@ -1013,6 +1026,7 @@ namespace DtPad
             this.domainTextBox.Name = "domainTextBox";
             this.domainTextBox.Size = new System.Drawing.Size(258, 20);
             this.domainTextBox.TabIndex = 7;
+            this.domainTextBox.Tag = "DontTranslate";
             this.domainTextBox.TextChanged += new System.EventHandler(this.domainTextBox_TextChanged);
             // 
             // passwordTextBox
@@ -1021,6 +1035,7 @@ namespace DtPad
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(258, 20);
             this.passwordTextBox.TabIndex = 5;
+            this.passwordTextBox.Tag = "DontTranslate";
             this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
             // 
@@ -1030,6 +1045,7 @@ namespace DtPad
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(258, 20);
             this.usernameTextBox.TabIndex = 3;
+            this.usernameTextBox.Tag = "DontTranslate";
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // domainLabel
@@ -1062,7 +1078,7 @@ namespace DtPad
             // statusLabel
             // 
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(270, 21);
+            this.statusLabel.Location = new System.Drawing.Point(251, 21);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(40, 13);
             this.statusLabel.TabIndex = 1;
@@ -1110,6 +1126,7 @@ namespace DtPad
             this.customBrowserTextBox.Name = "customBrowserTextBox";
             this.customBrowserTextBox.Size = new System.Drawing.Size(287, 20);
             this.customBrowserTextBox.TabIndex = 2;
+            this.customBrowserTextBox.Tag = "DontTranslate";
             // 
             // customBrowserRadioButton
             // 
@@ -1164,6 +1181,7 @@ namespace DtPad
             this.renderPictureBox.Size = new System.Drawing.Size(319, 226);
             this.renderPictureBox.TabIndex = 2;
             this.renderPictureBox.TabStop = false;
+            this.renderPictureBox.Tag = "DontTranslate";
             // 
             // renderModeComboBox
             // 
@@ -1238,6 +1256,7 @@ namespace DtPad
             this.specificFolderTextBox.Name = "specificFolderTextBox";
             this.specificFolderTextBox.Size = new System.Drawing.Size(287, 20);
             this.specificFolderTextBox.TabIndex = 2;
+            this.specificFolderTextBox.Tag = "DontTranslate";
             // 
             // specificFolderRadioButton
             // 
@@ -1304,12 +1323,13 @@ namespace DtPad
             this.extensionListBox.Name = "extensionListBox";
             this.extensionListBox.Size = new System.Drawing.Size(256, 121);
             this.extensionListBox.TabIndex = 4;
+            this.extensionListBox.Tag = "DontTranslate";
             // 
             // clearRecentFilesButton
             // 
-            this.clearRecentFilesButton.Location = new System.Drawing.Point(273, 15);
+            this.clearRecentFilesButton.Location = new System.Drawing.Point(258, 15);
             this.clearRecentFilesButton.Name = "clearRecentFilesButton";
-            this.clearRecentFilesButton.Size = new System.Drawing.Size(60, 23);
+            this.clearRecentFilesButton.Size = new System.Drawing.Size(75, 23);
             this.clearRecentFilesButton.TabIndex = 2;
             this.clearRecentFilesButton.Text = "Clear";
             this.clearRecentFilesButton.UseVisualStyleBackColor = true;
@@ -1317,6 +1337,7 @@ namespace DtPad
             // 
             // recentFilesNumberNumericUpDown
             // 
+            this.recentFilesNumberNumericUpDown.CustomContextMenuStrip = null;
             this.recentFilesNumberNumericUpDown.Location = new System.Drawing.Point(120, 18);
             this.recentFilesNumberNumericUpDown.Maximum = new decimal(new int[] {
             15,
@@ -1331,6 +1352,7 @@ namespace DtPad
             this.recentFilesNumberNumericUpDown.Name = "recentFilesNumberNumericUpDown";
             this.recentFilesNumberNumericUpDown.Size = new System.Drawing.Size(44, 20);
             this.recentFilesNumberNumericUpDown.TabIndex = 1;
+            this.recentFilesNumberNumericUpDown.Tag = "DontTranslate";
             this.recentFilesNumberNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
@@ -1354,11 +1376,12 @@ namespace DtPad
             // okButton
             // 
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(262, 315);
+            this.okButton.Location = new System.Drawing.Point(216, 315);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.Size = new System.Drawing.Size(98, 23);
             this.okButton.TabIndex = 16;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -1366,11 +1389,12 @@ namespace DtPad
             // applyButton
             // 
             this.applyButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.applyButton.Location = new System.Drawing.Point(424, 315);
+            this.applyButton.Location = new System.Drawing.Point(401, 315);
             this.applyButton.Name = "applyButton";
-            this.applyButton.Size = new System.Drawing.Size(75, 23);
+            this.applyButton.Size = new System.Drawing.Size(98, 23);
             this.applyButton.TabIndex = 18;
             this.applyButton.Text = "Apply";
+            this.applyButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.applyButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.applyButton.UseVisualStyleBackColor = true;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
@@ -1392,7 +1416,7 @@ namespace DtPad
             this.encodingGroupBox1.Controls.Add(this.useExistingCheckBox);
             this.encodingGroupBox1.Location = new System.Drawing.Point(3, 3);
             this.encodingGroupBox1.Name = "encodingGroupBox1";
-            this.encodingGroupBox1.Size = new System.Drawing.Size(346, 130);
+            this.encodingGroupBox1.Size = new System.Drawing.Size(346, 143);
             this.encodingGroupBox1.TabIndex = 0;
             this.encodingGroupBox1.TabStop = false;
             this.encodingGroupBox1.Text = "Encoding";
@@ -1401,7 +1425,7 @@ namespace DtPad
             // 
             this.noteLabel.Location = new System.Drawing.Point(10, 81);
             this.noteLabel.Name = "noteLabel";
-            this.noteLabel.Size = new System.Drawing.Size(323, 46);
+            this.noteLabel.Size = new System.Drawing.Size(323, 57);
             this.noteLabel.TabIndex = 3;
             this.noteLabel.Text = "Note: UTF-8 is a standard encoding method used by a great number of applications," +
     " as much as for ASCII. In case of lack of specific needs, it\'s recommended to us" +
@@ -1416,9 +1440,9 @@ namespace DtPad
             "UTF-8",
             "UTF-16 Big Endian",
             "UTF-32 Little Endian"});
-            this.defaultComboBox.Location = new System.Drawing.Point(60, 40);
+            this.defaultComboBox.Location = new System.Drawing.Point(93, 40);
             this.defaultComboBox.Name = "defaultComboBox";
-            this.defaultComboBox.Size = new System.Drawing.Size(273, 21);
+            this.defaultComboBox.Size = new System.Drawing.Size(240, 21);
             this.defaultComboBox.TabIndex = 2;
             // 
             // defaultLabel
@@ -1582,6 +1606,7 @@ namespace DtPad
             this.backupExtensionTextBox.Name = "backupExtensionTextBox";
             this.backupExtensionTextBox.Size = new System.Drawing.Size(154, 20);
             this.backupExtensionTextBox.TabIndex = 2;
+            this.backupExtensionTextBox.Tag = "DontTranslate";
             // 
             // backupExtensionLabel
             // 
@@ -1624,6 +1649,7 @@ namespace DtPad
             this.backupCustomFolderTextBox.Name = "backupCustomFolderTextBox";
             this.backupCustomFolderTextBox.Size = new System.Drawing.Size(287, 20);
             this.backupCustomFolderTextBox.TabIndex = 2;
+            this.backupCustomFolderTextBox.Tag = "DontTranslate";
             // 
             // backupCustomFolderRadioButton
             // 
@@ -1752,9 +1778,10 @@ namespace DtPad
             this.destinationImageComboBoxEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Fran�ais", "Fran�ais", 2),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Espa�ol", "Espa�ol", 3),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Pусский", "Pусский", 5)});
             this.destinationImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.destinationImageComboBoxEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.destinationImageComboBoxEdit.Properties.SmallImages = this.languageImageList;
@@ -1771,9 +1798,10 @@ namespace DtPad
             this.sourceImageComboBoxEdit.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Fran�ais", "Fran�ais", 2),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Espa�ol", "Espa�ol", 3),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Pусский", "Pусский", 5)});
             this.sourceImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.sourceImageComboBoxEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.sourceImageComboBoxEdit.Properties.SmallImages = this.languageImageList;
@@ -2091,13 +2119,14 @@ namespace DtPad
             this.noteModeGroupBox1.Controls.Add(this.noteModeTabsCheckBox);
             this.noteModeGroupBox1.Location = new System.Drawing.Point(3, 3);
             this.noteModeGroupBox1.Name = "noteModeGroupBox1";
-            this.noteModeGroupBox1.Size = new System.Drawing.Size(346, 131);
+            this.noteModeGroupBox1.Size = new System.Drawing.Size(346, 145);
             this.noteModeGroupBox1.TabIndex = 0;
             this.noteModeGroupBox1.TabStop = false;
             this.noteModeGroupBox1.Text = "Appearance";
             // 
             // noteModeSizeXNumericUpDown
             // 
+            this.noteModeSizeXNumericUpDown.CustomContextMenuStrip = null;
             this.noteModeSizeXNumericUpDown.Location = new System.Drawing.Point(159, 40);
             this.noteModeSizeXNumericUpDown.Maximum = new decimal(new int[] {
             3000,
@@ -2112,6 +2141,7 @@ namespace DtPad
             this.noteModeSizeXNumericUpDown.Name = "noteModeSizeXNumericUpDown";
             this.noteModeSizeXNumericUpDown.Size = new System.Drawing.Size(75, 20);
             this.noteModeSizeXNumericUpDown.TabIndex = 2;
+            this.noteModeSizeXNumericUpDown.Tag = "DontTranslate";
             this.noteModeSizeXNumericUpDown.Value = new decimal(new int[] {
             100,
             0,
@@ -2120,6 +2150,7 @@ namespace DtPad
             // 
             // noteModeSizeYNumericUpDown
             // 
+            this.noteModeSizeYNumericUpDown.CustomContextMenuStrip = null;
             this.noteModeSizeYNumericUpDown.Location = new System.Drawing.Point(258, 40);
             this.noteModeSizeYNumericUpDown.Maximum = new decimal(new int[] {
             3000,
@@ -2134,6 +2165,7 @@ namespace DtPad
             this.noteModeSizeYNumericUpDown.Name = "noteModeSizeYNumericUpDown";
             this.noteModeSizeYNumericUpDown.Size = new System.Drawing.Size(75, 20);
             this.noteModeSizeYNumericUpDown.TabIndex = 4;
+            this.noteModeSizeYNumericUpDown.Tag = "DontTranslate";
             this.noteModeSizeYNumericUpDown.Value = new decimal(new int[] {
             100,
             0,
@@ -2144,7 +2176,7 @@ namespace DtPad
             // 
             this.noteModeInfoLabel.Location = new System.Drawing.Point(10, 81);
             this.noteModeInfoLabel.Name = "noteModeInfoLabel";
-            this.noteModeInfoLabel.Size = new System.Drawing.Size(323, 46);
+            this.noteModeInfoLabel.Size = new System.Drawing.Size(323, 56);
             this.noteModeInfoLabel.TabIndex = 5;
             this.noteModeInfoLabel.Text = "Note: to enable the note mode, click with mouse right botton over a tab of the ma" +
     "in text editing area, and select \"Show As Note On Top\".";
@@ -2188,6 +2220,7 @@ namespace DtPad
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.applyButton);
+            this.Controls.Add(this.noteModePanel);
             this.Controls.Add(this.filePanel);
             this.Controls.Add(this.updatePanel);
             this.Controls.Add(this.dropboxPanel);
@@ -2203,7 +2236,6 @@ namespace DtPad
             this.Controls.Add(this.sessionPanel);
             this.Controls.Add(this.tabPanel);
             this.Controls.Add(this.savingPanel);
-            this.Controls.Add(this.noteModePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

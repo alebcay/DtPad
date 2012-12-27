@@ -133,6 +133,7 @@
 Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stocker l&apos;association &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
 
 Traduction française: Alain Buferne.
+Traduction russe: Artem Vakhitov.
 
 Icones: Delacro.
 - delacro.deviantart.com
@@ -418,7 +419,8 @@ les champs suivants dans le cas d&apos;une demande d&apos;authentification.</val
     <value>English
 Italiano
 Français
-Español</value>
+Español
+Pусский</value>
   </data>
   <data name="Options_languageLabel" xml:space="preserve">
     <value>Langue:</value>
@@ -515,7 +517,7 @@ Aide
 Autre</value>
   </data>
   <data name="ReportBug_areaLabel" xml:space="preserve">
-    <value>Zone: *</value>
+    <value>Zone de bug: *</value>
   </data>
   <data name="ReportBug_cancelButton" xml:space="preserve">
     <value>Annuler</value>
@@ -524,7 +526,7 @@ Autre</value>
     <value>Description: *</value>
   </data>
   <data name="ReportBug_emailLabel" xml:space="preserve">
-    <value>Email: *</value>
+    <value>Adresse email: *</value>
   </data>
   <data name="ReportBug_errorMessageLabel" xml:space="preserve">
     <value>Message d&apos;erreur (si présent):</value>
@@ -732,7 +734,7 @@ Salutations,</value>
     <value>Chemin et nom du fichier</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Boucler à l&apos;EOF</value>
+    <value>Boucler à la fin du fichier</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>Nouveau</value>
@@ -744,7 +746,7 @@ Salutations,</value>
     <value>Ouvrir le répertoire du fichier</value>
   </data>
   <data name="searchPanel_replaceLabel" xml:space="preserve">
-    <value>Remplacer:</value>
+    <value>Remplacer par:</value>
   </data>
   <data name="Form1_saveAsToolStripMenuItem1" xml:space="preserve">
     <value>Enregistrer sous...</value>
@@ -753,7 +755,7 @@ Salutations,</value>
     <value>Enregistrer</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Chercher tous onglets</value>
+    <value>Chercher en tous onglets</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Chercher:</value>
@@ -3808,7 +3810,7 @@ Vérifier l&apos;URL pour télécharge:
     <value>Supprimer le surlignage du texte</value>
   </data>
   <data name="MoveLines_lineLabel" xml:space="preserve">
-    <value>Position vers où déplacer la ligne courante:</value>
+    <value>Position vers où déplacer les lignes sélectionnées:</value>
   </data>
   <data name="tabPanel_moveTabFirstToolStripButton" xml:space="preserve">
     <value>Mettre en premier</value>
@@ -4032,8 +4034,7 @@ Sélectionner les onglets concernés pour poursuivre.</value>
 Etes vous sur de vouloir poursuivre?</value>
   </data>
   <data name="CsvEditor_delimiterComboBoxItems" xml:space="preserve">
-    <value>
-, (virgule)
+    <value>, (virgule)
 . (point)
 ; (point-virgule)
 - (tiret)</value>
@@ -4045,8 +4046,7 @@ Etes vous sur de vouloir poursuivre?</value>
     <value>En tête présent</value>
   </data>
   <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
-    <value>
-[No identifiant texte]
+    <value>[No identifiant texte]
 &quot; (citations)
 &apos; (apostrophe)</value>
   </data>

@@ -18,8 +18,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, regularExpressionTextBox);
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, regularExpressionTextBox);
 
             FileListManager.LoadRecentPatterns(this);
             regularExpressionTextBox.Focus();

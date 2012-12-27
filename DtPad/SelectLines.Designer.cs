@@ -49,6 +49,7 @@
             this.lineNumberLabel.Name = "lineNumberLabel";
             this.lineNumberLabel.Size = new System.Drawing.Size(86, 13);
             this.lineNumberLabel.TabIndex = 1;
+            this.lineNumberLabel.Tag = "DontTranslate";
             this.lineNumberLabel.Text = "lineNumberLabel";
             // 
             // lineNumberLabel1
@@ -56,12 +57,13 @@
             this.lineNumberLabel1.AutoSize = true;
             this.lineNumberLabel1.Location = new System.Drawing.Point(13, 13);
             this.lineNumberLabel1.Name = "lineNumberLabel1";
-            this.lineNumberLabel1.Size = new System.Drawing.Size(73, 13);
+            this.lineNumberLabel1.Size = new System.Drawing.Size(75, 13);
             this.lineNumberLabel1.TabIndex = 0;
-            this.lineNumberLabel1.Text = "Lines number:";
+            this.lineNumberLabel1.Text = "Rows number:";
             // 
             // lineFromNumericUpDown
             // 
+            this.lineFromNumericUpDown.CustomContextMenuStrip = null;
             this.lineFromNumericUpDown.Location = new System.Drawing.Point(65, 39);
             this.lineFromNumericUpDown.Minimum = new decimal(new int[] {
             1,
@@ -71,6 +73,7 @@
             this.lineFromNumericUpDown.Name = "lineFromNumericUpDown";
             this.lineFromNumericUpDown.Size = new System.Drawing.Size(114, 20);
             this.lineFromNumericUpDown.TabIndex = 3;
+            this.lineFromNumericUpDown.Tag = "DontTranslate";
             this.lineFromNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
@@ -79,6 +82,7 @@
             // 
             // lineToNumericUpDown
             // 
+            this.lineToNumericUpDown.CustomContextMenuStrip = null;
             this.lineToNumericUpDown.Location = new System.Drawing.Point(65, 65);
             this.lineToNumericUpDown.Minimum = new decimal(new int[] {
             1,
@@ -88,6 +92,7 @@
             this.lineToNumericUpDown.Name = "lineToNumericUpDown";
             this.lineToNumericUpDown.Size = new System.Drawing.Size(114, 20);
             this.lineToNumericUpDown.TabIndex = 5;
+            this.lineToNumericUpDown.Tag = "DontTranslate";
             this.lineToNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
@@ -115,11 +120,12 @@
             // okButton
             // 
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(28, 100);
+            this.okButton.Location = new System.Drawing.Point(28, 107);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 6;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -127,7 +133,7 @@
             // cancelButton
             // 
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(109, 100);
+            this.cancelButton.Location = new System.Drawing.Point(109, 107);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 7;
@@ -142,7 +148,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(196, 138);
+            this.ClientSize = new System.Drawing.Size(196, 142);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.toLabel);
@@ -159,7 +165,7 @@
             this.Name = "SelectLines";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Select lines";
+            this.Text = "Select Lines";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.SelectLines_HelpButtonClicked);
             ((System.ComponentModel.ISupportInitialize)(this.lineFromNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lineToNumericUpDown)).EndInit();

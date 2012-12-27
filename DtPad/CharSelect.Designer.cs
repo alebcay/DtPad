@@ -105,6 +105,7 @@
             this.charsDataGridView.ShowRowErrors = false;
             this.charsDataGridView.Size = new System.Drawing.Size(303, 243);
             this.charsDataGridView.TabIndex = 1;
+            this.charsDataGridView.Tag = "DontTranslate";
             this.charsDataGridView.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.charsDataGridView_CellMouseDoubleClick);
             // 
             // Column1

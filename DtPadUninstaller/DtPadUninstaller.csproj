@@ -115,6 +115,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>it.resx</DependentUpon>
     </Compile>
+    <Compile Include="Languages\ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ru.resx</DependentUpon>
+    </Compile>
     <Compile Include="Managers\OtherManager.cs" />
     <Compile Include="Managers\TextManager.cs" />
     <Compile Include="Managers\UninstallManager.cs" />
@@ -162,6 +167,10 @@
     <EmbeddedResource Include="Languages\it.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>it.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxes\AlertO.resx">
       <DependentUpon>AlertO.cs</DependentUpon>

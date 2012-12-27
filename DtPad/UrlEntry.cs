@@ -19,8 +19,8 @@ namespace DtPad
         internal void InitializeForm(bool addFavourite)
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, urlAddressComboBox);
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, urlAddressComboBox);
 
             FileListManager.LoadRecentURLs(this);
             favouriteMode = addFavourite;

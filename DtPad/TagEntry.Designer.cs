@@ -55,7 +55,7 @@
             this.typeGroupBox.Controls.Add(this.xhtmlRadioButton);
             this.typeGroupBox.Location = new System.Drawing.Point(12, 12);
             this.typeGroupBox.Name = "typeGroupBox";
-            this.typeGroupBox.Size = new System.Drawing.Size(170, 120);
+            this.typeGroupBox.Size = new System.Drawing.Size(188, 120);
             this.typeGroupBox.TabIndex = 0;
             this.typeGroupBox.TabStop = false;
             this.typeGroupBox.Text = "Type";
@@ -63,18 +63,20 @@
             // customTextBox2
             // 
             this.customTextBox2.Enabled = false;
-            this.customTextBox2.Location = new System.Drawing.Point(94, 89);
+            this.customTextBox2.Location = new System.Drawing.Point(105, 89);
             this.customTextBox2.Name = "customTextBox2";
-            this.customTextBox2.Size = new System.Drawing.Size(66, 20);
+            this.customTextBox2.Size = new System.Drawing.Size(77, 20);
             this.customTextBox2.TabIndex = 4;
+            this.customTextBox2.Tag = "DontTranslate";
             // 
             // customTextBox1
             // 
             this.customTextBox1.Enabled = false;
             this.customTextBox1.Location = new System.Drawing.Point(22, 89);
             this.customTextBox1.Name = "customTextBox1";
-            this.customTextBox1.Size = new System.Drawing.Size(66, 20);
+            this.customTextBox1.Size = new System.Drawing.Size(77, 20);
             this.customTextBox1.TabIndex = 3;
+            this.customTextBox1.Tag = "DontTranslate";
             // 
             // customRadioButton
             // 
@@ -113,9 +115,9 @@
             // 
             this.extensionGroupBox.Controls.Add(this.shortRadioButton);
             this.extensionGroupBox.Controls.Add(this.completeRadioButton);
-            this.extensionGroupBox.Location = new System.Drawing.Point(188, 12);
+            this.extensionGroupBox.Location = new System.Drawing.Point(206, 12);
             this.extensionGroupBox.Name = "extensionGroupBox";
-            this.extensionGroupBox.Size = new System.Drawing.Size(170, 70);
+            this.extensionGroupBox.Size = new System.Drawing.Size(191, 70);
             this.extensionGroupBox.TabIndex = 1;
             this.extensionGroupBox.TabStop = false;
             this.extensionGroupBox.Text = "Extension";
@@ -147,11 +149,12 @@
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.Enabled = false;
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(202, 146);
+            this.okButton.Location = new System.Drawing.Point(225, 146);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.Size = new System.Drawing.Size(91, 23);
             this.okButton.TabIndex = 4;
             this.okButton.Text = "Insert";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -160,7 +163,7 @@
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(283, 146);
+            this.cancelButton.Location = new System.Drawing.Point(322, 146);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 5;
@@ -170,16 +173,17 @@
             // 
             // tagTextBox
             // 
-            this.tagTextBox.Location = new System.Drawing.Point(243, 101);
+            this.tagTextBox.Location = new System.Drawing.Point(282, 101);
             this.tagTextBox.Name = "tagTextBox";
             this.tagTextBox.Size = new System.Drawing.Size(115, 20);
             this.tagTextBox.TabIndex = 3;
+            this.tagTextBox.Tag = "DontTranslate";
             this.tagTextBox.TextChanged += new System.EventHandler(this.tagTextBox_TextChanged);
             // 
             // tagLabel
             // 
             this.tagLabel.AutoSize = true;
-            this.tagLabel.Location = new System.Drawing.Point(191, 104);
+            this.tagLabel.Location = new System.Drawing.Point(209, 104);
             this.tagLabel.Name = "tagLabel";
             this.tagLabel.Size = new System.Drawing.Size(29, 13);
             this.tagLabel.TabIndex = 2;
@@ -191,7 +195,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(370, 179);
+            this.ClientSize = new System.Drawing.Size(409, 179);
             this.Controls.Add(this.tagLabel);
             this.Controls.Add(this.tagTextBox);
             this.Controls.Add(this.cancelButton);

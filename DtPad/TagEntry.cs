@@ -17,8 +17,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { customTextBox1, customTextBox2, tagTextBox });
             LanguageUtil.SetCurrentLanguage(this);
+            ControlUtil.SetContextMenuStrip(this, new[] { customTextBox1, customTextBox2, tagTextBox });
         }
 
         private void customRadioButton_CheckedChanged(object sender, EventArgs e)

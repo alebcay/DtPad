@@ -44,14 +44,15 @@ namespace DtPad
             // 
             // datetimeListBox
             // 
-            this.datetimeListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.datetimeListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.datetimeListBox.FormattingEnabled = true;
             this.datetimeListBox.Location = new System.Drawing.Point(12, 58);
             this.datetimeListBox.Name = "datetimeListBox";
             this.datetimeListBox.Size = new System.Drawing.Size(302, 82);
             this.datetimeListBox.TabIndex = 6;
+            this.datetimeListBox.Tag = "DontTranslate";
             this.datetimeListBox.SelectedIndexChanged += new System.EventHandler(this.datetimeListBox_SelectedIndexChanged);
             // 
             // descriptionLabel
@@ -87,8 +88,8 @@ namespace DtPad
             // 
             // dateDateTimePicker
             // 
-            this.dateDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dateDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dateDateTimePicker.CalendarTitleBackColor = System.Drawing.Color.SteelBlue;
             this.dateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateDateTimePicker.Location = new System.Drawing.Point(48, 12);
@@ -140,6 +141,7 @@ namespace DtPad
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 7;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);

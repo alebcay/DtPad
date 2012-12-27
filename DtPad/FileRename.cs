@@ -28,8 +28,8 @@ namespace DtPad
         internal void InitializeForm(FileTypes fileTypeToRename, String fileNameAndPath)
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { renameToTextBox, fileNameValueLabel, folderValueLabel });
             LanguageUtil.SetCurrentLanguage(this);
+            ControlUtil.SetContextMenuStrip(this, new[] { renameToTextBox, fileNameValueLabel, folderValueLabel });
 
             fileType = fileTypeToRename;
 

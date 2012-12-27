@@ -106,6 +106,8 @@ namespace DtPad.Utils
                     return new CultureInfo("fr-FR");
                 case "Español":
                     return new CultureInfo("es-ES");
+                case "Pусский":
+                    return new CultureInfo("ru-RU");
 
                 default:
                     return new CultureInfo("en-GB");
@@ -124,6 +126,8 @@ namespace DtPad.Utils
                     return "fr";
                 case "Español":
                     return "es";
+                case "Pусский":
+                    return "ru";
 
                 default:
                     return "en";
@@ -144,6 +148,8 @@ namespace DtPad.Utils
                     return "Español";
                 case "de":
                     return "Deutsch";
+                case "ru":
+                    return "Pусский";
 
                 default:
                     return "English";
@@ -164,6 +170,8 @@ namespace DtPad.Utils
                     return "es";
                 case "Deutsch":
                     return "de";
+                case "Pусский":
+                    return "ru";
 
                 default:
                     return "en";
@@ -181,6 +189,8 @@ namespace DtPad.Utils
                 case "Français":
                     return false;
                 case "Español":
+                    return false;
+                case "Pусский":
                     return false;
 
                 default:
@@ -204,6 +214,8 @@ namespace DtPad.Utils
                     return "dd/MM/yyyy HH:mm:ss";
                 case "Español":
                     return "dd/MM/yyyy HH:mm:ss";
+                case "Pусский":
+                    return "dd/MM/yyyy HH:mm:ss";
 
                 default:
                     return "MM/dd/yyyy hh:mm:ss tt";
@@ -221,6 +233,8 @@ namespace DtPad.Utils
                 case "Français":
                     return "dd/MM/yyyy";
                 case "Español":
+                    return "dd/MM/yyyy";
+                case "Pусский":
                     return "dd/MM/yyyy";
 
                 default:
@@ -244,6 +258,8 @@ namespace DtPad.Utils
                     return "fr";
                 case "Español":
                     return "es";
+                case "Pусский":
+                    return "ru";
 
                 default:
                     return "com";
@@ -258,6 +274,11 @@ namespace DtPad.Utils
         {
             foreach (Control control in controls)
             {
+                if (control.Tag != null && control.Tag.ToString() == ConstantUtil.dontTranslate)
+                {
+                    continue;
+                }
+
                 try
                 {
                     Type controlType = control.GetType();

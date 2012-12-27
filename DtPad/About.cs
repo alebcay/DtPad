@@ -22,8 +22,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, descriptionTextBox);
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, descriptionTextBox);
 
             versionLabel.Text = String.Format("{0} - build {1}", AssemblyUtil.AssemblyVersion, AssemblyUtil.AssemblyConfiguration);
 

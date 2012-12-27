@@ -19,7 +19,7 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-
+            LanguageUtil.SetCurrentLanguage(this);
             if (Owner is Form1)
             {
                 ControlUtil.SetContextMenuStrip(this, sizeNumericUpDown);
@@ -28,7 +28,6 @@ namespace DtPad
             {
                 ControlUtil.SetContextMenuStrip(Owner, sizeNumericUpDown);
             }
-            LanguageUtil.SetCurrentLanguage(this);
 
             if (Owner.GetType() == typeof(Form1))
             {

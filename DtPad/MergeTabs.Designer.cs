@@ -52,6 +52,7 @@ namespace DtPad
             this.tabPagesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.tabPagesListBox.Size = new System.Drawing.Size(286, 160);
             this.tabPagesListBox.TabIndex = 1;
+            this.tabPagesListBox.Tag = "DontTranslate";
             this.tabPagesListBox.SelectedIndexChanged += new System.EventHandler(this.tabPagesListBox_SelectedIndexChanged);
             // 
             // markSeparationCheckBox
@@ -101,6 +102,7 @@ namespace DtPad
             this.markSeparationTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.markSeparationTextBox.Size = new System.Drawing.Size(312, 63);
             this.markSeparationTextBox.TabIndex = 5;
+            this.markSeparationTextBox.Tag = "DontTranslate";
             this.markSeparationTextBox.Text = "\r\n========== MERGE ==========\r\n";
             this.markSeparationTextBox.WordWrap = false;
             // 
@@ -109,11 +111,12 @@ namespace DtPad
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.Enabled = false;
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(165, 297);
+            this.okButton.Location = new System.Drawing.Point(151, 297);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(81, 23);
+            this.okButton.Size = new System.Drawing.Size(98, 23);
             this.okButton.TabIndex = 6;
             this.okButton.Text = "Merge";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -161,6 +164,7 @@ namespace DtPad
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(352, 368);
             this.Name = "MergeTabs";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;

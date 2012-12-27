@@ -244,7 +244,7 @@ namespace DtPad.Managers
             {
                 if (pageTextBox.Focused || forcePageTextBox)
                 {
-                    String clipboardText = Clipboard.GetText(TextDataFormat.Text).Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
+                    String clipboardText = Clipboard.GetText(TextDataFormat.UnicodeText).Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
                     bool linesDisabled = false;
 
                     if (StringUtil.AreLinesTooMuchForPasteWithRowLines(pageTextBox.Text + clipboardText) && customLineNumbers.Visible)
@@ -908,7 +908,7 @@ namespace DtPad.Managers
                     return;
                 }
 
-                String clipboardText = Clipboard.GetText(TextDataFormat.Text);
+                String clipboardText = Clipboard.GetText(TextDataFormat.UnicodeText);
                 textBox.Focus();
                 textBox.SelectedText = clipboardText; //textBox.Paste(DataFormats.GetFormat(DataFormats.Text));
             }

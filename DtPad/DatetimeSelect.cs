@@ -75,6 +75,21 @@ namespace DtPad
         {
             DateTime datetime = new DateTime(date.Year, date.Month, date.Day, time.Hour, time.Minute, time.Second, time.Millisecond);
 
+            //datetimeListBox.Items.Clear();
+
+            //List<String> datesList = new List<String>(datetime.GetDateTimeFormats('d', LanguageUtil.GetInfoCulture()));
+            //datesList.AddRange(new List<String>(datetime.GetDateTimeFormats('D', LanguageUtil.GetInfoCulture())));
+            //datesList.AddRange(new List<String>(datetime.GetDateTimeFormats('f', LanguageUtil.GetInfoCulture())));
+            //datesList.AddRange(new List<String>(datetime.GetDateTimeFormats('F', LanguageUtil.GetInfoCulture())));
+
+            //foreach(String dateItem in datesList)
+            //{
+            //    if (!datetimeListBox.Items.Contains(dateItem))
+            //    {
+            //        datetimeListBox.Items.Add(dateItem);
+            //    }
+            //}
+
             datetimeListBox.Items.Clear();
             datetimeListBox.Items.Add(String.Format("{0}", datetime.ToShortDateString()));
             datetimeListBox.Items.Add(String.Format("{0}", datetime.ToLongDateString()));
@@ -86,7 +101,7 @@ namespace DtPad
 
         private void ResetDatetime(DateTime? datetime)
         {
-            DateTime datetimeNow = datetime == null ? DateTime.Now : Convert.ToDateTime(datetime);
+            DateTime datetimeNow = (datetime == null) ? DateTime.Now : Convert.ToDateTime(datetime);
 
             dateDateTimePicker.Value = datetimeNow;
             timeDateTimePicker.Value = datetimeNow;

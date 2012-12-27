@@ -100,8 +100,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libraries\LumenWorks.Framework.IO.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="MonthCalendar, Version=1.8.2.0, Culture=neutral, PublicKeyToken=9d22151b1b463438, processorArchitecture=MSIL" />
@@ -258,6 +259,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Languages\ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ru.resx</DependentUpon>
     </Compile>
     <Compile Include="Managers\CalculationManager.cs" />
     <Compile Include="Managers\ClipboardToggleManager.cs" />
@@ -600,6 +606,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Languages\ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxes\QuestionYNNAC.resx">
       <DependentUpon>QuestionYNNAC.cs</DependentUpon>
     </EmbeddedResource>
@@ -823,6 +833,9 @@
     <None Include="Languages\it.aff" />
     <None Include="Languages\it.dic" />
     <None Include="Languages\it_th.dat" />
+    <None Include="Languages\ru.aff" />
+    <None Include="Languages\ru.dic" />
+    <None Include="Languages\ru_th.dat" />
     <None Include="Logs\dtpad-lastversion.log" />
     <None Include="Logs\dtpadupdater-lastversion.log" />
     <None Include="Properties\Settings.settings">
@@ -973,6 +986,7 @@
     <Content Include="Images\Toolbars\delete-row.png" />
     <Content Include="Images\Toolbars\flag-esp.png" />
     <Content Include="Images\Toolbars\flag-fra.png" />
+    <Content Include="Images\Toolbars\flag-rus.png" />
     <Content Include="Images\Toolbars\folder-32.gif" />
     <None Include="Images\Toolbars\move-first.png" />
     <None Include="Images\Toolbars\move-last.png" />
@@ -1230,6 +1244,7 @@
 "$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\en.resx" "$(ProjectDir)Languages\en.resources"
 "$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\fr.resx" "$(ProjectDir)Languages\fr.resources"
 "$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\es.resx" "$(ProjectDir)Languages\es.resources"
+"$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\ru.resx" "$(ProjectDir)Languages\ru.resources"
 mkdir "$(ProjectDir)bin\Debug\Languages"
 mkdir "$(ProjectDir)bin\Release\Languages"
 mkdir "$(ProjectDir)bin\ReleaseFE\Languages"

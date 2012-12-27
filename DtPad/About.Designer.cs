@@ -97,6 +97,7 @@ namespace DtPad
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(67, 13);
             this.versionLabel.TabIndex = 2;
+            this.versionLabel.Tag = "DontTranslate";
             this.versionLabel.Text = "versionLabel";
             // 
             // createdByLabel

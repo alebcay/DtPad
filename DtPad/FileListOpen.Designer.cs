@@ -51,6 +51,7 @@
             this.contentTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.contentTextBox.Size = new System.Drawing.Size(412, 174);
             this.contentTextBox.TabIndex = 1;
+            this.contentTextBox.Tag = "DontTranslate";
             this.contentTextBox.TextChanged += new System.EventHandler(this.contentTextBox_TextChanged);
             // 
             // closeButton
@@ -96,6 +97,7 @@
             this.openButton.Size = new System.Drawing.Size(75, 23);
             this.openButton.TabIndex = 3;
             this.openButton.Text = "Open";
+            this.openButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.openButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.openButton.UseVisualStyleBackColor = true;
             this.openButton.Click += new System.EventHandler(this.openButton_Click);

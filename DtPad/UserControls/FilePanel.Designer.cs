@@ -33,7 +33,10 @@
             this.fileExplorerTreeView = new System.Windows.Forms.TreeView();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.fileContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filePropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.directoryContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openIntoWindowsExplorerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.listFolderContentIntoFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,17 +48,14 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.listToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.openSelectedFileToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.refreshToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.refreshDriveToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.hiddenToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.pathPanel = new DtPad.Customs.CustomPanel();
             this.pathTextBox = new System.Windows.Forms.TextBox();
             this.pathGoButton = new System.Windows.Forms.Button();
-            this.openSelectedFileToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.refreshToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.hiddenToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.refreshDriveToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.filePropertiesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileContextMenuStrip.SuspendLayout();
             this.directoryContextMenuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
@@ -74,6 +74,7 @@
             this.fileExplorerTreeView.SelectedImageIndex = 0;
             this.fileExplorerTreeView.Size = new System.Drawing.Size(189, 97);
             this.fileExplorerTreeView.TabIndex = 2;
+            this.fileExplorerTreeView.Tag = "DontTranslate";
             this.fileExplorerTreeView.BeforeCollapse += new System.Windows.Forms.TreeViewCancelEventHandler(this.fileExplorerTreeView_BeforeCollapse);
             this.fileExplorerTreeView.BeforeExpand += new System.Windows.Forms.TreeViewCancelEventHandler(this.fileExplorerTreeView_BeforeExpand);
             this.fileExplorerTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.fileExplorerTreeView_AfterSelect);
@@ -111,6 +112,22 @@
             this.fileContextMenuStrip.Name = "fileContextMenuStrip";
             this.fileContextMenuStrip.Size = new System.Drawing.Size(149, 48);
             // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = global::DtPad.ToolbarResource.open;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // filePropertiesToolStripMenuItem
+            // 
+            this.filePropertiesToolStripMenuItem.Image = global::DtPad.ToolbarResource.diagram;
+            this.filePropertiesToolStripMenuItem.Name = "filePropertiesToolStripMenuItem";
+            this.filePropertiesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.filePropertiesToolStripMenuItem.Text = "File Properties";
+            this.filePropertiesToolStripMenuItem.Click += new System.EventHandler(this.filePropertiesToolStripMenuItem_Click);
+            // 
             // directoryContextMenuStrip
             // 
             this.directoryContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -122,6 +139,14 @@
             this.listFolderContentWithPatternToolStripMenuItem});
             this.directoryContextMenuStrip.Name = "directoryContextMenuStrip";
             this.directoryContextMenuStrip.Size = new System.Drawing.Size(245, 120);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Image = global::DtPad.ToolbarResource.convert;
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // openIntoWindowsExplorerToolStripMenuItem
             // 
@@ -209,10 +234,52 @@
             this.toolStrip.Size = new System.Drawing.Size(189, 25);
             this.toolStrip.TabIndex = 0;
             // 
+            // openSelectedFileToolStripButton
+            // 
+            this.openSelectedFileToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openSelectedFileToolStripButton.Enabled = false;
+            this.openSelectedFileToolStripButton.Image = global::DtPad.ToolbarResource.open;
+            this.openSelectedFileToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openSelectedFileToolStripButton.Name = "openSelectedFileToolStripButton";
+            this.openSelectedFileToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openSelectedFileToolStripButton.Text = "Open Selected File";
+            this.openSelectedFileToolStripButton.Click += new System.EventHandler(this.openSelectedFileToolStripButton_Click);
+            // 
+            // refreshToolStripButton
+            // 
+            this.refreshToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.refreshToolStripButton.Image = global::DtPad.ToolbarResource.convert;
+            this.refreshToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.refreshToolStripButton.Name = "refreshToolStripButton";
+            this.refreshToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.refreshToolStripButton.Text = "Refresh Selected Folder";
+            this.refreshToolStripButton.Click += new System.EventHandler(this.refreshToolStripButton_Click);
+            // 
+            // refreshDriveToolStripButton
+            // 
+            this.refreshDriveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.refreshDriveToolStripButton.Image = global::DtPad.ToolbarResource.convert_all;
+            this.refreshDriveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.refreshDriveToolStripButton.Name = "refreshDriveToolStripButton";
+            this.refreshDriveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.refreshDriveToolStripButton.Text = "Refresh Drives";
+            this.refreshDriveToolStripButton.Click += new System.EventHandler(this.refreshDriveToolStripButton_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // hiddenToolStripButton
+            // 
+            this.hiddenToolStripButton.CheckOnClick = true;
+            this.hiddenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.hiddenToolStripButton.Image = global::DtPad.ToolbarResource.layers;
+            this.hiddenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.hiddenToolStripButton.Name = "hiddenToolStripButton";
+            this.hiddenToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.hiddenToolStripButton.Text = "Show Hidden Files/Folders";
+            this.hiddenToolStripButton.CheckedChanged += new System.EventHandler(this.hiddenToolStripButton_CheckedChanged);
             // 
             // pathPanel
             // 
@@ -243,6 +310,7 @@
             this.pathTextBox.Name = "pathTextBox";
             this.pathTextBox.Size = new System.Drawing.Size(160, 13);
             this.pathTextBox.TabIndex = 0;
+            this.pathTextBox.Tag = "DontTranslate";
             this.pathTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.pathTextBox_KeyUp);
             this.pathTextBox.Leave += new System.EventHandler(this.pathTextBox_Leave);
             this.pathTextBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pathTextBox_MouseDown);
@@ -260,72 +328,6 @@
             this.pathGoButton.TabIndex = 1;
             this.pathGoButton.UseVisualStyleBackColor = false;
             this.pathGoButton.Click += new System.EventHandler(this.pathGoButton_Click);
-            // 
-            // openSelectedFileToolStripButton
-            // 
-            this.openSelectedFileToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.openSelectedFileToolStripButton.Enabled = false;
-            this.openSelectedFileToolStripButton.Image = global::DtPad.ToolbarResource.open;
-            this.openSelectedFileToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openSelectedFileToolStripButton.Name = "openSelectedFileToolStripButton";
-            this.openSelectedFileToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.openSelectedFileToolStripButton.Text = "Open Selected File";
-            this.openSelectedFileToolStripButton.Click += new System.EventHandler(this.openSelectedFileToolStripButton_Click);
-            // 
-            // refreshToolStripButton
-            // 
-            this.refreshToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.refreshToolStripButton.Image = global::DtPad.ToolbarResource.convert;
-            this.refreshToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.refreshToolStripButton.Name = "refreshToolStripButton";
-            this.refreshToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.refreshToolStripButton.Text = "Refresh Selected Folder";
-            this.refreshToolStripButton.Click += new System.EventHandler(this.refreshToolStripButton_Click);
-            // 
-            // hiddenToolStripButton
-            // 
-            this.hiddenToolStripButton.CheckOnClick = true;
-            this.hiddenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.hiddenToolStripButton.Image = global::DtPad.ToolbarResource.layers;
-            this.hiddenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.hiddenToolStripButton.Name = "hiddenToolStripButton";
-            this.hiddenToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.hiddenToolStripButton.Text = "Show Hidden Files/Folders";
-            this.hiddenToolStripButton.CheckedChanged += new System.EventHandler(this.hiddenToolStripButton_CheckedChanged);
-            // 
-            // refreshDriveToolStripButton
-            // 
-            this.refreshDriveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.refreshDriveToolStripButton.Image = global::DtPad.ToolbarResource.convert_all;
-            this.refreshDriveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.refreshDriveToolStripButton.Name = "refreshDriveToolStripButton";
-            this.refreshDriveToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.refreshDriveToolStripButton.Text = "Refresh Drives";
-            this.refreshDriveToolStripButton.Click += new System.EventHandler(this.refreshDriveToolStripButton_Click);
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = global::DtPad.ToolbarResource.open;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.openToolStripMenuItem.Text = "Open";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
-            // 
-            // filePropertiesToolStripMenuItem
-            // 
-            this.filePropertiesToolStripMenuItem.Image = global::DtPad.ToolbarResource.diagram;
-            this.filePropertiesToolStripMenuItem.Name = "filePropertiesToolStripMenuItem";
-            this.filePropertiesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.filePropertiesToolStripMenuItem.Text = "File Properties";
-            this.filePropertiesToolStripMenuItem.Click += new System.EventHandler(this.filePropertiesToolStripMenuItem_Click);
-            // 
-            // refreshToolStripMenuItem
-            // 
-            this.refreshToolStripMenuItem.Image = global::DtPad.ToolbarResource.convert;
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(244, 22);
-            this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // FilePanel
             // 

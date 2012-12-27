@@ -35,7 +35,7 @@ namespace DtPad
             PreInitializeForm();
             InitializeForm();
             SetLanguage(false);
-            OpenFiles(Environment.GetCommandLineArgs());
+            //OpenFiles(Environment.GetCommandLineArgs());
             IsOpening = false;
         }
 

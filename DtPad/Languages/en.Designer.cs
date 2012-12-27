@@ -103,6 +103,7 @@ namespace DtPad.Languages {
         ///This application requires Microsoft .NET Framework 4 and use Windows registry only to store &quot;Open With&quot; Explorer context menu menu association.
         ///
         ///French translation by: Alain Buferne.
+        ///Russian translation by: Artem Vakhitov.
         ///
         ///Main iconset by: Delacro.
         ///- delacro.deviantart.com
@@ -111,7 +112,7 @@ namespace DtPad.Languages {
         ///- famfamfam.com
         ///- vistaicons.com
         ///
-        ///External components referenced: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridCont [rest of string was truncated]&quot;;.
+        ///External components referenced: SharpZip, iText [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string About_descriptionTextBox {
             get {
@@ -528,7 +529,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apply changes.
+        ///   Looks up a localized string similar to Apply Changes.
         /// </summary>
         internal static string CsvEditor_applyButton {
             get {
@@ -645,8 +646,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///, (comma)
+        ///   Looks up a localized string similar to , (comma)
         ///. (dot)
         ///; (semicolon)
         ///- (dash).
@@ -694,8 +694,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///[No text quote]
+        ///   Looks up a localized string similar to [No text quote]
         ///&quot; (quotes)
         ///&apos; (single quote).
         /// </summary>
@@ -1115,7 +1114,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear results.
+        ///   Looks up a localized string similar to Clear Results.
         /// </summary>
         internal static string Dictionary_clearButton {
             get {
@@ -1189,7 +1188,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verify all text.
+        ///   Looks up a localized string similar to Verify All Text.
         /// </summary>
         internal static string Dictionary_verifyAllButton {
             get {
@@ -1792,7 +1791,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to At least one extension is not valorized.
+        ///   Looks up a localized string similar to At least one extension is empty.
         ///Complete extensions information to proceed..
         /// </summary>
         internal static string ExtensionManager_Unvalorized {
@@ -6656,7 +6655,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Positions to move the current row:.
+        ///   Looks up a localized string similar to Positions to move the selected rows:.
         /// </summary>
         internal static string MoveLines_lineLabel {
             get {
@@ -7621,7 +7620,8 @@ namespace DtPad.Languages {
         ///   Looks up a localized string similar to English
         ///Italiano
         ///Français
-        ///Español.
+        ///Español
+        ///Pусский.
         /// </summary>
         internal static string Options_languageComboBoxItems {
             get {
@@ -7711,7 +7711,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loop at end of file (EOF).
+        ///   Looks up a localized string similar to Loop at End-Of-File.
         /// </summary>
         internal static string Options_loopAtEOFCheckBox {
             get {
@@ -7892,7 +7892,7 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Proxy settings are incorrect.
-        ///Disable proxy or control that username and password are valorized..
+        ///Disable the proxy or verify that username and password are not empty fields..
         /// </summary>
         internal static string Options_proxyWarning {
             get {
@@ -8759,7 +8759,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Area: *.
+        ///   Looks up a localized string similar to Bug area: *.
         /// </summary>
         internal static string ReportBug_areaLabel {
             get {
@@ -8786,7 +8786,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to E-mail: *.
+        ///   Looks up a localized string similar to E-mail address: *.
         /// </summary>
         internal static string ReportBug_emailLabel {
             get {
@@ -9313,7 +9313,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loop At EOF.
+        ///   Looks up a localized string similar to Loop At End-Of-File.
         /// </summary>
         internal static string searchPanel_loopCheckBox {
             get {
@@ -9340,7 +9340,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace:.
+        ///   Looks up a localized string similar to Replace With:.
         /// </summary>
         internal static string searchPanel_replaceLabel {
             get {
@@ -9367,7 +9367,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search All Tabs.
+        ///   Looks up a localized string similar to Search Into All Tabs.
         /// </summary>
         internal static string searchPanel_searchAllTabsCheckBox {
             get {
@@ -9552,7 +9552,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select rows.
+        ///   Looks up a localized string similar to Select Rows.
         /// </summary>
         internal static string SelectLines_Title {
             get {
@@ -10589,7 +10589,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to At least one template is not valorized.
+        ///   Looks up a localized string similar to At least one template is empty.
         ///Complete templates information to proceed..
         /// </summary>
         internal static string TemplateManager_Unvalorized {
@@ -10837,7 +10837,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to At least one tool is not valorized.
+        ///   Looks up a localized string similar to At least one tool is empty.
         ///Complete tools information to proceed..
         /// </summary>
         internal static string ToolManager_Unvalorized {

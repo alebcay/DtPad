@@ -52,11 +52,12 @@
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.Enabled = false;
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(195, 61);
+            this.okButton.Location = new System.Drawing.Point(257, 61);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 3;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -65,7 +66,7 @@
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(276, 61);
+            this.cancelButton.Location = new System.Drawing.Point(338, 61);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 4;
@@ -89,11 +90,13 @@
             // 
             this.urlAddressComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.urlAddressComboBox.CustomContextMenuStrip = null;
             this.urlAddressComboBox.FormattingEnabled = true;
             this.urlAddressComboBox.Location = new System.Drawing.Point(12, 25);
             this.urlAddressComboBox.Name = "urlAddressComboBox";
-            this.urlAddressComboBox.Size = new System.Drawing.Size(339, 21);
+            this.urlAddressComboBox.Size = new System.Drawing.Size(401, 21);
             this.urlAddressComboBox.TabIndex = 1;
+            this.urlAddressComboBox.Tag = "DontTranslate";
             this.urlAddressComboBox.Text = "http://";
             this.urlAddressComboBox.TextChanged += new System.EventHandler(this.urlAddressComboBox_TextChanged);
             // 
@@ -103,7 +106,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(363, 97);
+            this.ClientSize = new System.Drawing.Size(425, 97);
             this.Controls.Add(this.urlAddressComboBox);
             this.Controls.Add(this.clearHistoryButton);
             this.Controls.Add(this.okButton);

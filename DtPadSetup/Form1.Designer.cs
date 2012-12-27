@@ -1,4 +1,4 @@
-namespace DtPadSetup
+﻿namespace DtPadSetup
 {
     partial class Form1
     {
@@ -39,7 +39,9 @@ namespace DtPadSetup
             this.skipSettingsCheckBox = new System.Windows.Forms.CheckBox();
             this.languagePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.languageGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.linkContattiLabel = new System.Windows.Forms.Label();
+            this.infoPictureBox = new System.Windows.Forms.PictureBox();
             this.infoLabel = new System.Windows.Forms.Label();
             this.languageComboBox = new System.Windows.Forms.ComboBox();
             this.languageLabel = new System.Windows.Forms.Label();
@@ -47,20 +49,28 @@ namespace DtPadSetup
             this.stepLabel = new System.Windows.Forms.Label();
             this.lookAndFeelPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.lookAndFeelGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.lookAndFeelPictureBox = new System.Windows.Forms.PictureBox();
             this.windowsRadioButton = new System.Windows.Forms.RadioButton();
             this.dotNetRadioButton = new System.Windows.Forms.RadioButton();
             this.windowPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.windowGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.minimizeOnTrayIconPictureBox = new System.Windows.Forms.PictureBox();
+            this.stayOnTopPictureBox = new System.Windows.Forms.PictureBox();
             this.minimizeOnTrayIconCheckBox = new System.Windows.Forms.CheckBox();
             this.stayOnTopCheckBox = new System.Windows.Forms.CheckBox();
             this.internetPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.internetGroupBox1 = new System.Windows.Forms.GroupBox();
             this.testProxyButton = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.statusPictureBox = new System.Windows.Forms.PictureBox();
             this.domainTextBox = new System.Windows.Forms.TextBox();
             this.contentContextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.undoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,31 +97,28 @@ namespace DtPadSetup
             this.installProgressBar = new System.Windows.Forms.ProgressBar();
             this.installTextBox = new System.Windows.Forms.TextBox();
             this.contentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator29 = new System.Windows.Forms.ToolStripSeparator();
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.stepPictureBox = new System.Windows.Forms.PictureBox();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.statusPictureBox = new System.Windows.Forms.PictureBox();
-            this.cutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.minimizeOnTrayIconPictureBox = new System.Windows.Forms.PictureBox();
-            this.stayOnTopPictureBox = new System.Windows.Forms.PictureBox();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lookAndFeelPictureBox = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.infoPictureBox = new System.Windows.Forms.PictureBox();
             this.introPanel.SuspendLayout();
             this.languagePanel.SuspendLayout();
             this.languageGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).BeginInit();
             this.lookAndFeelPanel.SuspendLayout();
             this.lookAndFeelGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookAndFeelPictureBox)).BeginInit();
             this.windowPanel.SuspendLayout();
             this.windowGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeOnTrayIconPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stayOnTopPictureBox)).BeginInit();
             this.internetPanel.SuspendLayout();
             this.internetGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).BeginInit();
             this.contentContextMenuStrip1.SuspendLayout();
             this.installPanel.SuspendLayout();
             this.installGroupBox1.SuspendLayout();
@@ -119,13 +126,6 @@ namespace DtPadSetup
             this.contentContextMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.stepPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizeOnTrayIconPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stayOnTopPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookAndFeelPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cancelButton
@@ -142,9 +142,9 @@ namespace DtPadSetup
             // nextButton
             // 
             this.nextButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.nextButton.Location = new System.Drawing.Point(343, 315);
+            this.nextButton.Location = new System.Drawing.Point(312, 315);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(75, 23);
+            this.nextButton.Size = new System.Drawing.Size(106, 23);
             this.nextButton.TabIndex = 2;
             this.nextButton.Text = "Next >";
             this.nextButton.UseVisualStyleBackColor = true;
@@ -153,9 +153,9 @@ namespace DtPadSetup
             // backButton
             // 
             this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.backButton.Location = new System.Drawing.Point(262, 315);
+            this.backButton.Location = new System.Drawing.Point(200, 315);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(75, 23);
+            this.backButton.Size = new System.Drawing.Size(106, 23);
             this.backButton.TabIndex = 3;
             this.backButton.Text = "< Back";
             this.backButton.UseVisualStyleBackColor = true;
@@ -231,6 +231,16 @@ namespace DtPadSetup
             this.languageGroupBox1.TabStop = false;
             this.languageGroupBox1.Text = "Language";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::DtPadSetup.ImageResource.email;
+            this.pictureBox3.InitialImage = null;
+            this.pictureBox3.Location = new System.Drawing.Point(13, 176);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox3.TabIndex = 10;
+            this.pictureBox3.TabStop = false;
+            // 
             // linkContattiLabel
             // 
             this.linkContattiLabel.AutoSize = true;
@@ -244,11 +254,21 @@ namespace DtPadSetup
             this.linkContattiLabel.Text = "diariotraduttore.com/contatti";
             this.linkContattiLabel.Click += new System.EventHandler(this.linkContattiLabel_Click);
             // 
+            // infoPictureBox
+            // 
+            this.infoPictureBox.Image = global::DtPadSetup.ImageResource.info;
+            this.infoPictureBox.InitialImage = null;
+            this.infoPictureBox.Location = new System.Drawing.Point(13, 59);
+            this.infoPictureBox.Name = "infoPictureBox";
+            this.infoPictureBox.Size = new System.Drawing.Size(16, 16);
+            this.infoPictureBox.TabIndex = 7;
+            this.infoPictureBox.TabStop = false;
+            // 
             // infoLabel
             // 
             this.infoLabel.Location = new System.Drawing.Point(10, 79);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(338, 65);
+            this.infoLabel.Size = new System.Drawing.Size(338, 89);
             this.infoLabel.TabIndex = 6;
             this.infoLabel.Text = resources.GetString("infoLabel.Text");
             // 
@@ -258,11 +278,12 @@ namespace DtPadSetup
             this.languageComboBox.Items.AddRange(new object[] {
             "English",
             "Italiano",
-            "Fran�ais",
-            "Espa�ol"});
+            "Français",
+            "Español",
+            "Pусский"});
             this.languageComboBox.Location = new System.Drawing.Point(136, 17);
             this.languageComboBox.Name = "languageComboBox";
-            this.languageComboBox.Size = new System.Drawing.Size(121, 21);
+            this.languageComboBox.Size = new System.Drawing.Size(201, 21);
             this.languageComboBox.TabIndex = 5;
             this.languageComboBox.SelectedIndexChanged += new System.EventHandler(this.languageComboBox_SelectedIndexChanged);
             // 
@@ -283,6 +304,7 @@ namespace DtPadSetup
             this.languageImageList.Images.SetKeyName(1, "flag-ita.png");
             this.languageImageList.Images.SetKeyName(2, "flag-fra.png");
             this.languageImageList.Images.SetKeyName(3, "flag-esp.png");
+            this.languageImageList.Images.SetKeyName(4, "flag-rus.png");
             // 
             // stepLabel
             // 
@@ -317,6 +339,20 @@ namespace DtPadSetup
             this.lookAndFeelGroupBox1.TabIndex = 0;
             this.lookAndFeelGroupBox1.TabStop = false;
             this.lookAndFeelGroupBox1.Text = "Style";
+            // 
+            // lookAndFeelPictureBox
+            // 
+            this.lookAndFeelPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lookAndFeelPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lookAndFeelPictureBox.Image = global::DtPadSetup.ImageResource.style_office_2003;
+            this.lookAndFeelPictureBox.InitialImage = null;
+            this.lookAndFeelPictureBox.Location = new System.Drawing.Point(13, 44);
+            this.lookAndFeelPictureBox.Name = "lookAndFeelPictureBox";
+            this.lookAndFeelPictureBox.Size = new System.Drawing.Size(326, 227);
+            this.lookAndFeelPictureBox.TabIndex = 3;
+            this.lookAndFeelPictureBox.TabStop = false;
             // 
             // windowsRadioButton
             // 
@@ -362,6 +398,32 @@ namespace DtPadSetup
             this.windowGroupBox1.TabIndex = 0;
             this.windowGroupBox1.TabStop = false;
             this.windowGroupBox1.Text = "Window";
+            // 
+            // minimizeOnTrayIconPictureBox
+            // 
+            this.minimizeOnTrayIconPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimizeOnTrayIconPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.minimizeOnTrayIconPictureBox.Image = global::DtPadSetup.ImageResource.minimizetray_enable;
+            this.minimizeOnTrayIconPictureBox.InitialImage = null;
+            this.minimizeOnTrayIconPictureBox.Location = new System.Drawing.Point(93, 147);
+            this.minimizeOnTrayIconPictureBox.Name = "minimizeOnTrayIconPictureBox";
+            this.minimizeOnTrayIconPictureBox.Size = new System.Drawing.Size(254, 79);
+            this.minimizeOnTrayIconPictureBox.TabIndex = 3;
+            this.minimizeOnTrayIconPictureBox.TabStop = false;
+            // 
+            // stayOnTopPictureBox
+            // 
+            this.stayOnTopPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.stayOnTopPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.stayOnTopPictureBox.Image = global::DtPadSetup.ImageResource.stayontop_disable;
+            this.stayOnTopPictureBox.InitialImage = null;
+            this.stayOnTopPictureBox.Location = new System.Drawing.Point(93, 38);
+            this.stayOnTopPictureBox.Name = "stayOnTopPictureBox";
+            this.stayOnTopPictureBox.Size = new System.Drawing.Size(254, 63);
+            this.stayOnTopPictureBox.TabIndex = 2;
+            this.stayOnTopPictureBox.TabStop = false;
             // 
             // minimizeOnTrayIconCheckBox
             // 
@@ -420,23 +482,42 @@ namespace DtPadSetup
             // testProxyButton
             // 
             this.testProxyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.testProxyButton.Location = new System.Drawing.Point(278, 110);
+            this.testProxyButton.Location = new System.Drawing.Point(269, 110);
             this.testProxyButton.Name = "testProxyButton";
-            this.testProxyButton.Size = new System.Drawing.Size(66, 23);
+            this.testProxyButton.Size = new System.Drawing.Size(75, 23);
             this.testProxyButton.TabIndex = 20;
             this.testProxyButton.Text = "Test";
             this.testProxyButton.UseVisualStyleBackColor = true;
             this.testProxyButton.Click += new System.EventHandler(this.testProxyButton_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DtPadSetup.ImageResource.info;
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(10, 152);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
             // label1
             // 
             this.label1.Location = new System.Drawing.Point(7, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(341, 65);
+            this.label1.Size = new System.Drawing.Size(341, 99);
             this.label1.TabIndex = 18;
             this.label1.Text = "Information: DtPad use Internet Explorer settings to connect on Internet.\r\nIf you" +
     "r PC is behind a proxy server which requires an authentication, insert here your" +
     " username and password.";
+            // 
+            // statusPictureBox
+            // 
+            this.statusPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.statusPictureBox.Location = new System.Drawing.Point(321, 18);
+            this.statusPictureBox.Name = "statusPictureBox";
+            this.statusPictureBox.Size = new System.Drawing.Size(16, 16);
+            this.statusPictureBox.TabIndex = 17;
+            this.statusPictureBox.TabStop = false;
             // 
             // domainTextBox
             // 
@@ -444,9 +525,9 @@ namespace DtPadSetup
             | System.Windows.Forms.AnchorStyles.Right)));
             this.domainTextBox.ContextMenuStrip = this.contentContextMenuStrip1;
             this.domainTextBox.Enabled = false;
-            this.domainTextBox.Location = new System.Drawing.Point(87, 86);
+            this.domainTextBox.Location = new System.Drawing.Point(116, 86);
             this.domainTextBox.Name = "domainTextBox";
-            this.domainTextBox.Size = new System.Drawing.Size(257, 20);
+            this.domainTextBox.Size = new System.Drawing.Size(228, 20);
             this.domainTextBox.TabIndex = 16;
             this.domainTextBox.TextChanged += new System.EventHandler(this.domainTextBox_TextChanged);
             // 
@@ -478,6 +559,30 @@ namespace DtPadSetup
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(119, 6);
             // 
+            // cutToolStripMenuItem1
+            // 
+            this.cutToolStripMenuItem1.Image = global::DtPadSetup.ImageResource.cut;
+            this.cutToolStripMenuItem1.Name = "cutToolStripMenuItem1";
+            this.cutToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.cutToolStripMenuItem1.Text = "Cut";
+            this.cutToolStripMenuItem1.Click += new System.EventHandler(this.cutToolStripMenuItem1_Click);
+            // 
+            // copyToolStripMenuItem1
+            // 
+            this.copyToolStripMenuItem1.Image = global::DtPadSetup.ImageResource.copy;
+            this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.copyToolStripMenuItem1.Text = "Copy";
+            this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
+            // 
+            // pasteToolStripMenuItem1
+            // 
+            this.pasteToolStripMenuItem1.Image = global::DtPadSetup.ImageResource.paste;
+            this.pasteToolStripMenuItem1.Name = "pasteToolStripMenuItem1";
+            this.pasteToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
+            this.pasteToolStripMenuItem1.Text = "Paste";
+            this.pasteToolStripMenuItem1.Click += new System.EventHandler(this.pasteToolStripMenuItem1_Click);
+            // 
             // deleteToolStripMenuItem1
             // 
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
@@ -503,9 +608,9 @@ namespace DtPadSetup
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordTextBox.ContextMenuStrip = this.contentContextMenuStrip1;
             this.passwordTextBox.Enabled = false;
-            this.passwordTextBox.Location = new System.Drawing.Point(87, 63);
+            this.passwordTextBox.Location = new System.Drawing.Point(116, 63);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(257, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(228, 20);
             this.passwordTextBox.TabIndex = 15;
             this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
@@ -516,9 +621,9 @@ namespace DtPadSetup
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usernameTextBox.ContextMenuStrip = this.contentContextMenuStrip1;
             this.usernameTextBox.Enabled = false;
-            this.usernameTextBox.Location = new System.Drawing.Point(87, 40);
+            this.usernameTextBox.Location = new System.Drawing.Point(116, 40);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(257, 20);
+            this.usernameTextBox.Size = new System.Drawing.Size(228, 20);
             this.usernameTextBox.TabIndex = 14;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
@@ -553,7 +658,7 @@ namespace DtPadSetup
             // 
             this.statusLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.statusLabel.AutoSize = true;
-            this.statusLabel.Location = new System.Drawing.Point(275, 20);
+            this.statusLabel.Location = new System.Drawing.Point(256, 20);
             this.statusLabel.Name = "statusLabel";
             this.statusLabel.Size = new System.Drawing.Size(40, 13);
             this.statusLabel.TabIndex = 10;
@@ -628,7 +733,7 @@ namespace DtPadSetup
             // availableSpaceLabel1
             // 
             this.availableSpaceLabel1.AutoSize = true;
-            this.availableSpaceLabel1.Location = new System.Drawing.Point(103, 118);
+            this.availableSpaceLabel1.Location = new System.Drawing.Point(115, 118);
             this.availableSpaceLabel1.Name = "availableSpaceLabel1";
             this.availableSpaceLabel1.Size = new System.Drawing.Size(112, 13);
             this.availableSpaceLabel1.TabIndex = 7;
@@ -637,7 +742,7 @@ namespace DtPadSetup
             // requiredSpaceLabel1
             // 
             this.requiredSpaceLabel1.AutoSize = true;
-            this.requiredSpaceLabel1.Location = new System.Drawing.Point(103, 101);
+            this.requiredSpaceLabel1.Location = new System.Drawing.Point(115, 101);
             this.requiredSpaceLabel1.Name = "requiredSpaceLabel1";
             this.requiredSpaceLabel1.Size = new System.Drawing.Size(108, 13);
             this.requiredSpaceLabel1.TabIndex = 6;
@@ -748,6 +853,14 @@ namespace DtPadSetup
             this.contentContextMenuStrip.Name = "searchContextMenuStrip";
             this.contentContextMenuStrip.Size = new System.Drawing.Size(123, 54);
             // 
+            // copyToolStripMenuItem
+            // 
+            this.copyToolStripMenuItem.Image = global::DtPadSetup.ImageResource.copy;
+            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
+            // 
             // toolStripSeparator29
             // 
             this.toolStripSeparator29.Name = "toolStripSeparator29";
@@ -789,117 +902,6 @@ namespace DtPadSetup
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::DtPadSetup.ImageResource.info;
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 152);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
-            // statusPictureBox
-            // 
-            this.statusPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.statusPictureBox.Location = new System.Drawing.Point(321, 18);
-            this.statusPictureBox.Name = "statusPictureBox";
-            this.statusPictureBox.Size = new System.Drawing.Size(16, 16);
-            this.statusPictureBox.TabIndex = 17;
-            this.statusPictureBox.TabStop = false;
-            // 
-            // cutToolStripMenuItem1
-            // 
-            this.cutToolStripMenuItem1.Image = global::DtPadSetup.ImageResource.cut;
-            this.cutToolStripMenuItem1.Name = "cutToolStripMenuItem1";
-            this.cutToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.cutToolStripMenuItem1.Text = "Cut";
-            this.cutToolStripMenuItem1.Click += new System.EventHandler(this.cutToolStripMenuItem1_Click);
-            // 
-            // copyToolStripMenuItem1
-            // 
-            this.copyToolStripMenuItem1.Image = global::DtPadSetup.ImageResource.copy;
-            this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
-            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem1.Text = "Copy";
-            this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
-            // 
-            // pasteToolStripMenuItem1
-            // 
-            this.pasteToolStripMenuItem1.Image = global::DtPadSetup.ImageResource.paste;
-            this.pasteToolStripMenuItem1.Name = "pasteToolStripMenuItem1";
-            this.pasteToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
-            this.pasteToolStripMenuItem1.Text = "Paste";
-            this.pasteToolStripMenuItem1.Click += new System.EventHandler(this.pasteToolStripMenuItem1_Click);
-            // 
-            // minimizeOnTrayIconPictureBox
-            // 
-            this.minimizeOnTrayIconPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.minimizeOnTrayIconPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.minimizeOnTrayIconPictureBox.Image = global::DtPadSetup.ImageResource.minimizetray_enable;
-            this.minimizeOnTrayIconPictureBox.InitialImage = null;
-            this.minimizeOnTrayIconPictureBox.Location = new System.Drawing.Point(93, 147);
-            this.minimizeOnTrayIconPictureBox.Name = "minimizeOnTrayIconPictureBox";
-            this.minimizeOnTrayIconPictureBox.Size = new System.Drawing.Size(254, 79);
-            this.minimizeOnTrayIconPictureBox.TabIndex = 3;
-            this.minimizeOnTrayIconPictureBox.TabStop = false;
-            // 
-            // stayOnTopPictureBox
-            // 
-            this.stayOnTopPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.stayOnTopPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.stayOnTopPictureBox.Image = global::DtPadSetup.ImageResource.stayontop_disable;
-            this.stayOnTopPictureBox.InitialImage = null;
-            this.stayOnTopPictureBox.Location = new System.Drawing.Point(93, 38);
-            this.stayOnTopPictureBox.Name = "stayOnTopPictureBox";
-            this.stayOnTopPictureBox.Size = new System.Drawing.Size(254, 63);
-            this.stayOnTopPictureBox.TabIndex = 2;
-            this.stayOnTopPictureBox.TabStop = false;
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = global::DtPadSetup.ImageResource.copy;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem.Text = "Copy";
-            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
-            // 
-            // lookAndFeelPictureBox
-            // 
-            this.lookAndFeelPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lookAndFeelPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lookAndFeelPictureBox.Image = global::DtPadSetup.ImageResource.style_office_2003;
-            this.lookAndFeelPictureBox.InitialImage = null;
-            this.lookAndFeelPictureBox.Location = new System.Drawing.Point(13, 44);
-            this.lookAndFeelPictureBox.Name = "lookAndFeelPictureBox";
-            this.lookAndFeelPictureBox.Size = new System.Drawing.Size(326, 227);
-            this.lookAndFeelPictureBox.TabIndex = 3;
-            this.lookAndFeelPictureBox.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::DtPadSetup.ImageResource.email;
-            this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(13, 176);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(16, 16);
-            this.pictureBox3.TabIndex = 10;
-            this.pictureBox3.TabStop = false;
-            // 
-            // infoPictureBox
-            // 
-            this.infoPictureBox.Image = global::DtPadSetup.ImageResource.info;
-            this.infoPictureBox.InitialImage = null;
-            this.infoPictureBox.Location = new System.Drawing.Point(13, 59);
-            this.infoPictureBox.Name = "infoPictureBox";
-            this.infoPictureBox.Size = new System.Drawing.Size(16, 16);
-            this.infoPictureBox.TabIndex = 7;
-            this.infoPictureBox.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -911,13 +913,13 @@ namespace DtPadSetup
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.logoPictureBox);
+            this.Controls.Add(this.installPanel);
+            this.Controls.Add(this.lookAndFeelPanel);
+            this.Controls.Add(this.languagePanel);
             this.Controls.Add(this.introPanel);
             this.Controls.Add(this.internetPanel);
             this.Controls.Add(this.windowPanel);
             this.Controls.Add(this.endPanel);
-            this.Controls.Add(this.installPanel);
-            this.Controls.Add(this.lookAndFeelPanel);
-            this.Controls.Add(this.languagePanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -928,15 +930,22 @@ namespace DtPadSetup
             this.languagePanel.ResumeLayout(false);
             this.languageGroupBox1.ResumeLayout(false);
             this.languageGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).EndInit();
             this.lookAndFeelPanel.ResumeLayout(false);
             this.lookAndFeelGroupBox1.ResumeLayout(false);
             this.lookAndFeelGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lookAndFeelPictureBox)).EndInit();
             this.windowPanel.ResumeLayout(false);
             this.windowGroupBox1.ResumeLayout(false);
             this.windowGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeOnTrayIconPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stayOnTopPictureBox)).EndInit();
             this.internetPanel.ResumeLayout(false);
             this.internetGroupBox1.ResumeLayout(false);
             this.internetGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).EndInit();
             this.contentContextMenuStrip1.ResumeLayout(false);
             this.installPanel.ResumeLayout(false);
             this.installGroupBox1.ResumeLayout(false);
@@ -946,13 +955,6 @@ namespace DtPadSetup
             this.contentContextMenuStrip.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.stepPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizeOnTrayIconPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stayOnTopPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lookAndFeelPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

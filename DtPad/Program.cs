@@ -119,10 +119,15 @@ namespace DtPad
             StartupNextInstance += This_StartupNextInstance;
         }
 
-        void This_StartupNextInstance(object sender, StartupNextInstanceEventArgs e)
+        private void This_StartupNextInstance(object sender, StartupNextInstanceEventArgs e)
         {
-            Form1 form = MainForm as Form1;
+            String[] args = new String[e.CommandLine.Count];
+            for (int i = 0; i < e.CommandLine.Count; i++)
+            {
+                args[i] = e.CommandLine[i];
+            }
 
+            Form1 form = MainForm as Form1;
             if (form == null)
             {
                 String error = "Error during DtPad instance read." + Environment.NewLine + "Unable to execute the selected operation.";
@@ -131,18 +136,13 @@ namespace DtPad
                 return;
             }
 
-            String[] args = new String[e.CommandLine.Count];
-            for (int i = 0; i < e.CommandLine.Count; i++)
-            {
-                args[i] = e.CommandLine[i];
-            }
-
             form.OpenFiles(args);
         }
 
         protected override void OnCreateMainForm()
         {
             MainForm = new Form1();
-        }        
+            ((Form1)MainForm).OpenFiles(Environment.GetCommandLineArgs());
+        }
     }
 }

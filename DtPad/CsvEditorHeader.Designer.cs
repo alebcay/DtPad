@@ -40,8 +40,9 @@
             this.okButton.Location = new System.Drawing.Point(192, 274);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
-            this.okButton.TabIndex = 9;
+            this.okButton.TabIndex = 0;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -53,7 +54,7 @@
             this.cancelButton.Location = new System.Drawing.Point(273, 274);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 10;
+            this.cancelButton.TabIndex = 1;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -75,6 +76,7 @@
             this.MinimumSize = new System.Drawing.Size(376, 150);
             this.Name = "CsvEditorHeader";
             this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CSV Editor - Header";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.CsvEditorHeader_HelpButtonClicked);

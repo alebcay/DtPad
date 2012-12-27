@@ -24,8 +24,8 @@ namespace DtPad
             fileName = inFileName;
 
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { nameLabel, creationDateLabel, lastUpdateLabel, lastAccessLabel, directoryLabel, readonlyLabel, sizeLabel, encodingLabel });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { nameLabel, creationDateLabel, lastUpdateLabel, lastAccessLabel, directoryLabel, readonlyLabel, sizeLabel, encodingLabel });
 
             if (sessionFile)
             {

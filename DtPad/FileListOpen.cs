@@ -16,8 +16,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, contentTextBox);
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, contentTextBox);
 
             contentTextBox.Select(0, 0);
             contentTextBox.Font = ConfigUtil.GetFontParameter("FontInUse");

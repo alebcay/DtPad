@@ -17,8 +17,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { whiteCharacterTextBox, (Control)widthNumericUpDown });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { whiteCharacterTextBox, (Control)widthNumericUpDown });
         }
 
         private void whiteCharacterTextBox_TextChanged(object sender, EventArgs e)

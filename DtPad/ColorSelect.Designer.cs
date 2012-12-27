@@ -51,18 +51,19 @@
             // 
             // colorEdit
             // 
-            this.colorEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.colorEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorEdit.EditValue = System.Drawing.Color.Empty;
             this.colorEdit.Location = new System.Drawing.Point(62, 12);
             this.colorEdit.Name = "colorEdit";
             this.colorEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, false)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
             this.colorEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.colorEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.colorEdit.Properties.ShowWebColors = false;
             this.colorEdit.Size = new System.Drawing.Size(218, 20);
             this.colorEdit.TabIndex = 1;
+            this.colorEdit.Tag = "DontTranslate";
             this.colorEdit.ColorChanged += new System.EventHandler(this.colorEdit_ColorChanged);
             // 
             // okButton
@@ -75,6 +76,7 @@
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 3;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -93,9 +95,9 @@
             // 
             // previewGroupBox
             // 
-            this.previewGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.previewGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.previewGroupBox.Controls.Add(this.previewTextBox);
             this.previewGroupBox.Location = new System.Drawing.Point(12, 38);
             this.previewGroupBox.Name = "previewGroupBox";
@@ -106,9 +108,9 @@
             // 
             // previewTextBox
             // 
-            this.previewTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.previewTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.previewTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.previewTextBox.DetectUrls = false;
             this.previewTextBox.Location = new System.Drawing.Point(6, 19);

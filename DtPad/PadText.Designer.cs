@@ -69,12 +69,14 @@
             // 
             // whiteCharacterTextBox
             // 
-            this.whiteCharacterTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.whiteCharacterTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.whiteCharacterTextBox.Location = new System.Drawing.Point(126, 38);
             this.whiteCharacterTextBox.MaxLength = 1;
             this.whiteCharacterTextBox.Name = "whiteCharacterTextBox";
-            this.whiteCharacterTextBox.Size = new System.Drawing.Size(163, 20);
+            this.whiteCharacterTextBox.Size = new System.Drawing.Size(173, 20);
             this.whiteCharacterTextBox.TabIndex = 4;
+            this.whiteCharacterTextBox.Tag = "DontTranslate";
             this.whiteCharacterTextBox.TextChanged += new System.EventHandler(this.whiteCharacterTextBox_TextChanged);
             // 
             // widthLabel
@@ -90,7 +92,7 @@
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(215, 177);
+            this.cancelButton.Location = new System.Drawing.Point(225, 177);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 12;
@@ -118,11 +120,12 @@
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.okButton.Enabled = false;
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(133, 177);
+            this.okButton.Location = new System.Drawing.Point(126, 177);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.Size = new System.Drawing.Size(93, 23);
             this.okButton.TabIndex = 11;
-            this.okButton.Text = "OK";
+            this.okButton.Text = "Align";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -145,11 +148,12 @@
             // 
             // allTextRadioButton
             // 
-            this.allTextRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.allTextRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.allTextRadioButton.Checked = true;
-            this.allTextRadioButton.Location = new System.Drawing.Point(126, 113);
+            this.allTextRadioButton.Location = new System.Drawing.Point(126, 115);
             this.allTextRadioButton.Name = "allTextRadioButton";
-            this.allTextRadioButton.Size = new System.Drawing.Size(56, 17);
+            this.allTextRadioButton.Size = new System.Drawing.Size(173, 17);
             this.allTextRadioButton.TabIndex = 9;
             this.allTextRadioButton.TabStop = true;
             this.allTextRadioButton.Text = "All text";
@@ -157,10 +161,11 @@
             // 
             // selectedTextRadioButton
             // 
-            this.selectedTextRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectedTextRadioButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.selectedTextRadioButton.Location = new System.Drawing.Point(126, 136);
             this.selectedTextRadioButton.Name = "selectedTextRadioButton";
-            this.selectedTextRadioButton.Size = new System.Drawing.Size(87, 17);
+            this.selectedTextRadioButton.Size = new System.Drawing.Size(173, 17);
             this.selectedTextRadioButton.TabIndex = 10;
             this.selectedTextRadioButton.Text = "Selected text";
             this.selectedTextRadioButton.UseVisualStyleBackColor = true;
@@ -176,10 +181,11 @@
             // 
             // absoluteWidthCheckBox
             // 
-            this.absoluteWidthCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.absoluteWidthCheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.absoluteWidthCheckBox.Location = new System.Drawing.Point(126, 90);
             this.absoluteWidthCheckBox.Name = "absoluteWidthCheckBox";
-            this.absoluteWidthCheckBox.Size = new System.Drawing.Size(95, 17);
+            this.absoluteWidthCheckBox.Size = new System.Drawing.Size(151, 17);
             this.absoluteWidthCheckBox.TabIndex = 7;
             this.absoluteWidthCheckBox.Text = "Absolute width";
             this.absoluteWidthCheckBox.UseVisualStyleBackColor = true;
@@ -188,7 +194,7 @@
             // 
             this.absoluteWidthPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.absoluteWidthPictureBox.Image = global::DtPad.ToolbarResource.info_blue;
-            this.absoluteWidthPictureBox.Location = new System.Drawing.Point(273, 90);
+            this.absoluteWidthPictureBox.Location = new System.Drawing.Point(283, 90);
             this.absoluteWidthPictureBox.Name = "absoluteWidthPictureBox";
             this.absoluteWidthPictureBox.Size = new System.Drawing.Size(16, 16);
             this.absoluteWidthPictureBox.TabIndex = 13;
@@ -198,7 +204,9 @@
             // 
             // widthNumericUpDown
             // 
-            this.widthNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.widthNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.widthNumericUpDown.CustomContextMenuStrip = null;
             this.widthNumericUpDown.Location = new System.Drawing.Point(126, 64);
             this.widthNumericUpDown.Maximum = new decimal(new int[] {
             500,
@@ -211,8 +219,9 @@
             0,
             0});
             this.widthNumericUpDown.Name = "widthNumericUpDown";
-            this.widthNumericUpDown.Size = new System.Drawing.Size(163, 20);
+            this.widthNumericUpDown.Size = new System.Drawing.Size(173, 20);
             this.widthNumericUpDown.TabIndex = 6;
+            this.widthNumericUpDown.Tag = "DontTranslate";
             this.widthNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
@@ -225,7 +234,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(302, 211);
+            this.ClientSize = new System.Drawing.Size(312, 211);
             this.Controls.Add(this.absoluteWidthPictureBox);
             this.Controls.Add(this.absoluteWidthCheckBox);
             this.Controls.Add(this.applyToLabel);

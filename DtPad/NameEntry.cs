@@ -17,8 +17,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, fileNameTextBox);
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, fileNameTextBox);
         }
 
         private void fileNameTextBox_TextChanged(object sender, EventArgs e)

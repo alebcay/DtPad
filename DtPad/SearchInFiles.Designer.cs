@@ -69,19 +69,21 @@
             // 
             this.textToSearchTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textToSearchTextBox.Location = new System.Drawing.Point(126, 12);
+            this.textToSearchTextBox.Location = new System.Drawing.Point(136, 12);
             this.textToSearchTextBox.Name = "textToSearchTextBox";
-            this.textToSearchTextBox.Size = new System.Drawing.Size(372, 20);
+            this.textToSearchTextBox.Size = new System.Drawing.Size(362, 20);
             this.textToSearchTextBox.TabIndex = 1;
+            this.textToSearchTextBox.Tag = "DontTranslate";
             // 
             // filenamePatternTextBox
             // 
             this.filenamePatternTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.filenamePatternTextBox.Location = new System.Drawing.Point(126, 38);
+            this.filenamePatternTextBox.Location = new System.Drawing.Point(136, 38);
             this.filenamePatternTextBox.Name = "filenamePatternTextBox";
-            this.filenamePatternTextBox.Size = new System.Drawing.Size(350, 20);
+            this.filenamePatternTextBox.Size = new System.Drawing.Size(340, 20);
             this.filenamePatternTextBox.TabIndex = 3;
+            this.filenamePatternTextBox.Tag = "DontTranslate";
             this.filenamePatternTextBox.Text = "*.*";
             // 
             // filenamePatternLabel
@@ -122,6 +124,7 @@
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 13;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -131,7 +134,7 @@
             this.searchSubdirsCheckBox.AutoSize = true;
             this.searchSubdirsCheckBox.Checked = true;
             this.searchSubdirsCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.searchSubdirsCheckBox.Location = new System.Drawing.Point(126, 116);
+            this.searchSubdirsCheckBox.Location = new System.Drawing.Point(136, 116);
             this.searchSubdirsCheckBox.Name = "searchSubdirsCheckBox";
             this.searchSubdirsCheckBox.Size = new System.Drawing.Size(139, 17);
             this.searchSubdirsCheckBox.TabIndex = 9;
@@ -169,6 +172,7 @@
             this.searchInProgressPictureBox.Size = new System.Drawing.Size(16, 16);
             this.searchInProgressPictureBox.TabIndex = 11;
             this.searchInProgressPictureBox.TabStop = false;
+            this.searchInProgressPictureBox.Tag = "DontTranslate";
             this.searchInProgressPictureBox.Visible = false;
             // 
             // searchFolderComboBox
@@ -177,17 +181,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.searchFolderComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.searchFolderComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
+            this.searchFolderComboBox.CustomContextMenuStrip = null;
             this.searchFolderComboBox.FormattingEnabled = true;
-            this.searchFolderComboBox.Location = new System.Drawing.Point(126, 90);
+            this.searchFolderComboBox.Location = new System.Drawing.Point(136, 90);
             this.searchFolderComboBox.Name = "searchFolderComboBox";
-            this.searchFolderComboBox.Size = new System.Drawing.Size(336, 21);
+            this.searchFolderComboBox.Size = new System.Drawing.Size(326, 21);
             this.searchFolderComboBox.TabIndex = 7;
             this.searchFolderComboBox.TextChanged += new System.EventHandler(this.searchFolderComboBox_TextChanged);
             // 
             // hiddenFilesCheckBox
             // 
             this.hiddenFilesCheckBox.AutoSize = true;
-            this.hiddenFilesCheckBox.Location = new System.Drawing.Point(126, 139);
+            this.hiddenFilesCheckBox.Location = new System.Drawing.Point(136, 139);
             this.hiddenFilesCheckBox.Name = "hiddenFilesCheckBox";
             this.hiddenFilesCheckBox.Size = new System.Drawing.Size(117, 17);
             this.hiddenFilesCheckBox.TabIndex = 10;
@@ -219,7 +224,7 @@
             // caseSensitiveCheckBox
             // 
             this.caseSensitiveCheckBox.AutoSize = true;
-            this.caseSensitiveCheckBox.Location = new System.Drawing.Point(126, 162);
+            this.caseSensitiveCheckBox.Location = new System.Drawing.Point(136, 162);
             this.caseSensitiveCheckBox.Name = "caseSensitiveCheckBox";
             this.caseSensitiveCheckBox.Size = new System.Drawing.Size(94, 17);
             this.caseSensitiveCheckBox.TabIndex = 11;
@@ -241,10 +246,11 @@
             // 
             this.exclusionPatternTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.exclusionPatternTextBox.Location = new System.Drawing.Point(126, 64);
+            this.exclusionPatternTextBox.Location = new System.Drawing.Point(136, 64);
             this.exclusionPatternTextBox.Name = "exclusionPatternTextBox";
-            this.exclusionPatternTextBox.Size = new System.Drawing.Size(350, 20);
+            this.exclusionPatternTextBox.Size = new System.Drawing.Size(340, 20);
             this.exclusionPatternTextBox.TabIndex = 5;
+            this.exclusionPatternTextBox.Tag = "DontTranslate";
             // 
             // exclusionPatternLabel
             // 

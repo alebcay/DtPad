@@ -107,6 +107,7 @@
             this.tabTitleLabel8.Name = "tabTitleLabel8";
             this.tabTitleLabel8.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel8.TabIndex = 19;
+            this.tabTitleLabel8.Tag = "DontTranslate";
             this.tabTitleLabel8.Text = "tabTitleLabel8";
             // 
             // tabTitleLabel7
@@ -116,6 +117,7 @@
             this.tabTitleLabel7.Name = "tabTitleLabel7";
             this.tabTitleLabel7.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel7.TabIndex = 18;
+            this.tabTitleLabel7.Tag = "DontTranslate";
             this.tabTitleLabel7.Text = "tabTitleLabel7";
             // 
             // tabTitleLabel6
@@ -125,6 +127,7 @@
             this.tabTitleLabel6.Name = "tabTitleLabel6";
             this.tabTitleLabel6.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel6.TabIndex = 17;
+            this.tabTitleLabel6.Tag = "DontTranslate";
             this.tabTitleLabel6.Text = "tabTitleLabel6";
             // 
             // tabTitleLabel5
@@ -134,6 +137,7 @@
             this.tabTitleLabel5.Name = "tabTitleLabel5";
             this.tabTitleLabel5.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel5.TabIndex = 16;
+            this.tabTitleLabel5.Tag = "DontTranslate";
             this.tabTitleLabel5.Text = "tabTitleLabel5";
             // 
             // tabTitleLabel4
@@ -143,6 +147,7 @@
             this.tabTitleLabel4.Name = "tabTitleLabel4";
             this.tabTitleLabel4.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel4.TabIndex = 15;
+            this.tabTitleLabel4.Tag = "DontTranslate";
             this.tabTitleLabel4.Text = "tabTitleLabel4";
             // 
             // tabTitleLabel3
@@ -152,6 +157,7 @@
             this.tabTitleLabel3.Name = "tabTitleLabel3";
             this.tabTitleLabel3.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel3.TabIndex = 14;
+            this.tabTitleLabel3.Tag = "DontTranslate";
             this.tabTitleLabel3.Text = "tabTitleLabel3";
             // 
             // tabTitleLabel2
@@ -161,6 +167,7 @@
             this.tabTitleLabel2.Name = "tabTitleLabel2";
             this.tabTitleLabel2.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel2.TabIndex = 13;
+            this.tabTitleLabel2.Tag = "DontTranslate";
             this.tabTitleLabel2.Text = "tabTitleLabel2";
             // 
             // tabTextBox8
@@ -178,6 +185,7 @@
             this.tabTextBox8.Size = new System.Drawing.Size(156, 125);
             this.tabTextBox8.TabIndex = 11;
             this.tabTextBox8.TabStop = false;
+            this.tabTextBox8.Tag = "DontTranslate";
             this.tabTextBox8.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox8.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox8.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -197,6 +205,7 @@
             this.tabTextBox7.Size = new System.Drawing.Size(156, 125);
             this.tabTextBox7.TabIndex = 10;
             this.tabTextBox7.TabStop = false;
+            this.tabTextBox7.Tag = "DontTranslate";
             this.tabTextBox7.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox7.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox7.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -216,6 +225,7 @@
             this.tabTextBox6.Size = new System.Drawing.Size(156, 125);
             this.tabTextBox6.TabIndex = 9;
             this.tabTextBox6.TabStop = false;
+            this.tabTextBox6.Tag = "DontTranslate";
             this.tabTextBox6.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox6.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox6.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -235,6 +245,7 @@
             this.tabTextBox5.Size = new System.Drawing.Size(159, 125);
             this.tabTextBox5.TabIndex = 8;
             this.tabTextBox5.TabStop = false;
+            this.tabTextBox5.Tag = "DontTranslate";
             this.tabTextBox5.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox5.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox5.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -254,6 +265,7 @@
             this.tabTextBox2.Size = new System.Drawing.Size(156, 123);
             this.tabTextBox2.TabIndex = 1;
             this.tabTextBox2.TabStop = false;
+            this.tabTextBox2.Tag = "DontTranslate";
             this.tabTextBox2.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox2.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox2.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -273,6 +285,7 @@
             this.tabTextBox1.Size = new System.Drawing.Size(156, 123);
             this.tabTextBox1.TabIndex = 0;
             this.tabTextBox1.TabStop = false;
+            this.tabTextBox1.Tag = "DontTranslate";
             this.tabTextBox1.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox1.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox1.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -292,6 +305,7 @@
             this.tabTextBox3.Size = new System.Drawing.Size(156, 123);
             this.tabTextBox3.TabIndex = 2;
             this.tabTextBox3.TabStop = false;
+            this.tabTextBox3.Tag = "DontTranslate";
             this.tabTextBox3.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox3.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox3.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -311,6 +325,7 @@
             this.tabTextBox4.Size = new System.Drawing.Size(159, 123);
             this.tabTextBox4.TabIndex = 3;
             this.tabTextBox4.TabStop = false;
+            this.tabTextBox4.Tag = "DontTranslate";
             this.tabTextBox4.Click += new System.EventHandler(this.tabTextBox_Click);
             this.tabTextBox4.MouseEnter += new System.EventHandler(this.tabTextBox_MouseEnter);
             this.tabTextBox4.MouseLeave += new System.EventHandler(this.tabTextBox_MouseLeave);
@@ -322,6 +337,7 @@
             this.tabTitleLabel1.Name = "tabTitleLabel1";
             this.tabTitleLabel1.Size = new System.Drawing.Size(74, 13);
             this.tabTitleLabel1.TabIndex = 12;
+            this.tabTitleLabel1.Tag = "DontTranslate";
             this.tabTitleLabel1.Text = "tabTitleLabel1";
             // 
             // nextButton

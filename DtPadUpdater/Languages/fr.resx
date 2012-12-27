@@ -284,4 +284,13 @@ Démarrer la mise à jour à partir du menu &quot;Aide -&gt; Vérifier nouvelle 
   <data name="Form1_whatIsInsideLabel" xml:space="preserve">
     <value>Cette mise à jour contient (seulement en anglais):</value>
   </data>
+  <data name="Form1_ErrorLoadingChangeLog" xml:space="preserve">
+    <value>Une erreur est intervenue durant le chargement du journal des modifications!</value>
+  </data>
+  <data name="Form1_whatIsInsideTextBox" xml:space="preserve">
+    <value>Chargement du journal des modifications...
+
+Il n&apos;est pas nécessaire d&apos;attendre pour poursuivre.
+Appuyer sur &quot;Démarrer la mise à jour&quot; lorsque vous êtes prêt à effectuer la mise à jour.</value>
+  </data>
 </root>

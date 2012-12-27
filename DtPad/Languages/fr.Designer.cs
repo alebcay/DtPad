@@ -70,15 +70,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string About_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("About_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Marco Macciò.
         /// </summary>
         internal static string About_createdByLabel {
@@ -112,6 +103,7 @@ namespace DtPad.Languages {
         ///Cette application nécessite le Microsoft .NET Framework 4 et utilise la base des registres de Windows pour stocker l&apos;association &quot;Ouvrir avec&quot; du menu contextuel de l&apos;explorateur.
         ///
         ///Traduction française: Alain Buferne.
+        ///Traduction russe: Artem Vakhitov.
         ///
         ///Icones: Delacro.
         ///- delacro.deviantart.com
@@ -120,7 +112,7 @@ namespace DtPad.Languages {
         ///- famfamfam.com
         ///- vistaicons.com
         ///
-        ///Composants externes: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGr [rest of string was truncated]&quot;;.
+        ///Composants externes: SharpZip, iText [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string About_descriptionTextBox {
             get {
@@ -143,15 +135,6 @@ namespace DtPad.Languages {
         internal static string About_rssPictureBoxToolTip {
             get {
                 return ResourceManager.GetString("About_rssPictureBoxToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string About_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("About_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -288,24 +271,6 @@ namespace DtPad.Languages {
         internal static string calculatorPanel_clearCalculatorToolStripButton {
             get {
                 return ResourceManager.GetString("calculatorPanel_clearCalculatorToolStripButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string calculatorPanel_copyToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("calculatorPanel_copyToolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string calculatorPanel_selectAllToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("calculatorPanel_selectAllToolStripMenuItem2", resourceCulture);
             }
         }
         
@@ -537,6 +502,414 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ajouter une nouvelle colonne.
+        /// </summary>
+        internal static string CsvEditor_addNewColumnToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_addNewColumnToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insérer un nouveau nom de colonne.
+        /// </summary>
+        internal static string CsvEditor_addNewColumnToolStripTextBox {
+            get {
+                return ResourceManager.GetString("CsvEditor_addNewColumnToolStripTextBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tout.
+        /// </summary>
+        internal static string CsvEditor_allToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_allToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appliquer modifications.
+        /// </summary>
+        internal static string CsvEditor_applyButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_applyButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retour automatique à la ligne.
+        /// </summary>
+        internal static string CsvEditor_cellWrapToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_cellWrapToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fermer.
+        /// </summary>
+        internal static string CsvEditor_closeButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_closeButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toutes les modifications seront perdues.
+        ///Etes vous sur de vouloir poursuivre?.
+        /// </summary>
+        internal static string CsvEditor_CloseConfirm {
+            get {
+                return ResourceManager.GetString("CsvEditor_CloseConfirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copier.
+        /// </summary>
+        internal static string CsvEditor_copyCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_copyCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colonnes courantes.
+        /// </summary>
+        internal static string CsvEditor_currentColumnsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_currentColumnsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lignes courantes.
+        /// </summary>
+        internal static string CsvEditor_currentRowsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_currentRowsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Couper.
+        /// </summary>
+        internal static string CsvEditor_cutCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_cutCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supprimer.
+        /// </summary>
+        internal static string CsvEditor_deleteCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supprimer les colonnes sélectionnées.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedColumnsToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedColumnsToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supprimer les les colonnes sélectionnées.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedColumnsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedColumnsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supprimer les lignes sélectionnées.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedRowsToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedRowsToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supprimer les lignes sélectionnées.
+        /// </summary>
+        internal static string CsvEditor_deleteSelectedRowsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_deleteSelectedRowsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///, (virgule)
+        ///. (point)
+        ///; (point-virgule)
+        ///- (tiret).
+        /// </summary>
+        internal static string CsvEditor_delimiterComboBoxItems {
+            get {
+                return ResourceManager.GetString("CsvEditor_delimiterComboBoxItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Séparateur:.
+        /// </summary>
+        internal static string CsvEditor_delimiterLabel {
+            get {
+                return ResourceManager.GetString("CsvEditor_delimiterLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editer en tête.
+        /// </summary>
+        internal static string CsvEditor_editHeaderToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_editHeaderToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to En tête présent.
+        /// </summary>
+        internal static string CsvEditor_headerCheckBox {
+            get {
+                return ResourceManager.GetString("CsvEditor_headerCheckBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coller.
+        /// </summary>
+        internal static string CsvEditor_pasteCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_pasteCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///[No identifiant texte]
+        ///&quot; (citations)
+        ///&apos; (apostrophe).
+        /// </summary>
+        internal static string CsvEditor_quoteComboBoxItems {
+            get {
+                return ResourceManager.GetString("CsvEditor_quoteComboBoxItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Identifiant texte:.
+        /// </summary>
+        internal static string CsvEditor_quoteLabel {
+            get {
+                return ResourceManager.GetString("CsvEditor_quoteLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Si vous poursuivez, toutes les modifications du CSV seront perdues.
+        ///Etes vous sur de continuer?.
+        /// </summary>
+        internal static string CsvEditor_ResetChanges {
+            get {
+                return ResourceManager.GetString("CsvEditor_ResetChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Faire une copie d&apos;écran de données actuel.
+        /// </summary>
+        internal static string CsvEditor_screenshotToolStripButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_screenshotToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sélectionner tout.
+        /// </summary>
+        internal static string CsvEditor_selectAllCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectAllCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sélectionner les colonnes courantes.
+        /// </summary>
+        internal static string CsvEditor_selectCurrentColumnsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectCurrentColumnsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sélectionner les lignes courantes.
+        /// </summary>
+        internal static string CsvEditor_selectCurrentRowsToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectCurrentRowsToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sélectionner....
+        /// </summary>
+        internal static string CsvEditor_selectToolStripDropDownButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_selectToolStripDropDownButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Configuration du fichier.
+        /// </summary>
+        internal static string CsvEditor_settingsGroupBox {
+            get {
+                return ResourceManager.GetString("CsvEditor_settingsGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editeur CSV.
+        /// </summary>
+        internal static string CsvEditor_Title {
+            get {
+                return ResourceManager.GetString("CsvEditor_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annuler tout.
+        /// </summary>
+        internal static string CsvEditor_undoAllToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoAllToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annuler.
+        /// </summary>
+        internal static string CsvEditor_undoCustomToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoCustomToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annuler la dernière action.
+        /// </summary>
+        internal static string CsvEditor_undoToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annuler la dernière action.
+        /// </summary>
+        internal static string CsvEditor_undoToolStripSplitButton {
+            get {
+                return ResourceManager.GetString("CsvEditor_undoToolStripSplitButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Annuler.
+        /// </summary>
+        internal static string CsvEditorHeader_cancelButton {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_cancelButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colonne {0}:.
+        /// </summary>
+        internal static string CsvEditorHeader_ColumnLabel {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_ColumnLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Au moins un nom de colonne est vide.
+        ///Saisissez tous les champs avant de continuer..
+        /// </summary>
+        internal static string CsvEditorHeader_EmptyColumnName {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_EmptyColumnName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modifier ou créer l&apos;en tête CSV..
+        /// </summary>
+        internal static string CsvEditorHeader_helpLabel {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_helpLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string CsvEditorHeader_okButton {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_okButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editeur CSV - En tête.
+        /// </summary>
+        internal static string CsvEditorHeader_Title {
+            get {
+                return ResourceManager.GetString("CsvEditorHeader_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Le contenu CSV n&apos;est pas valide et ne peut pas être rendu par l&apos;éditeur.
+        ///Si vous pensez qu&apos;il est valide veuillez nous reporter le bug en incluant le texte..
+        /// </summary>
+        internal static string CsvManager_ContentError {
+            get {
+                return ResourceManager.GetString("CsvManager_ContentError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Le séparateur sélectionné ne produit aucun résultat.
+        ///Essayer en un autre..
+        /// </summary>
+        internal static string CsvManager_NoResults {
+            get {
+                return ResourceManager.GetString("CsvManager_NoResults", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colonne {0}.
+        /// </summary>
+        internal static string CsvManager_StandardColumnLabel {
+            get {
+                return ResourceManager.GetString("CsvManager_StandardColumnLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fermer le panneau.
         /// </summary>
         internal static string CustomFilesManager_ClosePanel {
@@ -654,7 +1027,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Retour à la ligne.
+        ///   Looks up a localized string similar to Retour automatique à la ligne.
         /// </summary>
         internal static string CustomFilesManager_WordWrapPanel {
             get {
@@ -762,33 +1135,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Dictionary_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Dictionary_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string Dictionary_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Dictionary_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string Dictionary_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Dictionary_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Cliquer ici pour télécharger nouveaux dictionnaires.
         /// </summary>
         internal static string Dictionary_dictionariesLabel {
@@ -827,15 +1173,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string Dictionary_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Dictionary_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Chercher.
         /// </summary>
         internal static string Dictionary_searchButton {
@@ -845,47 +1182,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string Dictionary_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Dictionary_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Dictionnaire et synonymes.
         /// </summary>
         internal static string Dictionary_Title {
             get {
                 return ResourceManager.GetString("Dictionary_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Dictionary_toolStripMenuItem1 {
-            get {
-                return ResourceManager.GetString("Dictionary_toolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string Dictionary_toolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("Dictionary_toolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string Dictionary_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Dictionary_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -1009,42 +1310,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string DropboxFileDialog_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string DropboxFileDialog_copyToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_copyToolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string DropboxFileDialog_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string DropboxFileDialog_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Supprimer.
         /// </summary>
         internal static string DropboxFileDialog_deleteToolStripMenuItem1 {
@@ -1108,15 +1373,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string DropboxFileDialog_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string DropboxFileDialog_saveAsComboBoxItems {
@@ -1162,24 +1418,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string DropboxFileDialog_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string DropboxFileDialog_selectAllToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_selectAllToolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Monter d&apos;un niveau.
         /// </summary>
         internal static string DropboxFileDialog_superiorLevelButtonToolTip {
@@ -1207,15 +1445,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string DropboxFileDialog_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("DropboxFileDialog_undoToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Grands icones
         ///Petits icones
         ///Liste
@@ -1228,7 +1457,16 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Deconnexion de la Dropbox.
+        ///   Looks up a localized string similar to Connecté à Dropbox.
+        /// </summary>
+        internal static string DropboxManager_DropboxLogIn {
+            get {
+                return ResourceManager.GetString("DropboxManager_DropboxLogIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Deconnexion de Dropbox.
         /// </summary>
         internal static string DropboxManager_DropboxLogOut {
             get {
@@ -1584,38 +1822,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Extensions_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Extensions_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string Extensions_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Extensions_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Extension par défaut.
         /// </summary>
         internal static string Extensions_defaultCheckBox {
             get {
                 return ResourceManager.GetString("Extensions_defaultCheckBox", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string Extensions_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Extensions_deleteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -1692,29 +1903,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string Extensions_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Extensions_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Supprimer l&apos;extension sélectionnée.
         /// </summary>
         internal static string Extensions_removeButtonToolTip {
             get {
                 return ResourceManager.GetString("Extensions_removeButtonToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string Extensions_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Extensions_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -1728,11 +1921,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annuler.
+        ///   Looks up a localized string similar to Session de DtPad (*.dps)|*.dps.
         /// </summary>
-        internal static string Extensions_undoToolStripMenuItem {
+        internal static string FavouriteManager_FileDialog {
             get {
-                return ResourceManager.GetString("Extensions_undoToolStripMenuItem", resourceCulture);
+                return ResourceManager.GetString("FavouriteManager_FileDialog", resourceCulture);
             }
         }
         
@@ -1742,6 +1935,24 @@ namespace DtPad.Languages {
         internal static string Favourites_addFavouriteButtonToolTip {
             get {
                 return ResourceManager.GetString("Favourites_addFavouriteButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ajouter une nouvelle session favorite.
+        /// </summary>
+        internal static string Favourites_addFavouriteSessionButtonToolTip {
+            get {
+                return ResourceManager.GetString("Favourites_addFavouriteSessionButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ajouter une nouvelle URL favorite.
+        /// </summary>
+        internal static string Favourites_addFavouriteUrlButtonToolTip {
+            get {
+                return ResourceManager.GetString("Favourites_addFavouriteUrlButtonToolTip", resourceCulture);
             }
         }
         
@@ -1962,6 +2173,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to L&apos;URL &quot;{0}&quot; vient d&apos;être ajoutée à vos favoris.
+        /// </summary>
+        internal static string FileListManager_AddedFavouriteUrl {
+            get {
+                return ResourceManager.GetString("FileListManager_AddedFavouriteUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Le fichier sélectionné est déjà enregistré comme favori..
         /// </summary>
         internal static string FileListManager_AlreadyFavourite {
@@ -2071,33 +2291,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string FileListOpen_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileListOpen_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string FileListOpen_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileListOpen_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string FileListOpen_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileListOpen_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Copier ici la liste des fichiers à ouvrir (un fichier par ligne):.
         /// </summary>
         internal static string FileListOpen_fileListLabel {
@@ -2125,38 +2318,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string FileListOpen_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileListOpen_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string FileListOpen_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileListOpen_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Ouvrir une liste de fichiers.
         /// </summary>
         internal static string FileListOpen_Title {
             get {
                 return ResourceManager.GetString("FileListOpen_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string FileListOpen_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileListOpen_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -2634,15 +2800,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string FileProperties_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileProperties_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Date de création:.
         /// </summary>
         internal static string FileProperties_creationDateLabel1 {
@@ -2733,15 +2890,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string FileProperties_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileProperties_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Taille:.
         /// </summary>
         internal static string FileProperties_sizeLabel1 {
@@ -2778,42 +2926,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string FileRename_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileRename_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string FileRename_copyToolStripMenuItem1 {
-            get {
-                return ResourceManager.GetString("FileRename_copyToolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string FileRename_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileRename_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string FileRename_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileRename_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Nom du fichier:.
         /// </summary>
         internal static string FileRename_fileNameLabel {
@@ -2841,15 +2953,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string FileRename_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileRename_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Renommer.
         /// </summary>
         internal static string FileRename_renameButton {
@@ -2868,38 +2971,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Selectionner tout.
-        /// </summary>
-        internal static string FileRename_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileRename_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string FileRename_selectAllToolStripMenuItem1 {
-            get {
-                return ResourceManager.GetString("FileRename_selectAllToolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Renommer le fichier.
         /// </summary>
         internal static string FileRename_Title {
             get {
                 return ResourceManager.GetString("FileRename_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string FileRename_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FileRename_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -2958,15 +3034,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string FontSelect_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FontSelect_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Effets.
         /// </summary>
         internal static string FontSelect_effectsGroupBox {
@@ -3003,15 +3070,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string FontSelect_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FontSelect_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Aperçu.
         /// </summary>
         internal static string FontSelect_previewGroupBox {
@@ -3035,15 +3093,6 @@ namespace DtPad.Languages {
         internal static string FontSelect_resetButton {
             get {
                 return ResourceManager.GetString("FontSelect_resetButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string FontSelect_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("FontSelect_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -3472,6 +3521,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Copier.
+        /// </summary>
+        internal static string Form1_copyCommonStandardToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_copyCommonStandardToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Copier….
         /// </summary>
         internal static string Form1_copyFileNamesToolStripMenuItem {
@@ -3535,20 +3593,29 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Form1_copyToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("Form1_copyToolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Compter les occurrences.
         /// </summary>
         internal static string Form1_countOccurencesToolStripMenuItem {
             get {
                 return ResourceManager.GetString("Form1_countOccurencesToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editeur CSV.
+        /// </summary>
+        internal static string Form1_csvEditorToolStripButton {
+            get {
+                return ResourceManager.GetString("Form1_csvEditorToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Editeur CSV.
+        /// </summary>
+        internal static string Form1_csvEditorToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_csvEditorToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -3567,6 +3634,15 @@ namespace DtPad.Languages {
         internal static string Form1_cutAppendToolStripMenuItem {
             get {
                 return ResourceManager.GetString("Form1_cutAppendToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Couper.
+        /// </summary>
+        internal static string Form1_cutCommonStandardToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_cutCommonStandardToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -3598,20 +3674,20 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string Form1_cutToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("Form1_cutToolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Par defaut.
         /// </summary>
         internal static string Form1_defaultToolStripMenuItem {
             get {
                 return ResourceManager.GetString("Form1_defaultToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Supprimer.
+        /// </summary>
+        internal static string Form1_deleteCommonStandardToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_deleteCommonStandardToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -3648,15 +3724,6 @@ namespace DtPad.Languages {
         internal static string Form1_deleteToolStripMenuItem1 {
             get {
                 return ResourceManager.GetString("Form1_deleteToolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string Form1_deleteToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("Form1_deleteToolStripMenuItem2", resourceCulture);
             }
         }
         
@@ -4688,6 +4755,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Coller.
+        /// </summary>
+        internal static string Form1_pasteCommonStandardToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_pasteCommonStandardToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contenu HTML.
         /// </summary>
         internal static string Form1_pasteSpecialHtmlToolStripMenuItem {
@@ -4738,15 +4814,6 @@ namespace DtPad.Languages {
         internal static string Form1_pasteToolStripMenuItem1 {
             get {
                 return ResourceManager.GetString("Form1_pasteToolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string Form1_pasteToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("Form1_pasteToolStripMenuItem2", resourceCulture);
             }
         }
         
@@ -5401,6 +5468,15 @@ namespace DtPad.Languages {
         /// <summary>
         ///   Looks up a localized string similar to Sélectionner tout.
         /// </summary>
+        internal static string Form1_selectAllCommonStandardToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_selectAllCommonStandardToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sélectionner tout.
+        /// </summary>
         internal static string Form1_selectAllToolStripMenuItem {
             get {
                 return ResourceManager.GetString("Form1_selectAllToolStripMenuItem", resourceCulture);
@@ -5413,15 +5489,6 @@ namespace DtPad.Languages {
         internal static string Form1_selectAllToolStripMenuItem1 {
             get {
                 return ResourceManager.GetString("Form1_selectAllToolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string Form1_selectAllToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("Form1_selectAllToolStripMenuItem2", resourceCulture);
             }
         }
         
@@ -5570,7 +5637,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Affiche sous forme de note au dessus de tout.
+        ///   Looks up a localized string similar to Afficher sous forme de note au dessus de tout.
         /// </summary>
         internal static string Form1_showTabAsNoteOnTopToolStripMenuItem {
             get {
@@ -5939,6 +6006,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Annuler.
+        /// </summary>
+        internal static string Form1_undoCommonStandardToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_undoCommonStandardToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Annuler &lt;vide&gt;.
         /// </summary>
         internal static string Form1_undoToolStripButton {
@@ -5962,15 +6038,6 @@ namespace DtPad.Languages {
         internal static string Form1_undoToolStripMenuItem1 {
             get {
                 return ResourceManager.GetString("Form1_undoToolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string Form1_undoToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("Form1_undoToolStripMenuItem2", resourceCulture);
             }
         }
         
@@ -6155,7 +6222,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Retour à la ligne automatique.
+        ///   Looks up a localized string similar to Retour automatique à la ligne.
         /// </summary>
         internal static string Form1_wordWrapToolStripButton {
             get {
@@ -6164,7 +6231,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Retour à la ligne automatique.
+        ///   Looks up a localized string similar to Retour automatique à la ligne.
         /// </summary>
         internal static string Form1_wordWrapToolStripMenuItem {
             get {
@@ -6245,15 +6312,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string GoToLine_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("GoToLine_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Sélectionner la ligne de destination..
         /// </summary>
         internal static string GoToLine_helpLabel {
@@ -6286,24 +6344,6 @@ namespace DtPad.Languages {
         internal static string GoToLine_okButton {
             get {
                 return ResourceManager.GetString("GoToLine_okButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Atteindre.
-        /// </summary>
-        internal static string GoToLine_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("GoToLine_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string GoToLine_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("GoToLine_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -6530,33 +6570,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string MergeTabs_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MergeTabs_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string MergeTabs_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MergeTabs_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string MergeTabs_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MergeTabs_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Fusionner le contenu de deux onglets ou plus dans un autre..
         /// </summary>
         internal static string MergeTabs_helpLabel {
@@ -6602,24 +6615,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string MergeTabs_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MergeTabs_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string MergeTabs_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MergeTabs_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Sélectionner les onglets à fusionner (au minimum 2):.
         /// </summary>
         internal static string MergeTabs_selectTabsLabel {
@@ -6638,29 +6633,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string MergeTabs_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MergeTabs_undoToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Fermer.
         /// </summary>
         internal static string MoveLines_cancelButton {
             get {
                 return ResourceManager.GetString("MoveLines_cancelButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string MoveLines_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MoveLines_copyToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -6710,24 +6687,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string MoveLines_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MoveLines_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string MoveLines_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("MoveLines_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Déplacer des lignes.
         /// </summary>
         internal static string MoveLines_Title {
@@ -6751,33 +6710,6 @@ namespace DtPad.Languages {
         internal static string NameEntry_cancelButton {
             get {
                 return ResourceManager.GetString("NameEntry_cancelButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string NameEntry_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("NameEntry_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string NameEntry_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("NameEntry_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string NameEntry_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("NameEntry_deleteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -6818,24 +6750,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string NameEntry_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("NameEntry_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string NameEntry_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("NameEntry_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Nouveau nom du réertoire.
         /// </summary>
         internal static string NameEntry_Title_DropboxFileDialog {
@@ -6850,15 +6764,6 @@ namespace DtPad.Languages {
         internal static string NameEntry_Title_ZipExtract {
             get {
                 return ResourceManager.GetString("NameEntry_Title_ZipExtract", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string NameEntry_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("NameEntry_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -7293,24 +7198,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Options_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Options_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Options_copyToolStripMenuItem1 {
-            get {
-                return ResourceManager.GetString("Options_copyToolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Créer un fichier de sauvegarde lors de l&apos;enregistrement.
         /// </summary>
         internal static string Options_createBackupCheckBox {
@@ -7325,15 +7212,6 @@ namespace DtPad.Languages {
         internal static string Options_customBrowserRadioButton {
             get {
                 return ResourceManager.GetString("Options_customBrowserRadioButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string Options_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Options_cutToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -7364,15 +7242,6 @@ namespace DtPad.Languages {
         internal static string Options_defaultLabel {
             get {
                 return ResourceManager.GetString("Options_defaultLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string Options_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Options_deleteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -7566,7 +7435,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Format.
+        ///   Looks up a localized string similar to Texte.
         /// </summary>
         internal static string Options_formatNode {
             get {
@@ -7756,7 +7625,8 @@ namespace DtPad.Languages {
         ///   Looks up a localized string similar to English
         ///Italiano
         ///Français
-        ///Español.
+        ///Español
+        ///Pусский.
         /// </summary>
         internal static string Options_languageComboBoxItems {
             get {
@@ -7882,6 +7752,60 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apparence.
+        /// </summary>
+        internal static string Options_noteModeGroupBox1 {
+            get {
+                return ResourceManager.GetString("Options_noteModeGroupBox1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note: pour activer le mode note, cliquer avec le bouton droit sur un des onglets de la zone d&apos;édition et sélectionner &quot;Afficher sous forme de note au dessus de tout&quot;..
+        /// </summary>
+        internal static string Options_noteModeInfoLabel {
+            get {
+                return ResourceManager.GetString("Options_noteModeInfoLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mode note.
+        /// </summary>
+        internal static string Options_noteModeNode {
+            get {
+                return ResourceManager.GetString("Options_noteModeNode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taille de la fenêtre (x, y):.
+        /// </summary>
+        internal static string Options_noteModeSizeLabel {
+            get {
+                return ResourceManager.GetString("Options_noteModeSizeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to x.
+        /// </summary>
+        internal static string Options_noteModeSizeXLabel {
+            get {
+                return ResourceManager.GetString("Options_noteModeSizeXLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Autoriser l&apos;affichage des onglets.
+        /// </summary>
+        internal static string Options_noteModeTabsCheckBox {
+            get {
+                return ResourceManager.GetString("Options_noteModeTabsCheckBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ne pas considérer les caractères nuls de fin de chaine (\0).
         /// </summary>
         internal static string Options_nullCharCheckBox {
@@ -7950,24 +7874,6 @@ namespace DtPad.Languages {
         internal static string Options_passwordLabel {
             get {
                 return ResourceManager.GetString("Options_passwordLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string Options_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Options_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string Options_pasteToolStripMenuItem1 {
-            get {
-                return ResourceManager.GetString("Options_pasteToolStripMenuItem1", resourceCulture);
             }
         }
         
@@ -8055,6 +7961,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Clavier.
+        /// </summary>
+        internal static string Options_searchGroupBox2 {
+            get {
+                return ResourceManager.GetString("Options_searchGroupBox2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Historique recherches:.
         /// </summary>
         internal static string Options_searchHistoryLabel {
@@ -8073,20 +7988,29 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
+        ///   Looks up a localized string similar to On appui sur ENTER lors d&apos;une recherche ou de la saisie d&apos;un texte:.
         /// </summary>
-        internal static string Options_selectAllToolStripMenuItem {
+        internal static string Options_searchReturnLabel {
             get {
-                return ResourceManager.GetString("Options_selectAllToolStripMenuItem", resourceCulture);
+                return ResourceManager.GetString("Options_searchReturnLabel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
+        ///   Looks up a localized string similar to Démarrer la recherche.
         /// </summary>
-        internal static string Options_selectAllToolStripMenuItem1 {
+        internal static string Options_searchReturnRadioButton1 {
             get {
-                return ResourceManager.GetString("Options_selectAllToolStripMenuItem1", resourceCulture);
+                return ResourceManager.GetString("Options_searchReturnRadioButton1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insérer un retour chariot.
+        /// </summary>
+        internal static string Options_searchReturnRadioButton2 {
+            get {
+                return ResourceManager.GetString("Options_searchReturnRadioButton2", resourceCulture);
             }
         }
         
@@ -8314,15 +8238,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string Options_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Options_undoToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Vérification automatique.
         /// </summary>
         internal static string Options_updateGroupBox1 {
@@ -8487,33 +8402,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string PadText_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("PadText_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string PadText_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("PadText_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string PadText_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("PadText_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Aligner texte avec caractère de remplissage..
         /// </summary>
         internal static string PadText_helpLabel {
@@ -8550,29 +8438,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string PadText_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("PadText_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Droite.
         /// </summary>
         internal static string PadText_rightCheckBox {
             get {
                 return ResourceManager.GetString("PadText_rightCheckBox", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string PadText_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("PadText_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -8591,42 +8461,6 @@ namespace DtPad.Languages {
         internal static string PadText_Title {
             get {
                 return ResourceManager.GetString("PadText_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string PadText_toolStripMenuItem1 {
-            get {
-                return ResourceManager.GetString("PadText_toolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string PadText_toolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("PadText_toolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string PadText_toolStripMenuItem3 {
-            get {
-                return ResourceManager.GetString("PadText_toolStripMenuItem3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string PadText_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("PadText_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -8948,33 +8782,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string ReportBug_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ReportBug_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string ReportBug_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ReportBug_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string ReportBug_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ReportBug_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Description: *.
         /// </summary>
         internal static string ReportBug_descriptionLabel {
@@ -9020,29 +8827,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string ReportBug_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ReportBug_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to * Champs obligatoires.
         /// </summary>
         internal static string ReportBug_requiredFieldsLabel {
             get {
                 return ResourceManager.GetString("ReportBug_requiredFieldsLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string ReportBug_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ReportBug_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -9070,15 +8859,6 @@ namespace DtPad.Languages {
         internal static string ReportBug_Title {
             get {
                 return ResourceManager.GetString("ReportBug_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string ReportBug_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ReportBug_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -9124,33 +8904,6 @@ namespace DtPad.Languages {
         internal static string SearchInFiles_closeButton {
             get {
                 return ResourceManager.GetString("SearchInFiles_closeButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string SearchInFiles_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchInFiles_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string SearchInFiles_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchInFiles_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string SearchInFiles_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchInFiles_deleteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -9248,15 +9001,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string SearchInFiles_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchInFiles_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Agrandir la fenêtre jusqu&apos;à la taille del&apos;écran.
         /// </summary>
         internal static string SearchInFiles_resizeButtonToolTip {
@@ -9311,15 +9055,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string SearchInFiles_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchInFiles_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Indiquer un texte à rechercher!.
         /// </summary>
         internal static string SearchInFiles_TextToSearchEmpty {
@@ -9347,15 +9082,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string SearchInFiles_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchInFiles_undoToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Nettoyer la liste.
         /// </summary>
         internal static string searchInFilesPanel_clearToolStripButton {
@@ -9370,15 +9096,6 @@ namespace DtPad.Languages {
         internal static string searchInFilesPanel_copyFileFullPathToolStripMenuItem {
             get {
                 return ResourceManager.GetString("searchInFilesPanel_copyFileFullPathToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string searchInFilesPanel_copyToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("searchInFilesPanel_copyToolStripMenuItem2", resourceCulture);
             }
         }
         
@@ -9415,15 +9132,6 @@ namespace DtPad.Languages {
         internal static string searchInFilesPanel_openSelectedFilesToolStripMenuItem {
             get {
                 return ResourceManager.GetString("searchInFilesPanel_openSelectedFilesToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string searchInFilesPanel_selectAllToolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("searchInFilesPanel_selectAllToolStripMenuItem2", resourceCulture);
             }
         }
         
@@ -9709,33 +9417,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string SearchPattern_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchPattern_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string SearchPattern_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchPattern_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string SearchPattern_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchPattern_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Ignorer l&apos;expression régulière.
         /// </summary>
         internal static string SearchPattern_denyRegexCheckBox {
@@ -9768,15 +9449,6 @@ namespace DtPad.Languages {
         internal static string SearchPattern_historyLabel {
             get {
                 return ResourceManager.GetString("SearchPattern_historyLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string SearchPattern_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchPattern_pasteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -9831,15 +9503,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string SearchPattern_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchPattern_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Chercher selon le modèle.
         /// </summary>
         internal static string SearchPattern_Title {
@@ -9851,27 +9514,9 @@ namespace DtPad.Languages {
         /// <summary>
         ///   Looks up a localized string similar to Annuler.
         /// </summary>
-        internal static string SearchPattern_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SearchPattern_undoToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
         internal static string SelectLines_cancelButton {
             get {
                 return ResourceManager.GetString("SelectLines_cancelButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string SelectLines_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SelectLines_copyToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -9908,24 +9553,6 @@ namespace DtPad.Languages {
         internal static string SelectLines_okButton {
             get {
                 return ResourceManager.GetString("SelectLines_okButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string SelectLines_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SelectLines_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string SelectLines_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("SelectLines_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -10024,7 +9651,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fichier de session DtPad (*.dps)|*.dps.
+        ///   Looks up a localized string similar to Session de DtPad (*.dps)|*.dps.
         /// </summary>
         internal static string SessionManager_FileDialog {
             get {
@@ -10129,7 +9756,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Session&quot;{0}&quot; renommée.
+        ///   Looks up a localized string similar to Session &quot;{0}&quot; renommée.
         /// </summary>
         internal static string SessionManager_Renamed {
             get {
@@ -10219,24 +9846,6 @@ namespace DtPad.Languages {
         internal static string ShowContent_closeButton {
             get {
                 return ResourceManager.GetString("ShowContent_closeButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string ShowContent_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ShowContent_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string ShowContent_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("ShowContent_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -10376,15 +9985,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Statistics_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Statistics_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Domaine:.
         /// </summary>
         internal static string Statistics_domainLabel1 {
@@ -10453,15 +10053,6 @@ namespace DtPad.Languages {
         internal static string Statistics_refreshButtonToolTip {
             get {
                 return ResourceManager.GetString("Statistics_refreshButtonToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string Statistics_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Statistics_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -10782,6 +10373,42 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Retour.
+        /// </summary>
+        internal static string TabsSwitch_backButtonToolTip {
+            get {
+                return ResourceManager.GetString("TabsSwitch_backButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suivant.
+        /// </summary>
+        internal static string TabsSwitch_nextButtonToolTip {
+            get {
+                return ResourceManager.GetString("TabsSwitch_nextButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page: {0}/{1}.
+        /// </summary>
+        internal static string TabsSwitch_pagingLabel {
+            get {
+                return ResourceManager.GetString("TabsSwitch_pagingLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changer les onglets.
+        /// </summary>
+        internal static string TabsSwitch_Title {
+            get {
+                return ResourceManager.GetString("TabsSwitch_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fermer.
         /// </summary>
         internal static string TagEntry_cancelButton {
@@ -10796,15 +10423,6 @@ namespace DtPad.Languages {
         internal static string TagEntry_completeRadioButton {
             get {
                 return ResourceManager.GetString("TagEntry_completeRadioButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string TagEntry_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("TagEntry_copyToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -10824,24 +10442,6 @@ namespace DtPad.Languages {
         internal static string TagEntry_CustomTagTypeEmpty {
             get {
                 return ResourceManager.GetString("TagEntry_CustomTagTypeEmpty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string TagEntry_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("TagEntry_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string TagEntry_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("TagEntry_deleteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -10882,24 +10482,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string TagEntry_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("TagEntry_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string TagEntry_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("TagEntry_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Courte (par ex. &lt;br /&gt;).
         /// </summary>
         internal static string TagEntry_shortRadioButton {
@@ -10932,15 +10514,6 @@ namespace DtPad.Languages {
         internal static string TagEntry_typeGroupBox {
             get {
                 return ResourceManager.GetString("TagEntry_typeGroupBox", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string TagEntry_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("TagEntry_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -11048,33 +10621,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Templates_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Templates_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string Templates_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Templates_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string Templates_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Templates_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Description:.
         /// </summary>
         internal static string Templates_descriptionLabel {
@@ -11120,29 +10666,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string Templates_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Templates_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Supprimer le modèle sélectionné.
         /// </summary>
         internal static string Templates_removeButtonToolTip {
             get {
                 return ResourceManager.GetString("Templates_removeButtonToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string Templates_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Templates_selectAllToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -11170,15 +10698,6 @@ namespace DtPad.Languages {
         internal static string Templates_toolGroupBox1 {
             get {
                 return ResourceManager.GetString("Templates_toolGroupBox1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string Templates_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Templates_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -11369,33 +10888,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string Tools_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Tools_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string Tools_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Tools_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string Tools_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Tools_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Description:.
         /// </summary>
         internal static string Tools_descriptionLabel {
@@ -11441,15 +10933,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string Tools_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Tools_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Supprimer l&apos;outil sélectionné.
         /// </summary>
         internal static string Tools_removeButtonToolTip {
@@ -11479,15 +10962,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string Tools_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Tools_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Outils.
         /// </summary>
         internal static string Tools_Title {
@@ -11502,15 +10976,6 @@ namespace DtPad.Languages {
         internal static string Tools_toolGroupBox1 {
             get {
                 return ResourceManager.GetString("Tools_toolGroupBox1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string Tools_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("Tools_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -11616,29 +11081,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string UrlEncode_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEncode_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Décoder.
         /// </summary>
         internal static string UrlEncode_decodeButtonToolTip {
             get {
                 return ResourceManager.GetString("UrlEncode_decodeButtonToolTip", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string UrlEncode_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEncode_deleteToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -11679,15 +11126,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string UrlEncode_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEncode_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to URL décodée:.
         /// </summary>
         internal static string UrlEncode_stringToEncodeLabel {
@@ -11702,33 +11140,6 @@ namespace DtPad.Languages {
         internal static string UrlEncode_Title {
             get {
                 return ResourceManager.GetString("UrlEncode_Title", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string UrlEncode_toolStripMenuItem1 {
-            get {
-                return ResourceManager.GetString("UrlEncode_toolStripMenuItem1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string UrlEncode_toolStripMenuItem2 {
-            get {
-                return ResourceManager.GetString("UrlEncode_toolStripMenuItem2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Annuler.
-        /// </summary>
-        internal static string UrlEncode_undoToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEncode_undoToolStripMenuItem", resourceCulture);
             }
         }
         
@@ -11751,33 +11162,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copier.
-        /// </summary>
-        internal static string UrlEntry_copyToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEntry_copyToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Couper.
-        /// </summary>
-        internal static string UrlEntry_cutToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEntry_cutToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Supprimer.
-        /// </summary>
-        internal static string UrlEntry_deleteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEntry_deleteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Ouvrir le code source d&apos;une page web..
         /// </summary>
         internal static string UrlEntry_helpLabel {
@@ -11796,24 +11180,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coller.
-        /// </summary>
-        internal static string UrlEntry_pasteToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEntry_pasteToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sélectionner tout.
-        /// </summary>
-        internal static string UrlEntry_selectAllToolStripMenuItem {
-            get {
-                return ResourceManager.GetString("UrlEntry_selectAllToolStripMenuItem", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Ouvrir le source de page web.
         /// </summary>
         internal static string UrlEntry_Title {
@@ -11823,11 +11189,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annuler.
+        ///   Looks up a localized string similar to URL favorite.
         /// </summary>
-        internal static string UrlEntry_undoToolStripMenuItem {
+        internal static string UrlEntry_Title_FavouriteMode {
             get {
-                return ResourceManager.GetString("UrlEntry_undoToolStripMenuItem", resourceCulture);
+                return ResourceManager.GetString("UrlEntry_Title_FavouriteMode", resourceCulture);
             }
         }
         
@@ -12194,6 +11560,15 @@ namespace DtPad.Languages {
         internal static string XmlEditor_collapseButtonToolTip {
             get {
                 return ResourceManager.GetString("XmlEditor_collapseButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copier.
+        /// </summary>
+        internal static string XmlEditor_copyToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("XmlEditor_copyToolStripMenuItem", resourceCulture);
             }
         }
         

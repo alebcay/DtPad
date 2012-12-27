@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.calcTextBox = new Customs.CustomTextBox();
+            this.calculationTextBox = new Customs.CustomTextBox();
             this.calculatorToolStrip = new System.Windows.Forms.ToolStrip();
             this.clearCalculatorToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -52,8 +54,6 @@
             this.eightButton = new System.Windows.Forms.Button();
             this.sevenButton = new System.Windows.Forms.Button();
             this.backspaceButton = new System.Windows.Forms.Button();
-            this.calculationTextBox = new Customs.CustomTextBox();
-            this.calcTextBox = new Customs.CustomTextBox();
             this.calculatorToolStrip.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
@@ -96,20 +96,6 @@
             this.thousandSepToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.thousandSepToolStripButton.Text = "Use Thousands Separator";
             this.thousandSepToolStripButton.CheckedChanged += new System.EventHandler(this.thousandSepToolStripButton_CheckedChanged);
-            // 
-            // calculationTextBox
-            // 
-            this.calculationTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.calculationTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.calculationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.calculationTextBox.Location = new System.Drawing.Point(0, 25);
-            this.calculationTextBox.Multiline = true;
-            this.calculationTextBox.Name = "calculationTextBox";
-            this.calculationTextBox.ReadOnly = true;
-            this.calculationTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.calculationTextBox.Size = new System.Drawing.Size(206, 184);
-            this.calculationTextBox.TabIndex = 0;
-            this.calculationTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calculationTextBox_KeyDown);
             // 
             // tableLayoutPanel
             // 
@@ -163,6 +149,7 @@
             this.plusButton.Name = "plusButton";
             this.plusButton.Size = new System.Drawing.Size(36, 30);
             this.plusButton.TabIndex = 19;
+            this.plusButton.Tag = "DontTranslate";
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = true;
             this.plusButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.plusButton_KeyDown);
@@ -176,6 +163,7 @@
             this.commaButton.Name = "commaButton";
             this.commaButton.Size = new System.Drawing.Size(35, 30);
             this.commaButton.TabIndex = 18;
+            this.commaButton.Tag = "DontTranslate";
             this.commaButton.Text = ",";
             this.commaButton.UseVisualStyleBackColor = true;
             this.commaButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.commaButton_KeyDown);
@@ -189,6 +177,7 @@
             this.signButton.Name = "signButton";
             this.signButton.Size = new System.Drawing.Size(35, 30);
             this.signButton.TabIndex = 17;
+            this.signButton.Tag = "DontTranslate";
             this.signButton.Text = "+/-";
             this.signButton.UseVisualStyleBackColor = true;
             this.signButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.signButton_KeyDown);
@@ -202,6 +191,7 @@
             this.zeroButton.Name = "zeroButton";
             this.zeroButton.Size = new System.Drawing.Size(35, 30);
             this.zeroButton.TabIndex = 16;
+            this.zeroButton.Tag = "DontTranslate";
             this.zeroButton.Text = "0";
             this.zeroButton.UseVisualStyleBackColor = true;
             this.zeroButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.zeroButton_KeyDown);
@@ -216,6 +206,7 @@
             this.tableLayoutPanel.SetRowSpan(this.equalButton, 2);
             this.equalButton.Size = new System.Drawing.Size(35, 65);
             this.equalButton.TabIndex = 11;
+            this.equalButton.Tag = "DontTranslate";
             this.equalButton.Text = "=";
             this.equalButton.UseVisualStyleBackColor = true;
             this.equalButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.equalButton_KeyDown);
@@ -229,6 +220,7 @@
             this.minusButton.Name = "minusButton";
             this.minusButton.Size = new System.Drawing.Size(36, 29);
             this.minusButton.TabIndex = 15;
+            this.minusButton.Tag = "DontTranslate";
             this.minusButton.Text = "-";
             this.minusButton.UseVisualStyleBackColor = true;
             this.minusButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.minusButton_KeyDown);
@@ -242,6 +234,7 @@
             this.threeButton.Name = "threeButton";
             this.threeButton.Size = new System.Drawing.Size(35, 29);
             this.threeButton.TabIndex = 14;
+            this.threeButton.Tag = "DontTranslate";
             this.threeButton.Text = "3";
             this.threeButton.UseVisualStyleBackColor = true;
             this.threeButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.threeButton_KeyDown);
@@ -255,6 +248,7 @@
             this.twoButton.Name = "twoButton";
             this.twoButton.Size = new System.Drawing.Size(35, 29);
             this.twoButton.TabIndex = 13;
+            this.twoButton.Tag = "DontTranslate";
             this.twoButton.Text = "2";
             this.twoButton.UseVisualStyleBackColor = true;
             this.twoButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.twoButton_KeyDown);
@@ -268,6 +262,7 @@
             this.oneButton.Name = "oneButton";
             this.oneButton.Size = new System.Drawing.Size(35, 29);
             this.oneButton.TabIndex = 12;
+            this.oneButton.Tag = "DontTranslate";
             this.oneButton.Text = "1";
             this.oneButton.UseVisualStyleBackColor = true;
             this.oneButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.oneButton_KeyDown);
@@ -281,6 +276,7 @@
             this.starButton.Name = "starButton";
             this.starButton.Size = new System.Drawing.Size(36, 29);
             this.starButton.TabIndex = 10;
+            this.starButton.Tag = "DontTranslate";
             this.starButton.Text = "*";
             this.starButton.UseVisualStyleBackColor = true;
             this.starButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.starButton_KeyDown);
@@ -294,6 +290,7 @@
             this.sixButton.Name = "sixButton";
             this.sixButton.Size = new System.Drawing.Size(35, 29);
             this.sixButton.TabIndex = 9;
+            this.sixButton.Tag = "DontTranslate";
             this.sixButton.Text = "6";
             this.sixButton.UseVisualStyleBackColor = true;
             this.sixButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.sixButton_KeyDown);
@@ -307,6 +304,7 @@
             this.fiveButton.Name = "fiveButton";
             this.fiveButton.Size = new System.Drawing.Size(35, 29);
             this.fiveButton.TabIndex = 8;
+            this.fiveButton.Tag = "DontTranslate";
             this.fiveButton.Text = "5";
             this.fiveButton.UseVisualStyleBackColor = true;
             this.fiveButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fiveButton_KeyDown);
@@ -320,6 +318,7 @@
             this.fourButton.Name = "fourButton";
             this.fourButton.Size = new System.Drawing.Size(35, 29);
             this.fourButton.TabIndex = 7;
+            this.fourButton.Tag = "DontTranslate";
             this.fourButton.Text = "4";
             this.fourButton.UseVisualStyleBackColor = true;
             this.fourButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fourButton_KeyDown);
@@ -333,6 +332,7 @@
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(35, 29);
             this.cancelButton.TabIndex = 6;
+            this.cancelButton.Tag = "DontTranslate";
             this.cancelButton.Text = "C";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cancelButton_KeyDown);
@@ -346,6 +346,7 @@
             this.barButton.Name = "barButton";
             this.barButton.Size = new System.Drawing.Size(36, 29);
             this.barButton.TabIndex = 5;
+            this.barButton.Tag = "DontTranslate";
             this.barButton.Text = "/";
             this.barButton.UseVisualStyleBackColor = true;
             this.barButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.barButton_KeyDown);
@@ -359,6 +360,7 @@
             this.nineButton.Name = "nineButton";
             this.nineButton.Size = new System.Drawing.Size(35, 29);
             this.nineButton.TabIndex = 4;
+            this.nineButton.Tag = "DontTranslate";
             this.nineButton.Text = "9";
             this.nineButton.UseVisualStyleBackColor = true;
             this.nineButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.nineButton_KeyDown);
@@ -372,6 +374,7 @@
             this.eightButton.Name = "eightButton";
             this.eightButton.Size = new System.Drawing.Size(35, 29);
             this.eightButton.TabIndex = 3;
+            this.eightButton.Tag = "DontTranslate";
             this.eightButton.Text = "8";
             this.eightButton.UseVisualStyleBackColor = true;
             this.eightButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.eightButton_KeyDown);
@@ -385,6 +388,7 @@
             this.sevenButton.Name = "sevenButton";
             this.sevenButton.Size = new System.Drawing.Size(35, 29);
             this.sevenButton.TabIndex = 2;
+            this.sevenButton.Tag = "DontTranslate";
             this.sevenButton.Text = "7";
             this.sevenButton.UseVisualStyleBackColor = true;
             this.sevenButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.sevenButton_KeyDown);
@@ -398,6 +402,7 @@
             this.backspaceButton.Name = "backspaceButton";
             this.backspaceButton.Size = new System.Drawing.Size(35, 29);
             this.backspaceButton.TabIndex = 1;
+            this.backspaceButton.Tag = "DontTranslate";
             this.backspaceButton.Text = "<";
             this.backspaceButton.UseVisualStyleBackColor = true;
             this.backspaceButton.KeyDown += new System.Windows.Forms.KeyEventHandler(this.backspaceButton_KeyDown);
@@ -414,9 +419,25 @@
             this.calcTextBox.ReadOnly = true;
             this.calcTextBox.Size = new System.Drawing.Size(200, 13);
             this.calcTextBox.TabIndex = 0;
+            this.calcTextBox.Tag = "DontTranslate";
             this.calcTextBox.Text = "0,";
             this.calcTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.calcTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calcTextBox_KeyDown);
+            // 
+            // calculationTextBox
+            // 
+            this.calculationTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.calculationTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.calculationTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.calculationTextBox.Location = new System.Drawing.Point(0, 25);
+            this.calculationTextBox.Multiline = true;
+            this.calculationTextBox.Name = "calculationTextBox";
+            this.calculationTextBox.ReadOnly = true;
+            this.calculationTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.calculationTextBox.Size = new System.Drawing.Size(206, 184);
+            this.calculationTextBox.TabIndex = 0;
+            this.calculationTextBox.Tag = "DontTranslate";
+            this.calculationTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.calculationTextBox_KeyDown);
             // 
             // CalculatorPanel
             // 

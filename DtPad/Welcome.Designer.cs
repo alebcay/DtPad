@@ -53,7 +53,7 @@
             this.welcomeLabel.BackColor = System.Drawing.Color.Transparent;
             this.welcomeLabel.Location = new System.Drawing.Point(11, 60);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(269, 135);
+            this.welcomeLabel.Size = new System.Drawing.Size(269, 165);
             this.welcomeLabel.TabIndex = 1;
             this.welcomeLabel.Text = resources.GetString("welcomeLabel.Text");
             // 
@@ -85,12 +85,12 @@
             this.signLabel.AutoSize = true;
             this.signLabel.BackColor = System.Drawing.Color.Transparent;
             this.signLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signLabel.Location = new System.Drawing.Point(14, 218);
+            this.signLabel.Location = new System.Drawing.Point(13, 236);
             this.signLabel.Name = "signLabel";
             this.signLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.signLabel.Size = new System.Drawing.Size(107, 13);
+            this.signLabel.Size = new System.Drawing.Size(75, 13);
             this.signLabel.TabIndex = 2;
-            this.signLabel.Text = "Marco \"Cav\" Macciò";
+            this.signLabel.Text = "Marco Macciò";
             // 
             // Welcome
             // 

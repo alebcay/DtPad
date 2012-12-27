@@ -21,8 +21,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { descriptionTextBox, extensionTextBox });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { descriptionTextBox, extensionTextBox });
 
             extensionObjectList = ExtensionManager.LoadExtensionsList(this);
             ExtensionManager.LoadExtension(this, extensionObjectList);

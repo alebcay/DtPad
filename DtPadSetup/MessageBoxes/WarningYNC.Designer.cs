@@ -64,6 +64,7 @@ namespace DtPadSetup.MessageBoxes
             this.yesButton.Size = new System.Drawing.Size(75, 23);
             this.yesButton.TabIndex = 1;
             this.yesButton.Text = "Yes";
+            this.yesButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.yesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.yesButton.UseVisualStyleBackColor = true;
             this.yesButton.Click += new System.EventHandler(this.yesButton_Click);

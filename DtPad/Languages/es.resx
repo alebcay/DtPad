@@ -133,6 +133,7 @@
 Esta aplicación requiere Microsoft .NET Framework 4 y utilizar el registro de Windows sólo para salvar el asociación &quot;Abrir con&quot; en el menú contextual del Explorador de Windows.
 
 Traducción al francés por: Alain Buferne.
+Traducción al ruso por: Artem Vakhitov.
 
 Conjunto principal de iconos por: Delacro.
 - delacro.deviantart.com
@@ -417,7 +418,9 @@ los siguientes campos por si acaso se requiere una autenticación manual.</value
   <data name="Options_languageComboBoxItems" xml:space="preserve">
     <value>English
 Italiano
-Français</value>
+Français
+Español
+Pусский</value>
   </data>
   <data name="Options_languageLabel" xml:space="preserve">
     <value>Idioma:</value>
@@ -514,7 +517,7 @@ Ayuda
 Otro</value>
   </data>
   <data name="ReportBug_areaLabel" xml:space="preserve">
-    <value>Área: *</value>
+    <value>Área de error: *</value>
   </data>
   <data name="ReportBug_cancelButton" xml:space="preserve">
     <value>Cancelar</value>
@@ -718,7 +721,7 @@ Saludos cordiales,</value>
     <value>Error</value>
   </data>
   <data name="searchPanel_caseCheckBox" xml:space="preserve">
-    <value>Mayúsc./minúsc.</value>
+    <value>Mayúsculas/minúsculas</value>
   </data>
   <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
     <value>Cerrar todo</value>
@@ -730,7 +733,7 @@ Saludos cordiales,</value>
     <value>Ruta y nombre de archivo</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Bucle al final</value>
+    <value>Bucle al final de archivo</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>Nuevo</value>
@@ -742,7 +745,7 @@ Saludos cordiales,</value>
     <value>Abrir la carpeta del archivo</value>
   </data>
   <data name="searchPanel_replaceLabel" xml:space="preserve">
-    <value>Reemplazar:</value>
+    <value>Reemplazar con:</value>
   </data>
   <data name="Form1_saveAsToolStripMenuItem1" xml:space="preserve">
     <value>Guardar como...</value>
@@ -751,7 +754,7 @@ Saludos cordiales,</value>
     <value>Guardar</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Buscar todas pest.</value>
+    <value>Buscar en todas pestañas</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Buscar:</value>
@@ -3804,7 +3807,7 @@ Marque esta URL para descargar:
     <value>Borrar resaltar de texto</value>
   </data>
   <data name="MoveLines_lineLabel" xml:space="preserve">
-    <value>Posiciones para mover la fila actual:</value>
+    <value>Posiciones para mover las filas seleccionadas:</value>
   </data>
   <data name="tabPanel_moveTabFirstToolStripButton" xml:space="preserve">
     <value>Mover como primera</value>
@@ -4028,8 +4031,7 @@ Seleccionar las pestañas más interesados ​​para proceder.</value>
     <value>Todos los cambios se perderán. ¿Está seguro que desea continuar?</value>
   </data>
   <data name="CsvEditor_delimiterComboBoxItems" xml:space="preserve">
-    <value>
-, (coma)
+    <value>, (coma)
 . (punto)
 ; (punto y coma)
 - (guión)</value>
@@ -4041,8 +4043,7 @@ Seleccionar las pestañas más interesados ​​para proceder.</value>
     <value>Encabezado presente</value>
   </data>
   <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
-    <value>
-[No delimitador de texto]
+    <value>[No delimitador de texto]
 &quot; (comillas)
 &apos; (comilla simple)</value>
   </data>

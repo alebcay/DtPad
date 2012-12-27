@@ -59,6 +59,7 @@
             this.fileNameValueLabel.ReadOnly = true;
             this.fileNameValueLabel.Size = new System.Drawing.Size(320, 13);
             this.fileNameValueLabel.TabIndex = 1;
+            this.fileNameValueLabel.Tag = "DontTranslate";
             this.fileNameValueLabel.Text = "fileNameValueLabel";
             // 
             // renameToLabel
@@ -78,6 +79,7 @@
             this.renameToTextBox.Name = "renameToTextBox";
             this.renameToTextBox.Size = new System.Drawing.Size(327, 20);
             this.renameToTextBox.TabIndex = 5;
+            this.renameToTextBox.Tag = "DontTranslate";
             this.renameToTextBox.TextChanged += new System.EventHandler(this.renameToTextBox_TextChanged);
             // 
             // renameButton
@@ -86,11 +88,12 @@
             this.renameButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.renameButton.Enabled = false;
             this.renameButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.renameButton.Location = new System.Drawing.Point(238, 87);
+            this.renameButton.Location = new System.Drawing.Point(214, 87);
             this.renameButton.Name = "renameButton";
-            this.renameButton.Size = new System.Drawing.Size(88, 23);
+            this.renameButton.Size = new System.Drawing.Size(116, 23);
             this.renameButton.TabIndex = 6;
             this.renameButton.Text = "Rename";
+            this.renameButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.renameButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.renameButton.UseVisualStyleBackColor = true;
             this.renameButton.Click += new System.EventHandler(this.renameButton_Click);
@@ -119,6 +122,7 @@
             this.folderValueLabel.ReadOnly = true;
             this.folderValueLabel.Size = new System.Drawing.Size(320, 13);
             this.folderValueLabel.TabIndex = 3;
+            this.folderValueLabel.Tag = "DontTranslate";
             this.folderValueLabel.Text = "folderValueLabel";
             // 
             // folderLabel

@@ -58,7 +58,8 @@
             // sizeNumericUpDown
             // 
             this.sizeNumericUpDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.sizeNumericUpDown.Location = new System.Drawing.Point(267, 33);
+            this.sizeNumericUpDown.CustomContextMenuStrip = null;
+            this.sizeNumericUpDown.Location = new System.Drawing.Point(297, 33);
             this.sizeNumericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
@@ -67,6 +68,7 @@
             this.sizeNumericUpDown.Name = "sizeNumericUpDown";
             this.sizeNumericUpDown.Size = new System.Drawing.Size(56, 20);
             this.sizeNumericUpDown.TabIndex = 5;
+            this.sizeNumericUpDown.Tag = "DontTranslate";
             this.sizeNumericUpDown.Value = new decimal(new int[] {
             1,
             0,
@@ -81,30 +83,30 @@
             this.fontEdit.Location = new System.Drawing.Point(58, 6);
             this.fontEdit.Name = "fontEdit";
             this.fontEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems, null, null, false)});
             this.fontEdit.Properties.DropDownRows = 15;
             this.fontEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.fontEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.fontEdit.Properties.Sorted = true;
-            this.fontEdit.Size = new System.Drawing.Size(265, 20);
+            this.fontEdit.Size = new System.Drawing.Size(295, 20);
             this.fontEdit.TabIndex = 1;
+            this.fontEdit.Tag = "DontTranslate";
             this.fontEdit.Visible = false;
             this.fontEdit.SelectedIndexChanged += new System.EventHandler(this.fontEdit_SelectedIndexChanged);
             // 
             // colorEdit
             // 
-            this.colorEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.colorEdit.EditValue = System.Drawing.Color.Empty;
             this.colorEdit.Location = new System.Drawing.Point(58, 32);
             this.colorEdit.Name = "colorEdit";
             this.colorEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems, null, null, false)});
             this.colorEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.colorEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.colorEdit.Properties.ShowWebColors = false;
             this.colorEdit.Size = new System.Drawing.Size(152, 20);
             this.colorEdit.TabIndex = 3;
+            this.colorEdit.Tag = "DontTranslate";
             this.colorEdit.EditValueChanged += new System.EventHandler(this.colorEdit_EditValueChanged);
             // 
             // fontLabel
@@ -127,9 +129,8 @@
             // 
             // sizeLabel
             // 
-            this.sizeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.sizeLabel.AutoSize = true;
-            this.sizeLabel.Location = new System.Drawing.Point(216, 35);
+            this.sizeLabel.Location = new System.Drawing.Point(222, 35);
             this.sizeLabel.Name = "sizeLabel";
             this.sizeLabel.Size = new System.Drawing.Size(30, 13);
             this.sizeLabel.TabIndex = 4;
@@ -156,10 +157,11 @@
             "36",
             "48",
             "72"});
-            this.sizeListBox.Location = new System.Drawing.Point(267, 52);
+            this.sizeListBox.Location = new System.Drawing.Point(297, 52);
             this.sizeListBox.Name = "sizeListBox";
             this.sizeListBox.Size = new System.Drawing.Size(56, 82);
             this.sizeListBox.TabIndex = 6;
+            this.sizeListBox.Tag = "DontTranslate";
             this.sizeListBox.SelectedIndexChanged += new System.EventHandler(this.sizeListBox_SelectedIndexChanged);
             // 
             // boldCheckBox
@@ -181,7 +183,7 @@
             this.previewGroupBox.Controls.Add(this.previewTextBox);
             this.previewGroupBox.Location = new System.Drawing.Point(15, 140);
             this.previewGroupBox.Name = "previewGroupBox";
-            this.previewGroupBox.Size = new System.Drawing.Size(308, 105);
+            this.previewGroupBox.Size = new System.Drawing.Size(338, 105);
             this.previewGroupBox.TabIndex = 8;
             this.previewGroupBox.TabStop = false;
             this.previewGroupBox.Text = "Preview";
@@ -196,14 +198,14 @@
             this.previewTextBox.DetectUrls = false;
             this.previewTextBox.Location = new System.Drawing.Point(6, 19);
             this.previewTextBox.Name = "previewTextBox";
-            this.previewTextBox.Size = new System.Drawing.Size(296, 80);
+            this.previewTextBox.Size = new System.Drawing.Size(326, 80);
             this.previewTextBox.TabIndex = 0;
             this.previewTextBox.Text = "This text is a font example";
             // 
             // italicCheckBox
             // 
             this.italicCheckBox.AutoSize = true;
-            this.italicCheckBox.Location = new System.Drawing.Point(114, 19);
+            this.italicCheckBox.Location = new System.Drawing.Point(135, 19);
             this.italicCheckBox.Name = "italicCheckBox";
             this.italicCheckBox.Size = new System.Drawing.Size(48, 17);
             this.italicCheckBox.TabIndex = 1;
@@ -215,7 +217,7 @@
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(252, 262);
+            this.cancelButton.Location = new System.Drawing.Point(282, 262);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 11;
@@ -228,11 +230,12 @@
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(171, 262);
+            this.okButton.Location = new System.Drawing.Point(201, 262);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 10;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -246,7 +249,7 @@
             this.effectsGroupBox.Controls.Add(this.boldCheckBox);
             this.effectsGroupBox.Location = new System.Drawing.Point(15, 58);
             this.effectsGroupBox.Name = "effectsGroupBox";
-            this.effectsGroupBox.Size = new System.Drawing.Size(242, 76);
+            this.effectsGroupBox.Size = new System.Drawing.Size(272, 76);
             this.effectsGroupBox.TabIndex = 7;
             this.effectsGroupBox.TabStop = false;
             this.effectsGroupBox.Text = "Effects";
@@ -279,7 +282,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(339, 297);
+            this.ClientSize = new System.Drawing.Size(369, 297);
             this.Controls.Add(this.sizeNumericUpDown);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.effectsGroupBox);

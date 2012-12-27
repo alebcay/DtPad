@@ -106,6 +106,11 @@ namespace DtPad.Managers
             OtherManager.StartProcessInfo(null, processStartInfo);
         }
 
+        internal static bool IsPanelVisible(Control form)
+        {
+            return form.Controls.ContainsKey("helpPanel");
+        }
+
         #endregion Internal Methods
 
         #region Event Methods
@@ -135,11 +140,6 @@ namespace DtPad.Managers
         #endregion Event Methods
 
         #region Private Methods
-
-        private static bool IsPanelVisible(Control form)
-        {
-            return form.Controls.ContainsKey("helpPanel");
-        }
 
         private static IEnumerable<ControlObject> RemoveControlsBottomAncorage(Control form)
         {

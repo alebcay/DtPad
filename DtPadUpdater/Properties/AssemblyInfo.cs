@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyTitle("DtPad Updater")]
-[assembly: AssemblyConfiguration("121207")]
+[assembly: AssemblyConfiguration("121214")]
 [assembly: AssemblyProduct("DtPad Updater")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]

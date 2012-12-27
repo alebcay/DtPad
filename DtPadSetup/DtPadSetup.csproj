@@ -129,6 +129,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>it.resx</DependentUpon>
     </Compile>
+    <Compile Include="Languages\ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ru.resx</DependentUpon>
+    </Compile>
     <Compile Include="Managers\InstallManager.cs" />
     <Compile Include="Managers\OptionManager.cs" />
     <Compile Include="Managers\OtherManager.cs" />
@@ -193,6 +198,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>it.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Languages\ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MessageBoxes\AlertO.resx">
       <DependentUpon>AlertO.cs</DependentUpon>
@@ -261,7 +270,6 @@
     <None Include="Files\Icons\DtPadUninstaller.ico" />
     <None Include="Files\Icons\Dt.ico" />
     <None Include="Files\Be.Windows.Forms.HexBox.dll" />
-    <None Include="Files\AppLimit.CloudComputing.SharpBox.dll" />
     <Content Include="Files\DevExpress.Data.v12.1.dll" />
     <Content Include="Files\DevExpress.Utils.v12.1.dll" />
     <Content Include="Files\DevExpress.XtraEditors.v12.1.dll" />
@@ -287,6 +295,7 @@
     <Content Include="Images\email.png" />
     <Content Include="Images\flag-esp.png" />
     <Content Include="Images\flag-fra.png" />
+    <Content Include="Images\flag-rus.png" />
     <Content Include="Images\ok.gif" />
     <Content Include="Images\paste.png" />
     <None Include="Files\SupportFiles\DtPad.exe.pw" />

@@ -299,6 +299,7 @@ namespace DtPad.Managers
 
         internal static void ShowDropboxFileDialog(Form form, DropboxFileDialog.WindowType windowType)
         {
+            form.Cursor = Cursors.WaitCursor;
             DropboxFileDialog dropboxFileDialog = new DropboxFileDialog
                                                       {
                                                           Owner = form,
@@ -307,8 +308,11 @@ namespace DtPad.Managers
 
             if (dropboxFileDialog.InitializeForm())
             {
+                form.Cursor = Cursors.Default;
                 dropboxFileDialog.ShowDialog(form);
             }
+
+            form.Cursor = Cursors.Default;
         }
 
         internal static void ShowNameEntry(Form form)

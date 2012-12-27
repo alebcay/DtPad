@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.infoTextLabel = new Customs.CustomTextBox();
+            this.infoDirLabel = new Customs.CustomTextBox();
             this.searchInFilesToolStrip = new System.Windows.Forms.ToolStrip();
             this.newSearchToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -42,8 +44,6 @@
             this.openSelectedFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyFileFullPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoPanel = new DtPad.Customs.CustomPanel();
-            this.infoTextLabel = new Customs.CustomTextBox();
-            this.infoDirLabel = new Customs.CustomTextBox();
             this.searchInFilesToolStrip.SuspendLayout();
             this.searchInFilesContextMenuStrip.SuspendLayout();
             this.infoPanel.SuspendLayout();
@@ -137,6 +137,7 @@
             this.searchInFilesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.searchInFilesListBox.Size = new System.Drawing.Size(150, 160);
             this.searchInFilesListBox.TabIndex = 2;
+            this.searchInFilesListBox.Tag = "DontTranslate";
             this.searchInFilesListBox.SelectedIndexChanged += new System.EventHandler(this.searchInFilesListBox_SelectedIndexChanged);
             this.searchInFilesListBox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.searchInFilesListBox_MouseDoubleClick);
             this.searchInFilesListBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.searchInFilesListBox_MouseDown);
@@ -192,6 +193,7 @@
             this.infoTextLabel.ReadOnly = true;
             this.infoTextLabel.Size = new System.Drawing.Size(150, 13);
             this.infoTextLabel.TabIndex = 1;
+            this.infoTextLabel.Tag = "DontTranslate";
             // 
             // infoDirLabel
             // 
@@ -204,6 +206,7 @@
             this.infoDirLabel.ReadOnly = true;
             this.infoDirLabel.Size = new System.Drawing.Size(150, 13);
             this.infoDirLabel.TabIndex = 0;
+            this.infoDirLabel.Tag = "DontTranslate";
             // 
             // SearchInFilesPanel
             // 

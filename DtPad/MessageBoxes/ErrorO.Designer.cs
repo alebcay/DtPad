@@ -46,6 +46,7 @@ namespace DtPad.MessageBoxes
             this.errorPictureBox.Size = new System.Drawing.Size(50, 50);
             this.errorPictureBox.TabIndex = 0;
             this.errorPictureBox.TabStop = false;
+            this.errorPictureBox.Tag = "DontTranslate";
             // 
             // errorLabel
             // 
@@ -55,6 +56,7 @@ namespace DtPad.MessageBoxes
             this.errorLabel.Name = "errorLabel";
             this.errorLabel.Size = new System.Drawing.Size(54, 13);
             this.errorLabel.TabIndex = 0;
+            this.errorLabel.Tag = "DontTranslate";
             this.errorLabel.Text = "errorLabel";
             // 
             // okButton

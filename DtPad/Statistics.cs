@@ -19,10 +19,11 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { usernameLabel, domainLabel, workingDirectoryLabel, machineNameLabel, osLabel, processorsLabel, frameworkVersionLabel, memoryLabel });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { usernameLabel, domainLabel, workingDirectoryLabel, machineNameLabel, osLabel, processorsLabel, frameworkVersionLabel, memoryLabel });
 
             LoadData();
+            closeButton.Focus();
         }
 
         private void Statistics_HelpButtonClicked(object sender, CancelEventArgs e)

@@ -56,8 +56,8 @@ namespace DtPad
                 fileNameTextBox.ReadOnly = true;
                 //fileNameTextBox.ContextMenuStrip = textMenuStrip;
             }
-            ControlUtil.SetContextMenuStrip(this, fileNameTextBox);
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, fileNameTextBox);
 
             if (!String.IsNullOrEmpty(form.LastDropboxFolder) && DropboxManager.ExistsDirectory(form, form.LastDropboxFolder))
             {
@@ -92,15 +92,13 @@ namespace DtPad
             switch (item.FocusedItem.ImageIndex)
             {
                 case folderIconIndex:
+                    String position = positionLabel.Text;
+                    if (!position.EndsWith("/"))
                     {
-                        String position = positionLabel.Text;
-                        if (!position.EndsWith("/"))
-                        {
-                            position += "/";
-                        }
-
-                        LoadFileList(DropboxManager.GetDirectory(form, position + item.FocusedItem.Text));
+                        position += "/";
                     }
+
+                    LoadFileList(DropboxManager.GetDirectory(form, position + item.FocusedItem.Text));
                     break;
                 case fileIconIndex:
                     OpenSave();
@@ -206,6 +204,8 @@ namespace DtPad
 
         private void LoadFileList(ICloudDirectoryEntry directory)
         {
+            fseListView.Cursor = Cursors.WaitCursor;
+
             fseListView.Items.Clear();
             IEnumerable<DropboxFSEObject> folderContentList = DropboxManager.GetFolderContent(directory, GetSelectedExtension()); //caricamento fseListView
 
@@ -220,6 +220,8 @@ namespace DtPad
 
             positionLabel.Text = DropboxManager.GetFolderCompletePath(directory);
             superiorLevelButton.Enabled = positionLabel.Text != "/";
+
+            fseListView.Cursor = Cursors.Default;
         }
 
         private String GetSelectedExtension()

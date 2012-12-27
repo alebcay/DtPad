@@ -38,7 +38,7 @@
             // encodingLabel
             // 
             this.encodingLabel.AutoSize = true;
-            this.encodingLabel.Location = new System.Drawing.Point(12, 12);
+            this.encodingLabel.Location = new System.Drawing.Point(12, 15);
             this.encodingLabel.Name = "encodingLabel";
             this.encodingLabel.Size = new System.Drawing.Size(55, 13);
             this.encodingLabel.TabIndex = 0;
@@ -46,6 +46,8 @@
             // 
             // changeIntoComboBox
             // 
+            this.changeIntoComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.changeIntoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.changeIntoComboBox.FormattingEnabled = true;
             this.changeIntoComboBox.Items.AddRange(new object[] {
@@ -55,28 +57,31 @@
             "UTF-16 Little Endian",
             "UTF-16 Big Endian",
             "UTF-32 Little Endian"});
-            this.changeIntoComboBox.Location = new System.Drawing.Point(88, 9);
+            this.changeIntoComboBox.Location = new System.Drawing.Point(92, 12);
             this.changeIntoComboBox.Name = "changeIntoComboBox";
-            this.changeIntoComboBox.Size = new System.Drawing.Size(192, 21);
+            this.changeIntoComboBox.Size = new System.Drawing.Size(207, 21);
             this.changeIntoComboBox.TabIndex = 1;
             // 
             // saveButton
             // 
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.saveButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.saveButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.saveButton.Location = new System.Drawing.Point(111, 45);
+            this.saveButton.Location = new System.Drawing.Point(115, 52);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(88, 23);
+            this.saveButton.Size = new System.Drawing.Size(103, 23);
             this.saveButton.TabIndex = 2;
             this.saveButton.Text = "Proceed";
+            this.saveButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.saveButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // cancelButton
             // 
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(205, 45);
+            this.cancelButton.Location = new System.Drawing.Point(224, 52);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
             this.cancelButton.TabIndex = 3;
@@ -91,7 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(292, 80);
+            this.ClientSize = new System.Drawing.Size(311, 87);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.changeIntoComboBox);

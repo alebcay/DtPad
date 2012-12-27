@@ -18,7 +18,7 @@ namespace DtPad.Customs
 
         #region Internal Instance Fields
 
-        internal ReturnAction ReturnActionType { get; set; }
+        internal ReturnAction ReturnActionType { private get; set; }
 
         #endregion Internal Instance Fields
 
@@ -120,6 +120,7 @@ namespace DtPad.Customs
                         break;
 
                     default:
+                        //AppendText("¶");
                         base.OnKeyDown(e);
                         break;
                 }

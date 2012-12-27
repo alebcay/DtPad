@@ -54,7 +54,7 @@
             // 
             this.fileNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.fileNameLabel.AutoSize = true;
-            this.fileNameLabel.Location = new System.Drawing.Point(12, 253);
+            this.fileNameLabel.Location = new System.Drawing.Point(12, 340);
             this.fileNameLabel.Name = "fileNameLabel";
             this.fileNameLabel.Size = new System.Drawing.Size(55, 13);
             this.fileNameLabel.TabIndex = 6;
@@ -64,19 +64,20 @@
             // 
             this.fileNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.fileNameTextBox.Location = new System.Drawing.Point(87, 250);
+            this.fileNameTextBox.Location = new System.Drawing.Point(87, 337);
             this.fileNameTextBox.Name = "fileNameTextBox";
-            this.fileNameTextBox.Size = new System.Drawing.Size(309, 20);
+            this.fileNameTextBox.Size = new System.Drawing.Size(398, 20);
             this.fileNameTextBox.TabIndex = 7;
+            this.fileNameTextBox.Tag = "DontTranslate";
             this.fileNameTextBox.TextChanged += new System.EventHandler(this.fileNameTextBox_TextChanged);
             // 
             // cancelButton
             // 
             this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelButton.Location = new System.Drawing.Point(408, 277);
+            this.cancelButton.Location = new System.Drawing.Point(491, 364);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.Size = new System.Drawing.Size(93, 23);
             this.cancelButton.TabIndex = 11;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -94,7 +95,7 @@
             this.fseListView.Location = new System.Drawing.Point(12, 34);
             this.fseListView.MultiSelect = false;
             this.fseListView.Name = "fseListView";
-            this.fseListView.Size = new System.Drawing.Size(471, 208);
+            this.fseListView.Size = new System.Drawing.Size(572, 295);
             this.fseListView.SmallImageList = this.imageList;
             this.fseListView.TabIndex = 5;
             this.fseListView.UseCompatibleStateImageBehavior = false;
@@ -137,7 +138,7 @@
             // 
             this.saveAsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.saveAsLabel.AutoSize = true;
-            this.saveAsLabel.Location = new System.Drawing.Point(12, 282);
+            this.saveAsLabel.Location = new System.Drawing.Point(12, 369);
             this.saveAsLabel.Name = "saveAsLabel";
             this.saveAsLabel.Size = new System.Drawing.Size(49, 13);
             this.saveAsLabel.TabIndex = 8;
@@ -158,9 +159,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.saveAsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.saveAsComboBox.FormattingEnabled = true;
-            this.saveAsComboBox.Location = new System.Drawing.Point(87, 279);
+            this.saveAsComboBox.Location = new System.Drawing.Point(87, 366);
             this.saveAsComboBox.Name = "saveAsComboBox";
-            this.saveAsComboBox.Size = new System.Drawing.Size(309, 21);
+            this.saveAsComboBox.Size = new System.Drawing.Size(398, 21);
             this.saveAsComboBox.TabIndex = 9;
             this.saveAsComboBox.SelectedIndexChanged += new System.EventHandler(this.saveAsComboBox_SelectedIndexChanged);
             // 
@@ -168,7 +169,7 @@
             // 
             this.superiorLevelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.superiorLevelButton.Image = global::DtPad.ToolbarResource.folder_up;
-            this.superiorLevelButton.Location = new System.Drawing.Point(431, 4);
+            this.superiorLevelButton.Location = new System.Drawing.Point(532, 4);
             this.superiorLevelButton.Name = "superiorLevelButton";
             this.superiorLevelButton.Size = new System.Drawing.Size(23, 23);
             this.superiorLevelButton.TabIndex = 3;
@@ -180,7 +181,7 @@
             // 
             this.newFolderButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.newFolderButton.Image = global::DtPad.ToolbarResource.folder_plus;
-            this.newFolderButton.Location = new System.Drawing.Point(460, 4);
+            this.newFolderButton.Location = new System.Drawing.Point(561, 4);
             this.newFolderButton.Name = "newFolderButton";
             this.newFolderButton.Size = new System.Drawing.Size(23, 23);
             this.newFolderButton.TabIndex = 4;
@@ -195,6 +196,7 @@
             this.positionLabel.Name = "positionLabel";
             this.positionLabel.Size = new System.Drawing.Size(12, 13);
             this.positionLabel.TabIndex = 1;
+            this.positionLabel.Tag = "DontTranslate";
             this.positionLabel.Text = "/";
             // 
             // okButton
@@ -202,11 +204,12 @@
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.Enabled = false;
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(408, 248);
+            this.okButton.Location = new System.Drawing.Point(491, 335);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.Size = new System.Drawing.Size(93, 23);
             this.okButton.TabIndex = 10;
             this.okButton.Text = "Save";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
@@ -221,9 +224,9 @@
             "Small icon",
             "List",
             "Tile"});
-            this.viewComboBox.Location = new System.Drawing.Point(320, 5);
+            this.viewComboBox.Location = new System.Drawing.Point(403, 5);
             this.viewComboBox.Name = "viewComboBox";
-            this.viewComboBox.Size = new System.Drawing.Size(105, 21);
+            this.viewComboBox.Size = new System.Drawing.Size(123, 21);
             this.viewComboBox.TabIndex = 2;
             this.viewComboBox.SelectedIndexChanged += new System.EventHandler(this.viewComboBox_SelectedIndexChanged);
             // 
@@ -233,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
-            this.ClientSize = new System.Drawing.Size(495, 312);
+            this.ClientSize = new System.Drawing.Size(596, 399);
             this.Controls.Add(this.viewComboBox);
             this.Controls.Add(this.positionLabel);
             this.Controls.Add(this.saveAsComboBox);

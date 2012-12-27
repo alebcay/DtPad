@@ -44,6 +44,7 @@ namespace DtPad.MessageBoxes
             this.warningPictureBox.Size = new System.Drawing.Size(50, 50);
             this.warningPictureBox.TabIndex = 0;
             this.warningPictureBox.TabStop = false;
+            this.warningPictureBox.Tag = "DontTranslate";
             // 
             // warningLabel
             // 
@@ -53,6 +54,7 @@ namespace DtPad.MessageBoxes
             this.warningLabel.Name = "warningLabel";
             this.warningLabel.Size = new System.Drawing.Size(70, 13);
             this.warningLabel.TabIndex = 0;
+            this.warningLabel.Tag = "DontTranslate";
             this.warningLabel.Text = "warningLabel";
             // 
             // yesButton
@@ -64,6 +66,7 @@ namespace DtPad.MessageBoxes
             this.yesButton.Size = new System.Drawing.Size(75, 23);
             this.yesButton.TabIndex = 1;
             this.yesButton.Text = "Yes";
+            this.yesButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.yesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.yesButton.UseVisualStyleBackColor = true;
             this.yesButton.Click += new System.EventHandler(this.yesButton_Click);

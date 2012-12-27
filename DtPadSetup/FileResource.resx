@@ -277,4 +277,7 @@
   <data name="AppLimit_CloudComputing_SharpBox_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Files\AppLimit.CloudComputing.SharpBox.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="ru_resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Files\Languages\ru.resources;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

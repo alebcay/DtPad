@@ -120,6 +120,7 @@
             this.extensionTextBox.Name = "extensionTextBox";
             this.extensionTextBox.Size = new System.Drawing.Size(63, 20);
             this.extensionTextBox.TabIndex = 3;
+            this.extensionTextBox.Tag = "DontTranslate";
             this.extensionTextBox.Leave += new System.EventHandler(this.extensionTextBox_Leave);
             // 
             // extensionLabel
@@ -137,6 +138,7 @@
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(223, 20);
             this.descriptionTextBox.TabIndex = 1;
+            this.descriptionTextBox.Tag = "DontTranslate";
             this.descriptionTextBox.Leave += new System.EventHandler(this.descriptionTextBox_Leave);
             // 
             // descriptionLabel
@@ -202,6 +204,7 @@
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 6;
             this.okButton.Text = "OK";
+            this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);

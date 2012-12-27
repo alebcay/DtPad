@@ -75,6 +75,9 @@ namespace DtPadSetup.Utils
                 case "es":
                     result = es.ResourceManager.GetString(String.Format("{0}_{1}", resource, name));
                     break;
+                case "ru":
+                    result = ru.ResourceManager.GetString(String.Format("{0}_{1}", resource, name));
+                    break;
 
                 default:
                     result = en.ResourceManager.GetString(String.Format("{0}_{1}", resource, name));
@@ -108,6 +111,9 @@ namespace DtPadSetup.Utils
                     break;
                 case "es-ES":
                     language = "es";
+                    break;
+                case "ru-RU":
+                    language = "ru";
                     break;
 
                 default:

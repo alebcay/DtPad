@@ -26,13 +26,10 @@ namespace DtPad
             progressBar.Visible = true;
         }
 
-        private void webBrowser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
-        {
-            progressBar.Visible = false;
-        }
-
         private void webBrowser_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            progressBar.Visible = false;
+
             if (!webBrowser.Url.AbsoluteUri.StartsWith(ConstantUtil.dropboxAuthUrl))
             {
                 return;

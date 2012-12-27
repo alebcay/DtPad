@@ -46,6 +46,7 @@
             this.contentTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.contentTextBox.Size = new System.Drawing.Size(510, 282);
             this.contentTextBox.TabIndex = 0;
+            this.contentTextBox.Tag = "DontTranslate";
             this.contentTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.contentTextBox_KeyDown);
             // 
             // closeButton

@@ -47,9 +47,9 @@
             this.webBrowser.ScriptErrorsSuppressed = true;
             this.webBrowser.Size = new System.Drawing.Size(512, 268);
             this.webBrowser.TabIndex = 2;
+            this.webBrowser.Tag = "DontTranslate";
             this.webBrowser.WebBrowserShortcutsEnabled = false;
             this.webBrowser.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_DocumentCompleted);
-            this.webBrowser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.webBrowser_Navigated);
             this.webBrowser.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.webBrowser_Navigating);
             // 
             // proceedButton
@@ -66,11 +66,12 @@
             // progressBar
             // 
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar.Location = new System.Drawing.Point(375, 14);
+            this.progressBar.Location = new System.Drawing.Point(339, 14);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(125, 18);
+            this.progressBar.Size = new System.Drawing.Size(160, 18);
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar.TabIndex = 1;
+            this.progressBar.Tag = "DontTranslate";
             this.progressBar.Visible = false;
             // 
             // InternalBrowser

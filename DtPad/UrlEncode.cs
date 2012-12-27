@@ -17,8 +17,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { stringToEncodeTextBox, encodedURLTextBox });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { stringToEncodeTextBox, encodedURLTextBox });
         }
 
         private void UrlEncode_HelpButtonClicked(object sender, CancelEventArgs e)

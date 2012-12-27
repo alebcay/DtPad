@@ -56,7 +56,7 @@
             // closeButton
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.Location = new System.Drawing.Point(333, 191);
+            this.closeButton.Location = new System.Drawing.Point(333, 203);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 18;
@@ -73,6 +73,7 @@
             this.memoryLabel.ReadOnly = true;
             this.memoryLabel.Size = new System.Drawing.Size(250, 13);
             this.memoryLabel.TabIndex = 15;
+            this.memoryLabel.Tag = "DontTranslate";
             this.memoryLabel.Text = "memoryLabel";
             // 
             // memoryLabel1
@@ -93,6 +94,7 @@
             this.frameworkVersionLabel.ReadOnly = true;
             this.frameworkVersionLabel.Size = new System.Drawing.Size(250, 13);
             this.frameworkVersionLabel.TabIndex = 13;
+            this.frameworkVersionLabel.Tag = "DontTranslate";
             this.frameworkVersionLabel.Text = "frameworkVersionLabel";
             // 
             // processorsLabel
@@ -104,6 +106,7 @@
             this.processorsLabel.ReadOnly = true;
             this.processorsLabel.Size = new System.Drawing.Size(250, 13);
             this.processorsLabel.TabIndex = 11;
+            this.processorsLabel.Tag = "DontTranslate";
             this.processorsLabel.Text = "processorsLabel";
             // 
             // machineNameLabel
@@ -115,6 +118,7 @@
             this.machineNameLabel.ReadOnly = true;
             this.machineNameLabel.Size = new System.Drawing.Size(250, 13);
             this.machineNameLabel.TabIndex = 7;
+            this.machineNameLabel.Tag = "DontTranslate";
             this.machineNameLabel.Text = "machineNameLabel";
             // 
             // workingDirectoryLabel
@@ -126,6 +130,7 @@
             this.workingDirectoryLabel.ReadOnly = true;
             this.workingDirectoryLabel.Size = new System.Drawing.Size(250, 13);
             this.workingDirectoryLabel.TabIndex = 5;
+            this.workingDirectoryLabel.Tag = "DontTranslate";
             this.workingDirectoryLabel.Text = "workingDirectoryLabel";
             // 
             // frameworkVersionLabel1
@@ -173,6 +178,7 @@
             this.domainLabel.ReadOnly = true;
             this.domainLabel.Size = new System.Drawing.Size(250, 13);
             this.domainLabel.TabIndex = 3;
+            this.domainLabel.Tag = "DontTranslate";
             this.domainLabel.Text = "domainLabel";
             // 
             // osLabel
@@ -184,6 +190,7 @@
             this.osLabel.ReadOnly = true;
             this.osLabel.Size = new System.Drawing.Size(250, 13);
             this.osLabel.TabIndex = 9;
+            this.osLabel.Tag = "DontTranslate";
             this.osLabel.Text = "osLabel";
             // 
             // usernameLabel
@@ -195,6 +202,7 @@
             this.usernameLabel.ReadOnly = true;
             this.usernameLabel.Size = new System.Drawing.Size(250, 13);
             this.usernameLabel.TabIndex = 1;
+            this.usernameLabel.Tag = "DontTranslate";
             this.usernameLabel.Text = "usernameLabel";
             // 
             // osLabel1
@@ -229,7 +237,7 @@
             // 
             this.refreshButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.refreshButton.Image = global::DtPad.ToolbarResource.convert;
-            this.refreshButton.Location = new System.Drawing.Point(15, 191);
+            this.refreshButton.Location = new System.Drawing.Point(15, 203);
             this.refreshButton.Name = "refreshButton";
             this.refreshButton.Size = new System.Drawing.Size(23, 23);
             this.refreshButton.TabIndex = 16;
@@ -240,7 +248,7 @@
             // 
             this.copyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.copyButton.Image = global::DtPad.ToolbarResource.copy;
-            this.copyButton.Location = new System.Drawing.Point(44, 191);
+            this.copyButton.Location = new System.Drawing.Point(44, 203);
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(23, 23);
             this.copyButton.TabIndex = 17;
@@ -252,7 +260,7 @@
             this.AcceptButton = this.closeButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 226);
+            this.ClientSize = new System.Drawing.Size(420, 238);
             this.Controls.Add(this.copyButton);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.memoryLabel);

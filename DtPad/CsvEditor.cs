@@ -18,7 +18,7 @@ namespace DtPad
     internal partial class CsvEditor : Form
     {
         private const char standardDelimiter = ',';
-        private const char standardQuote = '"';
+        private const char standardQuote = '\0';
 
         private char currentDelimiter;
         private char currentQuote;
@@ -39,16 +39,16 @@ namespace DtPad
         {
             InitializeComponent();
             LookFeelUtil.SetLookAndFeel(new[] { customContextMenuStrip, gridViewContextMenuStrip });
-            ControlUtil.SetContextMenuStrip(this, new[] { delimiterComboBox, quoteComboBox });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { delimiterComboBox, quoteComboBox });
 
             currentDelimiter = standardDelimiter;
             currentQuote = standardQuote;
 
             noAutomaticalActionForControls = true; //Needed until show event has ended
 
-            delimiterComboBox.SelectedIndex = 1;
-            quoteComboBox.SelectedIndex = 2;
+            delimiterComboBox.SelectedIndex = 0;
+            quoteComboBox.SelectedIndex = 0;
             CsvManager.ReadCsv(this, headerCheckBox.Checked, currentDelimiter, currentQuote);
 
             startingData = ((DataTable)csvGridView.DataSource).Copy();
@@ -114,7 +114,7 @@ namespace DtPad
                 return;
             }
 
-            currentQuote = quoteComboBox.SelectedIndex != 1 ? quoteComboBox.Text[0] : '\0';
+            currentQuote = quoteComboBox.SelectedIndex != 0 ? quoteComboBox.Text[0] : '\0';
             CsvManager.ReadCsv(this, headerCheckBox.Checked, currentDelimiter, currentQuote);
             //ClearUndo();
         }

@@ -42,6 +42,7 @@ namespace DtPad.MessageBoxes
             this.infoPictureBox.Size = new System.Drawing.Size(50, 50);
             this.infoPictureBox.TabIndex = 0;
             this.infoPictureBox.TabStop = false;
+            this.infoPictureBox.Tag = "DontTranslate";
             // 
             // infoLabel
             // 
@@ -51,6 +52,7 @@ namespace DtPad.MessageBoxes
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(50, 13);
             this.infoLabel.TabIndex = 0;
+            this.infoLabel.Tag = "DontTranslate";
             this.infoLabel.Text = "infoLabel";
             // 
             // okButton

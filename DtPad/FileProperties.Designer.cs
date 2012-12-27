@@ -89,11 +89,12 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nameLabel.BackColor = System.Drawing.SystemColors.Control;
             this.nameLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nameLabel.Location = new System.Drawing.Point(110, 9);
+            this.nameLabel.Location = new System.Drawing.Point(115, 9);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.ReadOnly = true;
             this.nameLabel.Size = new System.Drawing.Size(261, 13);
             this.nameLabel.TabIndex = 1;
+            this.nameLabel.Tag = "DontTranslate";
             this.nameLabel.Text = "nameLabel";
             this.nameLabel.MouseLeave += new System.EventHandler(this.nameLabel_MouseLeave);
             // 
@@ -103,11 +104,12 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.directoryLabel.BackColor = System.Drawing.SystemColors.Control;
             this.directoryLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.directoryLabel.Location = new System.Drawing.Point(110, 101);
+            this.directoryLabel.Location = new System.Drawing.Point(115, 101);
             this.directoryLabel.Name = "directoryLabel";
             this.directoryLabel.ReadOnly = true;
             this.directoryLabel.Size = new System.Drawing.Size(306, 13);
             this.directoryLabel.TabIndex = 9;
+            this.directoryLabel.Tag = "DontTranslate";
             this.directoryLabel.Text = "directoryLabel";
             this.directoryLabel.MouseLeave += new System.EventHandler(this.directoryLabel_MouseLeave);
             // 
@@ -117,17 +119,18 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.creationDateLabel.BackColor = System.Drawing.SystemColors.Control;
             this.creationDateLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.creationDateLabel.Location = new System.Drawing.Point(110, 32);
+            this.creationDateLabel.Location = new System.Drawing.Point(115, 32);
             this.creationDateLabel.Name = "creationDateLabel";
             this.creationDateLabel.ReadOnly = true;
             this.creationDateLabel.Size = new System.Drawing.Size(261, 13);
             this.creationDateLabel.TabIndex = 3;
+            this.creationDateLabel.Tag = "DontTranslate";
             this.creationDateLabel.Text = "creationDateLabel";
             // 
             // closeButton
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.Location = new System.Drawing.Point(344, 191);
+            this.closeButton.Location = new System.Drawing.Point(344, 203);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 17;
@@ -177,11 +180,12 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lastUpdateLabel.BackColor = System.Drawing.SystemColors.Control;
             this.lastUpdateLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lastUpdateLabel.Location = new System.Drawing.Point(110, 55);
+            this.lastUpdateLabel.Location = new System.Drawing.Point(115, 55);
             this.lastUpdateLabel.Name = "lastUpdateLabel";
             this.lastUpdateLabel.ReadOnly = true;
             this.lastUpdateLabel.Size = new System.Drawing.Size(261, 13);
             this.lastUpdateLabel.TabIndex = 5;
+            this.lastUpdateLabel.Tag = "DontTranslate";
             this.lastUpdateLabel.Text = "lastUpdateLabel";
             // 
             // lastAccessLabel
@@ -190,11 +194,12 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lastAccessLabel.BackColor = System.Drawing.SystemColors.Control;
             this.lastAccessLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lastAccessLabel.Location = new System.Drawing.Point(110, 78);
+            this.lastAccessLabel.Location = new System.Drawing.Point(115, 78);
             this.lastAccessLabel.Name = "lastAccessLabel";
             this.lastAccessLabel.ReadOnly = true;
             this.lastAccessLabel.Size = new System.Drawing.Size(261, 13);
             this.lastAccessLabel.TabIndex = 7;
+            this.lastAccessLabel.Tag = "DontTranslate";
             this.lastAccessLabel.Text = "lastAccessLabel";
             // 
             // readonlyLabel
@@ -203,11 +208,12 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.readonlyLabel.BackColor = System.Drawing.SystemColors.Control;
             this.readonlyLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.readonlyLabel.Location = new System.Drawing.Point(110, 124);
+            this.readonlyLabel.Location = new System.Drawing.Point(115, 124);
             this.readonlyLabel.Name = "readonlyLabel";
             this.readonlyLabel.ReadOnly = true;
             this.readonlyLabel.Size = new System.Drawing.Size(261, 13);
             this.readonlyLabel.TabIndex = 11;
+            this.readonlyLabel.Tag = "DontTranslate";
             this.readonlyLabel.Text = "readonlyLabel";
             // 
             // sizeLabel
@@ -216,11 +222,12 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.sizeLabel.BackColor = System.Drawing.SystemColors.Control;
             this.sizeLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.sizeLabel.Location = new System.Drawing.Point(110, 147);
+            this.sizeLabel.Location = new System.Drawing.Point(115, 147);
             this.sizeLabel.Name = "sizeLabel";
             this.sizeLabel.ReadOnly = true;
             this.sizeLabel.Size = new System.Drawing.Size(261, 13);
             this.sizeLabel.TabIndex = 13;
+            this.sizeLabel.Tag = "DontTranslate";
             this.sizeLabel.Text = "sizeLabel";
             // 
             // iconPictureBox
@@ -231,6 +238,7 @@ namespace DtPad
             this.iconPictureBox.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox.TabIndex = 15;
             this.iconPictureBox.TabStop = false;
+            this.iconPictureBox.Tag = "DontTranslate";
             // 
             // encodingLabel1
             // 
@@ -247,18 +255,19 @@ namespace DtPad
             | System.Windows.Forms.AnchorStyles.Right)));
             this.encodingLabel.BackColor = System.Drawing.SystemColors.Control;
             this.encodingLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.encodingLabel.Location = new System.Drawing.Point(110, 170);
+            this.encodingLabel.Location = new System.Drawing.Point(115, 170);
             this.encodingLabel.Name = "encodingLabel";
             this.encodingLabel.ReadOnly = true;
             this.encodingLabel.Size = new System.Drawing.Size(261, 13);
             this.encodingLabel.TabIndex = 15;
+            this.encodingLabel.Tag = "DontTranslate";
             this.encodingLabel.Text = "encodingLabel";
             // 
             // copyButton
             // 
             this.copyButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.copyButton.Image = global::DtPad.ToolbarResource.copy;
-            this.copyButton.Location = new System.Drawing.Point(15, 191);
+            this.copyButton.Location = new System.Drawing.Point(15, 203);
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(23, 23);
             this.copyButton.TabIndex = 16;
@@ -270,7 +279,7 @@ namespace DtPad
             this.AcceptButton = this.closeButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 226);
+            this.ClientSize = new System.Drawing.Size(431, 238);
             this.Controls.Add(this.copyButton);
             this.Controls.Add(this.encodingLabel);
             this.Controls.Add(this.encodingLabel1);

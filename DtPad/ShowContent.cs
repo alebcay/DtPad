@@ -17,8 +17,8 @@ namespace DtPad
         internal void InitializeForm(String content, bool helpMode)
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, contentTextBox);
             LanguageUtil.SetCurrentLanguage(this);
+            ControlUtil.SetContextMenuStrip(this, contentTextBox);
 
             contentTextBox.Text = content;
             contentTextBox.Select(0, 0);

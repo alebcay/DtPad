@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.searchTextBox = new Customs.CustomTextBox();
+            this.replaceTextBox = new Customs.CustomTextBox();
             this.searchReplaceToolStrip = new System.Windows.Forms.ToolStrip();
             this.findFirstToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.findNextToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -47,8 +49,6 @@
             this.patternToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.closeToolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.searchReplaceCentralPanel = new System.Windows.Forms.Panel();
-            this.searchTextBox = new DtPad.Customs.CustomTextBox();
-            this.replaceTextBox = new DtPad.Customs.CustomTextBox();
             this.rightSearchReplacePanel = new System.Windows.Forms.Panel();
             this.searchAllTabsCheckBox = new System.Windows.Forms.CheckBox();
             this.loopCheckBox = new System.Windows.Forms.CheckBox();
@@ -61,6 +61,28 @@
             this.rightSearchReplacePanel.SuspendLayout();
             this.searchReplaceLeftPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.searchTextBox.Location = new System.Drawing.Point(0, 0);
+            this.searchTextBox.Multiline = true;
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.searchTextBox.Size = new System.Drawing.Size(564, 38);
+            this.searchTextBox.TabIndex = 0;
+            this.searchTextBox.Tag = "DontTranslate";
+            // 
+            // replaceTextBox
+            // 
+            this.replaceTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.replaceTextBox.Location = new System.Drawing.Point(0, 38);
+            this.replaceTextBox.Multiline = true;
+            this.replaceTextBox.Name = "replaceTextBox";
+            this.replaceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.replaceTextBox.Size = new System.Drawing.Size(564, 37);
+            this.replaceTextBox.TabIndex = 1;
+            this.replaceTextBox.Tag = "DontTranslate";
             // 
             // searchReplaceToolStrip
             // 
@@ -235,30 +257,10 @@
             this.searchReplaceCentralPanel.Controls.Add(this.searchTextBox);
             this.searchReplaceCentralPanel.Controls.Add(this.replaceTextBox);
             this.searchReplaceCentralPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.searchReplaceCentralPanel.Location = new System.Drawing.Point(70, 25);
+            this.searchReplaceCentralPanel.Location = new System.Drawing.Point(94, 25);
             this.searchReplaceCentralPanel.Name = "searchReplaceCentralPanel";
-            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(615, 75);
+            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(564, 75);
             this.searchReplaceCentralPanel.TabIndex = 6;
-            // 
-            // searchTextBox
-            // 
-            this.searchTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.searchTextBox.Location = new System.Drawing.Point(0, 0);
-            this.searchTextBox.Multiline = true;
-            this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.searchTextBox.Size = new System.Drawing.Size(615, 38);
-            this.searchTextBox.TabIndex = 0;
-            // 
-            // replaceTextBox
-            // 
-            this.replaceTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.replaceTextBox.Location = new System.Drawing.Point(0, 38);
-            this.replaceTextBox.Multiline = true;
-            this.replaceTextBox.Name = "replaceTextBox";
-            this.replaceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.replaceTextBox.Size = new System.Drawing.Size(615, 37);
-            this.replaceTextBox.TabIndex = 1;
             // 
             // rightSearchReplacePanel
             // 
@@ -266,9 +268,9 @@
             this.rightSearchReplacePanel.Controls.Add(this.loopCheckBox);
             this.rightSearchReplacePanel.Controls.Add(this.caseCheckBox);
             this.rightSearchReplacePanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightSearchReplacePanel.Location = new System.Drawing.Point(685, 25);
+            this.rightSearchReplacePanel.Location = new System.Drawing.Point(658, 25);
             this.rightSearchReplacePanel.Name = "rightSearchReplacePanel";
-            this.rightSearchReplacePanel.Size = new System.Drawing.Size(132, 75);
+            this.rightSearchReplacePanel.Size = new System.Drawing.Size(159, 75);
             this.rightSearchReplacePanel.TabIndex = 2;
             // 
             // searchAllTabsCheckBox
@@ -276,9 +278,9 @@
             this.searchAllTabsCheckBox.AutoSize = true;
             this.searchAllTabsCheckBox.Location = new System.Drawing.Point(7, 50);
             this.searchAllTabsCheckBox.Name = "searchAllTabsCheckBox";
-            this.searchAllTabsCheckBox.Size = new System.Drawing.Size(101, 17);
+            this.searchAllTabsCheckBox.Size = new System.Drawing.Size(122, 17);
             this.searchAllTabsCheckBox.TabIndex = 2;
-            this.searchAllTabsCheckBox.Text = "Search All Tabs";
+            this.searchAllTabsCheckBox.Text = "Search Into All Tabs";
             this.searchAllTabsCheckBox.UseVisualStyleBackColor = true;
             // 
             // loopCheckBox
@@ -286,9 +288,9 @@
             this.loopCheckBox.AutoSize = true;
             this.loopCheckBox.Location = new System.Drawing.Point(7, 27);
             this.loopCheckBox.Name = "loopCheckBox";
-            this.loopCheckBox.Size = new System.Drawing.Size(86, 17);
+            this.loopCheckBox.Size = new System.Drawing.Size(118, 17);
             this.loopCheckBox.TabIndex = 1;
-            this.loopCheckBox.Text = "Loop at EOF";
+            this.loopCheckBox.Text = "Loop At End-Of-File";
             this.loopCheckBox.UseVisualStyleBackColor = true;
             this.loopCheckBox.CheckedChanged += new System.EventHandler(this.loopCheckBox_CheckedChanged);
             // 
@@ -310,7 +312,7 @@
             this.searchReplaceLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.searchReplaceLeftPanel.Location = new System.Drawing.Point(0, 25);
             this.searchReplaceLeftPanel.Name = "searchReplaceLeftPanel";
-            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(70, 75);
+            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(94, 75);
             this.searchReplaceLeftPanel.TabIndex = 1;
             // 
             // replaceLabel
@@ -318,9 +320,9 @@
             this.replaceLabel.AutoSize = true;
             this.replaceLabel.Location = new System.Drawing.Point(4, 41);
             this.replaceLabel.Name = "replaceLabel";
-            this.replaceLabel.Size = new System.Drawing.Size(50, 13);
+            this.replaceLabel.Size = new System.Drawing.Size(75, 13);
             this.replaceLabel.TabIndex = 1;
-            this.replaceLabel.Text = "Replace:";
+            this.replaceLabel.Text = "Replace With:";
             // 
             // searchLabel
             // 

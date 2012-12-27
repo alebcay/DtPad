@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dictionary));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
             this.wordTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.contentTextBox = new System.Windows.Forms.TextBox();
@@ -51,17 +51,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.wordTextBox.Location = new System.Drawing.Point(76, 12);
             this.wordTextBox.Name = "wordTextBox";
-            this.wordTextBox.Size = new System.Drawing.Size(454, 20);
+            this.wordTextBox.Size = new System.Drawing.Size(532, 20);
             this.wordTextBox.TabIndex = 1;
+            this.wordTextBox.Tag = "DontTranslate";
             this.wordTextBox.TextChanged += new System.EventHandler(this.wordTextBox_TextChanged);
             // 
             // searchButton
             // 
             this.searchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.searchButton.Enabled = false;
-            this.searchButton.Location = new System.Drawing.Point(536, 10);
+            this.searchButton.Location = new System.Drawing.Point(614, 10);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.Size = new System.Drawing.Size(91, 23);
             this.searchButton.TabIndex = 2;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -78,8 +79,9 @@
             this.contentTextBox.Name = "contentTextBox";
             this.contentTextBox.ReadOnly = true;
             this.contentTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.contentTextBox.Size = new System.Drawing.Size(599, 273);
+            this.contentTextBox.Size = new System.Drawing.Size(693, 322);
             this.contentTextBox.TabIndex = 5;
+            this.contentTextBox.Tag = "DontTranslate";
             this.contentTextBox.TextChanged += new System.EventHandler(this.contentTextBox_TextChanged);
             this.contentTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.contentTextBox_KeyDown);
             // 
@@ -92,12 +94,13 @@
             this.languageImageList.Images.SetKeyName(2, "flag-fra.png");
             this.languageImageList.Images.SetKeyName(3, "flag-esp.png");
             this.languageImageList.Images.SetKeyName(4, "flag-ger.png");
+            this.languageImageList.Images.SetKeyName(5, "flag-rus.png");
             // 
             // closeButton
             // 
             this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.closeButton.Location = new System.Drawing.Point(536, 364);
+            this.closeButton.Location = new System.Drawing.Point(630, 413);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 9;
@@ -132,17 +135,18 @@
             this.languageComboBox.Location = new System.Drawing.Point(76, 38);
             this.languageComboBox.Name = "languageComboBox";
             this.languageComboBox.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.it.SearchInFiles_searchFolderComboBoxItems, null, null, false)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
             this.languageComboBox.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("English", "English", 0),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Pусский", "Pусский", 5)});
             this.languageComboBox.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.languageComboBox.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.languageComboBox.Properties.SmallImages = this.languageImageList;
-            this.languageComboBox.Size = new System.Drawing.Size(454, 20);
+            this.languageComboBox.Size = new System.Drawing.Size(532, 20);
             this.languageComboBox.TabIndex = 4;
             // 
             // dictionariesLabel
@@ -152,7 +156,7 @@
             this.dictionariesLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dictionariesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dictionariesLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.dictionariesLabel.Location = new System.Drawing.Point(9, 369);
+            this.dictionariesLabel.Location = new System.Drawing.Point(9, 418);
             this.dictionariesLabel.Name = "dictionariesLabel";
             this.dictionariesLabel.Size = new System.Drawing.Size(194, 13);
             this.dictionariesLabel.TabIndex = 6;
@@ -163,11 +167,11 @@
             // 
             this.clearButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.clearButton.Image = global::DtPad.ToolbarResource.bin;
-            this.clearButton.Location = new System.Drawing.Point(393, 364);
+            this.clearButton.Location = new System.Drawing.Point(457, 413);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(121, 23);
+            this.clearButton.Size = new System.Drawing.Size(151, 23);
             this.clearButton.TabIndex = 8;
-            this.clearButton.Text = "Clear results";
+            this.clearButton.Text = "Clear Results";
             this.clearButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.clearButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.clearButton.UseVisualStyleBackColor = true;
@@ -177,11 +181,11 @@
             // 
             this.verifyAllButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.verifyAllButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.verifyAllButton.Location = new System.Drawing.Point(263, 364);
+            this.verifyAllButton.Location = new System.Drawing.Point(306, 413);
             this.verifyAllButton.Name = "verifyAllButton";
-            this.verifyAllButton.Size = new System.Drawing.Size(124, 23);
+            this.verifyAllButton.Size = new System.Drawing.Size(147, 23);
             this.verifyAllButton.TabIndex = 7;
-            this.verifyAllButton.Text = "Verify all text";
+            this.verifyAllButton.Text = "Verify All Text";
             this.verifyAllButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.verifyAllButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.verifyAllButton.UseVisualStyleBackColor = true;
@@ -193,7 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.closeButton;
-            this.ClientSize = new System.Drawing.Size(623, 399);
+            this.ClientSize = new System.Drawing.Size(717, 448);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.languageComboBox);
             this.Controls.Add(this.dictionariesLabel);
@@ -208,7 +212,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(623, 200);
+            this.MinimumSize = new System.Drawing.Size(733, 200);
             this.Name = "Dictionary";
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;

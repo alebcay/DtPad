@@ -20,8 +20,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, markSeparationTextBox);
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, markSeparationTextBox);
 
             Form1 form = (Form1)Owner;
 

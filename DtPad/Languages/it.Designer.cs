@@ -103,15 +103,14 @@ namespace DtPad.Languages {
         ///Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l&apos;associazione &quot;Apri con&quot; nel menu contestuale di Esplora Risorse.
         ///
         ///Traduzione francese di: Alain Buferne.
+        ///Traduzione russa di: Artem Vakhitov.
         ///
         ///Set principale di icone di: Delacro.
         ///- delacro.deviantart.com
         ///
         ///Icone secondarie di: Mark James, VistaIcons.
         ///- famfamfam.com
-        ///- vistaicons.com
-        ///
-        ///Componenti esterni referenziati: [rest of string was truncated]&quot;;.
+        ///- vistaicons.c [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string About_descriptionTextBox {
             get {
@@ -474,7 +473,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Valore per il parametro &quot;{0}&quot; non trovato..
+        ///   Looks up a localized string similar to Valore non trovato per il parametro &quot;{0}&quot;..
         /// </summary>
         internal static string ConfigUtil_NoValue {
             get {
@@ -645,8 +644,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///, (virgola)
+        ///   Looks up a localized string similar to , (virgola)
         ///. (punto)
         ///; (punto e virgola)
         ///- (trattino).
@@ -694,8 +692,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///[Nessun delimitatore testo]
+        ///   Looks up a localized string similar to [Nessun delimitatore testo]
         ///&quot; (doppi apici)
         ///&apos; (apice singolo).
         /// </summary>
@@ -3097,7 +3094,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dim.:.
+        ///   Looks up a localized string similar to Dimensione:.
         /// </summary>
         internal static string FontSelect_sizeLabel {
             get {
@@ -6662,7 +6659,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Posizioni di cui spostare la riga attuale:.
+        ///   Looks up a localized string similar to Posizioni di cui spostare le righe selezionate:.
         /// </summary>
         internal static string MoveLines_lineLabel {
             get {
@@ -7628,7 +7625,8 @@ namespace DtPad.Languages {
         ///   Looks up a localized string similar to English
         ///Italiano
         ///Français
-        ///Español.
+        ///Español
+        ///Pусский.
         /// </summary>
         internal static string Options_languageComboBoxItems {
             get {
@@ -8766,7 +8764,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Area: *.
+        ///   Looks up a localized string similar to Area del bug: *.
         /// </summary>
         internal static string ReportBug_areaLabel {
             get {
@@ -8793,7 +8791,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to E-mail: *.
+        ///   Looks up a localized string similar to Indirizzo e-mail: *.
         /// </summary>
         internal static string ReportBug_emailLabel {
             get {
@@ -8820,7 +8818,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Nome: *.
+        ///   Looks up a localized string similar to Nominativo: *.
         /// </summary>
         internal static string ReportBug_nameLabel {
             get {
@@ -9230,7 +9228,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maiusc./minusc..
+        ///   Looks up a localized string similar to Maiuscole/minuscole.
         /// </summary>
         internal static string searchPanel_caseCheckBox {
             get {
@@ -9320,7 +9318,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cicla alla fine.
+        ///   Looks up a localized string similar to Cicla alla fine del file.
         /// </summary>
         internal static string searchPanel_loopCheckBox {
             get {
@@ -9347,7 +9345,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sostituisci:.
+        ///   Looks up a localized string similar to Sostituisci con:.
         /// </summary>
         internal static string searchPanel_replaceLabel {
             get {
@@ -9374,7 +9372,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cerca nei tab.
+        ///   Looks up a localized string similar to Cerca in tutti i tab.
         /// </summary>
         internal static string searchPanel_searchAllTabsCheckBox {
             get {

@@ -62,6 +62,8 @@ namespace DtPadSetup.Managers
                     return "fr";
                 case 3:
                     return "es";
+                case 4:
+                    return "ru";
 
                 default:
                     return "en";

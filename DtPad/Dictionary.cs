@@ -110,6 +110,10 @@ namespace DtPad
 
         private void CheckDictionaries()
         {
+            if (!DictionaryManager.ExistsDictionary("ru"))
+            {
+                languageComboBox.Properties.Items.Remove(languageComboBox.Properties.Items.GetItem("Pусский"));
+            }
             if (!DictionaryManager.ExistsDictionary("de"))
             {
                 languageComboBox.Properties.Items.Remove(languageComboBox.Properties.Items.GetItem("Deutsch"));

@@ -120,50 +120,6 @@
   <data name="About_closeButton" xml:space="preserve">
     <value>Chiudi</value>
   </data>
-  <data name="About_createdByLabel" xml:space="preserve">
-    <value>Marco Macciò</value>
-  </data>
-  <data name="About_createdByLabel1" xml:space="preserve">
-    <value>Scritto da:</value>
-  </data>
-  <data name="About_descriptionTextBox" xml:space="preserve">
-    <value>DtPad (2009-2012) è distribuito sotto licenza Apache License, Version 2.0.
-- apache.org/licenses/LICENSE-2.0
-
-Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l'associazione "Apri con" nel menu contestuale di Esplora Risorse.
-
-Traduzione francese di: Alain Buferne.
-
-Set principale di icone di: Delacro.
-- delacro.deviantart.com
-
-Icone secondarie di: Mark James, VistaIcons.
-- famfamfam.com
-- vistaicons.com
-
-Componenti esterni referenziati: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET, CsvReader.
-- sharpdevelop.net/OpenSource/SharpZipLib
-- itextpdf.com
-- logging.apache.org/log4net
-- hexbox.sourceforge.net
-- xmlgrid.codeplex.com
-- www.codeproject.com/KB/selection/MonthCalendar.aspx
-- sharpbox.codeplex.com
-- json.codeplex.com
-- www.codeproject.com/Articles/9258/A-Fast-CSV-Reader
-
-Servizio di traduzione e ricerca di: Google Inc.
-- google.it/language_tools
-- google.it
-
-Servizio Dropbox di: Dropbox Inc.
-- dropbox.com
-
-Dizionari linguistici di: OpenOffice.org.
-- wiki.services.openoffice.org/wiki/Dictionaries
-
-DtPad non raccoglie alcuna informazione riguardante uso e utenti. I dati che possono essere storicizzati nella cartella "Logs" riguardano solamente errori e avvisi di programma che sono mostrati anche nell'interfaccia, e in nessun caso essi contengono testo dell'utente o altri dati privati.</value>
-  </data>
   <data name="About_emailPictureBoxToolTip" xml:space="preserve">
     <value>Scrivi una e-mail all'autore di DtPad</value>
   </data>
@@ -418,7 +374,8 @@ i campi seguenti solo se è richiesta un'autenticazione manuale.</value>
     <value>English
 Italiano
 Français
-Español</value>
+Español
+Pусский</value>
   </data>
   <data name="Options_languageLabel" xml:space="preserve">
     <value>Lingua:</value>
@@ -515,7 +472,7 @@ Finestra
 Altro</value>
   </data>
   <data name="ReportBug_areaLabel" xml:space="preserve">
-    <value>Area: *</value>
+    <value>Area del bug: *</value>
   </data>
   <data name="ReportBug_cancelButton" xml:space="preserve">
     <value>Annulla</value>
@@ -524,7 +481,7 @@ Altro</value>
     <value>Descrizione: *</value>
   </data>
   <data name="ReportBug_emailLabel" xml:space="preserve">
-    <value>E-mail: *</value>
+    <value>Indirizzo e-mail: *</value>
   </data>
   <data name="ReportBug_errorMessageLabel" xml:space="preserve">
     <value>Messaggio d'errore (se presente):</value>
@@ -533,7 +490,7 @@ Altro</value>
     <value>Invia via e-mail un report di errore all'autore di DtPad.</value>
   </data>
   <data name="ReportBug_nameLabel" xml:space="preserve">
-    <value>Nome: *</value>
+    <value>Nominativo: *</value>
   </data>
   <data name="ReportBug_requiredFieldsLabel" xml:space="preserve">
     <value>* Campi obbligatori</value>
@@ -719,7 +676,7 @@ Cordiali saluti,</value>
     <value>Errore</value>
   </data>
   <data name="searchPanel_caseCheckBox" xml:space="preserve">
-    <value>Maiusc./minusc.</value>
+    <value>Maiuscole/minuscole</value>
   </data>
   <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
     <value>Chiudi tutto</value>
@@ -731,7 +688,7 @@ Cordiali saluti,</value>
     <value>Percorso e nome file</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Cicla alla fine</value>
+    <value>Cicla alla fine del file</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>Nuovo</value>
@@ -743,7 +700,7 @@ Cordiali saluti,</value>
     <value>Apri cartella file</value>
   </data>
   <data name="searchPanel_replaceLabel" xml:space="preserve">
-    <value>Sostituisci:</value>
+    <value>Sostituisci con:</value>
   </data>
   <data name="Form1_saveAsToolStripMenuItem1" xml:space="preserve">
     <value>Salva come...</value>
@@ -752,7 +709,7 @@ Cordiali saluti,</value>
     <value>Salva</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Cerca nei tab</value>
+    <value>Cerca in tutti i tab</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Cerca:</value>
@@ -1746,7 +1703,7 @@ Solo i file aperti possono esserlo.</value>
     <value>Testo di anteprima del font</value>
   </data>
   <data name="FontSelect_sizeLabel" xml:space="preserve">
-    <value>Dim.:</value>
+    <value>Dimensione:</value>
   </data>
   <data name="FontSelect_Title" xml:space="preserve">
     <value>Font</value>
@@ -3202,7 +3159,7 @@ Verifica di essere autenticato su di esso aprendo "www.dropbox.com" con il brows
     <value>Percorso</value>
   </data>
   <data name="ConfigUtil_NoValue" xml:space="preserve">
-    <value>Valore per il parametro "{0}" non trovato.</value>
+    <value>Valore non trovato per il parametro "{0}".</value>
   </data>
   <data name="FileProperties_EncodingWithoutBOM" xml:space="preserve">
     <value>senza BOM</value>
@@ -3811,7 +3768,7 @@ Controlla questo URL per scaricarlo:
     <value>Rimuovi evidenziazione testo</value>
   </data>
   <data name="MoveLines_lineLabel" xml:space="preserve">
-    <value>Posizioni di cui spostare la riga attuale:</value>
+    <value>Posizioni di cui spostare le righe selezionate:</value>
   </data>
   <data name="tabPanel_moveTabFirstToolStripButton" xml:space="preserve">
     <value>Sposta come primo</value>
@@ -4038,8 +3995,7 @@ Seleziona nuovamente i tab per procedere.</value>
     <value>Tutte le modifiche apportate andranno perse. Sei sicuro di voler procedere?</value>
   </data>
   <data name="CsvEditor_delimiterComboBoxItems" xml:space="preserve">
-    <value>
-, (virgola)
+    <value>, (virgola)
 . (punto)
 ; (punto e virgola)
 - (trattino)</value>
@@ -4051,8 +4007,7 @@ Seleziona nuovamente i tab per procedere.</value>
     <value>Intestazione inclusa</value>
   </data>
   <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
-    <value>
-[Nessun delimitatore testo]
+    <value>[Nessun delimitatore testo]
 " (doppi apici)
 ' (apice singolo)</value>
   </data>
@@ -4197,5 +4152,50 @@ Valorizzare tutti i campi prima di procedere.</value>
   </data>
   <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
     <value>A capo automatico</value>
+  </data>
+  <data name="About_createdByLabel" xml:space="preserve">
+    <value>Marco Macciò</value>
+  </data>
+  <data name="About_createdByLabel1" xml:space="preserve">
+    <value>Scritto da:</value>
+  </data>
+  <data name="About_descriptionTextBox" xml:space="preserve">
+    <value>DtPad (2009-2012) è distribuito sotto licenza Apache License, Version 2.0.
+- apache.org/licenses/LICENSE-2.0
+
+Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l'associazione "Apri con" nel menu contestuale di Esplora Risorse.
+
+Traduzione francese di: Alain Buferne.
+Traduzione russa di: Artem Vakhitov.
+
+Set principale di icone di: Delacro.
+- delacro.deviantart.com
+
+Icone secondarie di: Mark James, VistaIcons.
+- famfamfam.com
+- vistaicons.com
+
+Componenti esterni referenziati: SharpZip, iTextSharp, Log4Net, Be.HexEditor, XmlGridControl, MonthCalendar, SharpBox, Json.NET, CsvReader.
+- sharpdevelop.net/OpenSource/SharpZipLib
+- itextpdf.com
+- logging.apache.org/log4net
+- hexbox.sourceforge.net
+- xmlgrid.codeplex.com
+- www.codeproject.com/KB/selection/MonthCalendar.aspx
+- sharpbox.codeplex.com
+- json.codeplex.com
+- www.codeproject.com/Articles/9258/A-Fast-CSV-Reader
+
+Servizio di traduzione e ricerca di: Google Inc.
+- google.it/language_tools
+- google.it
+
+Servizio Dropbox di: Dropbox Inc.
+- dropbox.com
+
+Dizionari linguistici di: OpenOffice.org.
+- wiki.services.openoffice.org/wiki/Dictionaries
+
+DtPad non raccoglie alcuna informazione riguardante uso e utenti. I dati che possono essere storicizzati nella cartella "Logs" riguardano solamente errori e avvisi di programma che sono mostrati anche nell'interfaccia, e in nessun caso essi contengono testo dell'utente o altri dati privati.</value>
   </data>
 </root>

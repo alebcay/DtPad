@@ -47,6 +47,7 @@
             this.tabPagesListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.tabPagesListBox.Size = new System.Drawing.Size(419, 212);
             this.tabPagesListBox.TabIndex = 1;
+            this.tabPagesListBox.Tag = "DontTranslate";
             this.tabPagesListBox.SelectedIndexChanged += new System.EventHandler(this.tabPagesListBox_SelectedIndexChanged);
             // 
             // selectTabsLabel

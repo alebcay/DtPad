@@ -51,6 +51,7 @@ namespace DtPad
             this.favouritesListBox.Name = "favouritesListBox";
             this.favouritesListBox.Size = new System.Drawing.Size(431, 225);
             this.favouritesListBox.TabIndex = 0;
+            this.favouritesListBox.Tag = "DontTranslate";
             this.favouritesListBox.SelectedIndexChanged += new System.EventHandler(this.favouritesListBox_SelectedIndexChanged);
             // 
             // deleteFavouriteButton

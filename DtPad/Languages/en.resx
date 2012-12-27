@@ -133,6 +133,7 @@
 This application requires Microsoft .NET Framework 4 and use Windows registry only to store "Open With" Explorer context menu menu association.
 
 French translation by: Alain Buferne.
+Russian translation by: Artem Vakhitov.
 
 Main iconset by: Delacro.
 - delacro.deviantart.com
@@ -418,7 +419,8 @@ fields just in case it requires a manual authentication.</value>
     <value>English
 Italiano
 Français
-Español</value>
+Español
+Pусский</value>
   </data>
   <data name="Options_languageLabel" xml:space="preserve">
     <value>Language:</value>
@@ -430,7 +432,7 @@ Español</value>
     <value>Style</value>
   </data>
   <data name="Options_loopAtEOFCheckBox" xml:space="preserve">
-    <value>Loop at end of file (EOF)</value>
+    <value>Loop at End-Of-File</value>
   </data>
   <data name="Options_minimizeOnTrayIconCheckBox" xml:space="preserve">
     <value>Minimize on tray icon</value>
@@ -443,7 +445,7 @@ Español</value>
   </data>
   <data name="Options_proxyWarning" xml:space="preserve">
     <value>Proxy settings are incorrect.
-Disable proxy or control that username and password are valorized.</value>
+Disable the proxy or verify that username and password are not empty fields.</value>
   </data>
   <data name="Options_recentFilesNumberLabel" xml:space="preserve">
     <value>Recent files number:</value>
@@ -515,7 +517,7 @@ Help
 Other</value>
   </data>
   <data name="ReportBug_areaLabel" xml:space="preserve">
-    <value>Area: *</value>
+    <value>Bug area: *</value>
   </data>
   <data name="ReportBug_cancelButton" xml:space="preserve">
     <value>Cancel</value>
@@ -524,7 +526,7 @@ Other</value>
     <value>Description: *</value>
   </data>
   <data name="ReportBug_emailLabel" xml:space="preserve">
-    <value>E-mail: *</value>
+    <value>E-mail address: *</value>
   </data>
   <data name="ReportBug_errorMessageLabel" xml:space="preserve">
     <value>Error message (if present):</value>
@@ -731,7 +733,7 @@ Best regards,</value>
     <value>File Path And Name</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Loop At EOF</value>
+    <value>Loop At End-Of-File</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>New</value>
@@ -743,7 +745,7 @@ Best regards,</value>
     <value>Open File's Folder</value>
   </data>
   <data name="searchPanel_replaceLabel" xml:space="preserve">
-    <value>Replace:</value>
+    <value>Replace With:</value>
   </data>
   <data name="Form1_saveAsToolStripMenuItem1" xml:space="preserve">
     <value>Save As...</value>
@@ -752,7 +754,7 @@ Best regards,</value>
     <value>Save</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Search All Tabs</value>
+    <value>Search Into All Tabs</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Search:</value>
@@ -902,7 +904,7 @@ Current window will be closed.</value>
 Current window will be closed.</value>
   </data>
   <data name="ExtensionManager_Unvalorized" xml:space="preserve">
-    <value>At least one extension is not valorized.
+    <value>At least one extension is empty.
 Complete extensions information to proceed.</value>
   </data>
   <data name="FileListManager_ClearHistoryRecentFiles" xml:space="preserve">
@@ -1364,7 +1366,7 @@ Current window will be closed.</value>
     <value>New Tool</value>
   </data>
   <data name="ToolManager_Unvalorized" xml:space="preserve">
-    <value>At least one tool is not valorized.
+    <value>At least one tool is empty.
 Complete tools information to proceed.</value>
   </data>
   <data name="VersionCheckManager_ErrorConnection" xml:space="preserve">
@@ -2244,7 +2246,7 @@ Current window will be closed.</value>
     <value>New Template</value>
   </data>
   <data name="TemplateManager_Unvalorized" xml:space="preserve">
-    <value>At least one template is not valorized.
+    <value>At least one template is empty.
 Complete templates information to proceed.</value>
   </data>
   <data name="Templates_helpLabel" xml:space="preserve">
@@ -2591,7 +2593,7 @@ number of text lines. It is possible to open it again at anytime.</value>
     <value>OK</value>
   </data>
   <data name="SelectLines_Title" xml:space="preserve">
-    <value>Select rows</value>
+    <value>Select Rows</value>
   </data>
   <data name="SelectLines_toLabel" xml:space="preserve">
     <value>To:</value>
@@ -3742,7 +3744,7 @@ Insert them, or change tag type selection.</value>
     <value>The word "{0}" is {1}</value>
   </data>
   <data name="Dictionary_clearButton" xml:space="preserve">
-    <value>Clear results</value>
+    <value>Clear Results</value>
   </data>
   <data name="Dictionary_closeButton" xml:space="preserve">
     <value>Close</value>
@@ -3787,7 +3789,7 @@ Check this URL to download:
 </value>
   </data>
   <data name="Dictionary_verifyAllButton" xml:space="preserve">
-    <value>Verify all text</value>
+    <value>Verify All Text</value>
   </data>
   <data name="Form1_dictionaryTextToolStripMenuItem" xml:space="preserve">
     <value>Verify All Text</value>
@@ -3805,7 +3807,7 @@ Check this URL to download:
     <value>Clear Text Highlight</value>
   </data>
   <data name="MoveLines_lineLabel" xml:space="preserve">
-    <value>Positions to move the current row:</value>
+    <value>Positions to move the selected rows:</value>
   </data>
   <data name="tabPanel_moveTabFirstToolStripButton" xml:space="preserve">
     <value>Move As First</value>
@@ -4020,7 +4022,7 @@ Reselect interested tabs to proceed.</value>
     <value>Insert a carriage return</value>
   </data>
   <data name="CsvEditor_applyButton" xml:space="preserve">
-    <value>Apply changes</value>
+    <value>Apply Changes</value>
   </data>
   <data name="CsvEditor_closeButton" xml:space="preserve">
     <value>Close</value>
@@ -4029,8 +4031,7 @@ Reselect interested tabs to proceed.</value>
     <value>All changes will get lost. Are you sure to proceed?</value>
   </data>
   <data name="CsvEditor_delimiterComboBoxItems" xml:space="preserve">
-    <value>
-, (comma)
+    <value>, (comma)
 . (dot)
 ; (semicolon)
 - (dash)</value>
@@ -4042,8 +4043,7 @@ Reselect interested tabs to proceed.</value>
     <value>Header present</value>
   </data>
   <data name="CsvEditor_quoteComboBoxItems" xml:space="preserve">
-    <value>
-[No text quote]
+    <value>[No text quote]
 " (quotes)
 ' (single quote)</value>
   </data>

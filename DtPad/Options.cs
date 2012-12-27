@@ -41,9 +41,9 @@ namespace DtPad
             Form1 form = (Form1)Owner;
             
             InitializeComponent();
+            SetLanguage();
             ControlUtil.SetContextMenuStrip(this, new[] { proxyHostTextBox, domainTextBox, passwordTextBox, usernameTextBox, customBrowserTextBox, specificFolderTextBox, backupExtensionTextBox, backupCustomFolderTextBox,
                 searchHistoryNumericUpDown, hideLinesNumericUpDown, proxyPortNumericUpDown, recentFilesNumberNumericUpDown, noteModeSizeXNumericUpDown, (Control)noteModeSizeYNumericUpDown });
-            SetLanguage();
 
             optionsTreeView.ExpandAll();
 

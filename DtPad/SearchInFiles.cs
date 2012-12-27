@@ -34,8 +34,8 @@ namespace DtPad
         internal void InitializeForm()
         {
             InitializeComponent();
-            ControlUtil.SetContextMenuStrip(this, new[] { textToSearchTextBox, filenamePatternTextBox, exclusionPatternTextBox, (Control)searchFolderComboBox });
             SetLanguage();
+            ControlUtil.SetContextMenuStrip(this, new[] { textToSearchTextBox, filenamePatternTextBox, exclusionPatternTextBox, (Control)searchFolderComboBox });
 
             FileListManager.LoadRecentSearchInFilesDirs(this);
         }

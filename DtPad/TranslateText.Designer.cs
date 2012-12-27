@@ -47,8 +47,10 @@
             // 
             // destinationImageComboBoxEdit
             // 
+            this.destinationImageComboBoxEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.destinationImageComboBoxEdit.EditValue = "Italiano";
-            this.destinationImageComboBoxEdit.Location = new System.Drawing.Point(91, 29);
+            this.destinationImageComboBoxEdit.Location = new System.Drawing.Point(91, 38);
             this.destinationImageComboBoxEdit.Name = "destinationImageComboBoxEdit";
             this.destinationImageComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
@@ -57,7 +59,8 @@
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Pусский", "Pусский", 5)});
             this.destinationImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.destinationImageComboBoxEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.destinationImageComboBoxEdit.Properties.SmallImages = this.languageImageList;
@@ -73,11 +76,14 @@
             this.languageImageList.Images.SetKeyName(2, "flag-fra.png");
             this.languageImageList.Images.SetKeyName(3, "flag-esp.png");
             this.languageImageList.Images.SetKeyName(4, "flag-ger.png");
+            this.languageImageList.Images.SetKeyName(5, "flag-rus.png");
             // 
             // sourceImageComboBoxEdit
             // 
+            this.sourceImageComboBoxEdit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.sourceImageComboBoxEdit.EditValue = "English";
-            this.sourceImageComboBoxEdit.Location = new System.Drawing.Point(91, 6);
+            this.sourceImageComboBoxEdit.Location = new System.Drawing.Point(91, 12);
             this.sourceImageComboBoxEdit.Name = "sourceImageComboBoxEdit";
             this.sourceImageComboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject2, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
@@ -86,7 +92,8 @@
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Italiano", "Italiano", 1),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Français", "Français", 2),
             new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Español", "Español", 3),
-            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4)});
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Deutsch", "Deutsch", 4),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("Pусский", "Pусский", 5)});
             this.sourceImageComboBoxEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.sourceImageComboBoxEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
             this.sourceImageComboBoxEdit.Properties.SmallImages = this.languageImageList;
@@ -96,7 +103,7 @@
             // destinationLanguageLabel
             // 
             this.destinationLanguageLabel.AutoSize = true;
-            this.destinationLanguageLabel.Location = new System.Drawing.Point(12, 32);
+            this.destinationLanguageLabel.Location = new System.Drawing.Point(12, 41);
             this.destinationLanguageLabel.Name = "destinationLanguageLabel";
             this.destinationLanguageLabel.Size = new System.Drawing.Size(63, 13);
             this.destinationLanguageLabel.TabIndex = 2;
@@ -105,7 +112,7 @@
             // sourceLanguageLabel
             // 
             this.sourceLanguageLabel.AutoSize = true;
-            this.sourceLanguageLabel.Location = new System.Drawing.Point(12, 9);
+            this.sourceLanguageLabel.Location = new System.Drawing.Point(12, 15);
             this.sourceLanguageLabel.Name = "sourceLanguageLabel";
             this.sourceLanguageLabel.Size = new System.Drawing.Size(44, 13);
             this.sourceLanguageLabel.TabIndex = 0;
@@ -113,20 +120,23 @@
             // 
             // translateButton
             // 
+            this.translateButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.translateButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.translateButton.Location = new System.Drawing.Point(159, 64);
+            this.translateButton.Location = new System.Drawing.Point(136, 76);
             this.translateButton.Name = "translateButton";
-            this.translateButton.Size = new System.Drawing.Size(75, 23);
+            this.translateButton.Size = new System.Drawing.Size(98, 23);
             this.translateButton.TabIndex = 5;
             this.translateButton.Text = "Translate";
+            this.translateButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.translateButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.translateButton.UseVisualStyleBackColor = true;
             this.translateButton.Click += new System.EventHandler(this.translateButton_Click);
             // 
             // closeButton
             // 
+            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.closeButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.closeButton.Location = new System.Drawing.Point(240, 64);
+            this.closeButton.Location = new System.Drawing.Point(240, 76);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 6;
@@ -136,8 +146,9 @@
             // 
             // switchButton
             // 
+            this.switchButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.switchButton.Image = global::DtPad.ToolbarResource._switch;
-            this.switchButton.Location = new System.Drawing.Point(293, 16);
+            this.switchButton.Location = new System.Drawing.Point(292, 23);
             this.switchButton.Name = "switchButton";
             this.switchButton.Size = new System.Drawing.Size(23, 23);
             this.switchButton.TabIndex = 4;
@@ -150,7 +161,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.closeButton;
-            this.ClientSize = new System.Drawing.Size(327, 99);
+            this.ClientSize = new System.Drawing.Size(327, 111);
             this.Controls.Add(this.switchButton);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.translateButton);
