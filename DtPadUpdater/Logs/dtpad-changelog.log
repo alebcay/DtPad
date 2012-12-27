@@ -5,6 +5,8 @@
 - DtPad now support Unicode using Windows clipboard, allowing to manage contents written with Russian and other alphabets
 - Command "File -> Delete File" now move the file into the recycle bin, instead of delete it permanently
 - Fixing of a bug which occurred when checking permissions at DtPad startup on Windows 8 (issue #1170)
+- Multiple files opening through the shortcut "Open with DtPad" fixed (issue #1185)
+- The language selection inside DtPad Setup now works properly for all cultures
 - Dynamic load of changelog inside DtPad Updater
 - Several improvements to interface and localizations
 
