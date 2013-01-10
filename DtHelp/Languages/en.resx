@@ -121,13 +121,13 @@
     <value>Close</value>
   </data>
   <data name="About_createdByLabel" xml:space="preserve">
-    <value>Marco "Cav" Macciò</value>
+    <value>Marco Macciò</value>
   </data>
   <data name="About_createdByLabel1" xml:space="preserve">
     <value>Created by:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
-    <value>DtHelp (2009-2012) is licensed under the following Apache License, Version 2.0.
+    <value>DtHelp (2009-2013) is licensed under the following Apache License, Version 2.0.
 - apache.org/licenses/LICENSE-2.0
 
 This application requires Microsoft .NET Framework 4 and it is entirely Windows registry-free.
@@ -392,7 +392,7 @@ Other</value>
     <value>Copyright:</value>
   </data>
   <data name="About_websiteLabel_FE" xml:space="preserve">
-    <value>2009</value>
+    <value>2013</value>
   </data>
   <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
     <value>Diario di un traduttore</value>

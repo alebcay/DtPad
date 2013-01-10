@@ -31,18 +31,26 @@ namespace DtPad.Managers
                 return;
             }
 
-            String fileName = String.Format("{0}.html", Guid.NewGuid());
-            String pathName = Path.Combine(ConstantUtil.ApplicationExecutionPath(), ConstantUtil.internetCacheDirectoryName);
-
-            if (!Directory.Exists(pathName))
+            String fileAndPathName;
+            if (!String.IsNullOrEmpty(ProgramUtil.GetFilenameTabPage(pagesTabControl.SelectedTabPage)) && !ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage).CustomModified)
             {
-                Directory.CreateDirectory(pathName);
+                fileAndPathName = ProgramUtil.GetFilenameTabPage(pagesTabControl.SelectedTabPage);
             }
-
-            String fileAndPathName = Path.Combine(pathName, fileName);
-            if (FileManager.SaveFileCoreWithEncoding(form, fileAndPathName) == false)
+            else
             {
-                return;
+                String fileName = String.Format("{0}.html", Guid.NewGuid());
+                String pathName = Path.Combine(ConstantUtil.ApplicationExecutionPath(), ConstantUtil.internetCacheDirectoryName);
+
+                if (!Directory.Exists(pathName))
+                {
+                    Directory.CreateDirectory(pathName);
+                }
+
+                fileAndPathName = Path.Combine(pathName, fileName);
+                if (FileManager.SaveFileCoreWithEncoding(form, fileAndPathName) == false)
+                {
+                    return;
+                }
             }
 
             OtherManager.StartProcessBrowser(form, fileAndPathName);

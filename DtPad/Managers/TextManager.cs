@@ -1323,6 +1323,19 @@ namespace DtPad.Managers
             RefreshUndoRedoExternal(form);
         }
 
+        internal static void InsertInitialString(Form1 form, ToolStripComboBox prefixToolStripComboBox)
+        {
+            if (String.IsNullOrEmpty(prefixToolStripComboBox.Text))
+            {
+                return;
+            }
+            if (!prefixToolStripComboBox.Items.Contains(prefixToolStripComboBox.Text))
+            {
+                prefixToolStripComboBox.Items.Add(prefixToolStripComboBox.Text);
+            }
+
+            InsertInitialString(form, prefixToolStripComboBox.Text);
+        }
         internal static void InsertInitialString(Form1 form, String initialString)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;

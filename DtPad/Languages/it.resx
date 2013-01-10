@@ -1218,7 +1218,7 @@ Desideri salvare i cambiamenti?</value>
     <value>Annulla &lt;vuoto&gt;</value>
   </data>
   <data name="Form1_verticalContainerToolStripButton" xml:space="preserve">
-    <value>Mostra pannello interno</value>
+    <value>Mostra pannello laterale</value>
   </data>
   <data name="Form1_viewToolStripMenuItem" xml:space="preserve">
     <value>Visualizza</value>
@@ -1636,7 +1636,7 @@ UTF-32 Little Endian</value>
     <value>A capo automatico</value>
   </data>
   <data name="Form1_closeToolStripMenuItem2" xml:space="preserve">
-    <value>Chiudi pannello interno</value>
+    <value>Chiudi pannello laterale</value>
   </data>
   <data name="Form1_resetWindowLayoutToolStripMenuItem" xml:space="preserve">
     <value>Reimposta aspetto finestra</value>
@@ -4160,7 +4160,7 @@ Valorizzare tutti i campi prima di procedere.</value>
     <value>Scritto da:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
-    <value>DtPad (2009-2012) è distribuito sotto licenza Apache License, Version 2.0.
+    <value>DtPad (2009-2013) è distribuito sotto licenza Apache License, Version 2.0.
 - apache.org/licenses/LICENSE-2.0
 
 Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l'associazione "Apri con" nel menu contestuale di Esplora Risorse.
@@ -4197,5 +4197,12 @@ Dizionari linguistici di: OpenOffice.org.
 - wiki.services.openoffice.org/wiki/Dictionaries
 
 DtPad non raccoglie alcuna informazione riguardante uso e utenti. I dati che possono essere storicizzati nella cartella "Logs" riguardano solamente errori e avvisi di programma che sono mostrati anche nell'interfaccia, e in nessun caso essi contengono testo dell'utente o altri dati privati.</value>
+  </data>
+  <data name="FileExplorerManager_AccessDenied" xml:space="preserve">
+    <value>Accesso al percorso "{0}" negato</value>
+  </data>
+  <data name="FileExplorerManager_SureToWait" xml:space="preserve">
+    <value>Lo scan può richiedere alcuni secondi o minuti per completarsi.
+Sei sicuro di voler procedere?</value>
   </data>
 </root>

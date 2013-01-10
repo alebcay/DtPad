@@ -437,6 +437,14 @@ namespace DtPad
             prefixToolStripComboBox.Font = new Font("Tahoma", 8.25F, FontStyle.Italic);
         }
 
+        private void prefixToolStripComboBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
+            {
+                TextManager.InsertInitialString(this, prefixToolStripComboBox);
+            }
+        }
+
         private void suffixToolStripTextBox_MouseDown(object sender, MouseEventArgs e)
         {
             if (suffixToolStripTextBox.Text != LanguageUtil.GetCurrentLanguageString("suffixToolStripTextBox", Name))
@@ -1631,16 +1639,17 @@ namespace DtPad
 
         private void prefixToolStripButton_ButtonClick(object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(prefixToolStripComboBox.Text))
-            {
-                return;
-            }
-            if (!prefixToolStripComboBox.Items.Contains(prefixToolStripComboBox.Text))
-            {
-                prefixToolStripComboBox.Items.Add(prefixToolStripComboBox.Text);
-            }
+            //if (String.IsNullOrEmpty(prefixToolStripComboBox.Text))
+            //{
+            //    return;
+            //}
+            //if (!prefixToolStripComboBox.Items.Contains(prefixToolStripComboBox.Text))
+            //{
+            //    prefixToolStripComboBox.Items.Add(prefixToolStripComboBox.Text);
+            //}
 
-            TextManager.InsertInitialString(this, prefixToolStripComboBox.Text);
+            //TextManager.InsertInitialString(this, prefixToolStripComboBox.Text);
+            TextManager.InsertInitialString(this, prefixToolStripComboBox);
         }
 
         private void removePrefixToolStripMenuItem1_Click(object sender, EventArgs e)

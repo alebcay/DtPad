@@ -81,11 +81,11 @@ namespace DtPad.Managers
             {
                 if (ConfigUtil.GetBoolParameter("UseDefaultBrowser"))
                 {
-                    Process.Start(process);
+                    Process.Start(String.Format("\"{0}\"", process));
                 }
                 else
                 {
-                    ProcessStartInfo browser = new ProcessStartInfo(ConfigUtil.GetStringParameter("CustomBrowserCommand"), process) { UseShellExecute = true };
+                    ProcessStartInfo browser = new ProcessStartInfo(ConfigUtil.GetStringParameter("CustomBrowserCommand"), String.Format("\"{0}\"", process)) { UseShellExecute = true };
                     Process.Start(browser);
                 }
             }

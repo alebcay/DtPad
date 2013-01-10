@@ -97,7 +97,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DtPad (2009-2012) è distribuito sotto licenza Apache License, Version 2.0.
+        ///   Looks up a localized string similar to DtPad (2009-2013) è distribuito sotto licenza Apache License, Version 2.0.
         ///- apache.org/licenses/LICENSE-2.0
         ///
         ///Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l&apos;associazione &quot;Apri con&quot; nel menu contestuale di Esplora Risorse.
@@ -2061,6 +2061,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Accesso al percorso &quot;{0}&quot; negato.
+        /// </summary>
+        internal static string FileExplorerManager_AccessDenied {
+            get {
+                return ResourceManager.GetString("FileExplorerManager_AccessDenied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Il lettore selezionato non è pronto. Inserisci un disco e riprova..
         /// </summary>
         internal static string FileExplorerManager_DeviceNotReady {
@@ -2138,6 +2147,16 @@ namespace DtPad.Languages {
         internal static string FileExplorerManager_Saved {
             get {
                 return ResourceManager.GetString("FileExplorerManager_Saved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lo scan può richiedere alcuni secondi o minuti per completarsi.
+        ///Sei sicuro di voler procedere?.
+        /// </summary>
+        internal static string FileExplorerManager_SureToWait {
+            get {
+                return ResourceManager.GetString("FileExplorerManager_SureToWait", resourceCulture);
             }
         }
         
@@ -3436,7 +3455,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chiudi pannello interno.
+        ///   Looks up a localized string similar to Chiudi pannello laterale.
         /// </summary>
         internal static string Form1_closeToolStripMenuItem2 {
             get {
@@ -6147,7 +6166,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mostra pannello interno.
+        ///   Looks up a localized string similar to Mostra pannello laterale.
         /// </summary>
         internal static string Form1_verticalContainerToolStripButton {
             get {

@@ -127,7 +127,7 @@
     <value>Created by:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
-    <value>DtPad (2009-2012) is licensed under Apache License, Version 2.0.
+    <value>DtPad (2009-2013) is licensed under Apache License, Version 2.0.
 - apache.org/licenses/LICENSE-2.0
 
 This application requires Microsoft .NET Framework 4 and use Windows registry only to store "Open With" Explorer context menu menu association.
@@ -1705,7 +1705,7 @@ UTF-32 Little Endian</value>
     <value>File As PDF...</value>
   </data>
   <data name="Form1_showFileInBrowserToolStripMenuItem" xml:space="preserve">
-    <value>Show File in Browser</value>
+    <value>Show File In Browser</value>
   </data>
   <data name="Form1_focusOnEditorToolStripMenuItem" xml:space="preserve">
     <value>Focus On Main Text Area</value>
@@ -4188,5 +4188,12 @@ Insert all fields before proceeding.</value>
   </data>
   <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
     <value>Word Wrap</value>
+  </data>
+  <data name="FileExplorerManager_AccessDenied" xml:space="preserve">
+    <value>Access to the path {0} is denied</value>
+  </data>
+  <data name="FileExplorerManager_SureToWait" xml:space="preserve">
+    <value>The scan may take a few seconds or minutes of waiting to complete.
+Are you sure to continue?</value>
   </data>
 </root>

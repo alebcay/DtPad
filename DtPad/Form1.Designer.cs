@@ -3549,6 +3549,7 @@ namespace DtPad
             this.prefixToolStripComboBox.Enter += new System.EventHandler(this.prefixToolStripComboBox_Enter);
             this.prefixToolStripComboBox.TextChanged += new System.EventHandler(this.prefixToolStripComboBox_TextChanged);
             this.prefixToolStripComboBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.prefixToolStripComboBox_MouseDown);
+            this.prefixToolStripComboBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.prefixToolStripComboBox_KeyUp);
             // 
             // prefixToolStripButton
             // 
