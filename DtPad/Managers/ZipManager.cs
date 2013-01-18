@@ -15,6 +15,7 @@ namespace DtPad.Managers
     /// Zip (and even other formats) archive manager.
     /// </summary>
     /// <author>Marco Macciò</author>
+    /// <remarks>http://stackoverflow.com/questions/12107966/c-extract-a-zipped-file-only-without-the-folder</remarks>
     internal static class ZipManager
     {
         private const String className = "ZipManager";
@@ -100,7 +101,9 @@ namespace DtPad.Managers
                 toolStripProgressBar.PerformStep();
 
                 toolStripProgressBar.Visible = false;
-                toolStripStatusLabel.Text = LanguageUtil.GetCurrentLanguageString("ExtractSuccess", className);
+                String success = LanguageUtil.GetCurrentLanguageString("ExtractSuccess", className);
+                toolStripStatusLabel.Text = success;
+                WindowManager.ShowInfoBox(form, success);
             }
             catch (Exception exception)
             {

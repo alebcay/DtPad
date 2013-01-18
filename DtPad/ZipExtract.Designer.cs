@@ -34,11 +34,12 @@
             this.zipContentDataGridView = new System.Windows.Forms.DataGridView();
             this.zipContentLabel = new System.Windows.Forms.Label();
             this.closeButton = new System.Windows.Forms.Button();
-            this.extractSelectedFilesButton = new System.Windows.Forms.Button();
             this.filenameLabel1 = new System.Windows.Forms.Label();
             this.filenameLabel = new System.Windows.Forms.Label();
-            this.copyArchiveContentPictureBox = new System.Windows.Forms.PictureBox();
             this.zipExtractToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.selectAllButton = new System.Windows.Forms.Button();
+            this.copyArchiveContentPictureBox = new System.Windows.Forms.PictureBox();
+            this.extractSelectedFilesButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.zipContentDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.copyArchiveContentPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -94,21 +95,6 @@
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // extractSelectedFilesButton
-            // 
-            this.extractSelectedFilesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.extractSelectedFilesButton.AutoSize = true;
-            this.extractSelectedFilesButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.extractSelectedFilesButton.Location = new System.Drawing.Point(232, 312);
-            this.extractSelectedFilesButton.Name = "extractSelectedFilesButton";
-            this.extractSelectedFilesButton.Size = new System.Drawing.Size(210, 23);
-            this.extractSelectedFilesButton.TabIndex = 4;
-            this.extractSelectedFilesButton.Text = "Extract Selected Files";
-            this.extractSelectedFilesButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.extractSelectedFilesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.extractSelectedFilesButton.UseVisualStyleBackColor = true;
-            this.extractSelectedFilesButton.Click += new System.EventHandler(this.extractSelectedFilesButton_Click);
-            // 
             // filenameLabel1
             // 
             this.filenameLabel1.AutoSize = true;
@@ -128,6 +114,21 @@
             this.filenameLabel.Tag = "DontTranslate";
             this.filenameLabel.Text = "filenameLabel";
             // 
+            // selectAllButton
+            // 
+            this.selectAllButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.selectAllButton.AutoSize = true;
+            this.selectAllButton.Image = global::DtPad.ToolbarResource.select_all;
+            this.selectAllButton.Location = new System.Drawing.Point(416, 22);
+            this.selectAllButton.Name = "selectAllButton";
+            this.selectAllButton.Size = new System.Drawing.Size(107, 23);
+            this.selectAllButton.TabIndex = 7;
+            this.selectAllButton.Text = "Select All";
+            this.selectAllButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.selectAllButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.selectAllButton.UseVisualStyleBackColor = true;
+            this.selectAllButton.Click += new System.EventHandler(this.selectAllButton_Click);
+            // 
             // copyArchiveContentPictureBox
             // 
             this.copyArchiveContentPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -140,12 +141,28 @@
             this.copyArchiveContentPictureBox.TabStop = false;
             this.copyArchiveContentPictureBox.Click += new System.EventHandler(this.copyArchiveContentPictureBox_Click);
             // 
+            // extractSelectedFilesButton
+            // 
+            this.extractSelectedFilesButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.extractSelectedFilesButton.AutoSize = true;
+            this.extractSelectedFilesButton.Image = global::DtPad.MessageBoxResource.ok;
+            this.extractSelectedFilesButton.Location = new System.Drawing.Point(232, 312);
+            this.extractSelectedFilesButton.Name = "extractSelectedFilesButton";
+            this.extractSelectedFilesButton.Size = new System.Drawing.Size(210, 23);
+            this.extractSelectedFilesButton.TabIndex = 4;
+            this.extractSelectedFilesButton.Text = "Extract Selected Files";
+            this.extractSelectedFilesButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.extractSelectedFilesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.extractSelectedFilesButton.UseVisualStyleBackColor = true;
+            this.extractSelectedFilesButton.Click += new System.EventHandler(this.extractSelectedFilesButton_Click);
+            // 
             // ZipExtract
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.closeButton;
             this.ClientSize = new System.Drawing.Size(535, 346);
+            this.Controls.Add(this.selectAllButton);
             this.Controls.Add(this.copyArchiveContentPictureBox);
             this.Controls.Add(this.filenameLabel);
             this.Controls.Add(this.filenameLabel1);
@@ -160,6 +177,7 @@
             this.MinimumSize = new System.Drawing.Size(459, 330);
             this.Name = "ZipExtract";
             this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Archive Extraction";
             this.HelpButtonClicked += new System.ComponentModel.CancelEventHandler(this.ZipExtract_HelpButtonClicked);
@@ -180,5 +198,6 @@
         private System.Windows.Forms.Label filenameLabel;
         private System.Windows.Forms.PictureBox copyArchiveContentPictureBox;
         private System.Windows.Forms.ToolTip zipExtractToolTip;
+        private System.Windows.Forms.Button selectAllButton;
     }
 }

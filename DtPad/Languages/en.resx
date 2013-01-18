@@ -4196,4 +4196,7 @@ Insert all fields before proceeding.</value>
     <value>The scan may take a few seconds or minutes of waiting to complete.
 Are you sure to continue?</value>
   </data>
+  <data name="ZipExtract_selectAllButton" xml:space="preserve">
+    <value>Select All</value>
+  </data>
 </root>

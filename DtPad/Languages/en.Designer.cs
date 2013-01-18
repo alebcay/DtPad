@@ -11679,6 +11679,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select All.
+        /// </summary>
+        internal static string ZipExtract_selectAllButton {
+            get {
+                return ResourceManager.GetString("ZipExtract_selectAllButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Archive Extraction.
         /// </summary>
         internal static string ZipExtract_Title {

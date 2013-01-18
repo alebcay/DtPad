@@ -37,6 +37,11 @@ namespace DtPad
 
         #region Button Methods
 
+        private void selectAllButton_Click(object sender, EventArgs e)
+        {
+            zipContentDataGridView.SelectAll();
+        }
+
         private void copyArchiveContentPictureBox_Click(object sender, EventArgs e)
         {
             Clipboard.SetDataObject(ZipManager.GetZipContentListString(privateFileNameAndPath), true, ConstantUtil.clipboardRetryTimes, ConstantUtil.clipboardRetryDelay);

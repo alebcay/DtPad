@@ -4205,4 +4205,7 @@ DtPad non raccoglie alcuna informazione riguardante uso e utenti. I dati che pos
     <value>Lo scan può richiedere alcuni secondi o minuti per completarsi.
 Sei sicuro di voler procedere?</value>
   </data>
+  <data name="ZipExtract_selectAllButton" xml:space="preserve">
+    <value>Seleziona tutto</value>
+  </data>
 </root>
