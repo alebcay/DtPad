@@ -4217,4 +4217,7 @@ Ricominciare da capo?</value>
     <value>Inizio del documento raggiunto.
 Ricominciare dalla fine?</value>
   </data>
+  <data name="searchPanel_regularExpressionsCheckBox" xml:space="preserve">
+    <value>&amp;Usa espressioni regolari</value>
+  </data>
 </root>

@@ -4208,4 +4208,7 @@ Start from beginning?</value>
     <value>Top of document reached.
 Start from bottom?</value>
   </data>
+  <data name="searchPanel_regularExpressionsCheckBox" xml:space="preserve">
+    <value>&amp;Use Regular Expressions</value>
+  </data>
 </root>

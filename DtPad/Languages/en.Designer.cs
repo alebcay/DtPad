@@ -9371,6 +9371,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &amp;Use Regular Expressions.
+        /// </summary>
+        internal static string searchPanel_regularExpressionsCheckBox {
+            get {
+                return ResourceManager.GetString("searchPanel_regularExpressionsCheckBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Replace All.
         /// </summary>
         internal static string searchPanel_replaceAllToolStripButton {

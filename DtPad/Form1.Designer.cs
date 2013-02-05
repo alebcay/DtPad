@@ -4151,7 +4151,7 @@ namespace DtPad
             this.searchReplacePanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.searchReplacePanel.Location = new System.Drawing.Point(3, 345);
             this.searchReplacePanel.Name = "searchReplacePanel";
-            this.searchReplacePanel.Size = new System.Drawing.Size(667, 100);
+            this.searchReplacePanel.Size = new System.Drawing.Size(667, 119);
             this.searchReplacePanel.TabIndex = 4;
             this.searchReplacePanel.Visible = false;
             // 

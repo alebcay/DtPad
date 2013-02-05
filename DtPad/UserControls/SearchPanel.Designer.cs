@@ -56,6 +56,7 @@
             this.searchReplaceLeftPanel = new System.Windows.Forms.Panel();
             this.replaceLabel = new System.Windows.Forms.Label();
             this.searchLabel = new System.Windows.Forms.Label();
+            this.regularExpressionsCheckBox = new System.Windows.Forms.CheckBox();
             this.searchReplaceToolStrip.SuspendLayout();
             this.searchReplaceCentralPanel.SuspendLayout();
             this.rightSearchReplacePanel.SuspendLayout();
@@ -69,14 +70,14 @@
             this.searchTextBox.Multiline = true;
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.searchTextBox.Size = new System.Drawing.Size(564, 38);
+            this.searchTextBox.Size = new System.Drawing.Size(564, 57);
             this.searchTextBox.TabIndex = 0;
             this.searchTextBox.Tag = "DontTranslate";
             // 
             // replaceTextBox
             // 
             this.replaceTextBox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.replaceTextBox.Location = new System.Drawing.Point(0, 38);
+            this.replaceTextBox.Location = new System.Drawing.Point(0, 57);
             this.replaceTextBox.Multiline = true;
             this.replaceTextBox.Name = "replaceTextBox";
             this.replaceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -259,18 +260,19 @@
             this.searchReplaceCentralPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.searchReplaceCentralPanel.Location = new System.Drawing.Point(94, 25);
             this.searchReplaceCentralPanel.Name = "searchReplaceCentralPanel";
-            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(564, 75);
+            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(564, 94);
             this.searchReplaceCentralPanel.TabIndex = 6;
             // 
             // rightSearchReplacePanel
             // 
+            this.rightSearchReplacePanel.Controls.Add(this.regularExpressionsCheckBox);
             this.rightSearchReplacePanel.Controls.Add(this.searchAllTabsCheckBox);
             this.rightSearchReplacePanel.Controls.Add(this.loopCheckBox);
             this.rightSearchReplacePanel.Controls.Add(this.caseCheckBox);
             this.rightSearchReplacePanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.rightSearchReplacePanel.Location = new System.Drawing.Point(658, 25);
             this.rightSearchReplacePanel.Name = "rightSearchReplacePanel";
-            this.rightSearchReplacePanel.Size = new System.Drawing.Size(159, 75);
+            this.rightSearchReplacePanel.Size = new System.Drawing.Size(159, 94);
             this.rightSearchReplacePanel.TabIndex = 2;
             // 
             // searchAllTabsCheckBox
@@ -312,13 +314,13 @@
             this.searchReplaceLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.searchReplaceLeftPanel.Location = new System.Drawing.Point(0, 25);
             this.searchReplaceLeftPanel.Name = "searchReplaceLeftPanel";
-            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(94, 75);
+            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(94, 94);
             this.searchReplaceLeftPanel.TabIndex = 1;
             // 
             // replaceLabel
             // 
             this.replaceLabel.AutoSize = true;
-            this.replaceLabel.Location = new System.Drawing.Point(4, 41);
+            this.replaceLabel.Location = new System.Drawing.Point(4, 60);
             this.replaceLabel.Name = "replaceLabel";
             this.replaceLabel.Size = new System.Drawing.Size(75, 13);
             this.replaceLabel.TabIndex = 1;
@@ -333,6 +335,16 @@
             this.searchLabel.TabIndex = 0;
             this.searchLabel.Text = "Search:";
             // 
+            // regularExpressionsCheckBox
+            // 
+            this.regularExpressionsCheckBox.AutoSize = true;
+            this.regularExpressionsCheckBox.Location = new System.Drawing.Point(7, 73);
+            this.regularExpressionsCheckBox.Name = "regularExpressionsCheckBox";
+            this.regularExpressionsCheckBox.Size = new System.Drawing.Size(144, 17);
+            this.regularExpressionsCheckBox.TabIndex = 3;
+            this.regularExpressionsCheckBox.Text = "Use Regular Expressions";
+            this.regularExpressionsCheckBox.UseVisualStyleBackColor = true;
+            // 
             // SearchPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,7 +354,7 @@
             this.Controls.Add(this.rightSearchReplacePanel);
             this.Controls.Add(this.searchReplaceToolStrip);
             this.Name = "SearchPanel";
-            this.Size = new System.Drawing.Size(817, 100);
+            this.Size = new System.Drawing.Size(817, 119);
             this.Load += new System.EventHandler(this.SearchPanel_Load);
             this.searchReplaceToolStrip.ResumeLayout(false);
             this.searchReplaceToolStrip.PerformLayout();
@@ -387,5 +399,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton patternToolStripButton;
         internal System.Windows.Forms.ToolStripButton highlightsResultsToolStripButton;
+        internal System.Windows.Forms.CheckBox regularExpressionsCheckBox;
     }
 }
