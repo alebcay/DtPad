@@ -8735,6 +8735,16 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fine del documento raggiunta.
+        ///Ricominciare da capo?.
+        /// </summary>
+        internal static string ReplaceManager_EOF {
+            get {
+                return ResourceManager.GetString("ReplaceManager_EOF", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Impossibile trovare il testo cercato..
         /// </summary>
         internal static string ReplaceManager_NotFound {
@@ -8758,6 +8768,16 @@ namespace DtPad.Languages {
         internal static string ReplaceManager_ReplacedOne {
             get {
                 return ResourceManager.GetString("ReplaceManager_ReplacedOne", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inizio del documento raggiunto.
+        ///Ricominciare dalla fine?.
+        /// </summary>
+        internal static string ReplaceManager_SOF {
+            get {
+                return ResourceManager.GetString("ReplaceManager_SOF", resourceCulture);
             }
         }
         

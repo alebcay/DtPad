@@ -4209,4 +4209,12 @@ Sei sicuro di voler procedere?</value>
   <data name="ZipExtract_selectAllButton" xml:space="preserve">
     <value>Seleziona tutto</value>
   </data>
+  <data name="ReplaceManager_EOF" xml:space="preserve">
+    <value>Fine del documento raggiunta.
+Ricominciare da capo?</value>
+  </data>
+  <data name="ReplaceManager_SOF" xml:space="preserve">
+    <value>Inizio del documento raggiunto.
+Ricominciare dalla fine?</value>
+  </data>
 </root>

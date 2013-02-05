@@ -104,14 +104,14 @@ namespace DtPad.UserControls
         {
             Form1 form = (Form1)ParentForm;
 
-            SearchManager.ReplaceNextFactory(form);
+            ReplaceManager.ReplaceNext(form);
         }
 
         private void replacePreviousToolStripButton_Click(object sender, EventArgs e)
         {
             Form1 form = (Form1)ParentForm;
 
-            SearchManager.ReplacePreviousFactory(form);
+            ReplaceManager.ReplacePrevious(form);
         }
 
         private void replaceAllToolStripButton_Click(object sender, EventArgs e)

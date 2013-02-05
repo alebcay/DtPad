@@ -4200,4 +4200,12 @@ Are you sure to continue?</value>
   <data name="ZipExtract_selectAllButton" xml:space="preserve">
     <value>Select All</value>
   </data>
+  <data name="ReplaceManager_EOF" xml:space="preserve">
+    <value>End of document reached.
+Start from beginning?</value>
+  </data>
+  <data name="ReplaceManager_SOF" xml:space="preserve">
+    <value>Top of document reached.
+Start from bottom?</value>
+  </data>
 </root>

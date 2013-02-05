@@ -864,12 +864,12 @@ namespace DtPad
 
         private void replaceToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchManager.ReplaceNextFactory(this);
+            ReplaceManager.ReplaceNext(this);
         }
 
         private void replacePreviousToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchManager.ReplacePreviousFactory(this);
+            ReplaceManager.ReplacePrevious(this);
         }
 
         private void replaceAllToolStripMenuItem_Click(object sender, EventArgs e)

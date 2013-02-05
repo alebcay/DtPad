@@ -82,36 +82,6 @@ namespace DtPad.Managers
             SearchCount(form, searchAllTabsCheckBox.Checked);
         }
 
-        internal static void ReplaceNextFactory(Form1 form)
-        {
-            CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
-            CheckBox loopCheckBox = form.searchPanel.loopCheckBox;
-
-            if (searchAllTabsCheckBox.Checked)
-            {
-                ReplaceNextInAllFiles(form);
-            }
-            else
-            {
-                ReplaceNext(form, loopCheckBox.Checked, false);
-            }
-        }
-
-        internal static void ReplacePreviousFactory(Form1 form)
-        {
-            CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
-            CheckBox loopCheckBox = form.searchPanel.loopCheckBox;
-
-            if (searchAllTabsCheckBox.Checked)
-            {
-                ReplacePreviousInAllFiles(form);
-            }
-            else
-            {
-                ReplacePrevious(form, loopCheckBox.Checked, false);
-            }
-        }
-
         #endregion Internal Methods
 
         #region Search Methods
@@ -320,7 +290,7 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
-            CheckAllTextSelected(pageTextBox);
+            RichTextBoxUtil.CheckAllTextSelected(pageTextBox);
 
             int positionSearchedText = textWhereToSearch.IndexOf(textToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
             if (positionSearchedText != -1)
@@ -593,226 +563,6 @@ namespace DtPad.Managers
 
         #endregion Search Methods
 
-        #region Replace Methods
-
-        private static void ReplaceNextInAllFiles(Form1 form)
-        {
-            XtraTabControl pagesTabControl = form.pagesTabControl;
-            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
-
-            int initialSelectedIndex = pagesTabControl.SelectedTabPageIndex;
-
-            for (int i = initialSelectedIndex; i < pagesTabControl.TabPages.Count; i++)
-            {
-                pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[i];
-                if (i != initialSelectedIndex)
-                {
-                    CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-                    pageTextBox.SelectionStart = 0;
-                    pageTextBox.SelectionLength = 0;
-                }
-
-                if (ReplaceNext(form, false, true))
-                {
-                    return;
-                }
-            }
-
-            for (int i = 0; i < initialSelectedIndex; i++)
-            {
-                pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[i];
-                CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-                pageTextBox.SelectionStart = 0;
-                pageTextBox.SelectionLength = 0;
-
-                if (ReplaceNext(form, false, true))
-                {
-                    return;
-                }
-            }
-
-            String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
-            WindowManager.ShowInfoBox(form, notFoundMessage);
-            toolStripStatusLabel.Text = notFoundMessage;
-        }
-
-        private static bool ReplaceNext(Form1 form, bool loopAtEOF, bool searchInAllFiles)
-        {
-            XtraTabControl pagesTabControl = form.pagesTabControl;
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
-            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-
-            bool valueFounded = false;
-            
-            if (String.IsNullOrEmpty(searchTextBox.Text))
-            {
-                return false;
-            }
-
-            String textWhereToSearch = pageTextBox.Text;
-            String textToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-            FileListManager.SetNewSearchHistory(form, textToSearch);
-
-            if (!caseCheckBox.Checked)
-            {
-                textWhereToSearch = textWhereToSearch.ToLower();
-                textToSearch = textToSearch.ToLower();
-            }
-
-            CheckAllTextSelected(pageTextBox);
-
-            int positionSearchedText = textWhereToSearch.IndexOf(textToSearch, pageTextBox.SelectionStart);
-            if (positionSearchedText != -1)
-            {
-                toolStripStatusLabel.Text = String.Format("1 {0}", LanguageUtil.GetCurrentLanguageString("Replaced", className, 1));
-                pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
-                pageTextBox.SelectedText = replaceTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-                TextManager.RefreshUndoRedoExternal(form);
-
-                pageTextBox.ScrollToCaret();
-                valueFounded = true;
-            }
-            else if (!searchInAllFiles)
-            {
-                if (textWhereToSearch.IndexOf(textToSearch) == -1)
-                {
-                    String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
-                    WindowManager.ShowInfoBox(form, notFoundMessage);
-                    toolStripStatusLabel.Text = notFoundMessage;
-                }
-                else
-                {
-                    if (loopAtEOF)
-                    {
-                        pageTextBox.SelectionStart = 0;
-                        return ReplaceNext(form, false, false);
-                    }
-
-                    if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("EOF", className)) == DialogResult.Yes)
-                    {
-                        pageTextBox.SelectionStart = 0;
-                        return ReplaceNext(form, false, false);
-                    }
-                }
-            }
-
-            return valueFounded;
-        }
-
-        private static void ReplacePreviousInAllFiles(Form1 form)
-        {
-            XtraTabControl pagesTabControl = form.pagesTabControl;
-            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
-
-            int initialSelectedIndex = pagesTabControl.SelectedTabPageIndex;
-
-            for (int i = initialSelectedIndex; i >= 0; i--)
-            {
-                pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[i];
-                if (i != initialSelectedIndex)
-                {
-                    CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-                    pageTextBox.SelectionStart = pageTextBox.Text.Length - 1;
-                    pageTextBox.SelectionLength = 0;
-                }
-
-                if (ReplacePrevious(form, false, true))
-                {
-                    return;
-                }
-            }
-
-            for (int i = pagesTabControl.TabPages.Count - 1; i > initialSelectedIndex; i--)
-            {
-                pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[i];
-                CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-                pageTextBox.SelectionStart = pageTextBox.Text.Length - 1;
-                pageTextBox.SelectionLength = 0;
-
-                if (ReplacePrevious(form, false, true))
-                {
-                    return;
-                }
-            }
-
-            String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
-            WindowManager.ShowInfoBox(form, notFoundMessage);
-            toolStripStatusLabel.Text = notFoundMessage;
-        }
-
-        private static bool ReplacePrevious(Form1 form, bool loopAtEOF, bool searchInAllFiles)
-        {
-            XtraTabControl pagesTabControl = form.pagesTabControl;
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
-            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
-            TextBox replaceTextBox = form.searchPanel.replaceTextBox;
-            CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-
-            bool valueFounded = false;
-            
-            if (String.IsNullOrEmpty(searchTextBox.Text))
-            {
-                return false;
-            }
-
-            String textWhereToSearch = pageTextBox.Text;
-            String textToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-            FileListManager.SetNewSearchHistory(form, textToSearch);
-
-            if (!caseCheckBox.Checked)
-            {
-                textWhereToSearch = textWhereToSearch.ToLower();
-                textToSearch = textToSearch.ToLower();
-            }
-
-            String subString = textWhereToSearch.Substring(0, pageTextBox.SelectionStart);
-
-            int positionSearchedText = subString.LastIndexOf(textToSearch);
-            if (positionSearchedText != -1)
-            {
-                toolStripStatusLabel.Text = String.Format("1 {0}", LanguageUtil.GetCurrentLanguageString("Replaced", className, 1));
-                pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
-                pageTextBox.SelectedText = replaceTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-                TextManager.RefreshUndoRedoExternal(form);
-
-                pageTextBox.ScrollToCaret();
-                valueFounded = true;
-            }
-            else if (!searchInAllFiles)
-            {
-                if (textWhereToSearch.IndexOf(textToSearch) == -1)
-                {
-                    String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
-                    WindowManager.ShowInfoBox(form, notFoundMessage);
-                    toolStripStatusLabel.Text = notFoundMessage;
-                }
-                else
-                {
-                    if (loopAtEOF)
-                    {
-                        pageTextBox.SelectionStart = pageTextBox.Text.Length - 1;
-                        return ReplacePrevious(form, false, false);
-                    }
-
-                    if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SOF", className)) == DialogResult.Yes)
-                    {
-                        pageTextBox.SelectionStart = pageTextBox.Text.Length - 1;
-                        return ReplacePrevious(form, false, false);
-                    }
-                }
-            }
-
-            return valueFounded;
-        }
-
-        #endregion Replace Methods
-
         #region Private Methods
 
         internal static int SearchCountOccurency(Form1 form, bool searchInAllFiles, bool forceDisableHighlight = false, String specificTextToSearch = null)
@@ -855,16 +605,6 @@ namespace DtPad.Managers
             }
 
             return counter;
-        }
-
-        private static void CheckAllTextSelected(TextBoxBase textBox)
-        {
-            if (textBox.SelectionStart != 0 || textBox.SelectionLength != textBox.Text.Length)
-            {
-                return;
-            }
-
-            textBox.Select(0, 0);
         }
 
         #endregion Private Methods

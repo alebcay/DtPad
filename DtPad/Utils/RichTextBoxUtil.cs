@@ -38,6 +38,16 @@ namespace DtPad.Utils
             return richTextBox.Rtf.Contains(@"\highlight2");
         }
 
+        internal static void CheckAllTextSelected(TextBoxBase textBox)
+        {
+            if (textBox.SelectionStart != 0 || textBox.SelectionLength != textBox.Text.Length)
+            {
+                return;
+            }
+
+            textBox.Select(0, 0);
+        }
+
         #endregion Internal Methods
     }
 }
