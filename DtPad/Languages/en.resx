@@ -124,7 +124,7 @@
     <value>Marco Macciò</value>
   </data>
   <data name="About_createdByLabel1" xml:space="preserve">
-    <value>Created by:</value>
+    <value>Developed by:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
     <value>DtPad (2009-2013) is licensed under Apache License, Version 2.0.
@@ -132,8 +132,9 @@
 
 This application requires Microsoft .NET Framework 4 and use Windows registry only to store "Open With" Explorer context menu menu association.
 
-French translation by: Alain Buferne.
-Russian translation by: Artem Vakhitov.
+With the participation of: Derek Morin (development).
+
+Translations by: Alain Buferne (french), Artem Vakhitov (russian).
 
 Main iconset by: Delacro.
 - delacro.deviantart.com

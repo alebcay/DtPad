@@ -1,13 +1,7 @@
-2.10.0.40
+2.10.1.40
 
-+ Russian localization [made by Artem Vakhitov]
-- Better tab's tooltip for open files
-- DtPad now support Unicode using Windows clipboard, allowing to manage contents written with Russian and other alphabets
-- Command "File -> Delete File" now move the file into the recycle bin, instead of delete it permanently
-- Fixing of a bug which occurred when checking permissions at DtPad startup on Windows 8 (issue #1170)
-- Multiple files opening through the shortcut "Open with DtPad" fixed (issue #1185)
-- The language selection inside DtPad Setup now works properly for all cultures
-- Dynamic load of changelog inside DtPad Updater
-- Several improvements to interface and localizations
+- Improvement of feature "View - Show File In Browser", and fixing of the passing of parameters to the browser
+- Bug fixing of issue #1186
+- Minor improvements to interface and localizations
 
-More informations here: http://dtpad.codeplex.com/releases/view/98800
+More informations here: http://dtpad.codeplex.com/releases/view/100004

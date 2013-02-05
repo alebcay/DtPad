@@ -11,7 +11,7 @@ namespace DtPad.Customs
     /// <summary>
     /// Custom RichTextBox (to use clipboard toggle manager and other custom functions).
     /// </summary>
-    /// <author>Marco Macciò, external source</author>
+    /// <author>Marco Macciò, Derek Morin, external source</author>
     public class CustomRichTextBox : CustomRichTextBoxBase
     {
         private bool ctrlFlag;
@@ -242,13 +242,13 @@ namespace DtPad.Customs
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
-            else if (e.Shift && e.KeyCode == Keys.Home)
+            else if (!e.Control && e.Shift && e.KeyCode == Keys.Home)
             {
                 TextManager.SelectTillFirstSensibleChar(form);
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
-            else if (!e.Shift && e.KeyCode == Keys.Home)
+            else if (!e.Control && !e.Shift && e.KeyCode == Keys.Home)
             {
                 TextManager.MoveToFirstSensibleChar(form);
                 e.Handled = true;

@@ -20,7 +20,7 @@ namespace DtPad
     /// <summary>
     /// Main DtPad form.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal partial class Form1 : CustomForm
     {
         private Thread newThread;

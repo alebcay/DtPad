@@ -11,7 +11,7 @@ namespace DtPad.Customs
     /// <summary>
     /// Custom form.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     public class CustomForm : Form
     {
         #region Public Instance Fields
@@ -103,10 +103,17 @@ namespace DtPad.Customs
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == (Keys.Control | Keys.Tab))
+            switch (keyData)
             {
-                WindowManager.ShowTabsSwitch(this);
-                return true;
+                case (Keys.Control | Keys.Tab):
+                    WindowManager.ShowTabsSwitch(this);
+                    return true;
+                case (Keys.Control | Keys.F4):
+                    TabManager.ClosePage((Form1)this);
+                    break;
+                case (Keys.Control | Keys.Shift | Keys.F4):
+                    TabManager.CloseAllPages((Form1)this);
+                    break;
             }
 
             return base.ProcessCmdKey(ref msg, keyData);

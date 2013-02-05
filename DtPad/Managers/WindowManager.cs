@@ -17,7 +17,7 @@ namespace DtPad.Managers
     /// <summary>
     /// Window operations manager (ie. open new windows).
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal static class WindowManager
     {
         private const String className = "WindowManager";
@@ -549,6 +549,7 @@ namespace DtPad.Managers
             Panel searchReplacePanel = form.searchReplacePanel;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
             ToolStripButton highlightsResultsToolStripButton = form.searchPanel.highlightsResultsToolStripButton;
+            CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(form.pagesTabControl.SelectedTabPage);
 
             highlightsResultsToolStripButton.Checked = ConfigUtil.GetBoolParameter("SearchHighlightsResults");
             searchReplacePanel.Visible = !checkStatus;
@@ -574,6 +575,8 @@ namespace DtPad.Managers
                 //{
                 //    StringUtil.ClearHighlightsResults(form);
                 //}
+
+                pageTextBox.Focus();
                 return;
             }
 

@@ -9,7 +9,7 @@ namespace DtPad
     /// <summary>
     /// Go to line DtPad form.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal partial class GoToLine : Form
     {
         #region Window Methods
@@ -34,6 +34,8 @@ namespace DtPad
             }
             lineNumericUpDown.Value = currentRow;
             lineCurrentLabel.Text = currentRow.ToString();
+
+            lineNumericUpDown.Select(0, lineNumericUpDown.Text.Length);
         }
 
         private void GoToLine_HelpButtonClicked(object sender, CancelEventArgs e)

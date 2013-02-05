@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("Encoding");
-            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("Opening");
-            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("Saving");
-            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("File", new System.Windows.Forms.TreeNode[] {
-            treeNode65,
-            treeNode66,
-            treeNode67});
-            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("Session");
-            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("Search");
-            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("Text");
-            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("Language");
-            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("Tab");
-            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("Note Mode");
-            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Look & Feel");
-            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
-            treeNode75});
-            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("Updates");
-            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("Dropbox");
-            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("Internet", new System.Windows.Forms.TreeNode[] {
-            treeNode77,
-            treeNode78});
-            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("Shell Integration");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Encoding");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Opening");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Saving");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("File", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3});
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Session");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Search");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Text");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Language");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Tab");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Note Mode");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Look & Feel");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("View", new System.Windows.Forms.TreeNode[] {
+            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Updates");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Dropbox");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Internet", new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode14});
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Shell Integration");
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -285,49 +285,49 @@
             // 
             this.optionsTreeView.Location = new System.Drawing.Point(13, 13);
             this.optionsTreeView.Name = "optionsTreeView";
-            treeNode65.Name = "encodingNode";
-            treeNode65.Text = "Encoding";
-            treeNode66.Name = "openingNode";
-            treeNode66.Text = "Opening";
-            treeNode67.Name = "savingNode";
-            treeNode67.Text = "Saving";
-            treeNode68.Name = "fileNode";
-            treeNode68.Text = "File";
-            treeNode69.Name = "sessionNode";
-            treeNode69.Text = "Session";
-            treeNode70.Name = "searchNode";
-            treeNode70.Text = "Search";
-            treeNode71.Name = "formatNode";
-            treeNode71.Text = "Text";
-            treeNode72.Name = "languageNode";
-            treeNode72.Text = "Language";
-            treeNode73.Name = "tabNode";
-            treeNode73.Text = "Tab";
-            treeNode74.Name = "noteModeNode";
-            treeNode74.Text = "Note Mode";
-            treeNode75.Name = "lookAndFeelNode";
-            treeNode75.Text = "Look & Feel";
-            treeNode76.Name = "viewNode";
-            treeNode76.Text = "View";
-            treeNode77.Name = "updateNode";
-            treeNode77.Text = "Updates";
-            treeNode78.Name = "dropboxNode";
-            treeNode78.Text = "Dropbox";
-            treeNode79.Name = "internetNode";
-            treeNode79.Text = "Internet";
-            treeNode80.Name = "shellNode";
-            treeNode80.Text = "Shell Integration";
+            treeNode1.Name = "encodingNode";
+            treeNode1.Text = "Encoding";
+            treeNode2.Name = "openingNode";
+            treeNode2.Text = "Opening";
+            treeNode3.Name = "savingNode";
+            treeNode3.Text = "Saving";
+            treeNode4.Name = "fileNode";
+            treeNode4.Text = "File";
+            treeNode5.Name = "sessionNode";
+            treeNode5.Text = "Session";
+            treeNode6.Name = "searchNode";
+            treeNode6.Text = "Search";
+            treeNode7.Name = "formatNode";
+            treeNode7.Text = "Text";
+            treeNode8.Name = "languageNode";
+            treeNode8.Text = "Language";
+            treeNode9.Name = "tabNode";
+            treeNode9.Text = "Tab";
+            treeNode10.Name = "noteModeNode";
+            treeNode10.Text = "Note Mode";
+            treeNode11.Name = "lookAndFeelNode";
+            treeNode11.Text = "Look & Feel";
+            treeNode12.Name = "viewNode";
+            treeNode12.Text = "View";
+            treeNode13.Name = "updateNode";
+            treeNode13.Text = "Updates";
+            treeNode14.Name = "dropboxNode";
+            treeNode14.Text = "Dropbox";
+            treeNode15.Name = "internetNode";
+            treeNode15.Text = "Internet";
+            treeNode16.Name = "shellNode";
+            treeNode16.Text = "Shell Integration";
             this.optionsTreeView.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode68,
-            treeNode69,
-            treeNode70,
-            treeNode71,
-            treeNode72,
-            treeNode73,
-            treeNode74,
-            treeNode76,
-            treeNode79,
-            treeNode80});
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode12,
+            treeNode15,
+            treeNode16});
             this.optionsTreeView.Size = new System.Drawing.Size(131, 287);
             this.optionsTreeView.TabIndex = 0;
             this.optionsTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.optionsTreeView_AfterSelect);

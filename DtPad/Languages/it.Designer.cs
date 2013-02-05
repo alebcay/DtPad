@@ -102,15 +102,14 @@ namespace DtPad.Languages {
         ///
         ///Questa applicazione richiede Microsoft .NET Framework 4 e fa uso del registro di Windows solo per salvare l&apos;associazione &quot;Apri con&quot; nel menu contestuale di Esplora Risorse.
         ///
-        ///Traduzione francese di: Alain Buferne.
-        ///Traduzione russa di: Artem Vakhitov.
+        ///Con la partecipazione di: Derek Morin (programmazione).
+        ///
+        ///Traduzioni di: Alain Buferne (francese), Artem Vakhitov (russo).
         ///
         ///Set principale di icone di: Delacro.
         ///- delacro.deviantart.com
         ///
-        ///Icone secondarie di: Mark James, VistaIcons.
-        ///- famfamfam.com
-        ///- vistaicons.c [rest of string was truncated]&quot;;.
+        ///Icone secondarie di: Mark Jame [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string About_descriptionTextBox {
             get {

@@ -88,7 +88,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Created by:.
+        ///   Looks up a localized string similar to Developed by:.
         /// </summary>
         internal static string About_createdByLabel1 {
             get {
@@ -102,8 +102,9 @@ namespace DtPad.Languages {
         ///
         ///This application requires Microsoft .NET Framework 4 and use Windows registry only to store &quot;Open With&quot; Explorer context menu menu association.
         ///
-        ///French translation by: Alain Buferne.
-        ///Russian translation by: Artem Vakhitov.
+        ///With the participation of: Derek Morin (development).
+        ///
+        ///Translations by: Alain Buferne (french), Artem Vakhitov (russian).
         ///
         ///Main iconset by: Delacro.
         ///- delacro.deviantart.com
@@ -112,7 +113,7 @@ namespace DtPad.Languages {
         ///- famfamfam.com
         ///- vistaicons.com
         ///
-        ///External components referenced: SharpZip, iText [rest of string was truncated]&quot;;.
+        ///Ex [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string About_descriptionTextBox {
             get {

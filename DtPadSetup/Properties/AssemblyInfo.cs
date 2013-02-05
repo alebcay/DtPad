@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("DtPad Setup")]
 [assembly: AssemblyDescription("Marco Macciò - diariotraduttore.com")]
-[assembly: AssemblyConfiguration("130118")]
+[assembly: AssemblyConfiguration("130205")]
 [assembly: AssemblyCompany("Diario di un traduttore")]
 [assembly: AssemblyProduct("DtPad Setup")]
 [assembly: AssemblyCopyright("")]
