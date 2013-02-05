@@ -16,7 +16,7 @@ namespace DtPad.Managers
     {
         private const String className = "SearchManager";
 
-        #region Internal Methods
+        #region Factory Methods
 
         internal static void SearchFirst(Form1 form)
         {
@@ -82,7 +82,7 @@ namespace DtPad.Managers
             SearchCount(form, searchAllTabsCheckBox.Checked);
         }
 
-        #endregion Internal Methods
+        #endregion Factory Methods
 
         #region Search Methods
 
@@ -563,7 +563,7 @@ namespace DtPad.Managers
 
         #endregion Search Methods
 
-        #region Private Methods
+        #region Internal Methods
 
         internal static int SearchCountOccurency(Form1 form, bool searchInAllFiles, bool forceDisableHighlight = false, String specificTextToSearch = null)
         {
@@ -607,6 +607,6 @@ namespace DtPad.Managers
             return counter;
         }
 
-        #endregion Private Methods
+        #endregion Internal Methods
     }
 }
