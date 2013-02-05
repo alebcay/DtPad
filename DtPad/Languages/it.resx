@@ -676,7 +676,7 @@ Cordiali saluti,</value>
     <value>Errore</value>
   </data>
   <data name="searchPanel_caseCheckBox" xml:space="preserve">
-    <value>Maiuscole/minuscole</value>
+    <value>&amp;Maiuscole/minuscole</value>
   </data>
   <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
     <value>Chiudi tutto</value>
@@ -688,7 +688,7 @@ Cordiali saluti,</value>
     <value>Percorso e nome file</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Cicla alla fine del file</value>
+    <value>&amp;Cicla alla fine del file</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>Nuovo</value>

@@ -722,7 +722,7 @@ Best regards,</value>
     <value>Error</value>
   </data>
   <data name="searchPanel_caseCheckBox" xml:space="preserve">
-    <value>Case Sensitive</value>
+    <value>&amp;Case Sensitive</value>
   </data>
   <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
     <value>Close All</value>
@@ -734,7 +734,7 @@ Best regards,</value>
     <value>File Path And Name</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Loop At End-Of-File</value>
+    <value>&amp;Loop At End-Of-File</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>New</value>

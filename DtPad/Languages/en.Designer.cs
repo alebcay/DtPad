@@ -9243,7 +9243,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Case Sensitive.
+        ///   Looks up a localized string similar to &amp;Case Sensitive.
         /// </summary>
         internal static string searchPanel_caseCheckBox {
             get {
@@ -9333,7 +9333,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loop At End-Of-File.
+        ///   Looks up a localized string similar to &amp;Loop At End-Of-File.
         /// </summary>
         internal static string searchPanel_loopCheckBox {
             get {

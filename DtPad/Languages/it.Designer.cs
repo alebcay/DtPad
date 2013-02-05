@@ -9246,7 +9246,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maiuscole/minuscole.
+        ///   Looks up a localized string similar to &amp;Maiuscole/minuscole.
         /// </summary>
         internal static string searchPanel_caseCheckBox {
             get {
@@ -9336,7 +9336,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cicla alla fine del file.
+        ///   Looks up a localized string similar to &amp;Cicla alla fine del file.
         /// </summary>
         internal static string searchPanel_loopCheckBox {
             get {
