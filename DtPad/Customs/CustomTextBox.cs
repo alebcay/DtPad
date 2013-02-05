@@ -110,7 +110,7 @@ namespace DtPad.Customs
 
                         String initialText = Text;
                        
-                        SearchManager.SearchNextFactory(form);
+                        SearchManager.SearchNext(form);
 
                         Text = initialText;
                         Select(TextLength, 0);

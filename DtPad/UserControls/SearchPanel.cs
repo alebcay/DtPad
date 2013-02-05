@@ -69,35 +69,35 @@ namespace DtPad.UserControls
         {
             Form1 form = (Form1)ParentForm;
 
-            SearchManager.SearchFirstFactory(form);
+            SearchManager.SearchFirst(form);
         }
 
         private void findNextToolStripButton_Click(object sender, EventArgs e)
         {
             Form1 form = (Form1)ParentForm;
 
-            SearchManager.SearchNextFactory(form);
+            SearchManager.SearchNext(form);
         }
 
         private void findPreviousToolStripButton_Click(object sender, EventArgs e)
         {
             Form1 form = (Form1)ParentForm;
 
-            SearchManager.SearchPreviousFactory(form);
+            SearchManager.SearchPrevious(form);
         }
 
         private void findLastToolStripButton_Click(object sender, EventArgs e)
         {
             Form1 form = (Form1)ParentForm;
 
-            SearchManager.SearchLastFactory(form);
+            SearchManager.SearchLast(form);
         }
 
         private void searchCountToolStripButton_Click(object sender, EventArgs e)
         {
             Form1 form = (Form1)ParentForm;
 
-            SearchManager.SearchCountFactory(form);
+            SearchManager.SearchCount(form);
         }
 
         private void replaceToolStripButton2_Click(object sender, EventArgs e)

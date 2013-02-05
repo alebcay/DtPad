@@ -18,7 +18,7 @@ namespace DtPad.Managers
 
         #region Internal Methods
 
-        internal static void SearchFirstFactory(Form1 form)
+        internal static void SearchFirst(Form1 form)
         {
             CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
 
@@ -32,7 +32,7 @@ namespace DtPad.Managers
             }
         }
 
-        internal static void SearchNextFactory(Form1 form)
+        internal static void SearchNext(Form1 form)
         {
             CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
             CheckBox loopCheckBox = form.searchPanel.loopCheckBox;
@@ -47,7 +47,7 @@ namespace DtPad.Managers
             }
         }
 
-        internal static void SearchPreviousFactory(Form1 form)
+        internal static void SearchPrevious(Form1 form)
         {
             CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
             CheckBox loopCheckBox = form.searchPanel.loopCheckBox;
@@ -62,7 +62,7 @@ namespace DtPad.Managers
             }
         }
 
-        internal static void SearchLastFactory(Form1 form)
+        internal static void SearchLast(Form1 form)
         {
             CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
 
@@ -76,7 +76,7 @@ namespace DtPad.Managers
             }
         }
 
-        internal static void SearchCountFactory(Form1 form)
+        internal static void SearchCount(Form1 form)
         {
             CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
             SearchCount(form, searchAllTabsCheckBox.Checked);

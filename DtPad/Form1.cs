@@ -350,7 +350,7 @@ namespace DtPad
         internal void historyToolStripDropDownButton_Click(object sender, EventArgs e)
         {
             searchPanel.searchTextBox.Text = ((ToolStripMenuItem)sender).Tag.ToString();
-            SearchManager.SearchNextFactory(this);
+            SearchManager.SearchNext(this);
         }
 
         internal void recentFileToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -839,27 +839,27 @@ namespace DtPad
 
         private void findFirstToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchManager.SearchFirstFactory(this);
+            SearchManager.SearchFirst(this);
         }
 
         private void findNextToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchManager.SearchNextFactory(this);
+            SearchManager.SearchNext(this);
         }
 
         private void findPreviousToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchManager.SearchPreviousFactory(this);
+            SearchManager.SearchPrevious(this);
         }
 
         private void findLastToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchManager.SearchLastFactory(this);
+            SearchManager.SearchLast(this);
         }
 
         private void countOccurencesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SearchManager.SearchCountFactory(this);
+            SearchManager.SearchCount(this);
         }
 
         private void replaceToolStripMenuItem_Click(object sender, EventArgs e)
