@@ -150,6 +150,9 @@
     <Compile Include="CsvEditorHeader.Designer.cs">
       <DependentUpon>CsvEditorHeader.cs</DependentUpon>
     </Compile>
+    <Compile Include="Customs\CustomCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Customs\CustomComboBox.cs">
       <SubType>Component</SubType>
     </Compile>

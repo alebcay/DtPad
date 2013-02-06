@@ -50,13 +50,13 @@
             this.closeToolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.searchReplaceCentralPanel = new System.Windows.Forms.Panel();
             this.rightSearchReplacePanel = new System.Windows.Forms.Panel();
-            this.searchAllTabsCheckBox = new System.Windows.Forms.CheckBox();
-            this.loopCheckBox = new System.Windows.Forms.CheckBox();
-            this.caseCheckBox = new System.Windows.Forms.CheckBox();
+            this.searchAllTabsCheckBox = new Customs.CustomCheckBox();
+            this.loopCheckBox = new Customs.CustomCheckBox();
+            this.caseCheckBox = new Customs.CustomCheckBox();
             this.searchReplaceLeftPanel = new System.Windows.Forms.Panel();
             this.replaceLabel = new System.Windows.Forms.Label();
             this.searchLabel = new System.Windows.Forms.Label();
-            this.regularExpressionsCheckBox = new System.Windows.Forms.CheckBox();
+            this.regularExpressionsCheckBox = new Customs.CustomCheckBox();
             this.searchReplaceToolStrip.SuspendLayout();
             this.searchReplaceCentralPanel.SuspendLayout();
             this.rightSearchReplacePanel.SuspendLayout();
@@ -390,15 +390,15 @@
         internal Customs.CustomTextBox searchTextBox;
         internal Customs.CustomTextBox replaceTextBox;
         private System.Windows.Forms.Panel rightSearchReplacePanel;
-        internal System.Windows.Forms.CheckBox searchAllTabsCheckBox;
-        internal System.Windows.Forms.CheckBox loopCheckBox;
-        internal System.Windows.Forms.CheckBox caseCheckBox;
+        internal Customs.CustomCheckBox searchAllTabsCheckBox;
+        internal Customs.CustomCheckBox loopCheckBox;
+        internal Customs.CustomCheckBox caseCheckBox;
         private System.Windows.Forms.Panel searchReplaceLeftPanel;
         private System.Windows.Forms.Label replaceLabel;
         private System.Windows.Forms.Label searchLabel;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton patternToolStripButton;
         internal System.Windows.Forms.ToolStripButton highlightsResultsToolStripButton;
-        internal System.Windows.Forms.CheckBox regularExpressionsCheckBox;
+        internal Customs.CustomCheckBox regularExpressionsCheckBox;
     }
 }
