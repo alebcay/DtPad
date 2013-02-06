@@ -358,7 +358,7 @@ namespace DtPad.Managers
             }
             else if (!searchInAllFiles)
             {
-                if (textWhereToSearch.IndexOf(textToSearch) == -1)
+                if (GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
                 {
                     String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
                     WindowManager.ShowInfoBox(form, notFoundMessage);
@@ -380,7 +380,7 @@ namespace DtPad.Managers
 
             return valueFounded;
         }
-
+       
         private static void SearchPreviousInAllFiles(Form1 form)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
@@ -479,7 +479,7 @@ namespace DtPad.Managers
             }
             else if (!searchInAllFiles)
             {
-                if (textWhereToSearch.IndexOf(textToSearch) == -1)
+                if (GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
                 {
                     String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
                     WindowManager.ShowInfoBox(form, notFoundMessage);
@@ -500,6 +500,19 @@ namespace DtPad.Managers
             }
 
             return valueFounded;
+        }
+
+        private static bool GetNoMatchesInFile(string textWhereToSearch, string textToSearch, bool useRegularExpressions)
+        {
+           if (useRegularExpressions == false)
+           {
+              return ( textWhereToSearch.IndexOf( textToSearch ) == -1 );
+           }
+           else
+           {
+               Match regexMatch = Regex.Match(textWhereToSearch, textToSearch);
+               return !regexMatch.Success;
+           }
         }
 
         private static void SearchCount(Form1 form, bool searchInAllFiles)
