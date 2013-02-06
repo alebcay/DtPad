@@ -489,7 +489,7 @@ namespace DtPad.Managers
                 {
                     if (loopAtEOF)
                     {
-                        return SearchFirst(form, false);
+                        return SearchLast(form, false);
                     }
 
                     if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SOF", className)) == DialogResult.Yes)
