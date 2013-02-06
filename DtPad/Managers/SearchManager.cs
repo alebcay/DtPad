@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using DevExpress.XtraTab;
 using DtPad.Customs;
@@ -110,6 +111,7 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
@@ -131,14 +133,31 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
-            int positionSearchedText = textWhereToSearch.IndexOf(textToSearch);
+            int positionSearchedText = -1;
+            int selectionLength = -1;
+            if (useRegularExpressionsCheckBox.Checked == false)
+            {
+               positionSearchedText = textWhereToSearch.IndexOf( textToSearch );
+               selectionLength = textToSearch.Length;
+            }
+            else
+            {
+               Regex regex = new Regex( textToSearch );
+               Match regexMatch = regex.Match( textWhereToSearch, 0 );
+               if ( regexMatch.Success )
+               {
+                  positionSearchedText = regexMatch.Index;
+                  selectionLength = regexMatch.Value.Length;
+               }
+            }
+
             if (positionSearchedText != -1)
             {
                 int occurences = SearchCountOccurency(form, searchInAllFiles, false, specificTextToSearch);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
+                pageTextBox.Select(positionSearchedText, selectionLength);
                 pageTextBox.ScrollToCaret();
                 valueFounded = true;
             }
@@ -183,6 +202,7 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
@@ -203,14 +223,31 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
-            int positionSearchedText = textWhereToSearch.LastIndexOf(textToSearch);
+            int positionSearchedText = -1;
+            int selectionLength = -1;
+            if (useRegularExpressionsCheckBox.Checked == false)
+            {
+               positionSearchedText = textWhereToSearch.LastIndexOf( textToSearch );
+               selectionLength = textToSearch.Length;
+            }
+            else
+            {
+               Regex regex = new Regex( textToSearch );
+               Match regexMatch = Regex.Match( textWhereToSearch , textToSearch , RegexOptions.RightToLeft );
+               if ( regexMatch.Success )
+               {
+                  positionSearchedText = regexMatch.Index;
+                  selectionLength = regexMatch.Value.Length;
+               }
+            }
+            
             if (positionSearchedText != -1)
             {
                 int occurences = SearchCountOccurency(form, searchInAllFiles);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
+                pageTextBox.Select(positionSearchedText, selectionLength);
                 pageTextBox.ScrollToCaret();
                 valueFounded = true;
             }
@@ -270,6 +307,7 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
@@ -290,16 +328,31 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
-            RichTextBoxUtil.CheckAllTextSelected(pageTextBox);
+            int positionSearchedText = -1;
+            int selectionLength = -1;
+            if (useRegularExpressionsCheckBox.Checked == false)
+            {
+               positionSearchedText = textWhereToSearch.IndexOf( textToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength );
+               selectionLength = textToSearch.Length;
+            }
+            else
+            {
+               Regex regex = new Regex(textToSearch);
+               Match regexMatch = regex.Match( textWhereToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength );
+               if (regexMatch.Success)
+               {
+                  positionSearchedText = regexMatch.Index;
+                  selectionLength = regexMatch.Value.Length;
+               }              
+           }
 
-            int positionSearchedText = textWhereToSearch.IndexOf(textToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
             if (positionSearchedText != -1)
             {
                 int occurences = SearchCountOccurency(form, searchInAllFiles);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
+                pageTextBox.Select( positionSearchedText, selectionLength);
                 pageTextBox.ScrollToCaret();
                 valueFounded = true;
             }
@@ -373,6 +426,7 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
@@ -395,14 +449,31 @@ namespace DtPad.Managers
 
             String subString = textWhereToSearch.Substring(0, pageTextBox.SelectionStart);
 
-            int positionSearchedText = subString.LastIndexOf(textToSearch);
+            int selectionLength = -1;
+            int positionSearchedText = -1;
+
+            if (useRegularExpressionsCheckBox.Checked == false)
+            {
+               selectionLength = textToSearch.Length;
+               positionSearchedText = subString.LastIndexOf( textToSearch );
+            }
+            else
+            {
+               Match regexMatch = Regex.Match( subString, textToSearch, RegexOptions.RightToLeft );
+               if ( regexMatch.Success )
+               {
+                  positionSearchedText = regexMatch.Index;
+                  selectionLength = regexMatch.Value.Length;
+               }
+            }
+
             if (positionSearchedText != -1)
             {
                 int occurences = SearchCountOccurency(form, searchInAllFiles);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
+                pageTextBox.Select(positionSearchedText, selectionLength);
                 pageTextBox.ScrollToCaret();
                 valueFounded = true;
             }
