@@ -6,23 +6,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-#if Debug
-    [assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
-    [assembly: AssemblyCompany("Diario di un traduttore")]
-#endif
-
-#if Release
-    [assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
-    [assembly: AssemblyCompany("Diario di un traduttore")]
-#endif
-
-#if ReleaseFE
-    [assembly: AssemblyDescription("Marco Macciò")]
-    [assembly: AssemblyCompany("")]
-#endif
-
 [assembly: AssemblyTitle("DtPad")]
+[assembly: AssemblyDescription("DtPad - .NET Framework text editor")]
 [assembly: AssemblyConfiguration("130207")]
+[assembly: AssemblyCompany("dtpad.codeplex.com")]
 [assembly: AssemblyProduct("DtPad")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
@@ -45,5 +32,5 @@ using System.Runtime.InteropServices;
 //
 [assembly: AssemblyVersion("2.11.0.40")]
 [assembly: AssemblyFileVersion("2.11.0.40")]
-[assembly: NeutralResourcesLanguageAttribute("en-GB")]
+[assembly: NeutralResourcesLanguage("en-GB")]
 [assembly: CLSCompliant(true)]

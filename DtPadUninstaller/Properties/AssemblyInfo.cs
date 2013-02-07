@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DtPad Uninstaller")]
-[assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
-[assembly: AssemblyConfiguration("130206")]
-[assembly: AssemblyCompany("Diario di un traduttore")]
+[assembly: AssemblyDescription("DtPad - .NET Framework text editor")]
+[assembly: AssemblyConfiguration("130207")]
+[assembly: AssemblyCompany("dtpad.codeplex.com")]
 [assembly: AssemblyProduct("DtPad Uninstaller")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]

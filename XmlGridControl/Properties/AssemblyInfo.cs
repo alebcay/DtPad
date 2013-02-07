@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("XmlGridControl")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("120403")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyDescription("XmlGridControl - .NET Windows Forms grid control for XML data")]
+[assembly: AssemblyConfiguration("130207")]
+[assembly: AssemblyCompany("xmlgrid.codeplex.com")]
 [assembly: AssemblyProduct("XmlGridControl")]
 [assembly: AssemblyCopyright("Copyright © Semyon A. Chertkov, 2009")]
 [assembly: AssemblyTrademark("")]
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.1.4.01")]
-[assembly: AssemblyFileVersion("1.1.4.01")]
+[assembly: AssemblyVersion("1.1.4.02")]
+[assembly: AssemblyFileVersion("1.1.4.02")]
 [assembly: NeutralResourcesLanguageAttribute("en-GB")]
 [assembly: CLSCompliant(true)]

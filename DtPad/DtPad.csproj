@@ -79,6 +79,22 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>DtPad.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugSI|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\DebugSI\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DebugSI</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\DtPad.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>DtPad.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Be.Windows.Forms.HexBox, Version=1.5.0.30785, Culture=neutral, PublicKeyToken=e0e5adf0ebc99863, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -1251,9 +1267,11 @@
 "$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\es.resx" "$(ProjectDir)Languages\es.resources"
 "$(ProjectDir)Languages\ResGen.exe" "$(ProjectDir)Languages\ru.resx" "$(ProjectDir)Languages\ru.resources"
 mkdir "$(ProjectDir)bin\Debug\Languages"
+mkdir "$(ProjectDir)bin\DebugSI\Languages"
 mkdir "$(ProjectDir)bin\Release\Languages"
 mkdir "$(ProjectDir)bin\ReleaseFE\Languages"
 copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\Debug\Languages"
+copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\DebugSI\Languages"
 copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\Release\Languages"
 copy /Y "$(ProjectDir)Languages\*.resources" "$(ProjectDir)bin\ReleaseFE\Languages"
 copy /Y "$(ProjectDir)bin\Release\DtPad.exe" "$(SolutionDir)DtPadSetup\Files\DtPad.exe"

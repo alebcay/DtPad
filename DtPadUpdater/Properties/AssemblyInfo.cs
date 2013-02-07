@@ -6,23 +6,10 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-#if Debug
-    [assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
-    [assembly: AssemblyCompany("Diario di un traduttore")]
-#endif
-
-#if Release
-    [assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
-    [assembly: AssemblyCompany("Diario di un traduttore")]
-#endif
-
-#if ReleaseFE
-    [assembly: AssemblyDescription("Marco Macciò")]
-    [assembly: AssemblyCompany("")]
-#endif
-
 [assembly: AssemblyTitle("DtPad Updater")]
-[assembly: AssemblyConfiguration("130206")]
+[assembly: AssemblyDescription("DtPad - .NET Framework text editor")]
+[assembly: AssemblyConfiguration("130207")]
+[assembly: AssemblyCompany("dtpad.codeplex.com")]
 [assembly: AssemblyProduct("DtPad Updater")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
