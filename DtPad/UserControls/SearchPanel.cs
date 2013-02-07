@@ -17,9 +17,39 @@ namespace DtPad.UserControls
             InitializeComponent();
             searchTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
             replaceTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
+            AttachKeyboardEventsForEscapeKey( this );
         }
 
-        #region Window Methods
+        /// <summary>
+        /// This attaches to the KeyDown event for all child TextBox and CheckBox of the Search Panel
+        /// If we hit the escape key on any of these controls we will close the search panel
+        /// </summary>
+        /// <param name="parentControl"></param>
+        private void AttachKeyboardEventsForEscapeKey( Control parentControl )
+        {
+           foreach ( Control control in parentControl.Controls )
+           {
+              if ( control as CheckBox != null || control as TextBox != null )
+              {
+                 // only attach to controls that are CheckBox or TextBox
+                 control.KeyDown += new KeyEventHandler( control_KeyDown );
+              }
+              //recursively go down through child controls
+              AttachKeyboardEventsForEscapeKey( control );
+           }
+        }
+
+        // This closes the Search Panel if the user is on it and presses the escape key.
+        void control_KeyDown( object sender, KeyEventArgs e )
+        {
+           if ( e.KeyCode == Keys.Escape )
+           {
+              Form1 form = (Form1)ParentForm;
+              WindowManager.CheckSearchReplacePanel( form, false, true );
+           }
+        }
+
+       #region Window Methods
 
         private void SearchPanel_Load(object sender, EventArgs e)
         {
@@ -125,7 +155,7 @@ namespace DtPad.UserControls
         {
             Form1 form = (Form1)ParentForm;
 
-            WindowManager.CheckSearchReplacePanel(form, true, true);
+            WindowManager.CheckSearchReplacePanel(form, false, true);
         }
 
         private void clearHistoryToolStripMenuItem_Click(object sender, EventArgs e)

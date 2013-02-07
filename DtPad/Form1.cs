@@ -48,7 +48,7 @@ namespace DtPad
 
         private void InitializeForm()
         {
-            WindowManager.CheckSearchReplacePanel(this, ConfigUtil.GetBoolParameter("SearchReplacePanelDisabled"), false);
+            WindowManager.CheckSearchReplacePanel(this, !ConfigUtil.GetBoolParameter("SearchReplacePanelDisabled"), false);
             WindowManager.CheckWordWrap(this, ConfigUtil.GetBoolParameter("WordWrapDisabled"), false);
             WindowManager.CheckStayOnTop(this, ConfigUtil.GetBoolParameter("StayOnTopDisabled"), false);
             WindowManager.CheckToolbar(this, ConfigUtil.GetBoolParameter("ToolbarInvisible"), true, false);
@@ -834,7 +834,7 @@ namespace DtPad
 
         private void showSearchPanelToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            WindowManager.CheckSearchReplacePanel(this, showSearchPanelToolStripMenuItem.Checked, true);
+            WindowManager.CheckSearchReplacePanel(this, true, true);
         }
 
         private void findFirstToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1609,7 +1609,7 @@ namespace DtPad
 
         private void showSearchPanelToolStripButton_Click(object sender, EventArgs e)
         {
-            WindowManager.CheckSearchReplacePanel(this, showSearchPanelToolStripMenuItem.Checked, true);
+            WindowManager.CheckSearchReplacePanel(this, true, true);
         }
 
         private void mergeTabsToolStripButton_Click(object sender, EventArgs e)

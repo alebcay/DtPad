@@ -100,7 +100,7 @@ namespace DtPad.Managers
             CheckBox keepBulletListOnReturnCheckBox = form.keepBulletListOnReturnCheckBox;
             CheckBox jumpListCheckBox = form.jumpListCheckBox;
 
-            WindowManager.CheckSearchReplacePanel(form1, !showSearchPanelCheckBox.Checked, true);
+            WindowManager.CheckSearchReplacePanel(form1, form1.searchPanel.Visible, true);
             WindowManager.CheckWordWrap(form1, !wordWrapCheckBox.Checked, false);
 
             if (WindowManager.IsWindowInFullScreenMode(form1))

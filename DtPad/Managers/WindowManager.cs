@@ -542,7 +542,7 @@ namespace DtPad.Managers
             UpdateConfigParameter("StayOnTopDisabled", checkStatus.ToString(), refreshConfig);
         }
 
-        internal static void CheckSearchReplacePanel(Form1 form, bool checkStatus, bool refreshConfig)
+        internal static void CheckSearchReplacePanel(Form1 form, bool makeVisible, bool refreshConfig)
         {
             ToolStripButton showSearchPanelToolStripButton = form.showSearchPanelToolStripButton;
             ToolStripMenuItem showSearchPanelToolStripMenuItem = form.showSearchPanelToolStripMenuItem;
@@ -552,10 +552,10 @@ namespace DtPad.Managers
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(form.pagesTabControl.SelectedTabPage);
 
             highlightsResultsToolStripButton.Checked = ConfigUtil.GetBoolParameter("SearchHighlightsResults");
-            searchReplacePanel.Visible = !checkStatus;
-            showSearchPanelToolStripButton.Checked = !checkStatus;
-            showSearchPanelToolStripMenuItem.Checked = !checkStatus;
-            UpdateConfigParameter("SearchReplacePanelDisabled", checkStatus.ToString(), refreshConfig);
+            searchReplacePanel.Visible = makeVisible;
+            showSearchPanelToolStripButton.Checked = makeVisible;
+            showSearchPanelToolStripMenuItem.Checked = makeVisible;
+            UpdateConfigParameter("SearchReplacePanelDisabled", (!makeVisible).ToString(), refreshConfig);
 
             switch(ConfigUtil.GetIntParameter("SearchReturn"))
             {
@@ -571,7 +571,7 @@ namespace DtPad.Managers
 
             pageTextBox.Refresh();
 
-            if (checkStatus) // && !form.IsOpening)
+            if (!makeVisible) // && !form.IsOpening)
             {
                 //if (refreshConfig)
                 //{
@@ -898,7 +898,7 @@ namespace DtPad.Managers
 
             CheckInternalExplorer(form, true, true);
             CheckLineNumbers(form, true, true);
-            CheckSearchReplacePanel(form, true, true);
+            CheckSearchReplacePanel(form, false, true);
             CheckStatusBar(form, false, true, true);
             CheckStayOnTop(form, true, true);
             CheckToolbar(form, false, true, true);
