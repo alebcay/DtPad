@@ -101,12 +101,18 @@
       <HintPath>Libraries\Be.Windows.Forms.HexBox.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\DevExpress.Data.v12.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\DevExpress.Utils.v12.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\DevExpress.XtraEditors.v12.1.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL" />
@@ -1039,6 +1045,9 @@
     <Content Include="Images\Toolbars\table-editor.png" />
     <Content Include="Images\Toolbars\url-small.png" />
     <Content Include="Images\Toolbars\zip-session.png" />
+    <Content Include="Libraries\DevExpress.Data.v12.1.dll" />
+    <Content Include="Libraries\DevExpress.Utils.v12.1.dll" />
+    <Content Include="Libraries\DevExpress.XtraEditors.v12.1.dll" />
     <Content Include="Libraries\Hunspellx64.dll" />
     <Content Include="Libraries\Hunspellx86.dll" />
     <Content Include="Libraries\LumenWorks.Framework.IO.dll" />
