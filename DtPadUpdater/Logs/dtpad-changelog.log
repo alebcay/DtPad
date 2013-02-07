@@ -1,7 +1,9 @@
-2.10.1.40
+2.11.0.40
 
++ Introducing the possibility of using regular expressions directly in the search field (CTRL+F panel)
 - Improvement of feature "View - Show File In Browser", and fixing of the passing of parameters to the browser
 - Bug fixing of issue #1186
-- Minor improvements to interface and localizations
+- Improvements to archive extraction interface
+- Other improvements to interface and localizations
 
 More informations here: http://dtpad.codeplex.com/releases/view/100004

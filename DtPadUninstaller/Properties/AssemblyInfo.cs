@@ -7,8 +7,8 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DtPad Uninstaller")]
-[assembly: AssemblyDescription("Marco Macciò - diariotraduttore.com")]
-[assembly: AssemblyConfiguration("121214")]
+[assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
+[assembly: AssemblyConfiguration("130206")]
 [assembly: AssemblyCompany("Diario di un traduttore")]
 [assembly: AssemblyProduct("DtPad Uninstaller")]
 [assembly: AssemblyCopyright("")]
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.3.1.40")]
-[assembly: AssemblyFileVersion("1.3.1.40")]
+[assembly: AssemblyVersion("1.3.2.40")]
+[assembly: AssemblyFileVersion("1.3.2.40")]
 [assembly: NeutralResourcesLanguage("en-GB")]
 [assembly: CLSCompliant(true)]

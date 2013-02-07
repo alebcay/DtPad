@@ -12,10 +12,18 @@ namespace DtPad.Managers
     /// <summary>
     /// Text search and replace manager.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal static class SearchManager
     {
         private const String className = "SearchManager";
+
+        private enum SearchType
+        {
+            First,
+            Last,
+            Next,
+            Previous
+        }
 
         #region Factory Methods
 
@@ -37,7 +45,7 @@ namespace DtPad.Managers
         {
             CheckBox searchAllTabsCheckBox = form.searchPanel.searchAllTabsCheckBox;
             CheckBox loopCheckBox = form.searchPanel.loopCheckBox;
-            
+
             if (searchAllTabsCheckBox.Checked)
             {
                 SearchNextInAllFiles(form);
@@ -133,23 +141,26 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
-            int positionSearchedText = -1;
-            int selectionLength = -1;
-            if (useRegularExpressionsCheckBox.Checked == false)
-            {
-               positionSearchedText = textWhereToSearch.IndexOf( textToSearch );
-               selectionLength = textToSearch.Length;
-            }
-            else
-            {
-               Regex regex = new Regex( textToSearch );
-               Match regexMatch = regex.Match( textWhereToSearch, 0 );
-               if ( regexMatch.Success )
-               {
-                  positionSearchedText = regexMatch.Index;
-                  selectionLength = regexMatch.Value.Length;
-               }
-            }
+            //int positionSearchedText = -1;
+            //int selectionLength = -1;
+            //if (useRegularExpressionsCheckBox.Checked == false)
+            //{
+            //    positionSearchedText = textWhereToSearch.IndexOf(textToSearch);
+            //    selectionLength = textToSearch.Length;
+            //}
+            //else
+            //{
+            //    Regex regex = new Regex(textToSearch);
+            //    Match regexMatch = regex.Match(textWhereToSearch, 0);
+            //    if (regexMatch.Success)
+            //    {
+            //        positionSearchedText = regexMatch.Index;
+            //        selectionLength = regexMatch.Value.Length;
+            //    }
+            //}
+            int positionSearchedText;
+            int selectionLength;
+            FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchType.First, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
@@ -207,7 +218,7 @@ namespace DtPad.Managers
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
             bool valueFounded = false;
-            
+
             if (String.IsNullOrEmpty(searchTextBox.Text))
             {
                 return false;
@@ -223,24 +234,27 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
-            int positionSearchedText = -1;
-            int selectionLength = -1;
-            if (useRegularExpressionsCheckBox.Checked == false)
-            {
-               positionSearchedText = textWhereToSearch.LastIndexOf( textToSearch );
-               selectionLength = textToSearch.Length;
-            }
-            else
-            {
-               Regex regex = new Regex( textToSearch );
-               Match regexMatch = Regex.Match( textWhereToSearch , textToSearch , RegexOptions.RightToLeft );
-               if ( regexMatch.Success )
-               {
-                  positionSearchedText = regexMatch.Index;
-                  selectionLength = regexMatch.Value.Length;
-               }
-            }
-            
+            //int positionSearchedText = -1;
+            //int selectionLength = -1;
+            //if (useRegularExpressionsCheckBox.Checked == false)
+            //{
+            //    positionSearchedText = textWhereToSearch.LastIndexOf(textToSearch);
+            //    selectionLength = textToSearch.Length;
+            //}
+            //else
+            //{
+            //    Regex regex = new Regex(textToSearch);
+            //    Match regexMatch = Regex.Match(textWhereToSearch, textToSearch, RegexOptions.RightToLeft);
+            //    if (regexMatch.Success)
+            //    {
+            //        positionSearchedText = regexMatch.Index;
+            //        selectionLength = regexMatch.Value.Length;
+            //    }
+            //}
+            int positionSearchedText;
+            int selectionLength;
+            FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchType.Last, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+
             if (positionSearchedText != -1)
             {
                 int occurences = SearchCountOccurency(form, searchInAllFiles);
@@ -328,23 +342,26 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
-            int positionSearchedText = -1;
-            int selectionLength = -1;
-            if (useRegularExpressionsCheckBox.Checked == false)
-            {
-               positionSearchedText = textWhereToSearch.IndexOf( textToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength );
-               selectionLength = textToSearch.Length;
-            }
-            else
-            {
-               Regex regex = new Regex(textToSearch);
-               Match regexMatch = regex.Match( textWhereToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength );
-               if (regexMatch.Success)
-               {
-                  positionSearchedText = regexMatch.Index;
-                  selectionLength = regexMatch.Value.Length;
-               }              
-           }
+            //int positionSearchedText = -1;
+            //int selectionLength = -1;
+            //if (useRegularExpressionsCheckBox.Checked == false)
+            //{
+            //    positionSearchedText = textWhereToSearch.IndexOf(textToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
+            //    selectionLength = textToSearch.Length;
+            //}
+            //else
+            //{
+            //    Regex regex = new Regex(textToSearch);
+            //    Match regexMatch = regex.Match(textWhereToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
+            //    if (regexMatch.Success)
+            //    {
+            //        positionSearchedText = regexMatch.Index;
+            //        selectionLength = regexMatch.Value.Length;
+            //    }
+            //}
+            int positionSearchedText;
+            int selectionLength;
+            FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchType.Next, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
@@ -352,7 +369,7 @@ namespace DtPad.Managers
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
-                pageTextBox.Select( positionSearchedText, selectionLength);
+                pageTextBox.Select(positionSearchedText, selectionLength);
                 pageTextBox.ScrollToCaret();
                 valueFounded = true;
             }
@@ -380,7 +397,7 @@ namespace DtPad.Managers
 
             return valueFounded;
         }
-       
+
         private static void SearchPreviousInAllFiles(Form1 form)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
@@ -431,7 +448,7 @@ namespace DtPad.Managers
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
             bool valueFounded = false;
-            
+
             if (String.IsNullOrEmpty(searchTextBox.Text))
             {
                 return false;
@@ -447,25 +464,27 @@ namespace DtPad.Managers
                 textToSearch = textToSearch.ToLower();
             }
 
+            //int selectionLength = -1;
+            //int positionSearchedText = -1;
+            //if (useRegularExpressionsCheckBox.Checked == false)
+            //{
+            //    selectionLength = textToSearch.Length;
+            //    positionSearchedText = subString.LastIndexOf(textToSearch);
+            //}
+            //else
+            //{
+            //    Match regexMatch = Regex.Match(subString, textToSearch, RegexOptions.RightToLeft);
+            //    if (regexMatch.Success)
+            //    {
+            //        positionSearchedText = regexMatch.Index;
+            //        selectionLength = regexMatch.Value.Length;
+            //    }
+            //}
             String subString = textWhereToSearch.Substring(0, pageTextBox.SelectionStart);
 
-            int selectionLength = -1;
-            int positionSearchedText = -1;
-
-            if (useRegularExpressionsCheckBox.Checked == false)
-            {
-               selectionLength = textToSearch.Length;
-               positionSearchedText = subString.LastIndexOf( textToSearch );
-            }
-            else
-            {
-               Match regexMatch = Regex.Match( subString, textToSearch, RegexOptions.RightToLeft );
-               if ( regexMatch.Success )
-               {
-                  positionSearchedText = regexMatch.Index;
-                  selectionLength = regexMatch.Value.Length;
-               }
-            }
+            int positionSearchedText;
+            int selectionLength;
+            FindStringPositionAndLength(subString, textToSearch, SearchType.First, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
@@ -500,38 +519,6 @@ namespace DtPad.Managers
             }
 
             return valueFounded;
-        }
-
-        private static bool GetNoMatchesInFile(string textWhereToSearch, string textToSearch, bool useRegularExpressions)
-        {
-           if (useRegularExpressions == false)
-           {
-              return ( textWhereToSearch.IndexOf( textToSearch ) == -1 );
-           }
-           else
-           {
-               Match regexMatch = Regex.Match(textWhereToSearch, textToSearch);
-               return !regexMatch.Success;
-           }
-        }
-
-        private static void SearchCount(Form1 form, bool searchInAllFiles)
-        {
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
-            
-            if (String.IsNullOrEmpty(searchTextBox.Text))
-            {
-                return;
-            }
-
-            String textToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-            FileListManager.SetNewSearchHistory(form, textToSearch);
-
-            int occurency = SearchCountOccurency(form, searchInAllFiles);
-
-            WindowManager.ShowInfoBox(form, String.Format("{0} {1}!", occurency, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurency)));
-            toolStripStatusLabel.Text = String.Format("{0} {1}", occurency, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurency));
         }
 
         internal static void SearchDuplicatedLines(Form1 form)
@@ -692,5 +679,93 @@ namespace DtPad.Managers
         }
 
         #endregion Internal Methods
+
+        #region Private Methods
+
+        private static void FindStringPositionAndLength(String textWhereToSearch, String textToSearch, SearchType searchType, bool useRegularExpressions, CustomRichTextBox pageTextBox, out int positionSearchedText, out int selectionLength)
+        {
+            positionSearchedText = -1;
+            selectionLength = -1;
+            
+            if (useRegularExpressions == false)
+            {
+                switch (searchType)
+                {
+                    case SearchType.First:
+                        positionSearchedText = textWhereToSearch.IndexOf(textToSearch);
+                        break;
+                    case SearchType.Last:
+                        positionSearchedText = textWhereToSearch.LastIndexOf(textToSearch);
+                        break;
+                    case SearchType.Next:
+                        positionSearchedText = textWhereToSearch.IndexOf(textToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
+                        break;
+                    case SearchType.Previous:
+                        positionSearchedText = textWhereToSearch.LastIndexOf(textToSearch); //textWhereToSearch = subString
+                        break;
+                }
+                
+                selectionLength = textToSearch.Length;
+            }
+            else
+            {
+                Regex regex = new Regex(textToSearch);
+                Match regexMatch = null;
+
+                switch(searchType)
+                {
+                    case SearchType.First:
+	                    regexMatch = regex.Match(textWhereToSearch, 0);
+                        break;
+                    case SearchType.Last:
+	                    regexMatch = Regex.Match(textWhereToSearch, textToSearch, RegexOptions.RightToLeft);
+                        break;
+                    case SearchType.Next:
+                        regexMatch = regex.Match(textWhereToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
+                        break;
+                    case SearchType.Previous:
+                        regexMatch = Regex.Match(textWhereToSearch, textToSearch, RegexOptions.RightToLeft); //textWhereToSearch = subString
+                        break;
+                }
+
+                if (regexMatch != null && regexMatch.Success)
+                {
+                    positionSearchedText = regexMatch.Index;
+                    selectionLength = regexMatch.Value.Length;
+                }
+            }
+        }
+
+        private static bool GetNoMatchesInFile(String textWhereToSearch, String textToSearch, bool useRegularExpressions)
+        {
+            if (useRegularExpressions == false)
+            {
+                return (textWhereToSearch.IndexOf(textToSearch) == -1);
+            }
+
+            Match regexMatch = Regex.Match(textWhereToSearch, textToSearch);
+            return !regexMatch.Success;
+        }
+
+        private static void SearchCount(Form1 form, bool searchInAllFiles)
+        {
+            TextBox searchTextBox = form.searchPanel.searchTextBox;
+            ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
+
+            if (String.IsNullOrEmpty(searchTextBox.Text))
+            {
+                return;
+            }
+
+            String textToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
+            FileListManager.SetNewSearchHistory(form, textToSearch);
+
+            int occurency = SearchCountOccurency(form, searchInAllFiles);
+
+            WindowManager.ShowInfoBox(form, String.Format("{0} {1}!", occurency, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurency)));
+            toolStripStatusLabel.Text = String.Format("{0} {1}", occurency, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurency));
+        }
+
+        #endregion Private Methods
     }
 }

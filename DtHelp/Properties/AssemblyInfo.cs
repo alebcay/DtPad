@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 #if Debug
-    [assembly: AssemblyDescription("Marco Macciò - diariotraduttore.com")]
+    [assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
     [assembly: AssemblyCompany("Diario di un traduttore")]
 #endif
 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyTitle("DtHelp")]
-[assembly: AssemblyConfiguration("130104")]
+[assembly: AssemblyConfiguration("130206")]
 [assembly: AssemblyProduct("DtHelp")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]

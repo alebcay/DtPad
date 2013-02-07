@@ -761,10 +761,10 @@ Public Class CustomLineNumbers : Inherits System.Windows.Forms.Control
         Me.Invalidate()
     End Sub
 
-    Private Sub zParent_Changed(ByVal sender As Object, ByVal e As System.EventArgs) Handles zParent.Resize, zParent.MultilineChanged ', zParent.DockChanged, zParent.LocationChanged, zParent.Move, zParent.TextChanged
-        Me.Refresh()
-        Me.Invalidate()
-    End Sub
+    'Private Sub zParent_Changed(ByVal sender As Object, ByVal e As System.EventArgs) Handles zParent.Resize, zParent.MultilineChanged ', zParent.DockChanged, zParent.LocationChanged, zParent.Move, zParent.TextChanged
+    '    Me.Refresh()
+    '    Me.Invalidate()
+    'End Sub
 
     Private Sub zParent_Scroll(ByVal sender As Object, ByVal e As System.EventArgs) Handles zParent.VScroll ', zParent.HScroll
         zParentIsScrolling = True

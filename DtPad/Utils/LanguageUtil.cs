@@ -283,7 +283,7 @@ namespace DtPad.Utils
                 {
                     Type controlType = control.GetType();
 
-                    if (controlType == typeof(TextBox) || controlType == typeof(Label) || controlType == typeof(LinkLabel) || controlType == typeof(Button) || controlType == typeof(CheckBox)
+                    if (controlType == typeof(TextBox) || controlType == typeof(Label) || controlType == typeof(LinkLabel) || controlType == typeof(Button) || controlType == typeof(CheckBox) || controlType == typeof(CustomCheckBox)
                         || controlType == typeof(RadioButton) || controlType == typeof(RichTextBox) || (controlType == typeof(CustomXtraTabControl) && !isFormReloading) || controlType == typeof(TabControl)
                         || controlType == typeof(XtraTabControl) || controlType == typeof(XmlGridView) || controlType == typeof(DataGridView))
                     {

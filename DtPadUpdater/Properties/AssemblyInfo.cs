@@ -7,12 +7,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 #if Debug
-    [assembly: AssemblyDescription("Marco Macciò - diariotraduttore.com")]
+    [assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
     [assembly: AssemblyCompany("Diario di un traduttore")]
 #endif
 
 #if Release
-    [assembly: AssemblyDescription("Marco Macciò - diariotraduttore.com")]
+    [assembly: AssemblyDescription("Marco Macciò - dtpad.codeplex.com")]
     [assembly: AssemblyCompany("Diario di un traduttore")]
 #endif
 
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 #endif
 
 [assembly: AssemblyTitle("DtPad Updater")]
-[assembly: AssemblyConfiguration("121214")]
+[assembly: AssemblyConfiguration("130206")]
 [assembly: AssemblyProduct("DtPad Updater")]
 [assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
@@ -43,7 +43,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.4.0.40")]
-[assembly: AssemblyFileVersion("1.4.0.40")]
+[assembly: AssemblyVersion("1.4.1.40")]
+[assembly: AssemblyFileVersion("1.4.1.40")]
 [assembly: NeutralResourcesLanguage("en-GB")]
 [assembly: CLSCompliant(true)]

@@ -569,6 +569,8 @@ namespace DtPad.Managers
                     break;
             }
 
+            pageTextBox.Refresh();
+
             if (checkStatus) // && !form.IsOpening)
             {
                 //if (refreshConfig)
