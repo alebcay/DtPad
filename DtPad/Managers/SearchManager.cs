@@ -475,7 +475,7 @@ namespace DtPad.Managers
 
             int positionSearchedText;
             int selectionLength;
-            SearchReplaceUtil.FindStringPositionAndLength(subString, textToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+            SearchReplaceUtil.FindStringPositionAndLength(subString, textToSearch, SearchReplaceUtil.SearchType.Previous, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
