@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using DevExpress.XtraTab;
 using DtPad.Customs;
@@ -16,14 +15,6 @@ namespace DtPad.Managers
     internal static class SearchManager
     {
         private const String className = "SearchManager";
-
-        private enum SearchType
-        {
-            First,
-            Last,
-            Next,
-            Previous
-        }
 
         #region Factory Methods
 
@@ -160,11 +151,11 @@ namespace DtPad.Managers
             //}
             int positionSearchedText;
             int selectionLength;
-            FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchType.First, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+            SearchReplaceUtil.FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
-                int occurences = SearchCountOccurency(form, searchInAllFiles, false, specificTextToSearch);
+                int occurences = SearchReplaceUtil.SearchCountOccurency(form, searchInAllFiles, false, specificTextToSearch);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
@@ -253,11 +244,11 @@ namespace DtPad.Managers
             //}
             int positionSearchedText;
             int selectionLength;
-            FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchType.Last, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+            SearchReplaceUtil.FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchReplaceUtil.SearchType.Last, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
-                int occurences = SearchCountOccurency(form, searchInAllFiles);
+                int occurences = SearchReplaceUtil.SearchCountOccurency(form, searchInAllFiles);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
@@ -361,11 +352,11 @@ namespace DtPad.Managers
             //}
             int positionSearchedText;
             int selectionLength;
-            FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchType.Next, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+            SearchReplaceUtil.FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchReplaceUtil.SearchType.Next, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
-                int occurences = SearchCountOccurency(form, searchInAllFiles);
+                int occurences = SearchReplaceUtil.SearchCountOccurency(form, searchInAllFiles);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
@@ -375,7 +366,7 @@ namespace DtPad.Managers
             }
             else if (!searchInAllFiles)
             {
-                if (GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
+                if (SearchReplaceUtil.GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
                 {
                     String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
                     WindowManager.ShowInfoBox(form, notFoundMessage);
@@ -484,11 +475,11 @@ namespace DtPad.Managers
 
             int positionSearchedText;
             int selectionLength;
-            FindStringPositionAndLength(subString, textToSearch, SearchType.First, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+            SearchReplaceUtil.FindStringPositionAndLength(subString, textToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
 
             if (positionSearchedText != -1)
             {
-                int occurences = SearchCountOccurency(form, searchInAllFiles);
+                int occurences = SearchReplaceUtil.SearchCountOccurency(form, searchInAllFiles);
                 toolStripStatusLabel.Text = String.Format("{0} {1}", occurences, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurences));
 
                 pageTextBox.Focus();
@@ -498,7 +489,7 @@ namespace DtPad.Managers
             }
             else if (!searchInAllFiles)
             {
-                if (GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
+                if (SearchReplaceUtil.GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
                 {
                     String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
                     WindowManager.ShowInfoBox(form, notFoundMessage);
@@ -634,118 +625,7 @@ namespace DtPad.Managers
 
         #endregion Search Methods
 
-        #region Internal Methods
-
-        internal static int SearchCountOccurency(Form1 form, bool searchInAllFiles, bool forceDisableHighlight = false, String specificTextToSearch = null)
-        {
-            XtraTabControl pagesTabControl = form.pagesTabControl;
-            CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
-            TextBox searchTextBox = form.searchPanel.searchTextBox;
-
-            int counter = 0;
-            String stringToSearch = !String.IsNullOrEmpty(specificTextToSearch) ? specificTextToSearch : searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-
-            if (searchInAllFiles)
-            {
-                foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
-                {
-                    CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(tabPage);
-                    String text = pageTextBox.Text;
-
-                    if (!caseCheckBox.Checked)
-                    {
-                        stringToSearch = stringToSearch.ToLower();
-                        text = text.ToLower();
-                    }
-
-                    counter += StringUtil.SearchCountOccurences(text, stringToSearch, form, pageTextBox, forceDisableHighlight);
-                }
-            }
-            else
-            {
-                CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-                String text = pageTextBox.Text;
-
-                if (!caseCheckBox.Checked)
-                {
-                    stringToSearch = stringToSearch.ToLower();
-                    text = text.ToLower();
-                }
-
-                counter = StringUtil.SearchCountOccurences(text, stringToSearch, form, pageTextBox, forceDisableHighlight);
-            }
-
-            return counter;
-        }
-
-        #endregion Internal Methods
-
         #region Private Methods
-
-        private static void FindStringPositionAndLength(String textWhereToSearch, String textToSearch, SearchType searchType, bool useRegularExpressions, CustomRichTextBox pageTextBox, out int positionSearchedText, out int selectionLength)
-        {
-            positionSearchedText = -1;
-            selectionLength = -1;
-            
-            if (useRegularExpressions == false)
-            {
-                switch (searchType)
-                {
-                    case SearchType.First:
-                        positionSearchedText = textWhereToSearch.IndexOf(textToSearch);
-                        break;
-                    case SearchType.Last:
-                        positionSearchedText = textWhereToSearch.LastIndexOf(textToSearch);
-                        break;
-                    case SearchType.Next:
-                        positionSearchedText = textWhereToSearch.IndexOf(textToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
-                        break;
-                    case SearchType.Previous:
-                        positionSearchedText = textWhereToSearch.LastIndexOf(textToSearch); //textWhereToSearch = subString
-                        break;
-                }
-                
-                selectionLength = textToSearch.Length;
-            }
-            else
-            {
-                Regex regex = new Regex(textToSearch);
-                Match regexMatch = null;
-
-                switch(searchType)
-                {
-                    case SearchType.First:
-	                    regexMatch = regex.Match(textWhereToSearch, 0);
-                        break;
-                    case SearchType.Last:
-	                    regexMatch = Regex.Match(textWhereToSearch, textToSearch, RegexOptions.RightToLeft);
-                        break;
-                    case SearchType.Next:
-                        regexMatch = regex.Match(textWhereToSearch, pageTextBox.SelectionStart + pageTextBox.SelectionLength);
-                        break;
-                    case SearchType.Previous:
-                        regexMatch = Regex.Match(textWhereToSearch, textToSearch, RegexOptions.RightToLeft); //textWhereToSearch = subString
-                        break;
-                }
-
-                if (regexMatch != null && regexMatch.Success)
-                {
-                    positionSearchedText = regexMatch.Index;
-                    selectionLength = regexMatch.Value.Length;
-                }
-            }
-        }
-
-        private static bool GetNoMatchesInFile(String textWhereToSearch, String textToSearch, bool useRegularExpressions)
-        {
-            if (useRegularExpressions == false)
-            {
-                return (textWhereToSearch.IndexOf(textToSearch) == -1);
-            }
-
-            Match regexMatch = Regex.Match(textWhereToSearch, textToSearch);
-            return !regexMatch.Success;
-        }
 
         private static void SearchCount(Form1 form, bool searchInAllFiles)
         {
@@ -760,7 +640,7 @@ namespace DtPad.Managers
             String textToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
             FileListManager.SetNewSearchHistory(form, textToSearch);
 
-            int occurency = SearchCountOccurency(form, searchInAllFiles);
+            int occurency = SearchReplaceUtil.SearchCountOccurency(form, searchInAllFiles);
 
             WindowManager.ShowInfoBox(form, String.Format("{0} {1}!", occurency, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurency)));
             toolStripStatusLabel.Text = String.Format("{0} {1}", occurency, LanguageUtil.GetCurrentLanguageString("Occurences", className, occurency));

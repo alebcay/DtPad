@@ -939,6 +939,7 @@
     <Compile Include="Utils\ProgramUtil.cs" />
     <Compile Include="Utils\ProxyUtil.cs" />
     <Compile Include="Utils\RichTextBoxUtil.cs" />
+    <Compile Include="Utils\SearchReplaceUtil.cs" />
     <Compile Include="Utils\ShellLinkNative.cs" />
     <Compile Include="Utils\ShellShortcut.cs" />
     <Compile Include="Utils\StringUtil.cs" />

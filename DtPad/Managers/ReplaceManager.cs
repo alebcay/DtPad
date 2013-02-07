@@ -314,7 +314,7 @@ namespace DtPad.Managers
             int positionSearchedText = textWhereToSearch.IndexOf(textToSearch);
             if (positionSearchedText != -1)
             {
-                int counter = SearchManager.SearchCountOccurency(form, false, true); //TODO
+                int counter = SearchReplaceUtil.SearchCountOccurency(form, false, true);
                 textBox.SelectAll();
 
                 if (caseCheckBox.Checked)
