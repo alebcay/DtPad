@@ -114,9 +114,9 @@ namespace DtPad
             this.websiteLabel.AutoSize = true;
             this.websiteLabel.Location = new System.Drawing.Point(215, 100);
             this.websiteLabel.Name = "websiteLabel";
-            this.websiteLabel.Size = new System.Drawing.Size(100, 13);
+            this.websiteLabel.Size = new System.Drawing.Size(103, 13);
             this.websiteLabel.TabIndex = 6;
-            this.websiteLabel.Text = "diariotraduttore.com";
+            this.websiteLabel.Text = "dtpad.codeplex.com";
             // 
             // descriptionTextBox
             // 

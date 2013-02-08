@@ -3067,7 +3067,7 @@ namespace DtPad
             this.diarioDiUnTraduttoreToolStripMenuItem.Image = global::DtPad.ToolbarResource.home_green;
             this.diarioDiUnTraduttoreToolStripMenuItem.Name = "diarioDiUnTraduttoreToolStripMenuItem";
             this.diarioDiUnTraduttoreToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
-            this.diarioDiUnTraduttoreToolStripMenuItem.Text = "Diario di un Traduttore";
+            this.diarioDiUnTraduttoreToolStripMenuItem.Text = "DtPad On CodePlex";
             this.diarioDiUnTraduttoreToolStripMenuItem.Click += new System.EventHandler(this.diarioDiUnTraduttoreToolStripMenuItem_Click);
             // 
             // welcomeScreenToolStripMenuItem

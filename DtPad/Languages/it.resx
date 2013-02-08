@@ -124,7 +124,7 @@
     <value>Scrivi una e-mail all'autore di DtPad</value>
   </data>
   <data name="About_rssPictureBoxToolTip" xml:space="preserve">
-    <value>Leggi il feed RSS di diariotraduttore.com</value>
+    <value>Leggi il feed RSS di DtPad su CodePlex</value>
   </data>
   <data name="About_Title" xml:space="preserve">
     <value>Informazioni</value>
@@ -136,13 +136,13 @@
     <value>Versione:</value>
   </data>
   <data name="About_websiteLabel" xml:space="preserve">
-    <value>diariotraduttore.com</value>
+    <value>dtpad.codeplex.com</value>
   </data>
   <data name="About_websiteLabel1" xml:space="preserve">
     <value>Sito web:</value>
   </data>
   <data name="About_websitePictureBoxToolTip" xml:space="preserve">
-    <value>Visita la home page dell'autore di DtPad</value>
+    <value>Visita la home page del progetto su CodePlex</value>
   </data>
   <data name="DatetimeSelect_cancelButton" xml:space="preserve">
     <value>Annulla</value>
@@ -709,7 +709,7 @@ Cordiali saluti,</value>
     <value>Salva</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Cerca in tutti i tab</value>
+    <value>C&amp;erca in tutti i tab</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Cerca:</value>
@@ -939,7 +939,7 @@ Desideri salvare i cambiamenti?</value>
     <value>Cancella</value>
   </data>
   <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
-    <value>Diario di un traduttore</value>
+    <value>DtPad su CodePlex</value>
   </data>
   <data name="Form1_doubleReturnToReturnToolStripMenuItem" xml:space="preserve">
     <value>Doppio a-capo in singolo a-capo</value>
@@ -1796,17 +1796,8 @@ Sei sicuro di voler procedere?</value>
     <value>Tutti i tab sono stati salvati con successo!
 Clicca su OK per procedere nella selezione del file di sessione.</value>
   </data>
-  <data name="About_createdByLabel_FE" xml:space="preserve">
-    <value>Marco Macciò</value>
-  </data>
   <data name="About_titleLabel_FE" xml:space="preserve">
     <value>DtPad - Family Edition</value>
-  </data>
-  <data name="About_websiteLabel1_FE" xml:space="preserve">
-    <value>Copyright:</value>
-  </data>
-  <data name="About_websiteLabel_FE" xml:space="preserve">
-    <value>2012</value>
   </data>
   <data name="Welcome_signLabel_FE" xml:space="preserve">
     <value>Marco Macciò</value>

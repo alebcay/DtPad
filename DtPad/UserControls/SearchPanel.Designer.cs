@@ -282,7 +282,7 @@
             this.regularExpressionsCheckBox.Name = "regularExpressionsCheckBox";
             this.regularExpressionsCheckBox.Size = new System.Drawing.Size(144, 17);
             this.regularExpressionsCheckBox.TabIndex = 3;
-            this.regularExpressionsCheckBox.Text = "Use Regular Expressions";
+            this.regularExpressionsCheckBox.Text = "&Use Regular Expressions";
             this.regularExpressionsCheckBox.UseVisualStyleBackColor = true;
             // 
             // searchAllTabsCheckBox
@@ -292,7 +292,7 @@
             this.searchAllTabsCheckBox.Name = "searchAllTabsCheckBox";
             this.searchAllTabsCheckBox.Size = new System.Drawing.Size(122, 17);
             this.searchAllTabsCheckBox.TabIndex = 2;
-            this.searchAllTabsCheckBox.Text = "Search Into All Tabs";
+            this.searchAllTabsCheckBox.Text = "&Search Into All Tabs";
             this.searchAllTabsCheckBox.UseVisualStyleBackColor = true;
             // 
             // loopCheckBox
@@ -302,7 +302,7 @@
             this.loopCheckBox.Name = "loopCheckBox";
             this.loopCheckBox.Size = new System.Drawing.Size(118, 17);
             this.loopCheckBox.TabIndex = 1;
-            this.loopCheckBox.Text = "Loop At End-Of-File";
+            this.loopCheckBox.Text = "&Loop At End-Of-File";
             this.loopCheckBox.UseVisualStyleBackColor = true;
             this.loopCheckBox.CheckedChanged += new System.EventHandler(this.loopCheckBox_CheckedChanged);
             // 
@@ -313,7 +313,7 @@
             this.caseCheckBox.Name = "caseCheckBox";
             this.caseCheckBox.Size = new System.Drawing.Size(96, 17);
             this.caseCheckBox.TabIndex = 0;
-            this.caseCheckBox.Text = "Case Sensitive";
+            this.caseCheckBox.Text = "&Case Sensitive";
             this.caseCheckBox.UseVisualStyleBackColor = true;
             this.caseCheckBox.CheckedChanged += new System.EventHandler(this.caseCheckBox_CheckedChanged);
             // 

@@ -61,7 +61,7 @@ namespace DtPad
 
         private void websitePictureBox_Click(object sender, EventArgs e)
         {
-            OtherManager.StartProcessBrowser(this, ConstantUtil.dtURL);
+            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadURL);
         }
 
         private void rssPictureBox_Click(object sender, EventArgs e)
@@ -117,13 +117,6 @@ namespace DtPad
         {
             #if ReleaseFE
                 titleLabel.Text = LanguageUtil.GetCurrentLanguageString("titleLabel_FE", Name);
-                websiteLabel1.Text = LanguageUtil.GetCurrentLanguageString("websiteLabel1_FE", Name);
-                websiteLabel.Text = LanguageUtil.GetCurrentLanguageString("websiteLabel_FE", Name);
-                createdByLabel.Text = LanguageUtil.GetCurrentLanguageString("createdByLabel_FE", Name);
-
-                websitePictureBox.Visible = false;
-                rssPictureBox.Visible = false;
-                emailPictureBox.Visible = false;
             #endif
         }
 

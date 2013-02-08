@@ -124,7 +124,7 @@
     <value>Marco Macciò</value>
   </data>
   <data name="About_createdByLabel1" xml:space="preserve">
-    <value>Developed by:</value>
+    <value>Written by:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
     <value>DtPad (2009-2013) is licensed under Apache License, Version 2.0.
@@ -170,7 +170,7 @@ DtPad does not collect any info about usage and users. Informations that could b
     <value>Write an e-mail to DtPad's author</value>
   </data>
   <data name="About_rssPictureBoxToolTip" xml:space="preserve">
-    <value>Read RSS feed of diariotraduttore.com</value>
+    <value>Read RSS feed of DtPad on CodePlex</value>
   </data>
   <data name="About_Title" xml:space="preserve">
     <value>About</value>
@@ -182,13 +182,13 @@ DtPad does not collect any info about usage and users. Informations that could b
     <value>Version:</value>
   </data>
   <data name="About_websiteLabel" xml:space="preserve">
-    <value>diariotraduttore.com</value>
+    <value>dtpad.codeplex.com</value>
   </data>
   <data name="About_websiteLabel1" xml:space="preserve">
     <value>Website:</value>
   </data>
   <data name="About_websitePictureBoxToolTip" xml:space="preserve">
-    <value>Visit DtPad's author homepage</value>
+    <value>Visit the project homepage on CodePlex</value>
   </data>
   <data name="DatetimeSelect_cancelButton" xml:space="preserve">
     <value>Cancel</value>
@@ -755,7 +755,7 @@ Best regards,</value>
     <value>Save</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Search Into All Tabs</value>
+    <value>&amp;Search Into All Tabs</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Search:</value>
@@ -985,7 +985,7 @@ Do you want to save the changes?</value>
     <value>Delete</value>
   </data>
   <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
-    <value>Diario di un traduttore</value>
+    <value>DtPad On CodePlex</value>
   </data>
   <data name="Form1_doubleReturnToReturnToolStripMenuItem" xml:space="preserve">
     <value>Double Return To Return</value>
@@ -1841,17 +1841,8 @@ Are you sure you want to proceed?</value>
     <value>All tabs saved successfully!
 Click OK to proceed into session file name selection.</value>
   </data>
-  <data name="About_createdByLabel_FE" xml:space="preserve">
-    <value>Marco Macciò</value>
-  </data>
   <data name="About_titleLabel_FE" xml:space="preserve">
     <value>DtPad - Family Edition</value>
-  </data>
-  <data name="About_websiteLabel1_FE" xml:space="preserve">
-    <value>Copyright:</value>
-  </data>
-  <data name="About_websiteLabel_FE" xml:space="preserve">
-    <value>2012</value>
   </data>
   <data name="Welcome_signLabel_FE" xml:space="preserve">
     <value>Marco Macciò</value>

@@ -79,16 +79,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Marco Macciò.
-        /// </summary>
-        internal static string About_createdByLabel_FE {
-            get {
-                return ResourceManager.GetString("About_createdByLabel_FE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Developed by:.
+        ///   Looks up a localized string similar to Written by:.
         /// </summary>
         internal static string About_createdByLabel1 {
             get {
@@ -131,7 +122,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Read RSS feed of diariotraduttore.com.
+        ///   Looks up a localized string similar to Read RSS feed of DtPad on CodePlex.
         /// </summary>
         internal static string About_rssPictureBoxToolTip {
             get {
@@ -186,20 +177,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to diariotraduttore.com.
+        ///   Looks up a localized string similar to dtpad.codeplex.com.
         /// </summary>
         internal static string About_websiteLabel {
             get {
                 return ResourceManager.GetString("About_websiteLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 2012.
-        /// </summary>
-        internal static string About_websiteLabel_FE {
-            get {
-                return ResourceManager.GetString("About_websiteLabel_FE", resourceCulture);
             }
         }
         
@@ -213,16 +195,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright:.
-        /// </summary>
-        internal static string About_websiteLabel1_FE {
-            get {
-                return ResourceManager.GetString("About_websiteLabel1_FE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Visit DtPad&apos;s author homepage.
+        ///   Looks up a localized string similar to Visit the project homepage on CodePlex.
         /// </summary>
         internal static string About_websitePictureBoxToolTip {
             get {
@@ -3743,7 +3716,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Diario di un traduttore.
+        ///   Looks up a localized string similar to DtPad On CodePlex.
         /// </summary>
         internal static string Form1_diarioDiUnTraduttoreToolStripMenuItem {
             get {
@@ -9416,7 +9389,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search Into All Tabs.
+        ///   Looks up a localized string similar to &amp;Search Into All Tabs.
         /// </summary>
         internal static string searchPanel_searchAllTabsCheckBox {
             get {

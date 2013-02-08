@@ -66,9 +66,9 @@ namespace DtPad.Utils
         internal const String internetCacheDirectoryName = "InternetCache";
         internal const String internetCacheInfoFileName = "Info.txt";
         internal const String tabNodePrefix = "TabNode_";
-        internal const String dtURL = "http://www.diariotraduttore.com/";
         internal const String dtPadURL = "http://dtpad.codeplex.com/";
-        internal const String dtFeedURL = "http://www.diariotraduttore.com/feed/";
+        internal const String dtPadDocsURL = "http://dtpad.codeplex.com/documentation";
+        internal const String dtFeedURL = "http://dtpad.codeplex.com/project/feeds/rss";
         internal const String w3cHtmlValidation = "<html><body style=\"text-align: left; font-family: Trebuchet MS; font-size: 12px;\">" + 
             "<form method=\"post\" enctype=\"multipart/form-data\" action=\"http://validator.w3.org/check\">" + 
             "<span style=\"padding-top: 10px; font-size: 18px; font-weight: bold;\">{0}</span><br /><br />" + 

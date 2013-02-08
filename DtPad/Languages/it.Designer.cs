@@ -79,15 +79,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Marco Macciò.
-        /// </summary>
-        internal static string About_createdByLabel_FE {
-            get {
-                return ResourceManager.GetString("About_createdByLabel_FE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Scritto da:.
         /// </summary>
         internal static string About_createdByLabel1 {
@@ -127,7 +118,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Leggi il feed RSS di diariotraduttore.com.
+        ///   Looks up a localized string similar to Leggi il feed RSS di DtPad su CodePlex.
         /// </summary>
         internal static string About_rssPictureBoxToolTip {
             get {
@@ -182,20 +173,11 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to diariotraduttore.com.
+        ///   Looks up a localized string similar to dtpad.codeplex.com.
         /// </summary>
         internal static string About_websiteLabel {
             get {
                 return ResourceManager.GetString("About_websiteLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 2012.
-        /// </summary>
-        internal static string About_websiteLabel_FE {
-            get {
-                return ResourceManager.GetString("About_websiteLabel_FE", resourceCulture);
             }
         }
         
@@ -209,16 +191,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright:.
-        /// </summary>
-        internal static string About_websiteLabel1_FE {
-            get {
-                return ResourceManager.GetString("About_websiteLabel1_FE", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Visita la home page dell&apos;autore di DtPad.
+        ///   Looks up a localized string similar to Visita la home page del progetto su CodePlex.
         /// </summary>
         internal static string About_websitePictureBoxToolTip {
             get {
@@ -3743,7 +3716,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Diario di un traduttore.
+        ///   Looks up a localized string similar to DtPad su CodePlex.
         /// </summary>
         internal static string Form1_diarioDiUnTraduttoreToolStripMenuItem {
             get {
@@ -9419,7 +9392,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cerca in tutti i tab.
+        ///   Looks up a localized string similar to C&amp;erca in tutti i tab.
         /// </summary>
         internal static string searchPanel_searchAllTabsCheckBox {
             get {

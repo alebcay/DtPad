@@ -1074,7 +1074,7 @@ namespace DtPad
 
         private void readmeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadURL);
+            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadDocsURL);
         }
 
         private void licenseAgreementToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1099,7 +1099,7 @@ namespace DtPad
 
         private void diarioDiUnTraduttoreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OtherManager.StartProcessBrowser(this, ConstantUtil.dtURL);
+            OtherManager.StartProcessBrowser(this, ConstantUtil.dtPadURL);
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
