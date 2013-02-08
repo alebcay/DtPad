@@ -545,7 +545,7 @@ namespace DtPad.Managers
         internal static void CheckSearchReplacePanel(Form1 form, bool makeVisible, bool refreshConfig)
         {
             ToolStripButton showSearchPanelToolStripButton = form.showSearchPanelToolStripButton;
-            ToolStripMenuItem showSearchPanelToolStripMenuItem = form.showSearchPanelToolStripMenuItem;
+            //ToolStripMenuItem showSearchPanelToolStripMenuItem = form.showSearchPanelToolStripMenuItem;
             Panel searchReplacePanel = form.searchReplacePanel;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
             ToolStripButton highlightsResultsToolStripButton = form.searchPanel.highlightsResultsToolStripButton;
@@ -554,7 +554,7 @@ namespace DtPad.Managers
             highlightsResultsToolStripButton.Checked = ConfigUtil.GetBoolParameter("SearchHighlightsResults");
             searchReplacePanel.Visible = makeVisible;
             showSearchPanelToolStripButton.Checked = makeVisible;
-            showSearchPanelToolStripMenuItem.Checked = makeVisible;
+            //showSearchPanelToolStripMenuItem.Checked = makeVisible;
             UpdateConfigParameter("SearchReplacePanelDisabled", (!makeVisible).ToString(), refreshConfig);
 
             switch(ConfigUtil.GetIntParameter("SearchReturn"))

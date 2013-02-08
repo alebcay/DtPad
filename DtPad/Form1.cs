@@ -1609,7 +1609,7 @@ namespace DtPad
 
         private void showSearchPanelToolStripButton_Click(object sender, EventArgs e)
         {
-            WindowManager.CheckSearchReplacePanel(this, true, true);
+            WindowManager.CheckSearchReplacePanel(this, !showSearchPanelToolStripButton.Checked, true);
         }
 
         private void mergeTabsToolStripButton_Click(object sender, EventArgs e)
