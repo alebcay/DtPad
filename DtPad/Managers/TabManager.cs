@@ -254,7 +254,7 @@ namespace DtPad.Managers
                     }
                 }
             }
-            else
+            else if (!showMessages)
             {
                 closeAll = true;
             }
@@ -524,6 +524,10 @@ namespace DtPad.Managers
         {
             String fileName = ProgramUtil.GetFilenameTabPage(form.pagesTabControl.SelectedTabPage);
             String workingDrive = Path.GetPathRoot(Path.GetDirectoryName(fileName));
+            if (String.IsNullOrEmpty(workingDrive))
+            {
+                workingDrive = @"C:\";
+            }
 
             ProcessStartInfo processStartInfo = new ProcessStartInfo("cmd.exe")
                                                     {
