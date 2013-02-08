@@ -9,7 +9,7 @@ namespace DtPad.UserControls
     /// <summary>
     /// Search and replace user control.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal partial class SearchPanel : UserControl
     {
         internal SearchPanel()
@@ -17,39 +17,10 @@ namespace DtPad.UserControls
             InitializeComponent();
             searchTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
             replaceTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
-            AttachKeyboardEventsForEscapeKey( this );
+            AttachKeyboardEventsForEscapeKey(this);
         }
 
-        /// <summary>
-        /// This attaches to the KeyDown event for all child TextBox and CheckBox of the Search Panel
-        /// If we hit the escape key on any of these controls we will close the search panel
-        /// </summary>
-        /// <param name="parentControl"></param>
-        private void AttachKeyboardEventsForEscapeKey( Control parentControl )
-        {
-           foreach ( Control control in parentControl.Controls )
-           {
-              if ( control as CheckBox != null || control as TextBox != null )
-              {
-                 // only attach to controls that are CheckBox or TextBox
-                 control.KeyDown += new KeyEventHandler( control_KeyDown );
-              }
-              //recursively go down through child controls
-              AttachKeyboardEventsForEscapeKey( control );
-           }
-        }
-
-        // This closes the Search Panel if the user is on it and presses the escape key.
-        void control_KeyDown( object sender, KeyEventArgs e )
-        {
-           if ( e.KeyCode == Keys.Escape )
-           {
-              Form1 form = (Form1)ParentForm;
-              WindowManager.CheckSearchReplacePanel( form, false, true );
-           }
-        }
-
-       #region Window Methods
+        #region Window Methods
 
         private void SearchPanel_Load(object sender, EventArgs e)
         {
@@ -57,7 +28,7 @@ namespace DtPad.UserControls
             {
                 return;
             }
-            
+
             ControlUtil.SetContextMenuStrip(this, new[] { searchTextBox, replaceTextBox });
         }
 
@@ -89,6 +60,18 @@ namespace DtPad.UserControls
             //{
             //    StringUtil.ClearHighlightsResults(form);
             //}
+        }
+
+        //This closes the Search Panel if the user is on it and presses the escape key.
+        private void control_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Escape:
+                    Form1 form = (Form1)ParentForm;
+                    WindowManager.CheckSearchReplacePanel(form, false, true);
+                    break;
+            }
         }
 
         #endregion Window Methods
@@ -182,5 +165,27 @@ namespace DtPad.UserControls
         }
 
         #endregion Multilanguage Methods
+
+        #region Private Methods
+
+        /// <summary>
+        /// This attaches to the KeyDown event for all child TextBox and CheckBox of the Search Panel
+        /// If we hit the escape key on any of these controls we will close the search panel
+        /// </summary>
+        /// <param name="parentControl"></param>
+        private void AttachKeyboardEventsForEscapeKey(Control parentControl)
+        {
+            foreach (Control control in parentControl.Controls)
+            {
+                if (control as CheckBox != null || control as TextBox != null) //Only attach to controls that are CheckBox or TextBox
+                {
+                    control.KeyDown += control_KeyDown;
+                }
+
+                AttachKeyboardEventsForEscapeKey(control); //Recursively go down through child controls
+            }
+        }
+
+        #endregion Private Methods
     }
 }

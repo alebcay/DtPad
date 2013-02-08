@@ -16,7 +16,7 @@ namespace DtPad.Managers
     /// <summary>
     /// Options manager.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal static class OptionManager
     {
         private const String className = "OptionManager";
@@ -100,7 +100,7 @@ namespace DtPad.Managers
             CheckBox keepBulletListOnReturnCheckBox = form.keepBulletListOnReturnCheckBox;
             CheckBox jumpListCheckBox = form.jumpListCheckBox;
 
-            WindowManager.CheckSearchReplacePanel(form1, form1.searchPanel.Visible, true);
+            WindowManager.CheckSearchReplacePanel(form1, showSearchPanelCheckBox.Checked, true); //form1.searchPanel.Visible
             WindowManager.CheckWordWrap(form1, !wordWrapCheckBox.Checked, false);
 
             if (WindowManager.IsWindowInFullScreenMode(form1))
@@ -140,7 +140,7 @@ namespace DtPad.Managers
             form1.KeepInitialSpacesOnReturn = keepInitialSpacesOnReturnCheckBox.Checked;
             form1.KeepBulletListOnReturn = keepBulletListOnReturnCheckBox.Checked;
 
-            if (previousFont != font || previousFontColor != fontColor || previousBackgroundColor != backgroundColor || previousHighlightURL != urlsCheckBox.Checked)
+            if (!previousFont.Equals(font) || previousFontColor != fontColor || previousBackgroundColor != backgroundColor || previousHighlightURL != urlsCheckBox.Checked)
             {
                 foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
                 {
