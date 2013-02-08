@@ -50,13 +50,13 @@
             this.closeToolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.searchReplaceCentralPanel = new System.Windows.Forms.Panel();
             this.rightSearchReplacePanel = new System.Windows.Forms.Panel();
-            this.searchAllTabsCheckBox = new Customs.CustomCheckBox();
-            this.loopCheckBox = new Customs.CustomCheckBox();
-            this.caseCheckBox = new Customs.CustomCheckBox();
+            this.regularExpressionsCheckBox = new DtPad.Customs.CustomCheckBox();
+            this.searchAllTabsCheckBox = new DtPad.Customs.CustomCheckBox();
+            this.loopCheckBox = new DtPad.Customs.CustomCheckBox();
+            this.caseCheckBox = new DtPad.Customs.CustomCheckBox();
             this.searchReplaceLeftPanel = new System.Windows.Forms.Panel();
             this.replaceLabel = new System.Windows.Forms.Label();
             this.searchLabel = new System.Windows.Forms.Label();
-            this.regularExpressionsCheckBox = new Customs.CustomCheckBox();
             this.searchReplaceToolStrip.SuspendLayout();
             this.searchReplaceCentralPanel.SuspendLayout();
             this.rightSearchReplacePanel.SuspendLayout();
@@ -261,7 +261,7 @@
             this.searchReplaceCentralPanel.Location = new System.Drawing.Point(94, 25);
             this.searchReplaceCentralPanel.Name = "searchReplaceCentralPanel";
             this.searchReplaceCentralPanel.Size = new System.Drawing.Size(564, 94);
-            this.searchReplaceCentralPanel.TabIndex = 6;
+            this.searchReplaceCentralPanel.TabIndex = 2;
             // 
             // rightSearchReplacePanel
             // 
@@ -273,7 +273,17 @@
             this.rightSearchReplacePanel.Location = new System.Drawing.Point(658, 25);
             this.rightSearchReplacePanel.Name = "rightSearchReplacePanel";
             this.rightSearchReplacePanel.Size = new System.Drawing.Size(159, 94);
-            this.rightSearchReplacePanel.TabIndex = 2;
+            this.rightSearchReplacePanel.TabIndex = 3;
+            // 
+            // regularExpressionsCheckBox
+            // 
+            this.regularExpressionsCheckBox.AutoSize = true;
+            this.regularExpressionsCheckBox.Location = new System.Drawing.Point(7, 73);
+            this.regularExpressionsCheckBox.Name = "regularExpressionsCheckBox";
+            this.regularExpressionsCheckBox.Size = new System.Drawing.Size(144, 17);
+            this.regularExpressionsCheckBox.TabIndex = 3;
+            this.regularExpressionsCheckBox.Text = "Use Regular Expressions";
+            this.regularExpressionsCheckBox.UseVisualStyleBackColor = true;
             // 
             // searchAllTabsCheckBox
             // 
@@ -334,16 +344,6 @@
             this.searchLabel.Size = new System.Drawing.Size(44, 13);
             this.searchLabel.TabIndex = 0;
             this.searchLabel.Text = "Search:";
-            // 
-            // regularExpressionsCheckBox
-            // 
-            this.regularExpressionsCheckBox.AutoSize = true;
-            this.regularExpressionsCheckBox.Location = new System.Drawing.Point(7, 73);
-            this.regularExpressionsCheckBox.Name = "regularExpressionsCheckBox";
-            this.regularExpressionsCheckBox.Size = new System.Drawing.Size(144, 17);
-            this.regularExpressionsCheckBox.TabIndex = 3;
-            this.regularExpressionsCheckBox.Text = "Use Regular Expressions";
-            this.regularExpressionsCheckBox.UseVisualStyleBackColor = true;
             // 
             // SearchPanel
             // 
