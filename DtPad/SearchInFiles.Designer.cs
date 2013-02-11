@@ -119,11 +119,11 @@
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.Image = global::DtPad.MessageBoxResource.ok;
-            this.okButton.Location = new System.Drawing.Point(343, 196);
+            this.okButton.Location = new System.Drawing.Point(324, 196);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 23);
+            this.okButton.Size = new System.Drawing.Size(98, 23);
             this.okButton.TabIndex = 13;
-            this.okButton.Text = "OK";
+            this.okButton.Text = "Search";
             this.okButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.okButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.okButton.UseVisualStyleBackColor = true;

@@ -103,6 +103,7 @@
             this.fseListView.AfterLabelEdit += new System.Windows.Forms.LabelEditEventHandler(this.fseListView_AfterLabelEdit);
             this.fseListView.ItemActivate += new System.EventHandler(this.fseListView_ItemActivate);
             this.fseListView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.fseListView_ItemSelectionChanged);
+            this.fseListView.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fseListView_KeyDown);
             // 
             // dropboxFileDialogContextMenuStrip
             // 
@@ -232,7 +233,6 @@
             // 
             // DropboxFileDialog
             // 
-            this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;

@@ -87,23 +87,7 @@ namespace DtPad
 
         private void fseListView_ItemActivate(object sender, EventArgs e)
         {
-            ListView item = (ListView)sender;
-
-            switch (item.FocusedItem.ImageIndex)
-            {
-                case folderIconIndex:
-                    String position = positionLabel.Text;
-                    if (!position.EndsWith("/"))
-                    {
-                        position += "/";
-                    }
-
-                    LoadFileList(DropboxManager.GetDirectory(form, position + item.FocusedItem.Text));
-                    break;
-                case fileIconIndex:
-                    OpenSave();
-                    break;
-            }
+            ActivationItem((ListView)sender);
         }
 
         private void fseListView_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
@@ -148,6 +132,15 @@ namespace DtPad
                 case (int)LookFeelUtil.ListViewView.Tile:
                     fseListView.View = View.Tile;
                     break;
+            }
+        }
+
+        private void fseListView_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter || e.KeyData == Keys.Return)
+            {
+                ActivationItem((ListView)sender);
+                e.Handled = true;
             }
         }
 
@@ -202,9 +195,28 @@ namespace DtPad
 
         #region Private Methods
 
+        private void ActivationItem(ListView item)
+        {
+            switch (item.FocusedItem.ImageIndex)
+            {
+                case folderIconIndex:
+                    String position = positionLabel.Text;
+                    if (!position.EndsWith("/"))
+                    {
+                        position += "/";
+                    }
+
+                    LoadFileList(DropboxManager.GetDirectory(form, position + item.FocusedItem.Text));
+                    break;
+                case fileIconIndex:
+                    OpenSave();
+                    break;
+            }
+        }
+
         private void LoadFileList(ICloudDirectoryEntry directory)
         {
-            fseListView.Cursor = Cursors.WaitCursor;
+            Cursor = Cursors.WaitCursor;
 
             fseListView.Items.Clear();
             IEnumerable<DropboxFSEObject> folderContentList = DropboxManager.GetFolderContent(directory, GetSelectedExtension()); //caricamento fseListView
@@ -221,7 +233,7 @@ namespace DtPad
             positionLabel.Text = DropboxManager.GetFolderCompletePath(directory);
             superiorLevelButton.Enabled = positionLabel.Text != "/";
 
-            fseListView.Cursor = Cursors.Default;
+            Cursor = Cursors.Default;
         }
 
         private String GetSelectedExtension()
@@ -276,6 +288,8 @@ namespace DtPad
 
         private void OpenSave()
         {
+            Cursor = Cursors.WaitCursor;
+
             if (windowType == WindowType.Open)
             {
                 okButton.Enabled = false;
@@ -313,6 +327,8 @@ namespace DtPad
                     cancelButton.Enabled = true;
                 }
             }
+
+            Cursor = Cursors.Default;
         }
 
         private void Rename(object sender, LabelEditEventArgs e)
