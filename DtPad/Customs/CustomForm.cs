@@ -106,7 +106,10 @@ namespace DtPad.Customs
             switch (keyData)
             {
                 case (Keys.Control | Keys.Tab):
-                    WindowManager.ShowTabsSwitch(this);
+                    WindowManager.ShowTabsSwitch(this, true);
+                    return true;
+                case (Keys.Control | Keys.Shift | Keys.Tab):
+                    WindowManager.ShowTabsSwitch(this, false);
                     return true;
                 case (Keys.Control | Keys.F4):
                     TabManager.ClosePage((Form1)this);

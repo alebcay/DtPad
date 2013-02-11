@@ -210,6 +210,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Customs\MainFontChangeArgs.cs" />
+    <Compile Include="Customs\SingleBorderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Customs\StringForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -966,6 +969,7 @@
     <Compile Include="Utils\ShellShortcut.cs" />
     <Compile Include="Utils\StringUtil.cs" />
     <Compile Include="Utils\SystemUtil.cs" />
+    <Compile Include="Utils\TabsSwitchUtil.cs" />
     <Compile Include="Utils\TabUtil.cs" />
     <Compile Include="Validators\RegularExpressionValidator.cs" />
     <Compile Include="Validators\W3CValidator.cs" />

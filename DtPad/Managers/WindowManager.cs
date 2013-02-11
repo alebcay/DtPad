@@ -66,7 +66,7 @@ namespace DtPad.Managers
             {
                 return null;
             }
-            
+
             Splash splash = new Splash();
 
             splash.InitializeForm();
@@ -372,7 +372,7 @@ namespace DtPad.Managers
                 ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("TextEmpty", className));
                 return;
             }
-            
+
             HexEditor hexEditor = new HexEditor { Owner = form };
 
             hexEditor.InitializeForm();
@@ -459,10 +459,11 @@ namespace DtPad.Managers
             return translateText.ShowDialog(form);
         }
 
-        internal static void ShowTabsSwitch(Form form)
+        internal static void ShowTabsSwitch(Form form, bool forward)
         {
             TabsSwitch tabsSwitch = new TabsSwitch { Owner = form };
 
+            tabsSwitch.Forward = forward;
             tabsSwitch.InitializeForm();
             tabsSwitch.ShowDialog(form);
         }
@@ -471,7 +472,7 @@ namespace DtPad.Managers
         {
             LogUtil log = new LogUtil(MethodBase.GetCurrentMethod());
             log.errorLog(errorMessage, exception);
-            
+
             ErrorOR errorBox = new ErrorOR(form, LanguageUtil.GetCurrentLanguageString("Exception", className) + Environment.NewLine + errorMessage, exception);
             errorBox.ShowDialog(form);
         }
@@ -480,7 +481,7 @@ namespace DtPad.Managers
         {
             LogUtil log = new LogUtil(MethodBase.GetCurrentMethod());
             log.fatalLog(errorMessage, exception);
-            
+
             ErrorO errorBox = new ErrorO(form, LanguageUtil.GetCurrentLanguageString("FatalException", className) + Environment.NewLine + errorMessage, exception);
             errorBox.ShowDialog(form);
         }
@@ -557,7 +558,7 @@ namespace DtPad.Managers
             //showSearchPanelToolStripMenuItem.Checked = makeVisible;
             UpdateConfigParameter("SearchReplacePanelDisabled", (!makeVisible).ToString(), refreshConfig);
 
-            switch(ConfigUtil.GetIntParameter("SearchReturn"))
+            switch (ConfigUtil.GetIntParameter("SearchReturn"))
             {
                 case 0:
                     form.searchPanel.searchTextBox.ReturnActionType = CustomTextBox.ReturnAction.StartSearch;
@@ -631,7 +632,7 @@ namespace DtPad.Managers
             ToolStrip toolStrip = form.toolStrip;
             ToolStripMenuItem toolbarToolStripMenuItem = form.toolbarToolStripMenuItem;
             XtraTabControl pagesTabControl = form.pagesTabControl;
-            
+
             if (checkStatus)
             {
                 toolStrip.Visible = false;
@@ -661,7 +662,7 @@ namespace DtPad.Managers
             ToolStripMenuItem statusBarToolStripMenuItem = form.statusBarToolStripMenuItem;
             ZoomTrackBarControl zoomTrackBarControl = form.zoomTrackBarControl;
             PictureBox zoomPictureBox = form.zoomPictureBox;
-            
+
             if (checkStatus)
             {
                 zoomPictureBox.Visible = false;
@@ -738,7 +739,7 @@ namespace DtPad.Managers
             ToolStripMenuItem uTF16LittleEndianToolStripMenuItem = form.uTF16LittleEndianToolStripMenuItem;
             ToolStripMenuItem uTF16BigEndianToolStripMenuItem = form.uTF16BigEndianToolStripMenuItem;
             ToolStripMenuItem uTF32LittleEndianToolStripMenuItem = form.uTF32LittleEndianToolStripMenuItem;
-            
+
             switch (clickedItem.Name)
             {
                 case "aSCIIToolStripMenuItem":
@@ -809,7 +810,7 @@ namespace DtPad.Managers
                     uTF16LittleEndianToolStripMenuItem.Checked = false;
                     uTF16BigEndianToolStripMenuItem.Checked = false;
                     uTF32LittleEndianToolStripMenuItem.Checked = false;
-                    
+
                     UpdateConfigParameter("Encoding", "0", refreshConfig);
                     break;
                 case 1:
@@ -941,7 +942,7 @@ namespace DtPad.Managers
                 CloseFullScreen(form);
                 return;
             }
-            
+
             ToolStripMenuItem fullscreenToolStripMenuItem = form.fullscreenToolStripMenuItem;
             ToolStripMenuItem showTabAsNoteOnTopToolStripMenuItem1 = form.showTabAsNoteOnTopToolStripMenuItem1;
             ToolStripMenuItem showTabAsNoteOnTopToolStripMenuItem = form.showTabAsNoteOnTopToolStripMenuItem;
@@ -964,7 +965,7 @@ namespace DtPad.Managers
 
             form.Size = new Size(Screen.FromControl(form).WorkingArea.Width, Screen.FromControl(form).WorkingArea.Height);
             form.SetDesktopLocation(0, 0);
-            
+
             fullscreenToolStripMenuItem.Visible = true;
             showTabAsNoteOnTopToolStripMenuItem1.Enabled = false;
             showTabAsNoteOnTopToolStripMenuItem.Enabled = false;

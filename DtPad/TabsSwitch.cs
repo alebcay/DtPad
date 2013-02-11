@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraTab;
+using DtPad.Customs;
 using DtPad.Managers;
 using DtPad.Utils;
 
@@ -10,12 +12,16 @@ namespace DtPad
     /// <summary>
     /// Tabs switch view DtPad form.
     /// </summary>
-    /// <author>Marco Macciò</author>
-    internal partial class TabsSwitch : Form
+    /// <author>Marco Macciò, Derek Morin</author>
+    internal partial class TabsSwitch : SingleBorderForm
     {
-        private int currentPage = 1;
-        private int currentTab = 1;
         private int totalPages;
+        private int totalNumberOfDocuments;
+        private int currentlySelectedThumbnail;
+        private TabsSwitchUtil.InterfaceType interfaceType;
+        private const int thumbnailsPerPage = 8; //NOTE: changing this wouldn't have any effect unless you changed the number of controls in the designer
+
+        internal bool Forward;
 
         #region Window Methods
 
@@ -25,75 +31,48 @@ namespace DtPad
             SetLanguage();
 
             Form1 form = (Form1)Owner;
+            totalNumberOfDocuments = form.pagesTabControl.TabPages.Count;
+            totalPages = (int)Math.Ceiling(totalNumberOfDocuments / (decimal)thumbnailsPerPage);
 
-            if (form.pagesTabControl.TabPages.Count <= 8)
+            if (totalPages > 1)
             {
-                backButton.Enabled = false;
-                nextButton.Enabled = false;
-            }
-            else
-            {
-                nextButton.Enabled = true;
                 pagingLabel.Visible = true;
-                totalPages = Convert.ToInt32(Math.Ceiling(form.pagesTabControl.TabPages.Count / (decimal)8));
-
-                pagingLabel.Text = String.Format(pagingLabel.Text, currentPage, totalPages);
+                nextButton.Visible = true;
+                backButton.Visible = true;
             }
 
+            currentlySelectedThumbnail = form.pagesTabControl.TabPages.TabControl.SelectedTabPageIndex;
+            currentlySelectedThumbnail = (Forward) ? GetNextDocumentIndex() : GetPreviousDocumentIndex();
+
+            SetKeyboardOrMouseInterface();
             ReadOwnerFormTabs();
-            tabTextBox1.BackColor = Color.LightSkyBlue;
+        }
+
+        private void TabsSwitch_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (!e.Control)
+            {
+                SelectTab();
+            }
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            String currentControl = String.Format("tabTextBox{0}", (currentTab));
-
-            if (backButton.Enabled && keyData == Keys.Left)
-            {
-                Back();
-                return true;
-            }
-            if (nextButton.Enabled && keyData == Keys.Right)
-            {
-                Next();
-                return true;
-            }
             if (keyData == Keys.Tab || keyData == (Keys.Tab | Keys.Control))
             {
-                String nextControl = String.Format("tabTextBox{0}", (currentTab + 1));
-                tableLayoutPanel.Controls[currentControl].BackColor = Color.White;
-
-                if (tableLayoutPanel.Controls[nextControl] != null && tableLayoutPanel.Controls[nextControl].Visible)
-                {
-                    tableLayoutPanel.Controls[nextControl].BackColor = Color.LightSkyBlue;
-
-                    currentTab++;
-                }
-                else if (currentPage < totalPages)
-                {
-                    Next();
-                    tabTextBox1.BackColor = Color.LightSkyBlue;
-
-                    currentTab = 1;
-                }
-                else if (currentPage == totalPages && totalPages > 1)
-                {
-                    First();
-                    tabTextBox1.BackColor = Color.LightSkyBlue;
-
-                    currentTab = 1;
-                }
-                else
-                {
-                    tabTextBox1.BackColor = Color.LightSkyBlue;
-
-                    currentTab = 1;
-                }
+                currentlySelectedThumbnail = GetNextDocumentIndex();
+                ReadOwnerFormTabs();
+                return true;
+            }
+            if (keyData == (Keys.Tab | Keys.Control | Keys.Shift))
+            {
+                currentlySelectedThumbnail = GetPreviousDocumentIndex();
+                ReadOwnerFormTabs();
                 return true;
             }
             if (keyData == Keys.Enter || keyData == Keys.Return)
             {
-                SelectTab(tableLayoutPanel.Controls[currentControl]);
+                SelectTab();
                 return true;
             }
 
@@ -106,28 +85,37 @@ namespace DtPad
 
         private void tabTextBox_Click(object sender, EventArgs e)
         {
-            SelectTab((TextBox)sender);
+            switch (interfaceType)
+            {
+                case TabsSwitchUtil.InterfaceType.Mouse:
+                    currentlySelectedThumbnail = (int)((TextBox)sender).Tag;
+                    SelectTab();
+                    break;
+            }
         }
 
         private void tabTextBox_MouseEnter(object sender, EventArgs e)
         {
-            tableLayoutPanel.Controls["tabTextBox1"].BackColor = Color.White;
-            tableLayoutPanel.Controls["tabTextBox2"].BackColor = Color.White;
-            tableLayoutPanel.Controls["tabTextBox3"].BackColor = Color.White;
-            tableLayoutPanel.Controls["tabTextBox4"].BackColor = Color.White;
-            tableLayoutPanel.Controls["tabTextBox5"].BackColor = Color.White;
-            tableLayoutPanel.Controls["tabTextBox6"].BackColor = Color.White;
-            tableLayoutPanel.Controls["tabTextBox7"].BackColor = Color.White;
-            tableLayoutPanel.Controls["tabTextBox8"].BackColor = Color.White;
-
-            ((TextBox)sender).BackColor = Color.LightSkyBlue;
+            switch (interfaceType)
+            {
+                case TabsSwitchUtil.InterfaceType.Mouse:
+                    foreach (TextBox textBox in tableLayoutPanel.Controls.OfType<TextBox>())
+                    {
+                        textBox.BackColor = (textBox.BorderStyle == BorderStyle.FixedSingle) ? Color.White : BackColor;
+                    }
+                    ((TextBox)sender).BackColor = Color.LightSkyBlue;
+                    break;
+            }
         }
 
         private void tabTextBox_MouseLeave(object sender, EventArgs e)
         {
-            ((TextBox)sender).BackColor = Color.White;
-
-            tableLayoutPanel.Controls[String.Format("tabTextBox{0}", (currentTab))].BackColor = Color.LightSkyBlue;
+            switch (interfaceType)
+            {
+                case TabsSwitchUtil.InterfaceType.Mouse:
+                    ((TextBox)sender).BackColor = (((TextBox)sender).BorderStyle == BorderStyle.FixedSingle) ? Color.White : BackColor;
+                    break;
+            }
         }
 
         #endregion Tabs Methods
@@ -153,83 +141,126 @@ namespace DtPad
 
         #region Private Methods
 
+        private TextBox GetTextBox(int tabIndex)
+        {
+            int index = (tabIndex % thumbnailsPerPage) + 1;
+            return (TextBox)(Controls["tableLayoutPanel"].Controls[String.Format("tabTextBox{0}", index)]);
+        }
+
+        private Label GetLabel(int tabIndex)
+        {
+            int index = (tabIndex % thumbnailsPerPage) + 1;
+            return (Label)(Controls["tableLayoutPanel"].Controls[String.Format("tabTitleLabel{0}", index)]);
+        }
+
         private void ReadOwnerFormTabs()
         {
             Form1 form = (Form1)Owner;
-            int rangeStart = (currentPage - 1) * 8;
+            int rangeStart = (int)Math.Floor(currentlySelectedThumbnail / (decimal)thumbnailsPerPage) * 8;
+            int currentPage = (int)Math.Ceiling((currentlySelectedThumbnail + 1) / (decimal)thumbnailsPerPage);
 
-            for (int i = rangeStart; i < rangeStart + 8; i++)
+            for (int i = rangeStart; i < rangeStart + thumbnailsPerPage; i++)
             {
-                TextBox nextTabTextBox = (TextBox)(Controls["tableLayoutPanel"].Controls[String.Format("tabTextBox{0}", (i - (8 * (currentPage - 1)) + 1))]);
-                Label tabTitleLabel = (Label)(Controls["tableLayoutPanel"].Controls[String.Format("tabTitleLabel{0}", (i - (8 * (currentPage - 1)) + 1))]);
+                TextBox nextTabTextBox = GetTextBox(i);
+                Label tabTitleLabel = GetLabel(i);
+                nextTabTextBox.BackColor = Color.White;
 
                 if (i < form.pagesTabControl.TabPages.Count)
                 {
                     XtraTabPage tabPage = form.pagesTabControl.TabPages[i];
 
                     tabTitleLabel.Text = tabPage.Text;
-                    nextTabTextBox.Text = ProgramUtil.GetPageTextBox(tabPage).Text;
+                    String textToShow = ProgramUtil.GetPageTextBox(tabPage).Text;
+                    
+                    nextTabTextBox.Text = textToShow.Substring(0, Math.Min(2000, textToShow.Length));
                     nextTabTextBox.Select(0, 0);
                     tabsSwitchToolTip.SetToolTip(nextTabTextBox, tabPage.Text);
                     nextTabTextBox.Tag = i;
-
+                    nextTabTextBox.BorderStyle = BorderStyle.FixedSingle; //Have to put the border back in case it was removed (see below)
                     nextTabTextBox.Visible = true;
                     tabTitleLabel.Visible = true;
                 }
                 else
                 {
-                    nextTabTextBox.Visible = false;
+                    nextTabTextBox.BorderStyle = BorderStyle.None;
+                    nextTabTextBox.BackColor = BackColor;
+                    nextTabTextBox.Text = "";
                     tabTitleLabel.Visible = false;
+
+                    switch (interfaceType)
+                    {
+                        case TabsSwitchUtil.InterfaceType.Mouse:
+                            nextTabTextBox.Visible = false;
+                            break;
+                    }
                 }
             }
 
+            GetTextBox(currentlySelectedThumbnail).BackColor = Color.LightSkyBlue;
+
+            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
+            nextButton.Enabled = (currentPage < totalPages);
+            backButton.Enabled = (currentPage > 1);
             Select();
         }
 
-        private void SelectTab(Control tabTextBox)
+        private void SelectTab()
         {
             Form1 form = (Form1)Owner;
             XtraTabControl pagesTabControl = form.pagesTabControl;
-
-            pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[Convert.ToInt32(tabTextBox.Tag)];
-
+            pagesTabControl.SelectedTabPage = pagesTabControl.TabPages[currentlySelectedThumbnail];
             WindowManager.CloseForm(this);
-        }
-
-        private void First()
-        {
-            currentPage = 1;
-            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
-            nextButton.Enabled = true;
-            backButton.Enabled = false;
-
-            ReadOwnerFormTabs();
         }
 
         private void Back()
         {
-            currentPage--;
-            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
-            nextButton.Enabled = true;
-            if (currentPage <= 1)
-            {
-                backButton.Enabled = false;
-            }
-
+            currentlySelectedThumbnail = currentlySelectedThumbnail - thumbnailsPerPage;
+            currentlySelectedThumbnail = currentlySelectedThumbnail - (currentlySelectedThumbnail % 8);
             ReadOwnerFormTabs();
         }
 
         private void Next()
         {
-            currentPage++;
-            pagingLabel.Text = String.Format(LanguageUtil.GetCurrentLanguageString("pagingLabel", Name), currentPage, totalPages);
-            backButton.Enabled = true;
-            if (currentPage >= totalPages)
-            {
-                nextButton.Enabled = false;
-            }
-
+            currentlySelectedThumbnail = currentlySelectedThumbnail + thumbnailsPerPage;
+            currentlySelectedThumbnail = currentlySelectedThumbnail - (currentlySelectedThumbnail % thumbnailsPerPage);
             ReadOwnerFormTabs();
+        }
+
+        private int GetNextDocumentIndex()
+        {
+            return (currentlySelectedThumbnail == (totalNumberOfDocuments - 1)) ? 0 : currentlySelectedThumbnail + 1;
+        }
+
+        private int GetPreviousDocumentIndex()
+        {
+            return (currentlySelectedThumbnail == 0) ? totalNumberOfDocuments - 1 : currentlySelectedThumbnail - 1;
+        }
+
+        private void SetKeyboardOrMouseInterface()
+        {
+            switch (ConfigUtil.GetIntParameter("TabsSwitchType"))
+            {
+                case 0:
+                    interfaceType = TabsSwitchUtil.InterfaceType.Keyboard;
+
+                    backButton.Visible = false;
+                    nextButton.Visible = false;
+
+                    foreach (TextBox textBox in tableLayoutPanel.Controls.OfType<TextBox>())
+                    {
+                        textBox.Enabled = false;
+                    }
+
+                    KeyUp += TabsSwitch_KeyUp;
+                    break;
+                case 1:
+                    interfaceType = TabsSwitchUtil.InterfaceType.Mouse;
+                    break;
+
+                default:
+                    interfaceType = TabsSwitchUtil.InterfaceType.Keyboard;
+                    break;
+            }
         }
 
         private void SetLanguage()

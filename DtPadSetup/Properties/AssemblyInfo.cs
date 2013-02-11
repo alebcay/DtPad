@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("DtPad Setup")]
 [assembly: AssemblyDescription("DtPad - .NET Framework text editor")]
-[assembly: AssemblyConfiguration("130208")]
+[assembly: AssemblyConfiguration("130211")]
 [assembly: AssemblyCompany("dtpad.codeplex.com")]
 [assembly: AssemblyProduct("DtPad Setup")]
 [assembly: AssemblyCopyright("")]

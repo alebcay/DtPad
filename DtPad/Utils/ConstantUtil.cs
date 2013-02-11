@@ -448,6 +448,7 @@ namespace DtPad.Utils
             new KeyValuePair<String, String>("NoteModeTabs", "False"),
             new KeyValuePair<String, String>("NoteModeSizeX", "400"),
             new KeyValuePair<String, String>("NoteModeSizeY", "300"),
+            new KeyValuePair<String, String>("TabsSwitchType", "0"),
             //new KeyValuePair<String, String>("CalendarURL", "http://dtpad.diariotraduttore.com/files/dtpad-calendar.xml"),
 
             new KeyValuePair<String, String>("ProxyUsername", String.Empty),

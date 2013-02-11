@@ -56,27 +56,26 @@ namespace DtPad.Customs
             Pen pen = null;
             try
             {
-
-            if (HorizontalLine)
-            {
-                pen = new Pen(Color.DeepSkyBlue, 1);
-                pen.DashStyle = DashStyle.Dash;
-
-                if (!HorizontalLineOnTop)
+                if (HorizontalLine)
                 {
-                    e.Graphics.DrawLine(pen, MarginLeftHorizontalLine, Height - MarginBottomHorizontalLine, Width, Height - MarginBottomHorizontalLine);
+                    pen = new Pen(Color.DeepSkyBlue, 1);
+                    pen.DashStyle = DashStyle.Dash;
+
+                    if (!HorizontalLineOnTop)
+                    {
+                        e.Graphics.DrawLine(pen, MarginLeftHorizontalLine, Height - MarginBottomHorizontalLine, Width, Height - MarginBottomHorizontalLine);
+                    }
+                    else
+                    {
+                        e.Graphics.DrawLine(pen, MarginLeftHorizontalLine, 0 + MarginTopHorizontalLine, Width, 0 + MarginTopHorizontalLine);
+                    }
                 }
                 else
                 {
-                    e.Graphics.DrawLine(pen, MarginLeftHorizontalLine, 0 + MarginTopHorizontalLine, Width, 0 + MarginTopHorizontalLine);
+                    pen = new Pen(Color.DeepSkyBlue, 1);
+                    pen.DashStyle = DashStyle.Dash;
+                    e.Graphics.DrawLine(pen, 3, 0, 3, Height - 3);
                 }
-            }
-            else
-            {
-                pen = new Pen(Color.DeepSkyBlue, 1);
-                pen.DashStyle = DashStyle.Dash;
-                e.Graphics.DrawLine(pen, 3, 0, 3, Height - 3);
-            }
             }
             finally
             {
