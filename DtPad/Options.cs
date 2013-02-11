@@ -40,15 +40,40 @@ namespace DtPad
         {
             Form1 form = (Form1)Owner;
             
+
+            //Init
             InitializeComponent();
             SetLanguage();
             ControlUtil.SetContextMenuStrip(this, new[] { proxyHostTextBox, domainTextBox, passwordTextBox, usernameTextBox, customBrowserTextBox, specificFolderTextBox, backupExtensionTextBox, backupCustomFolderTextBox,
                 searchHistoryNumericUpDown, hideLinesNumericUpDown, proxyPortNumericUpDown, recentFilesNumberNumericUpDown, noteModeSizeXNumericUpDown, (Control)noteModeSizeYNumericUpDown });
-
             optionsTreeView.ExpandAll();
 
-            int settingFolder = ConfigUtil.GetIntParameter("SettingFolder");
-            switch (settingFolder)
+
+            //Data
+            OptionManager.SetListExtensions(this);
+            String autoFormatFiles = ConfigUtil.GetStringParameter("AutoFormatFiles");
+
+            TextFont = ConfigUtil.GetFontParameter("FontInUse");
+            previousFont = TextFont;
+            String[] argbFontColor = ConfigUtil.GetStringParameter("FontInUseColorARGB").Split(new[] { ';' });
+            TextFontColor = Color.FromArgb(Convert.ToInt32(argbFontColor[0]), Convert.ToInt32(argbFontColor[1]), Convert.ToInt32(argbFontColor[2]), Convert.ToInt32(argbFontColor[3]));
+            previousFontColor = TextFontColor;
+            String[] argbBackgroundColor = ConfigUtil.GetStringParameter("BackgroundColorARGB").Split(new[] { ';' });
+            TextBackgroundColor = Color.FromArgb(Convert.ToInt32(argbBackgroundColor[0]), Convert.ToInt32(argbBackgroundColor[1]), Convert.ToInt32(argbBackgroundColor[2]), Convert.ToInt32(argbBackgroundColor[3]));
+            previousBackgroundColor = TextBackgroundColor;
+
+            previousHighlightURL = ConfigUtil.GetBoolParameter("HighlightURL");
+            previousLanguage = ConfigUtil.GetStringParameter("Language"); //languageComboBox.SelectedItem.ToString();
+            List<PasswordObject> passwordList = PasswordUtil.GetStringParameters(new[] { "ProxyUsername", "ProxyPassword", "ProxyDomain", "DropboxUsername", "DropboxPassword" });
+            OptionManager.CheckProxyStatusEnabled(this);
+            int periodicVersionCheck = ConfigUtil.GetIntParameter("PeriodicVersionCheck");
+            previousSendTo = ShellManager.ExistsSendToLink();
+            previousOpenWith = ShellManager.ExistsOpenWithLink();
+            previousJumpListActivated = ConfigUtil.GetBoolParameter("ActiveJumpList");
+
+
+            //Tab - File
+            switch (ConfigUtil.GetIntParameter("SettingFolder"))
             {
                 case 0:
                     lastUsedFolderRadioButton.Checked = false;
@@ -59,14 +84,67 @@ namespace DtPad
                     specificFolderRadioButton.Checked = false;
                     break;
             }
+
             specificFolderTextBox.Text = ConfigUtil.GetStringParameter("SpecificFolder");
             folderOpenedFileCheckBox.Checked = ConfigUtil.GetBoolParameter("OverrideFolderWithActiveFile");
+            recentFilesNumberNumericUpDown.Value = ConfigUtil.GetIntParameter("MaxNumRecentFile");
 
+
+            //Tab - Encoding
+            useExistingCheckBox.Checked = ConfigUtil.GetBoolParameter("DefaultEncoding");
+            defaultComboBox.SelectedIndex = ConfigUtil.GetIntParameter("Encoding");
+
+
+            //Tab - Opening
+            htmlCheckBox.Checked = autoFormatFiles.Contains(".html");
+            xmlCheckBox.Checked = autoFormatFiles.Contains(".xml");
             hostsConfiguratorCheckBox.Checked = ConfigUtil.GetBoolParameter("AutoOpenHostsConfigurator");
             hostsConfiguratorTabColorComboBox.SelectedIndex = ColorUtil.GetIndexFromTabColor(ConfigUtil.GetColorParameter("ColorHostsConfigurator"));
+            nullCharCheckBox.Checked = ConfigUtil.GetBoolParameter("IgnoreNullChar");
+
+
+            //Tab - Saving
+            createBackupCheckBox.Checked = ConfigUtil.GetBoolParameter("BackupEnabled");
+            backupExtensionTextBox.Text = ConfigUtil.GetStringParameter("BackupExtension");
+
+            switch (ConfigUtil.GetIntParameter("BackupExtensionPosition"))
+            {
+                case 0:
+                    backupAddExtensionRadioButton.Checked = true;
+                    backupReplaceExtensionRadioButton.Checked = false;
+                    break;
+                case 1:
+                    backupAddExtensionRadioButton.Checked = false;
+                    backupReplaceExtensionRadioButton.Checked = true;
+                    break;
+            }
+
+            backupIncrementalCheckBox.Checked = ConfigUtil.GetBoolParameter("BackupIncremental");
+
+            switch (ConfigUtil.GetIntParameter("BackupLocation"))
+            {
+                case 0:
+                    backupEditedFileRadioButton.Checked = true;
+                    backupCustomFolderRadioButton.Checked = false;
+                    break;
+                case 1:
+                    backupEditedFileRadioButton.Checked = false;
+                    backupCustomFolderRadioButton.Checked = true;
+                    break;
+            }
+
+            backupCustomFolderTextBox.Text = ConfigUtil.GetStringParameter("BackupLocationCustom");
+
+
+            //Tab - Session
+            automaticSessionSaveCheckBox.Checked = ConfigUtil.GetBoolParameter("AutomaticSessionSave");
+
+
+            //Tab - Search
             showSearchPanelCheckBox.Checked = !ConfigUtil.GetBoolParameter("SearchReplacePanelDisabled");
             caseSensitiveCheckBox.Checked = ConfigUtil.GetBoolParameter("SearchCaseSensitive");
             loopAtEOFCheckBox.Checked = ConfigUtil.GetBoolParameter("SearchLoopAtEOF");
+            searchHistoryNumericUpDown.Value = ConfigUtil.GetIntParameter("MaxNumSearchHistory");
             highlightsResultsCheckBox.Checked = ConfigUtil.GetBoolParameter("SearchHighlightsResults");
 
             switch (ConfigUtil.GetIntParameter("SearchReturn"))
@@ -81,118 +159,85 @@ namespace DtPad
                     break;
             }
 
+
+            //Tab - Text
             wordWrapCheckBox.Checked = !ConfigUtil.GetBoolParameter("WordWrapDisabled");
-            recentFilesNumberNumericUpDown.Value = ConfigUtil.GetIntParameter("MaxNumRecentFile");
-            searchHistoryNumericUpDown.Value = ConfigUtil.GetIntParameter("MaxNumSearchHistory");
-            stayOnTopCheckBox.Checked = !ConfigUtil.GetBoolParameter("StayOnTopDisabled");
-            toolbarCheckBox.Checked = !ConfigUtil.GetBoolParameter("ToolbarInvisible");
-            statusBarCheckBox.Checked = !ConfigUtil.GetBoolParameter("StatusBarInvisible");
-            minimizeOnTrayIconCheckBox.Checked = !ConfigUtil.GetBoolParameter("MinimizeOnTrayIconDisabled");
-            internalExplorerCheckBox.Checked = !ConfigUtil.GetBoolParameter("InternalExplorerInvisible");
+            fontLabel1.Text = StringUtil.CheckStringLengthEnd(ConfigUtil.GetStringParameter("FontInUse"), maxCharsFont);
+            fontColorTextBox.BackColor = TextFontColor;
+            backgroundColorTextBox.BackColor = TextBackgroundColor;
+            urlsCheckBox.Checked = previousHighlightURL;
+            useSpacesInsteadTabsCheckBox.Checked = ConfigUtil.GetBoolParameter("SpacesInsteadTabs");
+            keepInitialSpacesOnReturnCheckBox.Checked = ConfigUtil.GetBoolParameter("KeepInitialSpacesOnReturn");
+            keepBulletListOnReturnCheckBox.Checked = ConfigUtil.GetBoolParameter("KeepBulletListOnReturn");
+
+
+            //Tab - Language
+            languageComboBox.EditValue = previousLanguage;
+            sourceImageComboBoxEdit.EditValue = LanguageUtil.GetLongCultureForGoogleTranslator(ConfigUtil.GetStringParameter("Translation").Substring(0, 2));
+            destinationImageComboBoxEdit.EditValue = LanguageUtil.GetLongCultureForGoogleTranslator(ConfigUtil.GetStringParameter("Translation").Substring(3, 2));
+            useSelectedSettingsLanguageCheckBox.Checked = ConfigUtil.GetBoolParameter("TranslationUseSelect");
+
+
+            //Tab - Tab
             tabCloseButtonOnComboBox.SelectedIndex = ConfigUtil.GetIntParameter("TabCloseButtonMode");
             tabPositionComboBox.SelectedIndex = ConfigUtil.GetIntParameter("TabPosition");
             tabOrientationComboBox.SelectedIndex = ConfigUtil.GetIntParameter("TabOrientation");
             tabMultilineCheckBox.Checked = ConfigUtil.GetBoolParameter("TabMultiline");
-            lineNumbersCheckBox.Checked = ConfigUtil.GetBoolParameter("LineNumbersVisible");
-            keepInitialSpacesOnReturnCheckBox.Checked = ConfigUtil.GetBoolParameter("KeepInitialSpacesOnReturn");
-            keepBulletListOnReturnCheckBox.Checked = ConfigUtil.GetBoolParameter("KeepBulletListOnReturn");
-            splashScreenCheckBox.Checked = ConfigUtil.GetBoolParameter("ShowSplashScreen");
-            automaticSessionSaveCheckBox.Checked = ConfigUtil.GetBoolParameter("AutomaticSessionSave");
-            hideLinesCheckBox.Checked = ConfigUtil.GetBoolParameter("CheckLineNumber");
-            hideLinesNumericUpDown.Value = ConfigUtil.GetIntParameter("CheckLineNumberMax");
-            previousJumpListActivated = ConfigUtil.GetBoolParameter("ActiveJumpList");
-            dropboxRememberCheckBox.Checked = ConfigUtil.GetBoolParameter("RememberDropboxAccess");
-            dropboxDeleteCheckBox.Checked = ConfigUtil.GetBoolParameter("EnableDropboxDelete");
-            nullCharCheckBox.Checked = ConfigUtil.GetBoolParameter("IgnoreNullChar");
-            jumpListCheckBox.Checked = previousJumpListActivated;
 
-            hideLinesCheckBox.Enabled = lineNumbersCheckBox.Checked;
-            hideLinesNumericUpDown.Enabled = hideLinesCheckBox.Checked && hideLinesCheckBox.Enabled;
-
-            enableProxySettingsCheckBox.Checked = ConfigUtil.GetBoolParameter("ProxyEnabled");
-            OptionManager.CheckProxyStatusEnabled(this);
-
-            List<PasswordObject> passwordList = PasswordUtil.GetStringParameters(new[] { "ProxyUsername", "ProxyPassword", "ProxyDomain", "DropboxUsername", "DropboxPassword" });
-            usernameTextBox.Text = (passwordList[0]).value;
-            passwordTextBox.Text = CodingUtil.DecodeByte((passwordList[1]).value);
-            domainTextBox.Text = (passwordList[2]).value;
-            proxyHostTextBox.Text = ConfigUtil.GetStringParameter("ProxyHost");
-            proxyPortNumericUpDown.Value = ConfigUtil.GetIntParameter("ProxyPort");
-
-            TextFont = ConfigUtil.GetFontParameter("FontInUse");
-            previousFont = TextFont;
-            String[] argbFontColor = ConfigUtil.GetStringParameter("FontInUseColorARGB").Split(new[] { ';' });
-            TextFontColor = Color.FromArgb(Convert.ToInt32(argbFontColor[0]), Convert.ToInt32(argbFontColor[1]), Convert.ToInt32(argbFontColor[2]), Convert.ToInt32(argbFontColor[3]));
-            previousFontColor = TextFontColor;
-            String[] argbBackgroundColor = ConfigUtil.GetStringParameter("BackgroundColorARGB").Split(new[] { ';' });
-            TextBackgroundColor = Color.FromArgb(Convert.ToInt32(argbBackgroundColor[0]), Convert.ToInt32(argbBackgroundColor[1]), Convert.ToInt32(argbBackgroundColor[2]), Convert.ToInt32(argbBackgroundColor[3]));
-            previousBackgroundColor = TextBackgroundColor;
-            fontLabel1.Text = StringUtil.CheckStringLengthEnd(ConfigUtil.GetStringParameter("FontInUse"), maxCharsFont);
-            fontColorTextBox.BackColor = TextFontColor;
-            backgroundColorTextBox.BackColor = TextBackgroundColor;
-
-            urlsCheckBox.Checked = ConfigUtil.GetBoolParameter("HighlightURL");
-            previousHighlightURL = urlsCheckBox.Checked;
-            defaultBrowserRadioButton.Checked = ConfigUtil.GetBoolParameter("UseDefaultBrowser");
-            customBrowserRadioButton.Checked = !ConfigUtil.GetBoolParameter("UseDefaultBrowser");
-            customBrowserTextBox.Text = ConfigUtil.GetStringParameter("CustomBrowserCommand");
-
-            renderModeComboBox.SelectedIndex = ConfigUtil.GetIntParameter("LookAndFeel");
-            languageComboBox.EditValue = ConfigUtil.GetStringParameter("Language");
-            previousLanguage = languageComboBox.SelectedItem.ToString();
-            useSelectedSettingsLanguageCheckBox.Checked = ConfigUtil.GetBoolParameter("TranslationUseSelect");
-            sourceImageComboBoxEdit.EditValue = LanguageUtil.GetLongCultureForGoogleTranslator(ConfigUtil.GetStringParameter("Translation").Substring(0, 2));
-            destinationImageComboBoxEdit.EditValue = LanguageUtil.GetLongCultureForGoogleTranslator(ConfigUtil.GetStringParameter("Translation").Substring(3, 2));
-
-            OptionManager.SetListExtensions(this);
-
-            useExistingCheckBox.Checked = ConfigUtil.GetBoolParameter("DefaultEncoding");
-            defaultComboBox.SelectedIndex = ConfigUtil.GetIntParameter("Encoding");
-
-            backupIncrementalCheckBox.Checked = ConfigUtil.GetBoolParameter("BackupIncremental");
-            createBackupCheckBox.Checked = ConfigUtil.GetBoolParameter("BackupEnabled");
-            backupExtensionTextBox.Text = ConfigUtil.GetStringParameter("BackupExtension");
-            int backupLocation = ConfigUtil.GetIntParameter("BackupLocation");
-            switch (backupLocation)
+            switch (ConfigUtil.GetIntParameter("TabsSwitchType"))
             {
                 case 0:
-                    backupEditedFileRadioButton.Checked = true;
-                    backupCustomFolderRadioButton.Checked = false;
+                    tabsSwitchModeKeyboardRadioButton.Checked = true;
                     break;
                 case 1:
-                    backupEditedFileRadioButton.Checked = false;
-                    backupCustomFolderRadioButton.Checked = true;
+                    tabsSwitchModeMouseRadioButton.Checked = true;
                     break;
             }
-            int backupExtensionPosition = ConfigUtil.GetIntParameter("BackupExtensionPosition");
-            switch (backupExtensionPosition)
-            {
-                case 0:
-                    backupAddExtensionRadioButton.Checked = true;
-                    backupReplaceExtensionRadioButton.Checked = false;
-                    break;
-                case 1:
-                    backupAddExtensionRadioButton.Checked = false;
-                    backupReplaceExtensionRadioButton.Checked = true;
-                    break;
-            }
-            backupCustomFolderTextBox.Text = ConfigUtil.GetStringParameter("BackupLocationCustom");
 
+
+            //Tab - Note Mode
+            noteModeTabsCheckBox.Checked = ConfigUtil.GetBoolParameter("NoteModeTabs");
+            noteModeSizeXNumericUpDown.Value = ConfigUtil.GetIntParameter("NoteModeSizeX");
+            noteModeSizeYNumericUpDown.Value = ConfigUtil.GetIntParameter("NoteModeSizeY");
+
+
+            //Tab - View
+            stayOnTopCheckBox.Checked = !ConfigUtil.GetBoolParameter("StayOnTopDisabled");
             if (WindowManager.IsWindowInFullScreenMode(form))
             {
                 stayOnTopCheckBox.Enabled = false;
             }
 
-            sendToCheckBox.Checked = ShellManager.ExistsSendToLink();
-            openWithCheckBox.Checked = ShellManager.ExistsOpenWithLink();
-            previousSendTo = sendToCheckBox.Checked;
-            previousOpenWith = openWithCheckBox.Checked;
+            minimizeOnTrayIconCheckBox.Checked = !ConfigUtil.GetBoolParameter("MinimizeOnTrayIconDisabled");
+            splashScreenCheckBox.Checked = ConfigUtil.GetBoolParameter("ShowSplashScreen");
+            toolbarCheckBox.Checked = !ConfigUtil.GetBoolParameter("ToolbarInvisible");
+            statusBarCheckBox.Checked = !ConfigUtil.GetBoolParameter("StatusBarInvisible");
+            internalExplorerCheckBox.Checked = !ConfigUtil.GetBoolParameter("InternalExplorerInvisible");
+            lineNumbersCheckBox.Checked = ConfigUtil.GetBoolParameter("LineNumbersVisible");
 
-            String autoFormatFiles = ConfigUtil.GetStringParameter("AutoFormatFiles");
-            htmlCheckBox.Checked = autoFormatFiles.Contains(".html");
-            xmlCheckBox.Checked = autoFormatFiles.Contains(".xml");
+            hideLinesCheckBox.Checked = ConfigUtil.GetBoolParameter("CheckLineNumber");
+            hideLinesNumericUpDown.Value = ConfigUtil.GetIntParameter("CheckLineNumberMax");
+            hideLinesCheckBox.Enabled = lineNumbersCheckBox.Checked;
+            hideLinesNumericUpDown.Enabled = hideLinesCheckBox.Checked && hideLinesCheckBox.Enabled;
 
-            int periodicVersionCheck = ConfigUtil.GetIntParameter("PeriodicVersionCheck");
+
+            //Tab - Look & Feel
+            renderModeComboBox.SelectedIndex = ConfigUtil.GetIntParameter("LookAndFeel");
+
+
+            //Tab - Internet
+            enableProxySettingsCheckBox.Checked = ConfigUtil.GetBoolParameter("ProxyEnabled");
+            usernameTextBox.Text = (passwordList[0]).value;
+            passwordTextBox.Text = CodingUtil.DecodeByte((passwordList[1]).value);
+            domainTextBox.Text = (passwordList[2]).value;
+            proxyHostTextBox.Text = ConfigUtil.GetStringParameter("ProxyHost");
+            proxyPortNumericUpDown.Value = ConfigUtil.GetIntParameter("ProxyPort");
+            defaultBrowserRadioButton.Checked = ConfigUtil.GetBoolParameter("UseDefaultBrowser");
+            customBrowserRadioButton.Checked = !ConfigUtil.GetBoolParameter("UseDefaultBrowser");
+            customBrowserTextBox.Text = ConfigUtil.GetStringParameter("CustomBrowserCommand");
+
+
+            //Tab - Updates
             switch (periodicVersionCheck)
             {
                 case 0:
@@ -206,12 +251,19 @@ namespace DtPad
                     frequencyAutomaticUpdateComboBox.SelectedIndex = periodicVersionCheck - 1;
                     break;
             }
-            
+
             lastCheckLabel.Text += " " + ConfigUtil.GetDateParameter("LastVersionCheck").ToString(LanguageUtil.GetShortDateTimeFormat());
 
-            noteModeTabsCheckBox.Checked = ConfigUtil.GetBoolParameter("NoteModeTabs");
-            noteModeSizeXNumericUpDown.Value = ConfigUtil.GetIntParameter("NoteModeSizeX");
-            noteModeSizeYNumericUpDown.Value = ConfigUtil.GetIntParameter("NoteModeSizeY");
+
+            //Tab - Dropbox
+            dropboxRememberCheckBox.Checked = ConfigUtil.GetBoolParameter("RememberDropboxAccess");
+            dropboxDeleteCheckBox.Checked = ConfigUtil.GetBoolParameter("EnableDropboxDelete");
+
+
+            //Tab - Integration
+            sendToCheckBox.Checked = previousSendTo;
+            openWithCheckBox.Checked = previousOpenWith;
+            jumpListCheckBox.Checked = previousJumpListActivated;
         }
 
         internal void SetLanguage()
@@ -221,6 +273,9 @@ namespace DtPad
             optionsToolTip.SetToolTip(infoProxyPictureBox, LanguageUtil.GetCurrentLanguageString("infoProxyPictureBoxToolTip", Name));
             optionsToolTip.SetToolTip(helpHideLinesPictureBox, LanguageUtil.GetCurrentLanguageString("helpHideLinesPictureBoxToolTip", Name));
             optionsToolTip.SetToolTip(switchButton, LanguageUtil.GetCurrentLanguageString("switchButtonToolTip", Name));
+            optionsToolTip.SetToolTip(tabPictureBox1, LanguageUtil.GetCurrentLanguageString("tabPictureBox1ToolTip", Name));
+            optionsToolTip.SetToolTip(tabPictureBox2, LanguageUtil.GetCurrentLanguageString("tabPictureBox2ToolTip", Name));
+            optionsToolTip.SetToolTip(resetOptionsButton, LanguageUtil.GetCurrentLanguageString("resetOptionsButtonToolTip", Name));
 
             previousLanguage = ConfigUtil.GetStringParameter("Language");
         }
@@ -377,10 +432,14 @@ namespace DtPad
 
         private void okButton_Click(object sender, EventArgs e)
         {
+            Cursor = Cursors.WaitCursor;
+
             if (SaveOptions(true))
             {
                 WindowManager.CloseForm(this);
             }
+
+            Cursor = Cursors.Default;
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
@@ -390,8 +449,19 @@ namespace DtPad
 
         private void applyButton_Click(object sender, EventArgs e)
         {
+            Cursor = Cursors.WaitCursor;
+
             SaveOptions(false);
+
+            previousFont = TextFont;
+            previousFontColor = TextFontColor;
+            previousBackgroundColor = TextBackgroundColor;
+            previousHighlightURL = urlsCheckBox.Checked;
+            previousLanguage = languageComboBox.SelectedItem.ToString();
+            previousJumpListActivated = jumpListCheckBox.Checked;
+
             Focus();
+            Cursor = Cursors.Default;
         }
 
         private void fontButton_Click(object sender, EventArgs e)
@@ -457,6 +527,14 @@ namespace DtPad
             object sourceLanguage = sourceImageComboBoxEdit.EditValue;
             sourceImageComboBoxEdit.EditValue = destinationImageComboBoxEdit.EditValue;
             destinationImageComboBoxEdit.EditValue = sourceLanguage;
+        }
+
+        private void resetOptionsButton_Click(object sender, EventArgs e)
+        {
+            if (OptionManager.ResetOptions(this, previousFont, previousFontColor, previousBackgroundColor, previousHighlightURL, previousLanguage, previousJumpListActivated))
+            {
+                WindowManager.CloseForm(this);
+            }
         }
 
         #endregion Buttons Methods
@@ -525,6 +603,11 @@ namespace DtPad
             {
                 searchReturn = 1;
             }
+            int tabsSwitchType = 0;
+            if (tabsSwitchModeMouseRadioButton.Checked)
+            {
+                tabsSwitchType = 1;
+            }
 
             int periodicVersionCheck = 0;
             if (enableAutomaticUpdateCheckBox.Checked && frequencyAutomaticUpdateComboBox.SelectedIndex == 0)
@@ -545,7 +628,7 @@ namespace DtPad
                                           "BackupLocation", "BackupLocationCustom", "BackupIncremental", "SpacesInsteadTabs", "KeepInitialSpacesOnReturn",
                                           "KeepBulletListOnReturn", "ShowSplashScreen", "AutomaticSessionSave", "Translation", "TranslationUseSelect", "CheckLineNumber",
                                           "CheckLineNumberMax", "AutoFormatFiles", "AutoOpenHostsConfigurator", "ColorHostsConfigurator", "PeriodicVersionCheck",
-                                          "ActiveJumpList", "EnableDropboxDelete", "RememberDropboxAccess", "IgnoreNullChar", "NoteModeTabs", "NoteModeSizeX", "NoteModeSizeY" };
+                                          "ActiveJumpList", "EnableDropboxDelete", "RememberDropboxAccess", "IgnoreNullChar", "NoteModeTabs", "NoteModeSizeX", "NoteModeSizeY", "TabsSwitchType" };
             
             String[] parameterValues = { settingFolder.ToString(), specificFolderTextBox.Text, folderOpenedFileCheckBox.Checked.ToString(),
                                            recentFilesNumberNumericUpDown.Value.ToString(), searchHistoryNumericUpDown.Value.ToString(),
@@ -570,7 +653,8 @@ namespace DtPad
                                            hideLinesNumericUpDown.Value.ToString(), GetAutoFormatFilesString(), hostsConfiguratorCheckBox.Checked.ToString(),
                                            ColorUtil.GetColorFromTabInt(hostsConfiguratorTabColorComboBox.SelectedIndex).Name, periodicVersionCheck.ToString(),
                                            jumpListCheckBox.Checked.ToString(), dropboxDeleteCheckBox.Checked.ToString(), dropboxRememberCheckBox.Checked.ToString(),
-                                           nullCharCheckBox.Checked.ToString(), noteModeTabsCheckBox.Checked.ToString(), noteModeSizeXNumericUpDown.Value.ToString(), noteModeSizeYNumericUpDown.Value.ToString() };
+                                           nullCharCheckBox.Checked.ToString(), noteModeTabsCheckBox.Checked.ToString(), noteModeSizeXNumericUpDown.Value.ToString(), noteModeSizeYNumericUpDown.Value.ToString(),
+                                           tabsSwitchType.ToString() };
 
             String[] passwordNames = { "ProxyUsername", "ProxyPassword", "ProxyDomain" };
             String[] passwordValues = { usernameTextBox.Text, CodingUtil.EncodeString(passwordTextBox.Text), domainTextBox.Text };

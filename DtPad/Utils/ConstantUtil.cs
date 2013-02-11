@@ -370,19 +370,15 @@ namespace DtPad.Utils
             new KeyValuePair<String, String>("þ", "&thorn;")
         };
 
-        #endregion Internal ValuePair
-
-        #region Private ValuePair
-
-        private static readonly KeyValuePair<String, String>[] AppConfigDefaults = {
+        internal static readonly KeyValuePair<String, String>[] AppConfigDefaults = {
             new KeyValuePair<String, String>("ShowSplashScreen", "True"),
             new KeyValuePair<String, String>("WelcomeShown", "False"),
             new KeyValuePair<String, String>("TrayBalloonTipShown", "False"),
             new KeyValuePair<String, String>("MaxNumRecentFile", "10"),
             new KeyValuePair<String, String>("MaxNumSearchHistory", "10"),
             new KeyValuePair<String, String>("SettingFolder", "1"),
-            new KeyValuePair<String, String>("LastUserFolder", ApplicationExecutionPath()),
-            new KeyValuePair<String, String>("SpecificFolder", ApplicationExecutionPath()),
+            new KeyValuePair<String, String>("LastUserFolder", String.Empty),
+            new KeyValuePair<String, String>("SpecificFolder", String.Empty),
             new KeyValuePair<String, String>("OverrideFolderWithActiveFile", "True"),
             new KeyValuePair<String, String>("SearchReplacePanelDisabled", "True"),
             new KeyValuePair<String, String>("SearchCaseSensitive", "False"),
@@ -456,6 +452,6 @@ namespace DtPad.Utils
             new KeyValuePair<String, String>("ProxyDomain", String.Empty)
         };
 
-        #endregion Private ValuePair
+        #endregion Internal ValuePair
     }
 }

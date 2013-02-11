@@ -7925,6 +7925,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reimposta opzioni.
+        /// </summary>
+        internal static string Options_resetOptionsButtonToolTip {
+            get {
+                return ResourceManager.GetString("Options_resetOptionsButtonToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Backup.
         /// </summary>
         internal static string Options_savingGroupBox1 {
@@ -8153,6 +8162,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Visuale tab.
+        /// </summary>
+        internal static string Options_tabGroupBox2 {
+            get {
+                return ResourceManager.GetString("Options_tabGroupBox2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Allineamento su più righe.
         /// </summary>
         internal static string Options_tabMultilineCheckBox {
@@ -8190,6 +8208,28 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apri finestra e cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro)
+        ///Chiudi finestra e seleziona tab: lascia CTRL.
+        /// </summary>
+        internal static string Options_tabPictureBox1ToolTip {
+            get {
+                return ResourceManager.GetString("Options_tabPictureBox1ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apri finestra: CTRL+TAB or CTRL+SHIFT+TAB
+        ///Cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro) o mouse
+        ///Chiudi finestra: ESC
+        ///Chiudi finestra e seleziona tab: INVIO o click del mouse.
+        /// </summary>
+        internal static string Options_tabPictureBox2ToolTip {
+            get {
+                return ResourceManager.GetString("Options_tabPictureBox2ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to In alto (default)
         ///A destra
         ///In basso
@@ -8207,6 +8247,33 @@ namespace DtPad.Languages {
         internal static string Options_tabPositionLabel {
             get {
                 return ResourceManager.GetString("Options_tabPositionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tastiera (default).
+        /// </summary>
+        internal static string Options_tabsSwitchModeKeyboardRadioButton {
+            get {
+                return ResourceManager.GetString("Options_tabsSwitchModeKeyboardRadioButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modalità di controllo:.
+        /// </summary>
+        internal static string Options_tabsSwitchModeLabel {
+            get {
+                return ResourceManager.GetString("Options_tabsSwitchModeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mouse.
+        /// </summary>
+        internal static string Options_tabsSwitchModeMouseRadioButton {
+            get {
+                return ResourceManager.GetString("Options_tabsSwitchModeMouseRadioButton", resourceCulture);
             }
         }
         

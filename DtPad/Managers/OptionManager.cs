@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Net;
 using System.Windows.Forms;
@@ -270,6 +271,45 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
 
             pagesTabControl.MultiLine = tabMultiline ? DefaultBoolean.True : DefaultBoolean.False;
+        }
+
+        internal static bool ResetOptions(Options form, Font previousFont, Color previousFontColor, Color previousBackgroundColor, bool previousHighlightURL, String previousLanguage, bool previousJumpListActivated)
+        {
+            DialogResult proceed = WindowManager.ShowWarningBox(form, LanguageUtil.GetCurrentLanguageString("SureReset", className));
+            if (proceed == DialogResult.No || proceed == DialogResult.Cancel)
+            {
+                return false;
+            }
+
+            form.Cursor = Cursors.WaitCursor;
+
+            Font textFont = null;
+            Color textFontColor = Color.Black;
+            Color textBackgroundColor = Color.White;
+
+            foreach (KeyValuePair<String, String> keyValuePair in ConstantUtil.AppConfigDefaults)
+            {
+                ConfigUtil.UpdateParameter(keyValuePair.Key, keyValuePair.Value);
+
+                switch (keyValuePair.Key)
+                {
+                    case "FontInUse":
+                        textFont = ConfigUtil.GetFontParameter("FontInUse");
+                        break;
+                    case "FontInUseColorARGB":
+                        String[] argbFontColor = keyValuePair.Value.Split(new[] { ';' });
+                        textFontColor = Color.FromArgb(Convert.ToInt32(argbFontColor[0]), Convert.ToInt32(argbFontColor[1]), Convert.ToInt32(argbFontColor[2]), Convert.ToInt32(argbFontColor[3]));
+                        break;
+                    case "BackgroundColorARGB":
+                        String[] argbBackgroundColor = keyValuePair.Value.Split(new[] { ';' });
+                        textBackgroundColor = Color.FromArgb(Convert.ToInt32(argbBackgroundColor[0]), Convert.ToInt32(argbBackgroundColor[1]), Convert.ToInt32(argbBackgroundColor[2]), Convert.ToInt32(argbBackgroundColor[3]));
+                        break;
+                }
+            }
+
+            RefreshOwner(form, true, previousFont, textFont, previousFontColor, textFontColor, previousBackgroundColor, textBackgroundColor, previousHighlightURL, previousLanguage, previousJumpListActivated);
+
+            return true;
         }
 
         #endregion Internal Methods

@@ -152,6 +152,8 @@
             this.okButton = new System.Windows.Forms.Button();
             this.applyButton = new System.Windows.Forms.Button();
             this.optionsToolTip = new System.Windows.Forms.ToolTip(this.components);
+            this.tabPictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabPictureBox2 = new System.Windows.Forms.PictureBox();
             this.encodingPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.encodingGroupBox1 = new System.Windows.Forms.GroupBox();
             this.noteLabel = new System.Windows.Forms.Label();
@@ -165,6 +167,10 @@
             this.tabOrientationLabel = new System.Windows.Forms.Label();
             this.tabPositionComboBox = new System.Windows.Forms.ComboBox();
             this.tabPositionLabel = new System.Windows.Forms.Label();
+            this.tabGroupBox2 = new System.Windows.Forms.GroupBox();
+            this.tabsSwitchModeMouseRadioButton = new System.Windows.Forms.RadioButton();
+            this.tabsSwitchModeKeyboardRadioButton = new System.Windows.Forms.RadioButton();
+            this.tabsSwitchModeLabel = new System.Windows.Forms.Label();
             this.savingPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.savingGroupBox1 = new System.Windows.Forms.GroupBox();
             this.backupIncrementalCheckBox = new System.Windows.Forms.CheckBox();
@@ -195,17 +201,6 @@
             this.jumpListCheckBox = new System.Windows.Forms.CheckBox();
             this.openWithCheckBox = new System.Windows.Forms.CheckBox();
             this.sendToCheckBox = new System.Windows.Forms.CheckBox();
-            this.openingPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.openingGroupBox1 = new System.Windows.Forms.GroupBox();
-            this.xmlCheckBox = new System.Windows.Forms.CheckBox();
-            this.htmlCheckBox = new System.Windows.Forms.CheckBox();
-            this.autoFormatLabel = new System.Windows.Forms.Label();
-            this.openingGroupBox2 = new System.Windows.Forms.GroupBox();
-            this.hostsConfiguratorTabColorComboBox = new System.Windows.Forms.ComboBox();
-            this.hostsConfiguratorTabColorLabel = new System.Windows.Forms.Label();
-            this.hostsConfiguratorCheckBox = new System.Windows.Forms.CheckBox();
-            this.openingGroupBox3 = new System.Windows.Forms.GroupBox();
-            this.nullCharCheckBox = new System.Windows.Forms.CheckBox();
             this.updatePanel = new System.Windows.Forms.FlowLayoutPanel();
             this.updateGroupBox1 = new System.Windows.Forms.GroupBox();
             this.lastCheckLabel = new System.Windows.Forms.Label();
@@ -224,6 +219,18 @@
             this.noteModeSizeXLabel = new System.Windows.Forms.Label();
             this.noteModeSizeLabel = new System.Windows.Forms.Label();
             this.noteModeTabsCheckBox = new System.Windows.Forms.CheckBox();
+            this.openingGroupBox3 = new System.Windows.Forms.GroupBox();
+            this.nullCharCheckBox = new System.Windows.Forms.CheckBox();
+            this.openingGroupBox2 = new System.Windows.Forms.GroupBox();
+            this.hostsConfiguratorTabColorComboBox = new System.Windows.Forms.ComboBox();
+            this.hostsConfiguratorTabColorLabel = new System.Windows.Forms.Label();
+            this.hostsConfiguratorCheckBox = new System.Windows.Forms.CheckBox();
+            this.openingGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.xmlCheckBox = new System.Windows.Forms.CheckBox();
+            this.htmlCheckBox = new System.Windows.Forms.CheckBox();
+            this.autoFormatLabel = new System.Windows.Forms.Label();
+            this.openingPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.resetOptionsButton = new System.Windows.Forms.Button();
             this.searchPanel.SuspendLayout();
             this.searchGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchHistoryNumericUpDown)).BeginInit();
@@ -252,10 +259,13 @@
             this.fileGroupBox1.SuspendLayout();
             this.fileGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recentFilesNumberNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPictureBox2)).BeginInit();
             this.encodingPanel.SuspendLayout();
             this.encodingGroupBox1.SuspendLayout();
             this.tabPanel.SuspendLayout();
             this.tabGroupBox1.SuspendLayout();
+            this.tabGroupBox2.SuspendLayout();
             this.savingPanel.SuspendLayout();
             this.savingGroupBox1.SuspendLayout();
             this.backupGroupBox2.SuspendLayout();
@@ -267,10 +277,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sourceImageComboBoxEdit.Properties)).BeginInit();
             this.shellPanel.SuspendLayout();
             this.shellGroupBox1.SuspendLayout();
-            this.openingPanel.SuspendLayout();
-            this.openingGroupBox1.SuspendLayout();
-            this.openingGroupBox2.SuspendLayout();
-            this.openingGroupBox3.SuspendLayout();
             this.updatePanel.SuspendLayout();
             this.updateGroupBox1.SuspendLayout();
             this.dropboxPanel.SuspendLayout();
@@ -279,6 +285,10 @@
             this.noteModeGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeXNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeYNumericUpDown)).BeginInit();
+            this.openingGroupBox3.SuspendLayout();
+            this.openingGroupBox2.SuspendLayout();
+            this.openingGroupBox1.SuspendLayout();
+            this.openingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // optionsTreeView
@@ -1399,6 +1409,28 @@
             this.applyButton.UseVisualStyleBackColor = true;
             this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
             // 
+            // tabPictureBox1
+            // 
+            this.tabPictureBox1.Image = global::DtPad.ToolbarResource.info_blue;
+            this.tabPictureBox1.Location = new System.Drawing.Point(120, 19);
+            this.tabPictureBox1.Name = "tabPictureBox1";
+            this.tabPictureBox1.Size = new System.Drawing.Size(16, 16);
+            this.tabPictureBox1.TabIndex = 10;
+            this.tabPictureBox1.TabStop = false;
+            this.optionsToolTip.SetToolTip(this.tabPictureBox1, "DtPad uses Internet Explorer\'s settings to connect. Insert following\r\nfields just" +
+        " in case it requires a manual authentication.");
+            // 
+            // tabPictureBox2
+            // 
+            this.tabPictureBox2.Image = global::DtPad.ToolbarResource.info_blue;
+            this.tabPictureBox2.Location = new System.Drawing.Point(120, 41);
+            this.tabPictureBox2.Name = "tabPictureBox2";
+            this.tabPictureBox2.Size = new System.Drawing.Size(16, 16);
+            this.tabPictureBox2.TabIndex = 11;
+            this.tabPictureBox2.TabStop = false;
+            this.optionsToolTip.SetToolTip(this.tabPictureBox2, "DtPad uses Internet Explorer\'s settings to connect. Insert following\r\nfields just" +
+        " in case it requires a manual authentication.");
+            // 
             // encodingPanel
             // 
             this.encodingPanel.Controls.Add(this.encodingGroupBox1);
@@ -1467,6 +1499,7 @@
             // tabPanel
             // 
             this.tabPanel.Controls.Add(this.tabGroupBox1);
+            this.tabPanel.Controls.Add(this.tabGroupBox2);
             this.tabPanel.Location = new System.Drawing.Point(150, 13);
             this.tabPanel.Name = "tabPanel";
             this.tabPanel.Size = new System.Drawing.Size(349, 287);
@@ -1542,6 +1575,51 @@
             this.tabPositionLabel.Size = new System.Drawing.Size(68, 13);
             this.tabPositionLabel.TabIndex = 2;
             this.tabPositionLabel.Text = "Tab position:";
+            // 
+            // tabGroupBox2
+            // 
+            this.tabGroupBox2.Controls.Add(this.tabPictureBox2);
+            this.tabGroupBox2.Controls.Add(this.tabPictureBox1);
+            this.tabGroupBox2.Controls.Add(this.tabsSwitchModeMouseRadioButton);
+            this.tabGroupBox2.Controls.Add(this.tabsSwitchModeKeyboardRadioButton);
+            this.tabGroupBox2.Controls.Add(this.tabsSwitchModeLabel);
+            this.tabGroupBox2.Location = new System.Drawing.Point(3, 125);
+            this.tabGroupBox2.Name = "tabGroupBox2";
+            this.tabGroupBox2.Size = new System.Drawing.Size(346, 64);
+            this.tabGroupBox2.TabIndex = 1;
+            this.tabGroupBox2.TabStop = false;
+            this.tabGroupBox2.Text = "Fast tab switching";
+            // 
+            // tabsSwitchModeMouseRadioButton
+            // 
+            this.tabsSwitchModeMouseRadioButton.AutoSize = true;
+            this.tabsSwitchModeMouseRadioButton.Location = new System.Drawing.Point(142, 39);
+            this.tabsSwitchModeMouseRadioButton.Name = "tabsSwitchModeMouseRadioButton";
+            this.tabsSwitchModeMouseRadioButton.Size = new System.Drawing.Size(57, 17);
+            this.tabsSwitchModeMouseRadioButton.TabIndex = 2;
+            this.tabsSwitchModeMouseRadioButton.TabStop = true;
+            this.tabsSwitchModeMouseRadioButton.Text = "Mouse";
+            this.tabsSwitchModeMouseRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // tabsSwitchModeKeyboardRadioButton
+            // 
+            this.tabsSwitchModeKeyboardRadioButton.AutoSize = true;
+            this.tabsSwitchModeKeyboardRadioButton.Location = new System.Drawing.Point(142, 18);
+            this.tabsSwitchModeKeyboardRadioButton.Name = "tabsSwitchModeKeyboardRadioButton";
+            this.tabsSwitchModeKeyboardRadioButton.Size = new System.Drawing.Size(111, 17);
+            this.tabsSwitchModeKeyboardRadioButton.TabIndex = 1;
+            this.tabsSwitchModeKeyboardRadioButton.TabStop = true;
+            this.tabsSwitchModeKeyboardRadioButton.Text = "Keyboard (default)";
+            this.tabsSwitchModeKeyboardRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // tabsSwitchModeLabel
+            // 
+            this.tabsSwitchModeLabel.AutoSize = true;
+            this.tabsSwitchModeLabel.Location = new System.Drawing.Point(10, 20);
+            this.tabsSwitchModeLabel.Name = "tabsSwitchModeLabel";
+            this.tabsSwitchModeLabel.Size = new System.Drawing.Size(72, 13);
+            this.tabsSwitchModeLabel.TabIndex = 0;
+            this.tabsSwitchModeLabel.Text = "Control mode:";
             // 
             // savingPanel
             // 
@@ -1877,126 +1955,6 @@
             this.sendToCheckBox.Text = "\"Send to\" association";
             this.sendToCheckBox.UseVisualStyleBackColor = true;
             // 
-            // openingPanel
-            // 
-            this.openingPanel.Controls.Add(this.openingGroupBox1);
-            this.openingPanel.Controls.Add(this.openingGroupBox2);
-            this.openingPanel.Controls.Add(this.openingGroupBox3);
-            this.openingPanel.Location = new System.Drawing.Point(150, 13);
-            this.openingPanel.Name = "openingPanel";
-            this.openingPanel.Size = new System.Drawing.Size(349, 287);
-            this.openingPanel.TabIndex = 3;
-            this.openingPanel.Visible = false;
-            // 
-            // openingGroupBox1
-            // 
-            this.openingGroupBox1.Controls.Add(this.xmlCheckBox);
-            this.openingGroupBox1.Controls.Add(this.htmlCheckBox);
-            this.openingGroupBox1.Controls.Add(this.autoFormatLabel);
-            this.openingGroupBox1.Location = new System.Drawing.Point(3, 3);
-            this.openingGroupBox1.Name = "openingGroupBox1";
-            this.openingGroupBox1.Size = new System.Drawing.Size(346, 66);
-            this.openingGroupBox1.TabIndex = 0;
-            this.openingGroupBox1.TabStop = false;
-            this.openingGroupBox1.Text = "Code files";
-            // 
-            // xmlCheckBox
-            // 
-            this.xmlCheckBox.AutoSize = true;
-            this.xmlCheckBox.Location = new System.Drawing.Point(150, 43);
-            this.xmlCheckBox.Name = "xmlCheckBox";
-            this.xmlCheckBox.Size = new System.Drawing.Size(48, 17);
-            this.xmlCheckBox.TabIndex = 2;
-            this.xmlCheckBox.Text = "XML";
-            this.xmlCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // htmlCheckBox
-            // 
-            this.htmlCheckBox.AutoSize = true;
-            this.htmlCheckBox.Location = new System.Drawing.Point(10, 43);
-            this.htmlCheckBox.Name = "htmlCheckBox";
-            this.htmlCheckBox.Size = new System.Drawing.Size(56, 17);
-            this.htmlCheckBox.TabIndex = 1;
-            this.htmlCheckBox.Text = "HTML";
-            this.htmlCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // autoFormatLabel
-            // 
-            this.autoFormatLabel.AutoSize = true;
-            this.autoFormatLabel.Location = new System.Drawing.Point(10, 20);
-            this.autoFormatLabel.Name = "autoFormatLabel";
-            this.autoFormatLabel.Size = new System.Drawing.Size(212, 13);
-            this.autoFormatLabel.TabIndex = 0;
-            this.autoFormatLabel.Text = "Auto-format following code files on opening:";
-            // 
-            // openingGroupBox2
-            // 
-            this.openingGroupBox2.Controls.Add(this.hostsConfiguratorTabColorComboBox);
-            this.openingGroupBox2.Controls.Add(this.hostsConfiguratorTabColorLabel);
-            this.openingGroupBox2.Controls.Add(this.hostsConfiguratorCheckBox);
-            this.openingGroupBox2.Location = new System.Drawing.Point(3, 75);
-            this.openingGroupBox2.Name = "openingGroupBox2";
-            this.openingGroupBox2.Size = new System.Drawing.Size(346, 71);
-            this.openingGroupBox2.TabIndex = 1;
-            this.openingGroupBox2.TabStop = false;
-            this.openingGroupBox2.Text = "System files";
-            // 
-            // hostsConfiguratorTabColorComboBox
-            // 
-            this.hostsConfiguratorTabColorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.hostsConfiguratorTabColorComboBox.Enabled = false;
-            this.hostsConfiguratorTabColorComboBox.FormattingEnabled = true;
-            this.hostsConfiguratorTabColorComboBox.Items.AddRange(new object[] {
-            "Orange",
-            "Red",
-            "Green",
-            "Blue",
-            "Black"});
-            this.hostsConfiguratorTabColorComboBox.Location = new System.Drawing.Point(89, 40);
-            this.hostsConfiguratorTabColorComboBox.Name = "hostsConfiguratorTabColorComboBox";
-            this.hostsConfiguratorTabColorComboBox.Size = new System.Drawing.Size(175, 21);
-            this.hostsConfiguratorTabColorComboBox.TabIndex = 2;
-            // 
-            // hostsConfiguratorTabColorLabel
-            // 
-            this.hostsConfiguratorTabColorLabel.AutoSize = true;
-            this.hostsConfiguratorTabColorLabel.Location = new System.Drawing.Point(10, 43);
-            this.hostsConfiguratorTabColorLabel.Name = "hostsConfiguratorTabColorLabel";
-            this.hostsConfiguratorTabColorLabel.Size = new System.Drawing.Size(55, 13);
-            this.hostsConfiguratorTabColorLabel.TabIndex = 1;
-            this.hostsConfiguratorTabColorLabel.Text = "Tab color:";
-            // 
-            // hostsConfiguratorCheckBox
-            // 
-            this.hostsConfiguratorCheckBox.AutoSize = true;
-            this.hostsConfiguratorCheckBox.Location = new System.Drawing.Point(10, 20);
-            this.hostsConfiguratorCheckBox.Name = "hostsConfiguratorCheckBox";
-            this.hostsConfiguratorCheckBox.Size = new System.Drawing.Size(261, 17);
-            this.hostsConfiguratorCheckBox.TabIndex = 0;
-            this.hostsConfiguratorCheckBox.Text = "Open Hosts File Configurator on hosts file opening";
-            this.hostsConfiguratorCheckBox.UseVisualStyleBackColor = true;
-            this.hostsConfiguratorCheckBox.CheckedChanged += new System.EventHandler(this.hostsConfiguratorCheckBox_CheckedChanged);
-            // 
-            // openingGroupBox3
-            // 
-            this.openingGroupBox3.Controls.Add(this.nullCharCheckBox);
-            this.openingGroupBox3.Location = new System.Drawing.Point(3, 152);
-            this.openingGroupBox3.Name = "openingGroupBox3";
-            this.openingGroupBox3.Size = new System.Drawing.Size(346, 45);
-            this.openingGroupBox3.TabIndex = 2;
-            this.openingGroupBox3.TabStop = false;
-            this.openingGroupBox3.Text = "Other";
-            // 
-            // nullCharCheckBox
-            // 
-            this.nullCharCheckBox.AutoSize = true;
-            this.nullCharCheckBox.Location = new System.Drawing.Point(10, 20);
-            this.nullCharCheckBox.Name = "nullCharCheckBox";
-            this.nullCharCheckBox.Size = new System.Drawing.Size(261, 17);
-            this.nullCharCheckBox.TabIndex = 0;
-            this.nullCharCheckBox.Text = "Do not consider null character of end of string (\\0)";
-            this.nullCharCheckBox.UseVisualStyleBackColor = true;
-            // 
             // updatePanel
             // 
             this.updatePanel.Controls.Add(this.updateGroupBox1);
@@ -2209,6 +2167,136 @@
             this.noteModeTabsCheckBox.Text = "Enable tabs view";
             this.noteModeTabsCheckBox.UseVisualStyleBackColor = true;
             // 
+            // openingGroupBox3
+            // 
+            this.openingGroupBox3.Controls.Add(this.nullCharCheckBox);
+            this.openingGroupBox3.Location = new System.Drawing.Point(3, 152);
+            this.openingGroupBox3.Name = "openingGroupBox3";
+            this.openingGroupBox3.Size = new System.Drawing.Size(346, 45);
+            this.openingGroupBox3.TabIndex = 2;
+            this.openingGroupBox3.TabStop = false;
+            this.openingGroupBox3.Text = "Other";
+            // 
+            // nullCharCheckBox
+            // 
+            this.nullCharCheckBox.AutoSize = true;
+            this.nullCharCheckBox.Location = new System.Drawing.Point(10, 20);
+            this.nullCharCheckBox.Name = "nullCharCheckBox";
+            this.nullCharCheckBox.Size = new System.Drawing.Size(261, 17);
+            this.nullCharCheckBox.TabIndex = 0;
+            this.nullCharCheckBox.Text = "Do not consider null character of end of string (\\0)";
+            this.nullCharCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // openingGroupBox2
+            // 
+            this.openingGroupBox2.Controls.Add(this.hostsConfiguratorTabColorComboBox);
+            this.openingGroupBox2.Controls.Add(this.hostsConfiguratorTabColorLabel);
+            this.openingGroupBox2.Controls.Add(this.hostsConfiguratorCheckBox);
+            this.openingGroupBox2.Location = new System.Drawing.Point(3, 75);
+            this.openingGroupBox2.Name = "openingGroupBox2";
+            this.openingGroupBox2.Size = new System.Drawing.Size(346, 71);
+            this.openingGroupBox2.TabIndex = 1;
+            this.openingGroupBox2.TabStop = false;
+            this.openingGroupBox2.Text = "System Files";
+            // 
+            // hostsConfiguratorTabColorComboBox
+            // 
+            this.hostsConfiguratorTabColorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.hostsConfiguratorTabColorComboBox.Enabled = false;
+            this.hostsConfiguratorTabColorComboBox.FormattingEnabled = true;
+            this.hostsConfiguratorTabColorComboBox.Items.AddRange(new object[] {
+            "Orange",
+            "Red",
+            "Green",
+            "Blue",
+            "Black"});
+            this.hostsConfiguratorTabColorComboBox.Location = new System.Drawing.Point(89, 40);
+            this.hostsConfiguratorTabColorComboBox.Name = "hostsConfiguratorTabColorComboBox";
+            this.hostsConfiguratorTabColorComboBox.Size = new System.Drawing.Size(175, 21);
+            this.hostsConfiguratorTabColorComboBox.TabIndex = 2;
+            // 
+            // hostsConfiguratorTabColorLabel
+            // 
+            this.hostsConfiguratorTabColorLabel.AutoSize = true;
+            this.hostsConfiguratorTabColorLabel.Location = new System.Drawing.Point(10, 43);
+            this.hostsConfiguratorTabColorLabel.Name = "hostsConfiguratorTabColorLabel";
+            this.hostsConfiguratorTabColorLabel.Size = new System.Drawing.Size(55, 13);
+            this.hostsConfiguratorTabColorLabel.TabIndex = 1;
+            this.hostsConfiguratorTabColorLabel.Text = "Tab color:";
+            // 
+            // hostsConfiguratorCheckBox
+            // 
+            this.hostsConfiguratorCheckBox.AutoSize = true;
+            this.hostsConfiguratorCheckBox.Location = new System.Drawing.Point(10, 20);
+            this.hostsConfiguratorCheckBox.Name = "hostsConfiguratorCheckBox";
+            this.hostsConfiguratorCheckBox.Size = new System.Drawing.Size(261, 17);
+            this.hostsConfiguratorCheckBox.TabIndex = 0;
+            this.hostsConfiguratorCheckBox.Text = "Open Hosts File Configurator on hosts file opening";
+            this.hostsConfiguratorCheckBox.UseVisualStyleBackColor = true;
+            this.hostsConfiguratorCheckBox.CheckedChanged += new System.EventHandler(this.hostsConfiguratorCheckBox_CheckedChanged);
+            // 
+            // openingGroupBox1
+            // 
+            this.openingGroupBox1.Controls.Add(this.xmlCheckBox);
+            this.openingGroupBox1.Controls.Add(this.htmlCheckBox);
+            this.openingGroupBox1.Controls.Add(this.autoFormatLabel);
+            this.openingGroupBox1.Location = new System.Drawing.Point(3, 3);
+            this.openingGroupBox1.Name = "openingGroupBox1";
+            this.openingGroupBox1.Size = new System.Drawing.Size(346, 66);
+            this.openingGroupBox1.TabIndex = 0;
+            this.openingGroupBox1.TabStop = false;
+            this.openingGroupBox1.Text = "Code Files";
+            // 
+            // xmlCheckBox
+            // 
+            this.xmlCheckBox.AutoSize = true;
+            this.xmlCheckBox.Location = new System.Drawing.Point(150, 43);
+            this.xmlCheckBox.Name = "xmlCheckBox";
+            this.xmlCheckBox.Size = new System.Drawing.Size(48, 17);
+            this.xmlCheckBox.TabIndex = 2;
+            this.xmlCheckBox.Text = "XML";
+            this.xmlCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // htmlCheckBox
+            // 
+            this.htmlCheckBox.AutoSize = true;
+            this.htmlCheckBox.Location = new System.Drawing.Point(10, 43);
+            this.htmlCheckBox.Name = "htmlCheckBox";
+            this.htmlCheckBox.Size = new System.Drawing.Size(56, 17);
+            this.htmlCheckBox.TabIndex = 1;
+            this.htmlCheckBox.Text = "HTML";
+            this.htmlCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // autoFormatLabel
+            // 
+            this.autoFormatLabel.AutoSize = true;
+            this.autoFormatLabel.Location = new System.Drawing.Point(10, 20);
+            this.autoFormatLabel.Name = "autoFormatLabel";
+            this.autoFormatLabel.Size = new System.Drawing.Size(212, 13);
+            this.autoFormatLabel.TabIndex = 0;
+            this.autoFormatLabel.Text = "Auto-format following code files on opening:";
+            // 
+            // openingPanel
+            // 
+            this.openingPanel.Controls.Add(this.openingGroupBox1);
+            this.openingPanel.Controls.Add(this.openingGroupBox2);
+            this.openingPanel.Controls.Add(this.openingGroupBox3);
+            this.openingPanel.Location = new System.Drawing.Point(150, 13);
+            this.openingPanel.Name = "openingPanel";
+            this.openingPanel.Size = new System.Drawing.Size(349, 287);
+            this.openingPanel.TabIndex = 3;
+            this.openingPanel.Visible = false;
+            // 
+            // resetOptionsButton
+            // 
+            this.resetOptionsButton.Image = global::DtPad.ToolbarResource.bin;
+            this.resetOptionsButton.Location = new System.Drawing.Point(13, 315);
+            this.resetOptionsButton.Name = "resetOptionsButton";
+            this.resetOptionsButton.Size = new System.Drawing.Size(23, 23);
+            this.resetOptionsButton.TabIndex = 19;
+            this.resetOptionsButton.UseVisualStyleBackColor = true;
+            this.resetOptionsButton.Click += new System.EventHandler(this.resetOptionsButton_Click);
+            // 
             // Options
             // 
             this.AcceptButton = this.okButton;
@@ -2216,10 +2304,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelButton;
             this.ClientSize = new System.Drawing.Size(511, 350);
+            this.Controls.Add(this.resetOptionsButton);
             this.Controls.Add(this.optionsTreeView);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.applyButton);
+            this.Controls.Add(this.viewPanel);
+            this.Controls.Add(this.languagePanel);
+            this.Controls.Add(this.sessionPanel);
+            this.Controls.Add(this.tabPanel);
+            this.Controls.Add(this.savingPanel);
             this.Controls.Add(this.noteModePanel);
             this.Controls.Add(this.filePanel);
             this.Controls.Add(this.updatePanel);
@@ -2231,11 +2325,6 @@
             this.Controls.Add(this.searchPanel);
             this.Controls.Add(this.formatPanel);
             this.Controls.Add(this.encodingPanel);
-            this.Controls.Add(this.viewPanel);
-            this.Controls.Add(this.languagePanel);
-            this.Controls.Add(this.sessionPanel);
-            this.Controls.Add(this.tabPanel);
-            this.Controls.Add(this.savingPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -2287,12 +2376,16 @@
             this.fileGroupBox2.ResumeLayout(false);
             this.fileGroupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.recentFilesNumberNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPictureBox2)).EndInit();
             this.encodingPanel.ResumeLayout(false);
             this.encodingGroupBox1.ResumeLayout(false);
             this.encodingGroupBox1.PerformLayout();
             this.tabPanel.ResumeLayout(false);
             this.tabGroupBox1.ResumeLayout(false);
             this.tabGroupBox1.PerformLayout();
+            this.tabGroupBox2.ResumeLayout(false);
+            this.tabGroupBox2.PerformLayout();
             this.savingPanel.ResumeLayout(false);
             this.savingGroupBox1.ResumeLayout(false);
             this.savingGroupBox1.PerformLayout();
@@ -2309,13 +2402,6 @@
             this.shellPanel.ResumeLayout(false);
             this.shellGroupBox1.ResumeLayout(false);
             this.shellGroupBox1.PerformLayout();
-            this.openingPanel.ResumeLayout(false);
-            this.openingGroupBox1.ResumeLayout(false);
-            this.openingGroupBox1.PerformLayout();
-            this.openingGroupBox2.ResumeLayout(false);
-            this.openingGroupBox2.PerformLayout();
-            this.openingGroupBox3.ResumeLayout(false);
-            this.openingGroupBox3.PerformLayout();
             this.updatePanel.ResumeLayout(false);
             this.updateGroupBox1.ResumeLayout(false);
             this.updateGroupBox1.PerformLayout();
@@ -2327,6 +2413,13 @@
             this.noteModeGroupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeXNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.noteModeSizeYNumericUpDown)).EndInit();
+            this.openingGroupBox3.ResumeLayout(false);
+            this.openingGroupBox3.PerformLayout();
+            this.openingGroupBox2.ResumeLayout(false);
+            this.openingGroupBox2.PerformLayout();
+            this.openingGroupBox1.ResumeLayout(false);
+            this.openingGroupBox1.PerformLayout();
+            this.openingPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2457,13 +2550,6 @@
         private System.Windows.Forms.GroupBox shellGroupBox1;
         private System.Windows.Forms.CheckBox sendToCheckBox;
         private System.Windows.Forms.CheckBox openWithCheckBox;
-        private System.Windows.Forms.FlowLayoutPanel openingPanel;
-        private System.Windows.Forms.GroupBox openingGroupBox1;
-        private System.Windows.Forms.Label autoFormatLabel;
-        private System.Windows.Forms.CheckBox xmlCheckBox;
-        private System.Windows.Forms.CheckBox htmlCheckBox;
-        private System.Windows.Forms.GroupBox openingGroupBox2;
-        private System.Windows.Forms.CheckBox hostsConfiguratorCheckBox;
         internal System.Windows.Forms.CheckBox folderOpenedFileCheckBox;
         private System.Windows.Forms.FlowLayoutPanel updatePanel;
         private System.Windows.Forms.GroupBox updateGroupBox1;
@@ -2476,8 +2562,6 @@
         private System.Windows.Forms.GroupBox formatGroupBox2;
         private System.Windows.Forms.Button switchButton;
         private System.Windows.Forms.Label keepBulletListOnReturnLabel2;
-        private System.Windows.Forms.ComboBox hostsConfiguratorTabColorComboBox;
-        private System.Windows.Forms.Label hostsConfiguratorTabColorLabel;
         private System.Windows.Forms.CheckBox highlightsResultsCheckBox;
         internal System.Windows.Forms.CheckBox jumpListCheckBox;
         internal System.Windows.Forms.TextBox proxyHostTextBox;
@@ -2488,8 +2572,6 @@
         private System.Windows.Forms.GroupBox dropboxGroupBox1;
         private System.Windows.Forms.CheckBox dropboxDeleteCheckBox;
         private System.Windows.Forms.CheckBox dropboxRememberCheckBox;
-        private System.Windows.Forms.GroupBox openingGroupBox3;
-        private System.Windows.Forms.CheckBox nullCharCheckBox;
         private System.Windows.Forms.FlowLayoutPanel noteModePanel;
         private System.Windows.Forms.GroupBox noteModeGroupBox1;
         private System.Windows.Forms.Label noteModeSizeXLabel;
@@ -2502,5 +2584,23 @@
         private System.Windows.Forms.RadioButton searchReturnRadioButton2;
         private System.Windows.Forms.RadioButton searchReturnRadioButton1;
         private System.Windows.Forms.Label searchReturnLabel;
+        private System.Windows.Forms.GroupBox tabGroupBox2;
+        private System.Windows.Forms.RadioButton tabsSwitchModeKeyboardRadioButton;
+        private System.Windows.Forms.Label tabsSwitchModeLabel;
+        private System.Windows.Forms.RadioButton tabsSwitchModeMouseRadioButton;
+        private System.Windows.Forms.PictureBox tabPictureBox2;
+        private System.Windows.Forms.PictureBox tabPictureBox1;
+        private System.Windows.Forms.GroupBox openingGroupBox3;
+        private System.Windows.Forms.CheckBox nullCharCheckBox;
+        private System.Windows.Forms.GroupBox openingGroupBox2;
+        private System.Windows.Forms.ComboBox hostsConfiguratorTabColorComboBox;
+        private System.Windows.Forms.Label hostsConfiguratorTabColorLabel;
+        private System.Windows.Forms.CheckBox hostsConfiguratorCheckBox;
+        private System.Windows.Forms.GroupBox openingGroupBox1;
+        private System.Windows.Forms.CheckBox xmlCheckBox;
+        private System.Windows.Forms.CheckBox htmlCheckBox;
+        private System.Windows.Forms.Label autoFormatLabel;
+        private System.Windows.Forms.FlowLayoutPanel openingPanel;
+        private System.Windows.Forms.Button resetOptionsButton;
     }
 }

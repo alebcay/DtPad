@@ -2501,7 +2501,7 @@ Verify that the internet connection is active or try to send a smaller amount of
     <value>Source:</value>
   </data>
   <data name="Options_languageGroupBox2" xml:space="preserve">
-    <value>Google translation</value>
+    <value>Google Translation</value>
   </data>
   <data name="Options_languageNode" xml:space="preserve">
     <value>Language</value>
@@ -2839,7 +2839,7 @@ number of text lines. It is possible to open it again at anytime.</value>
     <value>HTML</value>
   </data>
   <data name="Options_openingGroupBox1" xml:space="preserve">
-    <value>Code files</value>
+    <value>Code Files</value>
   </data>
   <data name="Options_openingNode" xml:space="preserve">
     <value>Opening</value>
@@ -2907,7 +2907,7 @@ Required format: example@email.com</value>
     <value>Start Hosts File Configurator on hosts file opening</value>
   </data>
   <data name="Options_openingGroupBox2" xml:space="preserve">
-    <value>System files</value>
+    <value>System Files</value>
   </data>
   <data name="CustomFilesManager_ClosePanel" xml:space="preserve">
     <value>Close Panel</value>
@@ -4201,5 +4201,30 @@ Start from bottom?</value>
   </data>
   <data name="searchPanel_regularExpressionsCheckBox" xml:space="preserve">
     <value>&amp;Use Regular Expressions</value>
+  </data>
+  <data name="Options_resetOptionsButtonToolTip" xml:space="preserve">
+    <value>Reset options</value>
+  </data>
+  <data name="Options_tabGroupBox2" xml:space="preserve">
+    <value>Fast Tab Switching</value>
+  </data>
+  <data name="Options_tabPictureBox1ToolTip" xml:space="preserve">
+    <value>Open window and switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward)
+Close window and select tab: leave CTRL</value>
+  </data>
+  <data name="Options_tabPictureBox2ToolTip" xml:space="preserve">
+    <value>Open window: CTRL+TAB or CTRL+SHIFT+TAB
+Switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward) or mouse
+Close window: ESC
+Close window and select tab: ENTER or mouse click</value>
+  </data>
+  <data name="Options_tabsSwitchModeKeyboardRadioButton" xml:space="preserve">
+    <value>Keyboard (default)</value>
+  </data>
+  <data name="Options_tabsSwitchModeLabel" xml:space="preserve">
+    <value>Control mode:</value>
+  </data>
+  <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
+    <value>Mouse</value>
   </data>
 </root>

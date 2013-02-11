@@ -7632,7 +7632,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Google translation.
+        ///   Looks up a localized string similar to Google Translation.
         /// </summary>
         internal static string Options_languageGroupBox2 {
             get {
@@ -7812,7 +7812,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Code files.
+        ///   Looks up a localized string similar to Code Files.
         /// </summary>
         internal static string Options_openingGroupBox1 {
             get {
@@ -7821,7 +7821,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to System files.
+        ///   Looks up a localized string similar to System Files.
         /// </summary>
         internal static string Options_openingGroupBox2 {
             get {
@@ -7918,6 +7918,15 @@ namespace DtPad.Languages {
         internal static string Options_renderModeLabel {
             get {
                 return ResourceManager.GetString("Options_renderModeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset options.
+        /// </summary>
+        internal static string Options_resetOptionsButtonToolTip {
+            get {
+                return ResourceManager.GetString("Options_resetOptionsButtonToolTip", resourceCulture);
             }
         }
         
@@ -8150,6 +8159,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fast Tab Switching.
+        /// </summary>
+        internal static string Options_tabGroupBox2 {
+            get {
+                return ResourceManager.GetString("Options_tabGroupBox2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Multiline alignment.
         /// </summary>
         internal static string Options_tabMultilineCheckBox {
@@ -8187,6 +8205,28 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open window and switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward)
+        ///Close window and select tab: leave CTRL.
+        /// </summary>
+        internal static string Options_tabPictureBox1ToolTip {
+            get {
+                return ResourceManager.GetString("Options_tabPictureBox1ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open window: CTRL+TAB or CTRL+SHIFT+TAB
+        ///Switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward) or mouse
+        ///Close window: ESC
+        ///Close window and select tab: ENTER or mouse click.
+        /// </summary>
+        internal static string Options_tabPictureBox2ToolTip {
+            get {
+                return ResourceManager.GetString("Options_tabPictureBox2ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Top (default)
         ///Right
         ///Bottom
@@ -8204,6 +8244,33 @@ namespace DtPad.Languages {
         internal static string Options_tabPositionLabel {
             get {
                 return ResourceManager.GetString("Options_tabPositionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keyboard (default).
+        /// </summary>
+        internal static string Options_tabsSwitchModeKeyboardRadioButton {
+            get {
+                return ResourceManager.GetString("Options_tabsSwitchModeKeyboardRadioButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Control mode:.
+        /// </summary>
+        internal static string Options_tabsSwitchModeLabel {
+            get {
+                return ResourceManager.GetString("Options_tabsSwitchModeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mouse.
+        /// </summary>
+        internal static string Options_tabsSwitchModeMouseRadioButton {
+            get {
+                return ResourceManager.GetString("Options_tabsSwitchModeMouseRadioButton", resourceCulture);
             }
         }
         

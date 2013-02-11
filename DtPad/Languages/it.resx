@@ -4211,4 +4211,29 @@ Ricominciare dalla fine?</value>
   <data name="searchPanel_regularExpressionsCheckBox" xml:space="preserve">
     <value>&amp;Usa espressioni regolari</value>
   </data>
+  <data name="Options_resetOptionsButtonToolTip" xml:space="preserve">
+    <value>Reimposta opzioni</value>
+  </data>
+  <data name="Options_tabGroupBox2" xml:space="preserve">
+    <value>Visuale tab</value>
+  </data>
+  <data name="Options_tabPictureBox1ToolTip" xml:space="preserve">
+    <value>Apri finestra e cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro)
+Chiudi finestra e seleziona tab: lascia CTRL</value>
+  </data>
+  <data name="Options_tabPictureBox2ToolTip" xml:space="preserve">
+    <value>Apri finestra: CTRL+TAB or CTRL+SHIFT+TAB
+Cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro) o mouse
+Chiudi finestra: ESC
+Chiudi finestra e seleziona tab: INVIO o click del mouse</value>
+  </data>
+  <data name="Options_tabsSwitchModeKeyboardRadioButton" xml:space="preserve">
+    <value>Tastiera (default)</value>
+  </data>
+  <data name="Options_tabsSwitchModeLabel" xml:space="preserve">
+    <value>Modalità di controllo:</value>
+  </data>
+  <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
+    <value>Mouse</value>
+  </data>
 </root>
