@@ -1205,19 +1205,45 @@
     <None Include="Images\MessageBoxes\question.png" />
     <None Include="Images\MessageBoxes\info.png" />
     <None Include="Images\MessageBoxes\error.png" />
-    <None Include="SupportFiles\DtPad.exe.cl" />
-    <None Include="SupportFiles\DtPad.exe.ex" />
-    <None Include="SupportFiles\DtPad.exe.fv" />
-    <None Include="SupportFiles\DtPad.exe.no" />
-    <None Include="SupportFiles\DtPad.exe.pw" />
-    <None Include="SupportFiles\DtPad.exe.rf" />
-    <None Include="SupportFiles\DtPad.exe.rp" />
-    <None Include="SupportFiles\DtPad.exe.rs" />
-    <None Include="SupportFiles\DtPad.exe.ru" />
-    <None Include="SupportFiles\DtPad.exe.sf" />
-    <None Include="SupportFiles\DtPad.exe.sh" />
-    <None Include="SupportFiles\DtPad.exe.tm" />
-    <None Include="SupportFiles\DtPad.exe.to" />
+    <None Include="SupportFiles\DtPad.exe.cl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.ex">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.fv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.no">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.pw">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.rf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.rp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.rs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.ru">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.sf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.tm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="SupportFiles\DtPad.exe.to">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
