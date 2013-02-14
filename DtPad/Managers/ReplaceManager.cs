@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using DevExpress.XtraTab;
 using DtPad.Customs;
@@ -117,6 +118,7 @@ namespace DtPad.Managers
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             TextBox replaceTextBox = form.searchPanel.replaceTextBox;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
 
             bool valueFounded = false;
 
@@ -137,12 +139,15 @@ namespace DtPad.Managers
 
             RichTextBoxUtil.CheckAllTextSelected(pageTextBox);
 
-            int positionSearchedText = textWhereToSearch.IndexOf(textToSearch, pageTextBox.SelectionStart);
+            int positionSearchedText;
+            int selectionLength;
+            SearchReplaceUtil.FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchReplaceUtil.SearchType.Next, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+
             if (positionSearchedText != -1)
             {
                 toolStripStatusLabel.Text = String.Format("1 {0}", LanguageUtil.GetCurrentLanguageString("Replaced", className, 1));
                 pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
+                pageTextBox.Select(positionSearchedText, selectionLength);
                 pageTextBox.SelectedText = replaceTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
                 TextManager.RefreshUndoRedoExternal(form);
 
@@ -151,7 +156,7 @@ namespace DtPad.Managers
             }
             else if (!searchInAllFiles)
             {
-                if (textWhereToSearch.IndexOf(textToSearch) == -1)
+                if (SearchReplaceUtil.GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
                 {
                     String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
                     WindowManager.ShowInfoBox(form, notFoundMessage);
@@ -229,6 +234,7 @@ namespace DtPad.Managers
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             TextBox replaceTextBox = form.searchPanel.replaceTextBox;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
 
             bool valueFounded = false;
 
@@ -249,12 +255,15 @@ namespace DtPad.Managers
 
             String subString = textWhereToSearch.Substring(0, pageTextBox.SelectionStart);
 
-            int positionSearchedText = subString.LastIndexOf(textToSearch);
+            int positionSearchedText;
+            int selectionLength;
+            SearchReplaceUtil.FindStringPositionAndLength(subString, textToSearch, SearchReplaceUtil.SearchType.Previous, useRegularExpressionsCheckBox.Checked, pageTextBox, out positionSearchedText, out selectionLength);
+
             if (positionSearchedText != -1)
             {
                 toolStripStatusLabel.Text = String.Format("1 {0}", LanguageUtil.GetCurrentLanguageString("Replaced", className, 1));
                 pageTextBox.Focus();
-                pageTextBox.Select(positionSearchedText, textToSearch.Length);
+                pageTextBox.Select(positionSearchedText, selectionLength);
                 pageTextBox.SelectedText = replaceTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
                 TextManager.RefreshUndoRedoExternal(form);
 
@@ -263,7 +272,7 @@ namespace DtPad.Managers
             }
             else if (!searchInAllFiles)
             {
-                if (textWhereToSearch.IndexOf(textToSearch) == -1)
+                if (SearchReplaceUtil.GetNoMatchesInFile(textWhereToSearch, textToSearch, useRegularExpressionsCheckBox.Checked))
                 {
                     String notFoundMessage = LanguageUtil.GetCurrentLanguageString("NotFound", className);
                     WindowManager.ShowInfoBox(form, notFoundMessage);
@@ -299,6 +308,7 @@ namespace DtPad.Managers
             TextBox replaceTextBox = form.searchPanel.replaceTextBox;
             ToolStripStatusLabel toolStripStatusLabel = form.toolStripStatusLabel;
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
 
             if (String.IsNullOrEmpty(searchTextBox.Text))
             {
@@ -311,7 +321,10 @@ namespace DtPad.Managers
             String textToSearch;
             GetTextCaseNormalization(form, out textWhereToSearch, out textToSearch);
 
-            int positionSearchedText = textWhereToSearch.IndexOf(textToSearch);
+            int positionSearchedText;
+            int selectionLength;
+            SearchReplaceUtil.FindStringPositionAndLength(textWhereToSearch, textToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressionsCheckBox.Checked, textBox, out positionSearchedText, out selectionLength);
+
             if (positionSearchedText != -1)
             {
                 int counter = SearchReplaceUtil.SearchCountOccurency(form, false, true);
@@ -319,11 +332,11 @@ namespace DtPad.Managers
 
                 if (caseCheckBox.Checked)
                 {
-                    textBox.SelectedText = Replace(textBox.Text, GetTextNewLineNormalization(searchTextBox.Text), GetTextNewLineNormalization(replaceTextBox.Text), StringComparison.Ordinal);
+                    textBox.SelectedText = Replace(useRegularExpressionsCheckBox.Checked, textBox.Text, GetTextNewLineNormalization(searchTextBox.Text), GetTextNewLineNormalization(replaceTextBox.Text), StringComparison.Ordinal);
                 }
                 else
                 {
-                    textBox.SelectedText = Replace(textBox.Text, GetTextNewLineNormalization(searchTextBox.Text), GetTextNewLineNormalization(replaceTextBox.Text), StringComparison.OrdinalIgnoreCase);
+                    textBox.SelectedText = Replace(useRegularExpressionsCheckBox.Checked, textBox.Text, GetTextNewLineNormalization(searchTextBox.Text), GetTextNewLineNormalization(replaceTextBox.Text), StringComparison.OrdinalIgnoreCase);
                 }
 
                 TextManager.RefreshUndoRedoExternal(form);
@@ -379,24 +392,29 @@ namespace DtPad.Managers
 
         #region Replace Fastest Methods
 
-        private static String Replace(String original, String pattern, String replacement, StringComparison comparisonType, int stringBuilderInitialSize = -1)
+        private static String Replace(bool useRegularExpressions, String original, String pattern, String replacement, StringComparison comparisonType, int stringBuilderInitialSize = -1)
         {
             if (String.IsNullOrEmpty(original))
             {
                 return String.Empty;
             }
-            
+
             if (String.IsNullOrEmpty(pattern))
             {
                 return original;
             }
-            
+
+            if (useRegularExpressions)
+            {
+                return RegularExpressionReplace(original, pattern, replacement, comparisonType);
+            }
+
             int posCurrent = 0;
             int lenPattern = pattern.Length;
             int idxNext = original.IndexOf(pattern, comparisonType);
 
             StringBuilder result = new StringBuilder(stringBuilderInitialSize < 0 ? Math.Min(4096, original.Length) : stringBuilderInitialSize);
-            
+
             while (idxNext >= 0)
             {
                 result.Append(original, posCurrent, idxNext - posCurrent);
@@ -404,9 +422,28 @@ namespace DtPad.Managers
                 posCurrent = idxNext + lenPattern;
                 idxNext = original.IndexOf(pattern, posCurrent, comparisonType);
             }
-            
+
             result.Append(original, posCurrent, original.Length - posCurrent);
             return result.ToString();
+        }
+
+        private static string RegularExpressionReplace(string original, string pattern, string replacement, StringComparison comparisonType)
+        {
+            RegexOptions options;
+            if (comparisonType == StringComparison.Ordinal)
+            {
+                options = RegexOptions.None;
+            }
+            else if (comparisonType == StringComparison.OrdinalIgnoreCase)
+            {
+                options = RegexOptions.IgnoreCase;
+            }
+            else
+            {
+                // we should never hit this... but just in case
+                throw new ArgumentOutOfRangeException("Unexpected value for comparisonType");
+            }
+            return Regex.Replace(original, pattern, replacement, options);
         }
 
         #endregion Replace Fastest Methods
@@ -418,7 +455,7 @@ namespace DtPad.Managers
             RichTextBox textBox = ProgramUtil.GetPageTextBox(form.pagesTabControl.SelectedTabPage);
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
-            
+
             textWhereToSearch = textBox.Text;
             textToSearch = searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
             FileListManager.SetNewSearchHistory(form, textToSearch);
