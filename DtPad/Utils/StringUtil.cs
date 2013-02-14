@@ -10,7 +10,7 @@ namespace DtPad.Utils
     /// <summary>
     /// String management util.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal static class StringUtil
     {
         #region Internal Methods
@@ -158,7 +158,7 @@ namespace DtPad.Utils
         internal static int SearchCountOccurences(String text, String stringToSearch, Form1 form = null, CustomRichTextBox textBox = null, bool forceDisableHighlight = false, bool useRegularExpressions = false)
         {
             int counter = 0;
-            int i = 0;
+
             bool highlights = false;
             if (!forceDisableHighlight)
             {
@@ -166,51 +166,58 @@ namespace DtPad.Utils
             }
 
             RichTextBox tempRichTextBox = new RichTextBox(); //Temporary RichTextBox to avoid too much undo/redo into buffer
-
-            if (highlights && textBox != null)
+            try
             {
-                textBox.SuspendPainting();
-
-                tempRichTextBox.Rtf = textBox.Rtf;
-                tempRichTextBox.SelectAll();
-                tempRichTextBox.SelectionBackColor = textBox.BackColor;
-            }
-
-            if (textBox != null)
-            {
-                int positionSearchedText;
-                int selectionLength;
-                SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressions, textBox, out positionSearchedText, out selectionLength);
-
-                while (positionSearchedText != -1)
+                if (textBox != null) //Research inside a textbox (usually the pageTextBox)
                 {
                     if (highlights)
                     {
-                        tempRichTextBox.Select(positionSearchedText, selectionLength);
-                        tempRichTextBox.SelectionBackColor = (textBox.BackColor == Color.Yellow) ? Color.Red : Color.Yellow;
+                        textBox.SuspendPainting();
                     }
 
-                    SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.Next, useRegularExpressions, tempRichTextBox, out positionSearchedText, out selectionLength);
-                    counter++;
+                    tempRichTextBox.Rtf = textBox.Rtf;
+                    tempRichTextBox.SelectAll();
+                    tempRichTextBox.SelectionBackColor = textBox.BackColor;
+
+                    int positionSearchedText;
+                    int selectionLength;
+                    SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressions, textBox, out positionSearchedText, out selectionLength);
+
+                    while (positionSearchedText != -1)
+                    {
+                        tempRichTextBox.Select(positionSearchedText, selectionLength);
+
+                        if (highlights)
+                        {
+                            tempRichTextBox.SelectionBackColor = (textBox.BackColor == Color.Yellow) ? Color.Red : Color.Yellow;
+                        }
+
+                        SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.Next, useRegularExpressions, tempRichTextBox, out positionSearchedText, out selectionLength);
+                        counter++;
+                    }
                 }
-            }
-            else
-            {
-                while ((i = text.IndexOf(stringToSearch, i)) != -1)
+                else //Search inside a string
                 {
-                    i += stringToSearch.Length;
-                    counter++;
+                    int i = 0;
+                    while ((i = text.IndexOf(stringToSearch, i)) != -1)
+                    {
+                        i += stringToSearch.Length;
+                        counter++;
+                    }
+                }
+
+                if (textBox != null && highlights)
+                {
+                    textBox.IsHighlighting = true;
+                    RichTextBoxUtil.ReplaceRTFContent(textBox, tempRichTextBox);
+                    textBox.ResumePainting();
+
+                    TextManager.RefreshUndoRedoExternal(form);
                 }
             }
-
-            if (highlights && textBox != null)
+            finally
             {
-                textBox.IsHighlighting = true;
-                RichTextBoxUtil.ReplaceRTFContent(textBox, tempRichTextBox);
-                textBox.ResumePainting();
-
                 tempRichTextBox.Dispose();
-                TextManager.RefreshUndoRedoExternal(form);
             }
 
             return counter;
@@ -226,40 +233,49 @@ namespace DtPad.Utils
             }
 
             RichTextBox tempRichTextBox = new RichTextBox(); //Temporary RichTextBox to avoid too much undo/redo into buffer
-
-            foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
+            try
             {
-                CustomRichTextBox textBox = ProgramUtil.GetPageTextBox(tabPage);
-                textBox.SuspendPainting();
+                foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
+                {
+                    CustomRichTextBox textBox = ProgramUtil.GetPageTextBox(tabPage);
+                    textBox.SuspendPainting();
 
-                tempRichTextBox.Rtf = textBox.Rtf;
-                tempRichTextBox.SelectAll();
-                tempRichTextBox.Font = new Font(textBox.Font, FontStyle.Regular);
-                tempRichTextBox.SelectionBackColor = tempRichTextBox.BackColor;
+                    tempRichTextBox.Rtf = textBox.Rtf;
+                    tempRichTextBox.SelectAll();
+                    tempRichTextBox.Font = new Font(textBox.Font, FontStyle.Regular);
+                    tempRichTextBox.SelectionBackColor = tempRichTextBox.BackColor;
 
-                RichTextBoxUtil.ReplaceRTFContent(textBox, tempRichTextBox);
-                textBox.ResumePainting();
+                    RichTextBoxUtil.ReplaceRTFContent(textBox, tempRichTextBox);
+                    textBox.ResumePainting();
+                }
+            }
+            finally
+            {
+                tempRichTextBox.Dispose();
             }
 
-            tempRichTextBox.Dispose();
             TextManager.RefreshUndoRedoExternal(form);
         }
 
         internal static void ClearHighlightsResults(CustomRichTextBox pageTextBox)
         {
             RichTextBox tempRichTextBox = new RichTextBox(); //Temporary RichTextBox to avoid too much undo/redo into buffer
+            try
+            {
+                pageTextBox.SuspendPainting();
 
-            pageTextBox.SuspendPainting();
+                tempRichTextBox.Rtf = pageTextBox.Rtf;
+                tempRichTextBox.SelectAll();
+                tempRichTextBox.Font = new Font(pageTextBox.Font, FontStyle.Regular);
+                tempRichTextBox.SelectionBackColor = tempRichTextBox.BackColor;
 
-            tempRichTextBox.Rtf = pageTextBox.Rtf;
-            tempRichTextBox.SelectAll();
-            tempRichTextBox.Font = new Font(pageTextBox.Font, FontStyle.Regular);
-            tempRichTextBox.SelectionBackColor = tempRichTextBox.BackColor;
-
-            RichTextBoxUtil.ReplaceRTFContent(pageTextBox, tempRichTextBox);
-            pageTextBox.ResumePainting();
-
-            tempRichTextBox.Dispose();
+                RichTextBoxUtil.ReplaceRTFContent(pageTextBox, tempRichTextBox);
+                pageTextBox.ResumePainting();
+            }
+            finally
+            {
+                tempRichTextBox.Dispose();
+            }
         }
 
         /// <summary>
