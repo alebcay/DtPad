@@ -155,7 +155,7 @@ namespace DtPad.Utils
             return name;
         }
 
-        internal static int SearchCountOccurences(String text, String stringToSearch, Form1 form = null, CustomRichTextBox textBox = null, bool forceDisableHighlight = false)
+        internal static int SearchCountOccurences(String text, String stringToSearch, Form1 form = null, CustomRichTextBox textBox = null, bool forceDisableHighlight = false, bool useRegularExpressions = false)
         {
             int counter = 0;
             int i = 0;
@@ -176,16 +176,31 @@ namespace DtPad.Utils
                 tempRichTextBox.SelectionBackColor = textBox.BackColor;
             }
 
-            while ((i = text.IndexOf(stringToSearch, i)) != -1)
+            if (textBox != null)
             {
-                if (highlights && textBox != null)
-                {
-                    tempRichTextBox.Select(i, stringToSearch.Length);
-                    tempRichTextBox.SelectionBackColor = (textBox.BackColor == Color.Yellow) ? Color.Red : Color.Yellow;
-                }
+                int positionSearchedText;
+                int selectionLength;
+                SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressions, textBox, out positionSearchedText, out selectionLength);
 
-                i += stringToSearch.Length;
-                counter++;
+                while (positionSearchedText != -1)
+                {
+                    if (highlights)
+                    {
+                        tempRichTextBox.Select(positionSearchedText, selectionLength);
+                        tempRichTextBox.SelectionBackColor = (textBox.BackColor == Color.Yellow) ? Color.Red : Color.Yellow;
+                    }
+
+                    SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.Next, useRegularExpressions, tempRichTextBox, out positionSearchedText, out selectionLength);
+                    counter++;
+                }
+            }
+            else
+            {
+                while ((i = text.IndexOf(stringToSearch, i)) != -1)
+                {
+                    i += stringToSearch.Length;
+                    counter++;
+                }
             }
 
             if (highlights && textBox != null)

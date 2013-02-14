@@ -11,7 +11,7 @@ namespace DtPad.Managers
     /// <summary>
     /// Text replace manager.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, Derek Morin</author>
     internal static class ReplaceManager
     {
         private const String className = "ReplaceManager";
@@ -427,22 +427,23 @@ namespace DtPad.Managers
             return result.ToString();
         }
 
-        private static string RegularExpressionReplace(string original, string pattern, string replacement, StringComparison comparisonType)
+        private static String RegularExpressionReplace(String original, String pattern, String replacement, StringComparison comparisonType)
         {
             RegexOptions options;
-            if (comparisonType == StringComparison.Ordinal)
+
+            switch (comparisonType)
             {
-                options = RegexOptions.None;
+                case StringComparison.Ordinal:
+                    options = RegexOptions.None;
+                    break;
+                case StringComparison.OrdinalIgnoreCase:
+                    options = RegexOptions.IgnoreCase;
+                    break;
+
+                default:
+                    throw new ArgumentOutOfRangeException("comparisonType"); //"Unexpected value for comparisonType"
             }
-            else if (comparisonType == StringComparison.OrdinalIgnoreCase)
-            {
-                options = RegexOptions.IgnoreCase;
-            }
-            else
-            {
-                // we should never hit this... but just in case
-                throw new ArgumentOutOfRangeException("Unexpected value for comparisonType");
-            }
+
             return Regex.Replace(original, pattern, replacement, options);
         }
 

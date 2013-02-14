@@ -27,6 +27,7 @@ namespace DtPad.Utils
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CheckBox caseCheckBox = form.searchPanel.caseCheckBox;
             TextBox searchTextBox = form.searchPanel.searchTextBox;
+            CheckBox useRegularExpressionsCheckBox = form.searchPanel.regularExpressionsCheckBox;
 
             int counter = 0;
             String stringToSearch = !String.IsNullOrEmpty(specificTextToSearch) ? specificTextToSearch : searchTextBox.Text.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
@@ -44,7 +45,7 @@ namespace DtPad.Utils
                         text = text.ToLower();
                     }
 
-                    counter += StringUtil.SearchCountOccurences(text, stringToSearch, form, pageTextBox, forceDisableHighlight);
+                    counter += StringUtil.SearchCountOccurences(text, stringToSearch, form, pageTextBox, forceDisableHighlight, useRegularExpressionsCheckBox.Checked);
                 }
             }
             else
@@ -58,13 +59,13 @@ namespace DtPad.Utils
                     text = text.ToLower();
                 }
 
-                counter = StringUtil.SearchCountOccurences(text, stringToSearch, form, pageTextBox, forceDisableHighlight);
+                counter = StringUtil.SearchCountOccurences(text, stringToSearch, form, pageTextBox, forceDisableHighlight, useRegularExpressionsCheckBox.Checked);
             }
 
             return counter;
         }
 
-        internal static void FindStringPositionAndLength(String textWhereToSearch, String textToSearch, SearchType searchType, bool useRegularExpressions, CustomRichTextBox pageTextBox, out int positionSearchedText, out int selectionLength)
+        internal static void FindStringPositionAndLength(String textWhereToSearch, String textToSearch, SearchType searchType, bool useRegularExpressions, RichTextBox pageTextBox, out int positionSearchedText, out int selectionLength)
         {
             positionSearchedText = -1;
             selectionLength = -1;
