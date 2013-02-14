@@ -170,18 +170,13 @@ namespace DtPad.Utils
             {
                 if (textBox != null) //Research inside a textbox (usually the pageTextBox)
                 {
-                    if (highlights)
-                    {
-                        textBox.SuspendPainting();
-                    }
-
                     tempRichTextBox.Rtf = textBox.Rtf;
                     tempRichTextBox.SelectAll();
                     tempRichTextBox.SelectionBackColor = textBox.BackColor;
 
                     int positionSearchedText;
                     int selectionLength;
-                    SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressions, textBox, out positionSearchedText, out selectionLength);
+                    SearchReplaceUtil.FindStringPositionAndLength(text, stringToSearch, SearchReplaceUtil.SearchType.First, useRegularExpressions, tempRichTextBox, out positionSearchedText, out selectionLength);
 
                     while (positionSearchedText != -1)
                     {
@@ -210,7 +205,6 @@ namespace DtPad.Utils
                 {
                     textBox.IsHighlighting = true;
                     RichTextBoxUtil.ReplaceRTFContent(textBox, tempRichTextBox);
-                    textBox.ResumePainting();
 
                     TextManager.RefreshUndoRedoExternal(form);
                 }

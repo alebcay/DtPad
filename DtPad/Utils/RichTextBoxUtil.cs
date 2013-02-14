@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using DtPad.Customs;
 
 namespace DtPad.Utils
 {
@@ -17,15 +18,19 @@ namespace DtPad.Utils
                 return;
             }
 
+            if (destination is CustomRichTextBox)
+            {
+                ((CustomRichTextBox)destination).SuspendPainting();
+            }
+
             destination.SelectAll();
             source.SelectAll();
             destination.SelectedRtf = source.SelectedRtf;
 
-            //destination.SelectAll();
-            //destination.SelectedRtf = source.Rtf;
-
-            //source.SelectAll();
-            //destination.Rtf = source.SelectedRtf;
+            if (destination is CustomRichTextBox)
+            {
+                ((CustomRichTextBox)destination).ResumePainting();
+            }
         }
 
         internal static bool ContainsUnderlineText(RichTextBox richTextBox)
