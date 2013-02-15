@@ -330,7 +330,7 @@
             // replaceLabel
             // 
             this.replaceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.replaceLabel.Location = new System.Drawing.Point(3, 60);
+            this.replaceLabel.Location = new System.Drawing.Point(3, 58);
             this.replaceLabel.Name = "replaceLabel";
             this.replaceLabel.Size = new System.Drawing.Size(80, 30);
             this.replaceLabel.TabIndex = 1;
@@ -340,11 +340,11 @@
             // searchLabel
             // 
             this.searchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchLabel.Location = new System.Drawing.Point(3, 5);
+            this.searchLabel.Location = new System.Drawing.Point(3, 3);
             this.searchLabel.Name = "searchLabel";
             this.searchLabel.Size = new System.Drawing.Size(80, 52);
             this.searchLabel.TabIndex = 0;
-            this.searchLabel.Text = "Search:";
+            this.searchLabel.Text = "Search Text:";
             this.searchLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // SearchPanel
