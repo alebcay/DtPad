@@ -70,7 +70,7 @@
             this.searchTextBox.Multiline = true;
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.searchTextBox.Size = new System.Drawing.Size(576, 57);
+            this.searchTextBox.Size = new System.Drawing.Size(569, 57);
             this.searchTextBox.TabIndex = 0;
             this.searchTextBox.Tag = "DontTranslate";
             // 
@@ -81,7 +81,7 @@
             this.replaceTextBox.Multiline = true;
             this.replaceTextBox.Name = "replaceTextBox";
             this.replaceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.replaceTextBox.Size = new System.Drawing.Size(576, 37);
+            this.replaceTextBox.Size = new System.Drawing.Size(569, 37);
             this.replaceTextBox.TabIndex = 1;
             this.replaceTextBox.Tag = "DontTranslate";
             // 
@@ -258,9 +258,9 @@
             this.searchReplaceCentralPanel.Controls.Add(this.searchTextBox);
             this.searchReplaceCentralPanel.Controls.Add(this.replaceTextBox);
             this.searchReplaceCentralPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.searchReplaceCentralPanel.Location = new System.Drawing.Point(82, 25);
+            this.searchReplaceCentralPanel.Location = new System.Drawing.Point(89, 25);
             this.searchReplaceCentralPanel.Name = "searchReplaceCentralPanel";
-            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(576, 94);
+            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(569, 94);
             this.searchReplaceCentralPanel.TabIndex = 2;
             // 
             // rightSearchReplacePanel
@@ -324,7 +324,7 @@
             this.searchReplaceLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.searchReplaceLeftPanel.Location = new System.Drawing.Point(0, 25);
             this.searchReplaceLeftPanel.Name = "searchReplaceLeftPanel";
-            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(82, 94);
+            this.searchReplaceLeftPanel.Size = new System.Drawing.Size(89, 94);
             this.searchReplaceLeftPanel.TabIndex = 1;
             // 
             // replaceLabel
@@ -332,7 +332,7 @@
             this.replaceLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.replaceLabel.Location = new System.Drawing.Point(3, 60);
             this.replaceLabel.Name = "replaceLabel";
-            this.replaceLabel.Size = new System.Drawing.Size(73, 30);
+            this.replaceLabel.Size = new System.Drawing.Size(80, 30);
             this.replaceLabel.TabIndex = 1;
             this.replaceLabel.Text = "Replace With:";
             this.replaceLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -342,7 +342,7 @@
             this.searchLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.searchLabel.Location = new System.Drawing.Point(3, 5);
             this.searchLabel.Name = "searchLabel";
-            this.searchLabel.Size = new System.Drawing.Size(73, 52);
+            this.searchLabel.Size = new System.Drawing.Size(80, 52);
             this.searchLabel.TabIndex = 0;
             this.searchLabel.Text = "Search:";
             this.searchLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
