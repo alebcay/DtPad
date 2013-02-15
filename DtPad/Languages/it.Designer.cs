@@ -6989,7 +6989,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sei sicuro di voler ripristinare le opzioni di default?
+        ///   Looks up a localized string similar to Sei sicuro di voler ripristinare le impostazioni di default?
         ///Tutte le impostazioni salvate andranno perse!.
         /// </summary>
         internal static string OptionManager_SureReset {
@@ -9477,7 +9477,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cerca:.
+        ///   Looks up a localized string similar to Cerca testo:.
         /// </summary>
         internal static string searchPanel_searchLabel {
             get {

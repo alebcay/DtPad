@@ -712,7 +712,7 @@ Cordiali saluti,</value>
     <value>C&amp;erca in tutti i tab</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
-    <value>Cerca:</value>
+    <value>Cerca testo:</value>
   </data>
   <data name="Form1_Title" xml:space="preserve">
     <value>DtPad - Senza titolo</value>
@@ -2567,7 +2567,7 @@ Clicca qui per avviare l'aggiornamento.</value>
 Il test ha richiesto più di {0} secondi per essere completato.</value>
   </data>
   <data name="OptionManager_SureReset" xml:space="preserve">
-    <value>Sei sicuro di voler ripristinare le opzioni di default?
+    <value>Sei sicuro di voler ripristinare le impostazioni di default?
 Tutte le impostazioni salvate andranno perse!</value>
   </data>
   <data name="notePanel_exportNotesToolStripSplitButton" xml:space="preserve">

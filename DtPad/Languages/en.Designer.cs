@@ -6986,7 +6986,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Are you sure to reset options to default?
+        ///   Looks up a localized string similar to Are you sure to reset settings to default?
         ///All saved settings will get lost!.
         /// </summary>
         internal static string OptionManager_SureReset {
@@ -7922,7 +7922,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Reset options.
+        ///   Looks up a localized string similar to Reset settings.
         /// </summary>
         internal static string Options_resetOptionsButtonToolTip {
             get {
@@ -8205,7 +8205,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open window and switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward)
+        ///   Looks up a localized string similar to Open window and switch tab: CTRL+TAB (forward) or CTRL+SHIFT+TAB (backward)
         ///Close window and select tab: leave CTRL.
         /// </summary>
         internal static string Options_tabPictureBox1ToolTip {
@@ -8216,7 +8216,7 @@ namespace DtPad.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Open window: CTRL+TAB or CTRL+SHIFT+TAB
-        ///Switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward) or mouse
+        ///Switch tab: CTRL+TAB (forward) or CTRL+SHIFT+TAB (backward) or mouse
         ///Close window: ESC
         ///Close window and select tab: ENTER or mouse click.
         /// </summary>
@@ -9474,7 +9474,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search:.
+        ///   Looks up a localized string similar to Search Text:.
         /// </summary>
         internal static string searchPanel_searchLabel {
             get {

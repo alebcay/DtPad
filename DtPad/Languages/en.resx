@@ -758,7 +758,7 @@ Best regards,</value>
     <value>&amp;Search Into All Tabs</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
-    <value>Search:</value>
+    <value>Search Text:</value>
   </data>
   <data name="Form1_Title" xml:space="preserve">
     <value>DtPad - Untitled</value>
@@ -2612,7 +2612,7 @@ Click here to execute update process.</value>
 Test required more then {0} second to be completed.</value>
   </data>
   <data name="OptionManager_SureReset" xml:space="preserve">
-    <value>Are you sure to reset options to default?
+    <value>Are you sure to reset settings to default?
 All saved settings will get lost!</value>
   </data>
   <data name="notePanel_exportNotesToolStripSplitButton" xml:space="preserve">
@@ -4203,18 +4203,18 @@ Start from bottom?</value>
     <value>&amp;Use Regular Expressions</value>
   </data>
   <data name="Options_resetOptionsButtonToolTip" xml:space="preserve">
-    <value>Reset options</value>
+    <value>Reset settings</value>
   </data>
   <data name="Options_tabGroupBox2" xml:space="preserve">
     <value>Fast Tab Switching</value>
   </data>
   <data name="Options_tabPictureBox1ToolTip" xml:space="preserve">
-    <value>Open window and switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward)
+    <value>Open window and switch tab: CTRL+TAB (forward) or CTRL+SHIFT+TAB (backward)
 Close window and select tab: leave CTRL</value>
   </data>
   <data name="Options_tabPictureBox2ToolTip" xml:space="preserve">
     <value>Open window: CTRL+TAB or CTRL+SHIFT+TAB
-Switch tab: CTRL+TAB (foward) or CTRL+SHIFT+TAB (backward) or mouse
+Switch tab: CTRL+TAB (forward) or CTRL+SHIFT+TAB (backward) or mouse
 Close window: ESC
 Close window and select tab: ENTER or mouse click</value>
   </data>

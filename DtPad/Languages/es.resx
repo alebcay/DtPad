@@ -124,16 +124,17 @@
     <value>Marco Macciò</value>
   </data>
   <data name="About_createdByLabel1" xml:space="preserve">
-    <value>Creado por:</value>
+    <value>Escrito por:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
-    <value>DtPad (2009-2012) tiene licencia Apache License, Version 2.0,
+    <value>DtPad (2009-2013) tiene licencia Apache License, Version 2.0,
 - apache.org/licenses/LICENSE-2.0
 
 Esta aplicación requiere Microsoft .NET Framework 4 y utilizar el registro de Windows sólo para salvar el asociación &quot;Abrir con&quot; en el menú contextual del Explorador de Windows.
 
-Traducción al francés por: Alain Buferne.
-Traducción al ruso por: Artem Vakhitov.
+Con la participación de: Derek Morin (desarrollo).
+
+Traducción por: Alain Buferne (francés), Artem Vakhitov (ruso).
 
 Conjunto principal de iconos por: Delacro.
 - delacro.deviantart.com
@@ -169,7 +170,7 @@ DtPad no recoge ninguna información sobre el uso y los usuarios. Información q
     <value>Escribir un e-mail al autor de DtPad </value>
   </data>
   <data name="About_rssPictureBoxToolTip" xml:space="preserve">
-    <value>Leer feed RSS de diariotraduttore.com</value>
+    <value>Leer feed RSS de DtPad en CodePlex</value>
   </data>
   <data name="About_Title" xml:space="preserve">
     <value>Sobre</value>
@@ -181,13 +182,13 @@ DtPad no recoge ninguna información sobre el uso y los usuarios. Información q
     <value>Versión:</value>
   </data>
   <data name="About_websiteLabel" xml:space="preserve">
-    <value>diariotraduttore.com</value>
+    <value>dtpad.codeplex.com</value>
   </data>
   <data name="About_websiteLabel1" xml:space="preserve">
     <value>Sitio web:</value>
   </data>
   <data name="About_websitePictureBoxToolTip" xml:space="preserve">
-    <value>Visita la página del autor de DtPad</value>
+    <value>Visita la página del proyecto en CodePlex</value>
   </data>
   <data name="DatetimeSelect_cancelButton" xml:space="preserve">
     <value>Cancelar</value>
@@ -721,7 +722,7 @@ Saludos cordiales,</value>
     <value>Error</value>
   </data>
   <data name="searchPanel_caseCheckBox" xml:space="preserve">
-    <value>Mayúsculas/minúsculas</value>
+    <value>&amp;Mayúsculas/minúsculas</value>
   </data>
   <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
     <value>Cerrar todo</value>
@@ -733,7 +734,7 @@ Saludos cordiales,</value>
     <value>Ruta y nombre de archivo</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Bucle al final de archivo</value>
+    <value>&amp;Bucle al final de archivo</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>Nuevo</value>
@@ -754,10 +755,10 @@ Saludos cordiales,</value>
     <value>Guardar</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>Buscar en todas pestañas</value>
+    <value>Buscar en &amp;todas pestañas</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
-    <value>Buscar:</value>
+    <value>Buscar texto:</value>
   </data>
   <data name="Form1_Title" xml:space="preserve">
     <value>DtPad - Sin título</value>
@@ -984,7 +985,7 @@ Complete la información de extensiones para proceder.</value>
     <value>Eliminar</value>
   </data>
   <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
-    <value>Diario di un traduttore</value>
+    <value>DtPad en CodePlex</value>
   </data>
   <data name="Form1_doubleReturnToReturnToolStripMenuItem" xml:space="preserve">
     <value>Dos retornos de carro en uno</value>
@@ -1840,17 +1841,8 @@ Los cambios no guardados se perderán.</value>
     <value>Todas las pestañas guardado con éxito!
 Haga clic en Aceptar para proceder a la selección del nombre del archivo de sesión.</value>
   </data>
-  <data name="About_createdByLabel_FE" xml:space="preserve">
-    <value>Marco Macciò</value>
-  </data>
   <data name="About_titleLabel_FE" xml:space="preserve">
     <value>DtPad - Family Edition</value>
-  </data>
-  <data name="About_websiteLabel1_FE" xml:space="preserve">
-    <value>Copyright:</value>
-  </data>
-  <data name="About_websiteLabel_FE" xml:space="preserve">
-    <value>2012</value>
   </data>
   <data name="Welcome_signLabel_FE" xml:space="preserve">
     <value>Marco Macciò</value>
@@ -2619,7 +2611,7 @@ Haga clic aquí para ejecutar el proceso de actualización.</value>
 Prueba requiere más de {0} segundos para completarse.</value>
   </data>
   <data name="OptionManager_SureReset" xml:space="preserve">
-    <value>¿Está seguro que desea restablecer las opciones predeterminadas?
+    <value>¿Está seguro que desea restablecer los ajustes predeterminados?
 Todos los ajustes guardados se perderán!</value>
   </data>
   <data name="notePanel_exportNotesToolStripSplitButton" xml:space="preserve">
@@ -4188,5 +4180,51 @@ Introducir todos los campos antes de continuar.</value>
   </data>
   <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
     <value>Ajuste de línea</value>
+  </data>
+  <data name="FileExplorerManager_AccessDenied" xml:space="preserve">
+    <value>El acceso a la ruta {0} es negado</value>
+  </data>
+  <data name="FileExplorerManager_SureToWait" xml:space="preserve">
+    <value>La exploración puede tardar algunos segundos o minutos de espera para completar.
+Está seguro que desea continuar?</value>
+  </data>
+  <data name="ZipExtract_selectAllButton" xml:space="preserve">
+    <value>Seleccionar todo</value>
+  </data>
+  <data name="ReplaceManager_EOF" xml:space="preserve">
+    <value>Fin del documento alcanzado.
+¿Start desde el principio?</value>
+  </data>
+  <data name="ReplaceManager_SOF" xml:space="preserve">
+    <value>Inicio del documento alcanzado.
+¿Empezar desde abajo?</value>
+  </data>
+  <data name="searchPanel_regularExpressionsCheckBox" xml:space="preserve">
+    <value>&amp;Usar expresiones regulares</value>
+  </data>
+  <data name="Options_resetOptionsButtonToolTip" xml:space="preserve">
+    <value>Restablecer ajustes</value>
+  </data>
+  <data name="Options_tabGroupBox2" xml:space="preserve">
+    <value>Vista de pestañas</value>
+  </data>
+  <data name="Options_tabPictureBox1ToolTip" xml:space="preserve">
+    <value>Abrir la ventana y cambiar la pestaña: CTRL+TAB (hacia delante) o CTRL+SHIFT+TAB (hacia atrás)
+Cerrar ventana y seleccionar la pestaña: dejar CTRL</value>
+  </data>
+  <data name="Options_tabPictureBox2ToolTip" xml:space="preserve">
+    <value>Abrir la ventana: CTRL+TAB o CTRL+SHIFT+TAB
+Cambiar la pestaña: CTRL+TAB (hacia delante) o CTRL+SHIFT+TAB (hacia atrás) o mouse
+Cerrar la ventana: ESC
+Cerrar la ventana y seleccionar la pestaña: ENTER o clic con el mouse</value>
+  </data>
+  <data name="Options_tabsSwitchModeKeyboardRadioButton" xml:space="preserve">
+    <value>Teclado (predeterminado)</value>
+  </data>
+  <data name="Options_tabsSwitchModeLabel" xml:space="preserve">
+    <value>Modo de control:</value>
+  </data>
+  <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
+    <value>Mouse</value>
   </data>
 </root>
