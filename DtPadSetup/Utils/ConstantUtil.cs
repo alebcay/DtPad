@@ -22,8 +22,7 @@ namespace DtPadSetup.Utils
                                                                      "    <add key=\"ProxyUsername\" value=\"\" />" + Environment.NewLine +
                                                                      "    <add key=\"ProxyPassword\" value=\"\" />" + Environment.NewLine +
                                                                      "    <add key=\"ProxyDomain\" value=\"\" />" + Environment.NewLine +
-                                                                     "    <add key=\"DropboxUsername\" value=\"\" />" + Environment.NewLine +
-                                                                     "    <add key=\"DropboxPassword\" value=\"\" />" + Environment.NewLine +
+                                                                     "    <add key=\"LastDropboxAccessToken\" value=\"\" />" + Environment.NewLine +
                                                                      "  </appSettings>" + Environment.NewLine + Environment.NewLine + "</configuration>" +
                                                                      Environment.NewLine;
         internal const String defaultKey = "392346f9-ef82-4cf5-8edb-0f80870f3684";

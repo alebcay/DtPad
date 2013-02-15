@@ -21,32 +21,33 @@ namespace DtPad.Utils
 
         #region Internal Methods
 
-        //internal static String GetStringParameter(String parameterName)
-        //{
-        //    Configuration configuration = GetPasswordConfig();
+        internal static String GetStringParameter(String parameterName)
+        {
+            //Configuration configuration = GetPasswordConfig();
 
-        //    try
-        //    {
-        //        String parameterValue = configuration.AppSettings.Settings[parameterName].Value;
-        //        if (parameterValue == null)
-        //        {
-        //            throw new ConfigException(String.Format(LanguageUtil.GetCurrentLanguageString("NoValue", className), parameterName));
-        //        }
+            //try
+            //{
+            //    String parameterValue = configuration.AppSettings.Settings[parameterName].Value;
+            //    if (parameterValue == null)
+            //    {
+            //        throw new ConfigException(String.Format(LanguageUtil.GetCurrentLanguageString("NoValue", className), parameterName));
+            //    }
 
-        //        return parameterValue;
-        //    }
-        //    catch (Exception)
-        //    {
-        //        String parameterDefault = ConstantUtil.GetAppConfigDefault(parameterName);
-        //        UpdateParameter(parameterName, parameterDefault);
-        //        return parameterDefault;
-        //    }
-        //    finally
-        //    {
-        //        EncryptPasswordConfig();
-        //    }
-        //}
+            //    return parameterValue;
+            //}
+            //catch (Exception)
+            //{
+            //    String parameterDefault = ConstantUtil.GetAppConfigDefault(parameterName);
+            //    UpdateParameter(parameterName, parameterDefault);
+            //    return parameterDefault;
+            //}
+            //finally
+            //{
+            //    EncryptPasswordConfig();
+            //}
 
+            return GetStringParameters(new[] { parameterName })[0].value;
+        }
         internal static List<PasswordObject> GetStringParameters(IEnumerable<String> parameterNames)
         {
             Configuration configuration = GetPasswordConfig();
@@ -67,7 +68,7 @@ namespace DtPad.Utils
                 catch (Exception)
                 {
                     String parameterDefault = ConstantUtil.GetAppConfigDefault(parameterName);
-                    UpdateParameter(parameterName, parameterDefault);
+                    DoUpdateParameter(parameterName, parameterDefault);
                     passwordList.Add(new PasswordObject(parameterName, parameterDefault));
                 }
             }
@@ -77,6 +78,10 @@ namespace DtPad.Utils
             return passwordList;
         }
 
+        internal static void UpdateParameter(String parameterName, String parameterValue)
+        {
+            UpdateParameters(new[] { parameterName }, new[] { parameterValue });
+        }
         internal static void UpdateParameters(String[] parameterNames, String[] parameterValues)
         {
             try
@@ -108,7 +113,7 @@ namespace DtPad.Utils
 
         #region Private Methods
 
-        private static void UpdateParameter(String parameterName, String parameterValue)
+        private static void DoUpdateParameter(String parameterName, String parameterValue)
         {
             Configuration configuration = GetPasswordConfig();
 

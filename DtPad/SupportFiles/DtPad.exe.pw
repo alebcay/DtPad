@@ -7,8 +7,7 @@
     <add key="ProxyUsername" value="" />
     <add key="ProxyPassword" value="" />
     <add key="ProxyDomain" value="" />
-    <add key="DropboxUsername" value="" />
-    <add key="DropboxPassword" value="" />
+    <add key="LastDropboxAccessToken" value="" />
   </appSettings>
   
 </configuration>

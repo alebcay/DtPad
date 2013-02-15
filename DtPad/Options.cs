@@ -64,7 +64,7 @@ namespace DtPad
 
             previousHighlightURL = ConfigUtil.GetBoolParameter("HighlightURL");
             previousLanguage = ConfigUtil.GetStringParameter("Language"); //languageComboBox.SelectedItem.ToString();
-            List<PasswordObject> passwordList = PasswordUtil.GetStringParameters(new[] { "ProxyUsername", "ProxyPassword", "ProxyDomain", "DropboxUsername", "DropboxPassword" });
+            List<PasswordObject> passwordList = PasswordUtil.GetStringParameters(new[] { "ProxyUsername", "ProxyPassword", "ProxyDomain" });
             OptionManager.CheckProxyStatusEnabled(this);
             int periodicVersionCheck = ConfigUtil.GetIntParameter("PeriodicVersionCheck");
             previousSendTo = ShellManager.ExistsSendToLink();

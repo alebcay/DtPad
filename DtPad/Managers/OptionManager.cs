@@ -289,7 +289,7 @@ namespace DtPad.Managers
 
             foreach (KeyValuePair<String, String> keyValuePair in ConstantUtil.AppConfigDefaults)
             {
-                ConfigUtil.UpdateParameter(keyValuePair.Key, keyValuePair.Value);
+                ConfigUtil.UpdateParameter(keyValuePair.Key, keyValuePair.Value, true);
 
                 switch (keyValuePair.Key)
                 {

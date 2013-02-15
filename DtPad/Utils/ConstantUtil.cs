@@ -91,8 +91,7 @@ namespace DtPad.Utils
                                                                      "    <add key=\"ProxyUsername\" value=\"\" />" + Environment.NewLine +
                                                                      "    <add key=\"ProxyPassword\" value=\"\" />" + Environment.NewLine +
                                                                      "    <add key=\"ProxyDomain\" value=\"\" />" + Environment.NewLine +
-                                                                     "    <add key=\"DropboxUsername\" value=\"\" />" + Environment.NewLine +
-                                                                     "    <add key=\"DropboxPassword\" value=\"\" />" + Environment.NewLine +
+                                                                     "    <add key=\"LastDropboxAccessToken\" value=\"\" />" + Environment.NewLine +
                                                                      "  </appSettings>" + Environment.NewLine + Environment.NewLine + "</configuration>" +
                                                                      Environment.NewLine;
         internal const String columnsHeader = "        10        20        30        40        50        60        70        80        90        100       110       120       130       140       150       160       170       180       190       200       210       220       230       240       250" + newLineNotCompatible +
@@ -439,7 +438,6 @@ namespace DtPad.Utils
             new KeyValuePair<String, String>("RecreateJumpList", "True"),
             new KeyValuePair<String, String>("EnableDropboxDelete", "False"),
             new KeyValuePair<String, String>("RememberDropboxAccess", "True"),
-            new KeyValuePair<String, String>("LastDropboxAccessToken", String.Empty),
             new KeyValuePair<String, String>("IgnoreNullChar", "False"),
             new KeyValuePair<String, String>("NoteModeTabs", "False"),
             new KeyValuePair<String, String>("NoteModeSizeX", "400"),
@@ -449,7 +447,8 @@ namespace DtPad.Utils
 
             new KeyValuePair<String, String>("ProxyUsername", String.Empty),
             new KeyValuePair<String, String>("ProxyPassword", String.Empty),
-            new KeyValuePair<String, String>("ProxyDomain", String.Empty)
+            new KeyValuePair<String, String>("ProxyDomain", String.Empty),
+            new KeyValuePair<String, String>("LastDropboxAccessToken", String.Empty)
         };
 
         #endregion Internal ValuePair

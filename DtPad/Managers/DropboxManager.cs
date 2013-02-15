@@ -54,8 +54,8 @@ namespace DtPad.Managers
 
                 try //I try to authenticate myself with previous access token
                 {
-                    using (Stream tokenStream = new MemoryStream(Encoding.UTF8.GetBytes(ConfigUtil.GetStringParameter("LastDropboxAccessToken"))))
-                    { 
+                    using (Stream tokenStream = new MemoryStream(Encoding.UTF8.GetBytes(PasswordUtil.GetStringParameter("LastDropboxAccessToken")))) //ConfigUtil.GetStringParameter("LastDropboxAccessToken")
+                    {
                         if (tokenStream.Length == 0)
                         {
                             throw new UnauthorizedAccessException();
@@ -100,12 +100,12 @@ namespace DtPad.Managers
                     {
                         using (Stream tokenStream = cloudStorage.SerializeSecurityToken(accessToken))
                         {
-                            ConfigUtil.UpdateParameter("LastDropboxAccessToken", new StreamReader(tokenStream).ReadToEnd());
+                            PasswordUtil.UpdateParameter("LastDropboxAccessToken", new StreamReader(tokenStream).ReadToEnd()); //ConfigUtil.UpdateParameter("LastDropboxAccessToken", new StreamReader(tokenStream).ReadToEnd());
                         }
                     }
                     else
                     {
-                        ConfigUtil.UpdateParameter("LastDropboxAccessToken", String.Empty);
+                        PasswordUtil.UpdateParameter("LastDropboxAccessToken", String.Empty); //ConfigUtil.UpdateParameter("LastDropboxAccessToken", String.Empty);
                     }
 
                     toolStripStatusLabel.Text = LanguageUtil.GetCurrentLanguageString("DropboxLogIn", className);
@@ -136,7 +136,7 @@ namespace DtPad.Managers
 
             form.LastDropboxFolder = String.Empty;
             cloudStorage.Close();
-            ConfigUtil.UpdateParameter("LastDropboxAccessToken", String.Empty);
+            PasswordUtil.UpdateParameter("LastDropboxAccessToken", String.Empty); //ConfigUtil.UpdateParameter("LastDropboxAccessToken", String.Empty);
 
             toolStripStatusLabel.Text = LanguageUtil.GetCurrentLanguageString("DropboxLogOut", className);
         }

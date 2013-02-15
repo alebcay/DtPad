@@ -156,7 +156,7 @@ namespace DtPad.Utils
             }
         }
 
-        internal static void UpdateParameter(String parameterName, String parameterValue)
+        internal static void UpdateParameter(String parameterName, String parameterValue, bool disableAddNewSettings = false)
         {
             Configuration appConfig = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
@@ -164,7 +164,7 @@ namespace DtPad.Utils
             {
                 appConfig.AppSettings.Settings[parameterName].Value = parameterValue;
             }
-            else
+            else if (!disableAddNewSettings)
             {
                 appConfig.AppSettings.Settings.Add(parameterName, parameterValue);
             }
