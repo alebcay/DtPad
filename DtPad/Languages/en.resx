@@ -1012,25 +1012,25 @@ Do you want to save the changes?</value>
     <value>File</value>
   </data>
   <data name="searchPanel_findFirstToolStripButton" xml:space="preserve">
-    <value>Find First</value>
+    <value>First</value>
   </data>
   <data name="Form1_findFirstToolStripMenuItem" xml:space="preserve">
     <value>Find First</value>
   </data>
   <data name="searchPanel_findLastToolStripButton" xml:space="preserve">
-    <value>Find Last</value>
+    <value>Last</value>
   </data>
   <data name="Form1_findLastToolStripMenuItem" xml:space="preserve">
     <value>Find Last</value>
   </data>
   <data name="searchPanel_findNextToolStripButton" xml:space="preserve">
-    <value>Find Next</value>
+    <value>Next</value>
   </data>
   <data name="Form1_findNextToolStripMenuItem" xml:space="preserve">
     <value>Find Next</value>
   </data>
   <data name="searchPanel_findPreviousToolStripButton" xml:space="preserve">
-    <value>Find Previous</value>
+    <value>Previous</value>
   </data>
   <data name="Form1_findPreviousToolStripMenuItem" xml:space="preserve">
     <value>Find Previous</value>
@@ -1162,22 +1162,22 @@ Do you want to save the changes?</value>
     <value>Remove</value>
   </data>
   <data name="searchPanel_replaceAllToolStripButton" xml:space="preserve">
-    <value>Replace All</value>
+    <value>All</value>
   </data>
   <data name="Form1_replaceAllToolStripMenuItem" xml:space="preserve">
     <value>Replace All</value>
   </data>
   <data name="searchPanel_replacePreviousToolStripButton" xml:space="preserve">
-    <value>Replace Previous</value>
+    <value>Previous</value>
   </data>
   <data name="Form1_replacePreviousToolStripMenuItem" xml:space="preserve">
     <value>Replace Previous</value>
   </data>
   <data name="searchPanel_replaceToolStripButton2" xml:space="preserve">
-    <value>Replace</value>
+    <value>Next</value>
   </data>
   <data name="Form1_replaceToolStripMenuItem" xml:space="preserve">
-    <value>Replace</value>
+    <value>Replace Next</value>
   </data>
   <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
     <value>Report Bug...</value>
@@ -4226,5 +4226,11 @@ Close window and select tab: ENTER or mouse click</value>
   </data>
   <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
     <value>Mouse</value>
+  </data>
+  <data name="searchPanel_findToolStripLabel" xml:space="preserve">
+    <value>Find:</value>
+  </data>
+  <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
+    <value>Replace:</value>
   </data>
 </root>

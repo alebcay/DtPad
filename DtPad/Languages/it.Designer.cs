@@ -5094,7 +5094,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sostituisci.
+        ///   Looks up a localized string similar to Sostituisci successivo.
         /// </summary>
         internal static string Form1_replaceToolStripMenuItem {
             get {
@@ -9342,7 +9342,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Trova primo.
+        ///   Looks up a localized string similar to Primo.
         /// </summary>
         internal static string searchPanel_findFirstToolStripButton {
             get {
@@ -9374,6 +9374,15 @@ namespace DtPad.Languages {
         internal static string searchPanel_findPreviousToolStripButton {
             get {
                 return ResourceManager.GetString("searchPanel_findPreviousToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trova:.
+        /// </summary>
+        internal static string searchPanel_findToolStripLabel {
+            get {
+                return ResourceManager.GetString("searchPanel_findToolStripLabel", resourceCulture);
             }
         }
         
@@ -9450,11 +9459,20 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sostituisci.
+        ///   Looks up a localized string similar to Successivo.
         /// </summary>
         internal static string searchPanel_replaceToolStripButton2 {
             get {
                 return ResourceManager.GetString("searchPanel_replaceToolStripButton2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sostituisci:.
+        /// </summary>
+        internal static string searchPanel_replaceToolStripLabel {
+            get {
+                return ResourceManager.GetString("searchPanel_replaceToolStripLabel", resourceCulture);
             }
         }
         

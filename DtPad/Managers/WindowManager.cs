@@ -562,7 +562,7 @@ namespace DtPad.Managers
             {
                 case 0:
                     form.searchPanel.searchTextBox.ReturnActionType = CustomTextBox.ReturnAction.StartSearch;
-                    form.searchPanel.replaceTextBox.ReturnActionType = CustomTextBox.ReturnAction.StartSearch;
+                    form.searchPanel.replaceTextBox.ReturnActionType = CustomTextBox.ReturnAction.StartReplace;
                     break;
                 case 1:
                     form.searchPanel.searchTextBox.ReturnActionType = CustomTextBox.ReturnAction.InsertCR;

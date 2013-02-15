@@ -13,7 +13,8 @@ namespace DtPad.Customs
         internal enum ReturnAction
         {
             InsertCR,
-            StartSearch
+            StartSearch,
+            StartReplace
         }
 
         #region Internal Instance Fields
@@ -22,12 +23,12 @@ namespace DtPad.Customs
 
         #endregion Internal Instance Fields
 
-        #region Protected Methods
-
         internal CustomTextBox()
         {
             ReturnActionType = ReturnAction.InsertCR;
         }
+
+        #region Protected Methods
 
         protected override void OnEnter(EventArgs e)
         {
@@ -102,15 +103,27 @@ namespace DtPad.Customs
             }
             else if ((e.KeyCode == Keys.Return || e.KeyCode == Keys.Enter) && !e.Shift && !e.Alt && !e.Control)
             {
+                String initialText = Text;
+
                 switch (ReturnActionType)
                 {
                     case ReturnAction.StartSearch:
                         e.Handled = true;
                         e.SuppressKeyPress = true;
 
-                        String initialText = Text;
-                       
                         SearchManager.SearchNext(form);
+
+                        Text = initialText;
+                        Select(TextLength, 0);
+                        ScrollToCaret();
+
+                        Focus();
+                        break;
+                    case ReturnAction.StartReplace:
+                        e.Handled = true;
+                        e.SuppressKeyPress = true;
+
+                        ReplaceManager.ReplaceNext(form);
 
                         Text = initialText;
                         Select(TextLength, 0);

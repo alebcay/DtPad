@@ -5094,7 +5094,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace.
+        ///   Looks up a localized string similar to Replace Next.
         /// </summary>
         internal static string Form1_replaceToolStripMenuItem {
             get {
@@ -9339,7 +9339,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find First.
+        ///   Looks up a localized string similar to First.
         /// </summary>
         internal static string searchPanel_findFirstToolStripButton {
             get {
@@ -9348,7 +9348,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find Last.
+        ///   Looks up a localized string similar to Last.
         /// </summary>
         internal static string searchPanel_findLastToolStripButton {
             get {
@@ -9357,7 +9357,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find Next.
+        ///   Looks up a localized string similar to Next.
         /// </summary>
         internal static string searchPanel_findNextToolStripButton {
             get {
@@ -9366,11 +9366,20 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Find Previous.
+        ///   Looks up a localized string similar to Previous.
         /// </summary>
         internal static string searchPanel_findPreviousToolStripButton {
             get {
                 return ResourceManager.GetString("searchPanel_findPreviousToolStripButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Find:.
+        /// </summary>
+        internal static string searchPanel_findToolStripLabel {
+            get {
+                return ResourceManager.GetString("searchPanel_findToolStripLabel", resourceCulture);
             }
         }
         
@@ -9420,7 +9429,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace All.
+        ///   Looks up a localized string similar to All.
         /// </summary>
         internal static string searchPanel_replaceAllToolStripButton {
             get {
@@ -9438,7 +9447,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace Previous.
+        ///   Looks up a localized string similar to Previous.
         /// </summary>
         internal static string searchPanel_replacePreviousToolStripButton {
             get {
@@ -9447,11 +9456,20 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Replace.
+        ///   Looks up a localized string similar to Next.
         /// </summary>
         internal static string searchPanel_replaceToolStripButton2 {
             get {
                 return ResourceManager.GetString("searchPanel_replaceToolStripButton2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Replace:.
+        /// </summary>
+        internal static string searchPanel_replaceToolStripLabel {
+            get {
+                return ResourceManager.GetString("searchPanel_replaceToolStripLabel", resourceCulture);
             }
         }
         

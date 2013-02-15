@@ -1012,25 +1012,25 @@ Complete la información de extensiones para proceder.</value>
     <value>Archivo</value>
   </data>
   <data name="searchPanel_findFirstToolStripButton" xml:space="preserve">
-    <value>Buscar primera</value>
+    <value>Primera</value>
   </data>
   <data name="Form1_findFirstToolStripMenuItem" xml:space="preserve">
     <value>Buscar primera</value>
   </data>
   <data name="searchPanel_findLastToolStripButton" xml:space="preserve">
-    <value>Buscar última</value>
+    <value>Última</value>
   </data>
   <data name="Form1_findLastToolStripMenuItem" xml:space="preserve">
     <value>Buscar última</value>
   </data>
   <data name="searchPanel_findNextToolStripButton" xml:space="preserve">
-    <value>Buscar siguiente</value>
+    <value>Siguiente</value>
   </data>
   <data name="Form1_findNextToolStripMenuItem" xml:space="preserve">
     <value>Buscar siguiente</value>
   </data>
   <data name="searchPanel_findPreviousToolStripButton" xml:space="preserve">
-    <value>Buscar anterior</value>
+    <value>Anterior</value>
   </data>
   <data name="Form1_findPreviousToolStripMenuItem" xml:space="preserve">
     <value>Buscar anterior</value>
@@ -1162,22 +1162,22 @@ Complete la información de extensiones para proceder.</value>
     <value>Eliminar</value>
   </data>
   <data name="searchPanel_replaceAllToolStripButton" xml:space="preserve">
-    <value>Reemplazar todo</value>
+    <value>Todo</value>
   </data>
   <data name="Form1_replaceAllToolStripMenuItem" xml:space="preserve">
     <value>Reemplazar todo</value>
   </data>
   <data name="searchPanel_replacePreviousToolStripButton" xml:space="preserve">
-    <value>Reemplazar anterior</value>
+    <value>Anterior</value>
   </data>
   <data name="Form1_replacePreviousToolStripMenuItem" xml:space="preserve">
     <value>Reemplazar anterior</value>
   </data>
   <data name="searchPanel_replaceToolStripButton2" xml:space="preserve">
-    <value>Reemplazar</value>
+    <value>Siguiente</value>
   </data>
   <data name="Form1_replaceToolStripMenuItem" xml:space="preserve">
-    <value>Reemplazar</value>
+    <value>Reemplazar siguiente</value>
   </data>
   <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
     <value>Informe de errores...</value>
@@ -4226,5 +4226,11 @@ Cerrar la ventana y seleccionar la pestaña: ENTER o clic con el mouse</value>
   </data>
   <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
     <value>Mouse</value>
+  </data>
+  <data name="searchPanel_findToolStripLabel" xml:space="preserve">
+    <value>Buscar:</value>
+  </data>
+  <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
+    <value>Reemplazar:</value>
   </data>
 </root>

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using DtPad.Customs;
 using DtPad.Managers;
 using DtPad.Utils;
 
@@ -15,8 +14,8 @@ namespace DtPad.UserControls
         internal SearchPanel()
         {
             InitializeComponent();
-            searchTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
-            replaceTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
+            //searchTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartSearch : CustomTextBox.ReturnAction.InsertCR;
+            //replaceTextBox.ReturnActionType = ConfigUtil.GetIntParameter("SearchReturn") == 0 ? CustomTextBox.ReturnAction.StartReplace : CustomTextBox.ReturnAction.InsertCR;
             AttachKeyboardEventsForEscapeKey(this);
         }
 

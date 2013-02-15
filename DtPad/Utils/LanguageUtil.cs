@@ -368,7 +368,7 @@ namespace DtPad.Utils
                 {
                     ToolStripTextBoxStatusControl.ManageControl(item, formName);
                 }
-                else if (itemType == typeof(ToolStripButton) || itemType == typeof(ToolStripComboBox))
+                else if (itemType == typeof(ToolStripButton) || itemType == typeof(ToolStripComboBox) || itemType == typeof(ToolStripLabel))
                 {
                     ToolStripButtonComboControl.ManageControl(item, formName);
                 }

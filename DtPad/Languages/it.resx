@@ -966,7 +966,7 @@ Desideri salvare i cambiamenti?</value>
     <value>File</value>
   </data>
   <data name="searchPanel_findFirstToolStripButton" xml:space="preserve">
-    <value>Trova primo</value>
+    <value>Primo</value>
   </data>
   <data name="Form1_findFirstToolStripMenuItem" xml:space="preserve">
     <value>Trova primo</value>
@@ -1128,10 +1128,10 @@ Desideri salvare i cambiamenti?</value>
     <value>Sostituisci precedente</value>
   </data>
   <data name="searchPanel_replaceToolStripButton2" xml:space="preserve">
-    <value>Sostituisci</value>
+    <value>Successivo</value>
   </data>
   <data name="Form1_replaceToolStripMenuItem" xml:space="preserve">
-    <value>Sostituisci</value>
+    <value>Sostituisci successivo</value>
   </data>
   <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
     <value>Segnala errore...</value>
@@ -4235,5 +4235,11 @@ Chiudi finestra e seleziona tab: INVIO o click del mouse</value>
   </data>
   <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
     <value>Mouse</value>
+  </data>
+  <data name="searchPanel_findToolStripLabel" xml:space="preserve">
+    <value>Trova:</value>
+  </data>
+  <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
+    <value>Sostituisci:</value>
   </data>
 </root>

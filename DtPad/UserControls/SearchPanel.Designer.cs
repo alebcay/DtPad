@@ -31,12 +31,14 @@
             this.searchTextBox = new Customs.CustomTextBox();
             this.replaceTextBox = new Customs.CustomTextBox();
             this.searchReplaceToolStrip = new System.Windows.Forms.ToolStrip();
+            this.findToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.findFirstToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.findNextToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.findPreviousToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.findLastToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.searchCountToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.replaceToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.replaceToolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.replacePreviousToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.replaceAllToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -88,12 +90,14 @@
             // searchReplaceToolStrip
             // 
             this.searchReplaceToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.findToolStripLabel,
             this.findFirstToolStripButton,
             this.findNextToolStripButton,
             this.findPreviousToolStripButton,
             this.findLastToolStripButton,
             this.searchCountToolStripButton,
             this.toolStripSeparator17,
+            this.replaceToolStripLabel,
             this.replaceToolStripButton2,
             this.replacePreviousToolStripButton,
             this.replaceAllToolStripButton,
@@ -109,13 +113,20 @@
             this.searchReplaceToolStrip.TabIndex = 0;
             this.searchReplaceToolStrip.Text = "toolStrip1";
             // 
+            // findToolStripLabel
+            // 
+            this.findToolStripLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.findToolStripLabel.Image = global::DtPad.ToolbarResource.search;
+            this.findToolStripLabel.Name = "findToolStripLabel";
+            this.findToolStripLabel.Size = new System.Drawing.Size(49, 22);
+            this.findToolStripLabel.Text = "Find:";
+            // 
             // findFirstToolStripButton
             // 
-            this.findFirstToolStripButton.Image = global::DtPad.ToolbarResource.search;
             this.findFirstToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.findFirstToolStripButton.Name = "findFirstToolStripButton";
-            this.findFirstToolStripButton.Size = new System.Drawing.Size(75, 22);
-            this.findFirstToolStripButton.Text = "Find First";
+            this.findFirstToolStripButton.Size = new System.Drawing.Size(33, 22);
+            this.findFirstToolStripButton.Text = "First";
             this.findFirstToolStripButton.Click += new System.EventHandler(this.findFirstToolStripButton_Click);
             // 
             // findNextToolStripButton
@@ -123,8 +134,8 @@
             this.findNextToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.findNextToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.findNextToolStripButton.Name = "findNextToolStripButton";
-            this.findNextToolStripButton.Size = new System.Drawing.Size(61, 22);
-            this.findNextToolStripButton.Text = "Find Next";
+            this.findNextToolStripButton.Size = new System.Drawing.Size(35, 22);
+            this.findNextToolStripButton.Text = "Next";
             this.findNextToolStripButton.Click += new System.EventHandler(this.findNextToolStripButton_Click);
             // 
             // findPreviousToolStripButton
@@ -132,8 +143,8 @@
             this.findPreviousToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.findPreviousToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.findPreviousToolStripButton.Name = "findPreviousToolStripButton";
-            this.findPreviousToolStripButton.Size = new System.Drawing.Size(82, 22);
-            this.findPreviousToolStripButton.Text = "Find Previous";
+            this.findPreviousToolStripButton.Size = new System.Drawing.Size(56, 22);
+            this.findPreviousToolStripButton.Text = "Previous";
             this.findPreviousToolStripButton.Click += new System.EventHandler(this.findPreviousToolStripButton_Click);
             // 
             // findLastToolStripButton
@@ -141,8 +152,8 @@
             this.findLastToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.findLastToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.findLastToolStripButton.Name = "findLastToolStripButton";
-            this.findLastToolStripButton.Size = new System.Drawing.Size(58, 22);
-            this.findLastToolStripButton.Text = "Find Last";
+            this.findLastToolStripButton.Size = new System.Drawing.Size(32, 22);
+            this.findLastToolStripButton.Text = "Last";
             this.findLastToolStripButton.Click += new System.EventHandler(this.findLastToolStripButton_Click);
             // 
             // searchCountToolStripButton
@@ -160,13 +171,20 @@
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(6, 25);
             // 
+            // replaceToolStripLabel
+            // 
+            this.replaceToolStripLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.replaceToolStripLabel.Image = global::DtPad.ToolbarResource.replace;
+            this.replaceToolStripLabel.Name = "replaceToolStripLabel";
+            this.replaceToolStripLabel.Size = new System.Drawing.Size(67, 22);
+            this.replaceToolStripLabel.Text = "Replace:";
+            // 
             // replaceToolStripButton2
             // 
-            this.replaceToolStripButton2.Image = global::DtPad.ToolbarResource.replace;
             this.replaceToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.replaceToolStripButton2.Name = "replaceToolStripButton2";
-            this.replaceToolStripButton2.Size = new System.Drawing.Size(68, 22);
-            this.replaceToolStripButton2.Text = "Replace";
+            this.replaceToolStripButton2.Size = new System.Drawing.Size(35, 22);
+            this.replaceToolStripButton2.Text = "Next";
             this.replaceToolStripButton2.Click += new System.EventHandler(this.replaceToolStripButton2_Click);
             // 
             // replacePreviousToolStripButton
@@ -174,8 +192,8 @@
             this.replacePreviousToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.replacePreviousToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.replacePreviousToolStripButton.Name = "replacePreviousToolStripButton";
-            this.replacePreviousToolStripButton.Size = new System.Drawing.Size(100, 22);
-            this.replacePreviousToolStripButton.Text = "Replace Previous";
+            this.replacePreviousToolStripButton.Size = new System.Drawing.Size(56, 22);
+            this.replacePreviousToolStripButton.Text = "Previous";
             this.replacePreviousToolStripButton.Click += new System.EventHandler(this.replacePreviousToolStripButton_Click);
             // 
             // replaceAllToolStripButton
@@ -183,8 +201,8 @@
             this.replaceAllToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.replaceAllToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.replaceAllToolStripButton.Name = "replaceAllToolStripButton";
-            this.replaceAllToolStripButton.Size = new System.Drawing.Size(69, 22);
-            this.replaceAllToolStripButton.Text = "Replace All";
+            this.replaceAllToolStripButton.Size = new System.Drawing.Size(25, 22);
+            this.replaceAllToolStripButton.Text = "All";
             this.replaceAllToolStripButton.Click += new System.EventHandler(this.replaceAllToolStripButton_Click);
             // 
             // toolStripSeparator33
@@ -401,5 +419,7 @@
         private System.Windows.Forms.ToolStripButton patternToolStripButton;
         internal System.Windows.Forms.ToolStripButton highlightsResultsToolStripButton;
         internal Customs.CustomCheckBox regularExpressionsCheckBox;
+        private System.Windows.Forms.ToolStripLabel findToolStripLabel;
+        private System.Windows.Forms.ToolStripLabel replaceToolStripLabel;
     }
 }
