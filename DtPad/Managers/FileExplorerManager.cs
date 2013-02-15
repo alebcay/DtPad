@@ -313,7 +313,7 @@ namespace DtPad.Managers
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
             long totalSize = 0;
-            bool warningShown = false;
+            //bool warningShown = false;
 
             try
             {
@@ -350,33 +350,33 @@ namespace DtPad.Managers
                         continue;
                     }
 
-                    String size = String.Empty;
-                    if (withSizes)
-                    {
-                        if (!warningShown && WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SureToWait", className)) == DialogResult.No)
-                        {
-                            return;
-                        }
+                    //String size = String.Empty;
+                    //if (withSizes)
+                    //{
+                    //    if (!warningShown && WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SureToWait", className)) == DialogResult.No)
+                    //    {
+                    //        return;
+                    //    }
 
-                        warningShown = true;
-                        int filesCount = 0;
-                        int dirsCount = 0;
-                        try
-                        {
-                            long sizeLong = DirectoryUtil.GetSize(directory, filesCount, dirsCount, out filesCount, out dirsCount);
-                            totalSize += sizeLong;
-                            double sizeDouble = (sizeLong / 1024f) / 1024f;
+                    //    warningShown = true;
+                    //    int filesCount = 0;
+                    //    int dirsCount = 0;
+                    //    try
+                    //    {
+                    //        long sizeLong = DirectoryUtil.GetSize(directory, filesCount, dirsCount, out filesCount, out dirsCount);
+                    //        totalSize += sizeLong;
+                    //        double sizeDouble = (sizeLong / 1024f) / 1024f;
 
-                            size = "     - " + Math.Round(sizeDouble, 2).ToString(LanguageUtil.GetInfoCulture())
-                                + " MB, " + filesCount + " " + LanguageUtil.GetCurrentLanguageString("Files", className) + ", " + dirsCount + " " + LanguageUtil.GetCurrentLanguageString("Directories", className);
-                        }
-                        catch (UnauthorizedAccessException)
-                        {
-                            size = "     - " + String.Format(LanguageUtil.GetCurrentLanguageString("AccessDenied", className), directory.FullName);
-                        }
-                    }
+                    //        size = " - " + Math.Round(sizeDouble, 2).ToString(LanguageUtil.GetInfoCulture())
+                    //            + " MB, " + filesCount + " " + LanguageUtil.GetCurrentLanguageString("Files", className) + ", " + dirsCount + " " + LanguageUtil.GetCurrentLanguageString("Directories", className);
+                    //    }
+                    //    catch (UnauthorizedAccessException)
+                    //    {
+                    //        size = " - " + String.Format(LanguageUtil.GetCurrentLanguageString("AccessDenied", className), directory.FullName);
+                    //    }
+                    //}
 
-                    fileList += "[dir] " + directory.Name + "\\" + size + ConstantUtil.newLine; //directory.FullName
+                    fileList += "[dir] " + directory.Name + "\\" + ConstantUtil.newLine; //"[dir] " + directory.Name + "\\" + size + ConstantUtil.newLine
                 }
 
                 fileList += ConstantUtil.newLine;
@@ -396,7 +396,7 @@ namespace DtPad.Managers
                     {
                         totalSize += file.Length;
                         double sizeDouble = (file.Length / 1024f) / 1024f;
-                        size = "     - " + Math.Round(sizeDouble, 2).ToString(LanguageUtil.GetInfoCulture()) + " MB";
+                        size = " - " + Math.Round(sizeDouble, 2).ToString(LanguageUtil.GetInfoCulture()) + " MB";
                     }
 
                     switch (searchOption)

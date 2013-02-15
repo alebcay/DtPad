@@ -3241,7 +3241,7 @@ Verify to be authenticated on it by opening "www.dropbox.com" with your default 
     <value>File Properties</value>
   </data>
   <data name="filePanel_listFolderContentWithLenghtToolStripMenuItem" xml:space="preserve">
-    <value>List Folder Content (With Sizes)</value>
+    <value>List Folder Content (With File Sizes)</value>
   </data>
   <data name="FileExplorerManager_Files" xml:space="preserve">
     <value>file(s)</value>

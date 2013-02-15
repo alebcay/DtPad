@@ -2671,7 +2671,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Elenca contenuto cartella (con dimensioni).
+        ///   Looks up a localized string similar to Elenca contenuto cartella (con dimensioni file).
         /// </summary>
         internal static string filePanel_listFolderContentWithLenghtToolStripMenuItem {
             get {

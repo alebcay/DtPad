@@ -3243,7 +3243,7 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
     <value>Propriétés du fichier</value>
   </data>
   <data name="filePanel_listFolderContentWithLenghtToolStripMenuItem" xml:space="preserve">
-    <value>Liste du contenu du répertoire (avec tailles)</value>
+    <value>Liste du contenu du répertoire (avec taille des fichiers)</value>
   </data>
   <data name="FileExplorerManager_Files" xml:space="preserve">
     <value>fichier(s)</value>

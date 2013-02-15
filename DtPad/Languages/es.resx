@@ -3240,7 +3240,7 @@ Verificar para ser autenticado en él, mediante la apertura de &quot;www.dropbox
     <value>Propiedades de archivo</value>
   </data>
   <data name="filePanel_listFolderContentWithLenghtToolStripMenuItem" xml:space="preserve">
-    <value>Listar contenido de carpeta (con tamaños)</value>
+    <value>Listar contenido de carpeta (con tamaño de archivos)</value>
   </data>
   <data name="FileExplorerManager_Files" xml:space="preserve">
     <value>archivo(s)</value>

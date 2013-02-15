@@ -3198,7 +3198,7 @@ Verifica di essere autenticato su di esso aprendo "www.dropbox.com" con il brows
     <value>Proprietà file</value>
   </data>
   <data name="filePanel_listFolderContentWithLenghtToolStripMenuItem" xml:space="preserve">
-    <value>Elenca contenuto cartella (con dimensioni)</value>
+    <value>Elenca contenuto cartella (con dimensioni file)</value>
   </data>
   <data name="FileExplorerManager_Files" xml:space="preserve">
     <value>file</value>
