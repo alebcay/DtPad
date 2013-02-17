@@ -31,7 +31,7 @@ namespace DtPad.Managers
 
         internal static XtraTabPage GetXtraTabPageFromName(XtraTabControl pagesTabControl, String name)
         {
-            foreach(XtraTabPage tabPage in pagesTabControl.TabPages)
+            foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
             {
                 if (tabPage.Name == name)
                 {
@@ -224,6 +224,7 @@ namespace DtPad.Managers
             bool closeAll;
             ClosePage(form, showMessages, false, out closeAll);
         }
+
         private static bool ClosePage(Form1 form, bool showMessages, bool moreTabs, out bool closeAll)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
@@ -275,7 +276,7 @@ namespace DtPad.Managers
             {
                 String selectedTabName = pagesTabControl.SelectedTabPage.Name;
                 int selectedTabIndex = pagesTabControl.SelectedTabPageIndex;
-                
+
                 pagesTabControl.TabPages.Remove(pagesTabControl.SelectedTabPage);
                 ExplorerManager.RemoveNodeToTabExplorer(form, selectedTabName);
 
@@ -346,7 +347,7 @@ namespace DtPad.Managers
         internal static void FontPages(Form1 form)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
-            
+
             DialogResult dialogResult = WindowManager.ShowFontSelect(form);
             if (dialogResult == DialogResult.Cancel)
             {
@@ -362,7 +363,7 @@ namespace DtPad.Managers
                 ProgramUtil.GetCustomLineNumbers(tabPage).Font = form.TextFont;
             }
 
-            TypeConverter tc = TypeDescriptor.GetConverter(typeof(Font));
+            TypeConverter tc = TypeDescriptor.GetConverter(typeof (Font));
             ConfigUtil.UpdateParameter("FontInUse", tc.ConvertToString(form.TextFont));
             ConfigUtil.UpdateParameter("FontInUseColorARGB", FontManager.SetARGBString(form.TextFontColor));
         }
@@ -517,7 +518,12 @@ namespace DtPad.Managers
 
         internal static void OpenFileFolder(Form1 form)
         {
-            OtherManager.StartProcess(form, Path.GetDirectoryName(ProgramUtil.GetFilenameTabPage(form.pagesTabControl.SelectedTabPage)));
+            String fileName = ProgramUtil.GetFilenameTabPage(form.pagesTabControl.SelectedTabPage);
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("explorer.exe")
+                                                    {
+                                                        Arguments = String.Format("/select, {0}", fileName)
+                                                    };
+            OtherManager.StartProcessInfo(form, processStartInfo);
         }
 
         internal static void OpenFileFolderPrompt(Form1 form)
@@ -874,7 +880,7 @@ namespace DtPad.Managers
             {
                 return;
             }
-            
+
             switch (e.Button)
             {
                 case MouseButtons.Middle:
@@ -886,7 +892,7 @@ namespace DtPad.Managers
         internal static void TabSelection(Form1 form)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
-            
+
             ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage).Select();
             form.Text = String.Format("DtPad - {0}", pagesTabControl.SelectedTabPage.Text);
 
@@ -950,7 +956,7 @@ namespace DtPad.Managers
             }
             rowsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("rowsStatToolStripMenuItem", form.Name) + " " + rowNumbers;
 
-            String[] separator = { ConstantUtil.newLine };
+            String[] separator = {ConstantUtil.newLine};
             //String[] lines = pageTextBox.Text.Split(separator, StringSplitOptions.None);
             //foreach (String line in lines)
             //{
@@ -964,14 +970,14 @@ namespace DtPad.Managers
 
             columnsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("columnsStatToolStripMenuItem", form.Name) + " " + columnNumbers;
 
-            String[] separator2 = { " ", ConstantUtil.newLine };
+            String[] separator2 = {" ", ConstantUtil.newLine};
             wordsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("wordsStatToolStripMenuItem", form.Name) + " " + pageTextBox.Text.Split(separator2, StringSplitOptions.RemoveEmptyEntries).Length;
         }
 
         internal static void TabMouseDoubleClick(Form1 form, MouseEventArgs e)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
-            
+
             PropertyInfo tabProperties = pagesTabControl.GetType().GetProperty("ViewInfo", BindingFlags.Instance | BindingFlags.NonPublic);
             BaseTabControlViewInfo tabViewInfo = tabProperties.GetValue(pagesTabControl, null) as BaseTabControlViewInfo;
 
