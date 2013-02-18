@@ -637,14 +637,14 @@ namespace DtPad.Managers
             {
                 toolStrip.Visible = false;
                 toolbarToolStripMenuItem.Checked = false;
-                form.Height = form.Height - toolStrip.Height;
+                //form.Height = form.Height - toolStrip.Height;
                 pagesTabControl.Location = new Point(pagesTabControl.Location.X, pagesTabControl.Location.Y - toolStrip.Height);
             }
             else
             {
                 if (!loadForm)
                 {
-                    form.Height = form.Height + toolStrip.Height;
+                    //form.Height = form.Height + toolStrip.Height;
                     pagesTabControl.Location = new Point(pagesTabControl.Location.X, pagesTabControl.Location.Y + toolStrip.Height);
                 }
 
@@ -669,14 +669,14 @@ namespace DtPad.Managers
                 zoomTrackBarControl.Visible = false;
                 statusStrip.Visible = false;
                 statusBarToolStripMenuItem.Checked = false;
-                form.Height = form.Height - statusStrip.Height;
+                //form.Height = form.Height - statusStrip.Height;
             }
             else
             {
-                if (!loadForm)
-                {
-                    form.Height = form.Height + statusStrip.Height;
-                }
+                //if (!loadForm)
+                //{
+                //    form.Height = form.Height + statusStrip.Height;
+                //}
 
                 statusStrip.Visible = true;
                 zoomPictureBox.Visible = true;
@@ -963,7 +963,7 @@ namespace DtPad.Managers
             form.FormBorderStyle = FormBorderStyle.None;
             form.TopMost = true;
 
-            form.Size = new Size(Screen.FromControl(form).WorkingArea.Width, Screen.FromControl(form).WorkingArea.Height);
+            form.Size = new Size(Screen.FromControl(form).Bounds.Width, Screen.FromControl(form).Bounds.Height);
             form.SetDesktopLocation(0, 0);
 
             fullscreenToolStripMenuItem.Visible = true;

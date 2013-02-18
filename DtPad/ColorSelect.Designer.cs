@@ -57,10 +57,9 @@
             this.colorEdit.Location = new System.Drawing.Point(62, 12);
             this.colorEdit.Name = "colorEdit";
             this.colorEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.it.SearchPattern_historyComboBoxItems, null, null, false)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, global::DtPad.Languages.ru.SearchPattern_historyComboBoxItems, 15, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, null, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, global::DtPad.Languages.ru.SearchPattern_historyComboBoxItems, null, null, false)});
             this.colorEdit.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.colorEdit.Properties.LookAndFeel.UseWindowsXPTheme = true;
-            this.colorEdit.Properties.ShowWebColors = false;
             this.colorEdit.Size = new System.Drawing.Size(218, 20);
             this.colorEdit.TabIndex = 1;
             this.colorEdit.Tag = "DontTranslate";
