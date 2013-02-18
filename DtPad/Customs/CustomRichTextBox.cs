@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using DtPad.Managers;
@@ -312,7 +313,14 @@ namespace DtPad.Customs
 
             foreach (String fileName in (String[])e.Data.GetData(DataFormats.FileDrop))
             {
-                form.TabIdentity = FileManager.OpenFile(form, form.TabIdentity, new[] { fileName });
+                if (Directory.Exists(fileName))
+                {
+                    form.TabIdentity = FileManager.OpenFile(form, form.TabIdentity, Directory.GetFiles(fileName, "*.*", SearchOption.TopDirectoryOnly));
+                }
+                else
+                {
+                    form.TabIdentity = FileManager.OpenFile(form, form.TabIdentity, new[] { fileName });
+                }
             }
             base.OnDragDrop(e);
         }
