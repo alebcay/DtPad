@@ -683,25 +683,25 @@ Saludos cordiales,</value>
     <value>Información</value>
   </data>
   <data name="QuestionYNC_cancelButton" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>&amp;Cancelar</value>
   </data>
   <data name="QuestionYNC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYNC_Title" xml:space="preserve">
     <value>Pregunta</value>
   </data>
   <data name="QuestionYNC_yesButton" xml:space="preserve">
-    <value>Sí</value>
+    <value>&amp;Sí</value>
   </data>
   <data name="QuestionYN_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYN_Title" xml:space="preserve">
     <value>Pregunta</value>
   </data>
   <data name="QuestionYN_yesButton" xml:space="preserve">
-    <value>Sí</value>
+    <value>&amp;Sí</value>
   </data>
   <data name="WarningYNC_cancelButton" xml:space="preserve">
     <value>Cancelar</value>
@@ -3847,19 +3847,19 @@ Marque esta URL para descargar:
     <value>Deshacer todo</value>
   </data>
   <data name="QuestionYNNAC_cancelButton" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>&amp;Cancelar</value>
   </data>
   <data name="QuestionYNNAC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYNNAC_noToAllButton" xml:space="preserve">
-    <value>No a todo</value>
+    <value>No a &amp;todo</value>
   </data>
   <data name="QuestionYNNAC_Title" xml:space="preserve">
     <value>Pregunta</value>
   </data>
   <data name="QuestionYNNAC_yesButton" xml:space="preserve">
-    <value>Sí</value>
+    <value>&amp;Sí</value>
   </data>
   <data name="Form1_copyFileNameToolStripMenuItem" xml:space="preserve">
     <value>Nombre de archivo</value>
@@ -3926,19 +3926,19 @@ Archivo DPS no encontrado!</value>
     <value>Importar desde ZIP...</value>
   </data>
   <data name="QuestionYYANC_cancelButton" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>&amp;Cancelar</value>
   </data>
   <data name="QuestionYYANC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYYANC_Title" xml:space="preserve">
     <value>Pregunta</value>
   </data>
   <data name="QuestionYYANC_yesButton" xml:space="preserve">
-    <value>Sí</value>
+    <value>&amp;Sí</value>
   </data>
   <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
-    <value>Sí a todo</value>
+    <value>Sí a &amp;todo</value>
   </data>
   <data name="MergeTabs_Conflict" xml:space="preserve">
     <value>Pestañas refrescado debajo de la ventana de combinación.

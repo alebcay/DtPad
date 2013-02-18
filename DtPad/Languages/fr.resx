@@ -684,25 +684,25 @@ Salutations,</value>
     <value>Information</value>
   </data>
   <data name="QuestionYNC_cancelButton" xml:space="preserve">
-    <value>Annuler</value>
+    <value>&amp;Annuler</value>
   </data>
   <data name="QuestionYNC_noButton" xml:space="preserve">
-    <value>Non</value>
+    <value>&amp;Non</value>
   </data>
   <data name="QuestionYNC_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYNC_yesButton" xml:space="preserve">
-    <value>Oui</value>
+    <value>&amp;Oui</value>
   </data>
   <data name="QuestionYN_noButton" xml:space="preserve">
-    <value>Non</value>
+    <value>&amp;Non</value>
   </data>
   <data name="QuestionYN_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYN_yesButton" xml:space="preserve">
-    <value>Oui</value>
+    <value>&amp;Oui</value>
   </data>
   <data name="WarningYNC_cancelButton" xml:space="preserve">
     <value>Annuler</value>
@@ -3850,19 +3850,19 @@ Vérifier l&apos;URL pour télécharge:
     <value>Annuler tout</value>
   </data>
   <data name="QuestionYNNAC_cancelButton" xml:space="preserve">
-    <value>Annuler</value>
+    <value>&amp;Annuler</value>
   </data>
   <data name="QuestionYNNAC_noButton" xml:space="preserve">
-    <value>Non </value>
+    <value>&amp;Non</value>
   </data>
   <data name="QuestionYNNAC_noToAllButton" xml:space="preserve">
-    <value>Non pour tout</value>
+    <value>Non pour &amp;tout</value>
   </data>
   <data name="QuestionYNNAC_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYNNAC_yesButton" xml:space="preserve">
-    <value>Oui</value>
+    <value>&amp;Oui</value>
   </data>
   <data name="Form1_copyFileNameToolStripMenuItem" xml:space="preserve">
     <value>Nom du fichier</value>
@@ -3928,19 +3928,19 @@ Voulez vous l&apos;écraser?</value>
     <value>Importer à partir d&apos;un ZIP...</value>
   </data>
   <data name="QuestionYYANC_cancelButton" xml:space="preserve">
-    <value>Annuler</value>
+    <value>&amp;Annuler</value>
   </data>
   <data name="QuestionYYANC_noButton" xml:space="preserve">
-    <value>Non</value>
+    <value>&amp;Non</value>
   </data>
   <data name="QuestionYYANC_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYYANC_yesButton" xml:space="preserve">
-    <value>Oui</value>
+    <value>&amp;Oui</value>
   </data>
   <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
-    <value>Oui pourt tout</value>
+    <value>Oui pourt &amp;tout</value>
   </data>
   <data name="MergeTabs_Conflict" xml:space="preserve">
     <value>Les onglets ont été rafraichit dans la fenêtre de fusion.
@@ -4220,10 +4220,10 @@ Reparti à partir du bas?</value>
     <value>Clavier (défaut)</value>
   </data>
   <data name="Options_tabsSwitchModeLabel" xml:space="preserve">
-    <value></value>
+    <value>Mode de contrôle:</value>
   </data>
   <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
-    <value></value>
+    <value>Souris</value>
   </data>
   <data name="searchPanel_findToolStripLabel" xml:space="preserve">
     <value>Trouver:</value>

@@ -8595,7 +8595,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYN_noButton {
             get {
@@ -8613,7 +8613,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sì.
+        ///   Looks up a localized string similar to &amp;Sì.
         /// </summary>
         internal static string QuestionYN_yesButton {
             get {
@@ -8622,7 +8622,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annulla.
+        ///   Looks up a localized string similar to &amp;Annulla.
         /// </summary>
         internal static string QuestionYNC_cancelButton {
             get {
@@ -8631,7 +8631,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYNC_noButton {
             get {
@@ -8649,7 +8649,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sì.
+        ///   Looks up a localized string similar to &amp;Sì.
         /// </summary>
         internal static string QuestionYNC_yesButton {
             get {
@@ -8658,7 +8658,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annulla.
+        ///   Looks up a localized string similar to &amp;Annulla.
         /// </summary>
         internal static string QuestionYNNAC_cancelButton {
             get {
@@ -8667,7 +8667,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYNNAC_noButton {
             get {
@@ -8676,7 +8676,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No a tutti.
+        ///   Looks up a localized string similar to No a &amp;tutti.
         /// </summary>
         internal static string QuestionYNNAC_noToAllButton {
             get {
@@ -8694,7 +8694,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sì.
+        ///   Looks up a localized string similar to &amp;Sì.
         /// </summary>
         internal static string QuestionYNNAC_yesButton {
             get {
@@ -8712,7 +8712,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYYANC_noButton {
             get {
@@ -8730,7 +8730,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sì.
+        ///   Looks up a localized string similar to &amp;Sì.
         /// </summary>
         internal static string QuestionYYANC_yesButton {
             get {
@@ -8739,7 +8739,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sì a tutti.
+        ///   Looks up a localized string similar to Sì a &amp;tutti.
         /// </summary>
         internal static string QuestionYYANC_yesToAllButton {
             get {

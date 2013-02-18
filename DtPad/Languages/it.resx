@@ -637,25 +637,25 @@ Cordiali saluti,</value>
     <value>Informazione</value>
   </data>
   <data name="QuestionYNC_cancelButton" xml:space="preserve">
-    <value>Annulla</value>
+    <value>&amp;Annulla</value>
   </data>
   <data name="QuestionYNC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYNC_Title" xml:space="preserve">
     <value>Domanda</value>
   </data>
   <data name="QuestionYNC_yesButton" xml:space="preserve">
-    <value>Sì</value>
+    <value>&amp;Sì</value>
   </data>
   <data name="QuestionYN_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYN_Title" xml:space="preserve">
     <value>Domanda</value>
   </data>
   <data name="QuestionYN_yesButton" xml:space="preserve">
-    <value>Sì</value>
+    <value>&amp;Sì</value>
   </data>
   <data name="WarningYNC_cancelButton" xml:space="preserve">
     <value>Annulla</value>
@@ -3807,19 +3807,19 @@ Controlla questo URL per scaricarlo:
     <value>Annulla tutto</value>
   </data>
   <data name="QuestionYNNAC_cancelButton" xml:space="preserve">
-    <value>Annulla</value>
+    <value>&amp;Annulla</value>
   </data>
   <data name="QuestionYNNAC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYNNAC_noToAllButton" xml:space="preserve">
-    <value>No a tutti</value>
+    <value>No a &amp;tutti</value>
   </data>
   <data name="QuestionYNNAC_Title" xml:space="preserve">
     <value>Domanda</value>
   </data>
   <data name="QuestionYNNAC_yesButton" xml:space="preserve">
-    <value>Sì</value>
+    <value>&amp;Sì</value>
   </data>
   <data name="Form1_copyFileNameToolStripMenuItem" xml:space="preserve">
     <value>Nome file</value>
@@ -3889,16 +3889,16 @@ Vuoi sovrascriverlo?</value>
     <value>Annulla</value>
   </data>
   <data name="QuestionYYANC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYYANC_Title" xml:space="preserve">
     <value>Domanda</value>
   </data>
   <data name="QuestionYYANC_yesButton" xml:space="preserve">
-    <value>Sì</value>
+    <value>&amp;Sì</value>
   </data>
   <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
-    <value>Sì a tutti</value>
+    <value>Sì a &amp;tutti</value>
   </data>
   <data name="MergeTabs_Conflict" xml:space="preserve">
     <value>I tab sono stati modificati al di sotto della finestra di unione.

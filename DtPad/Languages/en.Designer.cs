@@ -8592,7 +8592,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYN_noButton {
             get {
@@ -8610,7 +8610,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yes.
+        ///   Looks up a localized string similar to &amp;Yes.
         /// </summary>
         internal static string QuestionYN_yesButton {
             get {
@@ -8619,7 +8619,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to &amp;Cancel.
         /// </summary>
         internal static string QuestionYNC_cancelButton {
             get {
@@ -8628,7 +8628,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYNC_noButton {
             get {
@@ -8646,7 +8646,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yes.
+        ///   Looks up a localized string similar to &amp;Yes.
         /// </summary>
         internal static string QuestionYNC_yesButton {
             get {
@@ -8655,7 +8655,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to &amp;Cancel.
         /// </summary>
         internal static string QuestionYNNAC_cancelButton {
             get {
@@ -8664,7 +8664,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYNNAC_noButton {
             get {
@@ -8673,7 +8673,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No To All.
+        ///   Looks up a localized string similar to No To &amp;All.
         /// </summary>
         internal static string QuestionYNNAC_noToAllButton {
             get {
@@ -8691,7 +8691,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yes.
+        ///   Looks up a localized string similar to &amp;Yes.
         /// </summary>
         internal static string QuestionYNNAC_yesButton {
             get {
@@ -8700,7 +8700,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to &amp;Cancel.
         /// </summary>
         internal static string QuestionYYANC_cancelButton {
             get {
@@ -8709,7 +8709,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No.
+        ///   Looks up a localized string similar to &amp;No.
         /// </summary>
         internal static string QuestionYYANC_noButton {
             get {
@@ -8727,7 +8727,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yes.
+        ///   Looks up a localized string similar to &amp;Yes.
         /// </summary>
         internal static string QuestionYYANC_yesButton {
             get {
@@ -8736,7 +8736,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yes To All.
+        ///   Looks up a localized string similar to Yes To &amp;All.
         /// </summary>
         internal static string QuestionYYANC_yesToAllButton {
             get {

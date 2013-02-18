@@ -72,7 +72,7 @@
             this.searchTextBox.Multiline = true;
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.searchTextBox.Size = new System.Drawing.Size(569, 57);
+            this.searchTextBox.Size = new System.Drawing.Size(555, 57);
             this.searchTextBox.TabIndex = 0;
             this.searchTextBox.Tag = "DontTranslate";
             // 
@@ -83,7 +83,7 @@
             this.replaceTextBox.Multiline = true;
             this.replaceTextBox.Name = "replaceTextBox";
             this.replaceTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.replaceTextBox.Size = new System.Drawing.Size(569, 37);
+            this.replaceTextBox.Size = new System.Drawing.Size(555, 37);
             this.replaceTextBox.TabIndex = 1;
             this.replaceTextBox.Tag = "DontTranslate";
             // 
@@ -278,7 +278,7 @@
             this.searchReplaceCentralPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.searchReplaceCentralPanel.Location = new System.Drawing.Point(89, 25);
             this.searchReplaceCentralPanel.Name = "searchReplaceCentralPanel";
-            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(569, 94);
+            this.searchReplaceCentralPanel.Size = new System.Drawing.Size(555, 94);
             this.searchReplaceCentralPanel.TabIndex = 2;
             // 
             // rightSearchReplacePanel
@@ -288,9 +288,9 @@
             this.rightSearchReplacePanel.Controls.Add(this.loopCheckBox);
             this.rightSearchReplacePanel.Controls.Add(this.caseCheckBox);
             this.rightSearchReplacePanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightSearchReplacePanel.Location = new System.Drawing.Point(658, 25);
+            this.rightSearchReplacePanel.Location = new System.Drawing.Point(644, 25);
             this.rightSearchReplacePanel.Name = "rightSearchReplacePanel";
-            this.rightSearchReplacePanel.Size = new System.Drawing.Size(159, 94);
+            this.rightSearchReplacePanel.Size = new System.Drawing.Size(173, 94);
             this.rightSearchReplacePanel.TabIndex = 3;
             // 
             // regularExpressionsCheckBox

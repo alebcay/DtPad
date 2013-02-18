@@ -127,7 +127,7 @@
     <value>Автор:</value>
   </data>
   <data name="About_descriptionTextBox" xml:space="preserve">
-    <value>DtPad (2009-2012) предоставляется по лицензии Apache 2.0.
+    <value>DtPad (2009-2013) предоставляется по лицензии Apache 2.0.
 - apache.org/licenses/LICENSE-2.0
 
 Это приложение требует наличия Microsoft .NET Framework 4 и хранит в реестре Windows только сопоставления файлов для контекстного меню &quot;Открыть с помощью&quot; Проводника.
@@ -181,7 +181,7 @@ DtPad не собирает никаких данных о работе с пр�
     <value>Версия:</value>
   </data>
   <data name="About_websiteLabel" xml:space="preserve">
-    <value>diariotraduttore.com</value>
+    <value>dtpad.codeplex.com</value>
   </data>
   <data name="About_websiteLabel1" xml:space="preserve">
     <value>Веб-сайт:</value>
@@ -681,25 +681,25 @@ Pусский</value>
     <value>Информация</value>
   </data>
   <data name="QuestionYNC_cancelButton" xml:space="preserve">
-    <value>Отмена</value>
+    <value>&amp;Отмена</value>
   </data>
   <data name="QuestionYNC_noButton" xml:space="preserve">
-    <value>Нет</value>
+    <value>&amp;Нет</value>
   </data>
   <data name="QuestionYNC_Title" xml:space="preserve">
     <value>Вопрос</value>
   </data>
   <data name="QuestionYNC_yesButton" xml:space="preserve">
-    <value>Да</value>
+    <value>&amp;Да</value>
   </data>
   <data name="QuestionYN_noButton" xml:space="preserve">
-    <value>Нет</value>
+    <value>&amp;Нет</value>
   </data>
   <data name="QuestionYN_Title" xml:space="preserve">
     <value>Вопрос</value>
   </data>
   <data name="QuestionYN_yesButton" xml:space="preserve">
-    <value>Да</value>
+    <value>&amp;Да</value>
   </data>
   <data name="WarningYNC_cancelButton" xml:space="preserve">
     <value>Отмена</value>
@@ -720,7 +720,7 @@ Pусский</value>
     <value>Ошибка</value>
   </data>
   <data name="searchPanel_caseCheckBox" xml:space="preserve">
-    <value>Учитывать регистр</value>
+    <value>&amp;Учитывать регистр</value>
   </data>
   <data name="Form1_closeAllToolStripMenuItem1" xml:space="preserve">
     <value>Закрыть все</value>
@@ -732,7 +732,7 @@ Pусский</value>
     <value>Путь и имя файла</value>
   </data>
   <data name="searchPanel_loopCheckBox" xml:space="preserve">
-    <value>Идти к началу в конце</value>
+    <value>&amp;Идти к началу в конце</value>
   </data>
   <data name="Form1_newToolStripMenuItem2" xml:space="preserve">
     <value>Создать</value>
@@ -753,7 +753,7 @@ Pусский</value>
     <value>Сохранить</value>
   </data>
   <data name="searchPanel_searchAllTabsCheckBox" xml:space="preserve">
-    <value>На всех вкладках</value>
+    <value>&amp;На всех вкладках</value>
   </data>
   <data name="searchPanel_searchLabel" xml:space="preserve">
     <value>Найти:</value>
@@ -1839,17 +1839,8 @@ UTF-32 (мл.-&gt;ст.)</value>
     <value>Все вкладки сохранены.
 Нажмите ОК, чтобы перейти к выбору имени файла сеанса.</value>
   </data>
-  <data name="About_createdByLabel_FE" xml:space="preserve">
-    <value>Marco Macciò</value>
-  </data>
   <data name="About_titleLabel_FE" xml:space="preserve">
     <value>DtPad - Family Edition</value>
-  </data>
-  <data name="About_websiteLabel1_FE" xml:space="preserve">
-    <value>(C)</value>
-  </data>
-  <data name="About_websiteLabel_FE" xml:space="preserve">
-    <value>2012</value>
   </data>
   <data name="Welcome_signLabel_FE" xml:space="preserve">
     <value>Marco Macciò</value>
@@ -3855,19 +3846,19 @@ UTF-32 (мл.-&gt;ст.)</value>
     <value>Отменить все</value>
   </data>
   <data name="QuestionYNNAC_cancelButton" xml:space="preserve">
-    <value>Отмена</value>
+    <value>&amp;Отмена</value>
   </data>
   <data name="QuestionYNNAC_noButton" xml:space="preserve">
-    <value>Нет</value>
+    <value>&amp;Нет</value>
   </data>
   <data name="QuestionYNNAC_noToAllButton" xml:space="preserve">
-    <value>Нет для всех</value>
+    <value>Нет для &amp;всех</value>
   </data>
   <data name="QuestionYNNAC_Title" xml:space="preserve">
     <value>Вопрос</value>
   </data>
   <data name="QuestionYNNAC_yesButton" xml:space="preserve">
-    <value>Да</value>
+    <value>&amp;Да</value>
   </data>
   <data name="Form1_copyFileNameToolStripMenuItem" xml:space="preserve">
     <value>Имя файла</value>
@@ -3934,19 +3925,19 @@ DPS-файл не найден.</value>
     <value>Импортировать из ZIP-архива...</value>
   </data>
   <data name="QuestionYYANC_cancelButton" xml:space="preserve">
-    <value>Отмена</value>
+    <value>&amp;Отмена</value>
   </data>
   <data name="QuestionYYANC_noButton" xml:space="preserve">
-    <value>Нет</value>
+    <value>&amp;Нет</value>
   </data>
   <data name="QuestionYYANC_Title" xml:space="preserve">
     <value>Вопрос</value>
   </data>
   <data name="QuestionYYANC_yesButton" xml:space="preserve">
-    <value>Да</value>
+    <value>&amp;Да</value>
   </data>
   <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
-    <value>Да для всех</value>
+    <value>Да для &amp;всех</value>
   </data>
   <data name="MergeTabs_Conflict" xml:space="preserve">
     <value>Вкладки под окном объединения обновлены.
@@ -4188,5 +4179,57 @@ DPS-файл не найден.</value>
   </data>
   <data name="CsvEditor_cellWrapToolStripButton" xml:space="preserve">
     <value>Перенос по словам</value>
+  </data>
+  <data name="FileExplorerManager_AccessDenied" xml:space="preserve">
+    <value>Отказано в доступе к {0}</value>
+  </data>
+  <data name="FileExplorerManager_SureToWait" xml:space="preserve">
+    <value>Сканирование может занять от нескольких секунд до нескольких минут.
+Продолжить?</value>
+  </data>
+  <data name="ZipExtract_selectAllButton" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="ReplaceManager_EOF" xml:space="preserve">
+    <value>Достигнут конец документа.
+Начать с начала?</value>
+  </data>
+  <data name="ReplaceManager_SOF" xml:space="preserve">
+    <value>Достигнуто начало документа.
+Начать с конца?</value>
+  </data>
+  <data name="searchPanel_regularExpressionsCheckBox" xml:space="preserve">
+    <value>Использовать &amp;регулярные выражения</value>
+  </data>
+  <data name="Options_resetOptionsButtonToolTip" xml:space="preserve">
+    <value>Сброс параметров</value>
+  </data>
+  <data name="Options_tabGroupBox2" xml:space="preserve">
+    <value>Быстрый переход между вкладками</value>
+  </data>
+  <data name="Options_tabPictureBox1ToolTip" xml:space="preserve">
+    <value>Открыть окно и перейти на другую вкладку: CTRL+TAB (вперед) or CTRL+SHIFT+TAB (назад)
+Закрыть окно и выделить вкладку: оставить CTRL</value>
+  </data>
+  <data name="Options_tabPictureBox2ToolTip" xml:space="preserve">
+    <value>Открыть окно: CTRL+TAB или CTRL+SHIFT+TAB
+Перейти на другую вкладку: CTRL+TAB (вперед), CTRL+SHIFT+TAB (назад) или щелкнуть мышью
+Закрыть окно: ESC
+Close window and select tab: ENTER or mouse click</value>
+  </data>
+  <data name="Options_tabsSwitchModeKeyboardRadioButton" xml:space="preserve">
+    <value>Клавиатура (по умолчанию)</value>
+  </data>
+  <data name="Options_tabsSwitchModeLabel" xml:space="preserve">
+    <value>Режим управления:</value>
+  </data>
+  <data name="Options_tabsSwitchModeMouseRadioButton" xml:space="preserve">
+    <value>Мышь</value>
+  </data>
+  <data name="searchPanel_findToolStripLabel" xml:space="preserve">
+    <value>Найти:</value>
+  </data>
+  <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
+    <value>Заменить на:</value>
   </data>
 </root>

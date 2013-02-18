@@ -164,7 +164,7 @@ Dropbox service by: Dropbox Inc.
 Language dictionaries by: OpenOffice.org.
 - wiki.services.openoffice.org/wiki/Dictionaries
 
-DtPad does not collect any info about usage and users. Informations that could be logged into "Logs" folder regards only program errors and warnings showed even on the interface, and in no case they will contain user's text or any other private data.</value>
+DtPad does not collect any data about usage and users. Informations logged into "Logs" folder regards only program's errors and warnings shown on the interface, and in no case they will contain user's text or any other private data.</value>
   </data>
   <data name="About_emailPictureBoxToolTip" xml:space="preserve">
     <value>Write an e-mail to DtPad's author</value>
@@ -683,25 +683,25 @@ Best regards,</value>
     <value>Information</value>
   </data>
   <data name="QuestionYNC_cancelButton" xml:space="preserve">
-    <value>Cancel</value>
+    <value>&amp;Cancel</value>
   </data>
   <data name="QuestionYNC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYNC_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYNC_yesButton" xml:space="preserve">
-    <value>Yes</value>
+    <value>&amp;Yes</value>
   </data>
   <data name="QuestionYN_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYN_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYN_yesButton" xml:space="preserve">
-    <value>Yes</value>
+    <value>&amp;Yes</value>
   </data>
   <data name="WarningYNC_cancelButton" xml:space="preserve">
     <value>Cancel</value>
@@ -3847,19 +3847,19 @@ Check this URL to download:
     <value>Undo All</value>
   </data>
   <data name="QuestionYNNAC_cancelButton" xml:space="preserve">
-    <value>Cancel</value>
+    <value>&amp;Cancel</value>
   </data>
   <data name="QuestionYNNAC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYNNAC_noToAllButton" xml:space="preserve">
-    <value>No To All</value>
+    <value>No To &amp;All</value>
   </data>
   <data name="QuestionYNNAC_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYNNAC_yesButton" xml:space="preserve">
-    <value>Yes</value>
+    <value>&amp;Yes</value>
   </data>
   <data name="Form1_copyFileNameToolStripMenuItem" xml:space="preserve">
     <value>File Name</value>
@@ -3926,19 +3926,19 @@ Do you want to overwrite it?</value>
     <value>Import From ZIP...</value>
   </data>
   <data name="QuestionYYANC_cancelButton" xml:space="preserve">
-    <value>Cancel</value>
+    <value>&amp;Cancel</value>
   </data>
   <data name="QuestionYYANC_noButton" xml:space="preserve">
-    <value>No</value>
+    <value>&amp;No</value>
   </data>
   <data name="QuestionYYANC_Title" xml:space="preserve">
     <value>Question</value>
   </data>
   <data name="QuestionYYANC_yesButton" xml:space="preserve">
-    <value>Yes</value>
+    <value>&amp;Yes</value>
   </data>
   <data name="QuestionYYANC_yesToAllButton" xml:space="preserve">
-    <value>Yes To All</value>
+    <value>Yes To &amp;All</value>
   </data>
   <data name="MergeTabs_Conflict" xml:space="preserve">
     <value>Tabs refreshed under the merge window.

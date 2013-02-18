@@ -224,7 +224,6 @@ namespace DtPad.Managers
             bool closeAll;
             ClosePage(form, showMessages, false, out closeAll);
         }
-
         private static bool ClosePage(Form1 form, bool showMessages, bool moreTabs, out bool closeAll)
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
@@ -363,7 +362,7 @@ namespace DtPad.Managers
                 ProgramUtil.GetCustomLineNumbers(tabPage).Font = form.TextFont;
             }
 
-            TypeConverter tc = TypeDescriptor.GetConverter(typeof (Font));
+            TypeConverter tc = TypeDescriptor.GetConverter(typeof(Font));
             ConfigUtil.UpdateParameter("FontInUse", tc.ConvertToString(form.TextFont));
             ConfigUtil.UpdateParameter("FontInUseColorARGB", FontManager.SetARGBString(form.TextFontColor));
         }
@@ -519,10 +518,7 @@ namespace DtPad.Managers
         internal static void OpenFileFolder(Form1 form)
         {
             String fileName = ProgramUtil.GetFilenameTabPage(form.pagesTabControl.SelectedTabPage);
-            ProcessStartInfo processStartInfo = new ProcessStartInfo("explorer.exe")
-                                                    {
-                                                        Arguments = String.Format("/select, {0}", fileName)
-                                                    };
+            ProcessStartInfo processStartInfo = new ProcessStartInfo("explorer.exe") { Arguments = String.Format("/select, {0}", fileName) };
             OtherManager.StartProcessInfo(form, processStartInfo);
         }
 
@@ -956,7 +952,7 @@ namespace DtPad.Managers
             }
             rowsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("rowsStatToolStripMenuItem", form.Name) + " " + rowNumbers;
 
-            String[] separator = {ConstantUtil.newLine};
+            String[] separator = { ConstantUtil.newLine };
             //String[] lines = pageTextBox.Text.Split(separator, StringSplitOptions.None);
             //foreach (String line in lines)
             //{
@@ -966,11 +962,11 @@ namespace DtPad.Managers
             //    }
             //}
             String[] lines = pageTextBox.Text.Split(separator, StringSplitOptions.None);
-            int columnNumbers = lines.Select(line => line.Length).Concat(new[] {0}).Max();
+            int columnNumbers = lines.Select(line => line.Length).Concat(new[] { 0 }).Max();
 
             columnsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("columnsStatToolStripMenuItem", form.Name) + " " + columnNumbers;
 
-            String[] separator2 = {" ", ConstantUtil.newLine};
+            String[] separator2 = { " ", ConstantUtil.newLine };
             wordsStatToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("wordsStatToolStripMenuItem", form.Name) + " " + pageTextBox.Text.Split(separator2, StringSplitOptions.RemoveEmptyEntries).Length;
         }
 
