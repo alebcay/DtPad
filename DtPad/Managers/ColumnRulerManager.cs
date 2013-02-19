@@ -14,6 +14,8 @@ namespace DtPad.Managers
     /// <author>Marco Macciò</author>
     internal static class ColumnRulerManager
     {
+        private const String className = "ColumnRulerManager";
+
         #region Internal Methods
 
         internal static void TogglePanel(Form1 form)
@@ -24,6 +26,10 @@ namespace DtPad.Managers
             if (IsPanelOpen(selectedTabPage))
             {
                 ClosePanel(selectedTabPage);
+            }
+            else if (form.WindowMode == CustomForm.WindowModeEnum.Relax)
+            {
+                WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("NoColumnsWithRelax", className));
             }
             else
             {
@@ -123,7 +129,13 @@ namespace DtPad.Managers
             if (CustomFilesManager.IsHostsSectionPanelOpen(form))
             {
                 wasHostsSectionOpen = true;
-                CustomFilesManager.ToggleHostsSectionPanel(form);
+                CustomFilesManager.ToggleHostsSectionPanel(form, true);
+            }
+            String annotationText = String.Empty;
+            if (CustomFilesManager.IsAnnotationPanelOpen(form))
+            {
+                annotationText = CustomFilesManager.GetAnnotationPanelText(form);
+                CustomFilesManager.ToggleAnnotationPanel(form, true);
             }
 
             int left = 0;
@@ -166,8 +178,15 @@ namespace DtPad.Managers
 
             if (wasHostsSectionOpen)
             {
-                CustomFilesManager.ToggleHostsSectionPanel(form);
+                CustomFilesManager.ToggleHostsSectionPanel(form, true);
             }
+            if (!String.IsNullOrEmpty(annotationText))
+            {
+                CustomFilesManager.ToggleAnnotationPanel(form);
+                CustomFilesManager.SetAnnotationPanelText(form, annotationText);
+            }
+
+            pageTextBox.Focus();
         }
 
         #endregion Private Methods

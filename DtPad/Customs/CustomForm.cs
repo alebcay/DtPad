@@ -134,7 +134,7 @@ namespace DtPad.Customs
 
         protected override void OnSizeChanged(EventArgs e)
         {
-            if (WindowMode != WindowModeEnum.Normal)
+            if (WindowMode != WindowModeEnum.Normal || IsOpening)
             {
                 base.OnSizeChanged(e);
                 return;

@@ -4233,4 +4233,14 @@ Cerrar la ventana y seleccionar la pestaña: ENTER o clic con el mouse</value>
   <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
     <value>Reemplazar:</value>
   </data>
+  <data name="Form1_relaxModeToolStripMenuItem" xml:space="preserve">
+    <value>Modo relajación</value>
+  </data>
+  <data name="WindowModeManager_ExitRelaxMode" xml:space="preserve">
+    <value>Salir modo relajación (SHIFT+F11)</value>
+  </data>
+  <data name="ColumnRulerManager_NoColumnsWithRelax" xml:space="preserve">
+    <value>Los números de columna no se pudo demostrar al utilizar el
+modo relajación.</value>
+  </data>
 </root>

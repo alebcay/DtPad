@@ -23,11 +23,11 @@ namespace DtPad.Managers
             return ProgramUtil.GetSectionsPanel(form.pagesTabControl.SelectedTabPage) != null;
         }
 
-        internal static void ToggleHostsSectionPanel(Form1 form)
+        internal static void ToggleHostsSectionPanel(Form1 form, bool suppressMessage = false)
         {
             if (IsHostsSectionPanelOpen(form))
             {
-                CloseHostsSectionPanel(form);
+                CloseHostsSectionPanel(form, suppressMessage);
             }
             else
             {
@@ -249,7 +249,7 @@ namespace DtPad.Managers
             WindowManager.ShowContent(form, LanguageUtil.GetCurrentLanguageString("HostsHelp", className), true);
         }
 
-        private static void CloseHostsSectionPanel(Form1 form)
+        private static void CloseHostsSectionPanel(Form1 form, bool suppressMessage = false)
         {
             ToolStripMenuItem hostsFileConfiguratorToolStripMenuItem = form.hostsFileConfiguratorToolStripMenuItem;
             XtraTabControl pagesTabControl = form.pagesTabControl;
@@ -262,7 +262,10 @@ namespace DtPad.Managers
 
             hostsFileConfiguratorToolStripMenuItem.Checked = false;
 
-            WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("HostsClose", className));
+            if (!suppressMessage)
+            {
+                WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("HostsClose", className));
+            }
         }
 
         #endregion Hosts Panel Methods
@@ -274,11 +277,11 @@ namespace DtPad.Managers
             return ProgramUtil.GetAnnotationPanel(form.pagesTabControl.SelectedTabPage) != null;
         }
 
-        internal static void ToggleAnnotationPanel(Form1 form)
+        internal static void ToggleAnnotationPanel(Form1 form, bool suppressMessage = false)
         {
             if (IsAnnotationPanelOpen(form))
             {
-                CloseAnnotationPanel(form);
+                CloseAnnotationPanel(form, suppressMessage);
             }
             else
             {
@@ -444,7 +447,7 @@ namespace DtPad.Managers
             WindowManager.ShowContent(form, LanguageUtil.GetCurrentLanguageString("HelpAnnotation", className), true);
         }
 
-        private static void CloseAnnotationPanel(Form1 form)
+        private static void CloseAnnotationPanel(Form1 form, bool suppressMessage = false)
         {
             ToolStripMenuItem annotationPanelToolStripMenuItem = form.annotationPanelToolStripMenuItem;
             XtraTabControl pagesTabControl = form.pagesTabControl;
@@ -454,7 +457,7 @@ namespace DtPad.Managers
             {
                 CustomRichTextBoxBase annotationTextBox = (CustomRichTextBoxBase)annotationPanel.Controls["annotationTextBox"];
 
-                if (!String.IsNullOrEmpty(annotationTextBox.Text))
+                if (!String.IsNullOrEmpty(annotationTextBox.Text) && !suppressMessage)
                 {
                     if (WindowManager.ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("WarningAnnotationPanelClose", className)) == DialogResult.No)
                     {
@@ -477,6 +480,16 @@ namespace DtPad.Managers
         internal static void ResumeAnnotationPanel(Form1 form)
         {
             ProgramUtil.GetAnnotationPanel(form.pagesTabControl.SelectedTabPage).Width = annotationPanelWidth;
+        }
+
+        internal static String GetAnnotationPanelText(Form1 form)
+        {
+            return ProgramUtil.GetAnnotationPanel(form.pagesTabControl.SelectedTabPage).Controls["annotationTextBox"].Text;
+        }
+
+        internal static void SetAnnotationPanelText(Form1 form, String text)
+        {
+            ProgramUtil.GetAnnotationPanel(form.pagesTabControl.SelectedTabPage).Controls["annotationTextBox"].Text = text;
         }
 
         #endregion Annotation Panel Methods

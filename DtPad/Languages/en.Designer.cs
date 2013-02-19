@@ -449,6 +449,16 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Column numbers could not be shown while using
+        ///the relax mode..
+        /// </summary>
+        internal static string ColumnRulerManager_NoColumnsWithRelax {
+            get {
+                return ResourceManager.GetString("ColumnRulerManager_NoColumnsWithRelax", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Value for &quot;{0}&quot; parameter not found..
         /// </summary>
         internal static string ConfigUtil_NoValue {

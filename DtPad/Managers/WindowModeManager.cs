@@ -381,7 +381,7 @@ namespace DtPad.Managers
                 Panel panelLeft = new Panel
                                       {
                                           Name = marginLeft,
-                                          Width = (Screen.FromControl(form).Bounds.Width - 800) / 2,
+                                          Width = (Screen.FromControl(form).Bounds.Width - 800) / 2
                                       };
                 Panel panelRight = new Panel
                                        {
