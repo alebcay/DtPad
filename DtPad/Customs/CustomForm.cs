@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using AppLimit.CloudComputing.SharpBox;
 using DtPad.Managers;
@@ -93,7 +94,6 @@ namespace DtPad.Customs
         protected void PreInitializeForm()
         {
             TabIdentity = 1;
-
             PrintDocument = new CustomPrintDocument();
 
             Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
@@ -149,5 +149,25 @@ namespace DtPad.Customs
         }
 
         #endregion Protected Methods
+
+        #region Suspend-Resume Painting
+
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, Int32 wMsg, bool wParam, Int32 lParam);
+
+        private const int WM_SETREDRAW = 11;
+
+        public void SuspendPainting(Control control)
+        {
+            SendMessage(control.Handle, WM_SETREDRAW, false, 0);
+        }
+
+        public void ResumePainting(Control control)
+        {
+            SendMessage(control.Handle, WM_SETREDRAW, true, 0);
+            control.Refresh();
+        }
+
+        #endregion Suspend-Resume Painting
     }
 }

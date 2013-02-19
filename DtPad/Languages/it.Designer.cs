@@ -8227,7 +8227,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apri finestra e cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro)
+        ///   Looks up a localized string similar to Apri finestra e cambia tab: CTRL+TAB (avanti) o CTRL+MAIUSC+TAB (indietro)
         ///Chiudi finestra e seleziona tab: lascia CTRL.
         /// </summary>
         internal static string Options_tabPictureBox1ToolTip {
@@ -8237,8 +8237,8 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apri finestra: CTRL+TAB or CTRL+SHIFT+TAB
-        ///Cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro) o mouse
+        ///   Looks up a localized string similar to Apri finestra: CTRL+TAB or CTRL+MAIUSC+TAB
+        ///Cambia tab: CTRL+TAB (avanti) o CTRL+MAIUSC+TAB (indietro) o mouse
         ///Chiudi finestra: ESC
         ///Chiudi finestra e seleziona tab: INVIO o click del mouse.
         /// </summary>
@@ -11672,7 +11672,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Chiudi modalità relax (SHIFT+F11).
+        ///   Looks up a localized string similar to Chiudi modalità relax (MAIUSC+F11).
         /// </summary>
         internal static string WindowModeManager_ExitRelaxMode {
             get {

@@ -4218,12 +4218,12 @@ Ricominciare dalla fine?</value>
     <value>Visuale tab</value>
   </data>
   <data name="Options_tabPictureBox1ToolTip" xml:space="preserve">
-    <value>Apri finestra e cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro)
+    <value>Apri finestra e cambia tab: CTRL+TAB (avanti) o CTRL+MAIUSC+TAB (indietro)
 Chiudi finestra e seleziona tab: lascia CTRL</value>
   </data>
   <data name="Options_tabPictureBox2ToolTip" xml:space="preserve">
-    <value>Apri finestra: CTRL+TAB or CTRL+SHIFT+TAB
-Cambia tab: CTRL+TAB (avanti) o CTRL+SHIFT+TAB (indietro) o mouse
+    <value>Apri finestra: CTRL+TAB or CTRL+MAIUSC+TAB
+Cambia tab: CTRL+TAB (avanti) o CTRL+MAIUSC+TAB (indietro) o mouse
 Chiudi finestra: ESC
 Chiudi finestra e seleziona tab: INVIO o click del mouse</value>
   </data>
@@ -4246,7 +4246,7 @@ Chiudi finestra e seleziona tab: INVIO o click del mouse</value>
     <value>Modalità relax</value>
   </data>
   <data name="WindowModeManager_ExitRelaxMode" xml:space="preserve">
-    <value>Chiudi modalità relax (SHIFT+F11)</value>
+    <value>Chiudi modalità relax (MAIUSC+F11)</value>
   </data>
   <data name="ColumnRulerManager_NoColumnsWithRelax" xml:space="preserve">
     <value>I numeri di colonna non possono essere mostrati mentre

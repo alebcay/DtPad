@@ -19,6 +19,7 @@ namespace DtPad.Managers
     internal static class WindowModeManager
     {
         private const String className = "WindowModeManager";
+        private const String RelaxModeMarginName = "RelaxModeMargin";
 
         #region Generic Methods
 
@@ -280,6 +281,8 @@ namespace DtPad.Managers
             ToolStrip sessionToolStrip = form.sessionToolStrip;
             ToolStripMenuItem fullscreenToolStripMenuItem = form.fullscreenToolStripMenuItem;
 
+            form.SuspendPainting(pagesTabControl);
+
             pagesTabControl.ContextMenuStrip = null;
             pagesTabControl.ShowTabHeader = DefaultBoolean.False;
             fullscreenToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("ExitRelaxMode", className);
@@ -318,6 +321,8 @@ namespace DtPad.Managers
             {
                 CustomFilesManager.HideAnnotationPanel(form);
             }
+
+            form.ResumePainting(pagesTabControl);
         }
 
         private static void RelaxModeOff(Form1 form)
@@ -325,6 +330,8 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             ToolStrip sessionToolStrip = form.sessionToolStrip;
             ToolStripMenuItem fullscreenToolStripMenuItem = form.fullscreenToolStripMenuItem;
+
+            form.SuspendPainting(pagesTabControl);
 
             pagesTabControl.ContextMenuStrip = form.pageContextMenuStrip;
             pagesTabControl.ShowTabHeader = DefaultBoolean.True;
@@ -347,16 +354,22 @@ namespace DtPad.Managers
 
             foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
             {
-                String marginLeft = "RelaxModeMarginLeft_" + tabPage.Name;
-                String marginRight = "RelaxModeMarginRight_" + tabPage.Name;
+                String marginLeft = String.Format("{0}Left_{1}", RelaxModeMarginName, tabPage.Name);
+                String marginRight = String.Format("{0}Right_{1}", RelaxModeMarginName, tabPage.Name);
 
                 if (!tabPage.Controls.ContainsKey(marginLeft) && !tabPage.Controls.ContainsKey(marginRight))
                 {
                     continue;
                 }
+
                 tabPage.Controls.RemoveByKey(marginLeft);
+                tabPage.Controls.RemoveByKey(String.Format("{0}_Very", marginLeft));
+
                 tabPage.Controls.RemoveByKey(marginRight);
+                tabPage.Controls.RemoveByKey(String.Format("{0}_Very", marginRight));
             }
+
+            form.ResumePainting(pagesTabControl);
         }
 
         internal static void AddRelaxModeMargins(Form1 form)
@@ -370,29 +383,49 @@ namespace DtPad.Managers
 
             foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
             {
-                String marginLeft = "RelaxModeMarginLeft_" + tabPage.Name;
-                String marginRight = "RelaxModeMarginRight_" + tabPage.Name;
+                String marginLeft = String.Format("{0}Left_{1}", RelaxModeMarginName, tabPage.Name);
+                String marginRight = String.Format("{0}Right_{1}", RelaxModeMarginName, tabPage.Name);
 
                 if (tabPage.Controls.ContainsKey(marginLeft) || tabPage.Controls.ContainsKey(marginRight))
                 {
                     continue;
                 }
 
+                Panel panelVeryLeft = new Panel
+                                          {
+                                              Dock = DockStyle.Left,
+                                              Name = String.Format("{0}_Very", marginLeft),
+                                              Width = ((Screen.FromControl(form).Bounds.Width - 800) / 2) - WindowResource.relax_margin_left.Width
+                                          };
                 Panel panelLeft = new Panel
                                       {
+                                          Dock = DockStyle.Left,
                                           Name = marginLeft,
-                                          Width = (Screen.FromControl(form).Bounds.Width - 800) / 2
+                                          Width = WindowResource.relax_margin_left.Width,
+                                          BackgroundImage = WindowResource.relax_margin_left,
+                                          BackgroundImageLayout = ImageLayout.Stretch
                                       };
+
+                Panel panelVeryRight = new Panel
+                                           {
+                                               Dock = DockStyle.Right,
+                                               Name = String.Format("{0}_Very", marginRight),
+                                               Width = ((Screen.FromControl(form).Bounds.Width - 800) / 2) - WindowResource.relax_margin_right.Width
+                                           };
                 Panel panelRight = new Panel
                                        {
+                                           Dock = DockStyle.Right,
                                            Name = marginRight,
-                                           Width = (Screen.FromControl(form).Bounds.Width - 800) / 2
+                                           Width = WindowResource.relax_margin_right.Width,
+                                           BackgroundImage = WindowResource.relax_margin_right,
+                                           BackgroundImageLayout = ImageLayout.Stretch
                                        };
-                panelLeft.Dock = DockStyle.Left;
-                panelRight.Dock = DockStyle.Right;
 
                 tabPage.Controls.Add(panelLeft);
+                tabPage.Controls.Add(panelVeryLeft);
+
                 tabPage.Controls.Add(panelRight);
+                tabPage.Controls.Add(panelVeryRight);
             }
         }
 
