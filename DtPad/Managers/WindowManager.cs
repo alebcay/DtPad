@@ -929,82 +929,6 @@ namespace DtPad.Managers
 
         #endregion Other Methods
 
-        #region Full Screen Methods
-
-        internal static void ShowFullScreen(Form1 form)
-        {
-            if (NoteModeManager.IsWindowInNoteMode(form))
-            {
-                return;
-            }
-            if (IsWindowInFullScreenMode(form))
-            {
-                CloseFullScreen(form);
-                return;
-            }
-
-            ToolStripMenuItem fullscreenToolStripMenuItem = form.fullscreenToolStripMenuItem;
-            ToolStripMenuItem showTabAsNoteOnTopToolStripMenuItem1 = form.showTabAsNoteOnTopToolStripMenuItem1;
-            ToolStripMenuItem showTabAsNoteOnTopToolStripMenuItem = form.showTabAsNoteOnTopToolStripMenuItem;
-            ToolStripButton stayOnTopToolStripButton = form.stayOnTopToolStripButton;
-            ToolStripMenuItem stayOnTopToolStripMenuItem = form.stayOnTopToolStripMenuItem;
-            StatusStrip statusStrip = form.statusStrip;
-
-            if (form.WindowState != FormWindowState.Maximized)
-            {
-                ConfigUtil.UpdateParameters(new[] { "WindowState", "WindowSizeX", "WindowSizeY" }, new[] { form.WindowState.ToString(), form.Width.ToString(), form.Height.ToString() });
-            }
-            else
-            {
-                ConfigUtil.UpdateParameter("WindowState", form.WindowState.ToString());
-            }
-
-            form.WindowState = FormWindowState.Normal;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.TopMost = true;
-
-            form.Size = new Size(Screen.FromControl(form).Bounds.Width, Screen.FromControl(form).Bounds.Height);
-            form.SetDesktopLocation(0, 0);
-
-            fullscreenToolStripMenuItem.Visible = true;
-            showTabAsNoteOnTopToolStripMenuItem1.Enabled = false;
-            showTabAsNoteOnTopToolStripMenuItem.Enabled = false;
-            stayOnTopToolStripButton.Enabled = false;
-            stayOnTopToolStripMenuItem.Enabled = false;
-            statusStrip.SizingGrip = false;
-        }
-
-        internal static void CloseFullScreen(Form1 form)
-        {
-            ToolStripMenuItem fullscreenToolStripMenuItem = form.fullscreenToolStripMenuItem;
-            ToolStripMenuItem showTabAsNoteOnTopToolStripMenuItem1 = form.showTabAsNoteOnTopToolStripMenuItem1;
-            ToolStripMenuItem showTabAsNoteOnTopToolStripMenuItem = form.showTabAsNoteOnTopToolStripMenuItem;
-            ToolStripButton stayOnTopToolStripButton = form.stayOnTopToolStripButton;
-            ToolStripMenuItem stayOnTopToolStripMenuItem = form.stayOnTopToolStripMenuItem;
-            StatusStrip statusStrip = form.statusStrip;
-
-            form.FormBorderStyle = FormBorderStyle.Sizable;
-            form.TopMost = !ConfigUtil.GetBoolParameter("StayOnTopDisabled");
-
-            form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
-            form.SetDesktopLocation(50, 50);
-            form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
-
-            fullscreenToolStripMenuItem.Visible = false;
-            showTabAsNoteOnTopToolStripMenuItem1.Enabled = true;
-            showTabAsNoteOnTopToolStripMenuItem.Enabled = true;
-            stayOnTopToolStripButton.Enabled = true;
-            stayOnTopToolStripMenuItem.Enabled = true;
-            statusStrip.SizingGrip = true;
-        }
-
-        internal static bool IsWindowInFullScreenMode(Form1 form)
-        {
-            return form.FormBorderStyle == FormBorderStyle.None;
-        }
-
-        #endregion Full Screen Methods
-
         #region Screenshots Methods
 
         internal static void TakeTabControlScreenshot(Form1 form)
@@ -1064,6 +988,40 @@ namespace DtPad.Managers
         }
 
         #endregion Screenshots Methods
+
+        #region Other Methods
+
+        internal static void GetForm1StateAndSizes(Form form, out String[] parameterNames, out String[] parameterValues)
+        {
+            switch (form.WindowState)
+            {
+                case FormWindowState.Maximized:
+                    parameterNames = new String[1];
+                    parameterValues = new String[1];
+                    parameterNames[0] = "WindowState";
+                    parameterValues[0] = form.WindowState.ToString();
+                    break;
+                case FormWindowState.Normal:
+                    parameterNames = new String[3];
+                    parameterValues = new String[3];
+                    parameterNames[0] = "WindowState";
+                    parameterValues[0] = form.WindowState.ToString();
+                    parameterNames[1] = "WindowSizeX";
+                    parameterValues[1] = form.Size.Width.ToString();
+                    parameterNames[2] = "WindowSizeY";
+                    parameterValues[2] = form.Size.Height.ToString();
+                    break;
+
+                default:
+                    parameterNames = new String[1];
+                    parameterValues = new String[1];
+                    parameterNames[0] = "WindowState";
+                    parameterValues[0] = FormWindowState.Normal.ToString();
+                    break;
+            }
+        }
+
+        #endregion Other Methods
 
         #region Private Methods
 

@@ -4995,6 +4995,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Relax Mode.
+        /// </summary>
+        internal static string Form1_relaxModeToolStripMenuItem {
+            get {
+                return ResourceManager.GetString("Form1_relaxModeToolStripMenuItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reload.
         /// </summary>
         internal static string Form1_reloadToolStripMenuItem {
@@ -11644,6 +11653,15 @@ namespace DtPad.Languages {
         internal static string WindowManager_TextEmpty {
             get {
                 return ResourceManager.GetString("WindowManager_TextEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit Relax Mode (SHIFT+F11).
+        /// </summary>
+        internal static string WindowModeManager_ExitRelaxMode {
+            get {
+                return ResourceManager.GetString("WindowModeManager_ExitRelaxMode", resourceCulture);
             }
         }
         

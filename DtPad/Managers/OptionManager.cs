@@ -104,7 +104,7 @@ namespace DtPad.Managers
             WindowManager.CheckSearchReplacePanel(form1, showSearchPanelCheckBox.Checked, true); //form1.searchPanel.Visible
             WindowManager.CheckWordWrap(form1, !wordWrapCheckBox.Checked, false);
 
-            if (WindowManager.IsWindowInFullScreenMode(form1))
+            if (form1.WindowMode == CustomForm.WindowModeEnum.Fullscreen)
             {
                 WindowManager.CheckStayOnTop(form1, !stayOnTopCheckBox.Checked, false);
             }

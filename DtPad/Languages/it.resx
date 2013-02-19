@@ -4242,4 +4242,10 @@ Chiudi finestra e seleziona tab: INVIO o click del mouse</value>
   <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
     <value>Sostituisci:</value>
   </data>
+  <data name="Form1_relaxModeToolStripMenuItem" xml:space="preserve">
+    <value>Modalità relax</value>
+  </data>
+  <data name="WindowModeManager_ExitRelaxMode" xml:space="preserve">
+    <value>Chiudi modalità relax (SHIFT+F11)</value>
+  </data>
 </root>

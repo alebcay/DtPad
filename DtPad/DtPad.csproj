@@ -306,13 +306,13 @@
     <Compile Include="Managers\FormatManager.cs" />
     <Compile Include="Managers\ImportExportManager.cs" />
     <Compile Include="Managers\InternetManager.cs" />
-    <Compile Include="Managers\NoteModeManager.cs" />
     <Compile Include="Managers\ReplaceManager.cs" />
     <Compile Include="Managers\SearchFilesManager.cs" />
     <Compile Include="Managers\SessionManager.cs" />
     <Compile Include="Managers\ShellManager.cs" />
     <Compile Include="Managers\TemplateManager.cs" />
     <Compile Include="Managers\InternetServicesManager.cs" />
+    <Compile Include="Managers\WindowModeManager.cs" />
     <Compile Include="Managers\ZipManager.cs" />
     <Compile Include="MessageBoxes\QuestionYNNAC.cs">
       <SubType>Form</SubType>

@@ -503,11 +503,12 @@ namespace DtPad.Managers
 
         #region Check Methods
 
-        private static bool IsASessionOpened(Form1 form)
+        internal static bool IsASessionOpened(Form1 form)
         {
-            ToolStrip sessionToolStrip = form.sessionToolStrip;
+            //ToolStrip sessionToolStrip = form.sessionToolStrip;
+            ToolStripMenuItem closeToolStripMenuItem3 = form.closeToolStripMenuItem3;
 
-            return sessionToolStrip.Visible;
+            return closeToolStripMenuItem3.Enabled;
         }
 
         private static bool IsOpenedSessionModified(Form1 form)

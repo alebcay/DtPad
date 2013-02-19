@@ -320,6 +320,7 @@ namespace DtPad
             this.stayOnTopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minimizeOnTrayIconToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fullScreenToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.relaxModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
             this.focusOnEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetWindowLayoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -883,7 +884,7 @@ namespace DtPad
             this.windowToolStripMenuItem,
             this.helpToolStripMenuItem,
             this.fullscreenToolStripMenuItem});
-            this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+            this.menuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(898, 24);
@@ -2903,6 +2904,7 @@ namespace DtPad
             this.stayOnTopToolStripMenuItem,
             this.minimizeOnTrayIconToolStripMenuItem,
             this.fullScreenToolStripMenuItem1,
+            this.relaxModeToolStripMenuItem,
             this.toolStripSeparator13,
             this.focusOnEditorToolStripMenuItem,
             this.resetWindowLayoutToolStripMenuItem,
@@ -2936,6 +2938,14 @@ namespace DtPad
             this.fullScreenToolStripMenuItem1.Size = new System.Drawing.Size(234, 22);
             this.fullScreenToolStripMenuItem1.Text = "Full Screen";
             this.fullScreenToolStripMenuItem1.Click += new System.EventHandler(this.fullScreenToolStripMenuItem1_Click);
+            // 
+            // relaxModeToolStripMenuItem
+            // 
+            this.relaxModeToolStripMenuItem.Name = "relaxModeToolStripMenuItem";
+            this.relaxModeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.F11)));
+            this.relaxModeToolStripMenuItem.Size = new System.Drawing.Size(234, 22);
+            this.relaxModeToolStripMenuItem.Text = "Relax Mode";
+            this.relaxModeToolStripMenuItem.Click += new System.EventHandler(this.relaxModeToolStripMenuItem_Click);
             // 
             // toolStripSeparator13
             // 
@@ -3092,7 +3102,7 @@ namespace DtPad
             this.fullscreenToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.fullscreenToolStripMenuItem.Name = "fullscreenToolStripMenuItem";
             this.fullscreenToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.fullscreenToolStripMenuItem.Text = "Exit Full Screen";
+            this.fullscreenToolStripMenuItem.Text = "Exit Full Screen (F11)";
             this.fullscreenToolStripMenuItem.Visible = false;
             this.fullscreenToolStripMenuItem.Click += new System.EventHandler(this.fullscreenToolStripMenuItem_Click);
             // 
@@ -4888,6 +4898,7 @@ namespace DtPad
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator58;
         internal System.Windows.Forms.ToolStripMenuItem fullscreenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fullScreenToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem relaxModeToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem showTabAsNoteOnTopToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem setTabColorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem setTabColorOrangeToolStripMenuItem;

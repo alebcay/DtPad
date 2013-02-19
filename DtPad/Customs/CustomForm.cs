@@ -14,6 +14,14 @@ namespace DtPad.Customs
     /// <author>Marco Macciò, Derek Morin</author>
     public class CustomForm : Form
     {
+        public enum WindowModeEnum
+        {
+            Normal,
+            Note,
+            Fullscreen,
+            Relax
+        }
+
         #region Public Instance Fields
 
         [Category("Behavior"), Browsable(true), DisplayName("TextFont")]
@@ -41,6 +49,7 @@ namespace DtPad.Customs
         public FormWindowState PreviousWindowState { get; set; }
 
         public bool IsOpening { get; set; }
+        public WindowModeEnum WindowMode { get; set; }
 
         #endregion Public Instance Fields
 
@@ -92,6 +101,7 @@ namespace DtPad.Customs
             PreviousWindowState = WindowState;
             KeepInitialSpacesOnReturn = ConfigUtil.GetBoolParameter("KeepInitialSpacesOnReturn");
             KeepBulletListOnReturn = ConfigUtil.GetBoolParameter("KeepBulletListOnReturn");
+            WindowMode = WindowModeEnum.Normal;
             //PreviousWindowState = (WindowState == FormWindowState.Minimized ? FormWindowState.Normal : WindowState);
 
             TextFont = ConfigUtil.GetFontParameter("FontInUse");
@@ -120,6 +130,22 @@ namespace DtPad.Customs
             }
 
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            if (WindowMode != WindowModeEnum.Normal)
+            {
+                base.OnSizeChanged(e);
+                return;
+            }
+
+            String[] parameterNames;
+            String[] parameterValues;
+            WindowManager.GetForm1StateAndSizes(this, out parameterNames, out parameterValues);
+            ConfigUtil.UpdateParameters(parameterNames, parameterValues);
+
+            base.OnSizeChanged(e);
         }
 
         #endregion Protected Methods

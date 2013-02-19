@@ -106,9 +106,9 @@ namespace DtPad.Utils
                 TrayManager.RestoreFormFromTray(form, form.PreviousWindowState);
             }
 
-            if (noteModeOn && !NoteModeManager.IsWindowInNoteMode(form))
+            if (noteModeOn && form.WindowMode == CustomForm.WindowModeEnum.Normal)
             {
-                NoteModeManager.NoteModeOn(form);
+                WindowModeManager.ToggleNoteMode(form);
             }
         }
 

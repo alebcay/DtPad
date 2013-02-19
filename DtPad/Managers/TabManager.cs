@@ -59,7 +59,7 @@ namespace DtPad.Managers
 
             bool rowNumbersVisibile = lineNumbersToolStripMenuItem.Checked;
             bool wordWrapEnabled = wordWrapToolStripMenuItem.Checked;
-            if (NoteModeManager.IsWindowInNoteMode(form))
+            if (form.WindowMode == CustomForm.WindowModeEnum.Note)
             {
                 rowNumbersVisibile = false;
                 wordWrapEnabled = true;
@@ -163,6 +163,7 @@ namespace DtPad.Managers
 
             ExplorerManager.AddNodeToTabExplorer(form, newTabPageControl.Text, newTabPageControl.Name, 0, 0);
             OtherManager.FocusOnEditor(form);
+            WindowModeManager.AddRelaxModeMargins(form);
 
             return tabIdentity;
         }
@@ -981,7 +982,7 @@ namespace DtPad.Managers
             {
                 return;
             }
-            if (e.Button != MouseButtons.Left || NoteModeManager.IsWindowInNoteMode(form))
+            if (e.Button != MouseButtons.Left || form.WindowMode == CustomForm.WindowModeEnum.Note)
             {
                 return;
             }

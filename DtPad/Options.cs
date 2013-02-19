@@ -203,7 +203,7 @@ namespace DtPad
 
             //Tab - View
             stayOnTopCheckBox.Checked = !ConfigUtil.GetBoolParameter("StayOnTopDisabled");
-            if (WindowManager.IsWindowInFullScreenMode(form))
+            if (form.WindowMode == Customs.CustomForm.WindowModeEnum.Fullscreen)
             {
                 stayOnTopCheckBox.Enabled = false;
             }

@@ -4233,4 +4233,10 @@ Close window and select tab: ENTER or mouse click</value>
   <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
     <value>Replace:</value>
   </data>
+  <data name="Form1_relaxModeToolStripMenuItem" xml:space="preserve">
+    <value>Relax Mode</value>
+  </data>
+  <data name="WindowModeManager_ExitRelaxMode" xml:space="preserve">
+    <value>Exit Relax Mode (SHIFT+F11)</value>
+  </data>
 </root>

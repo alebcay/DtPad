@@ -158,47 +158,22 @@ namespace DtPad
 
         private void Form1_Closing(object sender, CancelEventArgs e)
         {
-            String[] parameterNames;
-            String[] parameterValues;
-
             OtherManager.FocusOnEditor(this);
 
-            if (NoteModeManager.IsWindowInNoteMode(this))
+            if (WindowMode == WindowModeEnum.Note)
             {
-                NoteModeManager.NoteModeOff(this);
+                WindowModeManager.ToggleNoteMode(this);
                 e.Cancel = true;
                 return;
             }
-            if (WindowManager.IsWindowInFullScreenMode(this))
+            if (WindowMode == WindowModeEnum.Fullscreen)
             {
-                WindowManager.CloseFullScreen(this);
+                WindowModeManager.ToggleFullscreenMode(this);
             }
 
-            switch (WindowState)
-            {
-                case FormWindowState.Maximized:
-                    parameterNames = new String[1];
-                    parameterValues = new String[1];
-                    parameterNames[0] = "WindowState";
-                    parameterValues[0] = WindowState.ToString();
-                    break;
-                case FormWindowState.Normal:
-                    parameterNames = new String[3];
-                    parameterValues = new String[3];
-                    parameterNames[0] = "WindowState";
-                    parameterValues[0] = WindowState.ToString();
-                    parameterNames[1] = "WindowSizeX";
-                    parameterValues[1] = Size.Width.ToString();
-                    parameterNames[2] = "WindowSizeY";
-                    parameterValues[2] = Size.Height.ToString();
-                    break;
-                default:
-                    parameterNames = new String[1];
-                    parameterValues = new String[1];
-                    parameterNames[0] = "WindowState";
-                    parameterValues[0] = FormWindowState.Normal.ToString();
-                    break;
-            }
+            String[] parameterNames;
+            String[] parameterValues;
+            WindowManager.GetForm1StateAndSizes(this, out parameterNames, out parameterValues);
 
             foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
             {
@@ -1234,7 +1209,7 @@ namespace DtPad
 
         private void showTabAsNoteOnTopToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            NoteModeManager.NoteModeOn(this);
+            WindowModeManager.ToggleNoteMode(this);
         }
 
         private void compareTabsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1424,12 +1399,17 @@ namespace DtPad
 
         private void fullscreenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            WindowManager.CloseFullScreen(this);
+            WindowModeManager.ToggleNonStandardMode(this); //WindowModeManager.ToggleFullscreenMode(this);
         }
 
         private void fullScreenToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            WindowManager.ShowFullScreen(this);
+            WindowModeManager.ToggleFullscreenMode(this);
+        }
+
+        private void relaxModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WindowModeManager.ToggleRelaxMode(this);
         }
 
         private void hTMLTableTagsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1901,7 +1881,7 @@ namespace DtPad
 
         private void showTabAsNoteOnTopToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            NoteModeManager.NoteModeOn(this);
+            WindowModeManager.ToggleNoteMode(this);
         }
 
         private void propertiesToolStripMenuItem_Click(object sender, EventArgs e)
