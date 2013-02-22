@@ -19,7 +19,7 @@ namespace DtPad.Managers
     internal static class WindowModeManager
     {
         private const String className = "WindowModeManager";
-        private const String RelaxModeMarginName = "RelaxModeMargin";
+        private const String relaxModeMarginName = "RelaxModeMargin";
 
         #region Generic Methods
 
@@ -183,7 +183,6 @@ namespace DtPad.Managers
 
             form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
             form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
-            form.Refresh();
             form.SetDesktopLocation(50, 50);
             verticalSplitContainer.Panel2Collapsed = ConfigUtil.GetBoolParameter("InternalExplorerInvisible");
         }
@@ -373,8 +372,8 @@ namespace DtPad.Managers
 
             foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
             {
-                String marginLeft = String.Format("{0}Left_{1}", RelaxModeMarginName, tabPage.Name);
-                String marginRight = String.Format("{0}Right_{1}", RelaxModeMarginName, tabPage.Name);
+                String marginLeft = String.Format("{0}Left_{1}", relaxModeMarginName, tabPage.Name);
+                String marginRight = String.Format("{0}Right_{1}", relaxModeMarginName, tabPage.Name);
 
                 if (!tabPage.Controls.ContainsKey(marginLeft) && !tabPage.Controls.ContainsKey(marginRight))
                 {
@@ -402,8 +401,8 @@ namespace DtPad.Managers
 
             foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
             {
-                String marginLeft = String.Format("{0}Left_{1}", RelaxModeMarginName, tabPage.Name);
-                String marginRight = String.Format("{0}Right_{1}", RelaxModeMarginName, tabPage.Name);
+                String marginLeft = String.Format("{0}Left_{1}", relaxModeMarginName, tabPage.Name);
+                String marginRight = String.Format("{0}Right_{1}", relaxModeMarginName, tabPage.Name);
 
                 if (tabPage.Controls.ContainsKey(marginLeft) || tabPage.Controls.ContainsKey(marginRight))
                 {

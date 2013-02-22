@@ -2445,17 +2445,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-        ///causa di un gran numero di righe di testo. E&apos; possibile ripristinarlo
-        ///in qualsiasi momento..
-        /// </summary>
-        internal static string FileManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("FileManager_LineNumbersDisabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to L&apos;area temporanea di scrittura non può essere impostata in sola lettura.
         ///Solo i file aperti possono esserlo..
         /// </summary>
@@ -6538,17 +6527,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-        ///causa di un gran numero di righe di testo. E&apos; possibile ripristinarlo
-        ///in qualsiasi momento..
-        /// </summary>
-        internal static string InternetManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("InternetManager_LineNumbersDisabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to L&apos;area di scrittura è vuota..
         /// </summary>
         internal static string InternetManager_NoContent {
@@ -6830,17 +6808,6 @@ namespace DtPad.Languages {
         internal static string NoteManager_ErrorRemoving {
             get {
                 return ResourceManager.GetString("NoteManager_ErrorRemoving", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-        ///causa di un gran numero di righe di testo incollate. E&apos; possibile ripristinarlo
-        ///in qualsiasi momento..
-        /// </summary>
-        internal static string NoteManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("NoteManager_LineNumbersDisabled", resourceCulture);
             }
         }
         
@@ -10873,17 +10840,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-        ///causa di un gran numero di righe di testo incollate. E&apos; possibile ripristinarlo
-        ///in qualsiasi momento..
-        /// </summary>
-        internal static string TextManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("TextManager_LineNumbersDisabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Gli appunti non contengono dati nel formato selezionato..
         /// </summary>
         internal static string TextManager_NoSpecialData {
@@ -11650,6 +11606,16 @@ namespace DtPad.Languages {
         internal static string WindowManager_FatalException {
             get {
                 return ResourceManager.GetString("WindowManager_FatalException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Il pannello dei numeri riga è stato temporaneamente disabilitato a
+        ///causa della lunghezza del testo. E&apos; possibile ripristinarlo in qualsiasi momento..
+        /// </summary>
+        internal static string WindowManager_LineNumbersDisabled {
+            get {
+                return ResourceManager.GetString("WindowManager_LineNumbersDisabled", resourceCulture);
             }
         }
         

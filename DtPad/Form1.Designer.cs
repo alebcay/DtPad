@@ -4468,7 +4468,7 @@ namespace DtPad
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
-            this.MinimumSize = new System.Drawing.Size(127, 109);
+            //this.MinimumSize = new System.Drawing.Size(127, 109);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DtPad - Untitled";

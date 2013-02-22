@@ -132,11 +132,11 @@ namespace DtPad.Customs
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        protected override void OnResizeEnd(EventArgs e)
+        protected override void OnSizeChanged(EventArgs e)
         {
             if (WindowMode != WindowModeEnum.Normal || IsOpening)
             {
-                base.OnResizeEnd(e);
+                base.OnSizeChanged(e);
                 return;
             }
 
@@ -145,7 +145,7 @@ namespace DtPad.Customs
             WindowManager.GetForm1StateAndSizes(this, out parameterNames, out parameterValues);
             ConfigUtil.UpdateParameters(parameterNames, parameterValues);
 
-            base.OnResizeEnd(e);
+            base.OnSizeChanged(e);
         }
 
         #endregion Protected Methods

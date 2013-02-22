@@ -2526,17 +2526,9 @@ Verifique que la conexión a Internet está activa o intenta enviar una menor ca
   <data name="TranslateText_translateButton" xml:space="preserve">
     <value>Traducir</value>
   </data>
-  <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
-    <value>El panel de los números de fila se ha desactivado temporalmente debido a una gran
-número de líneas de texto pegados. Puede abrirlo de nuevo en cualquier momento.</value>
-  </data>
   <data name="XmlEditor_Error" xml:space="preserve">
     <value>Contenido no es correcto.
 {0}</value>
-  </data>
-  <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
-    <value>El panel de los números de fila se ha desactivado temporalmente debido a una gran
-número de líneas de texto. Puede abrirlo de nuevo en cualquier momento.</value>
   </data>
   <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
     <value>Nuevo y pegar</value>
@@ -2949,10 +2941,6 @@ Formato exigido: example@email.com</value>
   <data name="Form1_saveToolStripMenuItem3" xml:space="preserve">
     <value>Guardar</value>
   </data>
-  <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
-    <value>El panel de los números de fila se ha desactivado temporalmente debido a una gran
-número de líneas de texto. Puede abrirlo de nuevo en cualquier momento.</value>
-  </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
     <value>Archivo &quot;{0}&quot; se ha eliminado</value>
   </data>
@@ -3256,10 +3244,6 @@ Verificar para ser autenticado en él, mediante la apertura de &quot;www.dropbox
   </data>
   <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
     <value>Cerrar todo</value>
-  </data>
-  <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
-    <value>El panel de los números de fila se ha desactivado temporalmente debido a una gran
-número de líneas de texto. Puede abrirlo de nuevo en cualquier momento.</value>
   </data>
   <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
     <value>Azul</value>
@@ -4242,5 +4226,15 @@ Cerrar la ventana y seleccionar la pestaña: ENTER o clic con el mouse</value>
   <data name="ColumnRulerManager_NoColumnsWithRelax" xml:space="preserve">
     <value>Los números de columna no se pudo demostrar al utilizar el
 modo relajación.</value>
+  </data>
+  <data name="ErrorOR_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Mostrar detalles del error</value>
+  </data>
+  <data name="ErrorO_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Mostrar detalles del error</value>
+  </data>
+  <data name="WindowManager_LineNumbersDisabled" xml:space="preserve">
+    <value>El panel de los números de fila se ha desactivado temporalmente debido a una gran
+número de líneas de texto. Puede abrirlo de nuevo en cualquier momento.</value>
   </data>
 </root>

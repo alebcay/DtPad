@@ -2480,19 +2480,9 @@ una quantità di testo inferiore.</value>
   <data name="TranslateText_translateButton" xml:space="preserve">
     <value>Traduci</value>
   </data>
-  <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-causa di un gran numero di righe di testo incollate. E' possibile ripristinarlo
-in qualsiasi momento.</value>
-  </data>
   <data name="XmlEditor_Error" xml:space="preserve">
     <value>Il contenuto non è corretto.
 {0}</value>
-  </data>
-  <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-causa di un gran numero di righe di testo. E' possibile ripristinarlo
-in qualsiasi momento.</value>
   </data>
   <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
     <value>Nuovo e incolla</value>
@@ -2906,11 +2896,6 @@ Formato richiesto: esempio@email.it</value>
   <data name="Form1_saveToolStripMenuItem3" xml:space="preserve">
     <value>Salva</value>
   </data>
-  <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-causa di un gran numero di righe di testo. E' possibile ripristinarlo
-in qualsiasi momento.</value>
-  </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
     <value>File "{0}" cancellato</value>
   </data>
@@ -3214,11 +3199,6 @@ Verifica di essere autenticato su di esso aprendo "www.dropbox.com" con il brows
   </data>
   <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
     <value>Chiudi tutto</value>
-  </data>
-  <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Il pannello dei numeri di riga è stato temporaneamente disabilitato a
-causa di un gran numero di righe di testo incollate. E' possibile ripristinarlo
-in qualsiasi momento.</value>
   </data>
   <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
     <value>Blu</value>
@@ -4257,5 +4237,9 @@ si usa la modalità relax.</value>
   </data>
   <data name="ErrorO_errorDetailsPictureBoxToolTip" xml:space="preserve">
     <value>Mostra dettagli errore</value>
+  </data>
+  <data name="WindowManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Il pannello dei numeri riga è stato temporaneamente disabilitato a
+causa della lunghezza del testo. E' possibile ripristinarlo in qualsiasi momento.</value>
   </data>
 </root>
