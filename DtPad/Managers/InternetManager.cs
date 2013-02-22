@@ -210,20 +210,11 @@ namespace DtPad.Managers
                 pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
             }
 
-            bool linesDisabled = false;
-            if (ConfigUtil.GetBoolParameter("LineNumbersVisible") && StringUtil.AreLinesTooMuchForPasteWithRowLines_External(urlSource))
-            {
-                WindowManager.CheckLineNumbers(form, false, true);
-                linesDisabled = true;
-            }
+            //Row number check
+            WindowManager.CheckLineNumbersForTextLenght_External(form, urlSource);
 
             pageTextBox.SelectedText = urlSource;
             TextManager.RefreshUndoRedoExternal(form);
-
-            if (linesDisabled)
-            {
-                WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
-            }
 
             return true;
         }

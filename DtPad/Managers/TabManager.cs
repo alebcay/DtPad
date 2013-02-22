@@ -432,25 +432,25 @@ namespace DtPad.Managers
             }
 
             XtraTabPage firstTab = GetXtraTabPageFromName(pagesTabControl, selectedTabNames[0]);
+            CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(firstTab);
 
             for (int i = 1; i < selectedTabNames.Length; i++)
             {
-                CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(firstTab);
-
+                String textPostMerge;
                 if (indicateMerge)
                 {
-                    pageTextBox.Text = pageTextBox.Text + ConstantUtil.newLine + markSeparation + ConstantUtil.newLine + ProgramUtil.GetPageTextBox(GetXtraTabPageFromName(pagesTabControl, selectedTabNames[i])).Text;
+                    textPostMerge = pageTextBox.Text + ConstantUtil.newLine + markSeparation + ConstantUtil.newLine + ProgramUtil.GetPageTextBox(GetXtraTabPageFromName(pagesTabControl, selectedTabNames[i])).Text;
                 }
                 else
                 {
-                    pageTextBox.Text = pageTextBox.Text + ConstantUtil.newLine + ProgramUtil.GetPageTextBox(GetXtraTabPageFromName(pagesTabControl, selectedTabNames[i])).Text;
+                    textPostMerge = pageTextBox.Text + ConstantUtil.newLine + ProgramUtil.GetPageTextBox(GetXtraTabPageFromName(pagesTabControl, selectedTabNames[i])).Text;
                 }
 
-                if (linesDisabled != true && ConfigUtil.GetBoolParameter("LineNumbersVisible") && StringUtil.AreLinesTooMuchForPasteWithRowLines(pageTextBox.Text))
+                if (linesDisabled != true)
                 {
-                    WindowManager.CheckLineNumbers(form, false, true);
-                    linesDisabled = true;
+                    linesDisabled = WindowManager.CheckLineNumbersForTextLenght(form, textPostMerge, true);
                 }
+                pageTextBox.Text = textPostMerge;
 
                 pagesTabControl.TabPages.Remove(GetXtraTabPageFromName(pagesTabControl, selectedTabNames[i]));
                 toolStripProgressBar.PerformStep();
@@ -461,6 +461,8 @@ namespace DtPad.Managers
             toolStripProgressBar.Visible = false;
             toolStripProgressBar.Maximum = previousMaximum;
             toolStripProgressBar.Step = previousStep;
+
+            pagesTabControl.SelectedTabPage = firstTab;
 
             if (linesDisabled)
             {

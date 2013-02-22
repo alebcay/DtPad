@@ -418,10 +418,7 @@ namespace DtPad.Managers
                 }
 
                 //Row number check
-                if (ConfigUtil.GetBoolParameter("LineNumbersVisible") && StringUtil.AreLinesTooMuchForPasteWithRowLines(fileList))
-                {
-                    WindowManager.CheckLineNumbers(form, false, true);
-                }
+                WindowManager.CheckLineNumbersForTextLenght(form, String.Format("{0}{1}", pageTextBox.Text, fileList));
 
                 if (!TabManager.IsCurrentTabInUse(form))
                 {

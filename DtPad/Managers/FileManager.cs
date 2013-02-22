@@ -53,7 +53,6 @@ namespace DtPad.Managers
             ToolStripProgressBar toolStripProgressBar = form.toolStripProgressBar;
             OpenFileDialog openFileDialog = form.openFileDialog;
 
-            bool linesDisabled = false;
             bool isWindowsHostsFile = false;
             int localTabIdentity = tabIdentity;
             errors = new List<String>();
@@ -225,11 +224,8 @@ namespace DtPad.Managers
                     }
                     toolStripProgressBar.PerformStep();
 
-                    if (ConfigUtil.GetBoolParameter("LineNumbersVisible") && StringUtil.AreLinesTooMuchForPasteWithRowLines(fileContents))
-                    {
-                        WindowManager.CheckLineNumbers(form, false, true);
-                        linesDisabled = true;
-                    }
+                    //Row number check
+                    WindowManager.CheckLineNumbersForTextLenght(form, fileContents);
                     
                     FileInfo fileInfo = new FileInfo(fileName);
 
@@ -267,11 +263,6 @@ namespace DtPad.Managers
                     toolStripProgressBar.PerformStep();
 
                     tabIdentity = localTabIdentity;
-
-                    if (linesDisabled)
-                    {
-                        WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
-                    }
 
                     if (!String.IsNullOrEmpty(fileInfo.Extension) && ConfigUtil.GetStringParameter("AutoFormatFiles").Contains(fileInfo.Extension))
                     {

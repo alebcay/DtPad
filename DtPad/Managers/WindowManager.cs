@@ -890,6 +890,30 @@ namespace DtPad.Managers
             UpdateConfigParameter("LineNumbersVisible", checkStatus.ToString(), refreshConfig);
         }
 
+        internal static bool CheckLineNumbersForTextLenght(Form1 form, String text, bool suppressMessage = false)
+        {
+            if (ConfigUtil.GetBoolParameter("LineNumbersVisible") && StringUtil.AreLinesTooMuchForPasteWithRowLines(text))
+            {
+                CheckLineNumbers(form, false, true);
+                if (!suppressMessage)
+                {
+                    ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
+                }
+                return true;
+            }
+
+            return false;
+        }
+
+        internal static void CheckLineNumbersForTextLenght_External(Form1 form, String text)
+        {
+            if (ConfigUtil.GetBoolParameter("LineNumbersVisible") && StringUtil.AreLinesTooMuchForPasteWithRowLines_External(text))
+            {
+                CheckLineNumbers(form, false, true);
+                ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
+            }
+        }
+
         internal static void ResetMainWindow(Form1 form)
         {
             if (ShowQuestionBox(form, LanguageUtil.GetCurrentLanguageString("SureResetWindow", className)) == DialogResult.No)

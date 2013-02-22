@@ -2527,17 +2527,9 @@ Verify that the internet connection is active or try to send a smaller amount of
   <data name="TranslateText_translateButton" xml:space="preserve">
     <value>Translate</value>
   </data>
-  <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row numbers panel has been temporarily disabled because of a large
-number of pasted text lines. It is possible to open it again at anytime.</value>
-  </data>
   <data name="XmlEditor_Error" xml:space="preserve">
     <value>Content is incorrect.
 {0}</value>
-  </data>
-  <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row numbers panel has been temporarily disabled because of a large
-number of text lines. It is possible to open it again at anytime.</value>
   </data>
   <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
     <value>New And Paste</value>
@@ -2950,10 +2942,6 @@ Required format: example@email.com</value>
   <data name="Form1_saveToolStripMenuItem3" xml:space="preserve">
     <value>Save</value>
   </data>
-  <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row numbers panel has been temporarily disabled because of a large
-number of text lines. It is possible to open it again at anytime.</value>
-  </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
     <value>File "{0}" deleted</value>
   </data>
@@ -3257,10 +3245,6 @@ Verify to be authenticated on it by opening "www.dropbox.com" with your default 
   </data>
   <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
     <value>Close All</value>
-  </data>
-  <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Row numbers panel has been temporarily disabled because of a large
-number of text lines. It is possible to open it again at anytime.</value>
   </data>
   <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
     <value>Blue</value>
@@ -4248,5 +4232,9 @@ the relax mode.</value>
   </data>
   <data name="ErrorO_errorDetailsPictureBoxToolTip" xml:space="preserve">
     <value>Show error details</value>
+  </data>
+  <data name="WindowManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Row numbers panel has been temporarily disabled because of a large
+number of text lines. It is possible to open it again at anytime.</value>
   </data>
 </root>

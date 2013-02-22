@@ -100,6 +100,10 @@ namespace DtPad.Managers
             form.TopMost = true;
             form.FormBorderStyle = FormBorderStyle.SizableToolWindow;
 
+            #if Debug
+                form.TopMost = false;
+            #endif
+
             for (int i = 0; i < pagesTabControl.TabPages.Count; i++)
             {
                 CustomLineNumbers customLineNumbers = ProgramUtil.GetCustomLineNumbers(pagesTabControl.TabPages[i]);
@@ -146,7 +150,6 @@ namespace DtPad.Managers
                 pagesTabControl.CustomHeaderButtons.AddRange(new[] { new CustomHeaderButton(ButtonPredefines.Ellipsis) });
             }
 
-            form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
             menuStrip.Visible = true;
             toolStrip.Visible = !ConfigUtil.GetBoolParameter("ToolbarInvisible");
             pagesTabControl.ShowTabHeader = DefaultBoolean.True;
@@ -159,6 +162,10 @@ namespace DtPad.Managers
             zoomTrackBarControl.Visible = true;
             form.TopMost = !ConfigUtil.GetBoolParameter("StayOnTopDisabled");
             form.FormBorderStyle = FormBorderStyle.Sizable;
+
+            #if Debug
+                form.TopMost = false;
+            #endif
 
             for (int i = 0; i < pagesTabControl.TabPages.Count; i++)
             {
@@ -174,8 +181,10 @@ namespace DtPad.Managers
                 CustomFilesManager.ResumeAnnotationPanel(form);
             }
 
-            form.SetDesktopLocation(50, 50);
             form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
+            form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
+            form.Refresh();
+            form.SetDesktopLocation(50, 50);
             verticalSplitContainer.Panel2Collapsed = ConfigUtil.GetBoolParameter("InternalExplorerInvisible");
         }
 
@@ -216,12 +225,15 @@ namespace DtPad.Managers
             //    ConfigUtil.UpdateParameter("WindowState", form.WindowState.ToString());
             //}
 
-            form.WindowState = FormWindowState.Normal;
             form.FormBorderStyle = FormBorderStyle.None;
             form.TopMost = true;
-
+            form.WindowState = FormWindowState.Normal;
             form.Size = new Size(Screen.FromControl(form).Bounds.Width, Screen.FromControl(form).Bounds.Height);
             form.SetDesktopLocation(0, 0);
+
+            #if Debug
+                form.TopMost = false;
+            #endif
 
             fullscreenToolStripMenuItem.Text = LanguageUtil.GetCurrentLanguageString("fullscreenToolStripMenuItem", form.Name);
             fullscreenToolStripMenuItem.Visible = true;
@@ -243,11 +255,14 @@ namespace DtPad.Managers
 
             form.FormBorderStyle = FormBorderStyle.Sizable;
             form.TopMost = !ConfigUtil.GetBoolParameter("StayOnTopDisabled");
-
+            form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
             form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
             form.SetDesktopLocation(50, 50);
-            form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
 
+            #if Debug
+                form.TopMost = false;
+            #endif
+            
             fullscreenToolStripMenuItem.Visible = false;
             showTabAsNoteOnTopToolStripMenuItem1.Enabled = true;
             showTabAsNoteOnTopToolStripMenuItem.Enabled = true;
@@ -297,9 +312,9 @@ namespace DtPad.Managers
 
             sessionToolStrip.Visible = false;
 
-            form.WindowState = FormWindowState.Normal;
             form.FormBorderStyle = FormBorderStyle.None;
             form.TopMost = true;
+            form.WindowState = FormWindowState.Normal;
             form.Size = new Size(Screen.FromControl(form).Bounds.Width, Screen.FromControl(form).Bounds.Height);
             form.SetDesktopLocation(0, 0);
     
@@ -346,11 +361,15 @@ namespace DtPad.Managers
 
             sessionToolStrip.Visible = SessionManager.IsASessionOpened(form);
 
-            form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
             form.FormBorderStyle = FormBorderStyle.Sizable;
             form.TopMost = !ConfigUtil.GetBoolParameter("StayOnTopDisabled");
+            form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
             form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
             form.SetDesktopLocation(50, 50);
+
+            #if Debug
+                form.TopMost = false;
+            #endif
 
             foreach (XtraTabPage tabPage in pagesTabControl.TabPages)
             {

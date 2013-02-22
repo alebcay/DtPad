@@ -6,7 +6,6 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
 using DevExpress.XtraTab;
-using DtControls;
 using DtPad.Customs;
 using DtPad.Utils;
 
@@ -269,9 +268,7 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
 
-            CustomLineNumbers customLineNumbers;
             String content;
-            bool linesDisabled = false;
 
             switch (exportType)
             {
@@ -282,21 +279,12 @@ namespace DtPad.Managers
                         pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
                     }
 
-                    customLineNumbers = ProgramUtil.GetCustomLineNumbers(pagesTabControl.SelectedTabPage);
                     content = FileUtil.ReadToEndWithStandardEncoding(Path.Combine(ConstantUtil.ApplicationExecutionPath(), ConstantUtil.noFile));
 
-                    if (StringUtil.AreLinesTooMuchForPasteWithRowLines(content) && customLineNumbers.Visible)
-                    {
-                        WindowManager.CheckLineNumbers(form, false, true);
-                        linesDisabled = true;
-                    }
+                    //Row number check
+                    WindowManager.CheckLineNumbersForTextLenght(form, content);
 
                     pageTextBox.SelectedText = content;
-
-                    if (linesDisabled)
-                    {
-                        WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
-                    }
 
                     TextManager.RefreshUndoRedoExternal(form);
                     break;
@@ -316,22 +304,12 @@ namespace DtPad.Managers
                                 pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
                             }
 
-                            customLineNumbers = ProgramUtil.GetCustomLineNumbers(pagesTabControl.SelectedTabPage);
                             content = noteNode.ChildNodes[0].InnerText + ConstantUtil.newLine + ConstantUtil.newLine + noteNode.ChildNodes[1].InnerText;
-                            linesDisabled = false;
 
-                            if (StringUtil.AreLinesTooMuchForPasteWithRowLines(content) && customLineNumbers.Visible)
-                            {
-                                WindowManager.CheckLineNumbers(form, false, true);
-                                linesDisabled = true;
-                            }
+                            //Row number check
+                            WindowManager.CheckLineNumbersForTextLenght(form, content);
 
                             pageTextBox.SelectedText = content;
-
-                            if (linesDisabled)
-                            {
-                                WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
-                            }
 
                             TextManager.RefreshUndoRedoExternal(form);
                         }
@@ -426,7 +404,6 @@ namespace DtPad.Managers
 
             TreeNode selectedNode = notesTreeView.SelectedNode;
             String content;
-            bool linesDisabled = false;
 
             try
             {
@@ -443,20 +420,10 @@ namespace DtPad.Managers
                 form.TabIdentity = TabManager.AddNewPage(form, form.TabIdentity);
             }
 
-            CustomLineNumbers customLineNumbers = ProgramUtil.GetCustomLineNumbers(pagesTabControl.SelectedTabPage);
-
-            if (StringUtil.AreLinesTooMuchForPasteWithRowLines(content) && customLineNumbers.Visible)
-            {
-                WindowManager.CheckLineNumbers(form, false, true);
-                linesDisabled = true;
-            }
+            //Row number check
+            WindowManager.CheckLineNumbersForTextLenght(form, content);
 
             ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage).Text = content;
-
-            if (linesDisabled)
-            {
-                WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
-            }
         }
 
         internal static void ChangeNoteColor(Form1 form, TagEnum color)

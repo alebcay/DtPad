@@ -2447,16 +2447,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Row numbers panel has been temporarily disabled because of a large
-        ///number of text lines. It is possible to open it again at anytime..
-        /// </summary>
-        internal static string FileManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("FileManager_LineNumbersDisabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Temporary editing area cannot be made read-only. Only existing files can..
         /// </summary>
         internal static string FileManager_NoFileToReadonly {
@@ -6538,16 +6528,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Row numbers panel has been temporarily disabled because of a large
-        ///number of text lines. It is possible to open it again at anytime..
-        /// </summary>
-        internal static string InternetManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("InternetManager_LineNumbersDisabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Text area is empty..
         /// </summary>
         internal static string InternetManager_NoContent {
@@ -6828,16 +6808,6 @@ namespace DtPad.Languages {
         internal static string NoteManager_ErrorRemoving {
             get {
                 return ResourceManager.GetString("NoteManager_ErrorRemoving", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Row numbers panel has been temporarily disabled because of a large
-        ///number of text lines. It is possible to open it again at anytime..
-        /// </summary>
-        internal static string NoteManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("NoteManager_LineNumbersDisabled", resourceCulture);
             }
         }
         
@@ -10869,16 +10839,6 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Row numbers panel has been temporarily disabled because of a large
-        ///number of pasted text lines. It is possible to open it again at anytime..
-        /// </summary>
-        internal static string TextManager_LineNumbersDisabled {
-            get {
-                return ResourceManager.GetString("TextManager_LineNumbersDisabled", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Clipboard does not contains data with selected format..
         /// </summary>
         internal static string TextManager_NoSpecialData {
@@ -11645,6 +11605,16 @@ namespace DtPad.Languages {
         internal static string WindowManager_FatalException {
             get {
                 return ResourceManager.GetString("WindowManager_FatalException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Row numbers panel has been temporarily disabled because of a large
+        ///number of text lines. It is possible to open it again at anytime..
+        /// </summary>
+        internal static string WindowManager_LineNumbersDisabled {
+            get {
+                return ResourceManager.GetString("WindowManager_LineNumbersDisabled", resourceCulture);
             }
         }
         

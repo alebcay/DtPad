@@ -4,7 +4,6 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using DevExpress.XtraTab;
-using DtControls;
 using DtPad.Customs;
 using DtPad.Utils;
 using ComboBox = System.Windows.Forms.ComboBox;
@@ -233,7 +232,6 @@ namespace DtPad.Managers
             ToolStripComboBox prefixToolStripComboBox = form.prefixToolStripComboBox;
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            CustomLineNumbers customLineNumbers = ProgramUtil.GetCustomLineNumbers(pagesTabControl.SelectedTabPage);
 
             if (!Clipboard.ContainsText())
             {
@@ -245,21 +243,12 @@ namespace DtPad.Managers
                 if (pageTextBox.Focused || forcePageTextBox)
                 {
                     String clipboardText = Clipboard.GetText(TextDataFormat.UnicodeText).Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-                    bool linesDisabled = false;
 
-                    if (StringUtil.AreLinesTooMuchForPasteWithRowLines(pageTextBox.Text + clipboardText) && customLineNumbers.Visible)
-                    {
-                        WindowManager.CheckLineNumbers(form, false, true);
-                        linesDisabled = true;
-                    }
+                    //Row number check
+                    WindowManager.CheckLineNumbersForTextLenght(form, String.Format("{0}{1}", pageTextBox.Text, clipboardText));
 
                     pageTextBox.SelectedText = clipboardText; //pageTextBox.Paste(DataFormats.GetFormat(DataFormats.Text)); 
                     RefreshUndoRedoExternal(form);
-
-                    if (linesDisabled)
-                    {
-                        WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
-                    }
                 }
                 else if (IsTextboxInsideFactory(form))
                 {
@@ -287,7 +276,6 @@ namespace DtPad.Managers
         {
             XtraTabControl pagesTabControl = form.pagesTabControl;
             CustomRichTextBox pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-            CustomLineNumbers customLineNumbers = ProgramUtil.GetCustomLineNumbers(pagesTabControl.SelectedTabPage);
 
             if (!Clipboard.ContainsText())
             {
@@ -316,21 +304,12 @@ namespace DtPad.Managers
                 if (pageTextBox.Focused)
                 {
                     clipboardText = clipboardText.Replace(ConstantUtil.newLineNotCompatible, ConstantUtil.newLine);
-                    bool linesDisabled = false;
 
-                    if (StringUtil.AreLinesTooMuchForPasteWithRowLines(pageTextBox.Text + clipboardText) && customLineNumbers.Visible)
-                    {
-                        WindowManager.CheckLineNumbers(form, false, true);
-                        linesDisabled = true;
-                    }
+                    //Row number check
+                    WindowManager.CheckLineNumbersForTextLenght(form, String.Format("{0}{1}", pageTextBox.Text, clipboardText));
 
                     pageTextBox.SelectedText = clipboardText;
                     RefreshUndoRedoExternal(form);
-
-                    if (linesDisabled)
-                    {
-                        WindowManager.ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
-                    }
                 }
             }
             catch (ExternalException exception)
