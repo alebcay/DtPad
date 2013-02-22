@@ -1634,6 +1634,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mostra dettagli errore.
+        /// </summary>
+        internal static string ErrorO_errorDetailsPictureBoxToolTip {
+            get {
+                return ResourceManager.GetString("ErrorO_errorDetailsPictureBoxToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
         internal static string ErrorO_okButton {
@@ -1657,6 +1666,15 @@ namespace DtPad.Languages {
         internal static string ErrorOR_copyErrorDescriptionPictureBoxToolTip {
             get {
                 return ResourceManager.GetString("ErrorOR_copyErrorDescriptionPictureBoxToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mostra dettagli errore.
+        /// </summary>
+        internal static string ErrorOR_errorDetailsPictureBoxToolTip {
+            get {
+                return ResourceManager.GetString("ErrorOR_errorDetailsPictureBoxToolTip", resourceCulture);
             }
         }
         

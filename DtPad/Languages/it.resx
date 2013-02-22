@@ -4252,4 +4252,10 @@ Chiudi finestra e seleziona tab: INVIO o click del mouse</value>
     <value>I numeri di colonna non possono essere mostrati mentre
 si usa la modalità relax.</value>
   </data>
+  <data name="ErrorOR_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Mostra dettagli errore</value>
+  </data>
+  <data name="ErrorO_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Mostra dettagli errore</value>
+  </data>
 </root>

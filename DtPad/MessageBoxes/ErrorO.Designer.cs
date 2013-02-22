@@ -34,8 +34,10 @@ namespace DtPad.MessageBoxes
             this.okButton = new System.Windows.Forms.Button();
             this.copyErrorMessageToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.copyErrorDescriptionPictureBox = new System.Windows.Forms.PictureBox();
+            this.errorDetailsPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.copyErrorDescriptionPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDetailsPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // errorPictureBox
@@ -84,6 +86,18 @@ namespace DtPad.MessageBoxes
             this.copyErrorMessageToolTip.SetToolTip(this.copyErrorDescriptionPictureBox, "Copy error message to clipboard");
             this.copyErrorDescriptionPictureBox.Click += new System.EventHandler(this.copyErrorDescriptionPictureBox_Click);
             // 
+            // errorDetailsPictureBox
+            // 
+            this.errorDetailsPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.errorDetailsPictureBox.Image = global::DtPad.ToolbarResource.cloud;
+            this.errorDetailsPictureBox.Location = new System.Drawing.Point(35, 74);
+            this.errorDetailsPictureBox.Name = "errorDetailsPictureBox";
+            this.errorDetailsPictureBox.Size = new System.Drawing.Size(16, 16);
+            this.errorDetailsPictureBox.TabIndex = 6;
+            this.errorDetailsPictureBox.TabStop = false;
+            this.copyErrorMessageToolTip.SetToolTip(this.errorDetailsPictureBox, "Show error details");
+            this.errorDetailsPictureBox.Click += new System.EventHandler(this.errorDetailsPictureBox_Click);
+            // 
             // ErrorO
             // 
             this.AcceptButton = this.okButton;
@@ -91,6 +105,7 @@ namespace DtPad.MessageBoxes
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.okButton;
             this.ClientSize = new System.Drawing.Size(347, 102);
+            this.Controls.Add(this.errorDetailsPictureBox);
             this.Controls.Add(this.copyErrorDescriptionPictureBox);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.errorLabel);
@@ -105,6 +120,7 @@ namespace DtPad.MessageBoxes
             this.Text = "Error";
             ((System.ComponentModel.ISupportInitialize)(this.errorPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.copyErrorDescriptionPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorDetailsPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +133,6 @@ namespace DtPad.MessageBoxes
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.ToolTip copyErrorMessageToolTip;
         private System.Windows.Forms.PictureBox copyErrorDescriptionPictureBox;
+        private System.Windows.Forms.PictureBox errorDetailsPictureBox;
     }
 }

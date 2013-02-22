@@ -231,7 +231,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during calculator value parsing..
+        ///   Looks up a localized string similar to An error occured while parsing the calculator value..
         /// </summary>
         internal static string CalculationManager_ErrorParsing {
             get {
@@ -339,7 +339,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during clipboard file creation.
+        ///   Looks up a localized string similar to An error occured while saving the clipboard file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string ClipboardManager_ErrorCreation {
@@ -349,7 +349,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during clipboard file reading.
+        ///   Looks up a localized string similar to An error occured while reading the clipboard file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string ClipboardManager_ErrorReading {
@@ -1637,6 +1637,15 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show error details.
+        /// </summary>
+        internal static string ErrorO_errorDetailsPictureBoxToolTip {
+            get {
+                return ResourceManager.GetString("ErrorO_errorDetailsPictureBoxToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to OK.
         /// </summary>
         internal static string ErrorO_okButton {
@@ -1660,6 +1669,15 @@ namespace DtPad.Languages {
         internal static string ErrorOR_copyErrorDescriptionPictureBoxToolTip {
             get {
                 return ResourceManager.GetString("ErrorOR_copyErrorDescriptionPictureBoxToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show error details.
+        /// </summary>
+        internal static string ErrorOR_errorDetailsPictureBoxToolTip {
+            get {
+                return ResourceManager.GetString("ErrorOR_errorDetailsPictureBoxToolTip", resourceCulture);
             }
         }
         
@@ -1745,7 +1763,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during extensions file reading.
+        ///   Looks up a localized string similar to An error occured while reading the extensions file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string ExtensionManager_Reading {
@@ -1755,7 +1773,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during extension removing.
+        ///   Looks up a localized string similar to An error occured while removing the extensions file.
         ///Current window will be closed..
         /// </summary>
         internal static string ExtensionManager_Removing {
@@ -1765,7 +1783,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during extension saving.
+        ///   Looks up a localized string similar to An error occured while saving the extensions file.
         ///Current window will be closed..
         /// </summary>
         internal static string ExtensionManager_Saving {
@@ -2073,7 +2091,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during directories and files load..
+        ///   Looks up a localized string similar to An error occured while loading files and directories..
         /// </summary>
         internal static string FileExplorerManager_ErrorLoadingDirFiles {
             get {
@@ -2082,7 +2100,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during tree drives load..
+        ///   Looks up a localized string similar to An error occured while loading the drives tree..
         /// </summary>
         internal static string FileExplorerManager_ErrorLoadingTree {
             get {
@@ -3302,7 +3320,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during automatic DtPad version check!.
+        ///   Looks up a localized string similar to An error occured while automatically checking the DtPad version!.
         /// </summary>
         internal static string Form1_CheckVersionException {
             get {
@@ -6510,7 +6528,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during web page source downloading.
+        ///   Looks up a localized string similar to An error occured while downloading the web page source.
         ///Verify that URL is correct, or that its website is available..
         /// </summary>
         internal static string InternetManager_ErrorDownloading {
@@ -6784,7 +6802,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during note file creation.
+        ///   Looks up a localized string similar to An error occured while saving the notes file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string NoteManager_ErrorCreation {
@@ -6794,7 +6812,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during note file reading.
+        ///   Looks up a localized string similar to An error occured while reading the notes file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string NoteManager_ErrorReading {
@@ -6804,7 +6822,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during note file removing.
+        ///   Looks up a localized string similar to An error occured while removing the notes file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string NoteManager_ErrorRemoving {
@@ -10658,7 +10676,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during template file reading.
+        ///   Looks up a localized string similar to An error occured while reading the templates file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string TemplateManager_ErrorReading {
@@ -10668,7 +10686,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during template removing.
+        ///   Looks up a localized string similar to An error occured while removing the templates file.
         ///Current window will be closed..
         /// </summary>
         internal static string TemplateManager_ErrorRemoving {
@@ -10678,7 +10696,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during template saving.
+        ///   Looks up a localized string similar to An error occured while saving the templates file.
         ///Current window will be closed..
         /// </summary>
         internal static string TemplateManager_ErrorSaving {
@@ -10915,7 +10933,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during tool file reading.
+        ///   Looks up a localized string similar to An error occured while reading the tools file.
         ///File will be automatically recreated with default values!.
         /// </summary>
         internal static string ToolManager_ErrorReading {
@@ -10925,7 +10943,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during tool removing.
+        ///   Looks up a localized string similar to An error occured while removing the tools file.
         ///Current window will be closed..
         /// </summary>
         internal static string ToolManager_ErrorRemoving {
@@ -10935,7 +10953,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during tool saving.
+        ///   Looks up a localized string similar to An error occured while saving the tools file.
         ///Current window will be closed..
         /// </summary>
         internal static string ToolManager_ErrorSaving {
@@ -11455,7 +11473,7 @@ namespace DtPad.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error during new DtPad Updater version download..
+        ///   Looks up a localized string similar to An error occured while downloading the new DtPad Updater version..
         /// </summary>
         internal static string VersionCheckManager_ErrorDownloadingUpdater {
             get {

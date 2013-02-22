@@ -893,15 +893,15 @@ Best regards,</value>
     <value>New Extension</value>
   </data>
   <data name="ExtensionManager_Reading" xml:space="preserve">
-    <value>Error during extensions file reading.
+    <value>An error occured while reading the extensions file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="ExtensionManager_Removing" xml:space="preserve">
-    <value>Error during extension removing.
+    <value>An error occured while removing the extensions file.
 Current window will be closed.</value>
   </data>
   <data name="ExtensionManager_Saving" xml:space="preserve">
-    <value>Error during extension saving.
+    <value>An error occured while saving the extensions file.
 Current window will be closed.</value>
   </data>
   <data name="ExtensionManager_Unvalorized" xml:space="preserve">
@@ -1298,15 +1298,15 @@ Press OK to select another destination.</value>
     <value>A note with this title already exists. Select a different one.</value>
   </data>
   <data name="NoteManager_ErrorCreation" xml:space="preserve">
-    <value>Error during note file creation.
+    <value>An error occured while saving the notes file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="NoteManager_ErrorReading" xml:space="preserve">
-    <value>Error during note file reading.
+    <value>An error occured while reading the notes file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="NoteManager_ErrorRemoving" xml:space="preserve">
-    <value>Error during note file removing.
+    <value>An error occured while removing the notes file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="SearchManager_EOF" xml:space="preserve">
@@ -1349,15 +1349,15 @@ Do you want to save the file before closing it?</value>
     <value>Tool name already existing! Choose another description.</value>
   </data>
   <data name="ToolManager_ErrorReading" xml:space="preserve">
-    <value>Error during tool file reading.
+    <value>An error occured while reading the tools file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="ToolManager_ErrorRemoving" xml:space="preserve">
-    <value>Error during tool removing.
+    <value>An error occured while removing the tools file.
 Current window will be closed.</value>
   </data>
   <data name="ToolManager_ErrorSaving" xml:space="preserve">
-    <value>Error during tool saving.
+    <value>An error occured while saving the tools file.
 Current window will be closed.</value>
   </data>
   <data name="ToolManager_NameNotEmtpy" xml:space="preserve">
@@ -1374,7 +1374,7 @@ Complete tools information to proceed.</value>
     <value>Connection error.</value>
   </data>
   <data name="VersionCheckManager_ErrorDownloadingUpdater" xml:space="preserve">
-    <value>Error during new DtPad Updater version download.</value>
+    <value>An error occured while downloading the new DtPad Updater version.</value>
   </data>
   <data name="VersionCheckManager_InUse" xml:space="preserve">
     <value>is in use</value>
@@ -1428,11 +1428,11 @@ Do not show</value>
     <value>Clipboard</value>
   </data>
   <data name="ClipboardManager_ErrorCreation" xml:space="preserve">
-    <value>Error during clipboard file creation.
+    <value>An error occured while saving the clipboard file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="ClipboardManager_ErrorReading" xml:space="preserve">
-    <value>Error during clipboard file reading.
+    <value>An error occured while reading the clipboard file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="clipboardPanel_copyToolStripMenuItem" xml:space="preserve">
@@ -1499,7 +1499,7 @@ File will be automatically recreated with default values!</value>
     <value>Error: operator not valid.</value>
   </data>
   <data name="CalculationManager_ErrorParsing" xml:space="preserve">
-    <value>Error during calculator value parsing.</value>
+    <value>An error occured while parsing the calculator value.</value>
   </data>
   <data name="Form1_doubleTabToTabToolStripMenuItem" xml:space="preserve">
     <value>Double Tab To Tab</value>
@@ -1511,10 +1511,10 @@ File will be automatically recreated with default values!</value>
     <value>File Explorer</value>
   </data>
   <data name="FileExplorerManager_ErrorLoadingDirFiles" xml:space="preserve">
-    <value>Error during directories and files load.</value>
+    <value>An error occured while loading files and directories.</value>
   </data>
   <data name="FileExplorerManager_ErrorLoadingTree" xml:space="preserve">
-    <value>Error during tree drives load.</value>
+    <value>An error occured while loading the drives tree.</value>
   </data>
   <data name="FileExplorerManager_DeviceNotReady" xml:space="preserve">
     <value>Selected device is not ready. Insert a disk and try again.</value>
@@ -2220,15 +2220,15 @@ maximum length between those of the selected rows</value>
     <value>Template name already existing! Choose another description.</value>
   </data>
   <data name="TemplateManager_ErrorReading" xml:space="preserve">
-    <value>Error during template file reading.
+    <value>An error occured while reading the templates file.
 File will be automatically recreated with default values!</value>
   </data>
   <data name="TemplateManager_ErrorRemoving" xml:space="preserve">
-    <value>Error during template removing.
+    <value>An error occured while removing the templates file.
 Current window will be closed.</value>
   </data>
   <data name="TemplateManager_ErrorSaving" xml:space="preserve">
-    <value>Error during template saving.
+    <value>An error occured while saving the templates file.
 Current window will be closed.</value>
   </data>
   <data name="TemplateManager_NameNotEmtpy" xml:space="preserve">
@@ -2965,7 +2965,7 @@ number of text lines. It is possible to open it again at anytime.</value>
     <value>Delete File</value>
   </data>
   <data name="InternetManager_ErrorDownloading" xml:space="preserve">
-    <value>Error during web page source downloading.
+    <value>An error occured while downloading the web page source.
 Verify that URL is correct, or that its website is available.</value>
   </data>
   <data name="SearchInFiles_filenamePatternPictureBoxToolTip" xml:space="preserve">
@@ -3035,7 +3035,7 @@ Weekly</value>
     <value>Copy File Full Path</value>
   </data>
   <data name="Form1_CheckVersionException" xml:space="preserve">
-    <value>Error during automatic DtPad version check!</value>
+    <value>An error occured while automatically checking the DtPad version!</value>
   </data>
   <data name="Options_DPDefaultDirCharNotAllowed" xml:space="preserve">
     <value>The following characters are not allowed: \ / : ? * &lt; &gt; " |</value>
@@ -4242,5 +4242,11 @@ Close window and select tab: ENTER or mouse click</value>
   <data name="ColumnRulerManager_NoColumnsWithRelax" xml:space="preserve">
     <value>Column numbers could not be shown while using
 the relax mode.</value>
+  </data>
+  <data name="ErrorOR_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Show error details</value>
+  </data>
+  <data name="ErrorO_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Show error details</value>
   </data>
 </root>

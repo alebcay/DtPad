@@ -417,17 +417,24 @@ namespace DtPad.Managers
                     fileList = fileList + ConstantUtil.newLine + LanguageUtil.GetCurrentLanguageString("TotalSize", className) + " " + Math.Round(totalSizeDouble, 2).ToString(LanguageUtil.GetInfoCulture()) + " MB" + ConstantUtil.newLine;
                 }
 
+                //Row number check
+                if (ConfigUtil.GetBoolParameter("LineNumbersVisible") && StringUtil.AreLinesTooMuchForPasteWithRowLines(fileList))
+                {
+                    WindowManager.CheckLineNumbers(form, false, true);
+                }
+
                 if (!TabManager.IsCurrentTabInUse(form))
                 {
                     pageTextBox.SelectedText = fileList;
                     TextManager.RefreshUndoRedoExternal(form);
-                    return;
                 }
-
-                form.TabIdentity = TabManager.AddNewPage(form, form.TabIdentity);
-                pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
-                pageTextBox.SelectedText = fileList;
-                TextManager.RefreshUndoRedoExternal(form);
+                else
+                {
+                    form.TabIdentity = TabManager.AddNewPage(form, form.TabIdentity);
+                    pageTextBox = ProgramUtil.GetPageTextBox(pagesTabControl.SelectedTabPage);
+                    pageTextBox.SelectedText = fileList;
+                    TextManager.RefreshUndoRedoExternal(form);
+                }
             }
             catch (UnauthorizedAccessException exception)
             {
