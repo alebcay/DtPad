@@ -2529,17 +2529,9 @@ Vérifiez que votre connexion Internet est active et ré-essayez en envoyant une
   <data name="TranslateText_translateButton" xml:space="preserve">
     <value>Traduire</value>
   </data>
-  <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause
-d&apos;un trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
-  </data>
   <data name="XmlEditor_Error" xml:space="preserve">
     <value>Le contenu n&apos;est pas correct.
 {0}</value>
-  </data>
-  <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d&apos;un
-trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
   </data>
   <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
     <value>Nouveau et coller</value>
@@ -2952,10 +2944,6 @@ Le format nécessaire est: example@email.com</value>
   <data name="Form1_saveToolStripMenuItem3" xml:space="preserve">
     <value>Enregistrer</value>
   </data>
-  <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d&apos;un
-trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
-  </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
     <value>Fichier &quot;{0}&quot; supprimé</value>
   </data>
@@ -3259,10 +3247,6 @@ Verifier votre authentification en ouvrant &quot;www.dropbox.com&quot; avec votr
   </data>
   <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
     <value>Fermere tout</value>
-  </data>
-  <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Le panneau des numéros de ligne a été temporairement désactivé à cause d&apos;un
-trop grand nombre de ligne. Il sera possible de le ré-ouvrir ultérieurement.</value>
   </data>
   <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
     <value>Bleu</value>
@@ -4185,10 +4169,11 @@ Saisissez tous les champs avant de continuer.</value>
     <value>Retour automatique à la ligne</value>
   </data>
   <data name="FileExplorerManager_AccessDenied" xml:space="preserve">
-    <value></value>
+    <value>L&apos;accès au chemin {0} n&apos;est pas autorisé</value>
   </data>
   <data name="FileExplorerManager_SureToWait" xml:space="preserve">
-    <value></value>
+    <value>Le parcours peut prendre plusieurs secondes pour s&apos;effectuer.
+Désirez vous continuer?</value>
   </data>
   <data name="ZipExtract_selectAllButton" xml:space="preserve">
     <value>Sélectionner tout</value>
@@ -4208,13 +4193,18 @@ Reparti à partir du bas?</value>
     <value>Reset des paramètres</value>
   </data>
   <data name="Options_tabGroupBox2" xml:space="preserve">
-    <value></value>
+    <value>Changement rapide d&apos;onglet</value>
   </data>
   <data name="Options_tabPictureBox1ToolTip" xml:space="preserve">
-    <value></value>
+    <value>Ouvrir la fenêtre et changer d&apos;onglet: CTRL+TAB (droite) ou CTRL+SHIFT+TAB (gauche)
+Fermer la fenêtre et l&apos;onglet sélectionné: laisser CTRL
+</value>
   </data>
   <data name="Options_tabPictureBox2ToolTip" xml:space="preserve">
-    <value></value>
+    <value>Ouvrir la fenêtre : CTRL+TAB ou CTRL+SHIFT+TAB
+Changement d&apos;onglet:  CTRL+TAB (droite) ou CTRL+SHIFT +TAB (gauche) ou avec la souris
+Fermer la fenêtre: ESC
+Fermer la fenêtre et sélectionner un onglet: ENTER ou click de la souris</value>
   </data>
   <data name="Options_tabsSwitchModeKeyboardRadioButton" xml:space="preserve">
     <value>Clavier (défaut)</value>
@@ -4230,5 +4220,24 @@ Reparti à partir du bas?</value>
   </data>
   <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
     <value>Remplacer:</value>
+  </data>
+  <data name="Form1_relaxModeToolStripMenuItem" xml:space="preserve">
+    <value>Mode relax</value>
+  </data>
+  <data name="WindowModeManager_ExitRelaxMode" xml:space="preserve">
+    <value>Quitter le mode relax (SHIFT+F11)</value>
+  </data>
+  <data name="ColumnRulerManager_NoColumnsWithRelax" xml:space="preserve">
+    <value>Les numéros de colonnes ne peuvent pas être affichés en mode relax.</value>
+  </data>
+  <data name="ErrorOR_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Afficher les détails d&apos;erreur</value>
+  </data>
+  <data name="ErrorO_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Afficher les détails d&apos;erreur</value>
+  </data>
+  <data name="WindowManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Le panneau des numéros de ligne a été temporairement désactivé car le
+nombre de lignes est très grand. Il est possible de le réactivé à tout moment.</value>
   </data>
 </root>
