@@ -486,10 +486,17 @@ namespace DtPad.Managers
             errorBox.ShowDialog(form);
         }
 
-        internal static void ShowInfoBox(Form form, String message)
+        internal static void ShowInfoBox(Form form, String message, bool noDialog = false)
         {
             InfoO infoBox = new InfoO(form, message);
-            infoBox.ShowDialog(form);
+            if (noDialog)
+            {
+                infoBox.Show(form);
+            }
+            else
+            {
+                infoBox.ShowDialog(form);
+            }
         }
 
         internal static void ShowAlertBox(Form form, String message)
@@ -897,7 +904,7 @@ namespace DtPad.Managers
                 CheckLineNumbers(form, false, true);
                 if (!suppressMessage)
                 {
-                    ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className));
+                    ShowInfoBox(form, LanguageUtil.GetCurrentLanguageString("LineNumbersDisabled", className), true);
                 }
                 return true;
             }

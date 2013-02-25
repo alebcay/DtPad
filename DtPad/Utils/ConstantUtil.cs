@@ -104,6 +104,7 @@ namespace DtPad.Utils
         internal const int clipboardRetryDelay = 100;
         internal const int maxFileByteLength = 104857600;
         internal static readonly String dontTranslate = "DontTranslate";
+        internal const int hostsPanelWidth = 180;
 
         #endregion Internal Instance Constants
 

@@ -62,8 +62,6 @@ namespace DtPad.Managers
             SetFileDialogFilter(openFileDialog);
 
             TrayManager.RestoreFormIfIsInTray(form);
-            //form.BringToFront();
-            //Application.DoEvents();
             
             try
             {

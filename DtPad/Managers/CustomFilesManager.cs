@@ -78,7 +78,7 @@ namespace DtPad.Managers
                                                 Dock = DockStyle.Right,
                                                 Height = selectedTabPage.Height,
                                                 Name = "sectionsPanel",
-                                                Width = 180
+                                                Width = ConstantUtil.hostsPanelWidth
                                             };
             CheckedListBox sectionsCheckedListBox = new CheckedListBox
                                                         {

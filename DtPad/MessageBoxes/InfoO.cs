@@ -1,5 +1,4 @@
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 using DtPad.Utils;
 
@@ -35,6 +34,7 @@ namespace DtPad.MessageBoxes
         private void okButton_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
+            Close();
         }
 
         #endregion Button Methods

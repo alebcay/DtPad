@@ -119,17 +119,15 @@ namespace DtPad.Managers
             }
 
             form.WindowState = FormWindowState.Normal;
-            form.Size = new Size(ConfigUtil.GetIntParameter("NoteModeSizeX"), ConfigUtil.GetIntParameter("NoteModeSizeY")); //new Size(400, 300);
+            form.Size = new Size(ConfigUtil.GetIntParameter("NoteModeSizeX"), ConfigUtil.GetIntParameter("NoteModeSizeY"));
             if (CustomFilesManager.IsHostsSectionPanelOpen(form))
             {
-                form.Width += 180; //ProgramUtil.GetSectionsPanel(pagesTabControl.SelectedTabPage).Width;
+                form.Width += ConstantUtil.hostsPanelWidth; //ProgramUtil.GetSectionsPanel(pagesTabControl.SelectedTabPage).Width;
             }
             if (CustomFilesManager.IsAnnotationPanelOpen(form))
             {
                 CustomFilesManager.HideAnnotationPanel(form);
             }
-
-            form.SetDesktopLocation(Screen.PrimaryScreen.Bounds.Width - form.Width - 50, 50);
         }
 
         private static void NoteModeOff(Form1 form)
@@ -183,7 +181,7 @@ namespace DtPad.Managers
 
             form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
             form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
-            form.SetDesktopLocation(50, 50);
+            //form.SetDesktopLocation(50, 50);
             verticalSplitContainer.Panel2Collapsed = ConfigUtil.GetBoolParameter("InternalExplorerInvisible");
         }
 
