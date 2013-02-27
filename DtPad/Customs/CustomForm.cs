@@ -157,17 +157,34 @@ namespace DtPad.Customs
 
         private const int WM_SETREDRAW = 11;
 
+        public void SuspendPainting()
+        {
+            SuspendPainting(this);
+        }
         public void SuspendPainting(Control control)
         {
             SendMessage(control.Handle, WM_SETREDRAW, false, 0);
+            //foreach (Control child in control.Controls)
+            //{
+            //    SuspendPainting(child);
+            //}
         }
 
+        public void ResumePainting()
+        {
+            ResumePainting(this);
+        }
         public void ResumePainting(Control control)
         {
             SendMessage(control.Handle, WM_SETREDRAW, true, 0);
             control.Refresh();
-        }
 
+            //foreach (Control child in control.Controls)
+            //{
+            //    ResumePainting(child);
+            //}
+        }
+        
         #endregion Suspend-Resume Painting
     }
 }

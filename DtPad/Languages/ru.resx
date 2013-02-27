@@ -132,8 +132,9 @@
 
 Это приложение требует наличия Microsoft .NET Framework 4 и хранит в реестре Windows только сопоставления файлов для контекстного меню &quot;Открыть с помощью&quot; Проводника.
 
-Автор французского перевода: Alain Buferne.
-Автор русского перевода: Артем Вахитов (Artem Vakhitov).
+Программа создана при участии: Derek Morin (разработка).
+
+Авторы переводов: Alain Buferne (французский), Артем Вахитов/Artem Vakhitov (русский).
 
 Автор основного набора значков: Delacro.
 - delacro.deviantart.com
@@ -169,7 +170,7 @@ DtPad не собирает никаких данных о работе с пр�
     <value>Написать по электронной почте автору DtPad</value>
   </data>
   <data name="About_rssPictureBoxToolTip" xml:space="preserve">
-    <value>Читать RSS-канал diariotraduttore.com</value>
+    <value>Читать RSS-канал CodePlex</value>
   </data>
   <data name="About_Title" xml:space="preserve">
     <value>О программе</value>
@@ -983,7 +984,7 @@ Pусский</value>
     <value>Удалить</value>
   </data>
   <data name="Form1_diarioDiUnTraduttoreToolStripMenuItem" xml:space="preserve">
-    <value>Блог &quot;Diario di un traduttore&quot; (итал.)</value>
+    <value>DtPad на CodePlex</value>
   </data>
   <data name="Form1_doubleReturnToReturnToolStripMenuItem" xml:space="preserve">
     <value>Двойные возвраты каретки в одинарные</value>
@@ -1160,22 +1161,22 @@ Pусский</value>
     <value>Удалить</value>
   </data>
   <data name="searchPanel_replaceAllToolStripButton" xml:space="preserve">
-    <value>Заменить все</value>
+    <value>Все</value>
   </data>
   <data name="Form1_replaceAllToolStripMenuItem" xml:space="preserve">
     <value>Заменить все</value>
   </data>
   <data name="searchPanel_replacePreviousToolStripButton" xml:space="preserve">
-    <value>Заменить предыдущее</value>
+    <value>Предыдущее</value>
   </data>
   <data name="Form1_replacePreviousToolStripMenuItem" xml:space="preserve">
     <value>Заменить предыдущее</value>
   </data>
   <data name="searchPanel_replaceToolStripButton2" xml:space="preserve">
-    <value>Заменить</value>
+    <value>Следующее</value>
   </data>
   <data name="Form1_replaceToolStripMenuItem" xml:space="preserve">
-    <value>Заменить</value>
+    <value>Заменить cледующее</value>
   </data>
   <data name="Form1_reportABugToolStripMenuItem" xml:space="preserve">
     <value>Уведомить о ошибке...</value>
@@ -2525,17 +2526,9 @@ UTF-32 (мл.-&gt;ст.)</value>
   <data name="TranslateText_translateButton" xml:space="preserve">
     <value>Перевести</value>
   </data>
-  <data name="TextManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Панель номеров строк временно закрыта из-за большого количества
-вставленных в текст строк. Ее можно снова открыть в любое время.</value>
-  </data>
   <data name="XmlEditor_Error" xml:space="preserve">
     <value>Некорректное содержимое.
 {0}</value>
-  </data>
-  <data name="FileManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Панель номеров строк временно закрыта из-за большого количества 
-строк в тексте. Ее можно снова открыть в любое время.</value>
   </data>
   <data name="Form1_newAndPasteToolStripMenuItem" xml:space="preserve">
     <value>Создать и вставить</value>
@@ -2948,10 +2941,6 @@ UTF-32 (мл.-&gt;ст.)</value>
   <data name="Form1_saveToolStripMenuItem3" xml:space="preserve">
     <value>Сохранить</value>
   </data>
-  <data name="InternetManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Панель номеров строк временно закрыта из-за большого количества 
-строк в тексте. Ее можно снова открыть в любое время.</value>
-  </data>
   <data name="FileManager_FileDeleted" xml:space="preserve">
     <value>Файл &quot;{0}&quot; удален</value>
   </data>
@@ -3256,10 +3245,6 @@ UTF-32 (мл.-&gt;ст.)</value>
   </data>
   <data name="tabPanel_closeAllToolStripButton" xml:space="preserve">
     <value>Закрыть все</value>
-  </data>
-  <data name="NoteManager_LineNumbersDisabled" xml:space="preserve">
-    <value>Панель номеров строк временно закрыта из-за большого количества 
-строк в тексте. Ее можно снова открыть в любое время.</value>
   </data>
   <data name="Form1_setTabColorBlueToolStripMenuItem" xml:space="preserve">
     <value>Голубой</value>
@@ -4199,7 +4184,7 @@ DPS-файл не найден.</value>
 Начать с конца?</value>
   </data>
   <data name="searchPanel_regularExpressionsCheckBox" xml:space="preserve">
-    <value>Использовать &amp;регулярные выражения</value>
+    <value>&amp;Регулярные выражения</value>
   </data>
   <data name="Options_resetOptionsButtonToolTip" xml:space="preserve">
     <value>Сброс параметров</value>
@@ -4215,7 +4200,7 @@ DPS-файл не найден.</value>
     <value>Открыть окно: CTRL+TAB или CTRL+SHIFT+TAB
 Перейти на другую вкладку: CTRL+TAB (вперед), CTRL+SHIFT+TAB (назад) или щелкнуть мышью
 Закрыть окно: ESC
-Close window and select tab: ENTER or mouse click</value>
+Закрыть окно и выбрать вкладку: ENTER или щелкнуть мышью</value>
   </data>
   <data name="Options_tabsSwitchModeKeyboardRadioButton" xml:space="preserve">
     <value>Клавиатура (по умолчанию)</value>
@@ -4231,5 +4216,25 @@ Close window and select tab: ENTER or mouse click</value>
   </data>
   <data name="searchPanel_replaceToolStripLabel" xml:space="preserve">
     <value>Заменить на:</value>
+  </data>
+  <data name="Form1_relaxModeToolStripMenuItem" xml:space="preserve">
+    <value>Режим концентрации</value>
+  </data>
+  <data name="WindowModeManager_ExitRelaxMode" xml:space="preserve">
+    <value>Выйти из режима концентрации (SHIFT+F11)</value>
+  </data>
+  <data name="ColumnRulerManager_NoColumnsWithRelax" xml:space="preserve">
+    <value>Номера колонок не будут отображаться в режиме
+концентрации.</value>
+  </data>
+  <data name="ErrorOR_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Подробнее об ошибке</value>
+  </data>
+  <data name="ErrorO_errorDetailsPictureBoxToolTip" xml:space="preserve">
+    <value>Подробнее об ошибке</value>
+  </data>
+  <data name="WindowManager_LineNumbersDisabled" xml:space="preserve">
+    <value>Панель номеров строк временно закрыта из-за большого количества 
+строк в тексте. Ее можно снова открыть в любое время.</value>
   </data>
 </root>

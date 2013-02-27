@@ -25,20 +25,31 @@ namespace DtPad.Managers
 
         internal static void ToggleNonStandardMode(Form1 form)
         {
-            switch (form.WindowMode)
-            {
-                case CustomForm.WindowModeEnum.Note:
-                    NoteModeOff(form);
-                    break;
-                case CustomForm.WindowModeEnum.Fullscreen:
-                    FullscreenModeOff(form);
-                    break;
-                case CustomForm.WindowModeEnum.Relax:
-                    RelaxModeOff(form);
-                    break;
-            }
+            XtraTabControl pagesTabControl = form.pagesTabControl;
 
-            form.WindowMode = CustomForm.WindowModeEnum.Normal;
+            try
+            {
+                form.SuspendPainting(pagesTabControl);
+
+                switch (form.WindowMode)
+                {
+                    case CustomForm.WindowModeEnum.Note:
+                        NoteModeOff(form);
+                        break;
+                    case CustomForm.WindowModeEnum.Fullscreen:
+                        FullscreenModeOff(form);
+                        break;
+                    case CustomForm.WindowModeEnum.Relax:
+                        RelaxModeOff(form);
+                        break;
+                }
+
+                form.WindowMode = CustomForm.WindowModeEnum.Normal;
+            }
+            finally
+            {
+                form.ResumePainting(pagesTabControl);
+            }
         }
 
         #endregion Generic Methods
@@ -47,16 +58,27 @@ namespace DtPad.Managers
 
         internal static void ToggleNoteMode(Form1 form)
         {
-            switch (form.WindowMode)
+            XtraTabControl pagesTabControl = form.pagesTabControl;
+
+            try
             {
-                case CustomForm.WindowModeEnum.Note:
-                    NoteModeOff(form);
-                    form.WindowMode = CustomForm.WindowModeEnum.Normal;
-                    break;
-                case CustomForm.WindowModeEnum.Normal:
-                    form.WindowMode = CustomForm.WindowModeEnum.Note;
-                    NoteModeOn(form);
-                    break;
+                form.SuspendPainting(pagesTabControl);
+
+                switch (form.WindowMode)
+                {
+                    case CustomForm.WindowModeEnum.Note:
+                        NoteModeOff(form);
+                        form.WindowMode = CustomForm.WindowModeEnum.Normal;
+                        break;
+                    case CustomForm.WindowModeEnum.Normal:
+                        form.WindowMode = CustomForm.WindowModeEnum.Note;
+                        NoteModeOn(form);
+                        break;
+                }
+            }
+            finally
+            {
+                form.ResumePainting(pagesTabControl);
             }
         }
 
@@ -77,7 +99,8 @@ namespace DtPad.Managers
                 ContextMenuStrip smallPageContextMenuStrip = new ContextMenuStrip();
                 for (int i = 0; i < 2; i++)
                 {
-                    smallPageContextMenuStrip.Items.Add(((CustomToolStripMenuItem)form.pageContextMenuStrip.Items[i]).Clone());
+                    smallPageContextMenuStrip.Items.Add(
+                        ((CustomToolStripMenuItem) form.pageContextMenuStrip.Items[i]).Clone());
                 }
                 pagesTabControl.ContextMenuStrip = smallPageContextMenuStrip;
                 pagesTabControl.CustomHeaderButtons.Clear();
@@ -181,7 +204,6 @@ namespace DtPad.Managers
 
             form.WindowState = ConfigUtil.GetStringParameter("WindowState") == "Maximized" ? FormWindowState.Maximized : FormWindowState.Normal;
             form.Size = new Size(ConfigUtil.GetIntParameter("WindowSizeX"), ConfigUtil.GetIntParameter("WindowSizeY"));
-            //form.SetDesktopLocation(50, 50);
             verticalSplitContainer.Panel2Collapsed = ConfigUtil.GetBoolParameter("InternalExplorerInvisible");
         }
 
@@ -191,16 +213,27 @@ namespace DtPad.Managers
         
         internal static void ToggleFullscreenMode(Form1 form)
         {
-            switch (form.WindowMode)
+            XtraTabControl pagesTabControl = form.pagesTabControl;
+
+            try
             {
-                case CustomForm.WindowModeEnum.Fullscreen:
-                    FullscreenModeOff(form);
-                    form.WindowMode = CustomForm.WindowModeEnum.Normal;
-                    break;
-                case CustomForm.WindowModeEnum.Normal:
-                    form.WindowMode = CustomForm.WindowModeEnum.Fullscreen;
-                    FullscreenModeOn(form);
-                    break;
+                form.SuspendPainting(pagesTabControl);
+
+                switch (form.WindowMode)
+                {
+                    case CustomForm.WindowModeEnum.Fullscreen:
+                        FullscreenModeOff(form);
+                        form.WindowMode = CustomForm.WindowModeEnum.Normal;
+                        break;
+                    case CustomForm.WindowModeEnum.Normal:
+                        form.WindowMode = CustomForm.WindowModeEnum.Fullscreen;
+                        FullscreenModeOn(form);
+                        break;
+                }
+            }
+            finally
+            {
+                form.ResumePainting(pagesTabControl);
             }
         }
 
@@ -274,16 +307,27 @@ namespace DtPad.Managers
 
         internal static void ToggleRelaxMode(Form1 form)
         {
-            switch (form.WindowMode)
+            XtraTabControl pagesTabControl = form.pagesTabControl;
+
+            try
             {
-                case CustomForm.WindowModeEnum.Relax:
-                    RelaxModeOff(form);
-                    form.WindowMode = CustomForm.WindowModeEnum.Normal;
-                    break;
-                case CustomForm.WindowModeEnum.Normal:
-                    form.WindowMode = CustomForm.WindowModeEnum.Relax;
-                    RelaxModeOn(form);
-                    break;
+                form.SuspendPainting(pagesTabControl);
+
+                switch (form.WindowMode)
+                {
+                    case CustomForm.WindowModeEnum.Relax:
+                        RelaxModeOff(form);
+                        form.WindowMode = CustomForm.WindowModeEnum.Normal;
+                        break;
+                    case CustomForm.WindowModeEnum.Normal:
+                        form.WindowMode = CustomForm.WindowModeEnum.Relax;
+                        RelaxModeOn(form);
+                        break;
+                }
+            }
+            finally
+            {
+                form.ResumePainting(pagesTabControl);
             }
         }
 
@@ -292,8 +336,6 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             ToolStrip sessionToolStrip = form.sessionToolStrip;
             ToolStripMenuItem fullscreenToolStripMenuItem = form.fullscreenToolStripMenuItem;
-
-            form.SuspendPainting(pagesTabControl);
 
             pagesTabControl.ContextMenuStrip = null;
             pagesTabControl.ShowTabHeader = DefaultBoolean.False;
@@ -333,8 +375,6 @@ namespace DtPad.Managers
             {
                 CustomFilesManager.HideAnnotationPanel(form);
             }
-
-            form.ResumePainting(pagesTabControl);
         }
 
         private static void RelaxModeOff(Form1 form)
@@ -342,8 +382,6 @@ namespace DtPad.Managers
             XtraTabControl pagesTabControl = form.pagesTabControl;
             ToolStrip sessionToolStrip = form.sessionToolStrip;
             ToolStripMenuItem fullscreenToolStripMenuItem = form.fullscreenToolStripMenuItem;
-
-            form.SuspendPainting(pagesTabControl);
 
             pagesTabControl.ContextMenuStrip = form.pageContextMenuStrip;
             pagesTabControl.ShowTabHeader = DefaultBoolean.True;
@@ -384,8 +422,6 @@ namespace DtPad.Managers
                 tabPage.Controls.RemoveByKey(marginRight);
                 tabPage.Controls.RemoveByKey(String.Format("{0}_Very", marginRight));
             }
-
-            form.ResumePainting(pagesTabControl);
         }
 
         internal static void AddRelaxModeMargins(Form1 form)
