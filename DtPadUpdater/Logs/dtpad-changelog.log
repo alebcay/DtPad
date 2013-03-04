@@ -1,9 +1,21 @@
 2.11.0.40
 
-+ Introducing the possibility of using regular expressions directly in the search field (CTRL+F panel)
++ Regular expressions usage inside the search and replace panel
++ Introduction of a new, particular, view mode: relax (SHIFT+F11), to forget everything and concentrate only on text
++ Tab switching (CTRL+TAB) now can use keyboard's shortcuts or mouse clicks (option inside the settings window, "Tab" panel)
++ Program configuration now could be resetted to default value from the settings window
++ Drag and drop a folder into text editing are to open at once all the files of the top of it (no subfolders)
+- Search panel now opens and focus with CTRL+F combo and close itself pressing ESC inside one of its field, or using the appropriate button (it should helps who works using keyboard shortcuts and who need to execute multiple searches)
+- Improved security: Dropbox access token is stored inside the password encrypted file and is no more visible into the application config
 - Improvement of feature "View - Show File In Browser", and fixing of the passing of parameters to the browser
+- Usage of keyboard shortcuts inside the search panel and the question windows (yes/no/cancel)
+- True fullscreen view (F11), hiding the Windows applications bar
+- Wider choice of colors for the background of the main editing area
+- Full details inside the error report windows
+- Better refresh of row numbering when search panel is opened or closed
 - Bug fixing of issue #1186
+- Bug fix: closing all tabs was not shown the warning about contents if the first tab was empty
 - Improvements to archive extraction interface
-- Other improvements to interface and localizations
+- Several improvements to code, interface and localizations
 
 More informations here: http://dtpad.codeplex.com/releases/view/100004
