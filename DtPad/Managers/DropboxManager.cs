@@ -123,6 +123,10 @@ namespace DtPad.Managers
                 WindowManager.ShowAlertBox(form, LanguageUtil.GetCurrentLanguageString("UriFormat", className));
                 return null;
             }
+            finally
+            {
+                form.Cursor = Cursors.Default;
+            }
         }
 
         internal static void CloseCouldStorage(Form1 form, CloudStorage cloudStorage)

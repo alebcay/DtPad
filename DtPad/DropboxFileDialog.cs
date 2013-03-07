@@ -216,24 +216,30 @@ namespace DtPad
 
         private void LoadFileList(ICloudDirectoryEntry directory)
         {
-            Cursor = Cursors.WaitCursor;
-
-            fseListView.Items.Clear();
-            IEnumerable<DropboxFSEObject> folderContentList = DropboxManager.GetFolderContent(directory, GetSelectedExtension()); //caricamento fseListView
-
-            foreach (DropboxFSEObject folderContent in folderContentList.Where(folderContent => folderContent.Type == DropboxFSEObject.FSEType.Directory))
+            try
             {
-                fseListView.Items.Add(new ListViewItem(folderContent.Name, folderIconIndex));
+                Cursor = Cursors.WaitCursor;
+
+                fseListView.Items.Clear();
+                IEnumerable<DropboxFSEObject> folderContentList = DropboxManager.GetFolderContent(directory, GetSelectedExtension());
+
+                //fseListView loading
+                foreach (DropboxFSEObject folderContent in folderContentList.Where(folderContent => folderContent.Type == DropboxFSEObject.FSEType.Directory))
+                {
+                    fseListView.Items.Add(new ListViewItem(folderContent.Name, folderIconIndex));
+                }
+                foreach (DropboxFSEObject folderContent in folderContentList.Where(folderContent => folderContent.Type == DropboxFSEObject.FSEType.File))
+                {
+                    fseListView.Items.Add(new ListViewItem(folderContent.Name, fileIconIndex));
+                }
+
+                positionLabel.Text = DropboxManager.GetFolderCompletePath(directory);
+                superiorLevelButton.Enabled = positionLabel.Text != "/";
             }
-            foreach (DropboxFSEObject folderContent in folderContentList.Where(folderContent => folderContent.Type == DropboxFSEObject.FSEType.File))
+            finally
             {
-                fseListView.Items.Add(new ListViewItem(folderContent.Name, fileIconIndex));
+                Cursor = Cursors.Default;
             }
-
-            positionLabel.Text = DropboxManager.GetFolderCompletePath(directory);
-            superiorLevelButton.Enabled = positionLabel.Text != "/";
-
-            Cursor = Cursors.Default;
         }
 
         private String GetSelectedExtension()
@@ -288,47 +294,52 @@ namespace DtPad
 
         private void OpenSave()
         {
-            Cursor = Cursors.WaitCursor;
-
-            if (windowType == WindowType.Open)
+            try
             {
-                okButton.Enabled = false;
-                cancelButton.Enabled = false;
-                Refresh();
+                Cursor = Cursors.WaitCursor;
 
-                if (FileManager.OpenFileFromDropbox(form, this, fileNameTextBox.Text, selectedFilePosition))
+                if (windowType == WindowType.Open)
                 {
-                    WindowManager.CloseForm(this);
+                    okButton.Enabled = false;
+                    cancelButton.Enabled = false;
+                    Refresh();
+
+                    if (FileManager.OpenFileFromDropbox(form, this, fileNameTextBox.Text, selectedFilePosition))
+                    {
+                        WindowManager.CloseForm(this);
+                    }
+                    else
+                    {
+                        okButton.Enabled = true;
+                        cancelButton.Enabled = true;
+                    }
                 }
                 else
                 {
-                    okButton.Enabled = true;
-                    cancelButton.Enabled = true;
+                    if (!ValidateFileName())
+                    {
+                        return;
+                    }
+
+                    okButton.Enabled = false;
+                    cancelButton.Enabled = false;
+                    Refresh();
+
+                    if (FileManager.SaveFileOnDropbox(form, this, fileNameTextBox.Text, positionLabel.Text))
+                    {
+                        WindowManager.CloseForm(this);
+                    }
+                    else
+                    {
+                        okButton.Enabled = true;
+                        cancelButton.Enabled = true;
+                    }
                 }
             }
-            else
+            finally
             {
-                if (!ValidateFileName())
-                {
-                    return;
-                }
-
-                okButton.Enabled = false;
-                cancelButton.Enabled = false;
-                Refresh();
-
-                if (FileManager.SaveFileOnDropbox(form, this, fileNameTextBox.Text, positionLabel.Text))
-                {
-                    WindowManager.CloseForm(this);
-                }
-                else
-                {
-                    okButton.Enabled = true;
-                    cancelButton.Enabled = true;
-                }
+                Cursor = Cursors.Default;
             }
-
-            Cursor = Cursors.Default;
         }
 
         private void Rename(object sender, LabelEditEventArgs e)
