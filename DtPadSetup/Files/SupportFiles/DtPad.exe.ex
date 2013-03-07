@@ -1,5 +1,5 @@
-All files|*|False
-Text document|txt|True
+All files|*|True
+Text document|txt|False
 PDF document|pdf|False
 ZIP archive|zip|False
 Tweet document|tweet|False

@@ -1,5 +1,5 @@
-All files|*|False
-Text document|txt|True
+All files|*|True
+Text document|txt|False
 XML document|xml|False
 CSV document|csv|False
 PDF document|pdf|False

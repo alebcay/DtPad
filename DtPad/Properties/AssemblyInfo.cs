@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 [assembly: AssemblyTitle("DtPad")]
 [assembly: AssemblyDescription("DtPad - .NET Framework text editor")]
-[assembly: AssemblyConfiguration("130304")]
+[assembly: AssemblyConfiguration("130307")]
 [assembly: AssemblyCompany("dtpad.codeplex.com")]
 [assembly: AssemblyProduct("DtPad")]
 [assembly: AssemblyCopyright("")]
@@ -30,7 +30,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.11.0.40")]
-[assembly: AssemblyFileVersion("2.11.0.40")]
+[assembly: AssemblyVersion("2.12.0.40")]
+[assembly: AssemblyFileVersion("2.12.0.40")]
 [assembly: NeutralResourcesLanguage("en-GB")]
 [assembly: CLSCompliant(true)]
