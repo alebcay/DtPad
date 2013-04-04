@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Security.Principal;
 using DtPad.Managers;
 using Microsoft.WindowsAPICodePack.Shell;
@@ -11,13 +12,18 @@ namespace DtPad.Utils
     /// <summary>
     /// OS detection util.
     /// </summary>
-    /// <author>Marco Macciò</author>
+    /// <author>Marco Macciò, external source</author>
+    /// <see>http://www.codeproject.com/Articles/73000/Getting-Operating-System-Version-Info-Even-for-Win</see>
     internal static class SystemUtil
     {
         private const String className = "SystemUtil";
 
         internal enum OS
         {
+            [Description("Windows 3.1")]
+            ThreeOne,
+            [Description("Windows CE")]
+            Ce,
             [Description("Windows 95")]
             NinetyFive,
             [Description("Windows 98")]
@@ -30,60 +36,174 @@ namespace DtPad.Utils
             NtThreeFiveOne,
             [Description("Windows NT 4.0")]
             NtFour,
+            [Description("Windows NT 4.0 Server")]
+            NtFourServer,
             [Description("Windows 2000")]
             TwoThousand,
             [Description("Windows XP")]
             Xp,
+            [Description("Windows Server 2003")]
+            ServerTwoThousandThree,
             [Description("Windows Vista")]
             Vista,
+            [Description("Windows Server 2008")]
+            ServerTwoThousandEight,
             [Description("Windows 7")]
             Seven,
+            [Description("Windows Server 2008 R2")]
+            ServerTwoThousandEightR2,
+            [Description("Windows 8")]
+            Eight,
+            [Description("Windows Server 2012")]
+            ServerTwoThousandTwelve,
             [Description("Other")]
             Other
         }
 
         #region Internal Methods
 
+        #region OSVERSIONINFOEX
+        [StructLayout(LayoutKind.Sequential)]
+        private struct OSVERSIONINFOEX
+        {
+            public int dwOSVersionInfoSize;
+            public int dwMajorVersion;
+            public int dwMinorVersion;
+            public int dwBuildNumber;
+            public int dwPlatformId;
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 128)]
+            public string szCSDVersion;
+            public short wServicePackMajor;
+            public short wServicePackMinor;
+            public short wSuiteMask;
+            public byte wProductType;
+            public byte wReserved;
+        }
+        #endregion OSVERSIONINFOEX
+
+        #region VERSION
+        [DllImport("kernel32.dll")]
+        private static extern bool GetVersionEx(ref OSVERSIONINFOEX osVersionInfo);
+        #endregion VERSION
+
         internal static OS GetOSInfo()
         {
-            OperatingSystem os = Environment.OSVersion;
-            Version vs = os.Version;
-
             OS operatingSystem = OS.Other;
 
-            switch (os.Platform)
+            OperatingSystem osVersion = Environment.OSVersion;
+            OSVERSIONINFOEX osVersionInfo = new OSVERSIONINFOEX();
+            osVersionInfo.dwOSVersionInfoSize = Marshal.SizeOf(typeof(OSVERSIONINFOEX));
+
+            if (GetVersionEx(ref osVersionInfo))
             {
-                case PlatformID.Win32Windows:
-                    switch (vs.Minor)
-                    {
-                        case 0:
-                            operatingSystem = OS.NinetyFive;
+                int majorVersion = osVersion.Version.Major;
+                int minorVersion = osVersion.Version.Minor;
+
+                switch (osVersion.Platform)
+                {
+                    case PlatformID.Win32S:
+                        operatingSystem = OS.ThreeOne;
+                        break;
+                    case PlatformID.WinCE:
+                        operatingSystem = OS.Ce;
+                        break;
+                    case PlatformID.Win32Windows:
+                        {
+                            if (majorVersion == 4)
+                            {
+                                string csdVersion = osVersionInfo.szCSDVersion;
+                                switch (minorVersion)
+                                {
+                                    case 0:
+                                        operatingSystem = OS.NinetyFive;
+                                        break;
+                                    case 10:
+                                        operatingSystem = csdVersion == "A" ? OS.NinetyEightSe : OS.NinetyEight;
+                                        break;
+                                    case 90:
+                                        operatingSystem = OS.Me;
+                                        break;
+                                }
+                            }
                             break;
-                        case 10:
-                            operatingSystem = vs.Revision.ToString() == "2222A" ? OS.NinetyEightSe : OS.NinetyEight;
+                        }
+                    case PlatformID.Win32NT:
+                        {
+                            byte productType = osVersionInfo.wProductType;
+
+                            switch (majorVersion)
+                            {
+                                case 3:
+                                    operatingSystem = OS.NtThreeFiveOne;
+                                    break;
+                                case 4:
+                                    switch (productType)
+                                    {
+                                        case 1:
+                                            operatingSystem = OS.NtFour;
+                                            break;
+                                        case 3:
+                                            operatingSystem = OS.NtFourServer;
+                                            break;
+                                    }
+                                    break;
+                                case 5:
+                                    switch (minorVersion)
+                                    {
+                                        case 0:
+                                            operatingSystem = OS.TwoThousand;
+                                            break;
+                                        case 1:
+                                            operatingSystem = OS.Xp;
+                                            break;
+                                        case 2:
+                                            operatingSystem = OS.ServerTwoThousandThree;
+                                            break;
+                                    }
+                                    break;
+                                case 6:
+                                    switch (minorVersion)
+                                    {
+                                        case 0:
+                                            switch (productType)
+                                            {
+                                                case 1:
+                                                    operatingSystem = OS.Vista;
+                                                    break;
+                                                case 3:
+                                                    operatingSystem = OS.ServerTwoThousandEight;
+                                                    break;
+                                            }
+                                            break;
+
+                                        case 1:
+                                            switch (productType)
+                                            {
+                                                case 1:
+                                                    operatingSystem = OS.Seven;
+                                                    break;
+                                                case 3:
+                                                    operatingSystem = OS.ServerTwoThousandEightR2;
+                                                    break;
+                                            }
+                                            break;
+                                        case 2:
+                                            switch (productType)
+                                            {
+                                                case 1:
+                                                    operatingSystem = OS.Eight;
+                                                    break;
+                                                case 3:
+                                                    operatingSystem = OS.ServerTwoThousandTwelve;
+                                                    break;
+                                            }
+                                            break;
+                                    }
+                                    break;
+                            }
                             break;
-                        case 90:
-                            operatingSystem = OS.Me;
-                            break;
-                    }
-                    break;
-                case PlatformID.Win32NT:
-                    switch (vs.Major)
-                    {
-                        case 3:
-                            operatingSystem = OS.NtThreeFiveOne;
-                            break;
-                        case 4:
-                            operatingSystem = OS.NtFour;
-                            break;
-                        case 5:
-                            operatingSystem = vs.Minor == 0 ? OS.TwoThousand : OS.Xp;
-                            break;
-                        case 6:
-                            operatingSystem = vs.Minor == 0 ? OS.Vista : OS.Seven;
-                            break;
-                    }
-                    break;
+                        }
+                }
             }
 
             return operatingSystem;
@@ -95,6 +215,12 @@ namespace DtPad.Utils
 
             switch (operatingSystem)
             {
+                case OS.ThreeOne:
+                    osDescription = "Windows 3.1";
+                    break;
+                case OS.Ce:
+                    osDescription = "Windows CE";
+                    break;
                 case OS.NinetyFive:
                     osDescription = "Windows 95";
                     break;
@@ -113,17 +239,35 @@ namespace DtPad.Utils
                 case OS.NtFour:
                     osDescription = "Windows NT 4.0";
                     break;
+                case OS.NtFourServer:
+                    osDescription = "Windows NT 4.0 Server";
+                    break;
                 case OS.TwoThousand:
                     osDescription = "Windows 2000";
                     break;
                 case OS.Xp:
                     osDescription = "Windows XP";
                     break;
+                case OS.ServerTwoThousandThree:
+                    osDescription = "Windows Server 2003";
+                    break;
                 case OS.Vista:
                     osDescription = "Windows Vista";
                     break;
+                case OS.ServerTwoThousandEight:
+                    osDescription = "Windows Server 2008";
+                    break;
                 case OS.Seven:
                     osDescription = "Windows 7";
+                    break;
+                case OS.ServerTwoThousandEightR2:
+                    osDescription = "Windows Server 2008 R2";
+                    break;
+                case OS.Eight:
+                    osDescription = "Windows 8";
+                    break;
+                case OS.ServerTwoThousandTwelve:
+                    osDescription = "Windows Server 2012";
                     break;
 
                 default:

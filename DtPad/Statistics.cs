@@ -68,12 +68,13 @@ namespace DtPad
             String directoryName = StringUtil.CheckStringLength(ConstantUtil.ApplicationExecutionPath(), maxCharsNumber);
             int memoryWorkingSet = Convert.ToInt32(Environment.WorkingSet / 1000);
             String bits = Environment.Is64BitOperatingSystem ? "64-bit" : "32-bit";
+            String servicePack = String.IsNullOrEmpty(Environment.OSVersion.ServicePack) ? String.Empty : " " + Environment.OSVersion.ServicePack;
 
             usernameLabel.Text = Environment.UserName;
             domainLabel.Text = Environment.UserDomainName;
             workingDirectoryLabel.Text = directoryName;
             machineNameLabel.Text = Environment.MachineName;
-            osLabel.Text = SystemUtil.GetOSDescription(SystemUtil.GetOSInfo()) + " " + Environment.OSVersion.ServicePack + " " + bits;
+            osLabel.Text = SystemUtil.GetOSDescription(SystemUtil.GetOSInfo()) + servicePack + " " + bits;
             processorsLabel.Text = Environment.ProcessorCount.ToString();
             frameworkVersionLabel.Text = Environment.Version.Major + "." + Environment.Version.Minor + "." + Environment.Version.Build + "." + Environment.Version.Revision;
             memoryLabel.Text = memoryWorkingSet.ToString("#,###", LanguageUtil.GetInfoCulture()) + " KB";
